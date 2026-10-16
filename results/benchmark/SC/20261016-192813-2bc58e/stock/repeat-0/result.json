@@ -1,0 +1,30 @@
+{
+  "benchmark": "SC",
+  "profile": "smoke",
+  "mode": "stock",
+  "policy": null,
+  "repeat": 0,
+  "directory": "/home/only/projects/mgpusim-uvm/results/benchmark/SC/20261016-192813-2bc58e/stock/repeat-0",
+  "verification": "CPU_PASSED",
+  "status": "OK",
+  "returncode": 0,
+  "wall_s": 3.726926,
+  "peak_rss_kib": 1117732,
+  "active_gpus": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "kernel_us": 9.274,
+  "mapping_faults": 0,
+  "kernel_count": null,
+  "gpu_activity_ok": true,
+  "reason": "platform run only; replica/refill metrics and runtime kernel count unavailable",
+  "instructions_by_gpu": {
+    "1": 19776.0,
+    "2": 19776.0,
+    "3": 19776.0,
+    "4": 17858.0
+  }
+}

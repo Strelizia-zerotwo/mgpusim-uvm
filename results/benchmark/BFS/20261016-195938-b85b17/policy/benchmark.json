@@ -1,0 +1,23 @@
+{
+  "id": "BFS",
+  "sample": "bfs",
+  "group": "A",
+  "role": "candidate",
+  "profiles": {
+    "smoke": [
+      "-node=8192",
+      "-degree=4",
+      "-depth=4"
+    ],
+    "small": [
+      "-node=262144",
+      "-degree=4",
+      "-depth=4"
+    ]
+  },
+  "arch": "gcn3",
+  "gpu": "r9nano",
+  "demand_block": "sample rejects multiple independent GPUs; shared unified path is available",
+  "verify_kind": "passed",
+  "core_replica": true
+}

@@ -1,0 +1,25 @@
+{
+  "argv": [
+    "/home/only/projects/mgpusim-uvm/results/benchmark/_suites/20261016-200806-a46f10/bin/lenet",
+    "-timing",
+    "-disable-rtm",
+    "-use-unified-memory",
+    "-vm-mode=demand",
+    "-verify",
+    "-replica-core",
+    "-unified-gpus=1,2,3,4",
+    "-report-all",
+    "-metric-file-name=metrics",
+    "-core-replica-plan-out=observed-plan.json",
+    "-core-replica-stats=stats.json",
+    "-arch=gcn3",
+    "-gpu=r9nano",
+    "-page-bytes=4096",
+    "-epoch=1",
+    "-max-batch-per-epoch=1",
+    "-batch-size=1",
+    "-dnn-synthetic-samples=1",
+    "-core-replica-config=/home/only/projects/mgpusim-uvm/results/benchmark/LeNet/20261016-200806-a46f10/policy/record-config.json"
+  ],
+  "cwd": "/home/only/projects/mgpusim-uvm/results/benchmark/LeNet/20261016-200806-a46f10/policy/record"
+}

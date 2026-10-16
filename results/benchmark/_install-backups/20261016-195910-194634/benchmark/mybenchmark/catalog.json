@@ -1,0 +1,607 @@
+{
+  "format": 1,
+  "core_count": 14,
+  "benchmarks": [
+    {
+      "id": "MM",
+      "sample": "matrixmultiplication",
+      "group": "A",
+      "role": "control",
+      "profiles": {
+        "smoke": [
+          "-x=64",
+          "-y=64",
+          "-z=64"
+        ],
+        "small": [
+          "-x=256",
+          "-y=256",
+          "-z=256"
+        ]
+      },
+      "arch": "gcn3",
+      "gpu": "r9nano",
+      "verify_kind": "passed"
+    },
+    {
+      "id": "C2D",
+      "sample": "conv2d",
+      "group": "A",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-N=1",
+          "-C=1",
+          "-H=16",
+          "-W=16",
+          "-output-channel=4",
+          "-enable-backward"
+        ],
+        "small": [
+          "-N=4",
+          "-C=3",
+          "-H=32",
+          "-W=32",
+          "-output-channel=8",
+          "-enable-backward"
+        ]
+      },
+      "arch": "gcn3",
+      "gpu": "r9nano",
+      "verify_kind": "operator",
+      "demand_block": "sample rejects multiple physical GPUs; tensor allocations do not consume useUnifiedMemory"
+    },
+    {
+      "id": "ST",
+      "sample": "stencil2d",
+      "group": "A",
+      "role": "negative",
+      "profiles": {
+        "smoke": [
+          "-row=64",
+          "-col=64",
+          "-iter=2"
+        ],
+        "small": [
+          "-row=512",
+          "-col=512",
+          "-iter=4"
+        ]
+      },
+      "arch": "gcn3",
+      "gpu": "r9nano",
+      "replica": {
+        "workload": "parallel-stencil",
+        "smoke": {
+          "size": 258,
+          "columns": 258,
+          "iterations": 2
+        },
+        "small": {
+          "size": 258,
+          "columns": 258,
+          "iterations": 4
+        }
+      },
+      "verify_kind": "passed"
+    },
+    {
+      "id": "FIR",
+      "sample": "fir",
+      "group": "A",
+      "role": "control",
+      "profiles": {
+        "smoke": [
+          "-length=4096",
+          "-taps=16"
+        ],
+        "small": [
+          "-length=65536",
+          "-taps=16"
+        ]
+      },
+      "arch": "gcn3",
+      "gpu": "r9nano",
+      "verify_kind": "passed"
+    },
+    {
+      "id": "IM2COL",
+      "sample": "im2col",
+      "group": "A",
+      "role": "control",
+      "profiles": {
+        "smoke": [
+          "-N=1",
+          "-C=1",
+          "-H=16",
+          "-W=16"
+        ],
+        "small": [
+          "-N=4",
+          "-C=3",
+          "-H=32",
+          "-W=32"
+        ]
+      },
+      "arch": "gcn3",
+      "gpu": "r9nano",
+      "verify_kind": "operator",
+      "demand_block": "sample rejects multiple physical GPUs; tensor allocations do not consume useUnifiedMemory"
+    },
+    {
+      "id": "BFS",
+      "sample": "bfs",
+      "group": "A",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-node=1024",
+          "-degree=4",
+          "-depth=8"
+        ],
+        "small": [
+          "-node=262144",
+          "-degree=4",
+          "-depth=4"
+        ]
+      },
+      "arch": "gcn3",
+      "gpu": "r9nano",
+      "demand_block": "sample rejects multiple independent GPUs; shared unified path is available",
+      "verify_kind": "passed"
+    },
+    {
+      "id": "SC",
+      "sample": "simpleconvolution",
+      "group": "A",
+      "role": "control",
+      "profiles": {
+        "smoke": [
+          "-width=126",
+          "-height=126",
+          "-mask-size=3"
+        ],
+        "small": [
+          "-width=510",
+          "-height=510",
+          "-mask-size=3"
+        ]
+      },
+      "arch": "gcn3",
+      "gpu": "r9nano",
+      "verify_kind": "passed"
+    },
+    {
+      "id": "MT",
+      "sample": "matrixtranspose",
+      "group": "A",
+      "role": "control",
+      "profiles": {
+        "smoke": [
+          "-width=128"
+        ],
+        "small": [
+          "-width=512"
+        ]
+      },
+      "arch": "gcn3",
+      "gpu": "r9nano",
+      "verify_kind": "passed"
+    },
+    {
+      "id": "FFT",
+      "sample": "fft",
+      "group": "A",
+      "role": "characterize",
+      "profiles": {
+        "smoke": [
+          "-bytes=65536",
+          "-passes=1"
+        ],
+        "small": [
+          "-bytes=1048576",
+          "-passes=2"
+        ]
+      },
+      "arch": "gcn3",
+      "gpu": "r9nano",
+      "verify_kind": "passed"
+    },
+    {
+      "id": "PR",
+      "sample": "pagerank",
+      "group": "A",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-node=128",
+          "-sparsity=0.02",
+          "-iterations=2"
+        ],
+        "small": [
+          "-node=1024",
+          "-sparsity=0.01",
+          "-iterations=4"
+        ]
+      },
+      "arch": "gcn3",
+      "gpu": "r9nano",
+      "verify_kind": "passed"
+    },
+    {
+      "id": "BS",
+      "sample": "bitonicsort",
+      "group": "A",
+      "role": "characterize",
+      "profiles": {
+        "smoke": [
+          "-length=1024",
+          "-order-asc=true"
+        ],
+        "small": [
+          "-length=32768",
+          "-order-asc=true"
+        ]
+      },
+      "arch": "gcn3",
+      "gpu": "r9nano",
+      "verify_kind": "passed"
+    },
+    {
+      "id": "LeNet",
+      "sample": "lenet",
+      "group": "A",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-epoch=1",
+          "-max-batch-per-epoch=2",
+          "-batch-size=1"
+        ],
+        "small": [
+          "-epoch=1",
+          "-max-batch-per-epoch=2",
+          "-batch-size=2"
+        ]
+      },
+      "arch": "gcn3",
+      "gpu": "r9nano",
+      "blocked": "training sample SetUnifiedMemory panics; Verify is unimplemented; requires MNIST and a UVM/replica adapter",
+      "verify_kind": "passed"
+    },
+    {
+      "id": "VGG16",
+      "sample": "vgg16",
+      "group": "A",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-epoch=1",
+          "-max-batch-per-epoch=2",
+          "-batch-size=1"
+        ],
+        "small": [
+          "-epoch=1",
+          "-max-batch-per-epoch=2",
+          "-batch-size=1"
+        ]
+      },
+      "arch": "gcn3",
+      "gpu": "r9nano",
+      "blocked": "training sample SetUnifiedMemory panics; Verify is unimplemented; fixed 224x224 model and Tiny-ImageNet require a UVM/replica adapter; batch=1 is still expensive",
+      "verify_kind": "passed"
+    },
+    {
+      "id": "KM",
+      "sample": "kmeans",
+      "group": "A",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-points=1024",
+          "-features=8",
+          "-clusters=4",
+          "-max-iter=2"
+        ],
+        "small": [
+          "-points=16384",
+          "-features=16",
+          "-clusters=8",
+          "-max-iter=4"
+        ]
+      },
+      "arch": "gcn3",
+      "gpu": "r9nano",
+      "verify_marker": "Passsed, RMSE",
+      "verify_kind": "passed"
+    },
+    {
+      "id": "SPMV",
+      "sample": "spmv",
+      "group": "B",
+      "role": "control",
+      "profiles": {
+        "smoke": [
+          "-dim=256",
+          "-sparsity=0.02"
+        ],
+        "small": [
+          "-dim=2048",
+          "-sparsity=0.01"
+        ]
+      },
+      "arch": "gcn3",
+      "gpu": "r9nano",
+      "verify_kind": "passed"
+    },
+    {
+      "id": "FW",
+      "sample": "floydwarshall",
+      "group": "B",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-node=64",
+          "-iter=8"
+        ],
+        "small": [
+          "-node=128",
+          "-iter=16"
+        ]
+      },
+      "arch": "gcn3",
+      "gpu": "r9nano",
+      "replica": {
+        "workload": "parallel-fw",
+        "smoke": {
+          "size": 128,
+          "columns": 258,
+          "iterations": 8
+        },
+        "small": {
+          "size": 128,
+          "columns": 258,
+          "iterations": 16
+        }
+      },
+      "verify_kind": "passed"
+    },
+    {
+      "id": "AES",
+      "sample": "aes",
+      "group": "B",
+      "role": "control",
+      "profiles": {
+        "smoke": [
+          "-length=4096"
+        ],
+        "small": [
+          "-length=65536"
+        ]
+      },
+      "arch": "gcn3",
+      "gpu": "r9nano",
+      "verify_kind": "passed"
+    },
+    {
+      "id": "MVT",
+      "sample": "polybench_mvt",
+      "group": "B",
+      "role": "control",
+      "profiles": {
+        "smoke": [
+          "-size=64"
+        ],
+        "small": [
+          "-size=128"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed"
+    },
+    {
+      "id": "3MM",
+      "sample": "polybench_3mm",
+      "group": "B",
+      "role": "control",
+      "profiles": {
+        "smoke": [
+          "-size=64"
+        ],
+        "small": [
+          "-size=128"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed"
+    },
+    {
+      "id": "GEMM",
+      "sample": "polybench_gemm",
+      "group": "B",
+      "role": "control",
+      "profiles": {
+        "smoke": [
+          "-size=64"
+        ],
+        "small": [
+          "-size=128"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed"
+    },
+    {
+      "id": "lud",
+      "sample": "rodinia_lud",
+      "group": "C",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-size=32"
+        ],
+        "small": [
+          "-size=128"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed"
+    },
+    {
+      "id": "gaussian",
+      "sample": "rodinia_gaussian",
+      "group": "C",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-size=32"
+        ],
+        "small": [
+          "-size=64"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed"
+    },
+    {
+      "id": "pathfinder",
+      "sample": "rodinia_pathfinder",
+      "group": "C",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-rows=16",
+          "-cols=128"
+        ],
+        "small": [
+          "-rows=64",
+          "-cols=512"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed"
+    },
+    {
+      "id": "backprop",
+      "sample": "rodinia_backprop",
+      "group": "C",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-input=64",
+          "-hidden=32",
+          "-output=4"
+        ],
+        "small": [
+          "-input=256",
+          "-hidden=64",
+          "-output=4"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed"
+    },
+    {
+      "id": "gramschmidt",
+      "sample": "polybench_gramschmidt",
+      "group": "C",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-m=32",
+          "-n=16"
+        ],
+        "small": [
+          "-m=128",
+          "-n=64"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed"
+    },
+    {
+      "id": "hotspot",
+      "sample": "rodinia_hotspot",
+      "group": "C",
+      "role": "negative",
+      "profiles": {
+        "smoke": [
+          "-size=32",
+          "-iterations=2"
+        ],
+        "small": [
+          "-size=128",
+          "-iterations=4"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed"
+    },
+    {
+      "id": "srad",
+      "sample": "rodinia_srad",
+      "group": "C",
+      "role": "negative",
+      "profiles": {
+        "smoke": [
+          "-size=32",
+          "-iterations=2"
+        ],
+        "small": [
+          "-size=128",
+          "-iterations=4"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed"
+    },
+    {
+      "id": "jacobi2d",
+      "sample": "polybench_jacobi2d",
+      "group": "C",
+      "role": "negative",
+      "profiles": {
+        "smoke": [
+          "-size=32",
+          "-tsteps=2"
+        ],
+        "small": [
+          "-size=128",
+          "-tsteps=4"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed"
+    },
+    {
+      "id": "nbody",
+      "sample": "nbody",
+      "group": "C",
+      "role": "negative",
+      "profiles": {
+        "smoke": [
+          "-particles=256",
+          "-iter=1"
+        ],
+        "small": [
+          "-particles=1024",
+          "-iter=2"
+        ]
+      },
+      "arch": "gcn3",
+      "gpu": "r9nano",
+      "verify_kind": "passed"
+    }
+  ]
+}

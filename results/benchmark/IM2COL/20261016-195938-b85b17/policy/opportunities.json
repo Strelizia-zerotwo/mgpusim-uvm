@@ -1,0 +1,35 @@
+{
+  "scope": "unlimited INV shadow, kernel-barrier schedule, written 32B request masks, actual fixed homes; not online hardware or timing",
+  "dirty_definition": "written-request-mask",
+  "changed_bytes_available": false,
+  "epochs": 1,
+  "kernel_count": 1,
+  "active_gpus": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "cold_copies": 3,
+  "invalidations": 0,
+  "refills": 0,
+  "refill_per_invalidation": null,
+  "dirty_fraction_p50": null,
+  "dirty_fraction_histogram": {
+    "0": 0,
+    "(0,0.1]": 0,
+    "(0.1,0.25]": 0,
+    "(0.25,0.5]": 0,
+    "(0.5,0.9]": 0,
+    "(0.9,1]": 0
+  },
+  "merged_write_epochs_p50": null,
+  "reread_distance_p50": null,
+  "peak_stale_bytes": 0,
+  "peak_replica_bytes": 12288,
+  "stale_copies_at_end": 0,
+  "right_censoring": "final invalidations may have no later read within the captured run",
+  "managed_home_bytes": 12288,
+  "peak_stale_over_home_footprint": 0.0,
+  "refill_events": []
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "selection_scope": "whole completed application; core INV/retain/adaptive candidates",
+    "link_ns": 200,
+    "fault_ns": 900,
+    "bandwidth_gbs": 300,
+    "repeat": 0,
+    "selected_policy": "i1-adaptive",
+    "selected_case": "i1-adaptive_link-200ns_fault-900ns_repeat-0",
+    "application_us": 67.339,
+    "inv_application_us": 67.339,
+    "candidate_cases": [
+      "inv_link-200ns_fault-900ns_repeat-0",
+      "retain_link-200ns_fault-900ns_repeat-0",
+      "i1-adaptive_link-200ns_fault-900ns_repeat-0"
+    ]
+  }
+]

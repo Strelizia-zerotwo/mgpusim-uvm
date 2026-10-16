@@ -1,0 +1,20 @@
+{
+  "id": "FFT",
+  "sample": "fft",
+  "group": "A",
+  "role": "characterize",
+  "profiles": {
+    "smoke": [
+      "-bytes=65536",
+      "-passes=1"
+    ],
+    "small": [
+      "-bytes=1048576",
+      "-passes=2"
+    ]
+  },
+  "arch": "gcn3",
+  "gpu": "r9nano",
+  "verify_kind": "passed",
+  "core_replica": true
+}

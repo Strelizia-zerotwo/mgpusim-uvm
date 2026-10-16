@@ -1,0 +1,76 @@
+version: "2"
+
+linters:
+  default: all
+  # The checked-in Akita fix is required for correct multi-GPU RDMA routing.
+  exclusions:
+    rules:
+      - path: '^go\.mod$'
+        linters:
+          - gomoddirectives
+        text: '^local replacement are not allowed: github\.com/sarchlab/akita/v5$'
+  settings:
+    govet:
+      disable:
+        - inline
+  disable:
+    - copyloopvar
+    - cyclop
+    - depguard
+    - dupl
+    - dupword
+    - err113
+    - exhaustive
+    - exhaustruct
+    - exhaustruct_v5
+    - forbidigo
+    - forcetypeassert
+    - funcorder
+    - ginkgolinter
+    - gochecknoglobals
+    - gochecknoinits
+    - goconst
+    - gocritic
+    - godot
+    - godox
+    - gosec
+    - iface
+    - inamedparam
+    - interfacebloat
+    - intrange
+    - ireturn
+    - maintidx
+    - mnd
+    - nestif
+    - nlreturn
+    - nolintlint
+    - nonamedreturns
+    - paralleltest
+    - perfsprint
+    - recvcheck
+    - revive
+    - rowserrcheck
+    - sqlclosecheck
+    - staticcheck
+    - tagalign
+    - tagliatelle
+    - testifylint
+    - testpackage
+    - unparam
+    - varnamelen
+    - wastedassign
+    - wrapcheck
+    - wsl
+    - errcheck
+    - errorlint
+    - usestdlibvars
+    - predeclared
+    - unused
+    - embeddedstructfieldcheck
+    - godoclint
+    - gomodguard
+    - modernize
+    - noinlineerr
+    - prealloc
+    - wsl_v5
+

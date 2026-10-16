@@ -1,0 +1,91 @@
+{
+  "revision": "replica-owner-v3",
+  "fabric_model": "destination-ready-v2",
+  "date": "2026-10-16",
+  "source": "/home/only/projects/mgpusim-uvm/mgpusim",
+  "experiments": {
+    "owner-jacobi": {
+      "path": "results/replica-recovery/parallel-stencil/2026-10-16_16-50-13_v3_45d399",
+      "cases": 20,
+      "managed_pages": 140,
+      "active_page_epochs": 552,
+      "fallback_page_epochs": 0,
+      "mapping_installs": 576,
+      "tlb_flush_epochs": 4,
+      "mapping_faults_zero": true,
+      "masks_match": true,
+      "source_archive_matches_hashes": true,
+      "current_source_diff": [
+        "mgpusim/amd/benchmarks/amdappsdk/floydwarshall/parallel.go",
+        "mgpusim/amd/timing/replica/repair.go"
+      ],
+      "min_four_gpu_overlap_us": 12.847
+    },
+    "gpu1-placement-control": {
+      "path": "results/replica-recovery/parallel-stencil/2026-10-16_16-54-10_v3_ace1ee",
+      "cases": 2,
+      "managed_pages": 140,
+      "active_page_epochs": 552,
+      "fallback_page_epochs": 0,
+      "mapping_installs": 576,
+      "tlb_flush_epochs": 4,
+      "mapping_faults_zero": true,
+      "masks_match": true,
+      "source_archive_matches_hashes": true,
+      "current_source_diff": [],
+      "min_four_gpu_overlap_us": 12.536
+    },
+    "owner-overlap-repeat": {
+      "path": "results/replica-recovery/parallel-stencil-overlap/2026-10-16_16-52-56_v3_f74c31",
+      "cases": 8,
+      "managed_pages": 70,
+      "active_page_epochs": 304,
+      "fallback_page_epochs": 0,
+      "mapping_installs": 304,
+      "tlb_flush_epochs": 6,
+      "mapping_faults_zero": true,
+      "masks_match": true,
+      "source_archive_matches_hashes": true,
+      "current_source_diff": [],
+      "min_four_gpu_overlap_us": 1.235
+    },
+    "legacy-repair-regression": {
+      "path": "results/replica-recovery/parallel-stencil-overlap/2026-10-16_16-55-59_v3_dbdbcf",
+      "cases": 8,
+      "managed_pages": 69,
+      "active_page_epochs": 302,
+      "fallback_page_epochs": 6,
+      "mapping_installs": 320,
+      "tlb_flush_epochs": 6,
+      "mapping_faults_zero": true,
+      "masks_match": true,
+      "source_archive_matches_hashes": true,
+      "current_source_diff": [],
+      "min_four_gpu_overlap_us": 1.237
+    },
+    "fallback": {
+      "path": "results/replica-recovery/probe/2026-10-16_16-54-10_v3_8f04dd",
+      "cases": 4,
+      "managed_pages": 1,
+      "active_page_epochs": 11,
+      "fallback_page_epochs": 2,
+      "mapping_installs": 30,
+      "tlb_flush_epochs": 11,
+      "mapping_faults_zero": true,
+      "masks_match": true,
+      "source_archive_matches_hashes": true,
+      "current_source_diff": [],
+      "min_four_gpu_overlap_us": 0.0
+    }
+  },
+  "fw_record_only": "results/replica-recovery/parallel-fw/2026-10-16_16-50-13_v3_6a7df9",
+  "offline_screen": "results/replica-screen-v3/screen.json",
+  "verification": "results/replica-owner-v3/verification.json",
+  "race_tests": "results/owner-v3-race-tests.log",
+  "race_replay": "results/replica-owner-v3/race-replay/run.log",
+  "lint": "results/owner-v3-lint.log",
+  "demand_regression": "results/uvm-validation-20261016-165557/validation.json",
+  "oracle_definition": "minimum actual full-application time among executed inv/i1/i1-full-stale/i1-adaptive; INV fallback included; not per-event optimal scheduling",
+  "scope": "static page-owner placement, oracle barrier replication, global cache barriers; two Jacobi schedules plus correctness regressions; FW recorded and screened only",
+  "source_note": "Every run contains source-archive.tar.gz matching source-sha256.json. Two functions were extracted to satisfy lint after the initial owner/FW recording; no policy or arithmetic change."
+}

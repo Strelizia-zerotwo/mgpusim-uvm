@@ -1,0 +1,34 @@
+[
+  {
+    "path": "amd/benchmarks/dnn/training/corevalidate.go",
+    "sha256": "38994ec65a14e29e9f8f9f1dfe550cf6acbdaf50be3b0b4c0b9d21f061eb9017"
+  },
+  {
+    "path": "amd/benchmarks/dnn/training_benchmarks/lenet/benchmark.go",
+    "sha256": "1b8daa3ec028faa168661ae7092c4f5db9df4bc875c294929a06151205887152"
+  },
+  {
+    "path": "amd/benchmarks/dnn/training_benchmarks/vgg16/benchmark.go",
+    "sha256": "30f6698be622baebdfe7bd13e20de4cbfd0aed45d638749f797ac59e523f75bb"
+  },
+  {
+    "path": "amd/samples/runner/core_replica.go",
+    "sha256": "f8e50e2d3e80114474dcf12185f6858a80fe6e4c40cf5bf18e8b5b3c989c5278"
+  },
+  {
+    "path": "amd/samples/vgg16/main.go",
+    "sha256": "45e0d207d976092c818e8aef74f3802ac5a91bfb1677a11591cc804743fffb8a"
+  },
+  {
+    "path": "amd/timing/replica/dynamic.go",
+    "sha256": "2dc51d22ca77327b5d8b4d357103d9f12243ae8e270f954c2cab01e40088a163"
+  },
+  {
+    "path": "amd/timing/replica/plan.go",
+    "sha256": "52990bfcb32e9b80f8384051d53ec6fcc74e5d4c0fa702e2fc02daa286f8b3c0"
+  },
+  {
+    "path": "amd/timing/replica/session.go",
+    "sha256": "eb3dc9267e960a649771270d2d883b045cb32111888f30759933604e8e0e21e7"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "adapter": "core-kernel-barrier-v1",
+  "scheduler": "balanced contiguous workgroups on four physical GPUs",
+  "placement": "static contiguous page partitions per allocation; non-owner writers allowed",
+  "dnn_input": null,
+  "dnn_parallelism": null
+}

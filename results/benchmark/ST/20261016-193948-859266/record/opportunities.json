@@ -1,0 +1,156 @@
+{
+  "scope": "unlimited INV shadow, kernel-barrier schedule, written 32B request masks, actual fixed homes; not online hardware or timing",
+  "dirty_definition": "written-request-mask",
+  "changed_bytes_available": false,
+  "epochs": 4,
+  "kernel_count": null,
+  "active_gpus": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "cold_copies": 12,
+  "invalidations": 18,
+  "refills": 12,
+  "refill_per_invalidation": 0.6666666666666666,
+  "dirty_fraction_p50": 0.97265625,
+  "dirty_fraction_histogram": {
+    "0": 0,
+    "(0,0.1]": 0,
+    "(0.1,0.25]": 0,
+    "(0.25,0.5]": 0,
+    "(0.5,0.9]": 0,
+    "(0.9,1]": 12
+  },
+  "merged_write_epochs_p50": 1.0,
+  "reread_distance_p50": 1.0,
+  "peak_stale_bytes": 24576,
+  "peak_replica_bytes": 49152,
+  "stale_copies_at_end": 6,
+  "right_censoring": "final invalidations may have no later read within the captured run",
+  "managed_home_bytes": 573440,
+  "peak_stale_over_home_footprint": 0.04285714285714286,
+  "refill_events": [
+    {
+      "page": 73728,
+      "gpu": 2,
+      "epoch": 2,
+      "dirty_sectors": 124,
+      "required_dirty_sectors": 33,
+      "dirty_fraction": 0.96875,
+      "merged_write_epochs": 1,
+      "reread_distance": 1
+    },
+    {
+      "page": 77824,
+      "gpu": 1,
+      "epoch": 2,
+      "dirty_sectors": 125,
+      "required_dirty_sectors": 33,
+      "dirty_fraction": 0.9765625,
+      "merged_write_epochs": 1,
+      "reread_distance": 1
+    },
+    {
+      "page": 143360,
+      "gpu": 3,
+      "epoch": 2,
+      "dirty_sectors": 124,
+      "required_dirty_sectors": 33,
+      "dirty_fraction": 0.96875,
+      "merged_write_epochs": 1,
+      "reread_distance": 1
+    },
+    {
+      "page": 147456,
+      "gpu": 2,
+      "epoch": 2,
+      "dirty_sectors": 125,
+      "required_dirty_sectors": 33,
+      "dirty_fraction": 0.9765625,
+      "merged_write_epochs": 1,
+      "reread_distance": 1
+    },
+    {
+      "page": 212992,
+      "gpu": 4,
+      "epoch": 2,
+      "dirty_sectors": 124,
+      "required_dirty_sectors": 33,
+      "dirty_fraction": 0.96875,
+      "merged_write_epochs": 1,
+      "reread_distance": 1
+    },
+    {
+      "page": 217088,
+      "gpu": 3,
+      "epoch": 2,
+      "dirty_sectors": 125,
+      "required_dirty_sectors": 33,
+      "dirty_fraction": 0.9765625,
+      "merged_write_epochs": 1,
+      "reread_distance": 1
+    },
+    {
+      "page": 360448,
+      "gpu": 2,
+      "epoch": 3,
+      "dirty_sectors": 124,
+      "required_dirty_sectors": 33,
+      "dirty_fraction": 0.96875,
+      "merged_write_epochs": 1,
+      "reread_distance": 1
+    },
+    {
+      "page": 364544,
+      "gpu": 1,
+      "epoch": 3,
+      "dirty_sectors": 125,
+      "required_dirty_sectors": 33,
+      "dirty_fraction": 0.9765625,
+      "merged_write_epochs": 1,
+      "reread_distance": 1
+    },
+    {
+      "page": 430080,
+      "gpu": 3,
+      "epoch": 3,
+      "dirty_sectors": 124,
+      "required_dirty_sectors": 33,
+      "dirty_fraction": 0.96875,
+      "merged_write_epochs": 1,
+      "reread_distance": 1
+    },
+    {
+      "page": 434176,
+      "gpu": 2,
+      "epoch": 3,
+      "dirty_sectors": 125,
+      "required_dirty_sectors": 33,
+      "dirty_fraction": 0.9765625,
+      "merged_write_epochs": 1,
+      "reread_distance": 1
+    },
+    {
+      "page": 499712,
+      "gpu": 4,
+      "epoch": 3,
+      "dirty_sectors": 124,
+      "required_dirty_sectors": 33,
+      "dirty_fraction": 0.96875,
+      "merged_write_epochs": 1,
+      "reread_distance": 1
+    },
+    {
+      "page": 503808,
+      "gpu": 3,
+      "epoch": 3,
+      "dirty_sectors": 125,
+      "required_dirty_sectors": 33,
+      "dirty_fraction": 0.9765625,
+      "merged_write_epochs": 1,
+      "reread_distance": 1
+    }
+  ]
+}

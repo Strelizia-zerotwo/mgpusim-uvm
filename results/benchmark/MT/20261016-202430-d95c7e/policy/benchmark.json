@@ -1,0 +1,18 @@
+{
+  "id": "MT",
+  "sample": "matrixtranspose",
+  "group": "A",
+  "role": "control",
+  "profiles": {
+    "smoke": [
+      "-width=256"
+    ],
+    "small": [
+      "-width=512"
+    ]
+  },
+  "arch": "gcn3",
+  "gpu": "r9nano",
+  "verify_kind": "passed",
+  "core_replica": true
+}

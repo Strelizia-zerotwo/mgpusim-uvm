@@ -1,0 +1,78 @@
+2026/10/16 20:14:32 /home/only/projects/mgpusim-uvm/mgpusim/amd/benchmarks/dnn/gputraining/dataparallelism.go:39: Epoch 0
+2026/10/16 20:14:32 /home/only/projects/mgpusim-uvm/mgpusim/amd/benchmarks/dnn/gputraining/dataparallelism.go:49: Batch 0
+Im2Col input [1 1 28 28], kernel [5 5], stride [1 1], padding [2 2], dilation [1 1], output [25 784]
+Im2Col verified.
+Repeat verified.
+Transpose verified.
+Gemm verified.
+Transpose verified.
+ReluForward verified.
+AvgPoolingForward verified.
+Im2Col input [1 6 14 14], kernel [5 5], stride [1 1], padding [0 0], dilation [1 1], output [150 100]
+Im2Col verified.
+Repeat verified.
+Transpose verified.
+Gemm verified.
+Transpose verified.
+ReluForward verified.
+AvgPoolingForward verified.
+Repeat verified.
+Gemm verified.
+ReluForward verified.
+Repeat verified.
+Gemm verified.
+ReluForward verified.
+Repeat verified.
+Gemm verified.
+Sum verified.
+Softmax verified.
+CrossEntropy verified.
+SoftmaxCrossEntropyDerivative verified.
+2026/10/16 20:15:08 /home/only/projects/mgpusim-uvm/mgpusim/amd/benchmarks/dnn/gputraining/dataparallelism.go:130: loss: 1.759868, accuracy 0.000000
+Transpose verified.
+Gemm verified.
+Sum verified.
+Transpose verified.
+Gemm verified.
+ReluBackward verified.
+Transpose verified.
+Gemm verified.
+Sum verified.
+Transpose verified.
+Gemm verified.
+ReluBackward verified.
+Transpose verified.
+Gemm verified.
+Sum verified.
+Transpose verified.
+Gemm verified.
+AvgPoolingBackward verified.
+ReluBackward verified.
+Transpose verified.
+Transpose verified.
+Im2Col input [6 1 14 14], kernel [10 10], stride [1 1], padding [0 0], dilation [1 1], output [100 150]
+Im2Col verified.
+Gemm verified.
+Sum verified.
+Dilate verified.
+Im2Col input [1 16 10 10], kernel [5 5], stride [1 1], padding [4 4], dilation [1 1], output [400 196]
+Im2Col verified.
+Rotate180 verified.
+Transpose verified.
+Gemm verified.
+Transpose verified.
+AvgPoolingBackward verified.
+ReluBackward verified.
+Transpose verified.
+Transpose verified.
+Im2Col input [1 1 28 28], kernel [28 28], stride [1 1], padding [2 2], dilation [1 1], output [784 25]
+Im2Col verified.
+Gemm verified.
+Sum verified.
+ElementWiseMul verified.
+ElementWiseMul verified.
+ElementWiseMul verified.
+ElementWiseMul verified.
+ElementWiseMul verified.
+2026/10/16 20:17:46 /home/only/projects/mgpusim-uvm/mgpusim/amd/benchmarks/dnn/training_benchmarks/lenet/benchmark.go:179: Passed! independent CPU training and parameter validation
+Passed! core replica execution and requested verification completed

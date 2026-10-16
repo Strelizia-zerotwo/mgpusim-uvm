@@ -1,0 +1,1 @@
+2026/10/16 19:23:59 /home/only/projects/mgpusim-uvm/mgpusim/amd/benchmarks/shoc/stencil2d/parallel.go:156: Passed! parallel Jacobi 258x258, 4 GPUs, 2 iterations, halo overlap=false

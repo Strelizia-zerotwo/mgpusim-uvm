@@ -1,0 +1,26 @@
+{
+  "argv": [
+    "/home/only/projects/mgpusim-uvm/results/benchmark/_suites/20261016-201500-a5a313/bin/vgg16",
+    "-timing",
+    "-disable-rtm",
+    "-use-unified-memory",
+    "-vm-mode=demand",
+    "-verify",
+    "-replica-core",
+    "-unified-gpus=1,2,3,4",
+    "-report-all",
+    "-metric-file-name=metrics",
+    "-core-replica-plan-out=observed-plan.json",
+    "-core-replica-stats=stats.json",
+    "-arch=gcn3",
+    "-gpu=r9nano",
+    "-page-bytes=4096",
+    "-epoch=1",
+    "-max-batch-per-epoch=1",
+    "-batch-size=1",
+    "-input-size=32",
+    "-dnn-synthetic-samples=1",
+    "-core-replica-config=/home/only/projects/mgpusim-uvm/results/benchmark/VGG16/20261016-201500-a5a313/record/record-config.json"
+  ],
+  "cwd": "/home/only/projects/mgpusim-uvm/results/benchmark/VGG16/20261016-201500-a5a313/record/record"
+}

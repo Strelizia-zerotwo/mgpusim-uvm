@@ -1,0 +1,1522 @@
+{
+  "adapter": "core-kernel-barrier-v1",
+  "core_allocations": [
+    {
+      "base": 4096,
+      "bytes": 64
+    },
+    {
+      "base": 8192,
+      "bytes": 262144
+    },
+    {
+      "base": 270336,
+      "bytes": 262144
+    },
+    {
+      "base": 532480,
+      "bytes": 64
+    }
+  ],
+  "page_ownership": [
+    {
+      "page": 4096,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 8192,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 12288,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 16384,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 20480,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 24576,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 28672,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 32768,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 36864,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 40960,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 45056,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 49152,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 53248,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 57344,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 61440,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 65536,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 69632,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 73728,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 77824,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 81920,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 86016,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 90112,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 94208,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 98304,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 102400,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 106496,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 110592,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 114688,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 118784,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 122880,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 126976,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 131072,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 135168,
+      "home_gpu": 2,
+      "readers": [
+        2,
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 139264,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 143360,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 147456,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 151552,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 155648,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 159744,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 163840,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 167936,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 172032,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 176128,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 180224,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 184320,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 188416,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 192512,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 196608,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 200704,
+      "home_gpu": 3,
+      "readers": [
+        3,
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 204800,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 208896,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 212992,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 217088,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 221184,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 225280,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 229376,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 233472,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 237568,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 241664,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 245760,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 249856,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 253952,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 258048,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 262144,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 266240,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 270336,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 274432,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 278528,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 282624,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 286720,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 290816,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 294912,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 299008,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 303104,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 307200,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 311296,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 315392,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 319488,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 323584,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 327680,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 331776,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 335872,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 339968,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 344064,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 348160,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 352256,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 356352,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 360448,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 364544,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 368640,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 372736,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 376832,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 380928,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 385024,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 389120,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 393216,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 397312,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 401408,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 405504,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 409600,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 413696,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 417792,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 421888,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 425984,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 430080,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 434176,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 438272,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 442368,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 446464,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 450560,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 454656,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 458752,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 462848,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 466944,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 471040,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 475136,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 479232,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 483328,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 487424,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 491520,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 495616,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 499712,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 503808,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 507904,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 512000,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 516096,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 520192,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 524288,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 528384,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 532480,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    }
+  ],
+  "home_pages_by_gpu": {
+    "1": 34,
+    "2": 32,
+    "3": 32,
+    "4": 32
+  },
+  "owner_read_transactions": 84947,
+  "non_owner_read_transactions": 12333,
+  "owner_write_transactions": 4096,
+  "non_owner_write_transactions": 0,
+  "replica_read_transactions": 12333,
+  "remote_home_read_transactions": 0,
+  "copy_bytes_by_role": {
+    "read-only": 24576
+  },
+  "copy_faults_by_role": {
+    "read-only": 6
+  },
+  "recovery_wait_ps_by_role": {
+    "read-only": 1154828
+  },
+  "fabric_model": "destination-ready-v2",
+  "managed_pages": 130,
+  "epoch_activity": [
+    {
+      "name": "kernel/000001",
+      "start_ps": 3447828,
+      "end_ps": 18529000,
+      "instructions_by_gpu": {
+        "1": 100352,
+        "2": 100352,
+        "3": 100352,
+        "4": 100352
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11561172,
+        "1": 25000,
+        "2": 4000,
+        "3": 4000,
+        "4": 3487000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    }
+  ],
+  "model_revision": "replica-owner-v3",
+  "oracle_mapping_preinstall": true,
+  "mapping_installs": 136,
+  "tlb_flush_epochs": 1,
+  "mapping_faults": 0,
+  "fallback_page_epochs": 0,
+  "multiple_writer_page_epochs": 0,
+  "read_write_overlap_page_epochs": 0,
+  "fallback_gpu_page_accesses": 0,
+  "fallback_read_transactions": 0,
+  "fallback_write_transactions": 0,
+  "fallback_events": null,
+  "write_epoch_new_copies": 0,
+  "write_epoch_new_copy_bytes": 0,
+  "write_epoch_new_copy_faults": 0,
+  "write_epoch_existing_replica_reads": 0,
+  "write_epoch_new_replica_reads": 0,
+  "recovery_events": [
+    {
+      "home_gpu": 1,
+      "page_role": "read-only",
+      "repair_kind": "retain",
+      "epoch": 0,
+      "page": 69632,
+      "gpu": 2,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 2293000,
+      "due_ps": 3406707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "read-only",
+      "repair_kind": "retain",
+      "epoch": 0,
+      "page": 135168,
+      "gpu": 3,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 2293000,
+      "due_ps": 3406707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "read-only",
+      "repair_kind": "retain",
+      "epoch": 0,
+      "page": 200704,
+      "gpu": 4,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 2293000,
+      "due_ps": 3406707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "read-only",
+      "repair_kind": "retain",
+      "epoch": 0,
+      "page": 532480,
+      "gpu": 2,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 2293000,
+      "due_ps": 3420414,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "read-only",
+      "repair_kind": "retain",
+      "epoch": 0,
+      "page": 532480,
+      "gpu": 3,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 2293000,
+      "due_ps": 3434121,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "read-only",
+      "repair_kind": "retain",
+      "epoch": 0,
+      "page": 532480,
+      "gpu": 4,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 2293000,
+      "due_ps": 3447828,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    }
+  ],
+  "s4_inv_replica_targets": 0,
+  "write_page_epochs": 64,
+  "versioned_pages": 64,
+  "config": {
+    "transfer_gran_bytes": 32,
+    "policy": "retain",
+    "page_bytes": 4096,
+    "sector_bytes": 32,
+    "fault_ns": 900,
+    "fault_slots": 16,
+    "bandwidth_gbs": 300,
+    "link_ns": 200,
+    "replica_pages_per_gpu": 0,
+    "metadata_ns": 0,
+    "shootdown_ns": 0
+  },
+  "epochs": 1,
+  "kernel_ps": 15081172,
+  "host_transfer_ps": 1602000,
+  "validation_sha256": "6e6211491eb6a87e6095efbfdcf0bb082395bf3ba1cac57cf12bd7a3ce0dba96",
+  "kernel_count": 1,
+  "host_write_epochs": 0,
+  "peak_live_managed_pages": 130,
+  "retired_managed_pages": 0,
+  "application_ps": 18488000,
+  "barrier_flush_ps": 650000,
+  "recovery_wait_ps": 1154828,
+  "copy_faults": 6,
+  "cold_copies": 6,
+  "refills": 0,
+  "repairs": 0,
+  "copy_bytes": 24576,
+  "invalidations": 0,
+  "evictions": 0,
+  "peak_replica_pages": 6,
+  "peak_stale_pages": 0,
+  "retained_pages": 6,
+  "s2_clean_transactions": 0,
+  "s3_preexisting_replica_read_transactions": 0,
+  "s3_preexisting_replica_read_sectors": 0,
+  "s3_conflicting_read_sectors": 0,
+  "repair_granularities": {},
+  "fabric_bytes": 24672,
+  "fabric_messages": 6
+}

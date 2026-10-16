@@ -1,0 +1,19 @@
+[
+  {
+    "page": 4096,
+    "home_gpu": 1,
+    "readers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "writers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "role": "non-owner-writer"
+  }
+]

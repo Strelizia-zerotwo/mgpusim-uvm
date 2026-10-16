@@ -1,0 +1,10 @@
+[
+  {
+    "path": "amd/benchmarks/dnn/layers/conv2d.go",
+    "sha256": "08829f690eb44da2633271ead74fc9e0aa3e47cf4214474601253e17801e2fe5"
+  },
+  {
+    "path": "amd/benchmarks/dnn/layers/core_padding_test.go",
+    "sha256": "06e27b5acf7b65376c937b8e8d0700ab8f2f43e71f216794c726073c677de394"
+  }
+]

@@ -1,0 +1,131 @@
+{
+  "format": 1,
+  "started_at": "2026-10-16T20:57:21.231310+08:00",
+  "argv": [
+    "runs/run_benchmarks.py",
+    "run",
+    "--mode",
+    "policy",
+    "--bench",
+    "SC,MT",
+    "--profile",
+    "small"
+  ],
+  "arguments": {
+    "action": "run",
+    "root": "/home/only/projects/mgpusim-uvm",
+    "bench": "SC,MT",
+    "mode": "policy",
+    "profile": "small",
+    "include_slow_dnn": false,
+    "dnn_input": "synthetic",
+    "mnist_data_folder": null,
+    "imagenet_data_folder": null,
+    "gpus": "1,2,3,4",
+    "policies": [
+      "inv",
+      "retain",
+      "i1-adaptive"
+    ],
+    "link_ns": "200",
+    "fault_ns": "900",
+    "bandwidth_gbs": 300,
+    "page_bytes": 4096,
+    "replica_pages_per_gpu": 0,
+    "repeats": 1,
+    "timeout": 1800,
+    "build_timeout": 600,
+    "dry_run": false,
+    "suite": null,
+    "gpu_ids": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "links": [
+      200
+    ],
+    "faults": [
+      900
+    ]
+  },
+  "benchmark_directories": [
+    "/home/only/projects/mgpusim-uvm/results/benchmark/SC/20261016-205721-aae9b4/policy",
+    "/home/only/projects/mgpusim-uvm/results/benchmark/MT/20261016-205721-aae9b4/policy"
+  ],
+  "audit": {
+    "source": "/home/only/projects/mgpusim-uvm/mgpusim",
+    "samples": {
+      "MM": true,
+      "C2D": true,
+      "ST": true,
+      "FIR": true,
+      "IM2COL": true,
+      "BFS": true,
+      "SC": true,
+      "MT": true,
+      "FFT": true,
+      "PR": true,
+      "BS": true,
+      "LeNet": true,
+      "VGG16": true,
+      "KM": true,
+      "SPMV": true,
+      "FW": true,
+      "AES": true,
+      "MVT": true,
+      "3MM": true,
+      "GEMM": true,
+      "lud": true,
+      "gaussian": true,
+      "pathfinder": true,
+      "backprop": true,
+      "gramschmidt": true,
+      "hotspot": true,
+      "srad": true,
+      "jacobi2d": true,
+      "nbody": true
+    },
+    "replica_sample": true,
+    "replica_runner": true,
+    "old_memtrace": false,
+    "adapters": {
+      "MM": "core-kernel-barrier-v1",
+      "C2D": "core-kernel-barrier-v1",
+      "ST": "core-kernel-barrier-v1",
+      "FIR": "core-kernel-barrier-v1",
+      "IM2COL": "core-kernel-barrier-v1",
+      "BFS": "core-kernel-barrier-v1",
+      "SC": "core-kernel-barrier-v1",
+      "MT": "core-kernel-barrier-v1",
+      "FFT": "core-kernel-barrier-v1",
+      "PR": "core-kernel-barrier-v1",
+      "BS": "core-kernel-barrier-v1",
+      "LeNet": "core-kernel-barrier-v1",
+      "VGG16": "core-kernel-barrier-v1",
+      "KM": "core-kernel-barrier-v1",
+      "SPMV": null,
+      "FW": "parallel-fw",
+      "AES": null,
+      "MVT": null,
+      "3MM": null,
+      "GEMM": null,
+      "lud": null,
+      "gaussian": null,
+      "pathfinder": null,
+      "backprop": null,
+      "gramschmidt": null,
+      "hotspot": null,
+      "srad": null,
+      "jacobi2d": null,
+      "nbody": null
+    },
+    "scope": "stock/shared and demand are platform checks; only explicit adapters support fair policy timing"
+  },
+  "time_units": {
+    "application_ps": "picoseconds",
+    "application_us": "microseconds",
+    "wall_s": "host seconds"
+  }
+}

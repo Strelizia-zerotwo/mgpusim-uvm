@@ -1,0 +1,1587 @@
+{
+  "adapter": "core-kernel-barrier-v1",
+  "core_allocations": [
+    {
+      "base": 4096,
+      "bytes": 32768
+    },
+    {
+      "base": 36864,
+      "bytes": 32768
+    },
+    {
+      "base": 69632,
+      "bytes": 4096
+    },
+    {
+      "base": 73728,
+      "bytes": 128
+    }
+  ],
+  "page_ownership": [
+    {
+      "page": 4096,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 8192,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 12288,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 16384,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 20480,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 24576,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 28672,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 32768,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 36864,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 40960,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 45056,
+      "home_gpu": 2,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 49152,
+      "home_gpu": 2,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 53248,
+      "home_gpu": 3,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 57344,
+      "home_gpu": 3,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 61440,
+      "home_gpu": 4,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 65536,
+      "home_gpu": 4,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 69632,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 73728,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-written-shared-read"
+    }
+  ],
+  "home_pages_by_gpu": {
+    "1": 6,
+    "2": 4,
+    "3": 4,
+    "4": 4
+  },
+  "owner_read_transactions": 5376,
+  "non_owner_read_transactions": 3840,
+  "owner_write_transactions": 162,
+  "non_owner_write_transactions": 480,
+  "replica_read_transactions": 3840,
+  "remote_home_read_transactions": 0,
+  "copy_bytes_by_role": {
+    "non-owner-writer": 98304,
+    "owner-written-shared-read": 24576
+  },
+  "copy_faults_by_role": {
+    "non-owner-writer": 24,
+    "owner-written-shared-read": 6
+  },
+  "recovery_wait_ps_by_role": {
+    "mixed": 2109656,
+    "owner-written-shared-read": 1141121
+  },
+  "fabric_model": "destination-ready-v2",
+  "managed_pages": 18,
+  "epoch_activity": [
+    {
+      "name": "kernel/000001",
+      "start_ps": 744000,
+      "end_ps": 17466000,
+      "instructions_by_gpu": {
+        "1": 708,
+        "2": 708,
+        "3": 708,
+        "4": 708
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11543000,
+        "1": 4000,
+        "2": 21000,
+        "3": 19000,
+        "4": 5135000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "host-write/000001",
+      "start_ps": 18766000,
+      "end_ps": 19378000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 612000
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "kernel/000002",
+      "start_ps": 21961656,
+      "end_ps": 40793000,
+      "instructions_by_gpu": {
+        "1": 2820,
+        "2": 2820,
+        "3": 2820,
+        "4": 2820
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 12300344,
+        "1": 82000,
+        "2": 83000,
+        "3": 532000,
+        "4": 5834000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "host-write/000002",
+      "start_ps": 42019000,
+      "end_ps": 42631000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 612000
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "kernel/000003",
+      "start_ps": 44246121,
+      "end_ps": 63078000,
+      "instructions_by_gpu": {
+        "1": 2820,
+        "2": 2820,
+        "3": 2820,
+        "4": 2820
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 12300879,
+        "1": 83000,
+        "2": 84000,
+        "3": 530000,
+        "4": 5834000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    }
+  ],
+  "model_revision": "replica-owner-v3",
+  "oracle_mapping_preinstall": true,
+  "mapping_installs": 122,
+  "tlb_flush_epochs": 5,
+  "mapping_faults": 0,
+  "fallback_page_epochs": 10,
+  "multiple_writer_page_epochs": 10,
+  "read_write_overlap_page_epochs": 0,
+  "fallback_gpu_page_accesses": 40,
+  "fallback_read_transactions": 0,
+  "fallback_write_transactions": 640,
+  "fallback_events": [
+    {
+      "epoch": 0,
+      "page": 36864,
+      "multiple_writers": true,
+      "read_write_overlap": false
+    },
+    {
+      "epoch": 0,
+      "page": 40960,
+      "multiple_writers": true,
+      "read_write_overlap": false
+    },
+    {
+      "epoch": 0,
+      "page": 45056,
+      "multiple_writers": true,
+      "read_write_overlap": false
+    },
+    {
+      "epoch": 0,
+      "page": 49152,
+      "multiple_writers": true,
+      "read_write_overlap": false
+    },
+    {
+      "epoch": 0,
+      "page": 53248,
+      "multiple_writers": true,
+      "read_write_overlap": false
+    },
+    {
+      "epoch": 0,
+      "page": 57344,
+      "multiple_writers": true,
+      "read_write_overlap": false
+    },
+    {
+      "epoch": 0,
+      "page": 61440,
+      "multiple_writers": true,
+      "read_write_overlap": false
+    },
+    {
+      "epoch": 0,
+      "page": 65536,
+      "multiple_writers": true,
+      "read_write_overlap": false
+    },
+    {
+      "epoch": 2,
+      "page": 69632,
+      "multiple_writers": true,
+      "read_write_overlap": false
+    },
+    {
+      "epoch": 4,
+      "page": 69632,
+      "multiple_writers": true,
+      "read_write_overlap": false
+    }
+  ],
+  "write_epoch_new_copies": 0,
+  "write_epoch_new_copy_bytes": 0,
+  "write_epoch_new_copy_faults": 0,
+  "write_epoch_existing_replica_reads": 0,
+  "write_epoch_new_replica_reads": 0,
+  "recovery_events": [
+    {
+      "home_gpu": 1,
+      "page_role": "non-owner-writer",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 36864,
+      "gpu": 2,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 20965707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "non-owner-writer",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 36864,
+      "gpu": 3,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 20979414,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "non-owner-writer",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 36864,
+      "gpu": 4,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 20993121,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "non-owner-writer",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 40960,
+      "gpu": 2,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 21006828,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "non-owner-writer",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 40960,
+      "gpu": 3,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 21020535,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "non-owner-writer",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 40960,
+      "gpu": 4,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 21034242,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "non-owner-writer",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 45056,
+      "gpu": 1,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 20965707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "non-owner-writer",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 45056,
+      "gpu": 3,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 21034242,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "non-owner-writer",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 45056,
+      "gpu": 4,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 21047949,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "non-owner-writer",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 49152,
+      "gpu": 1,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 21061656,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "non-owner-writer",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 49152,
+      "gpu": 3,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 21075363,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "non-owner-writer",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 49152,
+      "gpu": 4,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 21089070,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "non-owner-writer",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 53248,
+      "gpu": 1,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 21075363,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "non-owner-writer",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 53248,
+      "gpu": 2,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 21089070,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "non-owner-writer",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 53248,
+      "gpu": 4,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 21102777,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "non-owner-writer",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 57344,
+      "gpu": 1,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 21116484,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "non-owner-writer",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 57344,
+      "gpu": 2,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 21865707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "non-owner-writer",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 57344,
+      "gpu": 4,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 21879414,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 4,
+      "page_role": "non-owner-writer",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 61440,
+      "gpu": 1,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 21865707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 4,
+      "page_role": "non-owner-writer",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 61440,
+      "gpu": 2,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 21879414,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 4,
+      "page_role": "non-owner-writer",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 61440,
+      "gpu": 3,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 21893121,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 4,
+      "page_role": "non-owner-writer",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 65536,
+      "gpu": 1,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 21906828,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 4,
+      "page_role": "non-owner-writer",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 65536,
+      "gpu": 2,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 21920535,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 4,
+      "page_role": "non-owner-writer",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 65536,
+      "gpu": 3,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 21934242,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "owner-written-shared-read",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 73728,
+      "gpu": 2,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 21934242,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "owner-written-shared-read",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 73728,
+      "gpu": 3,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 21947949,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "owner-written-shared-read",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 73728,
+      "gpu": 4,
+      "source_version": 1,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 19852000,
+      "due_ps": 21961656,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "owner-written-shared-read",
+      "repair_kind": "inv",
+      "epoch": 4,
+      "page": 73728,
+      "gpu": 2,
+      "source_version": 2,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 43105000,
+      "due_ps": 44218707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "owner-written-shared-read",
+      "repair_kind": "inv",
+      "epoch": 4,
+      "page": 73728,
+      "gpu": 3,
+      "source_version": 2,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 43105000,
+      "due_ps": 44232414,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "owner-written-shared-read",
+      "repair_kind": "inv",
+      "epoch": 4,
+      "page": 73728,
+      "gpu": 4,
+      "source_version": 2,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 43105000,
+      "due_ps": 44246121,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    }
+  ],
+  "s4_inv_replica_targets": 3,
+  "write_page_epochs": 12,
+  "versioned_pages": 10,
+  "config": {
+    "transfer_gran_bytes": 32,
+    "policy": "inv",
+    "page_bytes": 4096,
+    "sector_bytes": 32,
+    "fault_ns": 900,
+    "fault_slots": 16,
+    "bandwidth_gbs": 300,
+    "link_ns": 200,
+    "replica_pages_per_gpu": 0,
+    "metadata_ns": 0,
+    "shootdown_ns": 0
+  },
+  "epochs": 5,
+  "kernel_ps": 54385223,
+  "host_transfer_ps": 3208000,
+  "validation_sha256": "4af4c460465ac3c3650f4f46881e31b30366b6228ab62d95d39615aedf499eae",
+  "kernel_count": 3,
+  "host_write_epochs": 2,
+  "peak_live_managed_pages": 18,
+  "retired_managed_pages": 0,
+  "application_ps": 63560000,
+  "barrier_flush_ps": 2716000,
+  "recovery_wait_ps": 3250777,
+  "copy_faults": 30,
+  "cold_copies": 27,
+  "refills": 3,
+  "repairs": 0,
+  "copy_bytes": 122880,
+  "invalidations": 3,
+  "evictions": 0,
+  "peak_replica_pages": 27,
+  "peak_stale_pages": 0,
+  "retained_pages": 27,
+  "s2_clean_transactions": 0,
+  "s3_preexisting_replica_read_transactions": 0,
+  "s3_preexisting_replica_read_sectors": 0,
+  "s3_conflicting_read_sectors": 0,
+  "repair_granularities": {
+    "128": {
+      "bytes": 12288,
+      "blocks": 96,
+      "extents": 3
+    },
+    "32": {
+      "bytes": 12288,
+      "blocks": 384,
+      "extents": 3
+    },
+    "4096": {
+      "bytes": 12288,
+      "blocks": 3,
+      "extents": 3
+    },
+    "512": {
+      "bytes": 12288,
+      "blocks": 24,
+      "extents": 3
+    }
+  },
+  "fabric_bytes": 169440,
+  "fabric_messages": 990
+}

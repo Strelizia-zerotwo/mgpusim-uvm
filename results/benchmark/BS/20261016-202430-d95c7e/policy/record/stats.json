@@ -1,0 +1,1151 @@
+{
+  "adapter": "core-kernel-barrier-v1",
+  "core_allocations": [
+    {
+      "base": 4096,
+      "bytes": 4096
+    }
+  ],
+  "page_ownership": [
+    {
+      "page": 4096,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    }
+  ],
+  "home_pages_by_gpu": {
+    "1": 1
+  },
+  "owner_read_transactions": 0,
+  "non_owner_read_transactions": 0,
+  "owner_write_transactions": 0,
+  "non_owner_write_transactions": 0,
+  "replica_read_transactions": 0,
+  "remote_home_read_transactions": 0,
+  "copy_bytes_by_role": {},
+  "copy_faults_by_role": {},
+  "recovery_wait_ps_by_role": null,
+  "fabric_model": "destination-ready-v2",
+  "managed_pages": 1,
+  "epoch_activity": [
+    {
+      "name": "kernel/000001",
+      "start_ps": 674000,
+      "end_ps": 14699000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 6000,
+        "2": 6000,
+        "3": 886000,
+        "4": 1698000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000002",
+      "start_ps": 15286000,
+      "end_ps": 28308000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 10000,
+        "3": 885000,
+        "4": 693000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000003",
+      "start_ps": 28895000,
+      "end_ps": 41919000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 10000,
+        "3": 887000,
+        "4": 693000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000004",
+      "start_ps": 42506000,
+      "end_ps": 55528000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 10000,
+        "3": 885000,
+        "4": 693000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000005",
+      "start_ps": 56115000,
+      "end_ps": 69139000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 10000,
+        "3": 887000,
+        "4": 693000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000006",
+      "start_ps": 69726000,
+      "end_ps": 82748000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 10000,
+        "3": 885000,
+        "4": 693000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000007",
+      "start_ps": 83335000,
+      "end_ps": 96359000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 10000,
+        "3": 887000,
+        "4": 693000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000008",
+      "start_ps": 96946000,
+      "end_ps": 109968000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 10000,
+        "3": 885000,
+        "4": 693000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000009",
+      "start_ps": 110555000,
+      "end_ps": 123579000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 10000,
+        "3": 887000,
+        "4": 693000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000010",
+      "start_ps": 124166000,
+      "end_ps": 137188000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 10000,
+        "3": 885000,
+        "4": 693000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000011",
+      "start_ps": 137775000,
+      "end_ps": 150768000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 12000,
+        "3": 871000,
+        "4": 676000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000012",
+      "start_ps": 151355000,
+      "end_ps": 164379000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 8000,
+        "3": 889000,
+        "4": 693000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000013",
+      "start_ps": 164966000,
+      "end_ps": 177990000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 8000,
+        "3": 889000,
+        "4": 693000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000014",
+      "start_ps": 178577000,
+      "end_ps": 191601000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 10000,
+        "3": 887000,
+        "4": 693000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000015",
+      "start_ps": 192188000,
+      "end_ps": 205212000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 10000,
+        "3": 887000,
+        "4": 693000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000016",
+      "start_ps": 205799000,
+      "end_ps": 218793000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 10000,
+        "3": 874000,
+        "4": 676000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000017",
+      "start_ps": 219380000,
+      "end_ps": 232373000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 12000,
+        "3": 871000,
+        "4": 676000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000018",
+      "start_ps": 232960000,
+      "end_ps": 245984000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 6000,
+        "2": 6000,
+        "3": 890000,
+        "4": 693000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000019",
+      "start_ps": 246571000,
+      "end_ps": 259595000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 8000,
+        "3": 889000,
+        "4": 693000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000020",
+      "start_ps": 260182000,
+      "end_ps": 273206000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 10000,
+        "3": 887000,
+        "4": 693000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000021",
+      "start_ps": 273793000,
+      "end_ps": 286817000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 10000,
+        "3": 887000,
+        "4": 693000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000022",
+      "start_ps": 287404000,
+      "end_ps": 300398000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 10000,
+        "3": 874000,
+        "4": 676000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000023",
+      "start_ps": 300985000,
+      "end_ps": 313978000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 12000,
+        "3": 871000,
+        "4": 676000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000024",
+      "start_ps": 314565000,
+      "end_ps": 327558000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 6000,
+        "2": 10000,
+        "3": 872000,
+        "4": 676000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000025",
+      "start_ps": 328145000,
+      "end_ps": 341168000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 10000,
+        "3": 886000,
+        "4": 693000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000026",
+      "start_ps": 341755000,
+      "end_ps": 354778000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 10000,
+        "3": 886000,
+        "4": 693000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000027",
+      "start_ps": 355365000,
+      "end_ps": 368388000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 6000,
+        "2": 9000,
+        "3": 886000,
+        "4": 693000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000028",
+      "start_ps": 368975000,
+      "end_ps": 381997000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 6000,
+        "2": 10000,
+        "3": 884000,
+        "4": 693000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000029",
+      "start_ps": 382584000,
+      "end_ps": 395576000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 7000,
+        "2": 12000,
+        "3": 868000,
+        "4": 676000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000030",
+      "start_ps": 396163000,
+      "end_ps": 409157000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 8000,
+        "2": 6000,
+        "3": 875000,
+        "4": 676000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000031",
+      "start_ps": 409744000,
+      "end_ps": 422738000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 10000,
+        "3": 874000,
+        "4": 676000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000032",
+      "start_ps": 423325000,
+      "end_ps": 436318000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 12000,
+        "3": 871000,
+        "4": 676000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000033",
+      "start_ps": 436905000,
+      "end_ps": 449938000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 6000,
+        "2": 12000,
+        "3": 896000,
+        "4": 690000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000034",
+      "start_ps": 450525000,
+      "end_ps": 463558000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 12000,
+        "3": 897000,
+        "4": 690000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000035",
+      "start_ps": 464145000,
+      "end_ps": 477179000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 8000,
+        "2": 6000,
+        "3": 901000,
+        "4": 690000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000036",
+      "start_ps": 477766000,
+      "end_ps": 490798000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 7000,
+        "2": 11000,
+        "3": 895000,
+        "4": 690000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000037",
+      "start_ps": 491385000,
+      "end_ps": 504369000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 7000,
+        "2": 11000,
+        "3": 861000,
+        "4": 676000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000038",
+      "start_ps": 504956000,
+      "end_ps": 517940000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 7000,
+        "2": 12000,
+        "3": 860000,
+        "4": 676000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000039",
+      "start_ps": 518527000,
+      "end_ps": 531513000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 8000,
+        "2": 6000,
+        "3": 867000,
+        "4": 676000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000040",
+      "start_ps": 532100000,
+      "end_ps": 545085000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 12000,
+        "3": 863000,
+        "4": 676000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000041",
+      "start_ps": 545672000,
+      "end_ps": 558657000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 10000,
+        "3": 865000,
+        "4": 676000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000042",
+      "start_ps": 559244000,
+      "end_ps": 572276000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 7000,
+        "2": 12000,
+        "3": 894000,
+        "4": 690000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000043",
+      "start_ps": 572863000,
+      "end_ps": 585896000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 12000,
+        "3": 897000,
+        "4": 690000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000044",
+      "start_ps": 586483000,
+      "end_ps": 599517000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 7000,
+        "2": 6000,
+        "3": 902000,
+        "4": 690000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000045",
+      "start_ps": 600104000,
+      "end_ps": 613136000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 7000,
+        "2": 11000,
+        "3": 895000,
+        "4": 690000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000046",
+      "start_ps": 613723000,
+      "end_ps": 626707000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 7000,
+        "2": 11000,
+        "3": 861000,
+        "4": 676000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000047",
+      "start_ps": 627294000,
+      "end_ps": 640278000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 8000,
+        "2": 8000,
+        "3": 863000,
+        "4": 676000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000048",
+      "start_ps": 640865000,
+      "end_ps": 653851000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 7000,
+        "2": 6000,
+        "3": 868000,
+        "4": 676000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000049",
+      "start_ps": 654438000,
+      "end_ps": 667423000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 12000,
+        "3": 863000,
+        "4": 676000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000050",
+      "start_ps": 668010000,
+      "end_ps": 680995000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 10000,
+        "3": 865000,
+        "4": 676000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000051",
+      "start_ps": 681582000,
+      "end_ps": 694566000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 6000,
+        "2": 11000,
+        "3": 862000,
+        "4": 676000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000052",
+      "start_ps": 695153000,
+      "end_ps": 708185000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 6000,
+        "2": 11000,
+        "3": 896000,
+        "4": 690000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000053",
+      "start_ps": 708772000,
+      "end_ps": 721804000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 7000,
+        "2": 10000,
+        "3": 896000,
+        "4": 690000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000054",
+      "start_ps": 722391000,
+      "end_ps": 735424000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 7000,
+        "2": 10000,
+        "3": 897000,
+        "4": 690000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000055",
+      "start_ps": 736011000,
+      "end_ps": 749044000,
+      "instructions_by_gpu": {
+        "1": 98,
+        "2": 98,
+        "3": 98,
+        "4": 98
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11429000,
+        "1": 5000,
+        "2": 12000,
+        "3": 897000,
+        "4": 690000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    }
+  ],
+  "model_revision": "replica-owner-v3",
+  "oracle_mapping_preinstall": false,
+  "mapping_installs": 0,
+  "tlb_flush_epochs": 0,
+  "mapping_faults": 4,
+  "fallback_page_epochs": 0,
+  "multiple_writer_page_epochs": 0,
+  "read_write_overlap_page_epochs": 0,
+  "fallback_gpu_page_accesses": 0,
+  "fallback_read_transactions": 0,
+  "fallback_write_transactions": 0,
+  "fallback_events": null,
+  "write_epoch_new_copies": 0,
+  "write_epoch_new_copy_bytes": 0,
+  "write_epoch_new_copy_faults": 0,
+  "write_epoch_existing_replica_reads": 0,
+  "write_epoch_new_replica_reads": 0,
+  "recovery_events": null,
+  "s4_inv_replica_targets": 0,
+  "write_page_epochs": 0,
+  "versioned_pages": 0,
+  "config": {
+    "transfer_gran_bytes": 32,
+    "policy": "inv",
+    "page_bytes": 4096,
+    "sector_bytes": 32,
+    "fault_ns": 900,
+    "fault_slots": 16,
+    "bandwidth_gbs": 300,
+    "link_ns": 200,
+    "replica_pages_per_gpu": 0,
+    "metadata_ns": 0,
+    "shootdown_ns": 0
+  },
+  "epochs": 55,
+  "kernel_ps": 716672000,
+  "host_transfer_ps": 639000,
+  "validation_sha256": "f275294cdf1d9e44aa07a001747305204e978ebe9f83bc39a8958b5529a6f3e3",
+  "kernel_count": 55,
+  "host_write_epochs": 0,
+  "peak_live_managed_pages": 1,
+  "retired_managed_pages": 0,
+  "application_ps": 749596000,
+  "barrier_flush_ps": 32285000,
+  "recovery_wait_ps": 0,
+  "copy_faults": 0,
+  "cold_copies": 0,
+  "refills": 0,
+  "repairs": 0,
+  "copy_bytes": 0,
+  "invalidations": 0,
+  "evictions": 0,
+  "peak_replica_pages": 0,
+  "peak_stale_pages": 0,
+  "retained_pages": 0,
+  "s2_clean_transactions": 0,
+  "s3_preexisting_replica_read_transactions": 0,
+  "s3_preexisting_replica_read_sectors": 0,
+  "s3_conflicting_read_sectors": 0,
+  "repair_granularities": {},
+  "fabric_bytes": 663552,
+  "fabric_messages": 13824
+}

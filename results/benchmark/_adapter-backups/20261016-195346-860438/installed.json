@@ -1,0 +1,70 @@
+[
+  {
+    "path": "amd/benchmarks/dnn/dataset/synthetic/source.go",
+    "sha256": "d2d4b19bfc110b5a9014fb6d38646a31789e3bedbf803449dd8fbb0d05de1277"
+  },
+  {
+    "path": "amd/benchmarks/dnn/gputensor/operator.go",
+    "sha256": "aedbd3fbded09ea9b095b9f3fc0e7c3d3ea27663f9988828aae33e66693422aa"
+  },
+  {
+    "path": "amd/benchmarks/dnn/training_benchmarks/lenet/benchmark.go",
+    "sha256": "9dd5fb4476e61aef62204ab6e4c4237c5b72d27e7e44fb1e3d52f829eb6f02d9"
+  },
+  {
+    "path": "amd/benchmarks/dnn/training_benchmarks/vgg16/benchmark.go",
+    "sha256": "4a6a90517122afabba912a627fee786cd5e7384062e102565b0cbc7fa65c61c8"
+  },
+  {
+    "path": "amd/driver/api.go",
+    "sha256": "bda4b03eb81a646ecec68e1aa44f25eed0dfef0c1507b7136fbdee630e8516b4"
+  },
+  {
+    "path": "amd/driver/driver.go",
+    "sha256": "a0c41fc8d671ae34c48109732e8249d7154b3dd5515ec355161b167c6b6def59"
+  },
+  {
+    "path": "amd/driver/kernel.go",
+    "sha256": "3e7c59ffe9f346b4ab25d8ba4e3aa079a9e16cafd940dfabf8de9384125d426f"
+  },
+  {
+    "path": "amd/driver/replicahooks.go",
+    "sha256": "26702b9cc9a64e681d25358eb6410635ded7005e85136eb6dfd4fd3f0911b4d1"
+  },
+  {
+    "path": "amd/samples/lenet/main.go",
+    "sha256": "2a4e006ab541c644ad993fe4457373d376d524944d9d211b7a2786bd34a40d0e"
+  },
+  {
+    "path": "amd/samples/runner/core_replica.go",
+    "sha256": "0e216fbd14d50592c29bff81998ffda488f622632b18e365934c9ed978ddd915"
+  },
+  {
+    "path": "amd/samples/runner/faultflags.go",
+    "sha256": "05b0e7d6d5b6cd00bac78feee6f2599422bc666f8a9e5bc07e21e02801e7ecfa"
+  },
+  {
+    "path": "amd/samples/runner/runner.go",
+    "sha256": "90593598185c14b41e0fef03f05ae46d297302498d872d984d6b6988a84d5a8b"
+  },
+  {
+    "path": "amd/samples/vgg16/main.go",
+    "sha256": "d88ab756dfd1304db34ef1d1b475cc91270ecc67f0c28dae49fcbaa2259329df"
+  },
+  {
+    "path": "amd/timing/localmapping/replicaretire.go",
+    "sha256": "e40d1418daf47b7453c3b6ebf3a2fb344eda47f12f938bacfaf13ae60fd5dc8a"
+  },
+  {
+    "path": "amd/timing/replica/dynamic.go",
+    "sha256": "1de2bf3fa3bf1d210d7d8ee57c983a00211fcec4a043a9e4125e10df6f239d44"
+  },
+  {
+    "path": "amd/timing/replica/plan.go",
+    "sha256": "72c20e80468d9e06e7195543e1ffb15d5a4e905a978861ca4b63140b43a44ac1"
+  },
+  {
+    "path": "amd/timing/replica/session.go",
+    "sha256": "650bba39ca2ce2830a4ba7e7a64286944d0aad111453852398d4969a288d91fd"
+  }
+]

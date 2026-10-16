@@ -1,0 +1,833 @@
+[
+  {
+    "adapter": "core-kernel-barrier-v1",
+    "core_allocations": [
+      {
+        "base": 4096,
+        "bytes": 1024
+      },
+      {
+        "base": 8192,
+        "bytes": 7056
+      }
+    ],
+    "page_ownership": [
+      {
+        "page": 4096,
+        "home_gpu": 1,
+        "readers": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 8192,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1,
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 12288,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "role": "non-owner-writer"
+      }
+    ],
+    "home_pages_by_gpu": {
+      "1": 2,
+      "3": 1
+    },
+    "owner_read_transactions": 45,
+    "non_owner_read_transactions": 75,
+    "owner_write_transactions": 99,
+    "non_owner_write_transactions": 174,
+    "replica_read_transactions": 75,
+    "remote_home_read_transactions": 0,
+    "copy_bytes_by_role": {
+      "read-only": 12288
+    },
+    "copy_faults_by_role": {
+      "read-only": 3
+    },
+    "recovery_wait_ps_by_role": {
+      "read-only": 1141121
+    },
+    "fabric_model": "destination-ready-v2",
+    "managed_pages": 3,
+    "epoch_activity": [
+      {
+        "name": "kernel/000001",
+        "start_ps": 1767121,
+        "end_ps": 16630000,
+        "instructions_by_gpu": {
+          "1": 2808,
+          "2": 2592,
+          "3": 2808,
+          "4": 2592
+        },
+        "inflight_gpu_duration_ps": {
+          "0": 12392879,
+          "1": 76000,
+          "2": 153000,
+          "3": 459000,
+          "4": 1782000
+        },
+        "max_gpus_with_inflight_instructions": 4
+      }
+    ],
+    "model_revision": "replica-owner-v3",
+    "oracle_mapping_preinstall": true,
+    "mapping_installs": 10,
+    "tlb_flush_epochs": 1,
+    "mapping_faults": 0,
+    "fallback_page_epochs": 2,
+    "multiple_writer_page_epochs": 2,
+    "read_write_overlap_page_epochs": 0,
+    "fallback_gpu_page_accesses": 6,
+    "fallback_read_transactions": 0,
+    "fallback_write_transactions": 273,
+    "fallback_events": [
+      {
+        "epoch": 0,
+        "page": 8192,
+        "multiple_writers": true,
+        "read_write_overlap": false
+      },
+      {
+        "epoch": 0,
+        "page": 12288,
+        "multiple_writers": true,
+        "read_write_overlap": false
+      }
+    ],
+    "write_epoch_new_copies": 0,
+    "write_epoch_new_copy_bytes": 0,
+    "write_epoch_new_copy_faults": 0,
+    "write_epoch_existing_replica_reads": 0,
+    "write_epoch_new_replica_reads": 0,
+    "recovery_events": [
+      {
+        "home_gpu": 1,
+        "page_role": "read-only",
+        "repair_kind": "inv",
+        "epoch": 0,
+        "page": 4096,
+        "gpu": 2,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 626000,
+        "due_ps": 1739707,
+        "layouts": {
+          "128": {
+            "bytes": 4096,
+            "blocks": 32,
+            "extents": 1
+          },
+          "32": {
+            "bytes": 4096,
+            "blocks": 128,
+            "extents": 1
+          },
+          "4096": {
+            "bytes": 4096,
+            "blocks": 1,
+            "extents": 1
+          },
+          "512": {
+            "bytes": 4096,
+            "blocks": 8,
+            "extents": 1
+          }
+        }
+      },
+      {
+        "home_gpu": 1,
+        "page_role": "read-only",
+        "repair_kind": "inv",
+        "epoch": 0,
+        "page": 4096,
+        "gpu": 3,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 626000,
+        "due_ps": 1753414,
+        "layouts": {
+          "128": {
+            "bytes": 4096,
+            "blocks": 32,
+            "extents": 1
+          },
+          "32": {
+            "bytes": 4096,
+            "blocks": 128,
+            "extents": 1
+          },
+          "4096": {
+            "bytes": 4096,
+            "blocks": 1,
+            "extents": 1
+          },
+          "512": {
+            "bytes": 4096,
+            "blocks": 8,
+            "extents": 1
+          }
+        }
+      },
+      {
+        "home_gpu": 1,
+        "page_role": "read-only",
+        "repair_kind": "inv",
+        "epoch": 0,
+        "page": 4096,
+        "gpu": 4,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 626000,
+        "due_ps": 1767121,
+        "layouts": {
+          "128": {
+            "bytes": 4096,
+            "blocks": 32,
+            "extents": 1
+          },
+          "32": {
+            "bytes": 4096,
+            "blocks": 128,
+            "extents": 1
+          },
+          "4096": {
+            "bytes": 4096,
+            "blocks": 1,
+            "extents": 1
+          },
+          "512": {
+            "bytes": 4096,
+            "blocks": 8,
+            "extents": 1
+          }
+        }
+      }
+    ],
+    "s4_inv_replica_targets": 0,
+    "write_page_epochs": 2,
+    "versioned_pages": 2,
+    "config": {
+      "transfer_gran_bytes": 32,
+      "policy": "inv",
+      "page_bytes": 4096,
+      "sector_bytes": 32,
+      "fault_ns": 900,
+      "fault_slots": 16,
+      "bandwidth_gbs": 300,
+      "link_ns": 200,
+      "replica_pages_per_gpu": 0,
+      "metadata_ns": 0,
+      "shootdown_ns": 0
+    },
+    "epochs": 1,
+    "kernel_ps": 14862879,
+    "host_transfer_ps": 1230000,
+    "validation_sha256": "7d99bbd311e5c0c5f8e98fa1f6c16a5bfdf4571c20a5d0b1aeb84f457e2ed90c",
+    "kernel_count": 1,
+    "host_write_epochs": 0,
+    "peak_live_managed_pages": 3,
+    "retired_managed_pages": 0,
+    "application_ps": 17822000,
+    "barrier_flush_ps": 588000,
+    "recovery_wait_ps": 1141121,
+    "copy_faults": 3,
+    "cold_copies": 3,
+    "refills": 0,
+    "repairs": 0,
+    "copy_bytes": 12288,
+    "invalidations": 0,
+    "evictions": 0,
+    "peak_replica_pages": 3,
+    "peak_stale_pages": 0,
+    "retained_pages": 3,
+    "s2_clean_transactions": 0,
+    "s3_preexisting_replica_read_transactions": 0,
+    "s3_preexisting_replica_read_sectors": 0,
+    "s3_conflicting_read_sectors": 0,
+    "repair_granularities": {},
+    "fabric_bytes": 29040,
+    "fabric_messages": 351,
+    "case": "inv_link-200ns_fault-900ns_repeat-0",
+    "repeat": 0
+  },
+  {
+    "adapter": "core-kernel-barrier-v1",
+    "core_allocations": [
+      {
+        "base": 4096,
+        "bytes": 1024
+      },
+      {
+        "base": 8192,
+        "bytes": 7056
+      }
+    ],
+    "page_ownership": [
+      {
+        "page": 4096,
+        "home_gpu": 1,
+        "readers": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 8192,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1,
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 12288,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "role": "non-owner-writer"
+      }
+    ],
+    "home_pages_by_gpu": {
+      "1": 2,
+      "3": 1
+    },
+    "owner_read_transactions": 45,
+    "non_owner_read_transactions": 75,
+    "owner_write_transactions": 99,
+    "non_owner_write_transactions": 174,
+    "replica_read_transactions": 75,
+    "remote_home_read_transactions": 0,
+    "copy_bytes_by_role": {
+      "read-only": 12288
+    },
+    "copy_faults_by_role": {
+      "read-only": 3
+    },
+    "recovery_wait_ps_by_role": {
+      "read-only": 1141121
+    },
+    "fabric_model": "destination-ready-v2",
+    "managed_pages": 3,
+    "epoch_activity": [
+      {
+        "name": "kernel/000001",
+        "start_ps": 1767121,
+        "end_ps": 16630000,
+        "instructions_by_gpu": {
+          "1": 2808,
+          "2": 2592,
+          "3": 2808,
+          "4": 2592
+        },
+        "inflight_gpu_duration_ps": {
+          "0": 12392879,
+          "1": 76000,
+          "2": 153000,
+          "3": 459000,
+          "4": 1782000
+        },
+        "max_gpus_with_inflight_instructions": 4
+      }
+    ],
+    "model_revision": "replica-owner-v3",
+    "oracle_mapping_preinstall": true,
+    "mapping_installs": 10,
+    "tlb_flush_epochs": 1,
+    "mapping_faults": 0,
+    "fallback_page_epochs": 2,
+    "multiple_writer_page_epochs": 2,
+    "read_write_overlap_page_epochs": 0,
+    "fallback_gpu_page_accesses": 6,
+    "fallback_read_transactions": 0,
+    "fallback_write_transactions": 273,
+    "fallback_events": [
+      {
+        "epoch": 0,
+        "page": 8192,
+        "multiple_writers": true,
+        "read_write_overlap": false
+      },
+      {
+        "epoch": 0,
+        "page": 12288,
+        "multiple_writers": true,
+        "read_write_overlap": false
+      }
+    ],
+    "write_epoch_new_copies": 0,
+    "write_epoch_new_copy_bytes": 0,
+    "write_epoch_new_copy_faults": 0,
+    "write_epoch_existing_replica_reads": 0,
+    "write_epoch_new_replica_reads": 0,
+    "recovery_events": [
+      {
+        "home_gpu": 1,
+        "page_role": "read-only",
+        "repair_kind": "retain",
+        "epoch": 0,
+        "page": 4096,
+        "gpu": 2,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 626000,
+        "due_ps": 1739707,
+        "layouts": {
+          "128": {
+            "bytes": 4096,
+            "blocks": 32,
+            "extents": 1
+          },
+          "32": {
+            "bytes": 4096,
+            "blocks": 128,
+            "extents": 1
+          },
+          "4096": {
+            "bytes": 4096,
+            "blocks": 1,
+            "extents": 1
+          },
+          "512": {
+            "bytes": 4096,
+            "blocks": 8,
+            "extents": 1
+          }
+        }
+      },
+      {
+        "home_gpu": 1,
+        "page_role": "read-only",
+        "repair_kind": "retain",
+        "epoch": 0,
+        "page": 4096,
+        "gpu": 3,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 626000,
+        "due_ps": 1753414,
+        "layouts": {
+          "128": {
+            "bytes": 4096,
+            "blocks": 32,
+            "extents": 1
+          },
+          "32": {
+            "bytes": 4096,
+            "blocks": 128,
+            "extents": 1
+          },
+          "4096": {
+            "bytes": 4096,
+            "blocks": 1,
+            "extents": 1
+          },
+          "512": {
+            "bytes": 4096,
+            "blocks": 8,
+            "extents": 1
+          }
+        }
+      },
+      {
+        "home_gpu": 1,
+        "page_role": "read-only",
+        "repair_kind": "retain",
+        "epoch": 0,
+        "page": 4096,
+        "gpu": 4,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 626000,
+        "due_ps": 1767121,
+        "layouts": {
+          "128": {
+            "bytes": 4096,
+            "blocks": 32,
+            "extents": 1
+          },
+          "32": {
+            "bytes": 4096,
+            "blocks": 128,
+            "extents": 1
+          },
+          "4096": {
+            "bytes": 4096,
+            "blocks": 1,
+            "extents": 1
+          },
+          "512": {
+            "bytes": 4096,
+            "blocks": 8,
+            "extents": 1
+          }
+        }
+      }
+    ],
+    "s4_inv_replica_targets": 0,
+    "write_page_epochs": 2,
+    "versioned_pages": 2,
+    "config": {
+      "transfer_gran_bytes": 32,
+      "policy": "retain",
+      "page_bytes": 4096,
+      "sector_bytes": 32,
+      "fault_ns": 900,
+      "fault_slots": 16,
+      "bandwidth_gbs": 300,
+      "link_ns": 200,
+      "replica_pages_per_gpu": 0,
+      "metadata_ns": 0,
+      "shootdown_ns": 0
+    },
+    "epochs": 1,
+    "kernel_ps": 14862879,
+    "host_transfer_ps": 1230000,
+    "validation_sha256": "7d99bbd311e5c0c5f8e98fa1f6c16a5bfdf4571c20a5d0b1aeb84f457e2ed90c",
+    "kernel_count": 1,
+    "host_write_epochs": 0,
+    "peak_live_managed_pages": 3,
+    "retired_managed_pages": 0,
+    "application_ps": 17822000,
+    "barrier_flush_ps": 588000,
+    "recovery_wait_ps": 1141121,
+    "copy_faults": 3,
+    "cold_copies": 3,
+    "refills": 0,
+    "repairs": 0,
+    "copy_bytes": 12288,
+    "invalidations": 0,
+    "evictions": 0,
+    "peak_replica_pages": 3,
+    "peak_stale_pages": 0,
+    "retained_pages": 3,
+    "s2_clean_transactions": 0,
+    "s3_preexisting_replica_read_transactions": 0,
+    "s3_preexisting_replica_read_sectors": 0,
+    "s3_conflicting_read_sectors": 0,
+    "repair_granularities": {},
+    "fabric_bytes": 29040,
+    "fabric_messages": 351,
+    "case": "retain_link-200ns_fault-900ns_repeat-0",
+    "repeat": 0
+  },
+  {
+    "adapter": "core-kernel-barrier-v1",
+    "core_allocations": [
+      {
+        "base": 4096,
+        "bytes": 1024
+      },
+      {
+        "base": 8192,
+        "bytes": 7056
+      }
+    ],
+    "page_ownership": [
+      {
+        "page": 4096,
+        "home_gpu": 1,
+        "readers": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 8192,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1,
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 12288,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "role": "non-owner-writer"
+      }
+    ],
+    "home_pages_by_gpu": {
+      "1": 2,
+      "3": 1
+    },
+    "owner_read_transactions": 45,
+    "non_owner_read_transactions": 75,
+    "owner_write_transactions": 99,
+    "non_owner_write_transactions": 174,
+    "replica_read_transactions": 75,
+    "remote_home_read_transactions": 0,
+    "copy_bytes_by_role": {
+      "read-only": 12288
+    },
+    "copy_faults_by_role": {
+      "read-only": 3
+    },
+    "recovery_wait_ps_by_role": {
+      "read-only": 1141121
+    },
+    "fabric_model": "destination-ready-v2",
+    "managed_pages": 3,
+    "epoch_activity": [
+      {
+        "name": "kernel/000001",
+        "start_ps": 1767121,
+        "end_ps": 16630000,
+        "instructions_by_gpu": {
+          "1": 2808,
+          "2": 2592,
+          "3": 2808,
+          "4": 2592
+        },
+        "inflight_gpu_duration_ps": {
+          "0": 12392879,
+          "1": 76000,
+          "2": 153000,
+          "3": 459000,
+          "4": 1782000
+        },
+        "max_gpus_with_inflight_instructions": 4
+      }
+    ],
+    "model_revision": "replica-owner-v3",
+    "oracle_mapping_preinstall": true,
+    "mapping_installs": 10,
+    "tlb_flush_epochs": 1,
+    "mapping_faults": 0,
+    "fallback_page_epochs": 2,
+    "multiple_writer_page_epochs": 2,
+    "read_write_overlap_page_epochs": 0,
+    "fallback_gpu_page_accesses": 6,
+    "fallback_read_transactions": 0,
+    "fallback_write_transactions": 273,
+    "fallback_events": [
+      {
+        "epoch": 0,
+        "page": 8192,
+        "multiple_writers": true,
+        "read_write_overlap": false
+      },
+      {
+        "epoch": 0,
+        "page": 12288,
+        "multiple_writers": true,
+        "read_write_overlap": false
+      }
+    ],
+    "write_epoch_new_copies": 0,
+    "write_epoch_new_copy_bytes": 0,
+    "write_epoch_new_copy_faults": 0,
+    "write_epoch_existing_replica_reads": 0,
+    "write_epoch_new_replica_reads": 0,
+    "recovery_events": [
+      {
+        "home_gpu": 1,
+        "page_role": "read-only",
+        "repair_kind": "i1-adaptive",
+        "epoch": 0,
+        "page": 4096,
+        "gpu": 2,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 626000,
+        "due_ps": 1739707,
+        "layouts": {
+          "128": {
+            "bytes": 4096,
+            "blocks": 32,
+            "extents": 1
+          },
+          "32": {
+            "bytes": 4096,
+            "blocks": 128,
+            "extents": 1
+          },
+          "4096": {
+            "bytes": 4096,
+            "blocks": 1,
+            "extents": 1
+          },
+          "512": {
+            "bytes": 4096,
+            "blocks": 8,
+            "extents": 1
+          }
+        }
+      },
+      {
+        "home_gpu": 1,
+        "page_role": "read-only",
+        "repair_kind": "i1-adaptive",
+        "epoch": 0,
+        "page": 4096,
+        "gpu": 3,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 626000,
+        "due_ps": 1753414,
+        "layouts": {
+          "128": {
+            "bytes": 4096,
+            "blocks": 32,
+            "extents": 1
+          },
+          "32": {
+            "bytes": 4096,
+            "blocks": 128,
+            "extents": 1
+          },
+          "4096": {
+            "bytes": 4096,
+            "blocks": 1,
+            "extents": 1
+          },
+          "512": {
+            "bytes": 4096,
+            "blocks": 8,
+            "extents": 1
+          }
+        }
+      },
+      {
+        "home_gpu": 1,
+        "page_role": "read-only",
+        "repair_kind": "i1-adaptive",
+        "epoch": 0,
+        "page": 4096,
+        "gpu": 4,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 626000,
+        "due_ps": 1767121,
+        "layouts": {
+          "128": {
+            "bytes": 4096,
+            "blocks": 32,
+            "extents": 1
+          },
+          "32": {
+            "bytes": 4096,
+            "blocks": 128,
+            "extents": 1
+          },
+          "4096": {
+            "bytes": 4096,
+            "blocks": 1,
+            "extents": 1
+          },
+          "512": {
+            "bytes": 4096,
+            "blocks": 8,
+            "extents": 1
+          }
+        }
+      }
+    ],
+    "s4_inv_replica_targets": 0,
+    "write_page_epochs": 2,
+    "versioned_pages": 2,
+    "config": {
+      "transfer_gran_bytes": 32,
+      "policy": "i1-adaptive",
+      "page_bytes": 4096,
+      "sector_bytes": 32,
+      "fault_ns": 900,
+      "fault_slots": 16,
+      "bandwidth_gbs": 300,
+      "link_ns": 200,
+      "replica_pages_per_gpu": 0,
+      "metadata_ns": 0,
+      "shootdown_ns": 0
+    },
+    "epochs": 1,
+    "kernel_ps": 14862879,
+    "host_transfer_ps": 1230000,
+    "validation_sha256": "7d99bbd311e5c0c5f8e98fa1f6c16a5bfdf4571c20a5d0b1aeb84f457e2ed90c",
+    "kernel_count": 1,
+    "host_write_epochs": 0,
+    "peak_live_managed_pages": 3,
+    "retired_managed_pages": 0,
+    "application_ps": 17822000,
+    "barrier_flush_ps": 588000,
+    "recovery_wait_ps": 1141121,
+    "copy_faults": 3,
+    "cold_copies": 3,
+    "refills": 0,
+    "repairs": 0,
+    "copy_bytes": 12288,
+    "invalidations": 0,
+    "evictions": 0,
+    "peak_replica_pages": 3,
+    "peak_stale_pages": 0,
+    "retained_pages": 3,
+    "s2_clean_transactions": 0,
+    "s3_preexisting_replica_read_transactions": 0,
+    "s3_preexisting_replica_read_sectors": 0,
+    "s3_conflicting_read_sectors": 0,
+    "repair_granularities": {},
+    "fabric_bytes": 29040,
+    "fabric_messages": 351,
+    "case": "i1-adaptive_link-200ns_fault-900ns_repeat-0",
+    "repeat": 0
+  }
+]

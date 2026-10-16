@@ -1,0 +1,27 @@
+{
+  "argv": [
+    "/home/only/projects/mgpusim-uvm/results/benchmark/_suites/20261016-193111-554b64/bin/replica",
+    "-timing",
+    "-disable-rtm",
+    "-use-unified-memory",
+    "-vm-mode=demand",
+    "-verify",
+    "-gpus=1,2,3,4",
+    "-arch=gcn3",
+    "-gpu=r9nano",
+    "-report-all",
+    "-metric-file-name=metrics",
+    "-replica-plan-out=observed-plan.json",
+    "-replica-stats=stats.json",
+    "-workload=parallel-fw",
+    "-page-bytes=4096",
+    "-home-placement=owner",
+    "-align-owner-pages=true",
+    "-size=128",
+    "-columns=258",
+    "-iterations=8",
+    "-replica-config=/home/only/projects/mgpusim-uvm/results/benchmark/FW/20261016-193111-554b64/policy/inv_link-200ns_fault-900ns_repeat-0.json",
+    "-replica-plan=/home/only/projects/mgpusim-uvm/results/benchmark/FW/20261016-193111-554b64/policy/record/observed-plan.json"
+  ],
+  "cwd": "/home/only/projects/mgpusim-uvm/results/benchmark/FW/20261016-193111-554b64/policy/inv_link-200ns_fault-900ns_repeat-0"
+}

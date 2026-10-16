@@ -1,0 +1,5517 @@
+{
+  "adapter": "core-kernel-barrier-v1",
+  "core_allocations": [
+    {
+      "base": 4096,
+      "bytes": 1048576
+    },
+    {
+      "base": 1052672,
+      "bytes": 1048576
+    },
+    {
+      "base": 2101248,
+      "bytes": 65536
+    },
+    {
+      "base": 2166784,
+      "bytes": 512
+    }
+  ],
+  "page_ownership": [
+    {
+      "page": 4096,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 8192,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 12288,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 16384,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 20480,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 24576,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 28672,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 32768,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 36864,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 40960,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 45056,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 49152,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 53248,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 57344,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 61440,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 65536,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 69632,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 73728,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 77824,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 81920,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 86016,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 90112,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 94208,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 98304,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 102400,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 106496,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 110592,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 114688,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 118784,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 122880,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 126976,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 131072,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 135168,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 139264,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 143360,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 147456,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 151552,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 155648,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 159744,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 163840,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 167936,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 172032,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 176128,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 180224,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 184320,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 188416,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 192512,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 196608,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 200704,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 204800,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 208896,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 212992,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 217088,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 221184,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 225280,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 229376,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 233472,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 237568,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 241664,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 245760,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 249856,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 253952,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 258048,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 262144,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 266240,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 270336,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 274432,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 278528,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 282624,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 286720,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 290816,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 294912,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 299008,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 303104,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 307200,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 311296,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 315392,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 319488,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 323584,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 327680,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 331776,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 335872,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 339968,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 344064,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 348160,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 352256,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 356352,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 360448,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 364544,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 368640,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 372736,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 376832,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 380928,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 385024,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 389120,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 393216,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 397312,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 401408,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 405504,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 409600,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 413696,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 417792,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 421888,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 425984,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 430080,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 434176,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 438272,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 442368,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 446464,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 450560,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 454656,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 458752,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 462848,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 466944,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 471040,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 475136,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 479232,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 483328,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 487424,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 491520,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 495616,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 499712,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 503808,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 507904,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 512000,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 516096,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 520192,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 524288,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 528384,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 532480,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 536576,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 540672,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 544768,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 548864,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 552960,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 557056,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 561152,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 565248,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 569344,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 573440,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 577536,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 581632,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 585728,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 589824,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 593920,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 598016,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 602112,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 606208,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 610304,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 614400,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 618496,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 622592,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 626688,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 630784,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 634880,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 638976,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 643072,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 647168,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 651264,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 655360,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 659456,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 663552,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 667648,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 671744,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 675840,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 679936,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 684032,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 688128,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 692224,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 696320,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 700416,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 704512,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 708608,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 712704,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 716800,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 720896,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 724992,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 729088,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 733184,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 737280,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 741376,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 745472,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 749568,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 753664,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 757760,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 761856,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 765952,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 770048,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 774144,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 778240,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 782336,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 786432,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 790528,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 794624,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 798720,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 802816,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 806912,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 811008,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 815104,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 819200,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 823296,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 827392,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 831488,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 835584,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 839680,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 843776,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 847872,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 851968,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 856064,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 860160,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 864256,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 868352,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 872448,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 876544,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 880640,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 884736,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 888832,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 892928,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 897024,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 901120,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 905216,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 909312,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 913408,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 917504,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 921600,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 925696,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 929792,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 933888,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 937984,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 942080,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 946176,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 950272,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 954368,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 958464,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 962560,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 966656,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 970752,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 974848,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 978944,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 983040,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 987136,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 991232,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 995328,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 999424,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 1003520,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 1007616,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 1011712,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 1015808,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 1019904,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 1024000,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 1028096,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 1032192,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 1036288,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 1040384,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 1044480,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 1048576,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 1052672,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1056768,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1060864,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1064960,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1069056,
+      "home_gpu": 1,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1073152,
+      "home_gpu": 1,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1077248,
+      "home_gpu": 1,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1081344,
+      "home_gpu": 1,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1085440,
+      "home_gpu": 1,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1089536,
+      "home_gpu": 1,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1093632,
+      "home_gpu": 1,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1097728,
+      "home_gpu": 1,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1101824,
+      "home_gpu": 1,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1105920,
+      "home_gpu": 1,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1110016,
+      "home_gpu": 1,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1114112,
+      "home_gpu": 1,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1118208,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1122304,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1126400,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1130496,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1134592,
+      "home_gpu": 1,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1138688,
+      "home_gpu": 1,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1142784,
+      "home_gpu": 1,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1146880,
+      "home_gpu": 1,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1150976,
+      "home_gpu": 1,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1155072,
+      "home_gpu": 1,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1159168,
+      "home_gpu": 1,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1163264,
+      "home_gpu": 1,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1167360,
+      "home_gpu": 1,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1171456,
+      "home_gpu": 1,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1175552,
+      "home_gpu": 1,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1179648,
+      "home_gpu": 1,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1183744,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1187840,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1191936,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1196032,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1200128,
+      "home_gpu": 1,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1204224,
+      "home_gpu": 1,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1208320,
+      "home_gpu": 1,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1212416,
+      "home_gpu": 1,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1216512,
+      "home_gpu": 1,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1220608,
+      "home_gpu": 1,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1224704,
+      "home_gpu": 1,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1228800,
+      "home_gpu": 1,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1232896,
+      "home_gpu": 1,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1236992,
+      "home_gpu": 1,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1241088,
+      "home_gpu": 1,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1245184,
+      "home_gpu": 1,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1249280,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1253376,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1257472,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1261568,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1265664,
+      "home_gpu": 1,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1269760,
+      "home_gpu": 1,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1273856,
+      "home_gpu": 1,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1277952,
+      "home_gpu": 1,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1282048,
+      "home_gpu": 1,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1286144,
+      "home_gpu": 1,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1290240,
+      "home_gpu": 1,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1294336,
+      "home_gpu": 1,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1298432,
+      "home_gpu": 1,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1302528,
+      "home_gpu": 1,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1306624,
+      "home_gpu": 1,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1310720,
+      "home_gpu": 1,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1314816,
+      "home_gpu": 2,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1318912,
+      "home_gpu": 2,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1323008,
+      "home_gpu": 2,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1327104,
+      "home_gpu": 2,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1331200,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1335296,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1339392,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1343488,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1347584,
+      "home_gpu": 2,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1351680,
+      "home_gpu": 2,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1355776,
+      "home_gpu": 2,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1359872,
+      "home_gpu": 2,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1363968,
+      "home_gpu": 2,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1368064,
+      "home_gpu": 2,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1372160,
+      "home_gpu": 2,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1376256,
+      "home_gpu": 2,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1380352,
+      "home_gpu": 2,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1384448,
+      "home_gpu": 2,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1388544,
+      "home_gpu": 2,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1392640,
+      "home_gpu": 2,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1396736,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1400832,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1404928,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1409024,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1413120,
+      "home_gpu": 2,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1417216,
+      "home_gpu": 2,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1421312,
+      "home_gpu": 2,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1425408,
+      "home_gpu": 2,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1429504,
+      "home_gpu": 2,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1433600,
+      "home_gpu": 2,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1437696,
+      "home_gpu": 2,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1441792,
+      "home_gpu": 2,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1445888,
+      "home_gpu": 2,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1449984,
+      "home_gpu": 2,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1454080,
+      "home_gpu": 2,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1458176,
+      "home_gpu": 2,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1462272,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1466368,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1470464,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1474560,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1478656,
+      "home_gpu": 2,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1482752,
+      "home_gpu": 2,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1486848,
+      "home_gpu": 2,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1490944,
+      "home_gpu": 2,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1495040,
+      "home_gpu": 2,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1499136,
+      "home_gpu": 2,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1503232,
+      "home_gpu": 2,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1507328,
+      "home_gpu": 2,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1511424,
+      "home_gpu": 2,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1515520,
+      "home_gpu": 2,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1519616,
+      "home_gpu": 2,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1523712,
+      "home_gpu": 2,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1527808,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1531904,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1536000,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1540096,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1544192,
+      "home_gpu": 2,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1548288,
+      "home_gpu": 2,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1552384,
+      "home_gpu": 2,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1556480,
+      "home_gpu": 2,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1560576,
+      "home_gpu": 2,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1564672,
+      "home_gpu": 2,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1568768,
+      "home_gpu": 2,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1572864,
+      "home_gpu": 2,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1576960,
+      "home_gpu": 3,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1581056,
+      "home_gpu": 3,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1585152,
+      "home_gpu": 3,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1589248,
+      "home_gpu": 3,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1593344,
+      "home_gpu": 3,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1597440,
+      "home_gpu": 3,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1601536,
+      "home_gpu": 3,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1605632,
+      "home_gpu": 3,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1609728,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1613824,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1617920,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1622016,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1626112,
+      "home_gpu": 3,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1630208,
+      "home_gpu": 3,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1634304,
+      "home_gpu": 3,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1638400,
+      "home_gpu": 3,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1642496,
+      "home_gpu": 3,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1646592,
+      "home_gpu": 3,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1650688,
+      "home_gpu": 3,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1654784,
+      "home_gpu": 3,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1658880,
+      "home_gpu": 3,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1662976,
+      "home_gpu": 3,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1667072,
+      "home_gpu": 3,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1671168,
+      "home_gpu": 3,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1675264,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1679360,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1683456,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1687552,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1691648,
+      "home_gpu": 3,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1695744,
+      "home_gpu": 3,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1699840,
+      "home_gpu": 3,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1703936,
+      "home_gpu": 3,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1708032,
+      "home_gpu": 3,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1712128,
+      "home_gpu": 3,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1716224,
+      "home_gpu": 3,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1720320,
+      "home_gpu": 3,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1724416,
+      "home_gpu": 3,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1728512,
+      "home_gpu": 3,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1732608,
+      "home_gpu": 3,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1736704,
+      "home_gpu": 3,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1740800,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1744896,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1748992,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1753088,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1757184,
+      "home_gpu": 3,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1761280,
+      "home_gpu": 3,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1765376,
+      "home_gpu": 3,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1769472,
+      "home_gpu": 3,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1773568,
+      "home_gpu": 3,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1777664,
+      "home_gpu": 3,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1781760,
+      "home_gpu": 3,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1785856,
+      "home_gpu": 3,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1789952,
+      "home_gpu": 3,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1794048,
+      "home_gpu": 3,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1798144,
+      "home_gpu": 3,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1802240,
+      "home_gpu": 3,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1806336,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1810432,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1814528,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1818624,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1822720,
+      "home_gpu": 3,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1826816,
+      "home_gpu": 3,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1830912,
+      "home_gpu": 3,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1835008,
+      "home_gpu": 3,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1839104,
+      "home_gpu": 4,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1843200,
+      "home_gpu": 4,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1847296,
+      "home_gpu": 4,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1851392,
+      "home_gpu": 4,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1855488,
+      "home_gpu": 4,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1859584,
+      "home_gpu": 4,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1863680,
+      "home_gpu": 4,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1867776,
+      "home_gpu": 4,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1871872,
+      "home_gpu": 4,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1875968,
+      "home_gpu": 4,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1880064,
+      "home_gpu": 4,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1884160,
+      "home_gpu": 4,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1888256,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1892352,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1896448,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1900544,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1904640,
+      "home_gpu": 4,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1908736,
+      "home_gpu": 4,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1912832,
+      "home_gpu": 4,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1916928,
+      "home_gpu": 4,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1921024,
+      "home_gpu": 4,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1925120,
+      "home_gpu": 4,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1929216,
+      "home_gpu": 4,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1933312,
+      "home_gpu": 4,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1937408,
+      "home_gpu": 4,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1941504,
+      "home_gpu": 4,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1945600,
+      "home_gpu": 4,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1949696,
+      "home_gpu": 4,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1953792,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1957888,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1961984,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1966080,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 1970176,
+      "home_gpu": 4,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1974272,
+      "home_gpu": 4,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1978368,
+      "home_gpu": 4,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1982464,
+      "home_gpu": 4,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1986560,
+      "home_gpu": 4,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1990656,
+      "home_gpu": 4,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1994752,
+      "home_gpu": 4,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 1998848,
+      "home_gpu": 4,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 2002944,
+      "home_gpu": 4,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 2007040,
+      "home_gpu": 4,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 2011136,
+      "home_gpu": 4,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 2015232,
+      "home_gpu": 4,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 2019328,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 2023424,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 2027520,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 2031616,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 2035712,
+      "home_gpu": 4,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 2039808,
+      "home_gpu": 4,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 2043904,
+      "home_gpu": 4,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 2048000,
+      "home_gpu": 4,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 2052096,
+      "home_gpu": 4,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 2056192,
+      "home_gpu": 4,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 2060288,
+      "home_gpu": 4,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 2064384,
+      "home_gpu": 4,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 2068480,
+      "home_gpu": 4,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 2072576,
+      "home_gpu": 4,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 2076672,
+      "home_gpu": 4,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 2080768,
+      "home_gpu": 4,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 2084864,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 2088960,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 2093056,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 2097152,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 2101248,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 2105344,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 2109440,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 2113536,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 2117632,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 2121728,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 2125824,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 2129920,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 2134016,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 2138112,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 2142208,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 2146304,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 2150400,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 2154496,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 2158592,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 2162688,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 2166784,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-written-shared-read"
+    }
+  ],
+  "home_pages_by_gpu": {
+    "1": 133,
+    "2": 132,
+    "3": 132,
+    "4": 132
+  },
+  "owner_read_transactions": 0,
+  "non_owner_read_transactions": 0,
+  "owner_write_transactions": 0,
+  "non_owner_write_transactions": 0,
+  "replica_read_transactions": 0,
+  "remote_home_read_transactions": 0,
+  "copy_bytes_by_role": {},
+  "copy_faults_by_role": {},
+  "recovery_wait_ps_by_role": null,
+  "fabric_model": "destination-ready-v2",
+  "managed_pages": 529,
+  "epoch_activity": [
+    {
+      "name": "kernel/000001",
+      "start_ps": 4898000,
+      "end_ps": 48047000,
+      "instructions_by_gpu": {
+        "1": 21568,
+        "2": 21568,
+        "3": 21568,
+        "4": 21568
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11544000,
+        "1": 100000,
+        "2": 480000,
+        "3": 151000,
+        "4": 30874000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "host-write/000001",
+      "start_ps": 53587000,
+      "end_ps": 54205000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 618000
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "kernel/000002",
+      "start_ps": 54679000,
+      "end_ps": 112685000,
+      "instructions_by_gpu": {
+        "1": 165696,
+        "2": 165696,
+        "3": 165696,
+        "4": 165696
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11773000,
+        "1": 2394000,
+        "2": 986000,
+        "3": 2123000,
+        "4": 40730000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "host-write/000002",
+      "start_ps": 114121000,
+      "end_ps": 114739000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 618000
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "kernel/000003",
+      "start_ps": 115213000,
+      "end_ps": 172176000,
+      "instructions_by_gpu": {
+        "1": 165696,
+        "2": 165696,
+        "3": 165696,
+        "4": 165696
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11768000,
+        "1": 2744000,
+        "2": 482000,
+        "3": 2228000,
+        "4": 39741000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "host-write/000003",
+      "start_ps": 173612000,
+      "end_ps": 174230000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 618000
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "kernel/000004",
+      "start_ps": 174704000,
+      "end_ps": 231754000,
+      "instructions_by_gpu": {
+        "1": 165696,
+        "2": 165696,
+        "3": 165696,
+        "4": 165696
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11768000,
+        "1": 2641000,
+        "2": 435000,
+        "3": 2299000,
+        "4": 39907000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "host-write/000004",
+      "start_ps": 233190000,
+      "end_ps": 233808000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 618000
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "kernel/000005",
+      "start_ps": 234282000,
+      "end_ps": 291348000,
+      "instructions_by_gpu": {
+        "1": 165696,
+        "2": 165696,
+        "3": 165696,
+        "4": 165696
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11779000,
+        "1": 2593000,
+        "2": 496000,
+        "3": 2281000,
+        "4": 39917000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    }
+  ],
+  "model_revision": "replica-owner-v3",
+  "oracle_mapping_preinstall": false,
+  "mapping_installs": 0,
+  "tlb_flush_epochs": 0,
+  "mapping_faults": 532,
+  "fallback_page_epochs": 0,
+  "multiple_writer_page_epochs": 0,
+  "read_write_overlap_page_epochs": 0,
+  "fallback_gpu_page_accesses": 0,
+  "fallback_read_transactions": 0,
+  "fallback_write_transactions": 0,
+  "fallback_events": null,
+  "write_epoch_new_copies": 0,
+  "write_epoch_new_copy_bytes": 0,
+  "write_epoch_new_copy_faults": 0,
+  "write_epoch_existing_replica_reads": 0,
+  "write_epoch_new_replica_reads": 0,
+  "recovery_events": null,
+  "s4_inv_replica_targets": 0,
+  "write_page_epochs": 0,
+  "versioned_pages": 0,
+  "config": {
+    "transfer_gran_bytes": 32,
+    "policy": "inv",
+    "page_bytes": 4096,
+    "sector_bytes": 32,
+    "fault_ns": 900,
+    "fault_slots": 16,
+    "bandwidth_gbs": 300,
+    "link_ns": 200,
+    "replica_pages_per_gpu": 0,
+    "metadata_ns": 0,
+    "shootdown_ns": 0
+  },
+  "epochs": 9,
+  "kernel_ps": 272234000,
+  "host_transfer_ps": 10506000,
+  "validation_sha256": "e49b795233d9994dafc729139966c8fd54a9046c634b4d88631f70e37b1d6463",
+  "kernel_count": 5,
+  "host_write_epochs": 4,
+  "peak_live_managed_pages": 529,
+  "retired_managed_pages": 0,
+  "application_ps": 287886000,
+  "barrier_flush_ps": 5146000,
+  "recovery_wait_ps": 0,
+  "copy_faults": 0,
+  "cold_copies": 0,
+  "refills": 0,
+  "repairs": 0,
+  "copy_bytes": 0,
+  "invalidations": 0,
+  "evictions": 0,
+  "peak_replica_pages": 0,
+  "peak_stale_pages": 0,
+  "retained_pages": 0,
+  "s2_clean_transactions": 0,
+  "s3_preexisting_replica_read_transactions": 0,
+  "s3_preexisting_replica_read_sectors": 0,
+  "s3_conflicting_read_sectors": 0,
+  "repair_granularities": {},
+  "fabric_bytes": 6720384,
+  "fabric_messages": 140008
+}

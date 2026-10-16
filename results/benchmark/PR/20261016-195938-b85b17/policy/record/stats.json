@@ -1,0 +1,190 @@
+{
+  "page_ownership": [
+    {
+      "page": 4096,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 8192,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 12288,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 16384,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 20480,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    }
+  ],
+  "home_pages_by_gpu": {
+    "1": 5
+  },
+  "owner_read_transactions": 0,
+  "non_owner_read_transactions": 0,
+  "owner_write_transactions": 0,
+  "non_owner_write_transactions": 0,
+  "replica_read_transactions": 0,
+  "remote_home_read_transactions": 0,
+  "copy_bytes_by_role": {},
+  "copy_faults_by_role": {},
+  "recovery_wait_ps_by_role": null,
+  "fabric_model": "destination-ready-v2",
+  "managed_pages": 5,
+  "epoch_activity": [
+    {
+      "name": "kernel/000001",
+      "start_ps": 2499000,
+      "end_ps": 21441000,
+      "instructions_by_gpu": {
+        "1": 4652,
+        "2": 4832,
+        "3": 4760,
+        "4": 4760
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11572000,
+        "1": 281000,
+        "2": 678000,
+        "3": 1555000,
+        "4": 4856000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000002",
+      "start_ps": 22014000,
+      "end_ps": 37779000,
+      "instructions_by_gpu": {
+        "1": 4652,
+        "2": 4832,
+        "3": 4760,
+        "4": 4760
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11572000,
+        "1": 49000,
+        "2": 196000,
+        "3": 2009000,
+        "4": 1939000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    }
+  ],
+  "model_revision": "replica-owner-v3",
+  "oracle_mapping_preinstall": false,
+  "mapping_installs": 0,
+  "tlb_flush_epochs": 0,
+  "mapping_faults": 20,
+  "fallback_page_epochs": 0,
+  "multiple_writer_page_epochs": 0,
+  "read_write_overlap_page_epochs": 0,
+  "fallback_gpu_page_accesses": 0,
+  "fallback_read_transactions": 0,
+  "fallback_write_transactions": 0,
+  "fallback_events": null,
+  "write_epoch_new_copies": 0,
+  "write_epoch_new_copy_bytes": 0,
+  "write_epoch_new_copy_faults": 0,
+  "write_epoch_existing_replica_reads": 0,
+  "write_epoch_new_replica_reads": 0,
+  "recovery_events": null,
+  "s4_inv_replica_targets": 0,
+  "write_page_epochs": 0,
+  "versioned_pages": 0,
+  "config": {
+    "transfer_gran_bytes": 32,
+    "policy": "inv",
+    "page_bytes": 4096,
+    "sector_bytes": 32,
+    "fault_ns": 900,
+    "fault_slots": 16,
+    "bandwidth_gbs": 300,
+    "link_ns": 200,
+    "replica_pages_per_gpu": 0,
+    "metadata_ns": 0,
+    "shootdown_ns": 0
+  },
+  "epochs": 2,
+  "kernel_ps": 34707000,
+  "host_transfer_ps": 583000,
+  "validation_sha256": "ef6ccbd424f9f7ed2a037ab9f959f2472d10642e68ad5f8bd2fddb8aa06013ef",
+  "kernel_count": 2,
+  "host_write_epochs": 0,
+  "peak_live_managed_pages": 5,
+  "retired_managed_pages": 0,
+  "application_ps": 36436000,
+  "barrier_flush_ps": 1146000,
+  "recovery_wait_ps": 0,
+  "copy_faults": 0,
+  "cold_copies": 0,
+  "refills": 0,
+  "repairs": 0,
+  "copy_bytes": 0,
+  "invalidations": 0,
+  "evictions": 0,
+  "peak_replica_pages": 0,
+  "peak_stale_pages": 0,
+  "retained_pages": 0,
+  "s2_clean_transactions": 0,
+  "s3_preexisting_replica_read_transactions": 0,
+  "s3_preexisting_replica_read_sectors": 0,
+  "s3_conflicting_read_sectors": 0,
+  "repair_granularities": {},
+  "fabric_bytes": 138432,
+  "fabric_messages": 2884
+}

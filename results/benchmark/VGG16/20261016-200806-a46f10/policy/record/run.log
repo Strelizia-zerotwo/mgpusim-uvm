@@ -1,0 +1,6 @@
+2026/10/16 20:21:32 /home/only/projects/mgpusim-uvm/mgpusim/amd/benchmarks/dnn/gputraining/dataparallelism.go:39: Epoch 0
+2026/10/16 20:21:32 /home/only/projects/mgpusim-uvm/mgpusim/amd/benchmarks/dnn/gputraining/dataparallelism.go:49: Batch 0
+Im2Col input [1 3 32 32], kernel [3 3], stride [1 1], padding [1 1], dilation [1 1], output [27 1024]
+Im2Col verified.
+Repeat verified.
+Transpose verified.

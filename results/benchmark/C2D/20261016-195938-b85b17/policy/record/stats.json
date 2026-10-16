@@ -1,0 +1,1941 @@
+{
+  "page_ownership": [
+    {
+      "page": 4096,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 8192,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 12288,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 16384,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 20480,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 73728,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1,
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 77824,
+      "home_gpu": 3,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 131072,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-written-shared-read"
+    },
+    {
+      "page": 184320,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 237568,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 241664,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-written-shared-read"
+    },
+    {
+      "page": 245760,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-written-shared-read"
+    },
+    {
+      "page": 249856,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-written-shared-read"
+    },
+    {
+      "page": 253952,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3
+      ],
+      "writers": [
+        1,
+        2,
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 258048,
+      "home_gpu": 3,
+      "readers": [
+        3,
+        4
+      ],
+      "writers": [
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 262144,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3
+      ],
+      "writers": [
+        1,
+        2,
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 266240,
+      "home_gpu": 3,
+      "readers": [
+        3,
+        4
+      ],
+      "writers": [
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 319488,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 372736,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 376832,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-written-shared-read"
+    },
+    {
+      "page": 380928,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-written-shared-read"
+    },
+    {
+      "page": 385024,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-written-shared-read"
+    },
+    {
+      "page": 389120,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 393216,
+      "home_gpu": 2,
+      "readers": [
+        2,
+        3
+      ],
+      "writers": [
+        2,
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 397312,
+      "home_gpu": 3,
+      "readers": [
+        3,
+        4
+      ],
+      "writers": [
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 401408,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 405504,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 409600,
+      "home_gpu": 2,
+      "readers": [
+        2,
+        3
+      ],
+      "writers": [
+        2,
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 413696,
+      "home_gpu": 3,
+      "readers": [
+        3,
+        4
+      ],
+      "writers": [
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 417792,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 471040,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 475136,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-written-shared-read"
+    },
+    {
+      "page": 479232,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-written-shared-read"
+    },
+    {
+      "page": 483328,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-written-shared-read"
+    },
+    {
+      "page": 487424,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 491520,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 544768,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 548864,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-written-shared-read"
+    },
+    {
+      "page": 552960,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-written-shared-read"
+    },
+    {
+      "page": 557056,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-written-shared-read"
+    },
+    {
+      "page": 561152,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 565248,
+      "home_gpu": 2,
+      "readers": [
+        2,
+        3
+      ],
+      "writers": [
+        2,
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 569344,
+      "home_gpu": 3,
+      "readers": [
+        3,
+        4
+      ],
+      "writers": [
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 573440,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 577536,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 581632,
+      "home_gpu": 2,
+      "readers": [
+        2,
+        3
+      ],
+      "writers": [
+        2,
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 585728,
+      "home_gpu": 3,
+      "readers": [
+        3,
+        4
+      ],
+      "writers": [
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 589824,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 643072,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1,
+        2,
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 647168,
+      "home_gpu": 3,
+      "readers": [
+        1
+      ],
+      "writers": [
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 700416,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 704512,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 806912,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 811008,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-written-shared-read"
+    },
+    {
+      "page": 815104,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-written-shared-read"
+    },
+    {
+      "page": 819200,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 823296,
+      "home_gpu": 2,
+      "readers": [
+        2,
+        3
+      ],
+      "writers": [
+        2,
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 827392,
+      "home_gpu": 3,
+      "readers": [
+        3,
+        4
+      ],
+      "writers": [
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 831488,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 835584,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2
+      ],
+      "writers": [
+        1,
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 839680,
+      "home_gpu": 2,
+      "readers": [
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 843776,
+      "home_gpu": 3,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 897024,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 901120,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 905216,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 909312,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 913408,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 966656,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 970752,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 974848,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 978944,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 983040,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    }
+  ],
+  "home_pages_by_gpu": {
+    "1": 51,
+    "2": 6,
+    "3": 10,
+    "4": 5
+  },
+  "owner_read_transactions": 0,
+  "non_owner_read_transactions": 0,
+  "owner_write_transactions": 0,
+  "non_owner_write_transactions": 0,
+  "replica_read_transactions": 0,
+  "remote_home_read_transactions": 0,
+  "copy_bytes_by_role": {},
+  "copy_faults_by_role": {},
+  "recovery_wait_ps_by_role": null,
+  "fabric_model": "destination-ready-v2",
+  "managed_pages": 72,
+  "epoch_activity": [
+    {
+      "name": "kernel/000001",
+      "start_ps": 2509000,
+      "end_ps": 17603000,
+      "instructions_by_gpu": {
+        "1": 27,
+        "2": 27,
+        "3": 27,
+        "4": 27
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11431000,
+        "1": 5000,
+        "2": 8000,
+        "3": 826000,
+        "4": 2824000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000002",
+      "start_ps": 18180000,
+      "end_ps": 34183000,
+      "instructions_by_gpu": {
+        "1": 2808,
+        "2": 2592,
+        "3": 2808,
+        "4": 2592
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 12469000,
+        "1": 150000,
+        "2": 316000,
+        "3": 176000,
+        "4": 2892000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000003",
+      "start_ps": 36001000,
+      "end_ps": 50368000,
+      "instructions_by_gpu": {
+        "1": 27
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11434000,
+        "1": 2933000
+      },
+      "max_gpus_with_inflight_instructions": 1
+    },
+    {
+      "name": "kernel/000004",
+      "start_ps": 50938000,
+      "end_ps": 66041000,
+      "instructions_by_gpu": {
+        "1": 180,
+        "2": 135,
+        "3": 135,
+        "4": 135
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11431000,
+        "1": 4000,
+        "2": 8000,
+        "3": 1744000,
+        "4": 1916000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "host-write/000001",
+      "start_ps": 67826000,
+      "end_ps": 68437000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 611000
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "host-write/000002",
+      "start_ps": 68911000,
+      "end_ps": 69522000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 611000
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "host-write/000003",
+      "start_ps": 69996000,
+      "end_ps": 70607000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 611000
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "kernel/000005",
+      "start_ps": 71081000,
+      "end_ps": 94336000,
+      "instructions_by_gpu": {
+        "1": 1128,
+        "2": 846,
+        "3": 846,
+        "4": 846
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11594000,
+        "1": 61000,
+        "2": 853000,
+        "3": 2157000,
+        "4": 8590000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "retire/000001",
+      "start_ps": 96177000,
+      "end_ps": 96177000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000002",
+      "start_ps": 96651000,
+      "end_ps": 96651000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000003",
+      "start_ps": 97125000,
+      "end_ps": 97125000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000004",
+      "start_ps": 97599000,
+      "end_ps": 97599000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000005",
+      "start_ps": 98073000,
+      "end_ps": 98073000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "kernel/000006",
+      "start_ps": 98547000,
+      "end_ps": 120058000,
+      "instructions_by_gpu": {
+        "1": 1036,
+        "2": 777,
+        "3": 777,
+        "4": 777
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11758000,
+        "1": 526000,
+        "2": 874000,
+        "3": 2919000,
+        "4": 5434000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "host-write/000004",
+      "start_ps": 123108000,
+      "end_ps": 123719000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 611000
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "host-write/000005",
+      "start_ps": 124193000,
+      "end_ps": 124804000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 611000
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "host-write/000006",
+      "start_ps": 125278000,
+      "end_ps": 125889000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 611000
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "kernel/000007",
+      "start_ps": 126363000,
+      "end_ps": 150250000,
+      "instructions_by_gpu": {
+        "1": 2048,
+        "2": 1536,
+        "3": 1536,
+        "4": 1536
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11596000,
+        "1": 32000,
+        "2": 30000,
+        "3": 2455000,
+        "4": 9774000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "retire/000006",
+      "start_ps": 152092000,
+      "end_ps": 152092000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000007",
+      "start_ps": 152566000,
+      "end_ps": 152566000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000008",
+      "start_ps": 153040000,
+      "end_ps": 153040000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000009",
+      "start_ps": 153514000,
+      "end_ps": 153514000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000010",
+      "start_ps": 153988000,
+      "end_ps": 153988000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000011",
+      "start_ps": 154462000,
+      "end_ps": 154462000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000012",
+      "start_ps": 154936000,
+      "end_ps": 154936000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000013",
+      "start_ps": 155410000,
+      "end_ps": 155410000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000014",
+      "start_ps": 155884000,
+      "end_ps": 155884000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000015",
+      "start_ps": 156358000,
+      "end_ps": 156358000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "host-write/000007",
+      "start_ps": 156832000,
+      "end_ps": 157443000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 611000
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "host-write/000008",
+      "start_ps": 157917000,
+      "end_ps": 158528000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 611000
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "host-write/000009",
+      "start_ps": 159002000,
+      "end_ps": 159613000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 611000
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "kernel/000008",
+      "start_ps": 160087000,
+      "end_ps": 186385000,
+      "instructions_by_gpu": {
+        "1": 512,
+        "2": 512,
+        "3": 512,
+        "4": 512
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11602000,
+        "1": 75000,
+        "2": 189000,
+        "3": 4441000,
+        "4": 9991000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "retire/000016",
+      "start_ps": 188158000,
+      "end_ps": 188158000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000017",
+      "start_ps": 188632000,
+      "end_ps": 188632000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000018",
+      "start_ps": 189106000,
+      "end_ps": 189106000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000019",
+      "start_ps": 189580000,
+      "end_ps": 189580000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000020",
+      "start_ps": 190054000,
+      "end_ps": 190054000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "host-write/000010",
+      "start_ps": 190528000,
+      "end_ps": 191139000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 611000
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "host-write/000011",
+      "start_ps": 191613000,
+      "end_ps": 192224000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 611000
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "host-write/000012",
+      "start_ps": 192698000,
+      "end_ps": 193309000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 611000
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "kernel/000009",
+      "start_ps": 193783000,
+      "end_ps": 218676000,
+      "instructions_by_gpu": {
+        "1": 2048,
+        "2": 1536,
+        "3": 1536,
+        "4": 1536
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11595000,
+        "1": 31000,
+        "2": 35000,
+        "3": 2451000,
+        "4": 10781000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "retire/000021",
+      "start_ps": 220518000,
+      "end_ps": 220518000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000022",
+      "start_ps": 220992000,
+      "end_ps": 220992000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000023",
+      "start_ps": 221466000,
+      "end_ps": 221466000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000024",
+      "start_ps": 221940000,
+      "end_ps": 221940000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000025",
+      "start_ps": 222414000,
+      "end_ps": 222414000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "kernel/000010",
+      "start_ps": 222888000,
+      "end_ps": 239020000,
+      "instructions_by_gpu": {
+        "1": 2808,
+        "2": 2592,
+        "3": 2808,
+        "4": 2592
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 12466000,
+        "1": 90000,
+        "2": 88000,
+        "3": 806000,
+        "4": 2682000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "host-write/000013",
+      "start_ps": 240838000,
+      "end_ps": 241451000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 613000
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "kernel/000011",
+      "start_ps": 241925000,
+      "end_ps": 313315000,
+      "instructions_by_gpu": {
+        "1": 3438
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 13966000,
+        "1": 57424000
+      },
+      "max_gpus_with_inflight_instructions": 1
+    },
+    {
+      "name": "kernel/000012",
+      "start_ps": 316304000,
+      "end_ps": 329666000,
+      "instructions_by_gpu": {
+        "1": 27
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11434000,
+        "1": 1928000
+      },
+      "max_gpus_with_inflight_instructions": 1
+    },
+    {
+      "name": "retire/000026",
+      "start_ps": 330236000,
+      "end_ps": 330236000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000027",
+      "start_ps": 330710000,
+      "end_ps": 330710000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000028",
+      "start_ps": 331184000,
+      "end_ps": 331184000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000029",
+      "start_ps": 331658000,
+      "end_ps": 331658000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000030",
+      "start_ps": 332132000,
+      "end_ps": 332132000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "host-write/000014",
+      "start_ps": 332606000,
+      "end_ps": 333217000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 611000
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "host-write/000015",
+      "start_ps": 333691000,
+      "end_ps": 334302000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 611000
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "kernel/000013",
+      "start_ps": 334776000,
+      "end_ps": 359178000,
+      "instructions_by_gpu": {
+        "1": 1980,
+        "2": 1485,
+        "3": 1485,
+        "4": 1485
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11584000,
+        "1": 165000,
+        "2": 1320000,
+        "3": 3195000,
+        "4": 8138000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "retire/000031",
+      "start_ps": 359771000,
+      "end_ps": 359771000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000032",
+      "start_ps": 360245000,
+      "end_ps": 360245000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000033",
+      "start_ps": 360719000,
+      "end_ps": 360719000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000034",
+      "start_ps": 361193000,
+      "end_ps": 361193000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "host-write/000016",
+      "start_ps": 361667000,
+      "end_ps": 362278000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 611000
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "host-write/000017",
+      "start_ps": 362752000,
+      "end_ps": 363363000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 611000
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "kernel/000014",
+      "start_ps": 363837000,
+      "end_ps": 400087000,
+      "instructions_by_gpu": {
+        "1": 2282
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 14157000,
+        "1": 22093000
+      },
+      "max_gpus_with_inflight_instructions": 1
+    },
+    {
+      "name": "retire/000035",
+      "start_ps": 400662000,
+      "end_ps": 400662000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000036",
+      "start_ps": 401136000,
+      "end_ps": 401136000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000037",
+      "start_ps": 401610000,
+      "end_ps": 401610000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000038",
+      "start_ps": 402084000,
+      "end_ps": 402084000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000039",
+      "start_ps": 402558000,
+      "end_ps": 402558000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "host-write/000018",
+      "start_ps": 403032000,
+      "end_ps": 403643000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 611000
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "host-write/000019",
+      "start_ps": 404117000,
+      "end_ps": 404728000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 611000
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "kernel/000015",
+      "start_ps": 405202000,
+      "end_ps": 434696000,
+      "instructions_by_gpu": {
+        "1": 1588
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 13547000,
+        "1": 15947000
+      },
+      "max_gpus_with_inflight_instructions": 1
+    },
+    {
+      "name": "retire/000040",
+      "start_ps": 435267000,
+      "end_ps": 435267000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000041",
+      "start_ps": 435741000,
+      "end_ps": 435741000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000042",
+      "start_ps": 436215000,
+      "end_ps": 436215000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000043",
+      "start_ps": 436689000,
+      "end_ps": 436689000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000044",
+      "start_ps": 437163000,
+      "end_ps": 437163000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "kernel/000016",
+      "start_ps": 438837000,
+      "end_ps": 451399000,
+      "instructions_by_gpu": {
+        "1": 27
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11434000,
+        "1": 1128000
+      },
+      "max_gpus_with_inflight_instructions": 1
+    },
+    {
+      "name": "retire/000045",
+      "start_ps": 451968000,
+      "end_ps": 451968000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    },
+    {
+      "name": "retire/000046",
+      "start_ps": 452442000,
+      "end_ps": 452442000,
+      "instructions_by_gpu": {},
+      "inflight_gpu_duration_ps": {
+        "0": 0
+      },
+      "max_gpus_with_inflight_instructions": 0
+    }
+  ],
+  "model_revision": "replica-owner-v3",
+  "oracle_mapping_preinstall": false,
+  "mapping_installs": 0,
+  "tlb_flush_epochs": 0,
+  "mapping_faults": 185,
+  "fallback_page_epochs": 0,
+  "multiple_writer_page_epochs": 0,
+  "read_write_overlap_page_epochs": 0,
+  "fallback_gpu_page_accesses": 0,
+  "fallback_read_transactions": 0,
+  "fallback_write_transactions": 0,
+  "fallback_events": null,
+  "write_epoch_new_copies": 0,
+  "write_epoch_new_copy_bytes": 0,
+  "write_epoch_new_copy_faults": 0,
+  "write_epoch_existing_replica_reads": 0,
+  "write_epoch_new_replica_reads": 0,
+  "recovery_events": null,
+  "s4_inv_replica_targets": 0,
+  "write_page_epochs": 0,
+  "versioned_pages": 0,
+  "config": {
+    "transfer_gran_bytes": 32,
+    "policy": "inv",
+    "page_bytes": 4096,
+    "sector_bytes": 32,
+    "fault_ns": 900,
+    "fault_slots": 16,
+    "bandwidth_gbs": 300,
+    "link_ns": 200,
+    "replica_pages_per_gpu": 0,
+    "metadata_ns": 0,
+    "shootdown_ns": 0
+  },
+  "epochs": 81,
+  "kernel_ps": 384003000,
+  "host_transfer_ps": 26281000,
+  "validation_sha256": "a16367ebfb2b7e82222a50a3eb8e5d4f697d22b5a6ddac0a91185b9e24800251",
+  "kernel_count": 16,
+  "host_write_epochs": 19,
+  "peak_live_managed_pages": 23,
+  "retired_managed_pages": 67,
+  "application_ps": 450407000,
+  "barrier_flush_ps": 40123000,
+  "recovery_wait_ps": 0,
+  "copy_faults": 0,
+  "cold_copies": 0,
+  "refills": 0,
+  "repairs": 0,
+  "copy_bytes": 0,
+  "invalidations": 0,
+  "evictions": 0,
+  "peak_replica_pages": 0,
+  "peak_stale_pages": 0,
+  "retained_pages": 0,
+  "s2_clean_transactions": 0,
+  "s3_preexisting_replica_read_transactions": 0,
+  "s3_preexisting_replica_read_sectors": 0,
+  "s3_conflicting_read_sectors": 0,
+  "repair_granularities": {},
+  "fabric_bytes": 351936,
+  "fabric_messages": 7332
+}

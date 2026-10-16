@@ -1,0 +1,27 @@
+{
+  "id": "LeNet",
+  "sample": "lenet",
+  "group": "A",
+  "role": "candidate",
+  "profiles": {
+    "smoke": [
+      "-epoch=1",
+      "-max-batch-per-epoch=2",
+      "-batch-size=1"
+    ],
+    "small": [
+      "-epoch=1",
+      "-max-batch-per-epoch=2",
+      "-batch-size=2"
+    ]
+  },
+  "arch": "gcn3",
+  "gpu": "r9nano",
+  "blocked": "training sample SetUnifiedMemory panics; Verify is unimplemented; requires MNIST and a UVM/replica adapter",
+  "verify_kind": "passed",
+  "core_replica": true,
+  "synthetic_samples": {
+    "smoke": 2,
+    "small": 4
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "reason": "BFS competing discovery stores can change writer GPU across timing runs",
+  "mutable_buffers": "levels and flag; routed home using declared may-write masks",
+  "read_only_buffers": "CSR arrays; declared read supersets",
+  "validation": "CPU final levels and terminal logical-buffer digest"
+}

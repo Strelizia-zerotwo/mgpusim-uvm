@@ -1,0 +1,112 @@
+{
+  "modified": [
+    {
+      "path": "amd/driver/api.go",
+      "before_sha256": "3121efda12c8fbc8d99b0a831b1dc222d0785922120c875826c019b5c61df8ef"
+    },
+    {
+      "path": "amd/driver/driver.go",
+      "before_sha256": "3abdf1214aee6f54e38f137343b10e764668de29d43da04d28c440a35dad49fc"
+    },
+    {
+      "path": "amd/samples/runner/runner.go",
+      "before_sha256": "243fbe4748958792ccd250c6747df070915058c9c546fa3afef8ba7af839c4c2"
+    },
+    {
+      "path": "amd/samples/runner/emusystem/emugpu/builder.go",
+      "before_sha256": "5ea74df871883eebad6441397f0a593be789b75efcb83c7b218c8aea2c8d3b81"
+    },
+    {
+      "path": "amd/timing/cu/computeunit.go",
+      "before_sha256": "d4edc7281b8b334dc78f1b601cfad89c9ab123b614f6686932cee0f57c44e31c"
+    },
+    {
+      "path": "amd/timing/cu/scalarunit.go",
+      "before_sha256": "18c3f47bb0143bb9c22df834f128599a46e516db09b6348df623ca9fd31ee09e"
+    },
+    {
+      "path": "amd/timing/cu/vectormemoryunit.go",
+      "before_sha256": "ed4f45358beaf37f4c7b8ad0353257d2b80105d400951702c02b8e3787869423"
+    },
+    {
+      "path": "amd/samples/runner/flag.go",
+      "before_sha256": "ebf950f342059ccfc9d22ff1a318498f681ba8b5d4e6ba2d3afe9de2910a32c8"
+    },
+    {
+      "path": "amd/samples/runner/faultflags.go",
+      "before_sha256": "e837de17e69e47a4a0373c8e504a2e7874a7c2c67d284a6a4b182b17a2f01a32"
+    },
+    {
+      "path": "amd/samples/runner/timingconfig/fault.go",
+      "before_sha256": "5e3fcdd44af4bf6ed27c30506a93dbb7f7be1385265f8c4f34d4b70b17f3edb9"
+    },
+    {
+      "path": "amd/samples/runner/timingconfig/builder.go",
+      "before_sha256": "cbb9ee566d60b65968ac637ea3dcd3e74db6a804fd0b200d8d7d06556e6686e9"
+    },
+    {
+      "path": "amd/samples/runner/timingconfig/r9nano/builder.go",
+      "before_sha256": "f16b903d0321d0cb7cee5428ecc92e220928066880b5d9edc6515a9b0a2216b2"
+    },
+    {
+      "path": "amd/samples/runner/timingconfig/mi300x/builder.go",
+      "before_sha256": "36a99fdfd5acfdc0b15d716bc5ede3145f8612a18a667cb1b7f845c68fe97afb"
+    },
+    {
+      "path": "amd/samples/runner/timingconfig/shaderarray/builder.go",
+      "before_sha256": "91633e4d7cb9a7420b64e7489bc8176c1372ee5e6526546423030926599ccd12"
+    },
+    {
+      "path": "amd/samples/runner/report.go",
+      "before_sha256": "b816659ff62b415927dc91ba291dd593c805b43a633a366fbc028782d72858d2"
+    },
+    {
+      "path": "amd/samples/runner/faultreport.go",
+      "before_sha256": "108345ed0d82a546d988a8066c9ebcf6346d9af46a9f07c38dab41c90a4b87c4"
+    },
+    {
+      "path": "amd/samples/runner/mmureport.go",
+      "before_sha256": "bb31f3748a18c66106faf1b15c794121f03f5e0c28467a9bf3a8875244d14dce"
+    },
+    {
+      "path": "amd/timing/idealmapping/table.go",
+      "before_sha256": "569cb01ca08d5d197ed509d48b7c80cea93368d90b5558054a1134aa728c0fe1"
+    },
+    {
+      "path": "amd/timing/idealmapping/demand.go",
+      "before_sha256": "612758d3a4a1a80e3a591a9d65d87e981ec8cff415090a0d2ccd2fb2f26439d7"
+    },
+    {
+      "path": "amd/timing/idealmapping/table_test.go",
+      "before_sha256": "a4e5d157479e4eef24b29a766242cfcbde238ef3177a667d4087716baf2c32e7"
+    },
+    {
+      "path": "amd/timing/faultvm/faultvm_test.go",
+      "before_sha256": "db6efcf0cf36ede51f18ea826690dcf4309a5fdbe8f9a19f25a71be393d9ca40"
+    },
+    {
+      "path": "amd/timing/faultvm/types.go",
+      "before_sha256": "ca4b8f4f29c8689621a78b5d944082e664ecd86cc3036ec00c3e128ced8f6c3c"
+    }
+  ],
+  "removed": [
+    "mgpusim/amd/timing/sectortlb",
+    "mgpusim/amd/timing/memtrace",
+    "mgpusim/amd/samples/runner/timingconfig/tlbprofile",
+    "mgpusim/amd/samples/runner/timingconfig/tlbprofile_test.go",
+    "mgpusim/amd/samples/runner/timingconfig/ideallocal.go",
+    "mgpusim/amd/samples/runner/l3flags.go",
+    "mgpusim/amd/samples/runner/l3report.go",
+    "mgpusim/amd/samples/runner/tlbflags.go",
+    "mgpusim/experiments/ideal-local",
+    "mgpusim/experiments/l3-tlb",
+    "mgpusim/experiments/libra-baseline-guide",
+    "replica-recovery.md"
+  ],
+  "renamed": [
+    [
+      "amd/timing/idealmapping",
+      "amd/timing/localmapping"
+    ]
+  ]
+}

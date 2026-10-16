@@ -1,0 +1,1 @@
+/usr/local/go/bin/go build -o /home/only/projects/mgpusim-uvm/results/benchmark/_suites/20261016-193540-544845/bin/fir ./amd/samples/fir

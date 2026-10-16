@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "/home/only/projects/mgpusim-uvm/results/benchmark/_suites/20261016-202430-d95c7e/bin/matrixmultiplication",
+    "-timing",
+    "-disable-rtm",
+    "-use-unified-memory",
+    "-vm-mode=demand",
+    "-verify",
+    "-replica-core",
+    "-unified-gpus=1,2,3,4",
+    "-report-all",
+    "-metric-file-name=metrics",
+    "-core-replica-plan-out=observed-plan.json",
+    "-core-replica-stats=stats.json",
+    "-arch=gcn3",
+    "-gpu=r9nano",
+    "-page-bytes=4096",
+    "-x=64",
+    "-y=64",
+    "-z=64",
+    "-core-replica-config=/home/only/projects/mgpusim-uvm/results/benchmark/MM/20261016-202430-d95c7e/policy/record-config.json"
+  ],
+  "cwd": "/home/only/projects/mgpusim-uvm/results/benchmark/MM/20261016-202430-d95c7e/policy/record"
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "benchmark": "FIR",
+    "profile": "small",
+    "mode": "stock",
+    "policy": null,
+    "repeat": 0,
+    "directory": "/home/only/projects/mgpusim-uvm/results/benchmark/FIR/20261016-193540-544845/stock/repeat-0",
+    "verification": "CPU_PASSED",
+    "status": "OK",
+    "returncode": 0,
+    "wall_s": 13.039861,
+    "peak_rss_kib": 1249528,
+    "active_gpus": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "instructions_by_gpu": {
+      "1": 100352.0,
+      "2": 100352.0,
+      "3": 100352.0,
+      "4": 100352.0
+    },
+    "kernel_us": 11.811,
+    "mapping_faults": 0,
+    "kernel_count": null,
+    "gpu_activity_ok": true,
+    "reason": "platform run only; replica/refill metrics and runtime kernel count unavailable"
+  }
+]

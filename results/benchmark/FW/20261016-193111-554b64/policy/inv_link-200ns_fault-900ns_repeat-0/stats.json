@@ -1,0 +1,669 @@
+{
+  "page_ownership": [
+    {
+      "page": 4096,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 8192,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 12288,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 16384,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 20480,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 24576,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 28672,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 32768,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 36864,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 40960,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 45056,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 49152,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 53248,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 57344,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 61440,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 65536,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 69632,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-written-shared-read"
+    },
+    {
+      "page": 73728,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 77824,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 81920,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 86016,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 90112,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 94208,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 98304,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 102400,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 106496,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 110592,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 114688,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 118784,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 122880,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 126976,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 131072,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    }
+  ],
+  "home_pages_by_gpu": {
+    "1": 8,
+    "2": 8,
+    "3": 8,
+    "4": 8
+  },
+  "owner_read_transactions": 33280,
+  "non_owner_read_transactions": 1536,
+  "owner_write_transactions": 16216,
+  "non_owner_write_transactions": 0,
+  "replica_read_transactions": 192,
+  "remote_home_read_transactions": 1344,
+  "copy_bytes_by_role": {
+    "owner-written-shared-read": 12288
+  },
+  "copy_faults_by_role": {
+    "owner-written-shared-read": 3
+  },
+  "recovery_wait_ps_by_role": {
+    "owner-written-shared-read": 1141121
+  },
+  "fabric_model": "destination-ready-v2",
+  "managed_pages": 32,
+  "epoch_activity": [
+    {
+      "name": "parallel-fw-0",
+      "start_ps": 1756000,
+      "end_ps": 9250000,
+      "instructions_by_gpu": {
+        "1": 3456,
+        "2": 3449,
+        "3": 3456,
+        "4": 3456
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 5942000,
+        "1": 4000,
+        "2": 4000,
+        "3": 467000,
+        "4": 1077000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "parallel-fw-1",
+      "start_ps": 9856000,
+      "end_ps": 16787000,
+      "instructions_by_gpu": {
+        "1": 3456,
+        "2": 3456,
+        "3": 3456,
+        "4": 3456
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 5326000,
+        "1": 47000,
+        "2": 13000,
+        "3": 464000,
+        "4": 1081000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "parallel-fw-2",
+      "start_ps": 17399000,
+      "end_ps": 24329000,
+      "instructions_by_gpu": {
+        "1": 3393,
+        "2": 3435,
+        "3": 3442,
+        "4": 3372
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 5326000,
+        "1": 2000,
+        "2": 66000,
+        "3": 460000,
+        "4": 1076000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "parallel-fw-3",
+      "start_ps": 24927000,
+      "end_ps": 31814000,
+      "instructions_by_gpu": {
+        "1": 3442,
+        "2": 3456,
+        "3": 3456,
+        "4": 3449
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 5326000,
+        "1": 11000,
+        "2": 8000,
+        "3": 461000,
+        "4": 1081000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "parallel-fw-4",
+      "start_ps": 32419000,
+      "end_ps": 39338000,
+      "instructions_by_gpu": {
+        "1": 3456,
+        "2": 3456,
+        "3": 3456,
+        "4": 3456
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 5326000,
+        "1": 4000,
+        "2": 3000,
+        "3": 505000,
+        "4": 1081000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "parallel-fw-5",
+      "start_ps": 39951000,
+      "end_ps": 46869000,
+      "instructions_by_gpu": {
+        "1": 3456,
+        "2": 3393,
+        "3": 3442,
+        "4": 3407
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 5326000,
+        "1": 50000,
+        "2": 4000,
+        "3": 457000,
+        "4": 1081000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "parallel-fw-6",
+      "start_ps": 47475000,
+      "end_ps": 54346000,
+      "instructions_by_gpu": {
+        "1": 3330,
+        "2": 3330,
+        "3": 3435,
+        "4": 3274
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 5326000,
+        "1": 2000,
+        "2": 11000,
+        "3": 454000,
+        "4": 1078000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "parallel-fw-7",
+      "start_ps": 56085121,
+      "end_ps": 62551000,
+      "instructions_by_gpu": {
+        "1": 3176,
+        "2": 3281,
+        "3": 3344,
+        "4": 3358
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 5381879,
+        "1": 4000,
+        "2": 8000,
+        "3": 5000,
+        "4": 1067000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    }
+  ],
+  "model_revision": "replica-owner-v3",
+  "oracle_mapping_preinstall": true,
+  "mapping_installs": 278,
+  "tlb_flush_epochs": 8,
+  "mapping_faults": 0,
+  "fallback_page_epochs": 0,
+  "multiple_writer_page_epochs": 0,
+  "read_write_overlap_page_epochs": 0,
+  "fallback_gpu_page_accesses": 0,
+  "fallback_read_transactions": 0,
+  "fallback_write_transactions": 0,
+  "fallback_events": null,
+  "write_epoch_new_copies": 0,
+  "write_epoch_new_copy_bytes": 0,
+  "write_epoch_new_copy_faults": 0,
+  "write_epoch_existing_replica_reads": 0,
+  "write_epoch_new_replica_reads": 0,
+  "recovery_events": [
+    {
+      "home_gpu": 1,
+      "page_role": "owner-written-shared-read",
+      "repair_kind": "inv",
+      "epoch": 7,
+      "page": 69632,
+      "gpu": 2,
+      "source_version": 7,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 54944000,
+      "due_ps": 56057707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "owner-written-shared-read",
+      "repair_kind": "inv",
+      "epoch": 7,
+      "page": 69632,
+      "gpu": 3,
+      "source_version": 7,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 54944000,
+      "due_ps": 56071414,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "owner-written-shared-read",
+      "repair_kind": "inv",
+      "epoch": 7,
+      "page": 69632,
+      "gpu": 4,
+      "source_version": 7,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 54944000,
+      "due_ps": 56085121,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    }
+  ],
+  "s4_inv_replica_targets": 0,
+  "write_page_epochs": 252,
+  "versioned_pages": 32,
+  "config": {
+    "transfer_gran_bytes": 32,
+    "policy": "inv",
+    "page_bytes": 4096,
+    "sector_bytes": 32,
+    "fault_ns": 900,
+    "fault_slots": 16,
+    "bandwidth_gbs": 300,
+    "link_ns": 200,
+    "replica_pages_per_gpu": 0,
+    "metadata_ns": 0,
+    "shootdown_ns": 0
+  },
+  "epochs": 8,
+  "kernel_ps": 55415879,
+  "application_ps": 61385000,
+  "barrier_flush_ps": 4828000,
+  "recovery_wait_ps": 1141121,
+  "copy_faults": 3,
+  "cold_copies": 3,
+  "refills": 0,
+  "repairs": 0,
+  "copy_bytes": 12288,
+  "invalidations": 0,
+  "evictions": 0,
+  "peak_replica_pages": 3,
+  "peak_stale_pages": 0,
+  "retained_pages": 3,
+  "s2_clean_transactions": 0,
+  "s3_preexisting_replica_read_transactions": 0,
+  "s3_preexisting_replica_read_sectors": 0,
+  "s3_conflicting_read_sectors": 0,
+  "repair_granularities": {},
+  "fabric_bytes": 141360,
+  "fabric_messages": 2691
+}

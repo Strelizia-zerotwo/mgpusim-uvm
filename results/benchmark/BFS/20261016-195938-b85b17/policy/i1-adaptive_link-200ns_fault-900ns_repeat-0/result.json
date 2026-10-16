@@ -1,0 +1,17 @@
+{
+  "benchmark": "BFS",
+  "profile": "smoke",
+  "mode": "policy",
+  "policy": "i1-adaptive",
+  "repeat": 0,
+  "directory": "/home/only/projects/mgpusim-uvm/results/benchmark/BFS/20261016-195938-b85b17/policy/i1-adaptive_link-200ns_fault-900ns_repeat-0",
+  "verification": "NOT_RUN",
+  "link_ns": 200,
+  "fault_ns": 900,
+  "bandwidth_gbs": 300,
+  "status": "PROCESS_FAILED",
+  "returncode": 1,
+  "wall_s": 8.142459,
+  "peak_rss_kib": 1102240,
+  "reason": "see run.log; failed timing excluded"
+}
