@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "/usr/local/go/bin/go",
+    "build",
+    "-p",
+    "2",
+    "-o",
+    "/home/only/projects/mgpusim-uvm/results/benchmark/_suites/20261017-193756-a0526b/bin/fir",
+    "./amd/samples/fir"
+  ],
+  "cwd": "/home/only/projects/mgpusim-uvm/mgpusim",
+  "env": {
+    "LC_ALL": "C",
+    "GODEBUG": "randautoseed=0,randseednop=0"
+  }
+}

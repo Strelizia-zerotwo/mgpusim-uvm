@@ -1,5 +1,8 @@
 """Three-policy orchestration for the ordinary-core kernel-barrier adapter."""
 def run_core(b,a,suite,run,api):
+    if getattr(a,'protocol','kernel-internal')=='kernel-internal':
+        from online_policy_runner import run_online
+        return run_online(b,a,suite,run,api)
     build,execute,dump,read,base,check,metrics,activity,screenmod,legacy,csv=(api[x] for x in
         ['build','execute','dump','read','base_row','check_stats','sqlite_metrics','metric_summary','load_screen','load_legacy','csvwrite'])
     if any(p not in ['inv','retain','i1-adaptive'] for p in a.policies):
@@ -10,7 +13,7 @@ def run_core(b,a,suite,run,api):
     cfg.update(page_bytes=4096,transfer_gran_bytes=32,bandwidth_gbs=a.bandwidth_gbs,
                link_ns=a.links[0],fault_ns=a.faults[0],replica_pages_per_gpu=a.replica_pages_per_gpu)
     common=[str(binary),'-timing','-disable-rtm','-use-unified-memory','-vm-mode=demand','-verify',
-            '-replica-core','-unified-gpus='+a.gpus,'-report-all','-metric-file-name=metrics',
+            '-replica-core','-core-protocol=kernel-barrier','-unified-gpus='+a.gpus,'-report-all','-metric-file-name=metrics',
             '-core-replica-plan-out=observed-plan.json','-core-replica-stats=stats.json',
             '-arch=gcn3','-gpu=r9nano','-page-bytes=4096',*b['profiles'][a.profile]]
     if b['id'] in ['LeNet','VGG16']:

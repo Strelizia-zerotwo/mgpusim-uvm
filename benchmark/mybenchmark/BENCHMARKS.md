@@ -1,8 +1,10 @@
-> 当前更新：核心名录仍为14项，默认运行12项；LeNet/VGG16按用户要求跳过。普通核心应用已接入 inv、retain、i1-adaptive 的真实时序回放，不再局限于原并行ST/FW。当前状态与命令见 [RUNNING.md](RUNNING.md)、[IMPLEMENTATION_STATUS.md](IMPLEMENTATION_STATUS.md)、[SIZES.md](SIZES.md)。
+> 当前实验以 **kernel 内理想收益** 为准：默认只跑 `inv,delta,delta-sub`。失效、元数据、缓存与在途正确性处理免费；只给复制/修复收 fault 与总字节传输。规则和命令见 [KERNEL_INTERNAL.md](KERNEL_INTERNAL.md)、[RUNNING.md](RUNNING.md)。
 >
-> 下文保留最初的文献清单和动机分类；其中“初测”、旧 trace.meta/changed 工具和旧调度说明是历史背景，当前执行口径以上述文档为准。训练自检使用显式合成输入，不能冒充论文原始数据集与调度。
+> 核心名录仍为 14 项，默认运行 12 项；LeNet/VGG16 跳过。本轮只构建与测试，未执行应用。下面的论文列表、输入参考继续保留；有关 kernel 边界机会、旧策略和旧验证的表述属于历史口径。
 
 # 失效副本恢复：benchmark 列表
+
+补充更新：lud、gaussian、pathfinder、backprop、gramschmidt 已接入当前三策略脚本。源码、规模与当前实现的算法边界见 [IDEA_CANDIDATES.md](IDEA_CANDIDATES.md)。下面 C 类的收益角色属于候选假设。
 
 依据：CDFD（ISCA'26，13 个）、LIBRA（ISCA'26，23 个）、OASIS（HPCA'25，11 个）、GRIT（HPCA'24，8 个）、
 ShadowUpdate（ISCA'26，14 个）的 benchmark 表，以及本仓库 MGPUSim 自带的 `amd/samples`。

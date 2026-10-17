@@ -1,0 +1,33 @@
+{
+  "argv": [
+    "/home/only/projects/mgpusim-uvm/results/benchmark/_suites/20261017-200119-701de9/bin/conv2d",
+    "-timing",
+    "-disable-rtm",
+    "-use-unified-memory",
+    "-vm-mode=demand",
+    "-verify",
+    "-replica-core",
+    "-core-protocol=passive",
+    "-unified-gpus=1,2,3,4",
+    "-report-all",
+    "-metric-file-name=metrics",
+    "-core-replica-plan-out=observed-accesses.json",
+    "-core-replica-stats=stats.json",
+    "-core-digest-terminal",
+    "-arch=gcn3",
+    "-gpu=r9nano",
+    "-page-bytes=4096",
+    "-N=4",
+    "-C=3",
+    "-H=32",
+    "-W=32",
+    "-output-channel=8",
+    "-enable-backward",
+    "-core-replica-config=/home/only/projects/mgpusim-uvm/results/benchmark/C2D/20261017-200119-701de9/policy/retain_link-200ns_fault-900ns_repeat-0.json"
+  ],
+  "cwd": "/home/only/projects/mgpusim-uvm/results/benchmark/C2D/20261017-200119-701de9/policy/retain_link-200ns_fault-900ns_repeat-0",
+  "env": {
+    "LC_ALL": "C",
+    "GODEBUG": "randautoseed=0,randseednop=0"
+  }
+}

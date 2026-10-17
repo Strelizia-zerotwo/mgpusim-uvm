@@ -69,3 +69,12 @@ func (d *Driver) AllocateUnifiedMemoryOnGPU(ctx *Context, bytes uint64, gpu int)
 	ctx.buffers = append(ctx.buffers, &buffer{vAddr: ptr, size: bytes})
 	return ptr
 }
+
+// TryAllocateReplicaFrame reserves a frame during serial protocol execution.
+// No mapping is published until the caller has cleaned recycled cache tags.
+func (d *Driver) TryAllocateReplicaFrame(gpu int) (uint64, bool) {
+	if gpu < 1 || gpu >= len(d.devices) {
+		panic("replica: invalid GPU")
+	}
+	return d.devices[gpu].TryAllocateReplicaFrame()
+}

@@ -1,0 +1,95 @@
+{
+  "benchmark": "SC",
+  "profile": "smoke",
+  "mode": "policy",
+  "policy": "inv",
+  "repeat": 0,
+  "directory": "/home/only/projects/mgpusim-uvm/results/benchmark/SC/20261017-193756-a0526b/policy/inv_link-200ns_fault-900ns_repeat-0",
+  "verification": "BENCHMARK_VERIFY_AND_PROTOCOL_DRAIN_PASSED",
+  "protocol": "kernel-internal-lazy-v2",
+  "link_ns": 200,
+  "fault_ns": 900,
+  "bandwidth_gbs": 300,
+  "status": "OK",
+  "returncode": 0,
+  "wall_s": 4.021709,
+  "peak_rss_kib": 1118968,
+  "active_gpus": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "instructions_by_gpu": {
+    "1": 19776.0,
+    "2": 19776.0,
+    "3": 19776.0,
+    "4": 17858.0
+  },
+  "gpu_activity_ok": true,
+  "application_us": 74.672,
+  "kernel_us": 73.237,
+  "barrier_us": 0.602,
+  "recovery_us": 0,
+  "host_transfer_us": 0.833,
+  "epochs": 1,
+  "kernel_count": 1,
+  "copy_bytes": 200704,
+  "copy_faults": 49,
+  "refills": 43,
+  "repairs": 0,
+  "invalidations": 43,
+  "peak_replica_bytes": 24576,
+  "peak_stale_bytes": 12288,
+  "mapping_faults": 0,
+  "fallback_page_epochs": 0,
+  "non_owner_write_transactions": 0,
+  "write_epoch_existing_replica_reads": 0,
+  "write_epoch_new_copies": 0,
+  "intrakernel_refills": 43,
+  "intrakernel_repairs": 0,
+  "write_after_repair": 0,
+  "clean_replica_reads_during_write": 0,
+  "adaptive_demand_repairs": 0,
+  "adaptive_full_stale_repairs": 0,
+  "in_kernel_cache_control_us": 0.147,
+  "in_kernel_copy_service_us": 54.571643,
+  "write_transitions": 0,
+  "stale_read_sectors": 0,
+  "home_fetch_us": 1.208,
+  "home_fetch_bytes": 200704,
+  "home_flush_events": 0,
+  "replica_invalidate_events": 49,
+  "replica_invalidate_bytes": 200704,
+  "home_l1_invalidate_events": 0,
+  "concurrent_repairs_high_water": 4,
+  "fallback_home_reads": 0,
+  "repair_bytes": 176128,
+  "repair_events": 43,
+  "repair_granularities": {
+    "128": {
+      "bytes": 176128,
+      "blocks": 1376,
+      "extents": 43
+    },
+    "32": {
+      "bytes": 176128,
+      "blocks": 5504,
+      "extents": 43
+    },
+    "4096": {
+      "bytes": 176128,
+      "blocks": 43,
+      "extents": 43
+    },
+    "512": {
+      "bytes": 176128,
+      "blocks": 344,
+      "extents": 43
+    }
+  },
+  "repairs_by_trigger": {
+    "cold": 6,
+    "stale-version": 43
+  }
+}

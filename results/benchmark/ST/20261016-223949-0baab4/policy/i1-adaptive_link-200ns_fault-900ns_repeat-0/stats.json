@@ -1,0 +1,3244 @@
+{
+  "initial_input_sha256": "57cd5fe4f92a4ac260504d40a5194565654cc81f86cfd337a942d00707701bf4",
+  "passive": {
+    "protocol": "kernel-internal-online-v1",
+    "adaptive_rule": "previous read-interval footprint; no future trace or kernel write set",
+    "managed_requests": 1648,
+    "read_requests": 1008,
+    "write_requests": 640,
+    "transitions": 281,
+    "cache_control_ps_in_kernel": 118244000,
+    "copy_service_ps_in_kernel": 8909656,
+    "inflight_high_water": 24,
+    "pending_high_water": 1,
+    "intrakernel_refills": 0,
+    "intrakernel_repairs": 0,
+    "write_after_repair_invalidations": 0,
+    "clean_replica_reads_during_write": 0,
+    "adaptive_demand_repairs": 0,
+    "adaptive_full_stale_repairs": 0,
+    "adaptive_extra_repair_bytes": 0,
+    "events": [
+      {
+        "kernel": 1,
+        "kind": "cold-copy",
+        "page": 8192,
+        "gpu": 2,
+        "request": 82161,
+        "start_ps": 10640000,
+        "end_ps": 12040000,
+        "bytes": 4096,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "cold-copy",
+        "page": 12288,
+        "gpu": 3,
+        "request": 82238,
+        "start_ps": 12041000,
+        "end_ps": 13442000,
+        "bytes": 4096,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "cold-copy",
+        "page": 16384,
+        "gpu": 4,
+        "request": 82385,
+        "start_ps": 13443000,
+        "end_ps": 14844000,
+        "bytes": 4096,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "cold-copy",
+        "page": 20480,
+        "gpu": 4,
+        "request": 160796,
+        "start_ps": 15594000,
+        "end_ps": 16881000,
+        "bytes": 4096,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 36864,
+        "gpu": 3,
+        "request": 337930,
+        "start_ps": 24945000,
+        "end_ps": 25079000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 32768,
+        "gpu": 2,
+        "request": 337972,
+        "start_ps": 25081000,
+        "end_ps": 25756000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 28672,
+        "gpu": 1,
+        "request": 357022,
+        "start_ps": 25758000,
+        "end_ps": 26433000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 40960,
+        "gpu": 4,
+        "request": 396416,
+        "start_ps": 26590000,
+        "end_ps": 27033000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 45056,
+        "gpu": 4,
+        "request": 438646,
+        "start_ps": 28347000,
+        "end_ps": 28906000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 40960,
+        "gpu": 3,
+        "request": 442660,
+        "start_ps": 28908000,
+        "end_ps": 29696000,
+        "version": 11
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 32768,
+        "gpu": 1,
+        "request": 489274,
+        "start_ps": 30096000,
+        "end_ps": 30378000,
+        "version": 35
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 32768,
+        "gpu": 2,
+        "request": 499344,
+        "start_ps": 30379000,
+        "end_ps": 30758000,
+        "version": 36
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 32768,
+        "gpu": 1,
+        "request": 517678,
+        "start_ps": 30760000,
+        "end_ps": 31437000,
+        "version": 41
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 32768,
+        "gpu": 2,
+        "request": 539190,
+        "start_ps": 31438000,
+        "end_ps": 31706000,
+        "version": 46
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 36864,
+        "gpu": 2,
+        "request": 539285,
+        "start_ps": 31707000,
+        "end_ps": 32381000,
+        "version": 27
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 32768,
+        "gpu": 1,
+        "request": 557104,
+        "start_ps": 32383000,
+        "end_ps": 33060000,
+        "version": 49
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 49152,
+        "gpu": 4,
+        "request": 654122,
+        "start_ps": 38471000,
+        "end_ps": 38496000,
+        "version": 0
+      },
+      {
+        "kernel": 2,
+        "kind": "home-read-after-write",
+        "page": 28672,
+        "gpu": 1,
+        "request": 761612,
+        "start_ps": 52094000,
+        "end_ps": 52180000,
+        "version": 59
+      },
+      {
+        "kernel": 2,
+        "kind": "cold-copy",
+        "page": 32768,
+        "gpu": 2,
+        "request": 761656,
+        "start_ps": 52181000,
+        "end_ps": 53479000,
+        "bytes": 4096,
+        "version": 64
+      },
+      {
+        "kernel": 2,
+        "kind": "cold-copy",
+        "page": 36864,
+        "gpu": 3,
+        "request": 761748,
+        "start_ps": 53480000,
+        "end_ps": 54778000,
+        "bytes": 4096,
+        "version": 64
+      },
+      {
+        "kernel": 2,
+        "kind": "cold-copy",
+        "page": 40960,
+        "gpu": 4,
+        "request": 761850,
+        "start_ps": 54779000,
+        "end_ps": 56077000,
+        "bytes": 4096,
+        "version": 64
+      },
+      {
+        "kernel": 2,
+        "kind": "cold-copy",
+        "page": 45056,
+        "gpu": 4,
+        "request": 854973,
+        "start_ps": 56724000,
+        "end_ps": 58011000,
+        "bytes": 4096,
+        "version": 64
+      },
+      {
+        "kernel": 2,
+        "kind": "home-read-after-write",
+        "page": 49152,
+        "gpu": 4,
+        "request": 950983,
+        "start_ps": 60782000,
+        "end_ps": 60915000,
+        "version": 5
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1049717,
+        "start_ps": 66092000,
+        "end_ps": 66225000,
+        "version": 0
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1049779,
+        "start_ps": 66226000,
+        "end_ps": 66908000,
+        "version": 1
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1049933,
+        "start_ps": 66909000,
+        "end_ps": 67479000,
+        "version": 2
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1049988,
+        "start_ps": 67480000,
+        "end_ps": 68050000,
+        "version": 3
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1050045,
+        "start_ps": 68051000,
+        "end_ps": 68621000,
+        "version": 4
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 1049726,
+        "start_ps": 68622000,
+        "end_ps": 69182000,
+        "version": 0
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 1049787,
+        "start_ps": 69183000,
+        "end_ps": 69865000,
+        "version": 1
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 1049941,
+        "start_ps": 69866000,
+        "end_ps": 70436000,
+        "version": 2
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 1049996,
+        "start_ps": 70437000,
+        "end_ps": 71007000,
+        "version": 3
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 1050053,
+        "start_ps": 71008000,
+        "end_ps": 71578000,
+        "version": 4
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 4096,
+        "gpu": 1,
+        "request": 1049735,
+        "start_ps": 71580000,
+        "end_ps": 72139000,
+        "version": 0
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1153870,
+        "start_ps": 72140000,
+        "end_ps": 72416000,
+        "version": 5
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1153890,
+        "start_ps": 72417000,
+        "end_ps": 73090000,
+        "version": 6
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1153939,
+        "start_ps": 73091000,
+        "end_ps": 73661000,
+        "version": 7
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1153956,
+        "start_ps": 73662000,
+        "end_ps": 74232000,
+        "version": 8
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1153971,
+        "start_ps": 74233000,
+        "end_ps": 74803000,
+        "version": 9
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 1240854,
+        "start_ps": 74804000,
+        "end_ps": 75477000,
+        "version": 5
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 1240884,
+        "start_ps": 75478000,
+        "end_ps": 76151000,
+        "version": 6
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 1240961,
+        "start_ps": 76152000,
+        "end_ps": 76722000,
+        "version": 7
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 1240986,
+        "start_ps": 76723000,
+        "end_ps": 77293000,
+        "version": 8
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 1241003,
+        "start_ps": 77294000,
+        "end_ps": 77864000,
+        "version": 9
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1334311,
+        "start_ps": 77866000,
+        "end_ps": 78538000,
+        "version": 10
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1334331,
+        "start_ps": 78539000,
+        "end_ps": 79212000,
+        "version": 11
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1334380,
+        "start_ps": 79213000,
+        "end_ps": 79783000,
+        "version": 12
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1334397,
+        "start_ps": 79784000,
+        "end_ps": 80354000,
+        "version": 13
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1334412,
+        "start_ps": 80355000,
+        "end_ps": 80925000,
+        "version": 14
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 1422503,
+        "start_ps": 80926000,
+        "end_ps": 81599000,
+        "version": 10
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 1422523,
+        "start_ps": 81600000,
+        "end_ps": 82273000,
+        "version": 11
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 1422572,
+        "start_ps": 82274000,
+        "end_ps": 82844000,
+        "version": 12
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 1422589,
+        "start_ps": 82845000,
+        "end_ps": 83415000,
+        "version": 13
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 1422604,
+        "start_ps": 83416000,
+        "end_ps": 83986000,
+        "version": 14
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1509053,
+        "start_ps": 83988000,
+        "end_ps": 84660000,
+        "version": 15
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1509073,
+        "start_ps": 84661000,
+        "end_ps": 85334000,
+        "version": 16
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1509122,
+        "start_ps": 85335000,
+        "end_ps": 85905000,
+        "version": 17
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1509139,
+        "start_ps": 85906000,
+        "end_ps": 86476000,
+        "version": 18
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1509154,
+        "start_ps": 86477000,
+        "end_ps": 87047000,
+        "version": 19
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 1597305,
+        "start_ps": 87048000,
+        "end_ps": 87721000,
+        "version": 15
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 1597325,
+        "start_ps": 87722000,
+        "end_ps": 88395000,
+        "version": 16
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 1597374,
+        "start_ps": 88396000,
+        "end_ps": 88966000,
+        "version": 17
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 1597391,
+        "start_ps": 88967000,
+        "end_ps": 89537000,
+        "version": 18
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 1597406,
+        "start_ps": 89538000,
+        "end_ps": 90108000,
+        "version": 19
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 4,
+        "request": 1590252,
+        "start_ps": 90109000,
+        "end_ps": 90669000,
+        "version": 0
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 4,
+        "request": 1590273,
+        "start_ps": 90670000,
+        "end_ps": 91352000,
+        "version": 1
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 4,
+        "request": 1590323,
+        "start_ps": 91353000,
+        "end_ps": 91923000,
+        "version": 2
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 4,
+        "request": 1590341,
+        "start_ps": 91924000,
+        "end_ps": 92494000,
+        "version": 3
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 4,
+        "request": 1590359,
+        "start_ps": 92495000,
+        "end_ps": 93065000,
+        "version": 4
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1684175,
+        "start_ps": 93067000,
+        "end_ps": 93739000,
+        "version": 20
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1684195,
+        "start_ps": 93740000,
+        "end_ps": 94413000,
+        "version": 21
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1684244,
+        "start_ps": 94414000,
+        "end_ps": 94984000,
+        "version": 22
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1684261,
+        "start_ps": 94985000,
+        "end_ps": 95555000,
+        "version": 23
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1684276,
+        "start_ps": 95556000,
+        "end_ps": 96126000,
+        "version": 24
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 1781492,
+        "start_ps": 96127000,
+        "end_ps": 96800000,
+        "version": 20
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 1781512,
+        "start_ps": 96801000,
+        "end_ps": 97474000,
+        "version": 21
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 1781561,
+        "start_ps": 97475000,
+        "end_ps": 98045000,
+        "version": 22
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 1781578,
+        "start_ps": 98046000,
+        "end_ps": 98616000,
+        "version": 23
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 1781593,
+        "start_ps": 98617000,
+        "end_ps": 99187000,
+        "version": 24
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 4,
+        "request": 1858900,
+        "start_ps": 99188000,
+        "end_ps": 99861000,
+        "version": 5
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 4,
+        "request": 1858920,
+        "start_ps": 99862000,
+        "end_ps": 100535000,
+        "version": 6
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 4,
+        "request": 1858969,
+        "start_ps": 100536000,
+        "end_ps": 101106000,
+        "version": 7
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 4,
+        "request": 1858986,
+        "start_ps": 101107000,
+        "end_ps": 101677000,
+        "version": 8
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 4,
+        "request": 1859001,
+        "start_ps": 101678000,
+        "end_ps": 102248000,
+        "version": 9
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1945798,
+        "start_ps": 102250000,
+        "end_ps": 102922000,
+        "version": 25
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1945818,
+        "start_ps": 102923000,
+        "end_ps": 103596000,
+        "version": 26
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1945867,
+        "start_ps": 103597000,
+        "end_ps": 104167000,
+        "version": 27
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1945884,
+        "start_ps": 104168000,
+        "end_ps": 104738000,
+        "version": 28
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1945899,
+        "start_ps": 104739000,
+        "end_ps": 105309000,
+        "version": 29
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 2032686,
+        "start_ps": 105310000,
+        "end_ps": 105983000,
+        "version": 25
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 2032706,
+        "start_ps": 105984000,
+        "end_ps": 106657000,
+        "version": 26
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 2032755,
+        "start_ps": 106658000,
+        "end_ps": 107228000,
+        "version": 10
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 2032772,
+        "start_ps": 107229000,
+        "end_ps": 107402000,
+        "version": 11
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 2032787,
+        "start_ps": 107403000,
+        "end_ps": 107567000,
+        "version": 12
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 4,
+        "request": 2120796,
+        "start_ps": 107568000,
+        "end_ps": 107835000,
+        "version": 13
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 2120816,
+        "start_ps": 107836000,
+        "end_ps": 108396000,
+        "version": 0
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 2120865,
+        "start_ps": 108397000,
+        "end_ps": 108976000,
+        "version": 1
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 2120882,
+        "start_ps": 108977000,
+        "end_ps": 109547000,
+        "version": 2
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 2120897,
+        "start_ps": 109548000,
+        "end_ps": 110118000,
+        "version": 3
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 2207666,
+        "start_ps": 110120000,
+        "end_ps": 110792000,
+        "version": 30
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 2207686,
+        "start_ps": 110793000,
+        "end_ps": 111466000,
+        "version": 31
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 2207735,
+        "start_ps": 111467000,
+        "end_ps": 112037000,
+        "version": 32
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 2207752,
+        "start_ps": 112038000,
+        "end_ps": 112608000,
+        "version": 33
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 2207767,
+        "start_ps": 112609000,
+        "end_ps": 113179000,
+        "version": 34
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 2293213,
+        "start_ps": 113180000,
+        "end_ps": 113853000,
+        "version": 14
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 2293233,
+        "start_ps": 113854000,
+        "end_ps": 114121000,
+        "version": 15
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 2293282,
+        "start_ps": 114122000,
+        "end_ps": 114286000,
+        "version": 16
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 2293299,
+        "start_ps": 114287000,
+        "end_ps": 114451000,
+        "version": 17
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 2293314,
+        "start_ps": 114452000,
+        "end_ps": 114616000,
+        "version": 18
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 2381159,
+        "start_ps": 114617000,
+        "end_ps": 114884000,
+        "version": 4
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 2381179,
+        "start_ps": 114885000,
+        "end_ps": 115558000,
+        "version": 5
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 2381228,
+        "start_ps": 115559000,
+        "end_ps": 116129000,
+        "version": 6
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 2381245,
+        "start_ps": 116130000,
+        "end_ps": 116700000,
+        "version": 7
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 2381260,
+        "start_ps": 116701000,
+        "end_ps": 117271000,
+        "version": 8
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 2468057,
+        "start_ps": 117273000,
+        "end_ps": 117945000,
+        "version": 35
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 2468077,
+        "start_ps": 117946000,
+        "end_ps": 118619000,
+        "version": 36
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 2468126,
+        "start_ps": 118620000,
+        "end_ps": 119190000,
+        "version": 37
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 2468143,
+        "start_ps": 119191000,
+        "end_ps": 119761000,
+        "version": 38
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 2468158,
+        "start_ps": 119762000,
+        "end_ps": 120332000,
+        "version": 39
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 2552735,
+        "start_ps": 120333000,
+        "end_ps": 121006000,
+        "version": 19
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 2552755,
+        "start_ps": 121007000,
+        "end_ps": 121274000,
+        "version": 20
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 2552804,
+        "start_ps": 121275000,
+        "end_ps": 121439000,
+        "version": 21
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 2552821,
+        "start_ps": 121440000,
+        "end_ps": 121604000,
+        "version": 22
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 2552836,
+        "start_ps": 121605000,
+        "end_ps": 121769000,
+        "version": 23
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 2640845,
+        "start_ps": 121770000,
+        "end_ps": 122037000,
+        "version": 9
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 2640865,
+        "start_ps": 122038000,
+        "end_ps": 122711000,
+        "version": 10
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 2640914,
+        "start_ps": 122712000,
+        "end_ps": 123282000,
+        "version": 11
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 2640931,
+        "start_ps": 123283000,
+        "end_ps": 123853000,
+        "version": 12
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 2640946,
+        "start_ps": 123854000,
+        "end_ps": 124424000,
+        "version": 13
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 2727688,
+        "start_ps": 124426000,
+        "end_ps": 125098000,
+        "version": 40
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 2727708,
+        "start_ps": 125099000,
+        "end_ps": 125772000,
+        "version": 41
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 2727757,
+        "start_ps": 125773000,
+        "end_ps": 126343000,
+        "version": 42
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 2727774,
+        "start_ps": 126344000,
+        "end_ps": 126914000,
+        "version": 27
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 2727789,
+        "start_ps": 126915000,
+        "end_ps": 127088000,
+        "version": 28
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 2812348,
+        "start_ps": 127089000,
+        "end_ps": 127356000,
+        "version": 24
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 2812368,
+        "start_ps": 127357000,
+        "end_ps": 127624000,
+        "version": 25
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 2812417,
+        "start_ps": 127625000,
+        "end_ps": 127789000,
+        "version": 26
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 2812434,
+        "start_ps": 127790000,
+        "end_ps": 127954000,
+        "version": 27
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 2812449,
+        "start_ps": 127955000,
+        "end_ps": 128119000,
+        "version": 28
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 2900475,
+        "start_ps": 128120000,
+        "end_ps": 128387000,
+        "version": 14
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 2900495,
+        "start_ps": 128388000,
+        "end_ps": 129061000,
+        "version": 15
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 2900544,
+        "start_ps": 129062000,
+        "end_ps": 129632000,
+        "version": 16
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 2900561,
+        "start_ps": 129633000,
+        "end_ps": 130203000,
+        "version": 17
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 2900576,
+        "start_ps": 130204000,
+        "end_ps": 130774000,
+        "version": 18
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 2986479,
+        "start_ps": 130776000,
+        "end_ps": 131448000,
+        "version": 29
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 2986499,
+        "start_ps": 131449000,
+        "end_ps": 131716000,
+        "version": 30
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 2986548,
+        "start_ps": 131717000,
+        "end_ps": 131881000,
+        "version": 31
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 2986565,
+        "start_ps": 131882000,
+        "end_ps": 132046000,
+        "version": 32
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 2986580,
+        "start_ps": 132047000,
+        "end_ps": 132211000,
+        "version": 33
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 3071139,
+        "start_ps": 132212000,
+        "end_ps": 132479000,
+        "version": 29
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 3071159,
+        "start_ps": 132480000,
+        "end_ps": 132747000,
+        "version": 30
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 3071208,
+        "start_ps": 132748000,
+        "end_ps": 132912000,
+        "version": 31
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 3071225,
+        "start_ps": 132913000,
+        "end_ps": 133077000,
+        "version": 32
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 3071240,
+        "start_ps": 133078000,
+        "end_ps": 133242000,
+        "version": 33
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 3159241,
+        "start_ps": 133243000,
+        "end_ps": 133510000,
+        "version": 19
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 3159261,
+        "start_ps": 133511000,
+        "end_ps": 134184000,
+        "version": 20
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 3159310,
+        "start_ps": 134185000,
+        "end_ps": 134755000,
+        "version": 21
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 3159327,
+        "start_ps": 134756000,
+        "end_ps": 135326000,
+        "version": 22
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 3159342,
+        "start_ps": 135327000,
+        "end_ps": 135897000,
+        "version": 23
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 3243874,
+        "start_ps": 135899000,
+        "end_ps": 136571000,
+        "version": 34
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 3243894,
+        "start_ps": 136572000,
+        "end_ps": 136839000,
+        "version": 35
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 3243943,
+        "start_ps": 136840000,
+        "end_ps": 137004000,
+        "version": 36
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 3243960,
+        "start_ps": 137005000,
+        "end_ps": 137169000,
+        "version": 37
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 3243975,
+        "start_ps": 137170000,
+        "end_ps": 137334000,
+        "version": 38
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 3328507,
+        "start_ps": 137335000,
+        "end_ps": 137602000,
+        "version": 34
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 3328527,
+        "start_ps": 137603000,
+        "end_ps": 137870000,
+        "version": 35
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 3328576,
+        "start_ps": 137871000,
+        "end_ps": 138035000,
+        "version": 36
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 3328593,
+        "start_ps": 138036000,
+        "end_ps": 138200000,
+        "version": 37
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 3328608,
+        "start_ps": 138201000,
+        "end_ps": 138365000,
+        "version": 38
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 3416583,
+        "start_ps": 138366000,
+        "end_ps": 138633000,
+        "version": 24
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 3416603,
+        "start_ps": 138634000,
+        "end_ps": 139307000,
+        "version": 25
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 3416652,
+        "start_ps": 139308000,
+        "end_ps": 139878000,
+        "version": 26
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 3416669,
+        "start_ps": 139879000,
+        "end_ps": 140449000,
+        "version": 27
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 3416684,
+        "start_ps": 140450000,
+        "end_ps": 141020000,
+        "version": 28
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 3501261,
+        "start_ps": 141022000,
+        "end_ps": 141694000,
+        "version": 39
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 3501281,
+        "start_ps": 141695000,
+        "end_ps": 141962000,
+        "version": 40
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 3501330,
+        "start_ps": 141963000,
+        "end_ps": 142127000,
+        "version": 41
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 3501347,
+        "start_ps": 142128000,
+        "end_ps": 142292000,
+        "version": 42
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 3501362,
+        "start_ps": 142293000,
+        "end_ps": 142457000,
+        "version": 43
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 3585939,
+        "start_ps": 142458000,
+        "end_ps": 142725000,
+        "version": 39
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 3585959,
+        "start_ps": 142726000,
+        "end_ps": 142993000,
+        "version": 40
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 3586008,
+        "start_ps": 142994000,
+        "end_ps": 143158000,
+        "version": 41
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 3586025,
+        "start_ps": 143159000,
+        "end_ps": 143323000,
+        "version": 42
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 3586040,
+        "start_ps": 143324000,
+        "end_ps": 143488000,
+        "version": 43
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 3674049,
+        "start_ps": 143489000,
+        "end_ps": 143756000,
+        "version": 29
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 3674069,
+        "start_ps": 143757000,
+        "end_ps": 144430000,
+        "version": 30
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 3674118,
+        "start_ps": 144431000,
+        "end_ps": 145001000,
+        "version": 31
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 3674135,
+        "start_ps": 145002000,
+        "end_ps": 145572000,
+        "version": 32
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 3674150,
+        "start_ps": 145573000,
+        "end_ps": 146143000,
+        "version": 33
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 1,
+        "request": 3667374,
+        "start_ps": 146145000,
+        "end_ps": 146817000,
+        "version": 43
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 3758709,
+        "start_ps": 146818000,
+        "end_ps": 147094000,
+        "version": 44
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 3758729,
+        "start_ps": 147095000,
+        "end_ps": 147362000,
+        "version": 45
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 3758778,
+        "start_ps": 147363000,
+        "end_ps": 147527000,
+        "version": 46
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 3758795,
+        "start_ps": 147528000,
+        "end_ps": 147692000,
+        "version": 47
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 3758810,
+        "start_ps": 147693000,
+        "end_ps": 147857000,
+        "version": 48
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 3843380,
+        "start_ps": 147858000,
+        "end_ps": 148125000,
+        "version": 44
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 3843400,
+        "start_ps": 148126000,
+        "end_ps": 148393000,
+        "version": 45
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 3843449,
+        "start_ps": 148394000,
+        "end_ps": 148558000,
+        "version": 46
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 3843466,
+        "start_ps": 148559000,
+        "end_ps": 148723000,
+        "version": 47
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 3843481,
+        "start_ps": 148724000,
+        "end_ps": 148888000,
+        "version": 48
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 3930991,
+        "start_ps": 148889000,
+        "end_ps": 149156000,
+        "version": 34
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 3931011,
+        "start_ps": 149157000,
+        "end_ps": 149830000,
+        "version": 35
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 3931060,
+        "start_ps": 149831000,
+        "end_ps": 150401000,
+        "version": 36
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 3931077,
+        "start_ps": 150402000,
+        "end_ps": 150972000,
+        "version": 37
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 3931092,
+        "start_ps": 150973000,
+        "end_ps": 151543000,
+        "version": 38
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 1,
+        "request": 3948307,
+        "start_ps": 151545000,
+        "end_ps": 152217000,
+        "version": 44
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 1,
+        "request": 3948327,
+        "start_ps": 152218000,
+        "end_ps": 152485000,
+        "version": 45
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 1,
+        "request": 3948376,
+        "start_ps": 152486000,
+        "end_ps": 152650000,
+        "version": 46
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 1,
+        "request": 3948393,
+        "start_ps": 152651000,
+        "end_ps": 152815000,
+        "version": 47
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 1,
+        "request": 3948408,
+        "start_ps": 152816000,
+        "end_ps": 152980000,
+        "version": 48
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 4033023,
+        "start_ps": 152981000,
+        "end_ps": 153248000,
+        "version": 49
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 4033043,
+        "start_ps": 153249000,
+        "end_ps": 153516000,
+        "version": 50
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 4033092,
+        "start_ps": 153517000,
+        "end_ps": 153681000,
+        "version": 51
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 4033109,
+        "start_ps": 153682000,
+        "end_ps": 153846000,
+        "version": 52
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 4033124,
+        "start_ps": 153847000,
+        "end_ps": 154011000,
+        "version": 53
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 4117641,
+        "start_ps": 154012000,
+        "end_ps": 154279000,
+        "version": 49
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 4117661,
+        "start_ps": 154280000,
+        "end_ps": 154547000,
+        "version": 50
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 4117710,
+        "start_ps": 154548000,
+        "end_ps": 154712000,
+        "version": 51
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 4117727,
+        "start_ps": 154713000,
+        "end_ps": 154877000,
+        "version": 52
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 4117742,
+        "start_ps": 154878000,
+        "end_ps": 155042000,
+        "version": 53
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 4204267,
+        "start_ps": 155043000,
+        "end_ps": 155310000,
+        "version": 39
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 4204287,
+        "start_ps": 155311000,
+        "end_ps": 155984000,
+        "version": 40
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 4204336,
+        "start_ps": 155985000,
+        "end_ps": 156555000,
+        "version": 41
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 4204353,
+        "start_ps": 156556000,
+        "end_ps": 157126000,
+        "version": 42
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 4204368,
+        "start_ps": 157127000,
+        "end_ps": 157697000,
+        "version": 43
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 1,
+        "request": 4288625,
+        "start_ps": 157699000,
+        "end_ps": 158371000,
+        "version": 49
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 1,
+        "request": 4288645,
+        "start_ps": 158372000,
+        "end_ps": 158639000,
+        "version": 50
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 1,
+        "request": 4288694,
+        "start_ps": 158640000,
+        "end_ps": 158804000,
+        "version": 51
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 1,
+        "request": 4288711,
+        "start_ps": 158805000,
+        "end_ps": 158969000,
+        "version": 52
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 1,
+        "request": 4288726,
+        "start_ps": 158970000,
+        "end_ps": 159134000,
+        "version": 53
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 4372610,
+        "start_ps": 159135000,
+        "end_ps": 159402000,
+        "version": 54
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 4372630,
+        "start_ps": 159403000,
+        "end_ps": 159670000,
+        "version": 55
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 4372679,
+        "start_ps": 159671000,
+        "end_ps": 159835000,
+        "version": 56
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 4372696,
+        "start_ps": 159836000,
+        "end_ps": 160000000,
+        "version": 57
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 4372711,
+        "start_ps": 160001000,
+        "end_ps": 160165000,
+        "version": 58
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 4456584,
+        "start_ps": 160166000,
+        "end_ps": 160433000,
+        "version": 54
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 4456604,
+        "start_ps": 160434000,
+        "end_ps": 160701000,
+        "version": 55
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 4456653,
+        "start_ps": 160702000,
+        "end_ps": 160866000,
+        "version": 56
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 4456670,
+        "start_ps": 160867000,
+        "end_ps": 161031000,
+        "version": 57
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 4456685,
+        "start_ps": 161032000,
+        "end_ps": 161196000,
+        "version": 58
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 4543064,
+        "start_ps": 161197000,
+        "end_ps": 161464000,
+        "version": 44
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 4543084,
+        "start_ps": 161465000,
+        "end_ps": 162138000,
+        "version": 45
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 4543133,
+        "start_ps": 162139000,
+        "end_ps": 162709000,
+        "version": 46
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 4543150,
+        "start_ps": 162710000,
+        "end_ps": 163280000,
+        "version": 47
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 4543165,
+        "start_ps": 163281000,
+        "end_ps": 163851000,
+        "version": 48
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 1,
+        "request": 4626949,
+        "start_ps": 163853000,
+        "end_ps": 164525000,
+        "version": 54
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 1,
+        "request": 4626969,
+        "start_ps": 164526000,
+        "end_ps": 164793000,
+        "version": 55
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 1,
+        "request": 4627018,
+        "start_ps": 164794000,
+        "end_ps": 164958000,
+        "version": 56
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 1,
+        "request": 4627035,
+        "start_ps": 164959000,
+        "end_ps": 165123000,
+        "version": 57
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 1,
+        "request": 4627050,
+        "start_ps": 165124000,
+        "end_ps": 165288000,
+        "version": 58
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 4710935,
+        "start_ps": 165289000,
+        "end_ps": 165556000,
+        "version": 59
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 4710955,
+        "start_ps": 165557000,
+        "end_ps": 165824000,
+        "version": 60
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 4711004,
+        "start_ps": 165825000,
+        "end_ps": 165989000,
+        "version": 61
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 4711021,
+        "start_ps": 165990000,
+        "end_ps": 166154000,
+        "version": 62
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 4711035,
+        "start_ps": 166155000,
+        "end_ps": 166319000,
+        "version": 63
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 4794800,
+        "start_ps": 166320000,
+        "end_ps": 166587000,
+        "version": 59
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 4794820,
+        "start_ps": 166588000,
+        "end_ps": 166855000,
+        "version": 60
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 4794869,
+        "start_ps": 166856000,
+        "end_ps": 167020000,
+        "version": 61
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 4794886,
+        "start_ps": 167021000,
+        "end_ps": 167185000,
+        "version": 62
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 4794900,
+        "start_ps": 167186000,
+        "end_ps": 167350000,
+        "version": 63
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 4881145,
+        "start_ps": 167351000,
+        "end_ps": 167618000,
+        "version": 49
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 4881165,
+        "start_ps": 167619000,
+        "end_ps": 168292000,
+        "version": 50
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 4881214,
+        "start_ps": 168293000,
+        "end_ps": 168863000,
+        "version": 51
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 4881231,
+        "start_ps": 168864000,
+        "end_ps": 169434000,
+        "version": 52
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 4881246,
+        "start_ps": 169435000,
+        "end_ps": 170005000,
+        "version": 53
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 1,
+        "request": 4965045,
+        "start_ps": 170007000,
+        "end_ps": 170679000,
+        "version": 59
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 1,
+        "request": 4965065,
+        "start_ps": 170680000,
+        "end_ps": 170947000,
+        "version": 60
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 1,
+        "request": 4965114,
+        "start_ps": 170948000,
+        "end_ps": 171112000,
+        "version": 61
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 1,
+        "request": 4965131,
+        "start_ps": 171113000,
+        "end_ps": 171277000,
+        "version": 62
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 1,
+        "request": 4965145,
+        "start_ps": 171278000,
+        "end_ps": 171442000,
+        "version": 63
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 5224489,
+        "start_ps": 171443000,
+        "end_ps": 171710000,
+        "version": 54
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 5224510,
+        "start_ps": 171711000,
+        "end_ps": 172384000,
+        "version": 55
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 5224560,
+        "start_ps": 172385000,
+        "end_ps": 172955000,
+        "version": 56
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 5224578,
+        "start_ps": 172956000,
+        "end_ps": 173526000,
+        "version": 57
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 5224594,
+        "start_ps": 173527000,
+        "end_ps": 174097000,
+        "version": 58
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 5390617,
+        "start_ps": 174689000,
+        "end_ps": 174827000,
+        "version": 59
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 5390637,
+        "start_ps": 174828000,
+        "end_ps": 175501000,
+        "version": 60
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 5390687,
+        "start_ps": 175502000,
+        "end_ps": 176072000,
+        "version": 61
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 5391025,
+        "start_ps": 176073000,
+        "end_ps": 176643000,
+        "version": 62
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 5392649,
+        "start_ps": 176644000,
+        "end_ps": 177214000,
+        "version": 63
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 24576,
+        "gpu": 4,
+        "request": 5476176,
+        "start_ps": 177811000,
+        "end_ps": 177836000,
+        "version": 0
+      }
+    ]
+  },
+  "adapter": "core-kernel-internal-online-v1",
+  "core_allocations": [
+    {
+      "base": 4096,
+      "bytes": 21120
+    },
+    {
+      "base": 28672,
+      "bytes": 21120
+    }
+  ],
+  "terminal_sha256": "2565d2f9ef4790576065f6dcc990fd03b33409d355cb1697e515be5713a7a92e",
+  "page_ownership": [
+    {
+      "page": 4096,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 8192,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2
+      ],
+      "writers": [
+        1,
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 12288,
+      "home_gpu": 2,
+      "readers": [
+        2,
+        3
+      ],
+      "writers": [
+        2,
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 16384,
+      "home_gpu": 3,
+      "readers": [
+        3,
+        4
+      ],
+      "writers": [
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 20480,
+      "home_gpu": 3,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 24576,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 28672,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 32768,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2
+      ],
+      "writers": [
+        1,
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 36864,
+      "home_gpu": 2,
+      "readers": [
+        2,
+        3
+      ],
+      "writers": [
+        2,
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 40960,
+      "home_gpu": 3,
+      "readers": [
+        3,
+        4
+      ],
+      "writers": [
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 45056,
+      "home_gpu": 3,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 49152,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    }
+  ],
+  "home_pages_by_gpu": {
+    "1": 4,
+    "2": 2,
+    "3": 4,
+    "4": 2
+  },
+  "owner_read_transactions": 560,
+  "non_owner_read_transactions": 448,
+  "owner_write_transactions": 350,
+  "non_owner_write_transactions": 290,
+  "replica_read_transactions": 448,
+  "remote_home_read_transactions": 0,
+  "copy_bytes_by_role": {
+    "runtime": 32768
+  },
+  "copy_faults_by_role": {
+    "runtime": 8
+  },
+  "recovery_wait_ps_by_role": null,
+  "fabric_model": "destination-ready-v2",
+  "managed_pages": 12,
+  "epoch_activity": [
+    {
+      "name": "kernel/000001",
+      "start_ps": 1482000,
+      "end_ps": 42346000,
+      "instructions_by_gpu": {
+        "1": 965,
+        "2": 965,
+        "3": 965,
+        "4": 965
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 12063000,
+        "1": 5034000,
+        "2": 1143000,
+        "3": 3759000,
+        "4": 18865000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000002",
+      "start_ps": 42937000,
+      "end_ps": 181583000,
+      "instructions_by_gpu": {
+        "1": 965,
+        "2": 965,
+        "3": 965,
+        "4": 965
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 12288000,
+        "1": 7783000,
+        "2": 4118000,
+        "3": 19886000,
+        "4": 94571000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    }
+  ],
+  "model_revision": "replica-kernel-internal-v1",
+  "oracle_mapping_preinstall": true,
+  "mapping_installs": 48,
+  "tlb_flush_epochs": 0,
+  "mapping_faults": 0,
+  "fallback_page_epochs": 0,
+  "multiple_writer_page_epochs": 0,
+  "read_write_overlap_page_epochs": 0,
+  "fallback_gpu_page_accesses": 0,
+  "fallback_read_transactions": 0,
+  "fallback_write_transactions": 0,
+  "fallback_events": null,
+  "write_epoch_new_copies": 0,
+  "write_epoch_new_copy_bytes": 0,
+  "write_epoch_new_copy_faults": 0,
+  "write_epoch_existing_replica_reads": 0,
+  "write_epoch_new_replica_reads": 0,
+  "recovery_events": [
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "i1-adaptive",
+      "epoch": 1,
+      "page": 8192,
+      "gpu": 2,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 10926000,
+      "due_ps": 12039707,
+      "layouts": null
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "runtime",
+      "repair_kind": "i1-adaptive",
+      "epoch": 1,
+      "page": 12288,
+      "gpu": 3,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 12328000,
+      "due_ps": 13441707,
+      "layouts": null
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "runtime",
+      "repair_kind": "i1-adaptive",
+      "epoch": 1,
+      "page": 16384,
+      "gpu": 4,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 13730000,
+      "due_ps": 14843707,
+      "layouts": null
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "runtime",
+      "repair_kind": "i1-adaptive",
+      "epoch": 1,
+      "page": 20480,
+      "gpu": 4,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 15767000,
+      "due_ps": 16880707,
+      "layouts": null
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "i1-adaptive",
+      "epoch": 2,
+      "page": 32768,
+      "gpu": 2,
+      "source_version": 64,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 52365000,
+      "due_ps": 53478707,
+      "layouts": null
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "runtime",
+      "repair_kind": "i1-adaptive",
+      "epoch": 2,
+      "page": 36864,
+      "gpu": 3,
+      "source_version": 64,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 53664000,
+      "due_ps": 54777707,
+      "layouts": null
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "runtime",
+      "repair_kind": "i1-adaptive",
+      "epoch": 2,
+      "page": 40960,
+      "gpu": 4,
+      "source_version": 64,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 54963000,
+      "due_ps": 56076707,
+      "layouts": null
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "runtime",
+      "repair_kind": "i1-adaptive",
+      "epoch": 2,
+      "page": 45056,
+      "gpu": 4,
+      "source_version": 64,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 56897000,
+      "due_ps": 58010707,
+      "layouts": null
+    }
+  ],
+  "s4_inv_replica_targets": 0,
+  "write_page_epochs": 640,
+  "versioned_pages": 12,
+  "config": {
+    "transfer_gran_bytes": 32,
+    "policy": "i1-adaptive",
+    "page_bytes": 4096,
+    "sector_bytes": 32,
+    "fault_ns": 900,
+    "fault_slots": 16,
+    "bandwidth_gbs": 300,
+    "link_ns": 200,
+    "replica_pages_per_gpu": 0,
+    "metadata_ns": 0,
+    "shootdown_ns": 0
+  },
+  "epochs": 2,
+  "kernel_ps": 179510000,
+  "host_transfer_ps": 705000,
+  "validation_sha256": "4c68088ba8f7bedb971a30791dc33769ee75c4999cd5feeb42d7f8451d67fa65",
+  "kernel_count": 2,
+  "host_write_epochs": 0,
+  "peak_live_managed_pages": 12,
+  "retired_managed_pages": 0,
+  "application_ps": 181391000,
+  "barrier_flush_ps": 1176000,
+  "recovery_wait_ps": 0,
+  "copy_faults": 8,
+  "cold_copies": 8,
+  "refills": 0,
+  "repairs": 0,
+  "copy_bytes": 32768,
+  "invalidations": 256,
+  "evictions": 0,
+  "peak_replica_pages": 8,
+  "peak_stale_pages": 4,
+  "retained_pages": 8,
+  "s2_clean_transactions": 0,
+  "s3_preexisting_replica_read_transactions": 0,
+  "s3_preexisting_replica_read_sectors": 0,
+  "s3_conflicting_read_sectors": 0,
+  "repair_granularities": {},
+  "fabric_bytes": 60736,
+  "fabric_messages": 588
+}

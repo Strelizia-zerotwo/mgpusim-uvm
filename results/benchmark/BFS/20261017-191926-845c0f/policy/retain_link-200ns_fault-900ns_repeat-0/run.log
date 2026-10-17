@@ -1,0 +1,13 @@
+2026/10/17 19:21:40 /home/only/projects/mgpusim-uvm/mgpusim/amd/benchmarks/shoc/bfs/bfs.go:243: mismatch at node 272, expected cost 4, but get 4294967295
+panic: mismatch at node 272, expected cost 4, but get 4294967295
+	
+
+goroutine 67 [running]:
+log.Panicf({0xd9e392?, 0x9156b7?}, {0x3f85746a7f48?, 0x3f856c0de2a0?, 0x1?})
+	/usr/local/go/src/log/log.go:460 +0x74
+github.com/sarchlab/mgpusim/v5/amd/benchmarks/shoc/bfs.(*Benchmark).Verify(0x3f856b735900)
+	/home/only/projects/mgpusim-uvm/mgpusim/amd/benchmarks/shoc/bfs/bfs.go:243 +0x159
+github.com/sarchlab/mgpusim/v5/amd/samples/runner.(*Runner).Run.func1({0x17ed650, 0x3f856b735900}, 0x3f856bf3f280)
+	/home/only/projects/mgpusim-uvm/mgpusim/amd/samples/runner/runner.go:185 +0x72
+created by github.com/sarchlab/mgpusim/v5/amd/samples/runner.(*Runner).Run in goroutine 1
+	/home/only/projects/mgpusim-uvm/mgpusim/amd/samples/runner/runner.go:175 +0x69

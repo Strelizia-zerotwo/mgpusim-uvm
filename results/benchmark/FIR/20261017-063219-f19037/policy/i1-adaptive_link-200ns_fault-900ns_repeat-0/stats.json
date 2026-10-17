@@ -1,0 +1,2123 @@
+{
+  "initial_input_sha256": "8ba3ea3a8b9eb84647e792c787a6d70aa96d0dc486cd18285305e6ddc29548f2",
+  "passive": {
+    "protocol": "kernel-internal-online-v1",
+    "adaptive_rule": "previous read-interval footprint; no future trace or kernel write set",
+    "managed_requests": 101376,
+    "read_requests": 97280,
+    "write_requests": 4096,
+    "transitions": 70,
+    "cache_control_ps_in_kernel": 12500000,
+    "copy_service_ps_in_kernel": 6682242,
+    "inflight_high_water": 6134,
+    "pending_high_water": 1,
+    "intrakernel_refills": 0,
+    "intrakernel_repairs": 0,
+    "write_after_repair_invalidations": 0,
+    "clean_replica_reads_during_write": 0,
+    "adaptive_demand_repairs": 0,
+    "adaptive_full_stale_repairs": 0,
+    "adaptive_extra_repair_bytes": 0,
+    "events": [
+      {
+        "kernel": 1,
+        "kind": "cold-copy",
+        "page": 532480,
+        "gpu": 2,
+        "request": 1132194,
+        "start_ps": 10775000,
+        "end_ps": 12156000,
+        "bytes": 4096,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "cold-copy",
+        "page": 532480,
+        "gpu": 3,
+        "request": 1135670,
+        "start_ps": 12157000,
+        "end_ps": 13686000,
+        "bytes": 4096,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "cold-copy",
+        "page": 532480,
+        "gpu": 4,
+        "request": 1140203,
+        "start_ps": 13687000,
+        "end_ps": 15216000,
+        "bytes": 4096,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "cold-copy",
+        "page": 135168,
+        "gpu": 3,
+        "request": 1797228,
+        "start_ps": 15218000,
+        "end_ps": 16766000,
+        "bytes": 4096,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "cold-copy",
+        "page": 200704,
+        "gpu": 4,
+        "request": 2494252,
+        "start_ps": 16767000,
+        "end_ps": 18167000,
+        "bytes": 4096,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "cold-copy",
+        "page": 69632,
+        "gpu": 2,
+        "request": 2342661,
+        "start_ps": 18169000,
+        "end_ps": 19569000,
+        "bytes": 4096,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 339968,
+        "gpu": 2,
+        "request": 15305115,
+        "start_ps": 21651000,
+        "end_ps": 21782000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 344064,
+        "gpu": 2,
+        "request": 15305160,
+        "start_ps": 21783000,
+        "end_ps": 21947000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 348160,
+        "gpu": 2,
+        "request": 15305187,
+        "start_ps": 21948000,
+        "end_ps": 22112000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 352256,
+        "gpu": 2,
+        "request": 15305223,
+        "start_ps": 22113000,
+        "end_ps": 22277000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 356352,
+        "gpu": 2,
+        "request": 15305277,
+        "start_ps": 22278000,
+        "end_ps": 22442000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 360448,
+        "gpu": 2,
+        "request": 15305313,
+        "start_ps": 22443000,
+        "end_ps": 22607000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 364544,
+        "gpu": 2,
+        "request": 15305349,
+        "start_ps": 22608000,
+        "end_ps": 22772000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 368640,
+        "gpu": 2,
+        "request": 15305385,
+        "start_ps": 22773000,
+        "end_ps": 22937000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 372736,
+        "gpu": 2,
+        "request": 15305421,
+        "start_ps": 22938000,
+        "end_ps": 23102000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 376832,
+        "gpu": 2,
+        "request": 15305448,
+        "start_ps": 23103000,
+        "end_ps": 23267000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 380928,
+        "gpu": 2,
+        "request": 15305484,
+        "start_ps": 23268000,
+        "end_ps": 23432000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 385024,
+        "gpu": 2,
+        "request": 15305520,
+        "start_ps": 23433000,
+        "end_ps": 23597000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 389120,
+        "gpu": 2,
+        "request": 15305556,
+        "start_ps": 23598000,
+        "end_ps": 23762000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 393216,
+        "gpu": 2,
+        "request": 15305592,
+        "start_ps": 23763000,
+        "end_ps": 23927000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 401408,
+        "gpu": 3,
+        "request": 15305619,
+        "start_ps": 23928000,
+        "end_ps": 24092000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 405504,
+        "gpu": 3,
+        "request": 15305664,
+        "start_ps": 24093000,
+        "end_ps": 24257000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 409600,
+        "gpu": 3,
+        "request": 15305700,
+        "start_ps": 24258000,
+        "end_ps": 24422000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 413696,
+        "gpu": 3,
+        "request": 15305736,
+        "start_ps": 24423000,
+        "end_ps": 24587000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 417792,
+        "gpu": 3,
+        "request": 15305763,
+        "start_ps": 24588000,
+        "end_ps": 24752000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 421888,
+        "gpu": 3,
+        "request": 15305799,
+        "start_ps": 24753000,
+        "end_ps": 24917000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 425984,
+        "gpu": 3,
+        "request": 15305853,
+        "start_ps": 24918000,
+        "end_ps": 25082000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 430080,
+        "gpu": 3,
+        "request": 15305889,
+        "start_ps": 25083000,
+        "end_ps": 25247000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 434176,
+        "gpu": 3,
+        "request": 15305925,
+        "start_ps": 25248000,
+        "end_ps": 25412000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 438272,
+        "gpu": 3,
+        "request": 15305961,
+        "start_ps": 25413000,
+        "end_ps": 25577000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 442368,
+        "gpu": 3,
+        "request": 15305997,
+        "start_ps": 25578000,
+        "end_ps": 25742000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 446464,
+        "gpu": 3,
+        "request": 15306024,
+        "start_ps": 25743000,
+        "end_ps": 25907000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 450560,
+        "gpu": 3,
+        "request": 15306060,
+        "start_ps": 25908000,
+        "end_ps": 26072000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 454656,
+        "gpu": 3,
+        "request": 15306096,
+        "start_ps": 26073000,
+        "end_ps": 26237000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 458752,
+        "gpu": 3,
+        "request": 15306132,
+        "start_ps": 26238000,
+        "end_ps": 26402000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 466944,
+        "gpu": 4,
+        "request": 15306159,
+        "start_ps": 26403000,
+        "end_ps": 26567000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 471040,
+        "gpu": 4,
+        "request": 15306195,
+        "start_ps": 26568000,
+        "end_ps": 26732000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 475136,
+        "gpu": 4,
+        "request": 15306231,
+        "start_ps": 26733000,
+        "end_ps": 26897000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 479232,
+        "gpu": 4,
+        "request": 15306267,
+        "start_ps": 26898000,
+        "end_ps": 27062000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 483328,
+        "gpu": 4,
+        "request": 15306312,
+        "start_ps": 27063000,
+        "end_ps": 27227000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 487424,
+        "gpu": 4,
+        "request": 15306348,
+        "start_ps": 27228000,
+        "end_ps": 27392000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 491520,
+        "gpu": 4,
+        "request": 15306402,
+        "start_ps": 27393000,
+        "end_ps": 27557000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 495616,
+        "gpu": 4,
+        "request": 15306438,
+        "start_ps": 27558000,
+        "end_ps": 27722000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 499712,
+        "gpu": 4,
+        "request": 15306474,
+        "start_ps": 27723000,
+        "end_ps": 27887000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 503808,
+        "gpu": 4,
+        "request": 15306483,
+        "start_ps": 27888000,
+        "end_ps": 28052000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 507904,
+        "gpu": 4,
+        "request": 15306519,
+        "start_ps": 28053000,
+        "end_ps": 28217000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 512000,
+        "gpu": 4,
+        "request": 15306555,
+        "start_ps": 28218000,
+        "end_ps": 28382000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 516096,
+        "gpu": 4,
+        "request": 15306591,
+        "start_ps": 28383000,
+        "end_ps": 28547000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 520192,
+        "gpu": 4,
+        "request": 15306627,
+        "start_ps": 28548000,
+        "end_ps": 28712000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 524288,
+        "gpu": 4,
+        "request": 15306672,
+        "start_ps": 28713000,
+        "end_ps": 28877000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 528384,
+        "gpu": 4,
+        "request": 15306708,
+        "start_ps": 28878000,
+        "end_ps": 29042000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 270336,
+        "gpu": 1,
+        "request": 15310518,
+        "start_ps": 29044000,
+        "end_ps": 29207000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 274432,
+        "gpu": 1,
+        "request": 15310563,
+        "start_ps": 29208000,
+        "end_ps": 29372000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 278528,
+        "gpu": 1,
+        "request": 15310581,
+        "start_ps": 29373000,
+        "end_ps": 29537000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 282624,
+        "gpu": 1,
+        "request": 15310617,
+        "start_ps": 29538000,
+        "end_ps": 29702000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 286720,
+        "gpu": 1,
+        "request": 15310653,
+        "start_ps": 29703000,
+        "end_ps": 29867000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 290816,
+        "gpu": 1,
+        "request": 15310689,
+        "start_ps": 29868000,
+        "end_ps": 30032000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 294912,
+        "gpu": 1,
+        "request": 15310725,
+        "start_ps": 30033000,
+        "end_ps": 30197000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 299008,
+        "gpu": 1,
+        "request": 15310761,
+        "start_ps": 30198000,
+        "end_ps": 30362000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 303104,
+        "gpu": 1,
+        "request": 15310797,
+        "start_ps": 30363000,
+        "end_ps": 30527000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 307200,
+        "gpu": 1,
+        "request": 15310842,
+        "start_ps": 30528000,
+        "end_ps": 30692000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 311296,
+        "gpu": 1,
+        "request": 15310878,
+        "start_ps": 30693000,
+        "end_ps": 30857000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 315392,
+        "gpu": 1,
+        "request": 15310914,
+        "start_ps": 30858000,
+        "end_ps": 31022000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 319488,
+        "gpu": 1,
+        "request": 15310950,
+        "start_ps": 31023000,
+        "end_ps": 31187000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 323584,
+        "gpu": 1,
+        "request": 15310986,
+        "start_ps": 31188000,
+        "end_ps": 31352000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 327680,
+        "gpu": 1,
+        "request": 15311022,
+        "start_ps": 31353000,
+        "end_ps": 31517000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 397312,
+        "gpu": 2,
+        "request": 15933995,
+        "start_ps": 31518000,
+        "end_ps": 31682000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 462848,
+        "gpu": 3,
+        "request": 16434655,
+        "start_ps": 31683000,
+        "end_ps": 31847000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 331776,
+        "gpu": 1,
+        "request": 17288063,
+        "start_ps": 31849000,
+        "end_ps": 32012000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 335872,
+        "gpu": 2,
+        "request": 17288252,
+        "start_ps": 32013000,
+        "end_ps": 32177000,
+        "version": 0
+      }
+    ]
+  },
+  "adapter": "core-kernel-internal-online-v1",
+  "core_allocations": [
+    {
+      "base": 4096,
+      "bytes": 64
+    },
+    {
+      "base": 8192,
+      "bytes": 262144
+    },
+    {
+      "base": 270336,
+      "bytes": 262144
+    },
+    {
+      "base": 532480,
+      "bytes": 64
+    }
+  ],
+  "terminal_sha256": "35a55e185395f746cb57ae55541420e2d90fe41686436c1313d2b3ca22767c1c",
+  "page_ownership": [
+    {
+      "page": 4096,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 8192,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 12288,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 16384,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 20480,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 24576,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 28672,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 32768,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 36864,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 40960,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 45056,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 49152,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 53248,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 57344,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 61440,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 65536,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 69632,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 73728,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 77824,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 81920,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 86016,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 90112,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 94208,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 98304,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 102400,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 106496,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 110592,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 114688,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 118784,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 122880,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 126976,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 131072,
+      "home_gpu": 2,
+      "readers": [
+        2
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 135168,
+      "home_gpu": 2,
+      "readers": [
+        2,
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 139264,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 143360,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 147456,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 151552,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 155648,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 159744,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 163840,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 167936,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 172032,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 176128,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 180224,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 184320,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 188416,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 192512,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 196608,
+      "home_gpu": 3,
+      "readers": [
+        3
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 200704,
+      "home_gpu": 3,
+      "readers": [
+        3,
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 204800,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 208896,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 212992,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 217088,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 221184,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 225280,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 229376,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 233472,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 237568,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 241664,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 245760,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 249856,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 253952,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 258048,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 262144,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 266240,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 270336,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 274432,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 278528,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 282624,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 286720,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 290816,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 294912,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 299008,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 303104,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 307200,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 311296,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 315392,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 319488,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 323584,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 327680,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 331776,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 335872,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 339968,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 344064,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 348160,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 352256,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 356352,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 360448,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 364544,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 368640,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 372736,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 376832,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 380928,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 385024,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 389120,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 393216,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 397312,
+      "home_gpu": 2,
+      "readers": null,
+      "writers": [
+        2
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 401408,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 405504,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 409600,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 413696,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 417792,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 421888,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 425984,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 430080,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 434176,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 438272,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 442368,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 446464,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 450560,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 454656,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 458752,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 462848,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        3
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 466944,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 471040,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 475136,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 479232,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 483328,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 487424,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 491520,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 495616,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 499712,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 503808,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 507904,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 512000,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 516096,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 520192,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 524288,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 528384,
+      "home_gpu": 4,
+      "readers": null,
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 532480,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    }
+  ],
+  "home_pages_by_gpu": {
+    "1": 34,
+    "2": 32,
+    "3": 32,
+    "4": 32
+  },
+  "owner_read_transactions": 84947,
+  "non_owner_read_transactions": 12333,
+  "owner_write_transactions": 4096,
+  "non_owner_write_transactions": 0,
+  "replica_read_transactions": 12333,
+  "remote_home_read_transactions": 0,
+  "copy_bytes_by_role": {
+    "runtime": 24576
+  },
+  "copy_faults_by_role": {
+    "runtime": 6
+  },
+  "recovery_wait_ps_by_role": null,
+  "fabric_model": "destination-ready-v2",
+  "managed_pages": 130,
+  "epoch_activity": [
+    {
+      "name": "kernel/000001",
+      "start_ps": 2293000,
+      "end_ps": 36027000,
+      "instructions_by_gpu": {
+        "1": 100352,
+        "2": 100352,
+        "3": 100352,
+        "4": 100352
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11572000,
+        "1": 260000,
+        "2": 168000,
+        "3": 2816000,
+        "4": 18918000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    }
+  ],
+  "model_revision": "replica-kernel-internal-v1",
+  "oracle_mapping_preinstall": true,
+  "mapping_installs": 520,
+  "tlb_flush_epochs": 0,
+  "mapping_faults": 0,
+  "fallback_page_epochs": 0,
+  "multiple_writer_page_epochs": 0,
+  "read_write_overlap_page_epochs": 0,
+  "fallback_gpu_page_accesses": 0,
+  "fallback_read_transactions": 0,
+  "fallback_write_transactions": 0,
+  "fallback_events": null,
+  "write_epoch_new_copies": 0,
+  "write_epoch_new_copy_bytes": 0,
+  "write_epoch_new_copy_faults": 0,
+  "write_epoch_existing_replica_reads": 0,
+  "write_epoch_new_replica_reads": 0,
+  "recovery_events": [
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "i1-adaptive",
+      "epoch": 1,
+      "page": 532480,
+      "gpu": 2,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 11042000,
+      "due_ps": 12155707,
+      "layouts": null
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "i1-adaptive",
+      "epoch": 1,
+      "page": 532480,
+      "gpu": 3,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 12572000,
+      "due_ps": 13685707,
+      "layouts": null
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "i1-adaptive",
+      "epoch": 1,
+      "page": 532480,
+      "gpu": 4,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 14102000,
+      "due_ps": 15215707,
+      "layouts": null
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "runtime",
+      "repair_kind": "i1-adaptive",
+      "epoch": 1,
+      "page": 135168,
+      "gpu": 3,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 15652000,
+      "due_ps": 16765707,
+      "layouts": null
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "runtime",
+      "repair_kind": "i1-adaptive",
+      "epoch": 1,
+      "page": 200704,
+      "gpu": 4,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 17053000,
+      "due_ps": 18166707,
+      "layouts": null
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "i1-adaptive",
+      "epoch": 1,
+      "page": 69632,
+      "gpu": 2,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 18455000,
+      "due_ps": 19568707,
+      "layouts": null
+    }
+  ],
+  "s4_inv_replica_targets": 0,
+  "write_page_epochs": 4096,
+  "versioned_pages": 64,
+  "config": {
+    "transfer_gran_bytes": 32,
+    "policy": "i1-adaptive",
+    "page_bytes": 4096,
+    "sector_bytes": 32,
+    "fault_ns": 900,
+    "fault_slots": 16,
+    "bandwidth_gbs": 300,
+    "link_ns": 200,
+    "replica_pages_per_gpu": 0,
+    "metadata_ns": 0,
+    "shootdown_ns": 0
+  },
+  "epochs": 1,
+  "kernel_ps": 33734000,
+  "host_transfer_ps": 1602000,
+  "validation_sha256": "6e6211491eb6a87e6095efbfdcf0bb082395bf3ba1cac57cf12bd7a3ce0dba96",
+  "kernel_count": 1,
+  "host_write_epochs": 0,
+  "peak_live_managed_pages": 130,
+  "retired_managed_pages": 0,
+  "application_ps": 35986000,
+  "barrier_flush_ps": 650000,
+  "recovery_wait_ps": 0,
+  "copy_faults": 6,
+  "cold_copies": 6,
+  "refills": 0,
+  "repairs": 0,
+  "copy_bytes": 24576,
+  "invalidations": 0,
+  "evictions": 0,
+  "peak_replica_pages": 6,
+  "peak_stale_pages": 0,
+  "retained_pages": 6,
+  "s2_clean_transactions": 0,
+  "s3_preexisting_replica_read_transactions": 0,
+  "s3_preexisting_replica_read_sectors": 0,
+  "s3_conflicting_read_sectors": 0,
+  "repair_granularities": {},
+  "fabric_bytes": 24672,
+  "fabric_messages": 6
+}

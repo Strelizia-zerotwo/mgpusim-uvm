@@ -1,0 +1,117 @@
+{
+  "format": 1,
+  "page_bytes": 4096,
+  "sector_bytes": 32,
+  "epochs": [
+    {
+      "name": "kernel/000001",
+      "kind": "kernel",
+      "accesses": [
+        {
+          "page": 4096,
+          "gpu": 1,
+          "reads": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            64,
+            65
+          ],
+          "writes": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "read_transactions": 20,
+          "write_transactions": 16
+        },
+        {
+          "page": 4096,
+          "gpu": 2,
+          "reads": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            64,
+            65
+          ],
+          "writes": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "read_transactions": 20,
+          "write_transactions": 16
+        },
+        {
+          "page": 4096,
+          "gpu": 3,
+          "reads": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            64,
+            65
+          ],
+          "writes": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23
+          ],
+          "read_transactions": 20,
+          "write_transactions": 16
+        },
+        {
+          "page": 4096,
+          "gpu": 4,
+          "reads": [
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            64,
+            65
+          ],
+          "writes": [],
+          "read_transactions": 20,
+          "write_transactions": 0
+        }
+      ],
+      "kernel_ps": 33637000
+    }
+  ]
+}

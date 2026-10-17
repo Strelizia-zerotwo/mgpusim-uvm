@@ -74,7 +74,11 @@ func (m *respondPipelineMW) parseTranslation() bool {
 	nextTrans := &nextState.Transactions[transIdx]
 	reqState := nextTrans.IncomingReqs[0]
 	spec := m.comp.Spec()
-	translatedReq := createTranslatedReq(reqState, rsp.Page,
+	page := rsp.Page
+	if controller := accessController(m.comp); controller != nil {
+		page = controller.Resolve(m.comp, reqState.ID, page)
+	}
+	translatedReq := createTranslatedReq(reqState, page,
 		spec.Log2PageSize, m.bottomPort().AsRemote(),
 		m.comp.Resources().MemProviderMapper)
 
@@ -231,7 +235,16 @@ func (m *respondPipelineMW) respond() bool {
 			return false
 		}
 
+		if data, ok := rspToTop.(memprotocol.DataReadyRsp); ok {
+			if controller, ok := accessController(m.comp).(ReadDataController); ok {
+				data.Data = controller.ReadData(m.comp, reqFromTopState.ReqFromTopID, data.Data)
+				rspToTop = data
+			}
+		}
 		m.topPort().Send(rspToTop)
+		if controller := accessController(m.comp); controller != nil {
+			controller.Complete(m.comp, reqFromTopState.ReqFromTopID)
+		}
 
 		fakeFromTop := restoreMemMsg(
 			reqFromTopState.ReqFromTopID,

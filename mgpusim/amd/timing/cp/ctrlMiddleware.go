@@ -489,6 +489,10 @@ func (m *ctrlMiddleware) l1DataCaches() []messaging.RemotePort {
 // sequence finishes.
 func (m *ctrlMiddleware) execKernelStartStep(step int) int {
 	state := &m.comp.State
+	if step == 0 && idealKernelStart(m.comp) {
+		state.CtrlSeq = ctrlSeqNone
+		return 0
+	}
 
 	switch step {
 	case 0:

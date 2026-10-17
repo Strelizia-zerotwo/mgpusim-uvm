@@ -1,0 +1,11 @@
+[
+  {
+    "selection_scope": "whole completed application; offline selection of actual online-policy runs",
+    "link_ns": 200,
+    "fault_ns": 900,
+    "repeat": 0,
+    "selected_policy": "retain",
+    "application_us": 667.56,
+    "inv_application_us": 667.781
+  }
+]

@@ -118,8 +118,8 @@ func (r *Runner) buildTimingPlatform() {
 		WithGPUType(r.GPUType)
 
 	if *pageBytesFlag != 0 {
-		if r.GPUType != "r9nano" || *pageBytesFlag < 4096 || *pageBytesFlag&(*pageBytesFlag-1) != 0 {
-			panic("-page-bytes requires timing r9nano and a power of two >=4096")
+		if (r.GPUType != "r9nano" && r.GPUType != "mi300x") || *pageBytesFlag < 4096 || *pageBytesFlag&(*pageBytesFlag-1) != 0 {
+			panic("-page-bytes requires timing r9nano/mi300x and a power of two >=4096")
 		}
 		b = b.WithLog2PageSize(uint64(bits.TrailingZeros64(*pageBytesFlag)))
 	}

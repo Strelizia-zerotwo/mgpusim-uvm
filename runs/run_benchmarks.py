@@ -20,18 +20,10 @@ import time
 import uuid
 
 ROOT = Path(__file__).resolve().parents[1]
-POLICIES = 'norep,inv,retain,i1-no-s3,i1,i1-full-stale,i1-adaptive'.split(',')
-DEFAULT_POLICIES = ['inv','retain','i1-adaptive']
+POLICIES = 'norep,inv,delta,delta-sub,retain,i1-no-s3,i1,i1-full-stale,i1-adaptive'.split(',')
+DEFAULT_POLICIES = ['inv','delta','delta-sub']
 EXTRA = ['i1-write-prefetch', 'i2', 'infinity']
-COLUMNS = ['benchmark', 'profile', 'mode', 'policy', 'repeat', 'status', 'verification',
-           'wall_s', 'peak_rss_kib', 'application_us', 'kernel_us', 'barrier_us', 'recovery_us', 'host_transfer_us',
-           'speedup_vs_inv', 'saving_percent_vs_inv', 'copy_bytes', 'copy_faults', 'refills',
-           'invalidations', 'peak_replica_bytes', 'peak_stale_bytes', 'mapping_faults',
-           'active_gpus', 'instructions_by_gpu', 'gpu_activity_ok', 'epochs', 'kernel_count', 'fallback_page_epochs',
-           'non_owner_write_transactions', 'write_epoch_existing_replica_reads',
-           'write_epoch_new_copies', 'bandwidth_gbs', 'link_ns', 'fault_ns',
-           'shadow_refill_per_invalidation', 'shadow_dirty_fraction_p50', 'shadow_merged_write_epochs_p50',
-           'shadow_reread_distance_p50', 'reason', 'directory']
+COLUMNS = ['benchmark', 'profile', 'mode', 'policy', 'page_bytes', 'protocol', 'arch', 'gpu', 'repeat', 'link_ns', 'fault_ns', 'bandwidth_gbs', 'replica_pages_per_gpu', 'status', 'verification', 'application_us', 'kernel_us', 'host_transfer_us', 'barrier_us', 'recovery_us', 'speedup_vs_inv', 'saving_percent_vs_inv', 'cold_copies', 'refills', 'repairs', 'copy_faults', 'copy_bytes', 'charged_bytes', 'charged_fixed_us', 'invalidations', 'peak_replica_bytes', 'peak_stale_bytes', 'peak_retained_frames', 'peak_stale_retained_frames', 'peak_retained_bytes', 'peak_stale_retained_bytes', 'peak_backend_pinned_frames', 'intrakernel_refills', 'intrakernel_repairs', 'clean_replica_reads_during_write', 'write_after_repair', 'in_kernel_copy_service_us', 'in_kernel_cache_control_us', 'functional_read_corrections', 'write_transitions', 'stale_read_sectors', 'fallback_home_reads', 'mapping_faults', 'concurrent_repairs_high_water', 'repair_bytes', 'repair_events', 'active_gpus', 'instructions_by_gpu', 'gpu_activity_ok', 'kernel_count', 'epochs', 'non_owner_write_transactions', 'wall_s', 'peak_rss_kib', 'sanity_warnings', 'reason', 'directory']
 
 
 def dump(p, x):
@@ -156,7 +148,7 @@ def audit(root, catalog):
                 replica_sample=(sample/'replica/main.go').exists(),
                 replica_runner=(root/'benchmark/replica-recovery/run.py').exists(),
                 old_memtrace=(root/'mgpusim/amd/timing/memtrace').exists(),
-                adapters={b['id']:'core-kernel-barrier-v1' if b.get('core_replica') else b.get('replica',{}).get('workload') for b in catalog},
+                adapters={b['id']:'core-kernel-internal-ideal-v3' if b.get('core_replica') else b.get('replica',{}).get('workload') for b in catalog},
                 scope='stock/shared and demand are platform checks; only explicit adapters support fair policy timing')
 
 
@@ -167,6 +159,7 @@ def fingerprint(root, out):
             if p.is_file() and p.suffix in ('.go','.mod','.sum','.hsaco','.cl'):
                 names.append(p)
     names += [Path(__file__), root/'benchmark/mybenchmark/catalog.json', root/'runs/screen_opportunities.py',root/'runs/core_policy_runner.py']
+    names += [root/'runs/online_policy_runner.py',root/'runs/validate_kernel_internal.py',root/'runs/run_idea_candidates.py']
     names += list((root/'benchmark/replica-recovery/configs').glob('*.json'))
     old_runner = root/'benchmark/replica-recovery/run.py'
     if old_runner.exists(): names.append(old_runner)
@@ -194,7 +187,7 @@ def build(args, sample, suite):
         return binary
     binary.parent.mkdir(exist_ok=True)
     go = shutil.which('go') or '/usr/local/go/bin/go'
-    cmd = [go,'build','-o',str(binary),'./amd/samples/'+sample]
+    cmd = [go,'build','-p','2','-o',str(binary),'./amd/samples/'+sample]
     r = execute(cmd, suite/'build'/sample, args.build_timeout, cwd=args.root/'mgpusim')
     if r['status'] != 'OK':
         raise RuntimeError(f'build {r["status"]}; see {suite / "build" / sample}')
@@ -245,7 +238,7 @@ def check_stats(directory,legacy):
     if 'Passed!' not in text:
         raise RuntimeError('replica CPU numerical verification did not pass')
     s=read(directory/'stats.json')
-    if s['model_revision']!=legacy.REVISION or s['fabric_model']!='destination-ready-v2' or not s['epochs']:
+    if s['model_revision'] not in [legacy.REVISION,'replica-kernel-internal-v1','replica-kernel-internal-lazy-v2','replica-kernel-internal-ideal-v3'] or s['fabric_model']!='destination-ready-v2' or not s['epochs']:
         raise RuntimeError('unsupported replica model revision or no epochs')
     if s['application_ps']!=sum(s[k] for k in ('kernel_ps','barrier_flush_ps','recovery_wait_ps'))+s.get('host_transfer_ps',0):
         raise RuntimeError('application time accounting mismatch')
@@ -262,6 +255,8 @@ def core_policies(b,args,suite,run):
 def policies(b,args,suite,run):
     if b.get('core_replica'):
         return core_policies(b,args,suite,run)
+    if args.protocol=='kernel-internal':
+        raise RuntimeError('this sample has no kernel-internal core adapter; only --protocol kernel-barrier can select its historical adapter')
     if not b.get('replica'):
         raise RuntimeError('no explicit concurrent owner-placement replica adapter; stock sample cannot replay the seven policies')
     legacy=load_legacy(args.root)
@@ -362,16 +357,21 @@ def policies(b,args,suite,run):
 
 
 def summarize(rows,out):
+    # Re-summarization must never retain stale speedups for a failed row.
+    for r in rows:
+        r.pop('speedup_vs_inv',None);r.pop('saving_percent_vs_inv',None);r.pop('sanity_warnings',None)
     bases={}
     for r in rows:
         if r.get('status')=='OK' and r.get('policy')=='inv':
-            bases[(r['benchmark'],r['profile'],r['mode'],r['repeat'],r.get('link_ns'),r.get('fault_ns'),r.get('bandwidth_gbs'))]=r.get('application_us')
+            bases[(r['benchmark'],r['profile'],r['mode'],r['repeat'],r.get('link_ns'),r.get('fault_ns'),r.get('bandwidth_gbs'),r.get('protocol'),r.get('page_bytes'),r.get('replica_pages_per_gpu'),r.get('arch'),r.get('gpu'))]=r.get('application_us')
     for r in rows:
-        key=(r['benchmark'],r['profile'],r['mode'],r['repeat'],r.get('link_ns'),r.get('fault_ns'),r.get('bandwidth_gbs'))
+        key=(r['benchmark'],r['profile'],r['mode'],r['repeat'],r.get('link_ns'),r.get('fault_ns'),r.get('bandwidth_gbs'),r.get('protocol'),r.get('page_bytes'),r.get('replica_pages_per_gpu'),r.get('arch'),r.get('gpu'))
         base=bases.get(key)
         t=r.get('application_us')
         if r.get('status')=='OK' and base and t:
             r.update(speedup_vs_inv=base/t,saving_percent_vs_inv=100*(1-t/base))
+            if r.get('protocol')=='kernel-internal-ideal-v3' and r.get('policy') in ['delta','infinity'] and t>base:
+                r['sanity_warnings']='application ordering reversed; inspect event counts, overlap, cache state and execution order; timing is not clamped'
     dump(out/'summary.json',rows)
     csvwrite(out/'summary.tsv',rows,COLUMNS)
     csvwrite(out/'summary.csv',rows,COLUMNS,',')
@@ -383,24 +383,43 @@ def summarize(rows,out):
         runner_sha256=digest(Path(__file__)),
         activity_basis='sum of retired cu_inst_count by physical GPU; empty launches do not establish activity'))
     lines=['# 本轮实验结果','',
-           'wall_s 是宿主运行耗时；application_us 是复制模型应用时间；kernel_us 是模拟 kernel 时间。',
-           '平台检查的 application_us / speedup / refill 留空。FAIL / BLOCKED / TIMEOUT 不进入收益统计。','',
-           '|应用|模式|策略|状态|应用 µs|kernel µs|宿主秒|INV 加速比|',
-           '|---|---|---|---|---:|---:|---:|---:|']
+           'application_us 是模拟应用总时间，kernel_us 已包含请求在 kernel 内等待复制/修复的时间；wall_s 是宿主运行耗时。',
+           'ideal-v3 的失效、版本元数据、缓存维护、在途正确性处理均免费。只给复制/修复收固定 fault 和总字节传输费用。',
+           '失败与超时不计收益；按页大小、协议、链路和固定服务参数分别与 INV 比较。','',
+           '|应用|页字节|fault ns|link ns|策略|状态|应用 µs|kernel µs|宿主秒|INV 加速比|节省 %|',
+           '|---|---:|---:|---:|---|---|---:|---:|---:|---:|---:|']
     for r in rows:
         f=lambda k: f'{r[k]:.4f}' if isinstance(r.get(k),(int,float)) else ''
-        lines.append('|'+ '|'.join([r['benchmark'],r['mode'],r.get('policy') or '',r['status'],f('application_us'),f('kernel_us'),f('wall_s'),f('speedup_vs_inv')])+'|')
-    lines+=['','完整命令、日志、原始 SQLite、展开的 metrics.tsv、策略 stats.json、plan 和资源统计见各应用目录。',
-            'opportunities 是同一个 INV shadow 的机制机会；不是每种策略的实测性能，也不表示 kernel 内被动复制协议。']
+        lines.append('|'+ '|'.join([r['benchmark'],str(r.get('page_bytes','')),str(r.get('fault_ns','')),str(r.get('link_ns','')),r.get('policy') or '',r['status'],f('application_us'),f('kernel_us'),f('wall_s'),f('speedup_vs_inv'),f('saving_percent_vs_inv')])+'|')
+    live=[r for r in rows if r.get('protocol')=='kernel-internal-ideal-v3']
+    if live:
+        lines+=['','|应用|页字节|fault ns|link ns|策略|冷复制|整页 refill|差量 repair|传输字节|失效|保留帧峰值|过期保留帧峰值|',
+                '|---|---:|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|']
+        for r in live:
+            lines.append('|'+ '|'.join(str(r.get(k,'')) for k in ['benchmark','page_bytes','fault_ns','link_ns','policy','cold_copies','refills','repairs','copy_bytes','invalidations','peak_retained_frames','peak_stale_retained_frames'])+'|')
+        lines+=['','|应用|页字节|fault ns|link ns|策略|kernel 内 refill|kernel 内 repair|干净子块免修复读|复制服务累计 µs|功能读修正|过期子块放行|',
+                '|---|---:|---:|---:|---|---:|---:|---:|---:|---:|---:|']
+        for r in live:
+            lines.append('|'+ '|'.join(str(r.get(k,'')) for k in ['benchmark','page_bytes','fault_ns','link_ns','policy','intrakernel_refills','intrakernel_repairs','clean_replica_reads_during_write','in_kernel_copy_service_us','functional_read_corrections','stale_read_sectors'])+'|')
+        lines+=['','复制服务累计时间是并发任务耗时之和，已包含在 kernel_us 中，不能重复相加。',
+                'functional_read_corrections 统计理想功能层替换后端读值的次数；它与过期副本被错误放行不同，详见 KERNEL_INTERNAL.md。',
+                'INV 逻辑上立即释放失效帧；后端在途读为防物理地址重用而暂留的帧，另记 peak_backend_pinned_frames。',
+                '隔离的同一复制事件上 delta 费用不大于 INV，infinity 为零；应用异步调度可能改变事件数与缓存行为，反向次序原样保留并标警告。']
+    warnings=[r for r in rows if r.get('sanity_warnings')]
+    for r in warnings:
+        lines.append('检查提醒：'+r['benchmark']+' / '+str(r.get('page_bytes'))+' / '+str(r.get('policy'))+'：'+r['sanity_warnings'])
+    lines+=['','原始日志、命令、stats.json、metrics.sqlite3、metrics.tsv、observed-accesses.json 与资源统计见各应用目录。',
+            'observed-accesses 仅记录执行事实，不参与后续请求的策略决策。旧版 kernel-barrier/v2 结果具有不同成本口径。']
     (out/'REPORT.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
 
 
-def main():
+def main(argv=None):
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('action',choices=['list','audit','run','summarize'])
     p.add_argument('--root',type=Path,default=ROOT)
     p.add_argument('--bench',default=None,help='core (default), all, A/B/C, or comma-separated IDs')
     p.add_argument('--mode',choices=['stock','demand','policy','record'],default='stock')
+    p.add_argument('--protocol',choices=['kernel-internal','kernel-barrier'],default='kernel-internal',help='core policy execution; default uses actual in-kernel requests with no future plan')
     p.add_argument('--profile',choices=['smoke','small'],default='smoke')
     p.add_argument('--include-slow-dnn',action='store_true',help='explicitly enable LeNet/VGG16; skipped by default at user request')
     p.add_argument('--dnn-input',choices=['synthetic','dataset'],default='synthetic',help='explicit deterministic smoke data or real training datasets')
@@ -411,21 +430,30 @@ def main():
     p.add_argument('--link-ns',default='200')
     p.add_argument('--fault-ns',default='900')
     p.add_argument('--bandwidth-gbs',type=float,default=300)
-    p.add_argument('--page-bytes',type=int,default=4096)
+    p.add_argument('--page-bytes',default='4096',help='one page size or comma-separated sweep: 4096,65536,2097152')
     p.add_argument('--replica-pages-per-gpu',type=int,default=0)
     p.add_argument('--repeats',type=int,default=1)
     p.add_argument('--timeout',type=int,default=1800,help='seconds per simulation, excluding build')
     p.add_argument('--build-timeout',type=int,default=600)
     p.add_argument('--dry-run',action='store_true')
     p.add_argument('--suite',type=Path,help='existing _suites/<id> directory, for summarize only')
-    args=p.parse_args()
+    args=p.parse_args(argv)
     args.root=args.root.resolve()
     args.gpu_ids=[int(x) for x in args.gpus.split(',')]
     args.policies=args.policies.split(',')
     args.links=[int(x) for x in args.link_ns.split(',')]
     args.faults=[int(x) for x in args.fault_ns.split(',')]
-    if args.page_bytes!=4096:
-        p.error('catalog currently validates only 4096-byte pages; create and validate an aligned profile for other page sizes')
+    try:
+        args.pages=[int(x) for x in args.page_bytes.split(',')]
+    except ValueError:
+        p.error('--page-bytes requires integers separated by commas')
+    args.page_bytes=args.pages[0]
+    if not args.pages or any(x not in [4096,65536,2097152] for x in args.pages) or len(set(args.pages))!=len(args.pages):
+        p.error('supported page sizes: 4096,65536,2097152, without duplicates')
+    if args.protocol=='kernel-barrier' and args.pages!=[4096]:
+        p.error('historical kernel-barrier adapter requires 4096-byte pages')
+    if args.action=='run' and args.mode in ['policy','record'] and args.protocol=='kernel-internal' and any(x not in ['inv','delta','delta-sub','infinity'] for x in args.policies):
+        p.error('ideal kernel-internal policies: inv,delta,delta-sub; infinity optional')
     if (args.gpu_ids!=[1,2,3,4] or args.repeats<1 or args.timeout<1 or args.build_timeout<1 or
         args.replica_pages_per_gpu<0 or not math.isfinite(args.bandwidth_gbs) or args.bandwidth_gbs<0 or
         any(x<0 for x in args.links+args.faults) or len(set(args.links))!=len(args.links) or len(set(args.faults))!=len(args.faults) or
@@ -474,11 +502,11 @@ def main():
         selected=[b for b in catalog if b['id'] in ids]
     if args.action=='list' or args.dry_run:
         for b in selected:
-            print(json.dumps(dict(benchmark=b['id'],sample=b['sample'],flags=b['profiles'][args.profile],
-                                  adapter='core-kernel-barrier-v1' if b.get('core_replica') and args.mode in ['policy','record'] else b.get('replica'),
+            print(json.dumps(dict(benchmark=b['id'],sample=b['sample'],arch=b['arch'],gpu=b['gpu'],flags=b['profiles'][args.profile],
+                                  adapter=('core-kernel-internal-ideal-v3' if args.protocol=='kernel-internal' else 'core-kernel-barrier-v1') if b.get('core_replica') and args.mode in ['policy','record'] else b.get('replica'),
                                   blocked=None if b.get('core_replica') and args.mode in ['policy','record'] else b.get('blocked'),
                                   skipped_by_request=b['id'] in ['LeNet','VGG16'] and not args.include_slow_dnn,
-                                  mode=args.mode,policies=args.policies if args.mode=='policy' else None),ensure_ascii=False))
+                                  page_sizes=args.pages,mode=args.mode,policies=args.policies if args.mode=='policy' else None),ensure_ascii=False))
         return 0
     if os.name!='posix':
         p.error('run in Linux/WSL; list/audit/dry-run can also run on Windows')

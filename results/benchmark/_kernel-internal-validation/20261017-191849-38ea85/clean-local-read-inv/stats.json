@@ -1,0 +1,1398 @@
+{
+  "initial_input_sha256": "c6644413995ea5fdfdd169c1365a564657270ff88d2cf1fbf8ac50352e34648d",
+  "passive": {
+    "protocol": "kernel-internal-lazy-v2",
+    "adaptive_rule": "previous observed read-interval footprint; per-sector version validation on every actual request; no future trace",
+    "managed_requests": 144,
+    "read_requests": 80,
+    "write_requests": 64,
+    "transitions": 63,
+    "write_transitions": 0,
+    "cache_control_ps_in_kernel": 189000,
+    "copy_service_ps_in_kernel": 16705605,
+    "home_fetch_ps_in_kernel": 346000,
+    "home_fetch_requests": 1920,
+    "home_fetch_bytes": 61440,
+    "home_flush_events": 0,
+    "replica_invalidate_events": 15,
+    "replica_invalidate_bytes": 61440,
+    "home_l1_invalidate_events": 48,
+    "stale_read_sectors": 0,
+    "version_checks": 80,
+    "fallback_home_reads": 0,
+    "inflight_high_water": 16,
+    "pending_high_water": 4,
+    "concurrent_repairs_high_water": 1,
+    "repairs_by_trigger": {
+      "cold": 3,
+      "stale-version": 12
+    },
+    "repair_bytes": 49152,
+    "repair_events": 12,
+    "repair_granularities": {
+      "128": {
+        "bytes": 49152,
+        "blocks": 384,
+        "extents": 12
+      },
+      "32": {
+        "bytes": 49152,
+        "blocks": 1536,
+        "extents": 12
+      },
+      "4096": {
+        "bytes": 49152,
+        "blocks": 12,
+        "extents": 12
+      },
+      "512": {
+        "bytes": 49152,
+        "blocks": 96,
+        "extents": 12
+      }
+    },
+    "intrakernel_refills": 12,
+    "intrakernel_repairs": 0,
+    "write_after_repair_invalidations": 3,
+    "clean_replica_reads_during_write": 0,
+    "adaptive_demand_repairs": 0,
+    "adaptive_full_stale_repairs": 0,
+    "adaptive_extra_repair_bytes": 0,
+    "events": [
+      {
+        "kernel": 1,
+        "kind": "cold-copy",
+        "page": 4096,
+        "gpu": 2,
+        "request": 37161,
+        "start_ps": 9108000,
+        "end_ps": 10609000,
+        "bytes": 4096,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "cold-copy",
+        "page": 4096,
+        "gpu": 3,
+        "request": 37239,
+        "start_ps": 10610000,
+        "end_ps": 12006000,
+        "bytes": 4096,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "cold-copy",
+        "page": 4096,
+        "gpu": 4,
+        "request": 37360,
+        "start_ps": 10610000,
+        "end_ps": 13403000,
+        "bytes": 4096,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 1,
+        "request": 69844,
+        "start_ps": 13839000,
+        "end_ps": 14151000,
+        "version": 16
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 1,
+        "request": 69898,
+        "start_ps": 14152000,
+        "end_ps": 14189000,
+        "version": 16
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 1,
+        "request": 69997,
+        "start_ps": 14190000,
+        "end_ps": 14227000,
+        "version": 16
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 1,
+        "request": 70442,
+        "start_ps": 14228000,
+        "end_ps": 14265000,
+        "version": 16
+      },
+      {
+        "kernel": 1,
+        "kind": "repair",
+        "page": 4096,
+        "gpu": 2,
+        "request": 72404,
+        "start_ps": 14152000,
+        "end_ps": 15433000,
+        "bytes": 4096,
+        "version": 16
+      },
+      {
+        "kernel": 1,
+        "kind": "repair",
+        "page": 4096,
+        "gpu": 3,
+        "request": 72422,
+        "start_ps": 14152000,
+        "end_ps": 16718000,
+        "bytes": 4096,
+        "version": 16
+      },
+      {
+        "kernel": 1,
+        "kind": "repair",
+        "page": 4096,
+        "gpu": 4,
+        "request": 77104,
+        "start_ps": 14190000,
+        "end_ps": 18003000,
+        "bytes": 4096,
+        "version": 16
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 2,
+        "request": 96117,
+        "start_ps": 18005000,
+        "end_ps": 18158000,
+        "version": 20
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 2,
+        "request": 96137,
+        "start_ps": 18159000,
+        "end_ps": 18616000,
+        "version": 20
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 2,
+        "request": 96186,
+        "start_ps": 18617000,
+        "end_ps": 19074000,
+        "version": 20
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 2,
+        "request": 96200,
+        "start_ps": 19075000,
+        "end_ps": 19532000,
+        "version": 20
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 3,
+        "request": 102789,
+        "start_ps": 18005000,
+        "end_ps": 19990000,
+        "version": 20
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 3,
+        "request": 102809,
+        "start_ps": 19991000,
+        "end_ps": 20448000,
+        "version": 20
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 3,
+        "request": 102858,
+        "start_ps": 20449000,
+        "end_ps": 20906000,
+        "version": 20
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 3,
+        "request": 102872,
+        "start_ps": 20907000,
+        "end_ps": 21364000,
+        "version": 20
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 4,
+        "request": 108700,
+        "start_ps": 18617000,
+        "end_ps": 21822000,
+        "version": 20
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 4,
+        "request": 108720,
+        "start_ps": 21823000,
+        "end_ps": 22280000,
+        "version": 20
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 4,
+        "request": 108769,
+        "start_ps": 22281000,
+        "end_ps": 22738000,
+        "version": 20
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 4,
+        "request": 108783,
+        "start_ps": 22739000,
+        "end_ps": 23196000,
+        "version": 20
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 1,
+        "request": 144139,
+        "start_ps": 23257000,
+        "end_ps": 23654000,
+        "version": 28
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 1,
+        "request": 144161,
+        "start_ps": 23655000,
+        "end_ps": 23692000,
+        "version": 28
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 1,
+        "request": 144213,
+        "start_ps": 23693000,
+        "end_ps": 24131000,
+        "version": 32
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 1,
+        "request": 144230,
+        "start_ps": 24132000,
+        "end_ps": 24169000,
+        "version": 32
+      },
+      {
+        "kernel": 1,
+        "kind": "repair",
+        "page": 4096,
+        "gpu": 2,
+        "request": 151384,
+        "start_ps": 23693000,
+        "end_ps": 25337000,
+        "bytes": 4096,
+        "version": 32
+      },
+      {
+        "kernel": 1,
+        "kind": "repair",
+        "page": 4096,
+        "gpu": 3,
+        "request": 151477,
+        "start_ps": 23693000,
+        "end_ps": 26505000,
+        "bytes": 4096,
+        "version": 32
+      },
+      {
+        "kernel": 1,
+        "kind": "repair",
+        "page": 4096,
+        "gpu": 4,
+        "request": 159870,
+        "start_ps": 24170000,
+        "end_ps": 27673000,
+        "bytes": 4096,
+        "version": 32
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 2,
+        "request": 173303,
+        "start_ps": 27675000,
+        "end_ps": 27711000,
+        "version": 36
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 2,
+        "request": 173323,
+        "start_ps": 27712000,
+        "end_ps": 27749000,
+        "version": 36
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 2,
+        "request": 173372,
+        "start_ps": 27750000,
+        "end_ps": 27787000,
+        "version": 36
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 2,
+        "request": 173386,
+        "start_ps": 27788000,
+        "end_ps": 27825000,
+        "version": 36
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 3,
+        "request": 179813,
+        "start_ps": 27675000,
+        "end_ps": 27863000,
+        "version": 36
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 3,
+        "request": 179833,
+        "start_ps": 27864000,
+        "end_ps": 27901000,
+        "version": 36
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 3,
+        "request": 179882,
+        "start_ps": 27902000,
+        "end_ps": 27939000,
+        "version": 36
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 3,
+        "request": 179896,
+        "start_ps": 27940000,
+        "end_ps": 27977000,
+        "version": 36
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 4,
+        "request": 185406,
+        "start_ps": 27750000,
+        "end_ps": 28015000,
+        "version": 36
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 4,
+        "request": 185430,
+        "start_ps": 28016000,
+        "end_ps": 28053000,
+        "version": 36
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 4,
+        "request": 185492,
+        "start_ps": 28054000,
+        "end_ps": 28091000,
+        "version": 36
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 4,
+        "request": 185538,
+        "start_ps": 28092000,
+        "end_ps": 28129000,
+        "version": 36
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 1,
+        "request": 215675,
+        "start_ps": 28190000,
+        "end_ps": 28573000,
+        "version": 44
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 1,
+        "request": 215697,
+        "start_ps": 28574000,
+        "end_ps": 29012000,
+        "version": 48
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 1,
+        "request": 215749,
+        "start_ps": 29013000,
+        "end_ps": 29050000,
+        "version": 48
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 1,
+        "request": 215770,
+        "start_ps": 29051000,
+        "end_ps": 29088000,
+        "version": 48
+      },
+      {
+        "kernel": 1,
+        "kind": "repair",
+        "page": 4096,
+        "gpu": 2,
+        "request": 222878,
+        "start_ps": 29013000,
+        "end_ps": 30256000,
+        "bytes": 4096,
+        "version": 48
+      },
+      {
+        "kernel": 1,
+        "kind": "repair",
+        "page": 4096,
+        "gpu": 3,
+        "request": 222898,
+        "start_ps": 29013000,
+        "end_ps": 31424000,
+        "bytes": 4096,
+        "version": 48
+      },
+      {
+        "kernel": 1,
+        "kind": "repair",
+        "page": 4096,
+        "gpu": 4,
+        "request": 228286,
+        "start_ps": 29051000,
+        "end_ps": 32592000,
+        "bytes": 4096,
+        "version": 48
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 2,
+        "request": 244428,
+        "start_ps": 32594000,
+        "end_ps": 32630000,
+        "version": 52
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 2,
+        "request": 244448,
+        "start_ps": 32631000,
+        "end_ps": 32668000,
+        "version": 52
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 2,
+        "request": 244497,
+        "start_ps": 32669000,
+        "end_ps": 32706000,
+        "version": 52
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 2,
+        "request": 244511,
+        "start_ps": 32707000,
+        "end_ps": 32744000,
+        "version": 52
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 3,
+        "request": 250938,
+        "start_ps": 32594000,
+        "end_ps": 32782000,
+        "version": 52
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 3,
+        "request": 250958,
+        "start_ps": 32783000,
+        "end_ps": 32820000,
+        "version": 52
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 3,
+        "request": 251007,
+        "start_ps": 32821000,
+        "end_ps": 32858000,
+        "version": 52
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 3,
+        "request": 251021,
+        "start_ps": 32859000,
+        "end_ps": 32896000,
+        "version": 52
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 4,
+        "request": 256531,
+        "start_ps": 32669000,
+        "end_ps": 32934000,
+        "version": 52
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 4,
+        "request": 256555,
+        "start_ps": 32935000,
+        "end_ps": 32972000,
+        "version": 52
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 4,
+        "request": 256617,
+        "start_ps": 32973000,
+        "end_ps": 33010000,
+        "version": 52
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 4,
+        "request": 256663,
+        "start_ps": 33011000,
+        "end_ps": 33048000,
+        "version": 52
+      },
+      {
+        "kernel": 1,
+        "kind": "repair",
+        "page": 4096,
+        "gpu": 3,
+        "request": 289192,
+        "start_ps": 33514000,
+        "end_ps": 34681000,
+        "bytes": 4096,
+        "version": 64
+      },
+      {
+        "kernel": 1,
+        "kind": "repair",
+        "page": 4096,
+        "gpu": 4,
+        "request": 295101,
+        "start_ps": 34682000,
+        "end_ps": 35849000,
+        "bytes": 4096,
+        "version": 64
+      },
+      {
+        "kernel": 1,
+        "kind": "repair",
+        "page": 4096,
+        "gpu": 2,
+        "request": 289211,
+        "start_ps": 35851000,
+        "end_ps": 37017000,
+        "bytes": 4096,
+        "version": 64
+      }
+    ]
+  },
+  "adapter": "core-kernel-internal-lazy-v2",
+  "core_allocations": [
+    {
+      "base": 4096,
+      "bytes": 4096
+    }
+  ],
+  "page_ownership": [
+    {
+      "page": 4096,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    }
+  ],
+  "home_pages_by_gpu": {
+    "1": 1
+  },
+  "owner_read_transactions": 20,
+  "non_owner_read_transactions": 60,
+  "owner_write_transactions": 16,
+  "non_owner_write_transactions": 48,
+  "replica_read_transactions": 24,
+  "remote_home_read_transactions": 0,
+  "copy_bytes_by_role": {
+    "runtime": 61440
+  },
+  "copy_faults_by_role": {
+    "runtime": 15
+  },
+  "recovery_wait_ps_by_role": null,
+  "fabric_model": "destination-ready-v2",
+  "managed_pages": 1,
+  "epoch_activity": [
+    {
+      "name": "kernel/000001",
+      "start_ps": 674000,
+      "end_ps": 40660000,
+      "instructions_by_gpu": {
+        "1": 55,
+        "2": 55,
+        "3": 55,
+        "4": 55
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11439000,
+        "1": 1171000,
+        "2": 1171000,
+        "3": 1635000,
+        "4": 24570000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    }
+  ],
+  "model_revision": "replica-kernel-internal-lazy-v2",
+  "oracle_mapping_preinstall": true,
+  "mapping_installs": 4,
+  "tlb_flush_epochs": 0,
+  "mapping_faults": 0,
+  "fallback_page_epochs": 0,
+  "multiple_writer_page_epochs": 0,
+  "read_write_overlap_page_epochs": 0,
+  "fallback_gpu_page_accesses": 0,
+  "fallback_read_transactions": 0,
+  "fallback_write_transactions": 0,
+  "fallback_events": null,
+  "write_epoch_new_copies": 0,
+  "write_epoch_new_copy_bytes": 0,
+  "write_epoch_new_copy_faults": 0,
+  "write_epoch_existing_replica_reads": 0,
+  "write_epoch_new_replica_reads": 0,
+  "recovery_events": [
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 1,
+      "page": 4096,
+      "gpu": 2,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 9495000,
+      "due_ps": 10608707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 1,
+      "page": 4096,
+      "gpu": 3,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 10892000,
+      "due_ps": 12005707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 1,
+      "page": 4096,
+      "gpu": 4,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 12289000,
+      "due_ps": 13402707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 1,
+      "page": 4096,
+      "gpu": 2,
+      "source_version": 16,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 14319000,
+      "due_ps": 15432707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 1,
+      "page": 4096,
+      "gpu": 3,
+      "source_version": 16,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 15604000,
+      "due_ps": 16717707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 1,
+      "page": 4096,
+      "gpu": 4,
+      "source_version": 16,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 16889000,
+      "due_ps": 18002707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 1,
+      "page": 4096,
+      "gpu": 2,
+      "source_version": 32,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 24223000,
+      "due_ps": 25336707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 1,
+      "page": 4096,
+      "gpu": 3,
+      "source_version": 32,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 25391000,
+      "due_ps": 26504707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 1,
+      "page": 4096,
+      "gpu": 4,
+      "source_version": 32,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 26559000,
+      "due_ps": 27672707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 1,
+      "page": 4096,
+      "gpu": 2,
+      "source_version": 48,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 29142000,
+      "due_ps": 30255707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 1,
+      "page": 4096,
+      "gpu": 3,
+      "source_version": 48,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 30310000,
+      "due_ps": 31423707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 1,
+      "page": 4096,
+      "gpu": 4,
+      "source_version": 48,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 31478000,
+      "due_ps": 32591707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 1,
+      "page": 4096,
+      "gpu": 3,
+      "source_version": 64,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 33567000,
+      "due_ps": 34680707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 1,
+      "page": 4096,
+      "gpu": 4,
+      "source_version": 64,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 34735000,
+      "due_ps": 35848707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 1,
+      "page": 4096,
+      "gpu": 2,
+      "source_version": 64,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 35903000,
+      "due_ps": 37016707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    }
+  ],
+  "s4_inv_replica_targets": 0,
+  "write_page_epochs": 64,
+  "versioned_pages": 1,
+  "config": {
+    "transfer_gran_bytes": 32,
+    "policy": "inv",
+    "page_bytes": 4096,
+    "sector_bytes": 32,
+    "fault_ns": 900,
+    "fault_slots": 16,
+    "bandwidth_gbs": 300,
+    "link_ns": 200,
+    "replica_pages_per_gpu": 0,
+    "metadata_ns": 0,
+    "shootdown_ns": 0
+  },
+  "epochs": 1,
+  "kernel_ps": 39986000,
+  "host_transfer_ps": 639000,
+  "validation_sha256": "2a446b09d8a18d12f90d26ae41d72957d62dcc86d50f8ffbfd84810000b4731b",
+  "kernel_count": 1,
+  "host_write_epochs": 0,
+  "peak_live_managed_pages": 1,
+  "retired_managed_pages": 0,
+  "application_ps": 41202000,
+  "barrier_flush_ps": 577000,
+  "recovery_wait_ps": 0,
+  "copy_faults": 15,
+  "cold_copies": 3,
+  "refills": 12,
+  "repairs": 0,
+  "copy_bytes": 61440,
+  "invalidations": 12,
+  "evictions": 0,
+  "peak_replica_pages": 3,
+  "peak_stale_pages": 2,
+  "retained_pages": 3,
+  "s2_clean_transactions": 0,
+  "s3_preexisting_replica_read_transactions": 0,
+  "s3_preexisting_replica_read_sectors": 0,
+  "s3_conflicting_read_sectors": 0,
+  "repair_granularities": {
+    "128": {
+      "bytes": 49152,
+      "blocks": 384,
+      "extents": 12
+    },
+    "32": {
+      "bytes": 49152,
+      "blocks": 1536,
+      "extents": 12
+    },
+    "4096": {
+      "bytes": 49152,
+      "blocks": 12,
+      "extents": 12
+    },
+    "512": {
+      "bytes": 49152,
+      "blocks": 96,
+      "extents": 12
+    }
+  },
+  "fabric_bytes": 67440,
+  "fabric_messages": 135
+}

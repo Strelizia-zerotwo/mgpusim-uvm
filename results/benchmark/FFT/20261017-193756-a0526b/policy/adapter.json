@@ -1,0 +1,10 @@
+{
+  "adapter": "core-kernel-internal-lazy-v2",
+  "trigger": "actual read/write requests before data-cache admission, including TLB hits",
+  "future_information": false,
+  "adaptive": "previous observed read-interval footprint and isolated service cost",
+  "scheduler": "balanced contiguous workgroups on four physical GPUs",
+  "cache_control": "per-GPU reader queue; page-local leases; running clean-range invalidation; real home L2 fetch; zero write-triggered transitions",
+  "time_accounting": "kernel_us includes in-kernel permission, cache-control and copy waits",
+  "placement": "same static contiguous page partitions for every policy"
+}

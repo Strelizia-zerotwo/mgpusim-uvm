@@ -1,0 +1,4880 @@
+[
+  {
+    "initial_input_sha256": "838b16597ddc4050a67bf6a1670efd5040846c654e1efcb977db83400d0ecb48",
+    "passive": {
+      "protocol": "kernel-internal-ideal-v3",
+      "cost_model": "free immediate coherence; one fault charge plus one bulk bandwidth/latency charge per copy/repair; no extent/header costs",
+      "managed_requests": 19350,
+      "read_requests": 7200,
+      "write_requests": 12150,
+      "write_transitions": 0,
+      "cache_control_ps_in_kernel": 0,
+      "home_fetch_ps_in_kernel": 0,
+      "metadata_ps": 0,
+      "inflight_wait_ps": 0,
+      "copy_service_ps_in_kernel": 20777822,
+      "charged_fixed_ps": 16200000,
+      "charged_bytes": 73728,
+      "functional_home_writebacks": 6075,
+      "functional_cache_invalidations": 0,
+      "functional_read_corrections": 0,
+      "stale_read_sectors": 0,
+      "version_checks": 7200,
+      "coalesced_reads": 5382,
+      "inflight_high_water": 11385,
+      "pending_high_water": 3618,
+      "concurrent_repairs_high_water": 18,
+      "intrakernel_refills": 0,
+      "intrakernel_repairs": 0,
+      "clean_replica_reads_while_page_stale": 0,
+      "write_after_repair_metadata_events": 0,
+      "full_page_fallbacks": 0,
+      "fallback_home_reads": 0,
+      "repair_bytes": 0,
+      "repair_events": 0,
+      "peak_retained_frames": 0,
+      "peak_stale_retained_frames": 0,
+      "peak_backend_pinned_frames": 0,
+      "events": [
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 28672,
+          "gpu": 1,
+          "snapshot_version": 0,
+          "start_ps": 10860000,
+          "end_ps": 11973654,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 16384,
+          "gpu": 1,
+          "snapshot_version": 0,
+          "start_ps": 10860000,
+          "end_ps": 11987308,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 28672,
+          "gpu": 2,
+          "snapshot_version": 0,
+          "start_ps": 10861000,
+          "end_ps": 11987308,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 32768,
+          "gpu": 2,
+          "snapshot_version": 0,
+          "start_ps": 10862000,
+          "end_ps": 12000962,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 20480,
+          "gpu": 3,
+          "snapshot_version": 0,
+          "start_ps": 10862000,
+          "end_ps": 12000962,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 40960,
+          "gpu": 1,
+          "snapshot_version": 0,
+          "start_ps": 10896000,
+          "end_ps": 12009654,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 24576,
+          "gpu": 3,
+          "snapshot_version": 0,
+          "start_ps": 10863000,
+          "end_ps": 12014616,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 36864,
+          "gpu": 4,
+          "snapshot_version": 0,
+          "start_ps": 10863000,
+          "end_ps": 12014616,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 4096,
+          "gpu": 2,
+          "snapshot_version": 0,
+          "start_ps": 10882000,
+          "end_ps": 12014616,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 24576,
+          "gpu": 4,
+          "snapshot_version": 0,
+          "start_ps": 10863000,
+          "end_ps": 12028270,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 8192,
+          "gpu": 2,
+          "snapshot_version": 0,
+          "start_ps": 10883000,
+          "end_ps": 12028270,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 8192,
+          "gpu": 3,
+          "snapshot_version": 0,
+          "start_ps": 10883000,
+          "end_ps": 12041924,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 12288,
+          "gpu": 3,
+          "snapshot_version": 0,
+          "start_ps": 10884000,
+          "end_ps": 12055578,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 12288,
+          "gpu": 4,
+          "snapshot_version": 0,
+          "start_ps": 10884000,
+          "end_ps": 12069232,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 45056,
+          "gpu": 3,
+          "snapshot_version": 0,
+          "start_ps": 10898000,
+          "end_ps": 12069232,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 49152,
+          "gpu": 3,
+          "snapshot_version": 0,
+          "start_ps": 10900000,
+          "end_ps": 12082886,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 40960,
+          "gpu": 2,
+          "snapshot_version": 0,
+          "start_ps": 10901000,
+          "end_ps": 12096540,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 45056,
+          "gpu": 2,
+          "snapshot_version": 0,
+          "start_ps": 10903000,
+          "end_ps": 12110194,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        }
+      ]
+    },
+    "adapter": "core-kernel-internal-ideal-v3",
+    "core_allocations": [
+      {
+        "base": 4096,
+        "bytes": 49152
+      },
+      {
+        "base": 53248,
+        "bytes": 388800
+      }
+    ],
+    "terminal_sha256": "545b585457b48670201facf017478947ef36ec2c2ed2d27542c103d76f3bbe12",
+    "page_ownership": [
+      {
+        "page": 4096,
+        "home_gpu": 1,
+        "readers": [
+          1,
+          2
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 8192,
+        "home_gpu": 1,
+        "readers": [
+          2,
+          3
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 12288,
+        "home_gpu": 1,
+        "readers": [
+          3,
+          4
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 16384,
+        "home_gpu": 2,
+        "readers": [
+          1,
+          2
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 20480,
+        "home_gpu": 2,
+        "readers": [
+          2,
+          3
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 24576,
+        "home_gpu": 2,
+        "readers": [
+          3,
+          4
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 28672,
+        "home_gpu": 3,
+        "readers": [
+          1,
+          2
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 32768,
+        "home_gpu": 3,
+        "readers": [
+          2,
+          3
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 36864,
+        "home_gpu": 3,
+        "readers": [
+          3,
+          4
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 40960,
+        "home_gpu": 4,
+        "readers": [
+          1,
+          2
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 45056,
+        "home_gpu": 4,
+        "readers": [
+          2,
+          3
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 49152,
+        "home_gpu": 4,
+        "readers": [
+          3,
+          4
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 53248,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 57344,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 61440,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 65536,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 69632,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 73728,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 77824,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 81920,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 86016,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 90112,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 94208,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 98304,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 102400,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 106496,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 110592,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 114688,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 118784,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 122880,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 126976,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 131072,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 135168,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 139264,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 143360,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 147456,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 151552,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 155648,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 159744,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 163840,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 167936,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          1,
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 172032,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 176128,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 180224,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 184320,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 188416,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 192512,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 196608,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 200704,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 204800,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 208896,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 212992,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 217088,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 221184,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 225280,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 229376,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 233472,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 237568,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 241664,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 245760,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 249856,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 253952,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 258048,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 262144,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 266240,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 270336,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 274432,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 278528,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 282624,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2,
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 286720,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 290816,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 294912,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 299008,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 303104,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 307200,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 311296,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 315392,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 319488,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 323584,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 327680,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 331776,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 335872,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 339968,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 344064,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 348160,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 352256,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 356352,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 360448,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 364544,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 368640,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 372736,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 376832,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 380928,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 385024,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 389120,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 393216,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 397312,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3,
+          4
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 401408,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 405504,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 409600,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 413696,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 417792,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 421888,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 425984,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 430080,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 434176,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 438272,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      }
+    ],
+    "home_pages_by_gpu": {
+      "1": 27,
+      "2": 27,
+      "3": 27,
+      "4": 26
+    },
+    "owner_read_transactions": 1800,
+    "non_owner_read_transactions": 5400,
+    "owner_write_transactions": 8982,
+    "non_owner_write_transactions": 3168,
+    "replica_read_transactions": 0,
+    "remote_home_read_transactions": 0,
+    "copy_bytes_by_role": {
+      "runtime": 73728
+    },
+    "copy_faults_by_role": {
+      "runtime": 18
+    },
+    "recovery_wait_ps_by_role": null,
+    "fabric_model": "destination-ready-v2",
+    "managed_pages": 107,
+    "epoch_activity": [
+      {
+        "name": "kernel/000001",
+        "start_ps": 811000,
+        "end_ps": 18750000,
+        "instructions_by_gpu": {
+          "1": 97200,
+          "2": 97200,
+          "3": 97200,
+          "4": 97200
+        },
+        "inflight_gpu_duration_ps": {
+          "0": 11644000,
+          "1": 796000,
+          "2": 713000,
+          "3": 1002000,
+          "4": 3784000
+        },
+        "max_gpus_with_inflight_instructions": 4
+      }
+    ],
+    "model_revision": "replica-kernel-internal-ideal-v3",
+    "oracle_mapping_preinstall": true,
+    "mapping_installs": 428,
+    "tlb_flush_epochs": 0,
+    "mapping_faults": 0,
+    "fallback_page_epochs": 0,
+    "multiple_writer_page_epochs": 0,
+    "read_write_overlap_page_epochs": 0,
+    "fallback_gpu_page_accesses": 0,
+    "fallback_read_transactions": 0,
+    "fallback_write_transactions": 0,
+    "fallback_events": null,
+    "write_epoch_new_copies": 0,
+    "write_epoch_new_copy_bytes": 0,
+    "write_epoch_new_copy_faults": 0,
+    "write_epoch_existing_replica_reads": 0,
+    "write_epoch_new_replica_reads": 0,
+    "recovery_events": [
+      {
+        "home_gpu": 3,
+        "page_role": "runtime",
+        "repair_kind": "inv",
+        "epoch": 1,
+        "page": 28672,
+        "gpu": 1,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10860000,
+        "due_ps": 11973654,
+        "layouts": null
+      },
+      {
+        "home_gpu": 2,
+        "page_role": "runtime",
+        "repair_kind": "inv",
+        "epoch": 1,
+        "page": 16384,
+        "gpu": 1,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10860000,
+        "due_ps": 11987308,
+        "layouts": null
+      },
+      {
+        "home_gpu": 3,
+        "page_role": "runtime",
+        "repair_kind": "inv",
+        "epoch": 1,
+        "page": 28672,
+        "gpu": 2,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10861000,
+        "due_ps": 11987308,
+        "layouts": null
+      },
+      {
+        "home_gpu": 3,
+        "page_role": "runtime",
+        "repair_kind": "inv",
+        "epoch": 1,
+        "page": 32768,
+        "gpu": 2,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10862000,
+        "due_ps": 12000962,
+        "layouts": null
+      },
+      {
+        "home_gpu": 2,
+        "page_role": "runtime",
+        "repair_kind": "inv",
+        "epoch": 1,
+        "page": 20480,
+        "gpu": 3,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10862000,
+        "due_ps": 12000962,
+        "layouts": null
+      },
+      {
+        "home_gpu": 4,
+        "page_role": "runtime",
+        "repair_kind": "inv",
+        "epoch": 1,
+        "page": 40960,
+        "gpu": 1,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10896000,
+        "due_ps": 12009654,
+        "layouts": null
+      },
+      {
+        "home_gpu": 2,
+        "page_role": "runtime",
+        "repair_kind": "inv",
+        "epoch": 1,
+        "page": 24576,
+        "gpu": 3,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10863000,
+        "due_ps": 12014616,
+        "layouts": null
+      },
+      {
+        "home_gpu": 3,
+        "page_role": "runtime",
+        "repair_kind": "inv",
+        "epoch": 1,
+        "page": 36864,
+        "gpu": 4,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10863000,
+        "due_ps": 12014616,
+        "layouts": null
+      },
+      {
+        "home_gpu": 1,
+        "page_role": "runtime",
+        "repair_kind": "inv",
+        "epoch": 1,
+        "page": 4096,
+        "gpu": 2,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10882000,
+        "due_ps": 12014616,
+        "layouts": null
+      },
+      {
+        "home_gpu": 2,
+        "page_role": "runtime",
+        "repair_kind": "inv",
+        "epoch": 1,
+        "page": 24576,
+        "gpu": 4,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10863000,
+        "due_ps": 12028270,
+        "layouts": null
+      },
+      {
+        "home_gpu": 1,
+        "page_role": "runtime",
+        "repair_kind": "inv",
+        "epoch": 1,
+        "page": 8192,
+        "gpu": 2,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10883000,
+        "due_ps": 12028270,
+        "layouts": null
+      },
+      {
+        "home_gpu": 1,
+        "page_role": "runtime",
+        "repair_kind": "inv",
+        "epoch": 1,
+        "page": 8192,
+        "gpu": 3,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10883000,
+        "due_ps": 12041924,
+        "layouts": null
+      },
+      {
+        "home_gpu": 1,
+        "page_role": "runtime",
+        "repair_kind": "inv",
+        "epoch": 1,
+        "page": 12288,
+        "gpu": 3,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10884000,
+        "due_ps": 12055578,
+        "layouts": null
+      },
+      {
+        "home_gpu": 1,
+        "page_role": "runtime",
+        "repair_kind": "inv",
+        "epoch": 1,
+        "page": 12288,
+        "gpu": 4,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10884000,
+        "due_ps": 12069232,
+        "layouts": null
+      },
+      {
+        "home_gpu": 4,
+        "page_role": "runtime",
+        "repair_kind": "inv",
+        "epoch": 1,
+        "page": 45056,
+        "gpu": 3,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10898000,
+        "due_ps": 12069232,
+        "layouts": null
+      },
+      {
+        "home_gpu": 4,
+        "page_role": "runtime",
+        "repair_kind": "inv",
+        "epoch": 1,
+        "page": 49152,
+        "gpu": 3,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10900000,
+        "due_ps": 12082886,
+        "layouts": null
+      },
+      {
+        "home_gpu": 4,
+        "page_role": "runtime",
+        "repair_kind": "inv",
+        "epoch": 1,
+        "page": 40960,
+        "gpu": 2,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10901000,
+        "due_ps": 12096540,
+        "layouts": null
+      },
+      {
+        "home_gpu": 4,
+        "page_role": "runtime",
+        "repair_kind": "inv",
+        "epoch": 1,
+        "page": 45056,
+        "gpu": 2,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10903000,
+        "due_ps": 12110194,
+        "layouts": null
+      }
+    ],
+    "s4_inv_replica_targets": 0,
+    "write_page_epochs": 12150,
+    "versioned_pages": 95,
+    "config": {
+      "has_system_scope_sync": false,
+      "transfer_gran_bytes": 32,
+      "policy": "inv",
+      "page_bytes": 4096,
+      "sector_bytes": 32,
+      "fault_ns": 900,
+      "fault_slots": 16,
+      "bandwidth_gbs": 300,
+      "link_ns": 200,
+      "replica_pages_per_gpu": 0,
+      "metadata_ns": 0,
+      "shootdown_ns": 0
+    },
+    "epochs": 1,
+    "kernel_ps": 17939000,
+    "host_transfer_ps": 2883000,
+    "validation_sha256": "1ffa393679deb894d2eae8ae92b6f798f4185f531816622abbcfce8c4c8d2146",
+    "kernel_count": 1,
+    "host_write_epochs": 0,
+    "peak_live_managed_pages": 107,
+    "retired_managed_pages": 0,
+    "application_ps": 20822000,
+    "barrier_flush_ps": 0,
+    "recovery_wait_ps": 0,
+    "copy_faults": 18,
+    "cold_copies": 18,
+    "refills": 0,
+    "repairs": 0,
+    "copy_bytes": 73728,
+    "invalidations": 0,
+    "evictions": 0,
+    "peak_replica_pages": 18,
+    "peak_stale_pages": 0,
+    "retained_pages": 18,
+    "s2_clean_transactions": 0,
+    "s3_preexisting_replica_read_transactions": 0,
+    "s3_preexisting_replica_read_sectors": 0,
+    "s3_conflicting_read_sectors": 0,
+    "repair_granularities": {},
+    "fabric_bytes": 377856,
+    "fabric_messages": 6354,
+    "case": "inv_page-4096_link-200ns_fault-900ns_repeat-0",
+    "repeat": 0
+  },
+  {
+    "initial_input_sha256": "838b16597ddc4050a67bf6a1670efd5040846c654e1efcb977db83400d0ecb48",
+    "passive": {
+      "protocol": "kernel-internal-ideal-v3",
+      "cost_model": "free immediate coherence; one fault charge plus one bulk bandwidth/latency charge per copy/repair; no extent/header costs",
+      "managed_requests": 19350,
+      "read_requests": 7200,
+      "write_requests": 12150,
+      "write_transitions": 0,
+      "cache_control_ps_in_kernel": 0,
+      "home_fetch_ps_in_kernel": 0,
+      "metadata_ps": 0,
+      "inflight_wait_ps": 0,
+      "copy_service_ps_in_kernel": 20777822,
+      "charged_fixed_ps": 16200000,
+      "charged_bytes": 73728,
+      "functional_home_writebacks": 6075,
+      "functional_cache_invalidations": 0,
+      "functional_read_corrections": 0,
+      "stale_read_sectors": 0,
+      "version_checks": 7200,
+      "coalesced_reads": 5382,
+      "inflight_high_water": 11385,
+      "pending_high_water": 3618,
+      "concurrent_repairs_high_water": 18,
+      "intrakernel_refills": 0,
+      "intrakernel_repairs": 0,
+      "clean_replica_reads_while_page_stale": 0,
+      "write_after_repair_metadata_events": 0,
+      "full_page_fallbacks": 0,
+      "fallback_home_reads": 0,
+      "repair_bytes": 0,
+      "repair_events": 0,
+      "peak_retained_frames": 18,
+      "peak_stale_retained_frames": 0,
+      "peak_backend_pinned_frames": 0,
+      "events": [
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 28672,
+          "gpu": 1,
+          "snapshot_version": 0,
+          "start_ps": 10860000,
+          "end_ps": 11973654,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 16384,
+          "gpu": 1,
+          "snapshot_version": 0,
+          "start_ps": 10860000,
+          "end_ps": 11987308,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 28672,
+          "gpu": 2,
+          "snapshot_version": 0,
+          "start_ps": 10861000,
+          "end_ps": 11987308,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 32768,
+          "gpu": 2,
+          "snapshot_version": 0,
+          "start_ps": 10862000,
+          "end_ps": 12000962,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 20480,
+          "gpu": 3,
+          "snapshot_version": 0,
+          "start_ps": 10862000,
+          "end_ps": 12000962,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 40960,
+          "gpu": 1,
+          "snapshot_version": 0,
+          "start_ps": 10896000,
+          "end_ps": 12009654,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 24576,
+          "gpu": 3,
+          "snapshot_version": 0,
+          "start_ps": 10863000,
+          "end_ps": 12014616,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 36864,
+          "gpu": 4,
+          "snapshot_version": 0,
+          "start_ps": 10863000,
+          "end_ps": 12014616,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 4096,
+          "gpu": 2,
+          "snapshot_version": 0,
+          "start_ps": 10882000,
+          "end_ps": 12014616,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 24576,
+          "gpu": 4,
+          "snapshot_version": 0,
+          "start_ps": 10863000,
+          "end_ps": 12028270,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 8192,
+          "gpu": 2,
+          "snapshot_version": 0,
+          "start_ps": 10883000,
+          "end_ps": 12028270,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 8192,
+          "gpu": 3,
+          "snapshot_version": 0,
+          "start_ps": 10883000,
+          "end_ps": 12041924,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 12288,
+          "gpu": 3,
+          "snapshot_version": 0,
+          "start_ps": 10884000,
+          "end_ps": 12055578,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 12288,
+          "gpu": 4,
+          "snapshot_version": 0,
+          "start_ps": 10884000,
+          "end_ps": 12069232,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 45056,
+          "gpu": 3,
+          "snapshot_version": 0,
+          "start_ps": 10898000,
+          "end_ps": 12069232,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 49152,
+          "gpu": 3,
+          "snapshot_version": 0,
+          "start_ps": 10900000,
+          "end_ps": 12082886,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 40960,
+          "gpu": 2,
+          "snapshot_version": 0,
+          "start_ps": 10901000,
+          "end_ps": 12096540,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 45056,
+          "gpu": 2,
+          "snapshot_version": 0,
+          "start_ps": 10903000,
+          "end_ps": 12110194,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        }
+      ]
+    },
+    "adapter": "core-kernel-internal-ideal-v3",
+    "core_allocations": [
+      {
+        "base": 4096,
+        "bytes": 49152
+      },
+      {
+        "base": 53248,
+        "bytes": 388800
+      }
+    ],
+    "terminal_sha256": "545b585457b48670201facf017478947ef36ec2c2ed2d27542c103d76f3bbe12",
+    "page_ownership": [
+      {
+        "page": 4096,
+        "home_gpu": 1,
+        "readers": [
+          1,
+          2
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 8192,
+        "home_gpu": 1,
+        "readers": [
+          2,
+          3
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 12288,
+        "home_gpu": 1,
+        "readers": [
+          3,
+          4
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 16384,
+        "home_gpu": 2,
+        "readers": [
+          1,
+          2
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 20480,
+        "home_gpu": 2,
+        "readers": [
+          2,
+          3
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 24576,
+        "home_gpu": 2,
+        "readers": [
+          3,
+          4
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 28672,
+        "home_gpu": 3,
+        "readers": [
+          1,
+          2
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 32768,
+        "home_gpu": 3,
+        "readers": [
+          2,
+          3
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 36864,
+        "home_gpu": 3,
+        "readers": [
+          3,
+          4
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 40960,
+        "home_gpu": 4,
+        "readers": [
+          1,
+          2
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 45056,
+        "home_gpu": 4,
+        "readers": [
+          2,
+          3
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 49152,
+        "home_gpu": 4,
+        "readers": [
+          3,
+          4
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 53248,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 57344,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 61440,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 65536,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 69632,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 73728,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 77824,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 81920,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 86016,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 90112,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 94208,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 98304,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 102400,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 106496,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 110592,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 114688,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 118784,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 122880,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 126976,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 131072,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 135168,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 139264,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 143360,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 147456,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 151552,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 155648,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 159744,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 163840,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 167936,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          1,
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 172032,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 176128,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 180224,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 184320,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 188416,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 192512,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 196608,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 200704,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 204800,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 208896,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 212992,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 217088,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 221184,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 225280,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 229376,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 233472,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 237568,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 241664,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 245760,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 249856,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 253952,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 258048,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 262144,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 266240,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 270336,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 274432,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 278528,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 282624,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2,
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 286720,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 290816,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 294912,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 299008,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 303104,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 307200,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 311296,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 315392,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 319488,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 323584,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 327680,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 331776,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 335872,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 339968,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 344064,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 348160,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 352256,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 356352,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 360448,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 364544,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 368640,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 372736,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 376832,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 380928,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 385024,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 389120,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 393216,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 397312,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3,
+          4
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 401408,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 405504,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 409600,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 413696,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 417792,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 421888,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 425984,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 430080,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 434176,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 438272,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      }
+    ],
+    "home_pages_by_gpu": {
+      "1": 27,
+      "2": 27,
+      "3": 27,
+      "4": 26
+    },
+    "owner_read_transactions": 1800,
+    "non_owner_read_transactions": 5400,
+    "owner_write_transactions": 8982,
+    "non_owner_write_transactions": 3168,
+    "replica_read_transactions": 0,
+    "remote_home_read_transactions": 0,
+    "copy_bytes_by_role": {
+      "runtime": 73728
+    },
+    "copy_faults_by_role": {
+      "runtime": 18
+    },
+    "recovery_wait_ps_by_role": null,
+    "fabric_model": "destination-ready-v2",
+    "managed_pages": 107,
+    "epoch_activity": [
+      {
+        "name": "kernel/000001",
+        "start_ps": 811000,
+        "end_ps": 18750000,
+        "instructions_by_gpu": {
+          "1": 97200,
+          "2": 97200,
+          "3": 97200,
+          "4": 97200
+        },
+        "inflight_gpu_duration_ps": {
+          "0": 11644000,
+          "1": 796000,
+          "2": 713000,
+          "3": 1002000,
+          "4": 3784000
+        },
+        "max_gpus_with_inflight_instructions": 4
+      }
+    ],
+    "model_revision": "replica-kernel-internal-ideal-v3",
+    "oracle_mapping_preinstall": true,
+    "mapping_installs": 428,
+    "tlb_flush_epochs": 0,
+    "mapping_faults": 0,
+    "fallback_page_epochs": 0,
+    "multiple_writer_page_epochs": 0,
+    "read_write_overlap_page_epochs": 0,
+    "fallback_gpu_page_accesses": 0,
+    "fallback_read_transactions": 0,
+    "fallback_write_transactions": 0,
+    "fallback_events": null,
+    "write_epoch_new_copies": 0,
+    "write_epoch_new_copy_bytes": 0,
+    "write_epoch_new_copy_faults": 0,
+    "write_epoch_existing_replica_reads": 0,
+    "write_epoch_new_replica_reads": 0,
+    "recovery_events": [
+      {
+        "home_gpu": 3,
+        "page_role": "runtime",
+        "repair_kind": "delta",
+        "epoch": 1,
+        "page": 28672,
+        "gpu": 1,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10860000,
+        "due_ps": 11973654,
+        "layouts": null
+      },
+      {
+        "home_gpu": 2,
+        "page_role": "runtime",
+        "repair_kind": "delta",
+        "epoch": 1,
+        "page": 16384,
+        "gpu": 1,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10860000,
+        "due_ps": 11987308,
+        "layouts": null
+      },
+      {
+        "home_gpu": 3,
+        "page_role": "runtime",
+        "repair_kind": "delta",
+        "epoch": 1,
+        "page": 28672,
+        "gpu": 2,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10861000,
+        "due_ps": 11987308,
+        "layouts": null
+      },
+      {
+        "home_gpu": 3,
+        "page_role": "runtime",
+        "repair_kind": "delta",
+        "epoch": 1,
+        "page": 32768,
+        "gpu": 2,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10862000,
+        "due_ps": 12000962,
+        "layouts": null
+      },
+      {
+        "home_gpu": 2,
+        "page_role": "runtime",
+        "repair_kind": "delta",
+        "epoch": 1,
+        "page": 20480,
+        "gpu": 3,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10862000,
+        "due_ps": 12000962,
+        "layouts": null
+      },
+      {
+        "home_gpu": 4,
+        "page_role": "runtime",
+        "repair_kind": "delta",
+        "epoch": 1,
+        "page": 40960,
+        "gpu": 1,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10896000,
+        "due_ps": 12009654,
+        "layouts": null
+      },
+      {
+        "home_gpu": 2,
+        "page_role": "runtime",
+        "repair_kind": "delta",
+        "epoch": 1,
+        "page": 24576,
+        "gpu": 3,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10863000,
+        "due_ps": 12014616,
+        "layouts": null
+      },
+      {
+        "home_gpu": 3,
+        "page_role": "runtime",
+        "repair_kind": "delta",
+        "epoch": 1,
+        "page": 36864,
+        "gpu": 4,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10863000,
+        "due_ps": 12014616,
+        "layouts": null
+      },
+      {
+        "home_gpu": 1,
+        "page_role": "runtime",
+        "repair_kind": "delta",
+        "epoch": 1,
+        "page": 4096,
+        "gpu": 2,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10882000,
+        "due_ps": 12014616,
+        "layouts": null
+      },
+      {
+        "home_gpu": 2,
+        "page_role": "runtime",
+        "repair_kind": "delta",
+        "epoch": 1,
+        "page": 24576,
+        "gpu": 4,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10863000,
+        "due_ps": 12028270,
+        "layouts": null
+      },
+      {
+        "home_gpu": 1,
+        "page_role": "runtime",
+        "repair_kind": "delta",
+        "epoch": 1,
+        "page": 8192,
+        "gpu": 2,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10883000,
+        "due_ps": 12028270,
+        "layouts": null
+      },
+      {
+        "home_gpu": 1,
+        "page_role": "runtime",
+        "repair_kind": "delta",
+        "epoch": 1,
+        "page": 8192,
+        "gpu": 3,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10883000,
+        "due_ps": 12041924,
+        "layouts": null
+      },
+      {
+        "home_gpu": 1,
+        "page_role": "runtime",
+        "repair_kind": "delta",
+        "epoch": 1,
+        "page": 12288,
+        "gpu": 3,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10884000,
+        "due_ps": 12055578,
+        "layouts": null
+      },
+      {
+        "home_gpu": 1,
+        "page_role": "runtime",
+        "repair_kind": "delta",
+        "epoch": 1,
+        "page": 12288,
+        "gpu": 4,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10884000,
+        "due_ps": 12069232,
+        "layouts": null
+      },
+      {
+        "home_gpu": 4,
+        "page_role": "runtime",
+        "repair_kind": "delta",
+        "epoch": 1,
+        "page": 45056,
+        "gpu": 3,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10898000,
+        "due_ps": 12069232,
+        "layouts": null
+      },
+      {
+        "home_gpu": 4,
+        "page_role": "runtime",
+        "repair_kind": "delta",
+        "epoch": 1,
+        "page": 49152,
+        "gpu": 3,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10900000,
+        "due_ps": 12082886,
+        "layouts": null
+      },
+      {
+        "home_gpu": 4,
+        "page_role": "runtime",
+        "repair_kind": "delta",
+        "epoch": 1,
+        "page": 40960,
+        "gpu": 2,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10901000,
+        "due_ps": 12096540,
+        "layouts": null
+      },
+      {
+        "home_gpu": 4,
+        "page_role": "runtime",
+        "repair_kind": "delta",
+        "epoch": 1,
+        "page": 45056,
+        "gpu": 2,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10903000,
+        "due_ps": 12110194,
+        "layouts": null
+      }
+    ],
+    "s4_inv_replica_targets": 0,
+    "write_page_epochs": 12150,
+    "versioned_pages": 95,
+    "config": {
+      "has_system_scope_sync": false,
+      "transfer_gran_bytes": 32,
+      "policy": "delta",
+      "page_bytes": 4096,
+      "sector_bytes": 32,
+      "fault_ns": 900,
+      "fault_slots": 16,
+      "bandwidth_gbs": 300,
+      "link_ns": 200,
+      "replica_pages_per_gpu": 0,
+      "metadata_ns": 0,
+      "shootdown_ns": 0
+    },
+    "epochs": 1,
+    "kernel_ps": 17939000,
+    "host_transfer_ps": 2883000,
+    "validation_sha256": "1ffa393679deb894d2eae8ae92b6f798f4185f531816622abbcfce8c4c8d2146",
+    "kernel_count": 1,
+    "host_write_epochs": 0,
+    "peak_live_managed_pages": 107,
+    "retired_managed_pages": 0,
+    "application_ps": 20822000,
+    "barrier_flush_ps": 0,
+    "recovery_wait_ps": 0,
+    "copy_faults": 18,
+    "cold_copies": 18,
+    "refills": 0,
+    "repairs": 0,
+    "copy_bytes": 73728,
+    "invalidations": 0,
+    "evictions": 0,
+    "peak_replica_pages": 18,
+    "peak_stale_pages": 0,
+    "retained_pages": 18,
+    "s2_clean_transactions": 0,
+    "s3_preexisting_replica_read_transactions": 0,
+    "s3_preexisting_replica_read_sectors": 0,
+    "s3_conflicting_read_sectors": 0,
+    "repair_granularities": {},
+    "fabric_bytes": 377856,
+    "fabric_messages": 6354,
+    "case": "delta_page-4096_link-200ns_fault-900ns_repeat-0",
+    "repeat": 0
+  },
+  {
+    "initial_input_sha256": "838b16597ddc4050a67bf6a1670efd5040846c654e1efcb977db83400d0ecb48",
+    "passive": {
+      "protocol": "kernel-internal-ideal-v3",
+      "cost_model": "free immediate coherence; one fault charge plus one bulk bandwidth/latency charge per copy/repair; no extent/header costs",
+      "managed_requests": 19350,
+      "read_requests": 7200,
+      "write_requests": 12150,
+      "write_transitions": 0,
+      "cache_control_ps_in_kernel": 0,
+      "home_fetch_ps_in_kernel": 0,
+      "metadata_ps": 0,
+      "inflight_wait_ps": 0,
+      "copy_service_ps_in_kernel": 20777822,
+      "charged_fixed_ps": 16200000,
+      "charged_bytes": 73728,
+      "functional_home_writebacks": 6075,
+      "functional_cache_invalidations": 0,
+      "functional_read_corrections": 0,
+      "stale_read_sectors": 0,
+      "version_checks": 7200,
+      "coalesced_reads": 5382,
+      "inflight_high_water": 11385,
+      "pending_high_water": 3618,
+      "concurrent_repairs_high_water": 18,
+      "intrakernel_refills": 0,
+      "intrakernel_repairs": 0,
+      "clean_replica_reads_while_page_stale": 0,
+      "write_after_repair_metadata_events": 0,
+      "full_page_fallbacks": 0,
+      "fallback_home_reads": 0,
+      "repair_bytes": 0,
+      "repair_events": 0,
+      "peak_retained_frames": 18,
+      "peak_stale_retained_frames": 0,
+      "peak_backend_pinned_frames": 0,
+      "events": [
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 28672,
+          "gpu": 1,
+          "snapshot_version": 0,
+          "start_ps": 10860000,
+          "end_ps": 11973654,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 16384,
+          "gpu": 1,
+          "snapshot_version": 0,
+          "start_ps": 10860000,
+          "end_ps": 11987308,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 28672,
+          "gpu": 2,
+          "snapshot_version": 0,
+          "start_ps": 10861000,
+          "end_ps": 11987308,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 32768,
+          "gpu": 2,
+          "snapshot_version": 0,
+          "start_ps": 10862000,
+          "end_ps": 12000962,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 20480,
+          "gpu": 3,
+          "snapshot_version": 0,
+          "start_ps": 10862000,
+          "end_ps": 12000962,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 40960,
+          "gpu": 1,
+          "snapshot_version": 0,
+          "start_ps": 10896000,
+          "end_ps": 12009654,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 24576,
+          "gpu": 3,
+          "snapshot_version": 0,
+          "start_ps": 10863000,
+          "end_ps": 12014616,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 36864,
+          "gpu": 4,
+          "snapshot_version": 0,
+          "start_ps": 10863000,
+          "end_ps": 12014616,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 4096,
+          "gpu": 2,
+          "snapshot_version": 0,
+          "start_ps": 10882000,
+          "end_ps": 12014616,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 24576,
+          "gpu": 4,
+          "snapshot_version": 0,
+          "start_ps": 10863000,
+          "end_ps": 12028270,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 8192,
+          "gpu": 2,
+          "snapshot_version": 0,
+          "start_ps": 10883000,
+          "end_ps": 12028270,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 8192,
+          "gpu": 3,
+          "snapshot_version": 0,
+          "start_ps": 10883000,
+          "end_ps": 12041924,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 12288,
+          "gpu": 3,
+          "snapshot_version": 0,
+          "start_ps": 10884000,
+          "end_ps": 12055578,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 12288,
+          "gpu": 4,
+          "snapshot_version": 0,
+          "start_ps": 10884000,
+          "end_ps": 12069232,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 45056,
+          "gpu": 3,
+          "snapshot_version": 0,
+          "start_ps": 10898000,
+          "end_ps": 12069232,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 49152,
+          "gpu": 3,
+          "snapshot_version": 0,
+          "start_ps": 10900000,
+          "end_ps": 12082886,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 40960,
+          "gpu": 2,
+          "snapshot_version": 0,
+          "start_ps": 10901000,
+          "end_ps": 12096540,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        },
+        {
+          "kernel": 1,
+          "kind": "cold-copy",
+          "page": 45056,
+          "gpu": 2,
+          "snapshot_version": 0,
+          "start_ps": 10903000,
+          "end_ps": 12110194,
+          "bytes": 4096,
+          "charged_bytes": 4096,
+          "full_page": true
+        }
+      ]
+    },
+    "adapter": "core-kernel-internal-ideal-v3",
+    "core_allocations": [
+      {
+        "base": 4096,
+        "bytes": 49152
+      },
+      {
+        "base": 53248,
+        "bytes": 388800
+      }
+    ],
+    "terminal_sha256": "545b585457b48670201facf017478947ef36ec2c2ed2d27542c103d76f3bbe12",
+    "page_ownership": [
+      {
+        "page": 4096,
+        "home_gpu": 1,
+        "readers": [
+          1,
+          2
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 8192,
+        "home_gpu": 1,
+        "readers": [
+          2,
+          3
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 12288,
+        "home_gpu": 1,
+        "readers": [
+          3,
+          4
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 16384,
+        "home_gpu": 2,
+        "readers": [
+          1,
+          2
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 20480,
+        "home_gpu": 2,
+        "readers": [
+          2,
+          3
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 24576,
+        "home_gpu": 2,
+        "readers": [
+          3,
+          4
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 28672,
+        "home_gpu": 3,
+        "readers": [
+          1,
+          2
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 32768,
+        "home_gpu": 3,
+        "readers": [
+          2,
+          3
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 36864,
+        "home_gpu": 3,
+        "readers": [
+          3,
+          4
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 40960,
+        "home_gpu": 4,
+        "readers": [
+          1,
+          2
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 45056,
+        "home_gpu": 4,
+        "readers": [
+          2,
+          3
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 49152,
+        "home_gpu": 4,
+        "readers": [
+          3,
+          4
+        ],
+        "writers": null,
+        "role": "read-only"
+      },
+      {
+        "page": 53248,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 57344,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 61440,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 65536,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 69632,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 73728,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 77824,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 81920,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 86016,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 90112,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 94208,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 98304,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 102400,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 106496,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 110592,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 114688,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 118784,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 122880,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 126976,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 131072,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 135168,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 139264,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 143360,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 147456,
+        "home_gpu": 1,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 151552,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 155648,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 159744,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 163840,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          1
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 167936,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          1,
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 172032,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 176128,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 180224,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 184320,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 188416,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 192512,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 196608,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 200704,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 204800,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 208896,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 212992,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 217088,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 221184,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 225280,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 229376,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 233472,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 237568,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 241664,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 245760,
+        "home_gpu": 2,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 249856,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 253952,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 258048,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 262144,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 266240,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 270336,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 274432,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 278528,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 282624,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          2,
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 286720,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 290816,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 294912,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 299008,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 303104,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 307200,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 311296,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 315392,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 319488,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 323584,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 327680,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 331776,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 335872,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 339968,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 344064,
+        "home_gpu": 3,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 348160,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 352256,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 356352,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 360448,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 364544,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 368640,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 372736,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 376832,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 380928,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 385024,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 389120,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 393216,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 397312,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          3,
+          4
+        ],
+        "role": "non-owner-writer"
+      },
+      {
+        "page": 401408,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 405504,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 409600,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 413696,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 417792,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 421888,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 425984,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 430080,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 434176,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      },
+      {
+        "page": 438272,
+        "home_gpu": 4,
+        "readers": null,
+        "writers": [
+          4
+        ],
+        "role": "owner-private"
+      }
+    ],
+    "home_pages_by_gpu": {
+      "1": 27,
+      "2": 27,
+      "3": 27,
+      "4": 26
+    },
+    "owner_read_transactions": 1800,
+    "non_owner_read_transactions": 5400,
+    "owner_write_transactions": 8982,
+    "non_owner_write_transactions": 3168,
+    "replica_read_transactions": 0,
+    "remote_home_read_transactions": 0,
+    "copy_bytes_by_role": {
+      "runtime": 73728
+    },
+    "copy_faults_by_role": {
+      "runtime": 18
+    },
+    "recovery_wait_ps_by_role": null,
+    "fabric_model": "destination-ready-v2",
+    "managed_pages": 107,
+    "epoch_activity": [
+      {
+        "name": "kernel/000001",
+        "start_ps": 811000,
+        "end_ps": 18750000,
+        "instructions_by_gpu": {
+          "1": 97200,
+          "2": 97200,
+          "3": 97200,
+          "4": 97200
+        },
+        "inflight_gpu_duration_ps": {
+          "0": 11644000,
+          "1": 796000,
+          "2": 713000,
+          "3": 1002000,
+          "4": 3784000
+        },
+        "max_gpus_with_inflight_instructions": 4
+      }
+    ],
+    "model_revision": "replica-kernel-internal-ideal-v3",
+    "oracle_mapping_preinstall": true,
+    "mapping_installs": 428,
+    "tlb_flush_epochs": 0,
+    "mapping_faults": 0,
+    "fallback_page_epochs": 0,
+    "multiple_writer_page_epochs": 0,
+    "read_write_overlap_page_epochs": 0,
+    "fallback_gpu_page_accesses": 0,
+    "fallback_read_transactions": 0,
+    "fallback_write_transactions": 0,
+    "fallback_events": null,
+    "write_epoch_new_copies": 0,
+    "write_epoch_new_copy_bytes": 0,
+    "write_epoch_new_copy_faults": 0,
+    "write_epoch_existing_replica_reads": 0,
+    "write_epoch_new_replica_reads": 0,
+    "recovery_events": [
+      {
+        "home_gpu": 3,
+        "page_role": "runtime",
+        "repair_kind": "delta-sub",
+        "epoch": 1,
+        "page": 28672,
+        "gpu": 1,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10860000,
+        "due_ps": 11973654,
+        "layouts": null
+      },
+      {
+        "home_gpu": 2,
+        "page_role": "runtime",
+        "repair_kind": "delta-sub",
+        "epoch": 1,
+        "page": 16384,
+        "gpu": 1,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10860000,
+        "due_ps": 11987308,
+        "layouts": null
+      },
+      {
+        "home_gpu": 3,
+        "page_role": "runtime",
+        "repair_kind": "delta-sub",
+        "epoch": 1,
+        "page": 28672,
+        "gpu": 2,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10861000,
+        "due_ps": 11987308,
+        "layouts": null
+      },
+      {
+        "home_gpu": 3,
+        "page_role": "runtime",
+        "repair_kind": "delta-sub",
+        "epoch": 1,
+        "page": 32768,
+        "gpu": 2,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10862000,
+        "due_ps": 12000962,
+        "layouts": null
+      },
+      {
+        "home_gpu": 2,
+        "page_role": "runtime",
+        "repair_kind": "delta-sub",
+        "epoch": 1,
+        "page": 20480,
+        "gpu": 3,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10862000,
+        "due_ps": 12000962,
+        "layouts": null
+      },
+      {
+        "home_gpu": 4,
+        "page_role": "runtime",
+        "repair_kind": "delta-sub",
+        "epoch": 1,
+        "page": 40960,
+        "gpu": 1,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10896000,
+        "due_ps": 12009654,
+        "layouts": null
+      },
+      {
+        "home_gpu": 2,
+        "page_role": "runtime",
+        "repair_kind": "delta-sub",
+        "epoch": 1,
+        "page": 24576,
+        "gpu": 3,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10863000,
+        "due_ps": 12014616,
+        "layouts": null
+      },
+      {
+        "home_gpu": 3,
+        "page_role": "runtime",
+        "repair_kind": "delta-sub",
+        "epoch": 1,
+        "page": 36864,
+        "gpu": 4,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10863000,
+        "due_ps": 12014616,
+        "layouts": null
+      },
+      {
+        "home_gpu": 1,
+        "page_role": "runtime",
+        "repair_kind": "delta-sub",
+        "epoch": 1,
+        "page": 4096,
+        "gpu": 2,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10882000,
+        "due_ps": 12014616,
+        "layouts": null
+      },
+      {
+        "home_gpu": 2,
+        "page_role": "runtime",
+        "repair_kind": "delta-sub",
+        "epoch": 1,
+        "page": 24576,
+        "gpu": 4,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10863000,
+        "due_ps": 12028270,
+        "layouts": null
+      },
+      {
+        "home_gpu": 1,
+        "page_role": "runtime",
+        "repair_kind": "delta-sub",
+        "epoch": 1,
+        "page": 8192,
+        "gpu": 2,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10883000,
+        "due_ps": 12028270,
+        "layouts": null
+      },
+      {
+        "home_gpu": 1,
+        "page_role": "runtime",
+        "repair_kind": "delta-sub",
+        "epoch": 1,
+        "page": 8192,
+        "gpu": 3,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10883000,
+        "due_ps": 12041924,
+        "layouts": null
+      },
+      {
+        "home_gpu": 1,
+        "page_role": "runtime",
+        "repair_kind": "delta-sub",
+        "epoch": 1,
+        "page": 12288,
+        "gpu": 3,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10884000,
+        "due_ps": 12055578,
+        "layouts": null
+      },
+      {
+        "home_gpu": 1,
+        "page_role": "runtime",
+        "repair_kind": "delta-sub",
+        "epoch": 1,
+        "page": 12288,
+        "gpu": 4,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10884000,
+        "due_ps": 12069232,
+        "layouts": null
+      },
+      {
+        "home_gpu": 4,
+        "page_role": "runtime",
+        "repair_kind": "delta-sub",
+        "epoch": 1,
+        "page": 45056,
+        "gpu": 3,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10898000,
+        "due_ps": 12069232,
+        "layouts": null
+      },
+      {
+        "home_gpu": 4,
+        "page_role": "runtime",
+        "repair_kind": "delta-sub",
+        "epoch": 1,
+        "page": 49152,
+        "gpu": 3,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10900000,
+        "due_ps": 12082886,
+        "layouts": null
+      },
+      {
+        "home_gpu": 4,
+        "page_role": "runtime",
+        "repair_kind": "delta-sub",
+        "epoch": 1,
+        "page": 40960,
+        "gpu": 2,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10901000,
+        "due_ps": 12096540,
+        "layouts": null
+      },
+      {
+        "home_gpu": 4,
+        "page_role": "runtime",
+        "repair_kind": "delta-sub",
+        "epoch": 1,
+        "page": 45056,
+        "gpu": 2,
+        "source_version": 0,
+        "cold": true,
+        "functional_bytes": 4096,
+        "charged_bytes": 4096,
+        "start_ps": 10903000,
+        "due_ps": 12110194,
+        "layouts": null
+      }
+    ],
+    "s4_inv_replica_targets": 0,
+    "write_page_epochs": 12150,
+    "versioned_pages": 95,
+    "config": {
+      "has_system_scope_sync": false,
+      "transfer_gran_bytes": 32,
+      "policy": "delta-sub",
+      "page_bytes": 4096,
+      "sector_bytes": 32,
+      "fault_ns": 900,
+      "fault_slots": 16,
+      "bandwidth_gbs": 300,
+      "link_ns": 200,
+      "replica_pages_per_gpu": 0,
+      "metadata_ns": 0,
+      "shootdown_ns": 0
+    },
+    "epochs": 1,
+    "kernel_ps": 17939000,
+    "host_transfer_ps": 2883000,
+    "validation_sha256": "1ffa393679deb894d2eae8ae92b6f798f4185f531816622abbcfce8c4c8d2146",
+    "kernel_count": 1,
+    "host_write_epochs": 0,
+    "peak_live_managed_pages": 107,
+    "retired_managed_pages": 0,
+    "application_ps": 20822000,
+    "barrier_flush_ps": 0,
+    "recovery_wait_ps": 0,
+    "copy_faults": 18,
+    "cold_copies": 18,
+    "refills": 0,
+    "repairs": 0,
+    "copy_bytes": 73728,
+    "invalidations": 0,
+    "evictions": 0,
+    "peak_replica_pages": 18,
+    "peak_stale_pages": 0,
+    "retained_pages": 18,
+    "s2_clean_transactions": 0,
+    "s3_preexisting_replica_read_transactions": 0,
+    "s3_preexisting_replica_read_sectors": 0,
+    "s3_conflicting_read_sectors": 0,
+    "repair_granularities": {},
+    "fabric_bytes": 377856,
+    "fabric_messages": 6354,
+    "case": "delta-sub_page-4096_link-200ns_fault-900ns_repeat-0",
+    "repeat": 0
+  }
+]

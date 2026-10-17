@@ -24,6 +24,9 @@ type ManagedAllocation struct {
 func AttachCore(s *Session, gpus []int) {
 	s.Dynamic = true
 	s.Stats.Adapter = "core-kernel-barrier-v1"
+	if s.Passive != nil {
+		s.Stats.Adapter = "core-" + idealProtocol
+	}
 	regions := map[driver.Ptr]allocation{}
 	kernelID, hostID, freeID := 0, 0, 0
 	digest := sha256.New()
@@ -120,6 +123,9 @@ func AttachCore(s *Session, gpus []int) {
 		},
 		Kernel: func(q *driver.CommandQueue, work func()) {
 			kernelID++
+			if s.Passive != nil {
+				s.Passive.BeginKernel(kernelID)
+			}
 			s.Epoch(fmt.Sprintf("kernel/%06d", kernelID), work)
 			checkpoint()
 		},
@@ -142,6 +148,9 @@ func AttachCore(s *Session, gpus []int) {
 			s.d.WaitForEngineIdle()
 			// Before the first kernel, initial data establish version zero.
 			if s.at == 0 {
+				if s.Passive != nil {
+					s.Passive.InitialWrite(uint64(ptr), src)
+				}
 				work()
 				return true
 			}
@@ -154,6 +163,13 @@ func AttachCore(s *Session, gpus []int) {
 					hi := min(end, page+s.Config.PageBytes)
 					if st := s.pages[page]; st != nil && !st.Retired {
 						s.observe(int(st.Home.DeviceID), pos, hi-pos, nil, true)
+						if s.Passive != nil {
+							bits := map[uint32]bool{}
+							for offset := pos - page; offset < hi-page; offset++ {
+								bits[uint32(offset/s.Config.SectorBytes)] = true
+							}
+							s.Passive.HostWrite(page, bits)
+						}
 					}
 					pos = hi
 				}

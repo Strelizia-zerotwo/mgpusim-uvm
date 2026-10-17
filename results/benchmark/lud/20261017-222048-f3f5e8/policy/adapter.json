@@ -1,0 +1,12 @@
+{
+  "adapter": "core-kernel-internal-ideal-v3",
+  "arch": "cdna3",
+  "gpu": "mi300x",
+  "trigger": "each actual read/write at AT, before translation and data caches, including TLB hits",
+  "future_information": false,
+  "write": "immediate free metadata update and invalidation",
+  "timing": "one fault_ns plus one bulk data-bandwidth/latency charge per copy or repair",
+  "functional_correctness": "authoritative per-request snapshots and free cache operations; in-flight forwarding is ideal",
+  "placement": "same static contiguous page partitions across policies at each page size",
+  "system_scope_note": "ordinary loads/stores only; hardware atomics are not added"
+}

@@ -1,18 +1,13 @@
-# 当前接入状态：核心三策略
+# 当前实现状态
 
-2026-10-16，目标源码 `/home/only/projects/mgpusim-uvm/mgpusim`。
+2026-10-17，`kernel-internal-ideal-v3`。
 
-| 集合 | 接入 | 默认行为 | 验证边界 |
-|---|---|---|---|
-| MM/C2D/ST/FIR/IM2COL/BFS/SC/MT/FFT/PR/BS/KM | core-kernel-barrier-v1 | 运行 INV、retain、i1-adaptive | 12 个应用的 smoke 三策略均已实跑通过；最终版复核结果见 VALIDATION.md |
-| LeNet | 已接入共享模型的 kernel 分区、动态张量生命周期、独立 CPU 训练校验 | 按用户要求跳过 | 一批 smoke 已完成 record 和三策略；不等于真实 MNIST 的完整训练验证 |
-| VGG16 | 已接入同一路径，提供显式 32×32 自检与真实 224×224 数据集入口 | 按用户要求跳过 | 已编译；耗时 GPU 检查按用户要求停止，不记为已通过 |
-| FW 补充项 | 保留 parallel-fw 专用 adapter | 显式选择 FW | 原专用布局与本轮通用调度需分开标注 |
+已实现默认 `inv / delta / delta-sub` 的 kernel 内实际请求触发；版本、失效、缓存维护与在途正确性全部免费。复制/修复仅收一次 fault 加总字节传输，输入映射免费预装。delta 每次补齐全部过期子块；delta-sub 额外允许干净子块直接读。optional infinity 保留为非默认参考。
 
-通用入口支持 kernel 间主机写入、临时分配与释放。每种策略必须验证相同物理 home、共同计划和数值结果；普通应用还比较逐阶段写出数据摘要。
-BFS 使用明确保存的保守读写上界与最终 CPU/终态摘要，处理竞争发现导致的写者变化。不能把保守声明掩码称为实测 dirty。
+核心 14 个应用沿用通用 AT adapter，默认 12 个；LeNet/VGG16 根据用户要求跳过。本轮没有执行它们，不能从“接入、构建、单元测试通过”推出各应用已完成 ideal-v3 数值和性能验证。
 
-默认主线为 12 个应用。保留 14 项文献核心名录，不把跳过的两项统计为完成。
-当前仍是全局 kernel-barrier oracle；adaptive 前视未来读集；PTE/TLB 元数据免费，实际缓存屏障计费。没有 kernel 内被动权限协议，没有独立 S4 端到端对照。
+脚本支持 4KB/64KB/2MB，900/20000ns fault，0/200ns 附加链路延迟的一轮扫描；保存每应用原始输出与关键数据摘要。旧配置和历史实验结果保留，但本轮不使用 retain/i1-adaptive、在线预测或 kernel 边界决策。
 
-代码变化镜像在 Windows 工作区 `implementation/core-adapter/mgpusim/`；Linux 覆盖前的逐文件备份在 `results/benchmark/_adapter-backups/`。
+机制、功能假设与计时范围见 [KERNEL_INTERNAL.md](KERNEL_INTERNAL.md)；运行命令见 [RUNNING.md](RUNNING.md)。本轮验证记录见 [VALIDATION.md](VALIDATION.md)。
+
+新增五个 C 类候选已接入同一理想实验：lud、gaussian、pathfinder、backprop、gramschmidt。它们使用当前仓库已有 CDNA3 内核，并由脚本选择 MI300X。详见 [IDEA_CANDIDATES.md](IDEA_CANDIDATES.md)。本轮未运行应用。

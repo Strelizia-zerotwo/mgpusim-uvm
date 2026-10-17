@@ -19,6 +19,7 @@ import (
 )
 
 type copyState struct {
+	Version       uint64 // whole-page version; partial repairs use SectorVersion
 	Readable      bool
 	SectorVersion map[uint32]uint64
 	Frame         uint64
@@ -34,7 +35,7 @@ type pageState struct {
 	Copies    map[int]*copyState
 }
 
-// Stats separates observed execution time from modeled oracle costs. Counts at
+// Stats separates simulated execution time from modeled service costs. Counts at
 // the translator are transactions, never claimed to be DRAM transactions.
 type RecoveryEvent struct {
 	HomeGPU      int                    `json:"home_gpu"`
@@ -53,6 +54,8 @@ type RecoveryEvent struct {
 }
 
 type Stats struct {
+	InitialInputSHA256          string                 `json:"initial_input_sha256,omitempty"`
+	Passive                     *PassiveStats          `json:"passive,omitempty"`
 	Adapter                     string                 `json:"adapter,omitempty"`
 	CoreAllocations             []ManagedAllocation    `json:"core_allocations,omitempty"`
 	TerminalSHA256              string                 `json:"terminal_sha256,omitempty"`
@@ -122,9 +125,11 @@ type Stats struct {
 	FabricMessages              uint64                 `json:"fabric_messages"`
 }
 
-// Session is explicitly driven at GLOBAL drained kernel boundaries. It is
-// deliberately separate from -vm-mode=demand, which still models mapping faults.
+// Session owns execution accounting and managed pages. With Passive enabled,
+// all replication decisions occur at actual AT requests inside kernels. The
+// optional Plan path is a separate historical boundary-based experiment.
 type Session struct {
+	Passive           *Passive
 	observedReads     map[[2]uint64]map[uint32]bool
 	observedWrites    map[[2]uint64]map[uint32]bool
 	plannedAccess     map[[2]uint64]*Access
@@ -220,12 +225,23 @@ func (s *Session) Manage(ptr driver.Ptr, bytes uint64) {
 			panic("replica: managed allocation is not unified")
 		}
 		s.pages[a] = &pageState{Home: p, Copies: map[int]*copyState{}, LastWrite: map[uint32]uint64{}}
+		if s.Passive != nil {
+			seen := map[uint64]bool{}
+			for _, at := range s.Passive.ats {
+				gpu := at.Spec().DeviceID
+				if !seen[gpu] {
+					s.tables.View(int(gpu) - 1).InstallAtBarrier(p)
+					s.Stats.MappingInstalls++
+					seen[gpu] = true
+				}
+			}
+		}
 	}
 }
 
-// Epoch runs one global phase. work must submit all its kernels and drain all
-// queues before returning. Every oracle mode pays identical physical cache
-// writeback/invalidation at the barrier; PTE and TLB changes themselves are free.
+// Epoch measures one submitted work interval. work waits for its execution to
+// finish. In the ideal request-driven mode, the final host-visible materialization
+// is functional and free; no replication decisions are made here.
 func (s *Session) Epoch(name string, work func()) {
 	s.d.WaitForEngineIdle()
 	if s.at == 0 {
@@ -300,7 +316,11 @@ func (s *Session) Epoch(name string, work func()) {
 	}
 	s.active = nil
 	before := s.sim.GetEngine().CurrentTime()
-	s.d.FlushAtBarrier(s.ctx)
+	if s.Passive != nil {
+		s.Passive.CheckAtBarrier()
+	} else {
+		s.d.FlushAtBarrier(s.ctx)
+	}
 	s.Stats.BarrierFlushPS += uint64(s.sim.GetEngine().CurrentTime() - before)
 	if s.Plan != nil {
 		s.commit(s.Plan.Epochs[s.at])
@@ -333,6 +353,9 @@ func (s *Session) invalidateTLBs() {
 
 // Finish saves independently observed replay accesses, counts, and elapsed time.
 func (s *Session) Finish(planPath, statsPath string) {
+	if s.Passive != nil {
+		s.Passive.Finish()
+	}
 	if s.Dynamic && s.at > 0 {
 		now := s.sim.GetEngine().CurrentTime()
 		s.Stats.HostTransferPS += uint64(now - s.lastEnd)

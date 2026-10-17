@@ -465,7 +465,7 @@
       "role": "candidate",
       "profiles": {
         "smoke": [
-          "-size=32"
+          "-size=64"
         ],
         "small": [
           "-size=128"
@@ -473,7 +473,8 @@
       },
       "arch": "cdna3",
       "gpu": "mi300x",
-      "verify_kind": "passed"
+      "verify_kind": "passed",
+      "core_replica": true
     },
     {
       "id": "gaussian",
@@ -490,7 +491,8 @@
       },
       "arch": "cdna3",
       "gpu": "mi300x",
-      "verify_kind": "passed"
+      "verify_kind": "passed",
+      "core_replica": true
     },
     {
       "id": "pathfinder",
@@ -499,17 +501,18 @@
       "role": "candidate",
       "profiles": {
         "smoke": [
-          "-rows=16",
-          "-cols=128"
+          "-rows=4",
+          "-cols=1024"
         ],
         "small": [
-          "-rows=64",
-          "-cols=512"
+          "-rows=16",
+          "-cols=1024"
         ]
       },
       "arch": "cdna3",
       "gpu": "mi300x",
-      "verify_kind": "passed"
+      "verify_kind": "passed",
+      "core_replica": true
     },
     {
       "id": "backprop",
@@ -530,7 +533,8 @@
       },
       "arch": "cdna3",
       "gpu": "mi300x",
-      "verify_kind": "passed"
+      "verify_kind": "passed",
+      "core_replica": true
     },
     {
       "id": "gramschmidt",
@@ -539,17 +543,18 @@
       "role": "candidate",
       "profiles": {
         "smoke": [
-          "-m=32",
-          "-n=16"
+          "-m=1024",
+          "-n=4"
         ],
         "small": [
-          "-m=128",
-          "-n=64"
+          "-m=1024",
+          "-n=16"
         ]
       },
       "arch": "cdna3",
       "gpu": "mi300x",
-      "verify_kind": "passed"
+      "verify_kind": "passed",
+      "core_replica": true
     },
     {
       "id": "hotspot",

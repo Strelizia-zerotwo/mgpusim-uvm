@@ -1,0 +1,38 @@
+[
+  {
+    "policy": "inv",
+    "application_us": 36.732,
+    "copy_bytes": 49152,
+    "refills": 9,
+    "repairs": 0,
+    "intrakernel_refills": 9,
+    "intrakernel_repairs": 0,
+    "write_after_repair": 9,
+    "clean_replica_reads_during_write": 0,
+    "directory": "/home/only/projects/mgpusim-uvm/results/benchmark/_kernel-internal-validation/micro-inv"
+  },
+  {
+    "policy": "retain",
+    "application_us": 59.125,
+    "copy_bytes": 21504,
+    "refills": 0,
+    "repairs": 9,
+    "intrakernel_refills": 0,
+    "intrakernel_repairs": 9,
+    "write_after_repair": 9,
+    "clean_replica_reads_during_write": 0,
+    "directory": "/home/only/projects/mgpusim-uvm/results/benchmark/_kernel-internal-validation/micro-retain"
+  },
+  {
+    "policy": "i1-adaptive",
+    "application_us": 59.125,
+    "copy_bytes": 21504,
+    "refills": 0,
+    "repairs": 9,
+    "intrakernel_refills": 0,
+    "intrakernel_repairs": 9,
+    "write_after_repair": 9,
+    "clean_replica_reads_during_write": 0,
+    "directory": "/home/only/projects/mgpusim-uvm/results/benchmark/_kernel-internal-validation/micro-i1-adaptive"
+  }
+]

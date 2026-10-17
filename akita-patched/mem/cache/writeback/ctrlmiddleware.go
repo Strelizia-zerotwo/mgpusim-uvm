@@ -112,6 +112,8 @@ func (m *ctrlMiddleware) handleIncoming() bool {
 	case memcontrolprotocol.CmdFlush:
 		// Owned by flusher; leave in queue.
 		return false
+	case memcontrolprotocol.CmdInvalidateCleanRange:
+		return m.handleInvalidateCleanRange(req)
 	case memcontrolprotocol.CmdInvalidate:
 		return m.handleInvalidate(req)
 	default:

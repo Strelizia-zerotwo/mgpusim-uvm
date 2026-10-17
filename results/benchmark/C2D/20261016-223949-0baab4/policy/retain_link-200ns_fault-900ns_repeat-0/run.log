@@ -1,0 +1,24 @@
+Im2Col input [1 1 16 16], kernel [3 3], stride [1 1], padding [0 0], dilation [1 1], output [9 196]
+Kernel Im2Col, Start 0.0000218070, Virtual Time: 1.9441e-05, Real Time: 346.928235ms
+Im2Col verified.
+Repeat verified.
+Kernel Transpose, Start 0.0000803770, Virtual Time: 6.5925e-05, Real Time: 1.134936133s
+Transpose verified.
+Kernel Gemm, Start 0.0001499200, Virtual Time: 3.488e-05, Real Time: 416.823476ms
+Gemm verified.
+Kernel Transpose, Start 0.0001905200, Virtual Time: 6.869e-05, Real Time: 1.576636438s
+Transpose verified.
+Kernel Transpose, Start 0.0002684530, Virtual Time: 7.6246e-05, Real Time: 1.374519949s
+Transpose verified.
+Kernel Transpose, Start 0.0003515060, Virtual Time: 6.9198e-05, Real Time: 1.665815163s
+Transpose verified.
+Im2Col input [1 1 16 16], kernel [14 14], stride [1 1], padding [0 0], dilation [1 1], output [196 9]
+Kernel Im2Col, Start 0.0004243220, Virtual Time: 2.1858e-05, Real Time: 299.449885ms
+Im2Col verified.
+Kernel Gemm, Start 0.0004484970, Virtual Time: 5.1815e-05, Real Time: 181.457485ms
+Gemm verified.
+Kernel Sum, Start 0.0005205510, Virtual Time: 5.6522e-05, Real Time: 1.220930628s
+Kernel Sum, Start 0.0005811390, Virtual Time: 3.6604e-05, Real Time: 562.114233ms
+Kernel Sum, Start 0.0006222830, Virtual Time: 3.0021e-05, Real Time: 468.698742ms
+Sum verified.
+Passed! core replica execution and requested verification completed

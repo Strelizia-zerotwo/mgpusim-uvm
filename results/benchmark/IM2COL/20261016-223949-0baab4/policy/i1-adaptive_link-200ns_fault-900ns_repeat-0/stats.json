@@ -1,0 +1,313 @@
+{
+  "initial_input_sha256": "3996e243a6ef3e1416c08e35fc4343b9c082145bd00f769fdb9b335fb04ed2db",
+  "passive": {
+    "protocol": "kernel-internal-online-v1",
+    "adaptive_rule": "previous read-interval footprint; no future trace or kernel write set",
+    "managed_requests": 393,
+    "read_requests": 120,
+    "write_requests": 273,
+    "transitions": 9,
+    "cache_control_ps_in_kernel": 4209000,
+    "copy_service_ps_in_kernel": 3341121,
+    "inflight_high_water": 126,
+    "pending_high_water": 1,
+    "intrakernel_refills": 0,
+    "intrakernel_repairs": 0,
+    "write_after_repair_invalidations": 0,
+    "clean_replica_reads_during_write": 0,
+    "adaptive_demand_repairs": 0,
+    "adaptive_full_stale_repairs": 0,
+    "adaptive_extra_repair_bytes": 0,
+    "events": [
+      {
+        "kernel": 1,
+        "kind": "cold-copy",
+        "page": 4096,
+        "gpu": 2,
+        "request": 248956,
+        "start_ps": 10803000,
+        "end_ps": 12203000,
+        "bytes": 4096,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "cold-copy",
+        "page": 4096,
+        "gpu": 3,
+        "request": 249689,
+        "start_ps": 12204000,
+        "end_ps": 13605000,
+        "bytes": 4096,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "cold-copy",
+        "page": 4096,
+        "gpu": 4,
+        "request": 250971,
+        "start_ps": 13606000,
+        "end_ps": 15007000,
+        "bytes": 4096,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 302906,
+        "start_ps": 15009000,
+        "end_ps": 15296000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 304484,
+        "start_ps": 15297000,
+        "end_ps": 15974000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 330729,
+        "start_ps": 15975000,
+        "end_ps": 16807000,
+        "version": 47
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 4,
+        "request": 368657,
+        "start_ps": 16808000,
+        "end_ps": 17189000,
+        "version": 60
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 1,
+        "request": 344646,
+        "start_ps": 17191000,
+        "end_ps": 17988000,
+        "version": 71
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 1,
+        "request": 346224,
+        "start_ps": 17989000,
+        "end_ps": 18370000,
+        "version": 72
+      }
+    ]
+  },
+  "adapter": "core-kernel-internal-online-v1",
+  "core_allocations": [
+    {
+      "base": 4096,
+      "bytes": 1024
+    },
+    {
+      "base": 8192,
+      "bytes": 7056
+    }
+  ],
+  "terminal_sha256": "5edc5757a7a11df5b1c20b8ef74ea7ae1a607b9b19389302b23563c60cc2b749",
+  "page_ownership": [
+    {
+      "page": 4096,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": null,
+      "role": "read-only"
+    },
+    {
+      "page": 8192,
+      "home_gpu": 1,
+      "readers": null,
+      "writers": [
+        1,
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 12288,
+      "home_gpu": 3,
+      "readers": null,
+      "writers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    }
+  ],
+  "home_pages_by_gpu": {
+    "1": 2,
+    "3": 1
+  },
+  "owner_read_transactions": 45,
+  "non_owner_read_transactions": 75,
+  "owner_write_transactions": 99,
+  "non_owner_write_transactions": 174,
+  "replica_read_transactions": 75,
+  "remote_home_read_transactions": 0,
+  "copy_bytes_by_role": {
+    "runtime": 12288
+  },
+  "copy_faults_by_role": {
+    "runtime": 3
+  },
+  "recovery_wait_ps_by_role": null,
+  "fabric_model": "destination-ready-v2",
+  "managed_pages": 3,
+  "epoch_activity": [
+    {
+      "name": "kernel/000001",
+      "start_ps": 626000,
+      "end_ps": 22669000,
+      "instructions_by_gpu": {
+        "1": 2808,
+        "2": 2592,
+        "3": 2808,
+        "4": 2592
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 12393000,
+        "1": 1239000,
+        "2": 912000,
+        "3": 414000,
+        "4": 7085000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    }
+  ],
+  "model_revision": "replica-kernel-internal-v1",
+  "oracle_mapping_preinstall": true,
+  "mapping_installs": 12,
+  "tlb_flush_epochs": 0,
+  "mapping_faults": 0,
+  "fallback_page_epochs": 0,
+  "multiple_writer_page_epochs": 0,
+  "read_write_overlap_page_epochs": 0,
+  "fallback_gpu_page_accesses": 0,
+  "fallback_read_transactions": 0,
+  "fallback_write_transactions": 0,
+  "fallback_events": null,
+  "write_epoch_new_copies": 0,
+  "write_epoch_new_copy_bytes": 0,
+  "write_epoch_new_copy_faults": 0,
+  "write_epoch_existing_replica_reads": 0,
+  "write_epoch_new_replica_reads": 0,
+  "recovery_events": [
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "i1-adaptive",
+      "epoch": 1,
+      "page": 4096,
+      "gpu": 2,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 11089000,
+      "due_ps": 12202707,
+      "layouts": null
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "i1-adaptive",
+      "epoch": 1,
+      "page": 4096,
+      "gpu": 3,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 12491000,
+      "due_ps": 13604707,
+      "layouts": null
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "i1-adaptive",
+      "epoch": 1,
+      "page": 4096,
+      "gpu": 4,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 13893000,
+      "due_ps": 15006707,
+      "layouts": null
+    }
+  ],
+  "s4_inv_replica_targets": 0,
+  "write_page_epochs": 273,
+  "versioned_pages": 2,
+  "config": {
+    "transfer_gran_bytes": 32,
+    "policy": "i1-adaptive",
+    "page_bytes": 4096,
+    "sector_bytes": 32,
+    "fault_ns": 900,
+    "fault_slots": 16,
+    "bandwidth_gbs": 300,
+    "link_ns": 200,
+    "replica_pages_per_gpu": 0,
+    "metadata_ns": 0,
+    "shootdown_ns": 0
+  },
+  "epochs": 1,
+  "kernel_ps": 22043000,
+  "host_transfer_ps": 1230000,
+  "validation_sha256": "7d99bbd311e5c0c5f8e98fa1f6c16a5bfdf4571c20a5d0b1aeb84f457e2ed90c",
+  "kernel_count": 1,
+  "host_write_epochs": 0,
+  "peak_live_managed_pages": 3,
+  "retired_managed_pages": 0,
+  "application_ps": 23858000,
+  "barrier_flush_ps": 585000,
+  "recovery_wait_ps": 0,
+  "copy_faults": 3,
+  "cold_copies": 3,
+  "refills": 0,
+  "repairs": 0,
+  "copy_bytes": 12288,
+  "invalidations": 0,
+  "evictions": 0,
+  "peak_replica_pages": 3,
+  "peak_stale_pages": 0,
+  "retained_pages": 3,
+  "s2_clean_transactions": 0,
+  "s3_preexisting_replica_read_transactions": 0,
+  "s3_preexisting_replica_read_sectors": 0,
+  "s3_conflicting_read_sectors": 0,
+  "repair_granularities": {},
+  "fabric_bytes": 29040,
+  "fabric_messages": 351
+}

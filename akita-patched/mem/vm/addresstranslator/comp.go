@@ -72,6 +72,7 @@ type State struct {
 	ControlState        memcontrolprotocol.State `json:"control_state"`
 	CurrentCmdID        uint64                   `json:"current_cmd_id"`
 	CurrentCmdSrc       messaging.RemotePort     `json:"current_cmd_src"`
+	DeferredRequests    []incomingReqState       `json:"deferred_requests,omitempty"`
 	Transactions        []transactionState       `json:"transactions"`
 	InflightReqToBottom []reqToBottomState       `json:"inflight_req_to_bottom"`
 }

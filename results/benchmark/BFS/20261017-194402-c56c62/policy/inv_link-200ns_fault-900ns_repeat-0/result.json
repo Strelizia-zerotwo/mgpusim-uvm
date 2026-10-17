@@ -1,0 +1,95 @@
+{
+  "benchmark": "BFS",
+  "profile": "smoke",
+  "mode": "policy",
+  "policy": "inv",
+  "repeat": 0,
+  "directory": "/home/only/projects/mgpusim-uvm/results/benchmark/BFS/20261017-194402-c56c62/policy/inv_link-200ns_fault-900ns_repeat-0",
+  "verification": "BENCHMARK_VERIFY_AND_PROTOCOL_DRAIN_PASSED",
+  "protocol": "kernel-internal-lazy-v2",
+  "link_ns": 200,
+  "fault_ns": 900,
+  "bandwidth_gbs": 300,
+  "status": "OK",
+  "returncode": 0,
+  "wall_s": 24.008604,
+  "peak_rss_kib": 1122516,
+  "active_gpus": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "instructions_by_gpu": {
+    "1": 83143.0,
+    "2": 78508.0,
+    "3": 77743.0,
+    "4": 78103.0
+  },
+  "gpu_activity_ok": true,
+  "application_us": 296.556,
+  "kernel_us": 287.951,
+  "barrier_us": 3.762,
+  "recovery_us": 0,
+  "host_transfer_us": 4.843,
+  "epochs": 7,
+  "kernel_count": 4,
+  "copy_bytes": 380928,
+  "copy_faults": 93,
+  "refills": 58,
+  "repairs": 0,
+  "invalidations": 58,
+  "peak_replica_bytes": 143360,
+  "peak_stale_bytes": 98304,
+  "mapping_faults": 0,
+  "fallback_page_epochs": 0,
+  "non_owner_write_transactions": 1350,
+  "write_epoch_existing_replica_reads": 0,
+  "write_epoch_new_copies": 0,
+  "intrakernel_refills": 24,
+  "intrakernel_repairs": 0,
+  "write_after_repair": 35,
+  "clean_replica_reads_during_write": 0,
+  "adaptive_demand_repairs": 0,
+  "adaptive_full_stale_repairs": 0,
+  "in_kernel_cache_control_us": 5.022,
+  "in_kernel_copy_service_us": 103.574751,
+  "write_transitions": 0,
+  "stale_read_sectors": 0,
+  "home_fetch_us": 4.734,
+  "home_fetch_bytes": 380928,
+  "home_flush_events": 0,
+  "replica_invalidate_events": 93,
+  "replica_invalidate_bytes": 380928,
+  "home_l1_invalidate_events": 1581,
+  "concurrent_repairs_high_water": 4,
+  "fallback_home_reads": 0,
+  "repair_bytes": 237568,
+  "repair_events": 58,
+  "repair_granularities": {
+    "128": {
+      "bytes": 237568,
+      "blocks": 1856,
+      "extents": 58
+    },
+    "32": {
+      "bytes": 237568,
+      "blocks": 7424,
+      "extents": 58
+    },
+    "4096": {
+      "bytes": 237568,
+      "blocks": 58,
+      "extents": 58
+    },
+    "512": {
+      "bytes": 237568,
+      "blocks": 464,
+      "extents": 58
+    }
+  },
+  "repairs_by_trigger": {
+    "cold": 35,
+    "stale-version": 58
+  }
+}

@@ -1,0 +1,4 @@
+Im2Col input [4 3 32 32], kernel [3 3], stride [1 1], padding [0 0], dilation [1 1], output [27 3600]
+Kernel Im2Col, Start 0.0000008110, Virtual Time: 8.613099999999999e-05, Real Time: 9.744336937s
+Im2Col verified.
+Passed! core replica execution and requested verification completed

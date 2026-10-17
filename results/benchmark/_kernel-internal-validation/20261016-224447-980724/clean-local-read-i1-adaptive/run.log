@@ -1,0 +1,2 @@
+2026/10/16 22:45:02 /home/only/projects/mgpusim-uvm/mgpusim/amd/samples/replica-internal/main.go:63: Passed! single kernel, 4 rounds of actual modifying loads/stores; every output checked
+Passed! core replica execution and requested verification completed

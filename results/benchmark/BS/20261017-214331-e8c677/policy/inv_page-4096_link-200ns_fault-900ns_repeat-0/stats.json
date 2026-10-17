@@ -1,0 +1,4345 @@
+{
+  "initial_input_sha256": "19bf6e11f05925f72814a7a308584c1d4caf2ba3626729fd62d2fe56791acd60",
+  "passive": {
+    "protocol": "kernel-internal-ideal-v3",
+    "cost_model": "free immediate coherence; one fault charge plus one bulk bandwidth/latency charge per copy/repair; no extent/header costs",
+    "managed_requests": 712704,
+    "read_requests": 356352,
+    "write_requests": 356352,
+    "write_transitions": 0,
+    "cache_control_ps_in_kernel": 0,
+    "home_fetch_ps_in_kernel": 0,
+    "metadata_ps": 0,
+    "inflight_wait_ps": 0,
+    "copy_service_ps_in_kernel": 64126952,
+    "charged_fixed_ps": 50400000,
+    "charged_bytes": 229376,
+    "functional_home_writebacks": 245760,
+    "functional_cache_invalidations": 7168,
+    "functional_read_corrections": 0,
+    "stale_read_sectors": 0,
+    "version_checks": 356352,
+    "coalesced_reads": 3528,
+    "inflight_high_water": 4160,
+    "pending_high_water": 1137,
+    "concurrent_repairs_high_water": 24,
+    "intrakernel_refills": 0,
+    "intrakernel_repairs": 0,
+    "clean_replica_reads_while_page_stale": 0,
+    "write_after_repair_metadata_events": 24,
+    "full_page_fallbacks": 0,
+    "fallback_home_reads": 0,
+    "repair_bytes": 98304,
+    "repair_events": 24,
+    "peak_retained_frames": 0,
+    "peak_stale_retained_frames": 0,
+    "peak_backend_pinned_frames": 0,
+    "events": [
+      {
+        "kernel": 92,
+        "kind": "cold-copy",
+        "page": 28672,
+        "gpu": 2,
+        "snapshot_version": 8768,
+        "start_ps": 1081288000,
+        "end_ps": 1082401654,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 92,
+        "kind": "cold-copy",
+        "page": 94208,
+        "gpu": 4,
+        "snapshot_version": 8768,
+        "start_ps": 1081290000,
+        "end_ps": 1082403654,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 92,
+        "kind": "cold-copy",
+        "page": 45056,
+        "gpu": 1,
+        "snapshot_version": 8768,
+        "start_ps": 1081295000,
+        "end_ps": 1082408654,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 92,
+        "kind": "cold-copy",
+        "page": 110592,
+        "gpu": 3,
+        "snapshot_version": 8768,
+        "start_ps": 1081297000,
+        "end_ps": 1082410654,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 92,
+        "kind": "cold-copy",
+        "page": 32768,
+        "gpu": 2,
+        "snapshot_version": 8768,
+        "start_ps": 1081288000,
+        "end_ps": 1082415308,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 92,
+        "kind": "cold-copy",
+        "page": 98304,
+        "gpu": 4,
+        "snapshot_version": 8768,
+        "start_ps": 1081290000,
+        "end_ps": 1082417308,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 92,
+        "kind": "cold-copy",
+        "page": 49152,
+        "gpu": 1,
+        "snapshot_version": 8768,
+        "start_ps": 1081295000,
+        "end_ps": 1082422308,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 92,
+        "kind": "cold-copy",
+        "page": 114688,
+        "gpu": 3,
+        "snapshot_version": 8768,
+        "start_ps": 1081297000,
+        "end_ps": 1082424308,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 92,
+        "kind": "cold-copy",
+        "page": 20480,
+        "gpu": 2,
+        "snapshot_version": 8768,
+        "start_ps": 1081288000,
+        "end_ps": 1082428962,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 92,
+        "kind": "cold-copy",
+        "page": 86016,
+        "gpu": 4,
+        "snapshot_version": 8768,
+        "start_ps": 1081290000,
+        "end_ps": 1082430962,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 92,
+        "kind": "cold-copy",
+        "page": 36864,
+        "gpu": 1,
+        "snapshot_version": 8768,
+        "start_ps": 1081295000,
+        "end_ps": 1082435962,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 92,
+        "kind": "cold-copy",
+        "page": 102400,
+        "gpu": 3,
+        "snapshot_version": 8768,
+        "start_ps": 1081297000,
+        "end_ps": 1082437962,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 92,
+        "kind": "cold-copy",
+        "page": 24576,
+        "gpu": 2,
+        "snapshot_version": 8768,
+        "start_ps": 1081288000,
+        "end_ps": 1082442616,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 92,
+        "kind": "cold-copy",
+        "page": 90112,
+        "gpu": 4,
+        "snapshot_version": 8768,
+        "start_ps": 1081290000,
+        "end_ps": 1082444616,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 92,
+        "kind": "cold-copy",
+        "page": 40960,
+        "gpu": 1,
+        "snapshot_version": 8768,
+        "start_ps": 1081295000,
+        "end_ps": 1082449616,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 92,
+        "kind": "cold-copy",
+        "page": 106496,
+        "gpu": 3,
+        "snapshot_version": 8768,
+        "start_ps": 1081297000,
+        "end_ps": 1082451616,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 106,
+        "kind": "refill",
+        "page": 28672,
+        "gpu": 2,
+        "snapshot_version": 9920,
+        "start_ps": 1248195000,
+        "end_ps": 1249308654,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 106,
+        "kind": "cold-copy",
+        "page": 49152,
+        "gpu": 3,
+        "snapshot_version": 9920,
+        "start_ps": 1248196000,
+        "end_ps": 1249309654,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 106,
+        "kind": "cold-copy",
+        "page": 81920,
+        "gpu": 1,
+        "snapshot_version": 9920,
+        "start_ps": 1248202000,
+        "end_ps": 1249315654,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 106,
+        "kind": "refill",
+        "page": 32768,
+        "gpu": 2,
+        "snapshot_version": 9920,
+        "start_ps": 1248195000,
+        "end_ps": 1249322308,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 106,
+        "kind": "cold-copy",
+        "page": 36864,
+        "gpu": 3,
+        "snapshot_version": 9920,
+        "start_ps": 1248196000,
+        "end_ps": 1249323308,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 106,
+        "kind": "cold-copy",
+        "page": 69632,
+        "gpu": 1,
+        "snapshot_version": 9920,
+        "start_ps": 1248202000,
+        "end_ps": 1249329308,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 106,
+        "kind": "refill",
+        "page": 20480,
+        "gpu": 2,
+        "snapshot_version": 9920,
+        "start_ps": 1248195000,
+        "end_ps": 1249335962,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 106,
+        "kind": "cold-copy",
+        "page": 40960,
+        "gpu": 3,
+        "snapshot_version": 9920,
+        "start_ps": 1248196000,
+        "end_ps": 1249336962,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 106,
+        "kind": "cold-copy",
+        "page": 73728,
+        "gpu": 1,
+        "snapshot_version": 9920,
+        "start_ps": 1248202000,
+        "end_ps": 1249342962,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 106,
+        "kind": "refill",
+        "page": 24576,
+        "gpu": 2,
+        "snapshot_version": 9920,
+        "start_ps": 1248195000,
+        "end_ps": 1249349616,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 106,
+        "kind": "cold-copy",
+        "page": 45056,
+        "gpu": 3,
+        "snapshot_version": 9920,
+        "start_ps": 1248196000,
+        "end_ps": 1249350616,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 106,
+        "kind": "cold-copy",
+        "page": 77824,
+        "gpu": 1,
+        "snapshot_version": 9920,
+        "start_ps": 1248202000,
+        "end_ps": 1249356616,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 106,
+        "kind": "cold-copy",
+        "page": 61440,
+        "gpu": 4,
+        "snapshot_version": 9920,
+        "start_ps": 1248197000,
+        "end_ps": 1249364270,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 106,
+        "kind": "refill",
+        "page": 114688,
+        "gpu": 3,
+        "snapshot_version": 9920,
+        "start_ps": 1248204000,
+        "end_ps": 1249364270,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 106,
+        "kind": "cold-copy",
+        "page": 94208,
+        "gpu": 2,
+        "snapshot_version": 9920,
+        "start_ps": 1248203000,
+        "end_ps": 1249370270,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 106,
+        "kind": "cold-copy",
+        "page": 65536,
+        "gpu": 4,
+        "snapshot_version": 9920,
+        "start_ps": 1248197000,
+        "end_ps": 1249377924,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 106,
+        "kind": "refill",
+        "page": 102400,
+        "gpu": 3,
+        "snapshot_version": 9920,
+        "start_ps": 1248204000,
+        "end_ps": 1249377924,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 106,
+        "kind": "cold-copy",
+        "page": 98304,
+        "gpu": 2,
+        "snapshot_version": 9920,
+        "start_ps": 1248203000,
+        "end_ps": 1249383924,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 106,
+        "kind": "cold-copy",
+        "page": 53248,
+        "gpu": 4,
+        "snapshot_version": 9920,
+        "start_ps": 1248197000,
+        "end_ps": 1249391578,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 106,
+        "kind": "refill",
+        "page": 106496,
+        "gpu": 3,
+        "snapshot_version": 9920,
+        "start_ps": 1248204000,
+        "end_ps": 1249391578,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 106,
+        "kind": "cold-copy",
+        "page": 86016,
+        "gpu": 2,
+        "snapshot_version": 9920,
+        "start_ps": 1248203000,
+        "end_ps": 1249397578,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 106,
+        "kind": "cold-copy",
+        "page": 57344,
+        "gpu": 4,
+        "snapshot_version": 9920,
+        "start_ps": 1248197000,
+        "end_ps": 1249405232,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 106,
+        "kind": "refill",
+        "page": 110592,
+        "gpu": 3,
+        "snapshot_version": 9920,
+        "start_ps": 1248204000,
+        "end_ps": 1249405232,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 106,
+        "kind": "cold-copy",
+        "page": 90112,
+        "gpu": 2,
+        "snapshot_version": 9920,
+        "start_ps": 1248203000,
+        "end_ps": 1249411232,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 107,
+        "kind": "refill",
+        "page": 32768,
+        "gpu": 2,
+        "snapshot_version": 9984,
+        "start_ps": 1262472000,
+        "end_ps": 1263585654,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 107,
+        "kind": "refill",
+        "page": 94208,
+        "gpu": 4,
+        "snapshot_version": 9984,
+        "start_ps": 1262474000,
+        "end_ps": 1263587654,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 107,
+        "kind": "refill",
+        "page": 36864,
+        "gpu": 1,
+        "snapshot_version": 9984,
+        "start_ps": 1262479000,
+        "end_ps": 1263592654,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 107,
+        "kind": "refill",
+        "page": 114688,
+        "gpu": 3,
+        "snapshot_version": 9984,
+        "start_ps": 1262481000,
+        "end_ps": 1263594654,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 107,
+        "kind": "refill",
+        "page": 20480,
+        "gpu": 2,
+        "snapshot_version": 9984,
+        "start_ps": 1262472000,
+        "end_ps": 1263599308,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 107,
+        "kind": "refill",
+        "page": 98304,
+        "gpu": 4,
+        "snapshot_version": 9984,
+        "start_ps": 1262474000,
+        "end_ps": 1263601308,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 107,
+        "kind": "refill",
+        "page": 40960,
+        "gpu": 1,
+        "snapshot_version": 9984,
+        "start_ps": 1262479000,
+        "end_ps": 1263606308,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 107,
+        "kind": "refill",
+        "page": 102400,
+        "gpu": 3,
+        "snapshot_version": 9984,
+        "start_ps": 1262481000,
+        "end_ps": 1263608308,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 107,
+        "kind": "refill",
+        "page": 24576,
+        "gpu": 2,
+        "snapshot_version": 9984,
+        "start_ps": 1262472000,
+        "end_ps": 1263612962,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 107,
+        "kind": "refill",
+        "page": 86016,
+        "gpu": 4,
+        "snapshot_version": 9984,
+        "start_ps": 1262474000,
+        "end_ps": 1263614962,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 107,
+        "kind": "refill",
+        "page": 45056,
+        "gpu": 1,
+        "snapshot_version": 9984,
+        "start_ps": 1262479000,
+        "end_ps": 1263619962,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 107,
+        "kind": "refill",
+        "page": 106496,
+        "gpu": 3,
+        "snapshot_version": 9984,
+        "start_ps": 1262481000,
+        "end_ps": 1263621962,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 107,
+        "kind": "refill",
+        "page": 28672,
+        "gpu": 2,
+        "snapshot_version": 9984,
+        "start_ps": 1262472000,
+        "end_ps": 1263626616,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 107,
+        "kind": "refill",
+        "page": 90112,
+        "gpu": 4,
+        "snapshot_version": 9984,
+        "start_ps": 1262474000,
+        "end_ps": 1263628616,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 107,
+        "kind": "refill",
+        "page": 49152,
+        "gpu": 1,
+        "snapshot_version": 9984,
+        "start_ps": 1262479000,
+        "end_ps": 1263633616,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      },
+      {
+        "kernel": 107,
+        "kind": "refill",
+        "page": 110592,
+        "gpu": 3,
+        "snapshot_version": 9984,
+        "start_ps": 1262481000,
+        "end_ps": 1263635616,
+        "bytes": 4096,
+        "charged_bytes": 4096,
+        "full_page": true
+      }
+    ]
+  },
+  "adapter": "core-kernel-internal-ideal-v3",
+  "core_allocations": [
+    {
+      "base": 4096,
+      "bytes": 131072
+    }
+  ],
+  "terminal_sha256": "638daf84c657e79a48a3f871baaf533a7167e70bfaec269448d3cbedeeaaff26",
+  "page_ownership": [
+    {
+      "page": 4096,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 8192,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 12288,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 16384,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 20480,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2
+      ],
+      "writers": [
+        1,
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 24576,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2
+      ],
+      "writers": [
+        1,
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 28672,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2
+      ],
+      "writers": [
+        1,
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 32768,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2
+      ],
+      "writers": [
+        1,
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 36864,
+      "home_gpu": 2,
+      "readers": [
+        1,
+        2,
+        3
+      ],
+      "writers": [
+        1,
+        2,
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 40960,
+      "home_gpu": 2,
+      "readers": [
+        1,
+        2,
+        3
+      ],
+      "writers": [
+        1,
+        2,
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 45056,
+      "home_gpu": 2,
+      "readers": [
+        1,
+        2,
+        3
+      ],
+      "writers": [
+        1,
+        2,
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 49152,
+      "home_gpu": 2,
+      "readers": [
+        1,
+        2,
+        3
+      ],
+      "writers": [
+        1,
+        2,
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 53248,
+      "home_gpu": 2,
+      "readers": [
+        2,
+        4
+      ],
+      "writers": [
+        2,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 57344,
+      "home_gpu": 2,
+      "readers": [
+        2,
+        4
+      ],
+      "writers": [
+        2,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 61440,
+      "home_gpu": 2,
+      "readers": [
+        2,
+        4
+      ],
+      "writers": [
+        2,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 65536,
+      "home_gpu": 2,
+      "readers": [
+        2,
+        4
+      ],
+      "writers": [
+        2,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 69632,
+      "home_gpu": 3,
+      "readers": [
+        1,
+        3
+      ],
+      "writers": [
+        1,
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 73728,
+      "home_gpu": 3,
+      "readers": [
+        1,
+        3
+      ],
+      "writers": [
+        1,
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 77824,
+      "home_gpu": 3,
+      "readers": [
+        1,
+        3
+      ],
+      "writers": [
+        1,
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 81920,
+      "home_gpu": 3,
+      "readers": [
+        1,
+        3
+      ],
+      "writers": [
+        1,
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 86016,
+      "home_gpu": 3,
+      "readers": [
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 90112,
+      "home_gpu": 3,
+      "readers": [
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 94208,
+      "home_gpu": 3,
+      "readers": [
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 98304,
+      "home_gpu": 3,
+      "readers": [
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        2,
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 102400,
+      "home_gpu": 4,
+      "readers": [
+        3,
+        4
+      ],
+      "writers": [
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 106496,
+      "home_gpu": 4,
+      "readers": [
+        3,
+        4
+      ],
+      "writers": [
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 110592,
+      "home_gpu": 4,
+      "readers": [
+        3,
+        4
+      ],
+      "writers": [
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 114688,
+      "home_gpu": 4,
+      "readers": [
+        3,
+        4
+      ],
+      "writers": [
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 118784,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 122880,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 126976,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 131072,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    }
+  ],
+  "home_pages_by_gpu": {
+    "1": 8,
+    "2": 8,
+    "3": 8,
+    "4": 8
+  },
+  "owner_read_transactions": 352768,
+  "non_owner_read_transactions": 3584,
+  "owner_write_transactions": 352768,
+  "non_owner_write_transactions": 3584,
+  "replica_read_transactions": 0,
+  "remote_home_read_transactions": 0,
+  "copy_bytes_by_role": {
+    "runtime": 229376
+  },
+  "copy_faults_by_role": {
+    "runtime": 56
+  },
+  "recovery_wait_ps_by_role": null,
+  "fabric_model": "destination-ready-v2",
+  "managed_pages": 32,
+  "epoch_activity": [
+    {
+      "name": "kernel/000001",
+      "start_ps": 1146000,
+      "end_ps": 13165000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11178000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 829000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000002",
+      "start_ps": 13165000,
+      "end_ps": 24951000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000003",
+      "start_ps": 24951000,
+      "end_ps": 36737000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000004",
+      "start_ps": 36737000,
+      "end_ps": 48523000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000005",
+      "start_ps": 48523000,
+      "end_ps": 60309000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000006",
+      "start_ps": 60309000,
+      "end_ps": 72095000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000007",
+      "start_ps": 72095000,
+      "end_ps": 83881000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000008",
+      "start_ps": 83881000,
+      "end_ps": 95667000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000009",
+      "start_ps": 95667000,
+      "end_ps": 107453000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000010",
+      "start_ps": 107453000,
+      "end_ps": 119239000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000011",
+      "start_ps": 119239000,
+      "end_ps": 131011000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000012",
+      "start_ps": 131011000,
+      "end_ps": 142797000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000013",
+      "start_ps": 142797000,
+      "end_ps": 154583000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000014",
+      "start_ps": 154583000,
+      "end_ps": 166369000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000015",
+      "start_ps": 166369000,
+      "end_ps": 178155000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000016",
+      "start_ps": 178155000,
+      "end_ps": 189927000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000017",
+      "start_ps": 189927000,
+      "end_ps": 201699000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000018",
+      "start_ps": 201699000,
+      "end_ps": 213485000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000019",
+      "start_ps": 213485000,
+      "end_ps": 225271000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000020",
+      "start_ps": 225271000,
+      "end_ps": 237057000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000021",
+      "start_ps": 237057000,
+      "end_ps": 248843000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000022",
+      "start_ps": 248843000,
+      "end_ps": 260615000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000023",
+      "start_ps": 260615000,
+      "end_ps": 272387000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000024",
+      "start_ps": 272387000,
+      "end_ps": 284159000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000025",
+      "start_ps": 284159000,
+      "end_ps": 295945000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000026",
+      "start_ps": 295945000,
+      "end_ps": 307731000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000027",
+      "start_ps": 307731000,
+      "end_ps": 319517000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000028",
+      "start_ps": 319517000,
+      "end_ps": 331303000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000029",
+      "start_ps": 331303000,
+      "end_ps": 343075000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000030",
+      "start_ps": 343075000,
+      "end_ps": 354847000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000031",
+      "start_ps": 354847000,
+      "end_ps": 366619000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000032",
+      "start_ps": 366619000,
+      "end_ps": 378391000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000033",
+      "start_ps": 378391000,
+      "end_ps": 390177000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000034",
+      "start_ps": 390177000,
+      "end_ps": 401963000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000035",
+      "start_ps": 401963000,
+      "end_ps": 413749000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000036",
+      "start_ps": 413749000,
+      "end_ps": 425535000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000037",
+      "start_ps": 425535000,
+      "end_ps": 437307000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000038",
+      "start_ps": 437307000,
+      "end_ps": 449079000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000039",
+      "start_ps": 449079000,
+      "end_ps": 460851000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000040",
+      "start_ps": 460851000,
+      "end_ps": 472623000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000041",
+      "start_ps": 472623000,
+      "end_ps": 484395000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000042",
+      "start_ps": 484395000,
+      "end_ps": 496181000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000043",
+      "start_ps": 496181000,
+      "end_ps": 507967000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000044",
+      "start_ps": 507967000,
+      "end_ps": 519753000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000045",
+      "start_ps": 519753000,
+      "end_ps": 531539000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000046",
+      "start_ps": 531539000,
+      "end_ps": 543311000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000047",
+      "start_ps": 543311000,
+      "end_ps": 555083000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000048",
+      "start_ps": 555083000,
+      "end_ps": 566855000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000049",
+      "start_ps": 566855000,
+      "end_ps": 578627000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000050",
+      "start_ps": 578627000,
+      "end_ps": 590399000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000051",
+      "start_ps": 590399000,
+      "end_ps": 602171000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000052",
+      "start_ps": 602171000,
+      "end_ps": 613957000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000053",
+      "start_ps": 613957000,
+      "end_ps": 625743000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000054",
+      "start_ps": 625743000,
+      "end_ps": 637529000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000055",
+      "start_ps": 637529000,
+      "end_ps": 649315000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000056",
+      "start_ps": 649315000,
+      "end_ps": 661089000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11181000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 581000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000057",
+      "start_ps": 661089000,
+      "end_ps": 672861000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000058",
+      "start_ps": 672861000,
+      "end_ps": 684633000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000059",
+      "start_ps": 684633000,
+      "end_ps": 696405000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000060",
+      "start_ps": 696405000,
+      "end_ps": 708177000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000061",
+      "start_ps": 708177000,
+      "end_ps": 719949000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000062",
+      "start_ps": 719949000,
+      "end_ps": 731721000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000063",
+      "start_ps": 731721000,
+      "end_ps": 743507000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000064",
+      "start_ps": 743507000,
+      "end_ps": 755293000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000065",
+      "start_ps": 755293000,
+      "end_ps": 767079000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000066",
+      "start_ps": 767079000,
+      "end_ps": 778865000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000067",
+      "start_ps": 778865000,
+      "end_ps": 790639000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11181000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 581000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000068",
+      "start_ps": 790639000,
+      "end_ps": 802411000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000069",
+      "start_ps": 802411000,
+      "end_ps": 814183000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000070",
+      "start_ps": 814183000,
+      "end_ps": 825955000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000071",
+      "start_ps": 825955000,
+      "end_ps": 837727000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000072",
+      "start_ps": 837727000,
+      "end_ps": 849499000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000073",
+      "start_ps": 849499000,
+      "end_ps": 861271000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000074",
+      "start_ps": 861271000,
+      "end_ps": 873043000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000075",
+      "start_ps": 873043000,
+      "end_ps": 884829000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000076",
+      "start_ps": 884829000,
+      "end_ps": 896615000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000077",
+      "start_ps": 896615000,
+      "end_ps": 908401000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000078",
+      "start_ps": 908401000,
+      "end_ps": 920187000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000079",
+      "start_ps": 920187000,
+      "end_ps": 931961000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11181000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 581000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000080",
+      "start_ps": 931961000,
+      "end_ps": 943733000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000081",
+      "start_ps": 943733000,
+      "end_ps": 955505000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000082",
+      "start_ps": 955505000,
+      "end_ps": 967277000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000083",
+      "start_ps": 967277000,
+      "end_ps": 979049000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000084",
+      "start_ps": 979049000,
+      "end_ps": 990821000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000085",
+      "start_ps": 990821000,
+      "end_ps": 1002593000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000086",
+      "start_ps": 1002593000,
+      "end_ps": 1014365000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000087",
+      "start_ps": 1014365000,
+      "end_ps": 1026137000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000088",
+      "start_ps": 1026137000,
+      "end_ps": 1037923000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000089",
+      "start_ps": 1037923000,
+      "end_ps": 1049709000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000090",
+      "start_ps": 1049709000,
+      "end_ps": 1061495000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000091",
+      "start_ps": 1061495000,
+      "end_ps": 1073281000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000092",
+      "start_ps": 1073281000,
+      "end_ps": 1087096000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11178000,
+        "1": 5000,
+        "2": 16000,
+        "3": 5000,
+        "4": 2611000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000093",
+      "start_ps": 1087096000,
+      "end_ps": 1098868000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000094",
+      "start_ps": 1098868000,
+      "end_ps": 1110640000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000095",
+      "start_ps": 1110640000,
+      "end_ps": 1122412000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000096",
+      "start_ps": 1122412000,
+      "end_ps": 1134184000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000097",
+      "start_ps": 1134184000,
+      "end_ps": 1145956000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000098",
+      "start_ps": 1145956000,
+      "end_ps": 1157728000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000099",
+      "start_ps": 1157728000,
+      "end_ps": 1169500000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000100",
+      "start_ps": 1169500000,
+      "end_ps": 1181272000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000101",
+      "start_ps": 1181272000,
+      "end_ps": 1193044000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000102",
+      "start_ps": 1193044000,
+      "end_ps": 1204830000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000103",
+      "start_ps": 1204830000,
+      "end_ps": 1216616000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000104",
+      "start_ps": 1216616000,
+      "end_ps": 1228402000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000105",
+      "start_ps": 1228402000,
+      "end_ps": 1240188000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000106",
+      "start_ps": 1240188000,
+      "end_ps": 1254465000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11178000,
+        "1": 18000,
+        "2": 178000,
+        "3": 106000,
+        "4": 2797000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000107",
+      "start_ps": 1254465000,
+      "end_ps": 1268168000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11178000,
+        "1": 5000,
+        "2": 16000,
+        "3": 5000,
+        "4": 2499000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000108",
+      "start_ps": 1268168000,
+      "end_ps": 1279940000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000109",
+      "start_ps": 1279940000,
+      "end_ps": 1291712000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000110",
+      "start_ps": 1291712000,
+      "end_ps": 1303484000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000111",
+      "start_ps": 1303484000,
+      "end_ps": 1315256000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000112",
+      "start_ps": 1315256000,
+      "end_ps": 1327028000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000113",
+      "start_ps": 1327028000,
+      "end_ps": 1338800000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000114",
+      "start_ps": 1338800000,
+      "end_ps": 1350572000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000115",
+      "start_ps": 1350572000,
+      "end_ps": 1362344000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000116",
+      "start_ps": 1362344000,
+      "end_ps": 1374116000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 575000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000117",
+      "start_ps": 1374116000,
+      "end_ps": 1385902000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000118",
+      "start_ps": 1385902000,
+      "end_ps": 1397688000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000119",
+      "start_ps": 1397688000,
+      "end_ps": 1409474000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000120",
+      "start_ps": 1409474000,
+      "end_ps": 1421260000,
+      "instructions_by_gpu": {
+        "1": 3136,
+        "2": 3136,
+        "3": 3136,
+        "4": 3136
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11185000,
+        "1": 4000,
+        "2": 4000,
+        "3": 4000,
+        "4": 589000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    }
+  ],
+  "model_revision": "replica-kernel-internal-ideal-v3",
+  "oracle_mapping_preinstall": true,
+  "mapping_installs": 128,
+  "tlb_flush_epochs": 0,
+  "mapping_faults": 0,
+  "fallback_page_epochs": 0,
+  "multiple_writer_page_epochs": 0,
+  "read_write_overlap_page_epochs": 0,
+  "fallback_gpu_page_accesses": 0,
+  "fallback_read_transactions": 0,
+  "fallback_write_transactions": 0,
+  "fallback_events": null,
+  "write_epoch_new_copies": 0,
+  "write_epoch_new_copy_bytes": 0,
+  "write_epoch_new_copy_faults": 0,
+  "write_epoch_existing_replica_reads": 0,
+  "write_epoch_new_replica_reads": 0,
+  "recovery_events": [
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 92,
+      "page": 28672,
+      "gpu": 2,
+      "source_version": 8768,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1081288000,
+      "due_ps": 1082401654,
+      "layouts": null
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 92,
+      "page": 94208,
+      "gpu": 4,
+      "source_version": 8768,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1081290000,
+      "due_ps": 1082403654,
+      "layouts": null
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 92,
+      "page": 45056,
+      "gpu": 1,
+      "source_version": 8768,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1081295000,
+      "due_ps": 1082408654,
+      "layouts": null
+    },
+    {
+      "home_gpu": 4,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 92,
+      "page": 110592,
+      "gpu": 3,
+      "source_version": 8768,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1081297000,
+      "due_ps": 1082410654,
+      "layouts": null
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 92,
+      "page": 32768,
+      "gpu": 2,
+      "source_version": 8768,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1081288000,
+      "due_ps": 1082415308,
+      "layouts": null
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 92,
+      "page": 98304,
+      "gpu": 4,
+      "source_version": 8768,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1081290000,
+      "due_ps": 1082417308,
+      "layouts": null
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 92,
+      "page": 49152,
+      "gpu": 1,
+      "source_version": 8768,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1081295000,
+      "due_ps": 1082422308,
+      "layouts": null
+    },
+    {
+      "home_gpu": 4,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 92,
+      "page": 114688,
+      "gpu": 3,
+      "source_version": 8768,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1081297000,
+      "due_ps": 1082424308,
+      "layouts": null
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 92,
+      "page": 20480,
+      "gpu": 2,
+      "source_version": 8768,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1081288000,
+      "due_ps": 1082428962,
+      "layouts": null
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 92,
+      "page": 86016,
+      "gpu": 4,
+      "source_version": 8768,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1081290000,
+      "due_ps": 1082430962,
+      "layouts": null
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 92,
+      "page": 36864,
+      "gpu": 1,
+      "source_version": 8768,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1081295000,
+      "due_ps": 1082435962,
+      "layouts": null
+    },
+    {
+      "home_gpu": 4,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 92,
+      "page": 102400,
+      "gpu": 3,
+      "source_version": 8768,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1081297000,
+      "due_ps": 1082437962,
+      "layouts": null
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 92,
+      "page": 24576,
+      "gpu": 2,
+      "source_version": 8768,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1081288000,
+      "due_ps": 1082442616,
+      "layouts": null
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 92,
+      "page": 90112,
+      "gpu": 4,
+      "source_version": 8768,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1081290000,
+      "due_ps": 1082444616,
+      "layouts": null
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 92,
+      "page": 40960,
+      "gpu": 1,
+      "source_version": 8768,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1081295000,
+      "due_ps": 1082449616,
+      "layouts": null
+    },
+    {
+      "home_gpu": 4,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 92,
+      "page": 106496,
+      "gpu": 3,
+      "source_version": 8768,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1081297000,
+      "due_ps": 1082451616,
+      "layouts": null
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 106,
+      "page": 28672,
+      "gpu": 2,
+      "source_version": 9920,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1248195000,
+      "due_ps": 1249308654,
+      "layouts": null
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 106,
+      "page": 49152,
+      "gpu": 3,
+      "source_version": 9920,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1248196000,
+      "due_ps": 1249309654,
+      "layouts": null
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 106,
+      "page": 81920,
+      "gpu": 1,
+      "source_version": 9920,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1248202000,
+      "due_ps": 1249315654,
+      "layouts": null
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 106,
+      "page": 32768,
+      "gpu": 2,
+      "source_version": 9920,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1248195000,
+      "due_ps": 1249322308,
+      "layouts": null
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 106,
+      "page": 36864,
+      "gpu": 3,
+      "source_version": 9920,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1248196000,
+      "due_ps": 1249323308,
+      "layouts": null
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 106,
+      "page": 69632,
+      "gpu": 1,
+      "source_version": 9920,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1248202000,
+      "due_ps": 1249329308,
+      "layouts": null
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 106,
+      "page": 20480,
+      "gpu": 2,
+      "source_version": 9920,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1248195000,
+      "due_ps": 1249335962,
+      "layouts": null
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 106,
+      "page": 40960,
+      "gpu": 3,
+      "source_version": 9920,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1248196000,
+      "due_ps": 1249336962,
+      "layouts": null
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 106,
+      "page": 73728,
+      "gpu": 1,
+      "source_version": 9920,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1248202000,
+      "due_ps": 1249342962,
+      "layouts": null
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 106,
+      "page": 24576,
+      "gpu": 2,
+      "source_version": 9920,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1248195000,
+      "due_ps": 1249349616,
+      "layouts": null
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 106,
+      "page": 45056,
+      "gpu": 3,
+      "source_version": 9920,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1248196000,
+      "due_ps": 1249350616,
+      "layouts": null
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 106,
+      "page": 77824,
+      "gpu": 1,
+      "source_version": 9920,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1248202000,
+      "due_ps": 1249356616,
+      "layouts": null
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 106,
+      "page": 61440,
+      "gpu": 4,
+      "source_version": 9920,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1248197000,
+      "due_ps": 1249364270,
+      "layouts": null
+    },
+    {
+      "home_gpu": 4,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 106,
+      "page": 114688,
+      "gpu": 3,
+      "source_version": 9920,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1248204000,
+      "due_ps": 1249364270,
+      "layouts": null
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 106,
+      "page": 94208,
+      "gpu": 2,
+      "source_version": 9920,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1248203000,
+      "due_ps": 1249370270,
+      "layouts": null
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 106,
+      "page": 65536,
+      "gpu": 4,
+      "source_version": 9920,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1248197000,
+      "due_ps": 1249377924,
+      "layouts": null
+    },
+    {
+      "home_gpu": 4,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 106,
+      "page": 102400,
+      "gpu": 3,
+      "source_version": 9920,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1248204000,
+      "due_ps": 1249377924,
+      "layouts": null
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 106,
+      "page": 98304,
+      "gpu": 2,
+      "source_version": 9920,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1248203000,
+      "due_ps": 1249383924,
+      "layouts": null
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 106,
+      "page": 53248,
+      "gpu": 4,
+      "source_version": 9920,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1248197000,
+      "due_ps": 1249391578,
+      "layouts": null
+    },
+    {
+      "home_gpu": 4,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 106,
+      "page": 106496,
+      "gpu": 3,
+      "source_version": 9920,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1248204000,
+      "due_ps": 1249391578,
+      "layouts": null
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 106,
+      "page": 86016,
+      "gpu": 2,
+      "source_version": 9920,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1248203000,
+      "due_ps": 1249397578,
+      "layouts": null
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 106,
+      "page": 57344,
+      "gpu": 4,
+      "source_version": 9920,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1248197000,
+      "due_ps": 1249405232,
+      "layouts": null
+    },
+    {
+      "home_gpu": 4,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 106,
+      "page": 110592,
+      "gpu": 3,
+      "source_version": 9920,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1248204000,
+      "due_ps": 1249405232,
+      "layouts": null
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 106,
+      "page": 90112,
+      "gpu": 2,
+      "source_version": 9920,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1248203000,
+      "due_ps": 1249411232,
+      "layouts": null
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 107,
+      "page": 32768,
+      "gpu": 2,
+      "source_version": 9984,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1262472000,
+      "due_ps": 1263585654,
+      "layouts": null
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 107,
+      "page": 94208,
+      "gpu": 4,
+      "source_version": 9984,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1262474000,
+      "due_ps": 1263587654,
+      "layouts": null
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 107,
+      "page": 36864,
+      "gpu": 1,
+      "source_version": 9984,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1262479000,
+      "due_ps": 1263592654,
+      "layouts": null
+    },
+    {
+      "home_gpu": 4,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 107,
+      "page": 114688,
+      "gpu": 3,
+      "source_version": 9984,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1262481000,
+      "due_ps": 1263594654,
+      "layouts": null
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 107,
+      "page": 20480,
+      "gpu": 2,
+      "source_version": 9984,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1262472000,
+      "due_ps": 1263599308,
+      "layouts": null
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 107,
+      "page": 98304,
+      "gpu": 4,
+      "source_version": 9984,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1262474000,
+      "due_ps": 1263601308,
+      "layouts": null
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 107,
+      "page": 40960,
+      "gpu": 1,
+      "source_version": 9984,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1262479000,
+      "due_ps": 1263606308,
+      "layouts": null
+    },
+    {
+      "home_gpu": 4,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 107,
+      "page": 102400,
+      "gpu": 3,
+      "source_version": 9984,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1262481000,
+      "due_ps": 1263608308,
+      "layouts": null
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 107,
+      "page": 24576,
+      "gpu": 2,
+      "source_version": 9984,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1262472000,
+      "due_ps": 1263612962,
+      "layouts": null
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 107,
+      "page": 86016,
+      "gpu": 4,
+      "source_version": 9984,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1262474000,
+      "due_ps": 1263614962,
+      "layouts": null
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 107,
+      "page": 45056,
+      "gpu": 1,
+      "source_version": 9984,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1262479000,
+      "due_ps": 1263619962,
+      "layouts": null
+    },
+    {
+      "home_gpu": 4,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 107,
+      "page": 106496,
+      "gpu": 3,
+      "source_version": 9984,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1262481000,
+      "due_ps": 1263621962,
+      "layouts": null
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 107,
+      "page": 28672,
+      "gpu": 2,
+      "source_version": 9984,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1262472000,
+      "due_ps": 1263626616,
+      "layouts": null
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 107,
+      "page": 90112,
+      "gpu": 4,
+      "source_version": 9984,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1262474000,
+      "due_ps": 1263628616,
+      "layouts": null
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 107,
+      "page": 49152,
+      "gpu": 1,
+      "source_version": 9984,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1262479000,
+      "due_ps": 1263633616,
+      "layouts": null
+    },
+    {
+      "home_gpu": 4,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 107,
+      "page": 110592,
+      "gpu": 3,
+      "source_version": 9984,
+      "cold": false,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 1262481000,
+      "due_ps": 1263635616,
+      "layouts": null
+    }
+  ],
+  "s4_inv_replica_targets": 0,
+  "write_page_epochs": 356352,
+  "versioned_pages": 32,
+  "config": {
+    "has_system_scope_sync": false,
+    "transfer_gran_bytes": 32,
+    "policy": "inv",
+    "page_bytes": 4096,
+    "sector_bytes": 32,
+    "fault_ns": 900,
+    "fault_slots": 16,
+    "bandwidth_gbs": 300,
+    "link_ns": 200,
+    "replica_pages_per_gpu": 0,
+    "metadata_ns": 0,
+    "shootdown_ns": 0
+  },
+  "epochs": 120,
+  "kernel_ps": 1420114000,
+  "host_transfer_ps": 1090000,
+  "validation_sha256": "96197cef0467895a92f8c66c2633484ec25c90e50c800293165da69ed201f3f6",
+  "kernel_count": 120,
+  "host_write_epochs": 0,
+  "peak_live_managed_pages": 32,
+  "retired_managed_pages": 0,
+  "application_ps": 1421204000,
+  "barrier_flush_ps": 0,
+  "recovery_wait_ps": 0,
+  "copy_faults": 56,
+  "cold_copies": 32,
+  "refills": 24,
+  "repairs": 0,
+  "copy_bytes": 229376,
+  "invalidations": 56,
+  "evictions": 0,
+  "peak_replica_pages": 24,
+  "peak_stale_pages": 16,
+  "retained_pages": 0,
+  "s2_clean_transactions": 0,
+  "s3_preexisting_replica_read_transactions": 0,
+  "s3_preexisting_replica_read_sectors": 0,
+  "s3_conflicting_read_sectors": 0,
+  "repair_granularities": {},
+  "fabric_bytes": 573440,
+  "fabric_messages": 7224
+}

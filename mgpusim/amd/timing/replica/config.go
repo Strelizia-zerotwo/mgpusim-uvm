@@ -1,5 +1,6 @@
-// Package replica implements a kernel-barrier oracle experiment. The plan is
-// recorded from executed GPU requests. It is not a hardware coherence protocol.
+// Package replica implements an ideal request-triggered replication experiment
+// and a separate historical kernel-barrier plan experiment. Neither is a
+// hardware coherence implementation.
 package replica
 
 import (
@@ -10,8 +11,9 @@ import (
 	"sync"
 )
 
-// Config is shared by INV and all oracle comparisons; times are nanoseconds.
+// Config is shared by replication experiments; times are nanoseconds.
 type Config struct {
+	HasSystemScopeSync bool    `json:"has_system_scope_sync"`
 	TransferGranBytes  uint64  `json:"transfer_gran_bytes"`
 	Policy             string  `json:"policy"`
 	PageBytes          uint64  `json:"page_bytes"`
@@ -34,7 +36,7 @@ func DefaultConfig() Config {
 // Validate refuses unsupported idealizations and malformed geometry.
 func (c Config) Validate() {
 	switch c.Policy {
-	case "norep", "inv", "retain", "i1-no-s3", "i1", "i1-write-prefetch", "i1-full-stale", "i1-adaptive", "i2", "infinity":
+	case "norep", "inv", "delta", "delta-sub", "retain", "i1-no-s3", "i1", "i1-write-prefetch", "i1-full-stale", "i1-adaptive", "i2", "infinity":
 	default:
 		panic("replica: unknown policy")
 	}

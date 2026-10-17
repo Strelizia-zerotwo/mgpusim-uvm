@@ -1,0 +1,4094 @@
+Location	What	Value	Unit
+Driver	kernel_time	0.000644461	second
+GPU[1].CommandProcessor	kernel_time	0.000644459	second
+GPU[2].CommandProcessor	kernel_time	0.000607377	second
+GPU[3].CommandProcessor	kernel_time	0.0006339	second
+GPU[4].CommandProcessor	kernel_time	0.000644291	second
+GPU[1].SA[0].CU[0]	cu_inst_count	584.0	count
+GPU[1].SA[0].CU[0]	cu_CPI	1103.5291095890411	cycles/inst
+GPU[1].SA[0].CU[0]	simd_inst_count	420.0	count
+GPU[1].SA[0].CU[0]	simd_CPI	1534.4309523809525	cycles/inst
+GPU[1].SA[0].CU[1]	cu_inst_count	584.0	count
+GPU[1].SA[0].CU[1]	cu_CPI	1103.5291095890411	cycles/inst
+GPU[1].SA[0].CU[1]	simd_inst_count	420.0	count
+GPU[1].SA[0].CU[1]	simd_CPI	1534.4309523809525	cycles/inst
+GPU[1].SA[0].CU[2]	cu_inst_count	584.0	count
+GPU[1].SA[0].CU[2]	cu_CPI	1103.5291095890411	cycles/inst
+GPU[1].SA[0].CU[2]	simd_inst_count	420.0	count
+GPU[1].SA[0].CU[2]	simd_CPI	1534.4309523809525	cycles/inst
+GPU[1].SA[0].CU[3]	cu_inst_count	584.0	count
+GPU[1].SA[0].CU[3]	cu_CPI	1103.5291095890411	cycles/inst
+GPU[1].SA[0].CU[3]	simd_inst_count	420.0	count
+GPU[1].SA[0].CU[3]	simd_CPI	1534.4309523809525	cycles/inst
+GPU[1].SA[1].CU[0]	cu_inst_count	0.0	count
+GPU[1].SA[1].CU[0]	cu_CPI	inf	cycles/inst
+GPU[1].SA[1].CU[0]	simd_inst_count	0.0	count
+GPU[1].SA[1].CU[0]	simd_CPI	inf	cycles/inst
+GPU[1].SA[1].CU[1]	cu_inst_count	0.0	count
+GPU[1].SA[1].CU[1]	cu_CPI	inf	cycles/inst
+GPU[1].SA[1].CU[1]	simd_inst_count	0.0	count
+GPU[1].SA[1].CU[1]	simd_CPI	inf	cycles/inst
+GPU[1].SA[1].CU[2]	cu_inst_count	0.0	count
+GPU[1].SA[1].CU[2]	cu_CPI	inf	cycles/inst
+GPU[1].SA[1].CU[2]	simd_inst_count	0.0	count
+GPU[1].SA[1].CU[2]	simd_CPI	inf	cycles/inst
+GPU[1].SA[1].CU[3]	cu_inst_count	0.0	count
+GPU[1].SA[1].CU[3]	cu_CPI	inf	cycles/inst
+GPU[1].SA[1].CU[3]	simd_inst_count	0.0	count
+GPU[1].SA[1].CU[3]	simd_CPI	inf	cycles/inst
+GPU[1].SA[2].CU[0]	cu_inst_count	0.0	count
+GPU[1].SA[2].CU[0]	cu_CPI	inf	cycles/inst
+GPU[1].SA[2].CU[0]	simd_inst_count	0.0	count
+GPU[1].SA[2].CU[0]	simd_CPI	inf	cycles/inst
+GPU[1].SA[2].CU[1]	cu_inst_count	0.0	count
+GPU[1].SA[2].CU[1]	cu_CPI	inf	cycles/inst
+GPU[1].SA[2].CU[1]	simd_inst_count	0.0	count
+GPU[1].SA[2].CU[1]	simd_CPI	inf	cycles/inst
+GPU[1].SA[2].CU[2]	cu_inst_count	0.0	count
+GPU[1].SA[2].CU[2]	cu_CPI	inf	cycles/inst
+GPU[1].SA[2].CU[2]	simd_inst_count	0.0	count
+GPU[1].SA[2].CU[2]	simd_CPI	inf	cycles/inst
+GPU[1].SA[2].CU[3]	cu_inst_count	0.0	count
+GPU[1].SA[2].CU[3]	cu_CPI	inf	cycles/inst
+GPU[1].SA[2].CU[3]	simd_inst_count	0.0	count
+GPU[1].SA[2].CU[3]	simd_CPI	inf	cycles/inst
+GPU[1].SA[3].CU[0]	cu_inst_count	0.0	count
+GPU[1].SA[3].CU[0]	cu_CPI	inf	cycles/inst
+GPU[1].SA[3].CU[0]	simd_inst_count	0.0	count
+GPU[1].SA[3].CU[0]	simd_CPI	inf	cycles/inst
+GPU[1].SA[3].CU[1]	cu_inst_count	0.0	count
+GPU[1].SA[3].CU[1]	cu_CPI	inf	cycles/inst
+GPU[1].SA[3].CU[1]	simd_inst_count	0.0	count
+GPU[1].SA[3].CU[1]	simd_CPI	inf	cycles/inst
+GPU[1].SA[3].CU[2]	cu_inst_count	0.0	count
+GPU[1].SA[3].CU[2]	cu_CPI	inf	cycles/inst
+GPU[1].SA[3].CU[2]	simd_inst_count	0.0	count
+GPU[1].SA[3].CU[2]	simd_CPI	inf	cycles/inst
+GPU[1].SA[3].CU[3]	cu_inst_count	0.0	count
+GPU[1].SA[3].CU[3]	cu_CPI	inf	cycles/inst
+GPU[1].SA[3].CU[3]	simd_inst_count	0.0	count
+GPU[1].SA[3].CU[3]	simd_CPI	inf	cycles/inst
+GPU[1].SA[4].CU[0]	cu_inst_count	0.0	count
+GPU[1].SA[4].CU[0]	cu_CPI	inf	cycles/inst
+GPU[1].SA[4].CU[0]	simd_inst_count	0.0	count
+GPU[1].SA[4].CU[0]	simd_CPI	inf	cycles/inst
+GPU[1].SA[4].CU[1]	cu_inst_count	0.0	count
+GPU[1].SA[4].CU[1]	cu_CPI	inf	cycles/inst
+GPU[1].SA[4].CU[1]	simd_inst_count	0.0	count
+GPU[1].SA[4].CU[1]	simd_CPI	inf	cycles/inst
+GPU[1].SA[4].CU[2]	cu_inst_count	0.0	count
+GPU[1].SA[4].CU[2]	cu_CPI	inf	cycles/inst
+GPU[1].SA[4].CU[2]	simd_inst_count	0.0	count
+GPU[1].SA[4].CU[2]	simd_CPI	inf	cycles/inst
+GPU[1].SA[4].CU[3]	cu_inst_count	0.0	count
+GPU[1].SA[4].CU[3]	cu_CPI	inf	cycles/inst
+GPU[1].SA[4].CU[3]	simd_inst_count	0.0	count
+GPU[1].SA[4].CU[3]	simd_CPI	inf	cycles/inst
+GPU[1].SA[5].CU[0]	cu_inst_count	0.0	count
+GPU[1].SA[5].CU[0]	cu_CPI	inf	cycles/inst
+GPU[1].SA[5].CU[0]	simd_inst_count	0.0	count
+GPU[1].SA[5].CU[0]	simd_CPI	inf	cycles/inst
+GPU[1].SA[5].CU[1]	cu_inst_count	0.0	count
+GPU[1].SA[5].CU[1]	cu_CPI	inf	cycles/inst
+GPU[1].SA[5].CU[1]	simd_inst_count	0.0	count
+GPU[1].SA[5].CU[1]	simd_CPI	inf	cycles/inst
+GPU[1].SA[5].CU[2]	cu_inst_count	0.0	count
+GPU[1].SA[5].CU[2]	cu_CPI	inf	cycles/inst
+GPU[1].SA[5].CU[2]	simd_inst_count	0.0	count
+GPU[1].SA[5].CU[2]	simd_CPI	inf	cycles/inst
+GPU[1].SA[5].CU[3]	cu_inst_count	0.0	count
+GPU[1].SA[5].CU[3]	cu_CPI	inf	cycles/inst
+GPU[1].SA[5].CU[3]	simd_inst_count	0.0	count
+GPU[1].SA[5].CU[3]	simd_CPI	inf	cycles/inst
+GPU[1].SA[6].CU[0]	cu_inst_count	0.0	count
+GPU[1].SA[6].CU[0]	cu_CPI	inf	cycles/inst
+GPU[1].SA[6].CU[0]	simd_inst_count	0.0	count
+GPU[1].SA[6].CU[0]	simd_CPI	inf	cycles/inst
+GPU[1].SA[6].CU[1]	cu_inst_count	0.0	count
+GPU[1].SA[6].CU[1]	cu_CPI	inf	cycles/inst
+GPU[1].SA[6].CU[1]	simd_inst_count	0.0	count
+GPU[1].SA[6].CU[1]	simd_CPI	inf	cycles/inst
+GPU[1].SA[6].CU[2]	cu_inst_count	0.0	count
+GPU[1].SA[6].CU[2]	cu_CPI	inf	cycles/inst
+GPU[1].SA[6].CU[2]	simd_inst_count	0.0	count
+GPU[1].SA[6].CU[2]	simd_CPI	inf	cycles/inst
+GPU[1].SA[6].CU[3]	cu_inst_count	0.0	count
+GPU[1].SA[6].CU[3]	cu_CPI	inf	cycles/inst
+GPU[1].SA[6].CU[3]	simd_inst_count	0.0	count
+GPU[1].SA[6].CU[3]	simd_CPI	inf	cycles/inst
+GPU[1].SA[7].CU[0]	cu_inst_count	0.0	count
+GPU[1].SA[7].CU[0]	cu_CPI	inf	cycles/inst
+GPU[1].SA[7].CU[0]	simd_inst_count	0.0	count
+GPU[1].SA[7].CU[0]	simd_CPI	inf	cycles/inst
+GPU[1].SA[7].CU[1]	cu_inst_count	0.0	count
+GPU[1].SA[7].CU[1]	cu_CPI	inf	cycles/inst
+GPU[1].SA[7].CU[1]	simd_inst_count	0.0	count
+GPU[1].SA[7].CU[1]	simd_CPI	inf	cycles/inst
+GPU[1].SA[7].CU[2]	cu_inst_count	0.0	count
+GPU[1].SA[7].CU[2]	cu_CPI	inf	cycles/inst
+GPU[1].SA[7].CU[2]	simd_inst_count	0.0	count
+GPU[1].SA[7].CU[2]	simd_CPI	inf	cycles/inst
+GPU[1].SA[7].CU[3]	cu_inst_count	0.0	count
+GPU[1].SA[7].CU[3]	cu_CPI	inf	cycles/inst
+GPU[1].SA[7].CU[3]	simd_inst_count	0.0	count
+GPU[1].SA[7].CU[3]	simd_CPI	inf	cycles/inst
+GPU[1].SA[8].CU[0]	cu_inst_count	0.0	count
+GPU[1].SA[8].CU[0]	cu_CPI	inf	cycles/inst
+GPU[1].SA[8].CU[0]	simd_inst_count	0.0	count
+GPU[1].SA[8].CU[0]	simd_CPI	inf	cycles/inst
+GPU[1].SA[8].CU[1]	cu_inst_count	0.0	count
+GPU[1].SA[8].CU[1]	cu_CPI	inf	cycles/inst
+GPU[1].SA[8].CU[1]	simd_inst_count	0.0	count
+GPU[1].SA[8].CU[1]	simd_CPI	inf	cycles/inst
+GPU[1].SA[8].CU[2]	cu_inst_count	0.0	count
+GPU[1].SA[8].CU[2]	cu_CPI	inf	cycles/inst
+GPU[1].SA[8].CU[2]	simd_inst_count	0.0	count
+GPU[1].SA[8].CU[2]	simd_CPI	inf	cycles/inst
+GPU[1].SA[8].CU[3]	cu_inst_count	0.0	count
+GPU[1].SA[8].CU[3]	cu_CPI	inf	cycles/inst
+GPU[1].SA[8].CU[3]	simd_inst_count	0.0	count
+GPU[1].SA[8].CU[3]	simd_CPI	inf	cycles/inst
+GPU[1].SA[9].CU[0]	cu_inst_count	0.0	count
+GPU[1].SA[9].CU[0]	cu_CPI	inf	cycles/inst
+GPU[1].SA[9].CU[0]	simd_inst_count	0.0	count
+GPU[1].SA[9].CU[0]	simd_CPI	inf	cycles/inst
+GPU[1].SA[9].CU[1]	cu_inst_count	0.0	count
+GPU[1].SA[9].CU[1]	cu_CPI	inf	cycles/inst
+GPU[1].SA[9].CU[1]	simd_inst_count	0.0	count
+GPU[1].SA[9].CU[1]	simd_CPI	inf	cycles/inst
+GPU[1].SA[9].CU[2]	cu_inst_count	0.0	count
+GPU[1].SA[9].CU[2]	cu_CPI	inf	cycles/inst
+GPU[1].SA[9].CU[2]	simd_inst_count	0.0	count
+GPU[1].SA[9].CU[2]	simd_CPI	inf	cycles/inst
+GPU[1].SA[9].CU[3]	cu_inst_count	0.0	count
+GPU[1].SA[9].CU[3]	cu_CPI	inf	cycles/inst
+GPU[1].SA[9].CU[3]	simd_inst_count	0.0	count
+GPU[1].SA[9].CU[3]	simd_CPI	inf	cycles/inst
+GPU[1].SA[10].CU[0]	cu_inst_count	0.0	count
+GPU[1].SA[10].CU[0]	cu_CPI	inf	cycles/inst
+GPU[1].SA[10].CU[0]	simd_inst_count	0.0	count
+GPU[1].SA[10].CU[0]	simd_CPI	inf	cycles/inst
+GPU[1].SA[10].CU[1]	cu_inst_count	0.0	count
+GPU[1].SA[10].CU[1]	cu_CPI	inf	cycles/inst
+GPU[1].SA[10].CU[1]	simd_inst_count	0.0	count
+GPU[1].SA[10].CU[1]	simd_CPI	inf	cycles/inst
+GPU[1].SA[10].CU[2]	cu_inst_count	0.0	count
+GPU[1].SA[10].CU[2]	cu_CPI	inf	cycles/inst
+GPU[1].SA[10].CU[2]	simd_inst_count	0.0	count
+GPU[1].SA[10].CU[2]	simd_CPI	inf	cycles/inst
+GPU[1].SA[10].CU[3]	cu_inst_count	0.0	count
+GPU[1].SA[10].CU[3]	cu_CPI	inf	cycles/inst
+GPU[1].SA[10].CU[3]	simd_inst_count	0.0	count
+GPU[1].SA[10].CU[3]	simd_CPI	inf	cycles/inst
+GPU[1].SA[11].CU[0]	cu_inst_count	0.0	count
+GPU[1].SA[11].CU[0]	cu_CPI	inf	cycles/inst
+GPU[1].SA[11].CU[0]	simd_inst_count	0.0	count
+GPU[1].SA[11].CU[0]	simd_CPI	inf	cycles/inst
+GPU[1].SA[11].CU[1]	cu_inst_count	0.0	count
+GPU[1].SA[11].CU[1]	cu_CPI	inf	cycles/inst
+GPU[1].SA[11].CU[1]	simd_inst_count	0.0	count
+GPU[1].SA[11].CU[1]	simd_CPI	inf	cycles/inst
+GPU[1].SA[11].CU[2]	cu_inst_count	0.0	count
+GPU[1].SA[11].CU[2]	cu_CPI	inf	cycles/inst
+GPU[1].SA[11].CU[2]	simd_inst_count	0.0	count
+GPU[1].SA[11].CU[2]	simd_CPI	inf	cycles/inst
+GPU[1].SA[11].CU[3]	cu_inst_count	0.0	count
+GPU[1].SA[11].CU[3]	cu_CPI	inf	cycles/inst
+GPU[1].SA[11].CU[3]	simd_inst_count	0.0	count
+GPU[1].SA[11].CU[3]	simd_CPI	inf	cycles/inst
+GPU[1].SA[12].CU[0]	cu_inst_count	0.0	count
+GPU[1].SA[12].CU[0]	cu_CPI	inf	cycles/inst
+GPU[1].SA[12].CU[0]	simd_inst_count	0.0	count
+GPU[1].SA[12].CU[0]	simd_CPI	inf	cycles/inst
+GPU[1].SA[12].CU[1]	cu_inst_count	0.0	count
+GPU[1].SA[12].CU[1]	cu_CPI	inf	cycles/inst
+GPU[1].SA[12].CU[1]	simd_inst_count	0.0	count
+GPU[1].SA[12].CU[1]	simd_CPI	inf	cycles/inst
+GPU[1].SA[12].CU[2]	cu_inst_count	0.0	count
+GPU[1].SA[12].CU[2]	cu_CPI	inf	cycles/inst
+GPU[1].SA[12].CU[2]	simd_inst_count	0.0	count
+GPU[1].SA[12].CU[2]	simd_CPI	inf	cycles/inst
+GPU[1].SA[12].CU[3]	cu_inst_count	0.0	count
+GPU[1].SA[12].CU[3]	cu_CPI	inf	cycles/inst
+GPU[1].SA[12].CU[3]	simd_inst_count	0.0	count
+GPU[1].SA[12].CU[3]	simd_CPI	inf	cycles/inst
+GPU[1].SA[13].CU[0]	cu_inst_count	0.0	count
+GPU[1].SA[13].CU[0]	cu_CPI	inf	cycles/inst
+GPU[1].SA[13].CU[0]	simd_inst_count	0.0	count
+GPU[1].SA[13].CU[0]	simd_CPI	inf	cycles/inst
+GPU[1].SA[13].CU[1]	cu_inst_count	0.0	count
+GPU[1].SA[13].CU[1]	cu_CPI	inf	cycles/inst
+GPU[1].SA[13].CU[1]	simd_inst_count	0.0	count
+GPU[1].SA[13].CU[1]	simd_CPI	inf	cycles/inst
+GPU[1].SA[13].CU[2]	cu_inst_count	0.0	count
+GPU[1].SA[13].CU[2]	cu_CPI	inf	cycles/inst
+GPU[1].SA[13].CU[2]	simd_inst_count	0.0	count
+GPU[1].SA[13].CU[2]	simd_CPI	inf	cycles/inst
+GPU[1].SA[13].CU[3]	cu_inst_count	0.0	count
+GPU[1].SA[13].CU[3]	cu_CPI	inf	cycles/inst
+GPU[1].SA[13].CU[3]	simd_inst_count	0.0	count
+GPU[1].SA[13].CU[3]	simd_CPI	inf	cycles/inst
+GPU[1].SA[14].CU[0]	cu_inst_count	0.0	count
+GPU[1].SA[14].CU[0]	cu_CPI	inf	cycles/inst
+GPU[1].SA[14].CU[0]	simd_inst_count	0.0	count
+GPU[1].SA[14].CU[0]	simd_CPI	inf	cycles/inst
+GPU[1].SA[14].CU[1]	cu_inst_count	0.0	count
+GPU[1].SA[14].CU[1]	cu_CPI	inf	cycles/inst
+GPU[1].SA[14].CU[1]	simd_inst_count	0.0	count
+GPU[1].SA[14].CU[1]	simd_CPI	inf	cycles/inst
+GPU[1].SA[14].CU[2]	cu_inst_count	0.0	count
+GPU[1].SA[14].CU[2]	cu_CPI	inf	cycles/inst
+GPU[1].SA[14].CU[2]	simd_inst_count	0.0	count
+GPU[1].SA[14].CU[2]	simd_CPI	inf	cycles/inst
+GPU[1].SA[14].CU[3]	cu_inst_count	0.0	count
+GPU[1].SA[14].CU[3]	cu_CPI	inf	cycles/inst
+GPU[1].SA[14].CU[3]	simd_inst_count	0.0	count
+GPU[1].SA[14].CU[3]	simd_CPI	inf	cycles/inst
+GPU[1].SA[15].CU[0]	cu_inst_count	0.0	count
+GPU[1].SA[15].CU[0]	cu_CPI	inf	cycles/inst
+GPU[1].SA[15].CU[0]	simd_inst_count	0.0	count
+GPU[1].SA[15].CU[0]	simd_CPI	inf	cycles/inst
+GPU[1].SA[15].CU[1]	cu_inst_count	0.0	count
+GPU[1].SA[15].CU[1]	cu_CPI	inf	cycles/inst
+GPU[1].SA[15].CU[1]	simd_inst_count	0.0	count
+GPU[1].SA[15].CU[1]	simd_CPI	inf	cycles/inst
+GPU[1].SA[15].CU[2]	cu_inst_count	0.0	count
+GPU[1].SA[15].CU[2]	cu_CPI	inf	cycles/inst
+GPU[1].SA[15].CU[2]	simd_inst_count	0.0	count
+GPU[1].SA[15].CU[2]	simd_CPI	inf	cycles/inst
+GPU[1].SA[15].CU[3]	cu_inst_count	0.0	count
+GPU[1].SA[15].CU[3]	cu_CPI	inf	cycles/inst
+GPU[1].SA[15].CU[3]	simd_inst_count	0.0	count
+GPU[1].SA[15].CU[3]	simd_CPI	inf	cycles/inst
+GPU[2].SA[0].CU[0]	cu_inst_count	584.0	count
+GPU[2].SA[0].CU[0]	cu_CPI	1103.5291095890411	cycles/inst
+GPU[2].SA[0].CU[0]	simd_inst_count	420.0	count
+GPU[2].SA[0].CU[0]	simd_CPI	1534.4309523809525	cycles/inst
+GPU[2].SA[0].CU[1]	cu_inst_count	584.0	count
+GPU[2].SA[0].CU[1]	cu_CPI	1103.5291095890411	cycles/inst
+GPU[2].SA[0].CU[1]	simd_inst_count	420.0	count
+GPU[2].SA[0].CU[1]	simd_CPI	1534.4309523809525	cycles/inst
+GPU[2].SA[0].CU[2]	cu_inst_count	584.0	count
+GPU[2].SA[0].CU[2]	cu_CPI	1103.5291095890411	cycles/inst
+GPU[2].SA[0].CU[2]	simd_inst_count	420.0	count
+GPU[2].SA[0].CU[2]	simd_CPI	1534.4309523809525	cycles/inst
+GPU[2].SA[0].CU[3]	cu_inst_count	584.0	count
+GPU[2].SA[0].CU[3]	cu_CPI	1103.5291095890411	cycles/inst
+GPU[2].SA[0].CU[3]	simd_inst_count	420.0	count
+GPU[2].SA[0].CU[3]	simd_CPI	1534.4309523809525	cycles/inst
+GPU[2].SA[1].CU[0]	cu_inst_count	0.0	count
+GPU[2].SA[1].CU[0]	cu_CPI	inf	cycles/inst
+GPU[2].SA[1].CU[0]	simd_inst_count	0.0	count
+GPU[2].SA[1].CU[0]	simd_CPI	inf	cycles/inst
+GPU[2].SA[1].CU[1]	cu_inst_count	0.0	count
+GPU[2].SA[1].CU[1]	cu_CPI	inf	cycles/inst
+GPU[2].SA[1].CU[1]	simd_inst_count	0.0	count
+GPU[2].SA[1].CU[1]	simd_CPI	inf	cycles/inst
+GPU[2].SA[1].CU[2]	cu_inst_count	0.0	count
+GPU[2].SA[1].CU[2]	cu_CPI	inf	cycles/inst
+GPU[2].SA[1].CU[2]	simd_inst_count	0.0	count
+GPU[2].SA[1].CU[2]	simd_CPI	inf	cycles/inst
+GPU[2].SA[1].CU[3]	cu_inst_count	0.0	count
+GPU[2].SA[1].CU[3]	cu_CPI	inf	cycles/inst
+GPU[2].SA[1].CU[3]	simd_inst_count	0.0	count
+GPU[2].SA[1].CU[3]	simd_CPI	inf	cycles/inst
+GPU[2].SA[2].CU[0]	cu_inst_count	0.0	count
+GPU[2].SA[2].CU[0]	cu_CPI	inf	cycles/inst
+GPU[2].SA[2].CU[0]	simd_inst_count	0.0	count
+GPU[2].SA[2].CU[0]	simd_CPI	inf	cycles/inst
+GPU[2].SA[2].CU[1]	cu_inst_count	0.0	count
+GPU[2].SA[2].CU[1]	cu_CPI	inf	cycles/inst
+GPU[2].SA[2].CU[1]	simd_inst_count	0.0	count
+GPU[2].SA[2].CU[1]	simd_CPI	inf	cycles/inst
+GPU[2].SA[2].CU[2]	cu_inst_count	0.0	count
+GPU[2].SA[2].CU[2]	cu_CPI	inf	cycles/inst
+GPU[2].SA[2].CU[2]	simd_inst_count	0.0	count
+GPU[2].SA[2].CU[2]	simd_CPI	inf	cycles/inst
+GPU[2].SA[2].CU[3]	cu_inst_count	0.0	count
+GPU[2].SA[2].CU[3]	cu_CPI	inf	cycles/inst
+GPU[2].SA[2].CU[3]	simd_inst_count	0.0	count
+GPU[2].SA[2].CU[3]	simd_CPI	inf	cycles/inst
+GPU[2].SA[3].CU[0]	cu_inst_count	0.0	count
+GPU[2].SA[3].CU[0]	cu_CPI	inf	cycles/inst
+GPU[2].SA[3].CU[0]	simd_inst_count	0.0	count
+GPU[2].SA[3].CU[0]	simd_CPI	inf	cycles/inst
+GPU[2].SA[3].CU[1]	cu_inst_count	0.0	count
+GPU[2].SA[3].CU[1]	cu_CPI	inf	cycles/inst
+GPU[2].SA[3].CU[1]	simd_inst_count	0.0	count
+GPU[2].SA[3].CU[1]	simd_CPI	inf	cycles/inst
+GPU[2].SA[3].CU[2]	cu_inst_count	0.0	count
+GPU[2].SA[3].CU[2]	cu_CPI	inf	cycles/inst
+GPU[2].SA[3].CU[2]	simd_inst_count	0.0	count
+GPU[2].SA[3].CU[2]	simd_CPI	inf	cycles/inst
+GPU[2].SA[3].CU[3]	cu_inst_count	0.0	count
+GPU[2].SA[3].CU[3]	cu_CPI	inf	cycles/inst
+GPU[2].SA[3].CU[3]	simd_inst_count	0.0	count
+GPU[2].SA[3].CU[3]	simd_CPI	inf	cycles/inst
+GPU[2].SA[4].CU[0]	cu_inst_count	0.0	count
+GPU[2].SA[4].CU[0]	cu_CPI	inf	cycles/inst
+GPU[2].SA[4].CU[0]	simd_inst_count	0.0	count
+GPU[2].SA[4].CU[0]	simd_CPI	inf	cycles/inst
+GPU[2].SA[4].CU[1]	cu_inst_count	0.0	count
+GPU[2].SA[4].CU[1]	cu_CPI	inf	cycles/inst
+GPU[2].SA[4].CU[1]	simd_inst_count	0.0	count
+GPU[2].SA[4].CU[1]	simd_CPI	inf	cycles/inst
+GPU[2].SA[4].CU[2]	cu_inst_count	0.0	count
+GPU[2].SA[4].CU[2]	cu_CPI	inf	cycles/inst
+GPU[2].SA[4].CU[2]	simd_inst_count	0.0	count
+GPU[2].SA[4].CU[2]	simd_CPI	inf	cycles/inst
+GPU[2].SA[4].CU[3]	cu_inst_count	0.0	count
+GPU[2].SA[4].CU[3]	cu_CPI	inf	cycles/inst
+GPU[2].SA[4].CU[3]	simd_inst_count	0.0	count
+GPU[2].SA[4].CU[3]	simd_CPI	inf	cycles/inst
+GPU[2].SA[5].CU[0]	cu_inst_count	0.0	count
+GPU[2].SA[5].CU[0]	cu_CPI	inf	cycles/inst
+GPU[2].SA[5].CU[0]	simd_inst_count	0.0	count
+GPU[2].SA[5].CU[0]	simd_CPI	inf	cycles/inst
+GPU[2].SA[5].CU[1]	cu_inst_count	0.0	count
+GPU[2].SA[5].CU[1]	cu_CPI	inf	cycles/inst
+GPU[2].SA[5].CU[1]	simd_inst_count	0.0	count
+GPU[2].SA[5].CU[1]	simd_CPI	inf	cycles/inst
+GPU[2].SA[5].CU[2]	cu_inst_count	0.0	count
+GPU[2].SA[5].CU[2]	cu_CPI	inf	cycles/inst
+GPU[2].SA[5].CU[2]	simd_inst_count	0.0	count
+GPU[2].SA[5].CU[2]	simd_CPI	inf	cycles/inst
+GPU[2].SA[5].CU[3]	cu_inst_count	0.0	count
+GPU[2].SA[5].CU[3]	cu_CPI	inf	cycles/inst
+GPU[2].SA[5].CU[3]	simd_inst_count	0.0	count
+GPU[2].SA[5].CU[3]	simd_CPI	inf	cycles/inst
+GPU[2].SA[6].CU[0]	cu_inst_count	0.0	count
+GPU[2].SA[6].CU[0]	cu_CPI	inf	cycles/inst
+GPU[2].SA[6].CU[0]	simd_inst_count	0.0	count
+GPU[2].SA[6].CU[0]	simd_CPI	inf	cycles/inst
+GPU[2].SA[6].CU[1]	cu_inst_count	0.0	count
+GPU[2].SA[6].CU[1]	cu_CPI	inf	cycles/inst
+GPU[2].SA[6].CU[1]	simd_inst_count	0.0	count
+GPU[2].SA[6].CU[1]	simd_CPI	inf	cycles/inst
+GPU[2].SA[6].CU[2]	cu_inst_count	0.0	count
+GPU[2].SA[6].CU[2]	cu_CPI	inf	cycles/inst
+GPU[2].SA[6].CU[2]	simd_inst_count	0.0	count
+GPU[2].SA[6].CU[2]	simd_CPI	inf	cycles/inst
+GPU[2].SA[6].CU[3]	cu_inst_count	0.0	count
+GPU[2].SA[6].CU[3]	cu_CPI	inf	cycles/inst
+GPU[2].SA[6].CU[3]	simd_inst_count	0.0	count
+GPU[2].SA[6].CU[3]	simd_CPI	inf	cycles/inst
+GPU[2].SA[7].CU[0]	cu_inst_count	0.0	count
+GPU[2].SA[7].CU[0]	cu_CPI	inf	cycles/inst
+GPU[2].SA[7].CU[0]	simd_inst_count	0.0	count
+GPU[2].SA[7].CU[0]	simd_CPI	inf	cycles/inst
+GPU[2].SA[7].CU[1]	cu_inst_count	0.0	count
+GPU[2].SA[7].CU[1]	cu_CPI	inf	cycles/inst
+GPU[2].SA[7].CU[1]	simd_inst_count	0.0	count
+GPU[2].SA[7].CU[1]	simd_CPI	inf	cycles/inst
+GPU[2].SA[7].CU[2]	cu_inst_count	0.0	count
+GPU[2].SA[7].CU[2]	cu_CPI	inf	cycles/inst
+GPU[2].SA[7].CU[2]	simd_inst_count	0.0	count
+GPU[2].SA[7].CU[2]	simd_CPI	inf	cycles/inst
+GPU[2].SA[7].CU[3]	cu_inst_count	0.0	count
+GPU[2].SA[7].CU[3]	cu_CPI	inf	cycles/inst
+GPU[2].SA[7].CU[3]	simd_inst_count	0.0	count
+GPU[2].SA[7].CU[3]	simd_CPI	inf	cycles/inst
+GPU[2].SA[8].CU[0]	cu_inst_count	0.0	count
+GPU[2].SA[8].CU[0]	cu_CPI	inf	cycles/inst
+GPU[2].SA[8].CU[0]	simd_inst_count	0.0	count
+GPU[2].SA[8].CU[0]	simd_CPI	inf	cycles/inst
+GPU[2].SA[8].CU[1]	cu_inst_count	0.0	count
+GPU[2].SA[8].CU[1]	cu_CPI	inf	cycles/inst
+GPU[2].SA[8].CU[1]	simd_inst_count	0.0	count
+GPU[2].SA[8].CU[1]	simd_CPI	inf	cycles/inst
+GPU[2].SA[8].CU[2]	cu_inst_count	0.0	count
+GPU[2].SA[8].CU[2]	cu_CPI	inf	cycles/inst
+GPU[2].SA[8].CU[2]	simd_inst_count	0.0	count
+GPU[2].SA[8].CU[2]	simd_CPI	inf	cycles/inst
+GPU[2].SA[8].CU[3]	cu_inst_count	0.0	count
+GPU[2].SA[8].CU[3]	cu_CPI	inf	cycles/inst
+GPU[2].SA[8].CU[3]	simd_inst_count	0.0	count
+GPU[2].SA[8].CU[3]	simd_CPI	inf	cycles/inst
+GPU[2].SA[9].CU[0]	cu_inst_count	0.0	count
+GPU[2].SA[9].CU[0]	cu_CPI	inf	cycles/inst
+GPU[2].SA[9].CU[0]	simd_inst_count	0.0	count
+GPU[2].SA[9].CU[0]	simd_CPI	inf	cycles/inst
+GPU[2].SA[9].CU[1]	cu_inst_count	0.0	count
+GPU[2].SA[9].CU[1]	cu_CPI	inf	cycles/inst
+GPU[2].SA[9].CU[1]	simd_inst_count	0.0	count
+GPU[2].SA[9].CU[1]	simd_CPI	inf	cycles/inst
+GPU[2].SA[9].CU[2]	cu_inst_count	0.0	count
+GPU[2].SA[9].CU[2]	cu_CPI	inf	cycles/inst
+GPU[2].SA[9].CU[2]	simd_inst_count	0.0	count
+GPU[2].SA[9].CU[2]	simd_CPI	inf	cycles/inst
+GPU[2].SA[9].CU[3]	cu_inst_count	0.0	count
+GPU[2].SA[9].CU[3]	cu_CPI	inf	cycles/inst
+GPU[2].SA[9].CU[3]	simd_inst_count	0.0	count
+GPU[2].SA[9].CU[3]	simd_CPI	inf	cycles/inst
+GPU[2].SA[10].CU[0]	cu_inst_count	0.0	count
+GPU[2].SA[10].CU[0]	cu_CPI	inf	cycles/inst
+GPU[2].SA[10].CU[0]	simd_inst_count	0.0	count
+GPU[2].SA[10].CU[0]	simd_CPI	inf	cycles/inst
+GPU[2].SA[10].CU[1]	cu_inst_count	0.0	count
+GPU[2].SA[10].CU[1]	cu_CPI	inf	cycles/inst
+GPU[2].SA[10].CU[1]	simd_inst_count	0.0	count
+GPU[2].SA[10].CU[1]	simd_CPI	inf	cycles/inst
+GPU[2].SA[10].CU[2]	cu_inst_count	0.0	count
+GPU[2].SA[10].CU[2]	cu_CPI	inf	cycles/inst
+GPU[2].SA[10].CU[2]	simd_inst_count	0.0	count
+GPU[2].SA[10].CU[2]	simd_CPI	inf	cycles/inst
+GPU[2].SA[10].CU[3]	cu_inst_count	0.0	count
+GPU[2].SA[10].CU[3]	cu_CPI	inf	cycles/inst
+GPU[2].SA[10].CU[3]	simd_inst_count	0.0	count
+GPU[2].SA[10].CU[3]	simd_CPI	inf	cycles/inst
+GPU[2].SA[11].CU[0]	cu_inst_count	0.0	count
+GPU[2].SA[11].CU[0]	cu_CPI	inf	cycles/inst
+GPU[2].SA[11].CU[0]	simd_inst_count	0.0	count
+GPU[2].SA[11].CU[0]	simd_CPI	inf	cycles/inst
+GPU[2].SA[11].CU[1]	cu_inst_count	0.0	count
+GPU[2].SA[11].CU[1]	cu_CPI	inf	cycles/inst
+GPU[2].SA[11].CU[1]	simd_inst_count	0.0	count
+GPU[2].SA[11].CU[1]	simd_CPI	inf	cycles/inst
+GPU[2].SA[11].CU[2]	cu_inst_count	0.0	count
+GPU[2].SA[11].CU[2]	cu_CPI	inf	cycles/inst
+GPU[2].SA[11].CU[2]	simd_inst_count	0.0	count
+GPU[2].SA[11].CU[2]	simd_CPI	inf	cycles/inst
+GPU[2].SA[11].CU[3]	cu_inst_count	0.0	count
+GPU[2].SA[11].CU[3]	cu_CPI	inf	cycles/inst
+GPU[2].SA[11].CU[3]	simd_inst_count	0.0	count
+GPU[2].SA[11].CU[3]	simd_CPI	inf	cycles/inst
+GPU[2].SA[12].CU[0]	cu_inst_count	0.0	count
+GPU[2].SA[12].CU[0]	cu_CPI	inf	cycles/inst
+GPU[2].SA[12].CU[0]	simd_inst_count	0.0	count
+GPU[2].SA[12].CU[0]	simd_CPI	inf	cycles/inst
+GPU[2].SA[12].CU[1]	cu_inst_count	0.0	count
+GPU[2].SA[12].CU[1]	cu_CPI	inf	cycles/inst
+GPU[2].SA[12].CU[1]	simd_inst_count	0.0	count
+GPU[2].SA[12].CU[1]	simd_CPI	inf	cycles/inst
+GPU[2].SA[12].CU[2]	cu_inst_count	0.0	count
+GPU[2].SA[12].CU[2]	cu_CPI	inf	cycles/inst
+GPU[2].SA[12].CU[2]	simd_inst_count	0.0	count
+GPU[2].SA[12].CU[2]	simd_CPI	inf	cycles/inst
+GPU[2].SA[12].CU[3]	cu_inst_count	0.0	count
+GPU[2].SA[12].CU[3]	cu_CPI	inf	cycles/inst
+GPU[2].SA[12].CU[3]	simd_inst_count	0.0	count
+GPU[2].SA[12].CU[3]	simd_CPI	inf	cycles/inst
+GPU[2].SA[13].CU[0]	cu_inst_count	0.0	count
+GPU[2].SA[13].CU[0]	cu_CPI	inf	cycles/inst
+GPU[2].SA[13].CU[0]	simd_inst_count	0.0	count
+GPU[2].SA[13].CU[0]	simd_CPI	inf	cycles/inst
+GPU[2].SA[13].CU[1]	cu_inst_count	0.0	count
+GPU[2].SA[13].CU[1]	cu_CPI	inf	cycles/inst
+GPU[2].SA[13].CU[1]	simd_inst_count	0.0	count
+GPU[2].SA[13].CU[1]	simd_CPI	inf	cycles/inst
+GPU[2].SA[13].CU[2]	cu_inst_count	0.0	count
+GPU[2].SA[13].CU[2]	cu_CPI	inf	cycles/inst
+GPU[2].SA[13].CU[2]	simd_inst_count	0.0	count
+GPU[2].SA[13].CU[2]	simd_CPI	inf	cycles/inst
+GPU[2].SA[13].CU[3]	cu_inst_count	0.0	count
+GPU[2].SA[13].CU[3]	cu_CPI	inf	cycles/inst
+GPU[2].SA[13].CU[3]	simd_inst_count	0.0	count
+GPU[2].SA[13].CU[3]	simd_CPI	inf	cycles/inst
+GPU[2].SA[14].CU[0]	cu_inst_count	0.0	count
+GPU[2].SA[14].CU[0]	cu_CPI	inf	cycles/inst
+GPU[2].SA[14].CU[0]	simd_inst_count	0.0	count
+GPU[2].SA[14].CU[0]	simd_CPI	inf	cycles/inst
+GPU[2].SA[14].CU[1]	cu_inst_count	0.0	count
+GPU[2].SA[14].CU[1]	cu_CPI	inf	cycles/inst
+GPU[2].SA[14].CU[1]	simd_inst_count	0.0	count
+GPU[2].SA[14].CU[1]	simd_CPI	inf	cycles/inst
+GPU[2].SA[14].CU[2]	cu_inst_count	0.0	count
+GPU[2].SA[14].CU[2]	cu_CPI	inf	cycles/inst
+GPU[2].SA[14].CU[2]	simd_inst_count	0.0	count
+GPU[2].SA[14].CU[2]	simd_CPI	inf	cycles/inst
+GPU[2].SA[14].CU[3]	cu_inst_count	0.0	count
+GPU[2].SA[14].CU[3]	cu_CPI	inf	cycles/inst
+GPU[2].SA[14].CU[3]	simd_inst_count	0.0	count
+GPU[2].SA[14].CU[3]	simd_CPI	inf	cycles/inst
+GPU[2].SA[15].CU[0]	cu_inst_count	0.0	count
+GPU[2].SA[15].CU[0]	cu_CPI	inf	cycles/inst
+GPU[2].SA[15].CU[0]	simd_inst_count	0.0	count
+GPU[2].SA[15].CU[0]	simd_CPI	inf	cycles/inst
+GPU[2].SA[15].CU[1]	cu_inst_count	0.0	count
+GPU[2].SA[15].CU[1]	cu_CPI	inf	cycles/inst
+GPU[2].SA[15].CU[1]	simd_inst_count	0.0	count
+GPU[2].SA[15].CU[1]	simd_CPI	inf	cycles/inst
+GPU[2].SA[15].CU[2]	cu_inst_count	0.0	count
+GPU[2].SA[15].CU[2]	cu_CPI	inf	cycles/inst
+GPU[2].SA[15].CU[2]	simd_inst_count	0.0	count
+GPU[2].SA[15].CU[2]	simd_CPI	inf	cycles/inst
+GPU[2].SA[15].CU[3]	cu_inst_count	0.0	count
+GPU[2].SA[15].CU[3]	cu_CPI	inf	cycles/inst
+GPU[2].SA[15].CU[3]	simd_inst_count	0.0	count
+GPU[2].SA[15].CU[3]	simd_CPI	inf	cycles/inst
+GPU[3].SA[0].CU[0]	cu_inst_count	584.0	count
+GPU[3].SA[0].CU[0]	cu_CPI	1103.5291095890411	cycles/inst
+GPU[3].SA[0].CU[0]	simd_inst_count	420.0	count
+GPU[3].SA[0].CU[0]	simd_CPI	1534.4309523809525	cycles/inst
+GPU[3].SA[0].CU[1]	cu_inst_count	584.0	count
+GPU[3].SA[0].CU[1]	cu_CPI	1103.5291095890411	cycles/inst
+GPU[3].SA[0].CU[1]	simd_inst_count	420.0	count
+GPU[3].SA[0].CU[1]	simd_CPI	1534.4309523809525	cycles/inst
+GPU[3].SA[0].CU[2]	cu_inst_count	584.0	count
+GPU[3].SA[0].CU[2]	cu_CPI	1103.5291095890411	cycles/inst
+GPU[3].SA[0].CU[2]	simd_inst_count	420.0	count
+GPU[3].SA[0].CU[2]	simd_CPI	1534.4309523809525	cycles/inst
+GPU[3].SA[0].CU[3]	cu_inst_count	584.0	count
+GPU[3].SA[0].CU[3]	cu_CPI	1103.5291095890411	cycles/inst
+GPU[3].SA[0].CU[3]	simd_inst_count	420.0	count
+GPU[3].SA[0].CU[3]	simd_CPI	1534.4309523809525	cycles/inst
+GPU[3].SA[1].CU[0]	cu_inst_count	0.0	count
+GPU[3].SA[1].CU[0]	cu_CPI	inf	cycles/inst
+GPU[3].SA[1].CU[0]	simd_inst_count	0.0	count
+GPU[3].SA[1].CU[0]	simd_CPI	inf	cycles/inst
+GPU[3].SA[1].CU[1]	cu_inst_count	0.0	count
+GPU[3].SA[1].CU[1]	cu_CPI	inf	cycles/inst
+GPU[3].SA[1].CU[1]	simd_inst_count	0.0	count
+GPU[3].SA[1].CU[1]	simd_CPI	inf	cycles/inst
+GPU[3].SA[1].CU[2]	cu_inst_count	0.0	count
+GPU[3].SA[1].CU[2]	cu_CPI	inf	cycles/inst
+GPU[3].SA[1].CU[2]	simd_inst_count	0.0	count
+GPU[3].SA[1].CU[2]	simd_CPI	inf	cycles/inst
+GPU[3].SA[1].CU[3]	cu_inst_count	0.0	count
+GPU[3].SA[1].CU[3]	cu_CPI	inf	cycles/inst
+GPU[3].SA[1].CU[3]	simd_inst_count	0.0	count
+GPU[3].SA[1].CU[3]	simd_CPI	inf	cycles/inst
+GPU[3].SA[2].CU[0]	cu_inst_count	0.0	count
+GPU[3].SA[2].CU[0]	cu_CPI	inf	cycles/inst
+GPU[3].SA[2].CU[0]	simd_inst_count	0.0	count
+GPU[3].SA[2].CU[0]	simd_CPI	inf	cycles/inst
+GPU[3].SA[2].CU[1]	cu_inst_count	0.0	count
+GPU[3].SA[2].CU[1]	cu_CPI	inf	cycles/inst
+GPU[3].SA[2].CU[1]	simd_inst_count	0.0	count
+GPU[3].SA[2].CU[1]	simd_CPI	inf	cycles/inst
+GPU[3].SA[2].CU[2]	cu_inst_count	0.0	count
+GPU[3].SA[2].CU[2]	cu_CPI	inf	cycles/inst
+GPU[3].SA[2].CU[2]	simd_inst_count	0.0	count
+GPU[3].SA[2].CU[2]	simd_CPI	inf	cycles/inst
+GPU[3].SA[2].CU[3]	cu_inst_count	0.0	count
+GPU[3].SA[2].CU[3]	cu_CPI	inf	cycles/inst
+GPU[3].SA[2].CU[3]	simd_inst_count	0.0	count
+GPU[3].SA[2].CU[3]	simd_CPI	inf	cycles/inst
+GPU[3].SA[3].CU[0]	cu_inst_count	0.0	count
+GPU[3].SA[3].CU[0]	cu_CPI	inf	cycles/inst
+GPU[3].SA[3].CU[0]	simd_inst_count	0.0	count
+GPU[3].SA[3].CU[0]	simd_CPI	inf	cycles/inst
+GPU[3].SA[3].CU[1]	cu_inst_count	0.0	count
+GPU[3].SA[3].CU[1]	cu_CPI	inf	cycles/inst
+GPU[3].SA[3].CU[1]	simd_inst_count	0.0	count
+GPU[3].SA[3].CU[1]	simd_CPI	inf	cycles/inst
+GPU[3].SA[3].CU[2]	cu_inst_count	0.0	count
+GPU[3].SA[3].CU[2]	cu_CPI	inf	cycles/inst
+GPU[3].SA[3].CU[2]	simd_inst_count	0.0	count
+GPU[3].SA[3].CU[2]	simd_CPI	inf	cycles/inst
+GPU[3].SA[3].CU[3]	cu_inst_count	0.0	count
+GPU[3].SA[3].CU[3]	cu_CPI	inf	cycles/inst
+GPU[3].SA[3].CU[3]	simd_inst_count	0.0	count
+GPU[3].SA[3].CU[3]	simd_CPI	inf	cycles/inst
+GPU[3].SA[4].CU[0]	cu_inst_count	0.0	count
+GPU[3].SA[4].CU[0]	cu_CPI	inf	cycles/inst
+GPU[3].SA[4].CU[0]	simd_inst_count	0.0	count
+GPU[3].SA[4].CU[0]	simd_CPI	inf	cycles/inst
+GPU[3].SA[4].CU[1]	cu_inst_count	0.0	count
+GPU[3].SA[4].CU[1]	cu_CPI	inf	cycles/inst
+GPU[3].SA[4].CU[1]	simd_inst_count	0.0	count
+GPU[3].SA[4].CU[1]	simd_CPI	inf	cycles/inst
+GPU[3].SA[4].CU[2]	cu_inst_count	0.0	count
+GPU[3].SA[4].CU[2]	cu_CPI	inf	cycles/inst
+GPU[3].SA[4].CU[2]	simd_inst_count	0.0	count
+GPU[3].SA[4].CU[2]	simd_CPI	inf	cycles/inst
+GPU[3].SA[4].CU[3]	cu_inst_count	0.0	count
+GPU[3].SA[4].CU[3]	cu_CPI	inf	cycles/inst
+GPU[3].SA[4].CU[3]	simd_inst_count	0.0	count
+GPU[3].SA[4].CU[3]	simd_CPI	inf	cycles/inst
+GPU[3].SA[5].CU[0]	cu_inst_count	0.0	count
+GPU[3].SA[5].CU[0]	cu_CPI	inf	cycles/inst
+GPU[3].SA[5].CU[0]	simd_inst_count	0.0	count
+GPU[3].SA[5].CU[0]	simd_CPI	inf	cycles/inst
+GPU[3].SA[5].CU[1]	cu_inst_count	0.0	count
+GPU[3].SA[5].CU[1]	cu_CPI	inf	cycles/inst
+GPU[3].SA[5].CU[1]	simd_inst_count	0.0	count
+GPU[3].SA[5].CU[1]	simd_CPI	inf	cycles/inst
+GPU[3].SA[5].CU[2]	cu_inst_count	0.0	count
+GPU[3].SA[5].CU[2]	cu_CPI	inf	cycles/inst
+GPU[3].SA[5].CU[2]	simd_inst_count	0.0	count
+GPU[3].SA[5].CU[2]	simd_CPI	inf	cycles/inst
+GPU[3].SA[5].CU[3]	cu_inst_count	0.0	count
+GPU[3].SA[5].CU[3]	cu_CPI	inf	cycles/inst
+GPU[3].SA[5].CU[3]	simd_inst_count	0.0	count
+GPU[3].SA[5].CU[3]	simd_CPI	inf	cycles/inst
+GPU[3].SA[6].CU[0]	cu_inst_count	0.0	count
+GPU[3].SA[6].CU[0]	cu_CPI	inf	cycles/inst
+GPU[3].SA[6].CU[0]	simd_inst_count	0.0	count
+GPU[3].SA[6].CU[0]	simd_CPI	inf	cycles/inst
+GPU[3].SA[6].CU[1]	cu_inst_count	0.0	count
+GPU[3].SA[6].CU[1]	cu_CPI	inf	cycles/inst
+GPU[3].SA[6].CU[1]	simd_inst_count	0.0	count
+GPU[3].SA[6].CU[1]	simd_CPI	inf	cycles/inst
+GPU[3].SA[6].CU[2]	cu_inst_count	0.0	count
+GPU[3].SA[6].CU[2]	cu_CPI	inf	cycles/inst
+GPU[3].SA[6].CU[2]	simd_inst_count	0.0	count
+GPU[3].SA[6].CU[2]	simd_CPI	inf	cycles/inst
+GPU[3].SA[6].CU[3]	cu_inst_count	0.0	count
+GPU[3].SA[6].CU[3]	cu_CPI	inf	cycles/inst
+GPU[3].SA[6].CU[3]	simd_inst_count	0.0	count
+GPU[3].SA[6].CU[3]	simd_CPI	inf	cycles/inst
+GPU[3].SA[7].CU[0]	cu_inst_count	0.0	count
+GPU[3].SA[7].CU[0]	cu_CPI	inf	cycles/inst
+GPU[3].SA[7].CU[0]	simd_inst_count	0.0	count
+GPU[3].SA[7].CU[0]	simd_CPI	inf	cycles/inst
+GPU[3].SA[7].CU[1]	cu_inst_count	0.0	count
+GPU[3].SA[7].CU[1]	cu_CPI	inf	cycles/inst
+GPU[3].SA[7].CU[1]	simd_inst_count	0.0	count
+GPU[3].SA[7].CU[1]	simd_CPI	inf	cycles/inst
+GPU[3].SA[7].CU[2]	cu_inst_count	0.0	count
+GPU[3].SA[7].CU[2]	cu_CPI	inf	cycles/inst
+GPU[3].SA[7].CU[2]	simd_inst_count	0.0	count
+GPU[3].SA[7].CU[2]	simd_CPI	inf	cycles/inst
+GPU[3].SA[7].CU[3]	cu_inst_count	0.0	count
+GPU[3].SA[7].CU[3]	cu_CPI	inf	cycles/inst
+GPU[3].SA[7].CU[3]	simd_inst_count	0.0	count
+GPU[3].SA[7].CU[3]	simd_CPI	inf	cycles/inst
+GPU[3].SA[8].CU[0]	cu_inst_count	0.0	count
+GPU[3].SA[8].CU[0]	cu_CPI	inf	cycles/inst
+GPU[3].SA[8].CU[0]	simd_inst_count	0.0	count
+GPU[3].SA[8].CU[0]	simd_CPI	inf	cycles/inst
+GPU[3].SA[8].CU[1]	cu_inst_count	0.0	count
+GPU[3].SA[8].CU[1]	cu_CPI	inf	cycles/inst
+GPU[3].SA[8].CU[1]	simd_inst_count	0.0	count
+GPU[3].SA[8].CU[1]	simd_CPI	inf	cycles/inst
+GPU[3].SA[8].CU[2]	cu_inst_count	0.0	count
+GPU[3].SA[8].CU[2]	cu_CPI	inf	cycles/inst
+GPU[3].SA[8].CU[2]	simd_inst_count	0.0	count
+GPU[3].SA[8].CU[2]	simd_CPI	inf	cycles/inst
+GPU[3].SA[8].CU[3]	cu_inst_count	0.0	count
+GPU[3].SA[8].CU[3]	cu_CPI	inf	cycles/inst
+GPU[3].SA[8].CU[3]	simd_inst_count	0.0	count
+GPU[3].SA[8].CU[3]	simd_CPI	inf	cycles/inst
+GPU[3].SA[9].CU[0]	cu_inst_count	0.0	count
+GPU[3].SA[9].CU[0]	cu_CPI	inf	cycles/inst
+GPU[3].SA[9].CU[0]	simd_inst_count	0.0	count
+GPU[3].SA[9].CU[0]	simd_CPI	inf	cycles/inst
+GPU[3].SA[9].CU[1]	cu_inst_count	0.0	count
+GPU[3].SA[9].CU[1]	cu_CPI	inf	cycles/inst
+GPU[3].SA[9].CU[1]	simd_inst_count	0.0	count
+GPU[3].SA[9].CU[1]	simd_CPI	inf	cycles/inst
+GPU[3].SA[9].CU[2]	cu_inst_count	0.0	count
+GPU[3].SA[9].CU[2]	cu_CPI	inf	cycles/inst
+GPU[3].SA[9].CU[2]	simd_inst_count	0.0	count
+GPU[3].SA[9].CU[2]	simd_CPI	inf	cycles/inst
+GPU[3].SA[9].CU[3]	cu_inst_count	0.0	count
+GPU[3].SA[9].CU[3]	cu_CPI	inf	cycles/inst
+GPU[3].SA[9].CU[3]	simd_inst_count	0.0	count
+GPU[3].SA[9].CU[3]	simd_CPI	inf	cycles/inst
+GPU[3].SA[10].CU[0]	cu_inst_count	0.0	count
+GPU[3].SA[10].CU[0]	cu_CPI	inf	cycles/inst
+GPU[3].SA[10].CU[0]	simd_inst_count	0.0	count
+GPU[3].SA[10].CU[0]	simd_CPI	inf	cycles/inst
+GPU[3].SA[10].CU[1]	cu_inst_count	0.0	count
+GPU[3].SA[10].CU[1]	cu_CPI	inf	cycles/inst
+GPU[3].SA[10].CU[1]	simd_inst_count	0.0	count
+GPU[3].SA[10].CU[1]	simd_CPI	inf	cycles/inst
+GPU[3].SA[10].CU[2]	cu_inst_count	0.0	count
+GPU[3].SA[10].CU[2]	cu_CPI	inf	cycles/inst
+GPU[3].SA[10].CU[2]	simd_inst_count	0.0	count
+GPU[3].SA[10].CU[2]	simd_CPI	inf	cycles/inst
+GPU[3].SA[10].CU[3]	cu_inst_count	0.0	count
+GPU[3].SA[10].CU[3]	cu_CPI	inf	cycles/inst
+GPU[3].SA[10].CU[3]	simd_inst_count	0.0	count
+GPU[3].SA[10].CU[3]	simd_CPI	inf	cycles/inst
+GPU[3].SA[11].CU[0]	cu_inst_count	0.0	count
+GPU[3].SA[11].CU[0]	cu_CPI	inf	cycles/inst
+GPU[3].SA[11].CU[0]	simd_inst_count	0.0	count
+GPU[3].SA[11].CU[0]	simd_CPI	inf	cycles/inst
+GPU[3].SA[11].CU[1]	cu_inst_count	0.0	count
+GPU[3].SA[11].CU[1]	cu_CPI	inf	cycles/inst
+GPU[3].SA[11].CU[1]	simd_inst_count	0.0	count
+GPU[3].SA[11].CU[1]	simd_CPI	inf	cycles/inst
+GPU[3].SA[11].CU[2]	cu_inst_count	0.0	count
+GPU[3].SA[11].CU[2]	cu_CPI	inf	cycles/inst
+GPU[3].SA[11].CU[2]	simd_inst_count	0.0	count
+GPU[3].SA[11].CU[2]	simd_CPI	inf	cycles/inst
+GPU[3].SA[11].CU[3]	cu_inst_count	0.0	count
+GPU[3].SA[11].CU[3]	cu_CPI	inf	cycles/inst
+GPU[3].SA[11].CU[3]	simd_inst_count	0.0	count
+GPU[3].SA[11].CU[3]	simd_CPI	inf	cycles/inst
+GPU[3].SA[12].CU[0]	cu_inst_count	0.0	count
+GPU[3].SA[12].CU[0]	cu_CPI	inf	cycles/inst
+GPU[3].SA[12].CU[0]	simd_inst_count	0.0	count
+GPU[3].SA[12].CU[0]	simd_CPI	inf	cycles/inst
+GPU[3].SA[12].CU[1]	cu_inst_count	0.0	count
+GPU[3].SA[12].CU[1]	cu_CPI	inf	cycles/inst
+GPU[3].SA[12].CU[1]	simd_inst_count	0.0	count
+GPU[3].SA[12].CU[1]	simd_CPI	inf	cycles/inst
+GPU[3].SA[12].CU[2]	cu_inst_count	0.0	count
+GPU[3].SA[12].CU[2]	cu_CPI	inf	cycles/inst
+GPU[3].SA[12].CU[2]	simd_inst_count	0.0	count
+GPU[3].SA[12].CU[2]	simd_CPI	inf	cycles/inst
+GPU[3].SA[12].CU[3]	cu_inst_count	0.0	count
+GPU[3].SA[12].CU[3]	cu_CPI	inf	cycles/inst
+GPU[3].SA[12].CU[3]	simd_inst_count	0.0	count
+GPU[3].SA[12].CU[3]	simd_CPI	inf	cycles/inst
+GPU[3].SA[13].CU[0]	cu_inst_count	0.0	count
+GPU[3].SA[13].CU[0]	cu_CPI	inf	cycles/inst
+GPU[3].SA[13].CU[0]	simd_inst_count	0.0	count
+GPU[3].SA[13].CU[0]	simd_CPI	inf	cycles/inst
+GPU[3].SA[13].CU[1]	cu_inst_count	0.0	count
+GPU[3].SA[13].CU[1]	cu_CPI	inf	cycles/inst
+GPU[3].SA[13].CU[1]	simd_inst_count	0.0	count
+GPU[3].SA[13].CU[1]	simd_CPI	inf	cycles/inst
+GPU[3].SA[13].CU[2]	cu_inst_count	0.0	count
+GPU[3].SA[13].CU[2]	cu_CPI	inf	cycles/inst
+GPU[3].SA[13].CU[2]	simd_inst_count	0.0	count
+GPU[3].SA[13].CU[2]	simd_CPI	inf	cycles/inst
+GPU[3].SA[13].CU[3]	cu_inst_count	0.0	count
+GPU[3].SA[13].CU[3]	cu_CPI	inf	cycles/inst
+GPU[3].SA[13].CU[3]	simd_inst_count	0.0	count
+GPU[3].SA[13].CU[3]	simd_CPI	inf	cycles/inst
+GPU[3].SA[14].CU[0]	cu_inst_count	0.0	count
+GPU[3].SA[14].CU[0]	cu_CPI	inf	cycles/inst
+GPU[3].SA[14].CU[0]	simd_inst_count	0.0	count
+GPU[3].SA[14].CU[0]	simd_CPI	inf	cycles/inst
+GPU[3].SA[14].CU[1]	cu_inst_count	0.0	count
+GPU[3].SA[14].CU[1]	cu_CPI	inf	cycles/inst
+GPU[3].SA[14].CU[1]	simd_inst_count	0.0	count
+GPU[3].SA[14].CU[1]	simd_CPI	inf	cycles/inst
+GPU[3].SA[14].CU[2]	cu_inst_count	0.0	count
+GPU[3].SA[14].CU[2]	cu_CPI	inf	cycles/inst
+GPU[3].SA[14].CU[2]	simd_inst_count	0.0	count
+GPU[3].SA[14].CU[2]	simd_CPI	inf	cycles/inst
+GPU[3].SA[14].CU[3]	cu_inst_count	0.0	count
+GPU[3].SA[14].CU[3]	cu_CPI	inf	cycles/inst
+GPU[3].SA[14].CU[3]	simd_inst_count	0.0	count
+GPU[3].SA[14].CU[3]	simd_CPI	inf	cycles/inst
+GPU[3].SA[15].CU[0]	cu_inst_count	0.0	count
+GPU[3].SA[15].CU[0]	cu_CPI	inf	cycles/inst
+GPU[3].SA[15].CU[0]	simd_inst_count	0.0	count
+GPU[3].SA[15].CU[0]	simd_CPI	inf	cycles/inst
+GPU[3].SA[15].CU[1]	cu_inst_count	0.0	count
+GPU[3].SA[15].CU[1]	cu_CPI	inf	cycles/inst
+GPU[3].SA[15].CU[1]	simd_inst_count	0.0	count
+GPU[3].SA[15].CU[1]	simd_CPI	inf	cycles/inst
+GPU[3].SA[15].CU[2]	cu_inst_count	0.0	count
+GPU[3].SA[15].CU[2]	cu_CPI	inf	cycles/inst
+GPU[3].SA[15].CU[2]	simd_inst_count	0.0	count
+GPU[3].SA[15].CU[2]	simd_CPI	inf	cycles/inst
+GPU[3].SA[15].CU[3]	cu_inst_count	0.0	count
+GPU[3].SA[15].CU[3]	cu_CPI	inf	cycles/inst
+GPU[3].SA[15].CU[3]	simd_inst_count	0.0	count
+GPU[3].SA[15].CU[3]	simd_CPI	inf	cycles/inst
+GPU[4].SA[0].CU[0]	cu_inst_count	584.0	count
+GPU[4].SA[0].CU[0]	cu_CPI	1103.5291095890411	cycles/inst
+GPU[4].SA[0].CU[0]	simd_inst_count	420.0	count
+GPU[4].SA[0].CU[0]	simd_CPI	1534.4309523809525	cycles/inst
+GPU[4].SA[0].CU[1]	cu_inst_count	584.0	count
+GPU[4].SA[0].CU[1]	cu_CPI	1103.5291095890411	cycles/inst
+GPU[4].SA[0].CU[1]	simd_inst_count	420.0	count
+GPU[4].SA[0].CU[1]	simd_CPI	1534.4309523809525	cycles/inst
+GPU[4].SA[0].CU[2]	cu_inst_count	584.0	count
+GPU[4].SA[0].CU[2]	cu_CPI	1103.5291095890411	cycles/inst
+GPU[4].SA[0].CU[2]	simd_inst_count	420.0	count
+GPU[4].SA[0].CU[2]	simd_CPI	1534.4309523809525	cycles/inst
+GPU[4].SA[0].CU[3]	cu_inst_count	584.0	count
+GPU[4].SA[0].CU[3]	cu_CPI	1103.5291095890411	cycles/inst
+GPU[4].SA[0].CU[3]	simd_inst_count	420.0	count
+GPU[4].SA[0].CU[3]	simd_CPI	1534.4309523809525	cycles/inst
+GPU[4].SA[1].CU[0]	cu_inst_count	0.0	count
+GPU[4].SA[1].CU[0]	cu_CPI	inf	cycles/inst
+GPU[4].SA[1].CU[0]	simd_inst_count	0.0	count
+GPU[4].SA[1].CU[0]	simd_CPI	inf	cycles/inst
+GPU[4].SA[1].CU[1]	cu_inst_count	0.0	count
+GPU[4].SA[1].CU[1]	cu_CPI	inf	cycles/inst
+GPU[4].SA[1].CU[1]	simd_inst_count	0.0	count
+GPU[4].SA[1].CU[1]	simd_CPI	inf	cycles/inst
+GPU[4].SA[1].CU[2]	cu_inst_count	0.0	count
+GPU[4].SA[1].CU[2]	cu_CPI	inf	cycles/inst
+GPU[4].SA[1].CU[2]	simd_inst_count	0.0	count
+GPU[4].SA[1].CU[2]	simd_CPI	inf	cycles/inst
+GPU[4].SA[1].CU[3]	cu_inst_count	0.0	count
+GPU[4].SA[1].CU[3]	cu_CPI	inf	cycles/inst
+GPU[4].SA[1].CU[3]	simd_inst_count	0.0	count
+GPU[4].SA[1].CU[3]	simd_CPI	inf	cycles/inst
+GPU[4].SA[2].CU[0]	cu_inst_count	0.0	count
+GPU[4].SA[2].CU[0]	cu_CPI	inf	cycles/inst
+GPU[4].SA[2].CU[0]	simd_inst_count	0.0	count
+GPU[4].SA[2].CU[0]	simd_CPI	inf	cycles/inst
+GPU[4].SA[2].CU[1]	cu_inst_count	0.0	count
+GPU[4].SA[2].CU[1]	cu_CPI	inf	cycles/inst
+GPU[4].SA[2].CU[1]	simd_inst_count	0.0	count
+GPU[4].SA[2].CU[1]	simd_CPI	inf	cycles/inst
+GPU[4].SA[2].CU[2]	cu_inst_count	0.0	count
+GPU[4].SA[2].CU[2]	cu_CPI	inf	cycles/inst
+GPU[4].SA[2].CU[2]	simd_inst_count	0.0	count
+GPU[4].SA[2].CU[2]	simd_CPI	inf	cycles/inst
+GPU[4].SA[2].CU[3]	cu_inst_count	0.0	count
+GPU[4].SA[2].CU[3]	cu_CPI	inf	cycles/inst
+GPU[4].SA[2].CU[3]	simd_inst_count	0.0	count
+GPU[4].SA[2].CU[3]	simd_CPI	inf	cycles/inst
+GPU[4].SA[3].CU[0]	cu_inst_count	0.0	count
+GPU[4].SA[3].CU[0]	cu_CPI	inf	cycles/inst
+GPU[4].SA[3].CU[0]	simd_inst_count	0.0	count
+GPU[4].SA[3].CU[0]	simd_CPI	inf	cycles/inst
+GPU[4].SA[3].CU[1]	cu_inst_count	0.0	count
+GPU[4].SA[3].CU[1]	cu_CPI	inf	cycles/inst
+GPU[4].SA[3].CU[1]	simd_inst_count	0.0	count
+GPU[4].SA[3].CU[1]	simd_CPI	inf	cycles/inst
+GPU[4].SA[3].CU[2]	cu_inst_count	0.0	count
+GPU[4].SA[3].CU[2]	cu_CPI	inf	cycles/inst
+GPU[4].SA[3].CU[2]	simd_inst_count	0.0	count
+GPU[4].SA[3].CU[2]	simd_CPI	inf	cycles/inst
+GPU[4].SA[3].CU[3]	cu_inst_count	0.0	count
+GPU[4].SA[3].CU[3]	cu_CPI	inf	cycles/inst
+GPU[4].SA[3].CU[3]	simd_inst_count	0.0	count
+GPU[4].SA[3].CU[3]	simd_CPI	inf	cycles/inst
+GPU[4].SA[4].CU[0]	cu_inst_count	0.0	count
+GPU[4].SA[4].CU[0]	cu_CPI	inf	cycles/inst
+GPU[4].SA[4].CU[0]	simd_inst_count	0.0	count
+GPU[4].SA[4].CU[0]	simd_CPI	inf	cycles/inst
+GPU[4].SA[4].CU[1]	cu_inst_count	0.0	count
+GPU[4].SA[4].CU[1]	cu_CPI	inf	cycles/inst
+GPU[4].SA[4].CU[1]	simd_inst_count	0.0	count
+GPU[4].SA[4].CU[1]	simd_CPI	inf	cycles/inst
+GPU[4].SA[4].CU[2]	cu_inst_count	0.0	count
+GPU[4].SA[4].CU[2]	cu_CPI	inf	cycles/inst
+GPU[4].SA[4].CU[2]	simd_inst_count	0.0	count
+GPU[4].SA[4].CU[2]	simd_CPI	inf	cycles/inst
+GPU[4].SA[4].CU[3]	cu_inst_count	0.0	count
+GPU[4].SA[4].CU[3]	cu_CPI	inf	cycles/inst
+GPU[4].SA[4].CU[3]	simd_inst_count	0.0	count
+GPU[4].SA[4].CU[3]	simd_CPI	inf	cycles/inst
+GPU[4].SA[5].CU[0]	cu_inst_count	0.0	count
+GPU[4].SA[5].CU[0]	cu_CPI	inf	cycles/inst
+GPU[4].SA[5].CU[0]	simd_inst_count	0.0	count
+GPU[4].SA[5].CU[0]	simd_CPI	inf	cycles/inst
+GPU[4].SA[5].CU[1]	cu_inst_count	0.0	count
+GPU[4].SA[5].CU[1]	cu_CPI	inf	cycles/inst
+GPU[4].SA[5].CU[1]	simd_inst_count	0.0	count
+GPU[4].SA[5].CU[1]	simd_CPI	inf	cycles/inst
+GPU[4].SA[5].CU[2]	cu_inst_count	0.0	count
+GPU[4].SA[5].CU[2]	cu_CPI	inf	cycles/inst
+GPU[4].SA[5].CU[2]	simd_inst_count	0.0	count
+GPU[4].SA[5].CU[2]	simd_CPI	inf	cycles/inst
+GPU[4].SA[5].CU[3]	cu_inst_count	0.0	count
+GPU[4].SA[5].CU[3]	cu_CPI	inf	cycles/inst
+GPU[4].SA[5].CU[3]	simd_inst_count	0.0	count
+GPU[4].SA[5].CU[3]	simd_CPI	inf	cycles/inst
+GPU[4].SA[6].CU[0]	cu_inst_count	0.0	count
+GPU[4].SA[6].CU[0]	cu_CPI	inf	cycles/inst
+GPU[4].SA[6].CU[0]	simd_inst_count	0.0	count
+GPU[4].SA[6].CU[0]	simd_CPI	inf	cycles/inst
+GPU[4].SA[6].CU[1]	cu_inst_count	0.0	count
+GPU[4].SA[6].CU[1]	cu_CPI	inf	cycles/inst
+GPU[4].SA[6].CU[1]	simd_inst_count	0.0	count
+GPU[4].SA[6].CU[1]	simd_CPI	inf	cycles/inst
+GPU[4].SA[6].CU[2]	cu_inst_count	0.0	count
+GPU[4].SA[6].CU[2]	cu_CPI	inf	cycles/inst
+GPU[4].SA[6].CU[2]	simd_inst_count	0.0	count
+GPU[4].SA[6].CU[2]	simd_CPI	inf	cycles/inst
+GPU[4].SA[6].CU[3]	cu_inst_count	0.0	count
+GPU[4].SA[6].CU[3]	cu_CPI	inf	cycles/inst
+GPU[4].SA[6].CU[3]	simd_inst_count	0.0	count
+GPU[4].SA[6].CU[3]	simd_CPI	inf	cycles/inst
+GPU[4].SA[7].CU[0]	cu_inst_count	0.0	count
+GPU[4].SA[7].CU[0]	cu_CPI	inf	cycles/inst
+GPU[4].SA[7].CU[0]	simd_inst_count	0.0	count
+GPU[4].SA[7].CU[0]	simd_CPI	inf	cycles/inst
+GPU[4].SA[7].CU[1]	cu_inst_count	0.0	count
+GPU[4].SA[7].CU[1]	cu_CPI	inf	cycles/inst
+GPU[4].SA[7].CU[1]	simd_inst_count	0.0	count
+GPU[4].SA[7].CU[1]	simd_CPI	inf	cycles/inst
+GPU[4].SA[7].CU[2]	cu_inst_count	0.0	count
+GPU[4].SA[7].CU[2]	cu_CPI	inf	cycles/inst
+GPU[4].SA[7].CU[2]	simd_inst_count	0.0	count
+GPU[4].SA[7].CU[2]	simd_CPI	inf	cycles/inst
+GPU[4].SA[7].CU[3]	cu_inst_count	0.0	count
+GPU[4].SA[7].CU[3]	cu_CPI	inf	cycles/inst
+GPU[4].SA[7].CU[3]	simd_inst_count	0.0	count
+GPU[4].SA[7].CU[3]	simd_CPI	inf	cycles/inst
+GPU[4].SA[8].CU[0]	cu_inst_count	0.0	count
+GPU[4].SA[8].CU[0]	cu_CPI	inf	cycles/inst
+GPU[4].SA[8].CU[0]	simd_inst_count	0.0	count
+GPU[4].SA[8].CU[0]	simd_CPI	inf	cycles/inst
+GPU[4].SA[8].CU[1]	cu_inst_count	0.0	count
+GPU[4].SA[8].CU[1]	cu_CPI	inf	cycles/inst
+GPU[4].SA[8].CU[1]	simd_inst_count	0.0	count
+GPU[4].SA[8].CU[1]	simd_CPI	inf	cycles/inst
+GPU[4].SA[8].CU[2]	cu_inst_count	0.0	count
+GPU[4].SA[8].CU[2]	cu_CPI	inf	cycles/inst
+GPU[4].SA[8].CU[2]	simd_inst_count	0.0	count
+GPU[4].SA[8].CU[2]	simd_CPI	inf	cycles/inst
+GPU[4].SA[8].CU[3]	cu_inst_count	0.0	count
+GPU[4].SA[8].CU[3]	cu_CPI	inf	cycles/inst
+GPU[4].SA[8].CU[3]	simd_inst_count	0.0	count
+GPU[4].SA[8].CU[3]	simd_CPI	inf	cycles/inst
+GPU[4].SA[9].CU[0]	cu_inst_count	0.0	count
+GPU[4].SA[9].CU[0]	cu_CPI	inf	cycles/inst
+GPU[4].SA[9].CU[0]	simd_inst_count	0.0	count
+GPU[4].SA[9].CU[0]	simd_CPI	inf	cycles/inst
+GPU[4].SA[9].CU[1]	cu_inst_count	0.0	count
+GPU[4].SA[9].CU[1]	cu_CPI	inf	cycles/inst
+GPU[4].SA[9].CU[1]	simd_inst_count	0.0	count
+GPU[4].SA[9].CU[1]	simd_CPI	inf	cycles/inst
+GPU[4].SA[9].CU[2]	cu_inst_count	0.0	count
+GPU[4].SA[9].CU[2]	cu_CPI	inf	cycles/inst
+GPU[4].SA[9].CU[2]	simd_inst_count	0.0	count
+GPU[4].SA[9].CU[2]	simd_CPI	inf	cycles/inst
+GPU[4].SA[9].CU[3]	cu_inst_count	0.0	count
+GPU[4].SA[9].CU[3]	cu_CPI	inf	cycles/inst
+GPU[4].SA[9].CU[3]	simd_inst_count	0.0	count
+GPU[4].SA[9].CU[3]	simd_CPI	inf	cycles/inst
+GPU[4].SA[10].CU[0]	cu_inst_count	0.0	count
+GPU[4].SA[10].CU[0]	cu_CPI	inf	cycles/inst
+GPU[4].SA[10].CU[0]	simd_inst_count	0.0	count
+GPU[4].SA[10].CU[0]	simd_CPI	inf	cycles/inst
+GPU[4].SA[10].CU[1]	cu_inst_count	0.0	count
+GPU[4].SA[10].CU[1]	cu_CPI	inf	cycles/inst
+GPU[4].SA[10].CU[1]	simd_inst_count	0.0	count
+GPU[4].SA[10].CU[1]	simd_CPI	inf	cycles/inst
+GPU[4].SA[10].CU[2]	cu_inst_count	0.0	count
+GPU[4].SA[10].CU[2]	cu_CPI	inf	cycles/inst
+GPU[4].SA[10].CU[2]	simd_inst_count	0.0	count
+GPU[4].SA[10].CU[2]	simd_CPI	inf	cycles/inst
+GPU[4].SA[10].CU[3]	cu_inst_count	0.0	count
+GPU[4].SA[10].CU[3]	cu_CPI	inf	cycles/inst
+GPU[4].SA[10].CU[3]	simd_inst_count	0.0	count
+GPU[4].SA[10].CU[3]	simd_CPI	inf	cycles/inst
+GPU[4].SA[11].CU[0]	cu_inst_count	0.0	count
+GPU[4].SA[11].CU[0]	cu_CPI	inf	cycles/inst
+GPU[4].SA[11].CU[0]	simd_inst_count	0.0	count
+GPU[4].SA[11].CU[0]	simd_CPI	inf	cycles/inst
+GPU[4].SA[11].CU[1]	cu_inst_count	0.0	count
+GPU[4].SA[11].CU[1]	cu_CPI	inf	cycles/inst
+GPU[4].SA[11].CU[1]	simd_inst_count	0.0	count
+GPU[4].SA[11].CU[1]	simd_CPI	inf	cycles/inst
+GPU[4].SA[11].CU[2]	cu_inst_count	0.0	count
+GPU[4].SA[11].CU[2]	cu_CPI	inf	cycles/inst
+GPU[4].SA[11].CU[2]	simd_inst_count	0.0	count
+GPU[4].SA[11].CU[2]	simd_CPI	inf	cycles/inst
+GPU[4].SA[11].CU[3]	cu_inst_count	0.0	count
+GPU[4].SA[11].CU[3]	cu_CPI	inf	cycles/inst
+GPU[4].SA[11].CU[3]	simd_inst_count	0.0	count
+GPU[4].SA[11].CU[3]	simd_CPI	inf	cycles/inst
+GPU[4].SA[12].CU[0]	cu_inst_count	0.0	count
+GPU[4].SA[12].CU[0]	cu_CPI	inf	cycles/inst
+GPU[4].SA[12].CU[0]	simd_inst_count	0.0	count
+GPU[4].SA[12].CU[0]	simd_CPI	inf	cycles/inst
+GPU[4].SA[12].CU[1]	cu_inst_count	0.0	count
+GPU[4].SA[12].CU[1]	cu_CPI	inf	cycles/inst
+GPU[4].SA[12].CU[1]	simd_inst_count	0.0	count
+GPU[4].SA[12].CU[1]	simd_CPI	inf	cycles/inst
+GPU[4].SA[12].CU[2]	cu_inst_count	0.0	count
+GPU[4].SA[12].CU[2]	cu_CPI	inf	cycles/inst
+GPU[4].SA[12].CU[2]	simd_inst_count	0.0	count
+GPU[4].SA[12].CU[2]	simd_CPI	inf	cycles/inst
+GPU[4].SA[12].CU[3]	cu_inst_count	0.0	count
+GPU[4].SA[12].CU[3]	cu_CPI	inf	cycles/inst
+GPU[4].SA[12].CU[3]	simd_inst_count	0.0	count
+GPU[4].SA[12].CU[3]	simd_CPI	inf	cycles/inst
+GPU[4].SA[13].CU[0]	cu_inst_count	0.0	count
+GPU[4].SA[13].CU[0]	cu_CPI	inf	cycles/inst
+GPU[4].SA[13].CU[0]	simd_inst_count	0.0	count
+GPU[4].SA[13].CU[0]	simd_CPI	inf	cycles/inst
+GPU[4].SA[13].CU[1]	cu_inst_count	0.0	count
+GPU[4].SA[13].CU[1]	cu_CPI	inf	cycles/inst
+GPU[4].SA[13].CU[1]	simd_inst_count	0.0	count
+GPU[4].SA[13].CU[1]	simd_CPI	inf	cycles/inst
+GPU[4].SA[13].CU[2]	cu_inst_count	0.0	count
+GPU[4].SA[13].CU[2]	cu_CPI	inf	cycles/inst
+GPU[4].SA[13].CU[2]	simd_inst_count	0.0	count
+GPU[4].SA[13].CU[2]	simd_CPI	inf	cycles/inst
+GPU[4].SA[13].CU[3]	cu_inst_count	0.0	count
+GPU[4].SA[13].CU[3]	cu_CPI	inf	cycles/inst
+GPU[4].SA[13].CU[3]	simd_inst_count	0.0	count
+GPU[4].SA[13].CU[3]	simd_CPI	inf	cycles/inst
+GPU[4].SA[14].CU[0]	cu_inst_count	0.0	count
+GPU[4].SA[14].CU[0]	cu_CPI	inf	cycles/inst
+GPU[4].SA[14].CU[0]	simd_inst_count	0.0	count
+GPU[4].SA[14].CU[0]	simd_CPI	inf	cycles/inst
+GPU[4].SA[14].CU[1]	cu_inst_count	0.0	count
+GPU[4].SA[14].CU[1]	cu_CPI	inf	cycles/inst
+GPU[4].SA[14].CU[1]	simd_inst_count	0.0	count
+GPU[4].SA[14].CU[1]	simd_CPI	inf	cycles/inst
+GPU[4].SA[14].CU[2]	cu_inst_count	0.0	count
+GPU[4].SA[14].CU[2]	cu_CPI	inf	cycles/inst
+GPU[4].SA[14].CU[2]	simd_inst_count	0.0	count
+GPU[4].SA[14].CU[2]	simd_CPI	inf	cycles/inst
+GPU[4].SA[14].CU[3]	cu_inst_count	0.0	count
+GPU[4].SA[14].CU[3]	cu_CPI	inf	cycles/inst
+GPU[4].SA[14].CU[3]	simd_inst_count	0.0	count
+GPU[4].SA[14].CU[3]	simd_CPI	inf	cycles/inst
+GPU[4].SA[15].CU[0]	cu_inst_count	0.0	count
+GPU[4].SA[15].CU[0]	cu_CPI	inf	cycles/inst
+GPU[4].SA[15].CU[0]	simd_inst_count	0.0	count
+GPU[4].SA[15].CU[0]	simd_CPI	inf	cycles/inst
+GPU[4].SA[15].CU[1]	cu_inst_count	0.0	count
+GPU[4].SA[15].CU[1]	cu_CPI	inf	cycles/inst
+GPU[4].SA[15].CU[1]	simd_inst_count	0.0	count
+GPU[4].SA[15].CU[1]	simd_CPI	inf	cycles/inst
+GPU[4].SA[15].CU[2]	cu_inst_count	0.0	count
+GPU[4].SA[15].CU[2]	cu_CPI	inf	cycles/inst
+GPU[4].SA[15].CU[2]	simd_inst_count	0.0	count
+GPU[4].SA[15].CU[2]	simd_CPI	inf	cycles/inst
+GPU[4].SA[15].CU[3]	cu_inst_count	0.0	count
+GPU[4].SA[15].CU[3]	cu_CPI	inf	cycles/inst
+GPU[4].SA[15].CU[3]	simd_inst_count	0.0	count
+GPU[4].SA[15].CU[3]	simd_CPI	inf	cycles/inst
+GPU[1].SA[0].CU[0]	CPIStack.Fetch	0.46232876712328613	cycles/inst
+GPU[1].SA[0].CU[0]	CPIStack.Idle	0.0017123287671212408	cycles/inst
+GPU[1].SA[0].CU[0]	CPIStack.LDS	0.7123287671231787	cycles/inst
+GPU[1].SA[0].CU[0]	CPIStack.ScalarInst	0.022260273972605136	cycles/inst
+GPU[1].SA[0].CU[0]	CPIStack.ScalarMem	0.8287671232876725	cycles/inst
+GPU[1].SA[0].CU[0]	CPIStack.ScalarMemInst	0.005136986301369524	cycles/inst
+GPU[1].SA[0].CU[0]	CPIStack.Special	0.0034246575343004973	cycles/inst
+GPU[1].SA[0].CU[0]	CPIStack.VALU	1.212328767123425	cycles/inst
+GPU[1].SA[0].CU[0]	CPIStack.VMem	1093.666095890411	cycles/inst
+GPU[1].SA[0].CU[0]	CPIStack.VMemInst	0.01369863013698733	cycles/inst
+GPU[1].SA[0].CU[0]	CPIStack.total	1106.871575342466	cycles/inst
+GPU[1].SA[0].CU[0]	SIMDCPIStack.Fetch	0.6428571428571407	cycles/inst
+GPU[1].SA[0].CU[0]	SIMDCPIStack.Idle	0.002380952380949535	cycles/inst
+GPU[1].SA[0].CU[0]	SIMDCPIStack.LDS	0.9904761904760391	cycles/inst
+GPU[1].SA[0].CU[0]	SIMDCPIStack.ScalarInst	0.030952380952384284	cycles/inst
+GPU[1].SA[0].CU[0]	SIMDCPIStack.ScalarMem	1.1523809523809543	cycles/inst
+GPU[1].SA[0].CU[0]	SIMDCPIStack.ScalarMemInst	0.007142857142856672	cycles/inst
+GPU[1].SA[0].CU[0]	SIMDCPIStack.Special	0.004761904761979739	cycles/inst
+GPU[1].SA[0].CU[0]	SIMDCPIStack.VALU	1.685714285714477	cycles/inst
+GPU[1].SA[0].CU[0]	SIMDCPIStack.VMem	1520.7166666666667	cycles/inst
+GPU[1].SA[0].CU[0]	SIMDCPIStack.VMemInst	0.01904761904762048	cycles/inst
+GPU[1].SA[0].CU[0]	SIMDCPIStack.total	1539.0785714285716	cycles/inst
+GPU[1].SA[0].CU[1]	CPIStack.Fetch	27.539383561643913	cycles/inst
+GPU[1].SA[0].CU[1]	CPIStack.Idle	0.0017123287671212408	cycles/inst
+GPU[1].SA[0].CU[1]	CPIStack.LDS	0.7208904109588371	cycles/inst
+GPU[1].SA[0].CU[1]	CPIStack.ScalarInst	0.02739726027397176	cycles/inst
+GPU[1].SA[0].CU[1]	CPIStack.ScalarMem	0.832191780821918	cycles/inst
+GPU[1].SA[0].CU[1]	CPIStack.ScalarMemInst	0.005136986301369524	cycles/inst
+GPU[1].SA[0].CU[1]	CPIStack.Special	0.005136986301265095	cycles/inst
+GPU[1].SA[0].CU[1]	CPIStack.VALU	1.1506849315070748	cycles/inst
+GPU[1].SA[0].CU[1]	CPIStack.VMem	957.1729452054797	cycles/inst
+GPU[1].SA[0].CU[1]	CPIStack.VMemInst	0.01369863013698733	cycles/inst
+GPU[1].SA[0].CU[1]	CPIStack.total	1106.871575342466	cycles/inst
+GPU[1].SA[0].CU[1]	SIMDCPIStack.Fetch	38.29285714285725	cycles/inst
+GPU[1].SA[0].CU[1]	SIMDCPIStack.Idle	0.002380952380949535	cycles/inst
+GPU[1].SA[0].CU[1]	SIMDCPIStack.LDS	1.0023809523808593	cycles/inst
+GPU[1].SA[0].CU[1]	SIMDCPIStack.ScalarInst	0.038095238095236926	cycles/inst
+GPU[1].SA[0].CU[1]	SIMDCPIStack.ScalarMem	1.1571428571428575	cycles/inst
+GPU[1].SA[0].CU[1]	SIMDCPIStack.ScalarMemInst	0.007142857142856672	cycles/inst
+GPU[1].SA[0].CU[1]	SIMDCPIStack.Special	0.007142857142711466	cycles/inst
+GPU[1].SA[0].CU[1]	SIMDCPIStack.VALU	1.6000000000003136	cycles/inst
+GPU[1].SA[0].CU[1]	SIMDCPIStack.VMem	1330.9261904761906	cycles/inst
+GPU[1].SA[0].CU[1]	SIMDCPIStack.VMemInst	0.01904761904762048	cycles/inst
+GPU[1].SA[0].CU[1]	SIMDCPIStack.total	1539.0785714285716	cycles/inst
+GPU[1].SA[0].CU[2]	CPIStack.Fetch	51.87499999999998	cycles/inst
+GPU[1].SA[0].CU[2]	CPIStack.Idle	0.0017123287671212408	cycles/inst
+GPU[1].SA[0].CU[2]	CPIStack.LDS	0.7568493150688125	cycles/inst
+GPU[1].SA[0].CU[2]	CPIStack.ScalarInst	0.022260273972605136	cycles/inst
+GPU[1].SA[0].CU[2]	CPIStack.ScalarMem	0.8287671232876697	cycles/inst
+GPU[1].SA[0].CU[2]	CPIStack.ScalarMemInst	0.005136986301369524	cycles/inst
+GPU[1].SA[0].CU[2]	CPIStack.Special	0.005136986301334714	cycles/inst
+GPU[1].SA[0].CU[2]	CPIStack.VALU	1.1609589041094428	cycles/inst
+GPU[1].SA[0].CU[2]	CPIStack.VMem	932.7636986301368	cycles/inst
+GPU[1].SA[0].CU[2]	CPIStack.VMemInst	0.04794520547945856	cycles/inst
+GPU[1].SA[0].CU[2]	CPIStack.total	1106.871575342466	cycles/inst
+GPU[1].SA[0].CU[2]	SIMDCPIStack.Fetch	72.13095238095235	cycles/inst
+GPU[1].SA[0].CU[2]	SIMDCPIStack.Idle	0.002380952380949535	cycles/inst
+GPU[1].SA[0].CU[2]	SIMDCPIStack.LDS	1.0523809523813965	cycles/inst
+GPU[1].SA[0].CU[2]	SIMDCPIStack.ScalarInst	0.030952380952384284	cycles/inst
+GPU[1].SA[0].CU[2]	SIMDCPIStack.ScalarMem	1.1523809523809503	cycles/inst
+GPU[1].SA[0].CU[2]	SIMDCPIStack.ScalarMemInst	0.007142857142856672	cycles/inst
+GPU[1].SA[0].CU[2]	SIMDCPIStack.Special	0.0071428571428082685	cycles/inst
+GPU[1].SA[0].CU[2]	SIMDCPIStack.VALU	1.614285714285511	cycles/inst
+GPU[1].SA[0].CU[2]	SIMDCPIStack.VMem	1296.985714285714	cycles/inst
+GPU[1].SA[0].CU[2]	SIMDCPIStack.VMemInst	0.06666666666667571	cycles/inst
+GPU[1].SA[0].CU[2]	SIMDCPIStack.total	1539.0785714285716	cycles/inst
+GPU[1].SA[0].CU[3]	CPIStack.Fetch	0.4674657534246586	cycles/inst
+GPU[1].SA[0].CU[3]	CPIStack.Idle	0.0017123287671212408	cycles/inst
+GPU[1].SA[0].CU[3]	CPIStack.LDS	0.7277397260275542	cycles/inst
+GPU[1].SA[0].CU[3]	CPIStack.ScalarInst	0.034246575342471226	cycles/inst
+GPU[1].SA[0].CU[3]	CPIStack.ScalarMem	0.833904109589042	cycles/inst
+GPU[1].SA[0].CU[3]	CPIStack.ScalarMemInst	0.006849315068490764	cycles/inst
+GPU[1].SA[0].CU[3]	CPIStack.Special	0.005136986301357921	cycles/inst
+GPU[1].SA[0].CU[3]	CPIStack.VALU	1.1369863013698034	cycles/inst
+GPU[1].SA[0].CU[3]	CPIStack.VMem	984.7876712328767	cycles/inst
+GPU[1].SA[0].CU[3]	CPIStack.VMemInst	0.01369863013698733	cycles/inst
+GPU[1].SA[0].CU[3]	CPIStack.total	1106.871575342466	cycles/inst
+GPU[1].SA[0].CU[3]	SIMDCPIStack.Fetch	0.6500000000000015	cycles/inst
+GPU[1].SA[0].CU[3]	SIMDCPIStack.Idle	0.002380952380949535	cycles/inst
+GPU[1].SA[0].CU[3]	SIMDCPIStack.LDS	1.0119047619049801	cycles/inst
+GPU[1].SA[0].CU[3]	SIMDCPIStack.ScalarInst	0.047619047619055235	cycles/inst
+GPU[1].SA[0].CU[3]	SIMDCPIStack.ScalarMem	1.159523809523811	cycles/inst
+GPU[1].SA[0].CU[3]	SIMDCPIStack.ScalarMemInst	0.009523809523806206	cycles/inst
+GPU[1].SA[0].CU[3]	SIMDCPIStack.Special	0.007142857142840537	cycles/inst
+GPU[1].SA[0].CU[3]	SIMDCPIStack.VALU	1.580952380952298	cycles/inst
+GPU[1].SA[0].CU[3]	SIMDCPIStack.VMem	1369.3238095238096	cycles/inst
+GPU[1].SA[0].CU[3]	SIMDCPIStack.VMemInst	0.01904761904762048	cycles/inst
+GPU[1].SA[0].CU[3]	SIMDCPIStack.total	1539.0785714285716	cycles/inst
+GPU[1].SA[1].CU[0]	CPIStack.total		cycles/inst
+GPU[1].SA[1].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[1].CU[1]	CPIStack.total		cycles/inst
+GPU[1].SA[1].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[1].CU[2]	CPIStack.total		cycles/inst
+GPU[1].SA[1].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[1].CU[3]	CPIStack.total		cycles/inst
+GPU[1].SA[1].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[2].CU[0]	CPIStack.total		cycles/inst
+GPU[1].SA[2].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[2].CU[1]	CPIStack.total		cycles/inst
+GPU[1].SA[2].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[2].CU[2]	CPIStack.total		cycles/inst
+GPU[1].SA[2].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[2].CU[3]	CPIStack.total		cycles/inst
+GPU[1].SA[2].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[3].CU[0]	CPIStack.total		cycles/inst
+GPU[1].SA[3].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[3].CU[1]	CPIStack.total		cycles/inst
+GPU[1].SA[3].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[3].CU[2]	CPIStack.total		cycles/inst
+GPU[1].SA[3].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[3].CU[3]	CPIStack.total		cycles/inst
+GPU[1].SA[3].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[4].CU[0]	CPIStack.total		cycles/inst
+GPU[1].SA[4].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[4].CU[1]	CPIStack.total		cycles/inst
+GPU[1].SA[4].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[4].CU[2]	CPIStack.total		cycles/inst
+GPU[1].SA[4].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[4].CU[3]	CPIStack.total		cycles/inst
+GPU[1].SA[4].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[5].CU[0]	CPIStack.total		cycles/inst
+GPU[1].SA[5].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[5].CU[1]	CPIStack.total		cycles/inst
+GPU[1].SA[5].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[5].CU[2]	CPIStack.total		cycles/inst
+GPU[1].SA[5].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[5].CU[3]	CPIStack.total		cycles/inst
+GPU[1].SA[5].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[6].CU[0]	CPIStack.total		cycles/inst
+GPU[1].SA[6].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[6].CU[1]	CPIStack.total		cycles/inst
+GPU[1].SA[6].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[6].CU[2]	CPIStack.total		cycles/inst
+GPU[1].SA[6].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[6].CU[3]	CPIStack.total		cycles/inst
+GPU[1].SA[6].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[7].CU[0]	CPIStack.total		cycles/inst
+GPU[1].SA[7].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[7].CU[1]	CPIStack.total		cycles/inst
+GPU[1].SA[7].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[7].CU[2]	CPIStack.total		cycles/inst
+GPU[1].SA[7].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[7].CU[3]	CPIStack.total		cycles/inst
+GPU[1].SA[7].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[8].CU[0]	CPIStack.total		cycles/inst
+GPU[1].SA[8].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[8].CU[1]	CPIStack.total		cycles/inst
+GPU[1].SA[8].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[8].CU[2]	CPIStack.total		cycles/inst
+GPU[1].SA[8].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[8].CU[3]	CPIStack.total		cycles/inst
+GPU[1].SA[8].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[9].CU[0]	CPIStack.total		cycles/inst
+GPU[1].SA[9].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[9].CU[1]	CPIStack.total		cycles/inst
+GPU[1].SA[9].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[9].CU[2]	CPIStack.total		cycles/inst
+GPU[1].SA[9].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[9].CU[3]	CPIStack.total		cycles/inst
+GPU[1].SA[9].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[10].CU[0]	CPIStack.total		cycles/inst
+GPU[1].SA[10].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[10].CU[1]	CPIStack.total		cycles/inst
+GPU[1].SA[10].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[10].CU[2]	CPIStack.total		cycles/inst
+GPU[1].SA[10].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[10].CU[3]	CPIStack.total		cycles/inst
+GPU[1].SA[10].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[11].CU[0]	CPIStack.total		cycles/inst
+GPU[1].SA[11].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[11].CU[1]	CPIStack.total		cycles/inst
+GPU[1].SA[11].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[11].CU[2]	CPIStack.total		cycles/inst
+GPU[1].SA[11].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[11].CU[3]	CPIStack.total		cycles/inst
+GPU[1].SA[11].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[12].CU[0]	CPIStack.total		cycles/inst
+GPU[1].SA[12].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[12].CU[1]	CPIStack.total		cycles/inst
+GPU[1].SA[12].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[12].CU[2]	CPIStack.total		cycles/inst
+GPU[1].SA[12].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[12].CU[3]	CPIStack.total		cycles/inst
+GPU[1].SA[12].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[13].CU[0]	CPIStack.total		cycles/inst
+GPU[1].SA[13].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[13].CU[1]	CPIStack.total		cycles/inst
+GPU[1].SA[13].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[13].CU[2]	CPIStack.total		cycles/inst
+GPU[1].SA[13].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[13].CU[3]	CPIStack.total		cycles/inst
+GPU[1].SA[13].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[14].CU[0]	CPIStack.total		cycles/inst
+GPU[1].SA[14].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[14].CU[1]	CPIStack.total		cycles/inst
+GPU[1].SA[14].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[14].CU[2]	CPIStack.total		cycles/inst
+GPU[1].SA[14].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[14].CU[3]	CPIStack.total		cycles/inst
+GPU[1].SA[14].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[15].CU[0]	CPIStack.total		cycles/inst
+GPU[1].SA[15].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[15].CU[1]	CPIStack.total		cycles/inst
+GPU[1].SA[15].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[15].CU[2]	CPIStack.total		cycles/inst
+GPU[1].SA[15].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[15].CU[3]	CPIStack.total		cycles/inst
+GPU[1].SA[15].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[0].CU[0]	CPIStack.Fetch	117.90924657534242	cycles/inst
+GPU[2].SA[0].CU[0]	CPIStack.Idle	0.0017123287671241417	cycles/inst
+GPU[2].SA[0].CU[0]	CPIStack.LDS	0.7448630136986621	cycles/inst
+GPU[2].SA[0].CU[0]	CPIStack.ScalarInst	0.02226027397260224	cycles/inst
+GPU[2].SA[0].CU[0]	CPIStack.ScalarMem	0.8287671232876697	cycles/inst
+GPU[2].SA[0].CU[0]	CPIStack.ScalarMemInst	0.005136986301369524	cycles/inst
+GPU[2].SA[0].CU[0]	CPIStack.Special	0.006849315068484963	cycles/inst
+GPU[2].SA[0].CU[0]	CPIStack.VALU	1.164383561643688	cycles/inst
+GPU[2].SA[0].CU[0]	CPIStack.VMem	912.152397260274	cycles/inst
+GPU[2].SA[0].CU[0]	CPIStack.VMemInst	0.04794520547943245	cycles/inst
+GPU[2].SA[0].CU[0]	CPIStack.total	1106.869863013699	cycles/inst
+GPU[2].SA[0].CU[0]	SIMDCPIStack.Fetch	163.94999999999993	cycles/inst
+GPU[2].SA[0].CU[0]	SIMDCPIStack.Idle	0.002380952380953568	cycles/inst
+GPU[2].SA[0].CU[0]	SIMDCPIStack.LDS	1.0357142857143302	cycles/inst
+GPU[2].SA[0].CU[0]	SIMDCPIStack.ScalarInst	0.030952380952380256	cycles/inst
+GPU[2].SA[0].CU[0]	SIMDCPIStack.ScalarMem	1.1523809523809503	cycles/inst
+GPU[2].SA[0].CU[0]	SIMDCPIStack.ScalarMemInst	0.007142857142856672	cycles/inst
+GPU[2].SA[0].CU[0]	SIMDCPIStack.Special	0.00952380952379814	cycles/inst
+GPU[2].SA[0].CU[0]	SIMDCPIStack.VALU	1.619047619047414	cycles/inst
+GPU[2].SA[0].CU[0]	SIMDCPIStack.VMem	1268.3261904761905	cycles/inst
+GPU[2].SA[0].CU[0]	SIMDCPIStack.VMemInst	0.06666666666663941	cycles/inst
+GPU[2].SA[0].CU[0]	SIMDCPIStack.total	1539.0761904761907	cycles/inst
+GPU[2].SA[0].CU[1]	CPIStack.Fetch	27.53938356164373	cycles/inst
+GPU[2].SA[0].CU[1]	CPIStack.Idle	0.0017123287671241417	cycles/inst
+GPU[2].SA[0].CU[1]	CPIStack.LDS	0.7123287671234108	cycles/inst
+GPU[2].SA[0].CU[1]	CPIStack.ScalarInst	0.02739726027397466	cycles/inst
+GPU[2].SA[0].CU[1]	CPIStack.ScalarMem	0.832191780821918	cycles/inst
+GPU[2].SA[0].CU[1]	CPIStack.ScalarMemInst	0.005136986301369524	cycles/inst
+GPU[2].SA[0].CU[1]	CPIStack.Special	0.003424657534207672	cycles/inst
+GPU[2].SA[0].CU[1]	CPIStack.VALU	1.1506849315066978	cycles/inst
+GPU[2].SA[0].CU[1]	CPIStack.VMem	1002.5993150684932	cycles/inst
+GPU[2].SA[0].CU[1]	CPIStack.VMemInst	0.013698630136984429	cycles/inst
+GPU[2].SA[0].CU[1]	CPIStack.total	1106.869863013699	cycles/inst
+GPU[2].SA[0].CU[1]	SIMDCPIStack.Fetch	38.292857142857	cycles/inst
+GPU[2].SA[0].CU[1]	SIMDCPIStack.Idle	0.002380952380953568	cycles/inst
+GPU[2].SA[0].CU[1]	SIMDCPIStack.LDS	0.9904761904763617	cycles/inst
+GPU[2].SA[0].CU[1]	SIMDCPIStack.ScalarInst	0.03809523809524096	cycles/inst
+GPU[2].SA[0].CU[1]	SIMDCPIStack.ScalarMem	1.1571428571428575	cycles/inst
+GPU[2].SA[0].CU[1]	SIMDCPIStack.ScalarMemInst	0.007142857142856672	cycles/inst
+GPU[2].SA[0].CU[1]	SIMDCPIStack.Special	0.004761904761850668	cycles/inst
+GPU[2].SA[0].CU[1]	SIMDCPIStack.VALU	1.5999999999997894	cycles/inst
+GPU[2].SA[0].CU[1]	SIMDCPIStack.VMem	1394.0904761904762	cycles/inst
+GPU[2].SA[0].CU[1]	SIMDCPIStack.VMemInst	0.019047619047616444	cycles/inst
+GPU[2].SA[0].CU[1]	SIMDCPIStack.total	1539.0761904761907	cycles/inst
+GPU[2].SA[0].CU[2]	CPIStack.Fetch	51.87499999999997	cycles/inst
+GPU[2].SA[0].CU[2]	CPIStack.Idle	0.0017123287671241417	cycles/inst
+GPU[2].SA[0].CU[2]	CPIStack.LDS	0.7534246575344365	cycles/inst
+GPU[2].SA[0].CU[2]	CPIStack.ScalarInst	0.02226027397260224	cycles/inst
+GPU[2].SA[0].CU[2]	CPIStack.ScalarMem	0.8287671232876725	cycles/inst
+GPU[2].SA[0].CU[2]	CPIStack.ScalarMemInst	0.005136986301369524	cycles/inst
+GPU[2].SA[0].CU[2]	CPIStack.Special	0.005136986301334714	cycles/inst
+GPU[2].SA[0].CU[2]	CPIStack.VALU	1.1609589041095298	cycles/inst
+GPU[2].SA[0].CU[2]	CPIStack.VMem	978.1832191780821	cycles/inst
+GPU[2].SA[0].CU[2]	CPIStack.VMemInst	0.04794520547943245	cycles/inst
+GPU[2].SA[0].CU[2]	CPIStack.total	1106.869863013699	cycles/inst
+GPU[2].SA[0].CU[2]	SIMDCPIStack.Fetch	72.13095238095235	cycles/inst
+GPU[2].SA[0].CU[2]	SIMDCPIStack.Idle	0.002380952380953568	cycles/inst
+GPU[2].SA[0].CU[2]	SIMDCPIStack.LDS	1.047619047619312	cycles/inst
+GPU[2].SA[0].CU[2]	SIMDCPIStack.ScalarInst	0.030952380952380256	cycles/inst
+GPU[2].SA[0].CU[2]	SIMDCPIStack.ScalarMem	1.1523809523809543	cycles/inst
+GPU[2].SA[0].CU[2]	SIMDCPIStack.ScalarMemInst	0.007142857142856672	cycles/inst
+GPU[2].SA[0].CU[2]	SIMDCPIStack.Special	0.0071428571428082685	cycles/inst
+GPU[2].SA[0].CU[2]	SIMDCPIStack.VALU	1.614285714285632	cycles/inst
+GPU[2].SA[0].CU[2]	SIMDCPIStack.VMem	1360.1404761904762	cycles/inst
+GPU[2].SA[0].CU[2]	SIMDCPIStack.VMemInst	0.06666666666663941	cycles/inst
+GPU[2].SA[0].CU[2]	SIMDCPIStack.total	1539.0761904761907	cycles/inst
+GPU[2].SA[0].CU[3]	CPIStack.Fetch	0.4674657534246557	cycles/inst
+GPU[2].SA[0].CU[3]	CPIStack.Idle	0.0017123287671241417	cycles/inst
+GPU[2].SA[0].CU[3]	CPIStack.LDS	0.7243150684932073	cycles/inst
+GPU[2].SA[0].CU[3]	CPIStack.ScalarInst	0.034246575342465425	cycles/inst
+GPU[2].SA[0].CU[3]	CPIStack.ScalarMem	0.8339041095890393	cycles/inst
+GPU[2].SA[0].CU[3]	CPIStack.ScalarMemInst	0.006849315068496567	cycles/inst
+GPU[2].SA[0].CU[3]	CPIStack.Special	0.005136986301357921	cycles/inst
+GPU[2].SA[0].CU[3]	CPIStack.VALU	1.1369863013698063	cycles/inst
+GPU[2].SA[0].CU[3]	CPIStack.VMem	1030.2071917808219	cycles/inst
+GPU[2].SA[0].CU[3]	CPIStack.VMemInst	0.013698630136984429	cycles/inst
+GPU[2].SA[0].CU[3]	CPIStack.total	1106.869863013699	cycles/inst
+GPU[2].SA[0].CU[3]	SIMDCPIStack.Fetch	0.6499999999999975	cycles/inst
+GPU[2].SA[0].CU[3]	SIMDCPIStack.Idle	0.002380952380953568	cycles/inst
+GPU[2].SA[0].CU[3]	SIMDCPIStack.LDS	1.0071428571429357	cycles/inst
+GPU[2].SA[0].CU[3]	SIMDCPIStack.ScalarInst	0.047619047619047165	cycles/inst
+GPU[2].SA[0].CU[3]	SIMDCPIStack.ScalarMem	1.159523809523807	cycles/inst
+GPU[2].SA[0].CU[3]	SIMDCPIStack.ScalarMemInst	0.009523809523814273	cycles/inst
+GPU[2].SA[0].CU[3]	SIMDCPIStack.Special	0.007142857142840537	cycles/inst
+GPU[2].SA[0].CU[3]	SIMDCPIStack.VALU	1.5809523809523023	cycles/inst
+GPU[2].SA[0].CU[3]	SIMDCPIStack.VMem	1432.4785714285715	cycles/inst
+GPU[2].SA[0].CU[3]	SIMDCPIStack.VMemInst	0.019047619047616444	cycles/inst
+GPU[2].SA[0].CU[3]	SIMDCPIStack.total	1539.0761904761907	cycles/inst
+GPU[2].SA[1].CU[0]	CPIStack.total		cycles/inst
+GPU[2].SA[1].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[1].CU[1]	CPIStack.total		cycles/inst
+GPU[2].SA[1].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[1].CU[2]	CPIStack.total		cycles/inst
+GPU[2].SA[1].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[1].CU[3]	CPIStack.total		cycles/inst
+GPU[2].SA[1].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[2].CU[0]	CPIStack.total		cycles/inst
+GPU[2].SA[2].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[2].CU[1]	CPIStack.total		cycles/inst
+GPU[2].SA[2].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[2].CU[2]	CPIStack.total		cycles/inst
+GPU[2].SA[2].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[2].CU[3]	CPIStack.total		cycles/inst
+GPU[2].SA[2].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[3].CU[0]	CPIStack.total		cycles/inst
+GPU[2].SA[3].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[3].CU[1]	CPIStack.total		cycles/inst
+GPU[2].SA[3].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[3].CU[2]	CPIStack.total		cycles/inst
+GPU[2].SA[3].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[3].CU[3]	CPIStack.total		cycles/inst
+GPU[2].SA[3].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[4].CU[0]	CPIStack.total		cycles/inst
+GPU[2].SA[4].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[4].CU[1]	CPIStack.total		cycles/inst
+GPU[2].SA[4].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[4].CU[2]	CPIStack.total		cycles/inst
+GPU[2].SA[4].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[4].CU[3]	CPIStack.total		cycles/inst
+GPU[2].SA[4].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[5].CU[0]	CPIStack.total		cycles/inst
+GPU[2].SA[5].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[5].CU[1]	CPIStack.total		cycles/inst
+GPU[2].SA[5].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[5].CU[2]	CPIStack.total		cycles/inst
+GPU[2].SA[5].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[5].CU[3]	CPIStack.total		cycles/inst
+GPU[2].SA[5].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[6].CU[0]	CPIStack.total		cycles/inst
+GPU[2].SA[6].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[6].CU[1]	CPIStack.total		cycles/inst
+GPU[2].SA[6].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[6].CU[2]	CPIStack.total		cycles/inst
+GPU[2].SA[6].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[6].CU[3]	CPIStack.total		cycles/inst
+GPU[2].SA[6].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[7].CU[0]	CPIStack.total		cycles/inst
+GPU[2].SA[7].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[7].CU[1]	CPIStack.total		cycles/inst
+GPU[2].SA[7].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[7].CU[2]	CPIStack.total		cycles/inst
+GPU[2].SA[7].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[7].CU[3]	CPIStack.total		cycles/inst
+GPU[2].SA[7].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[8].CU[0]	CPIStack.total		cycles/inst
+GPU[2].SA[8].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[8].CU[1]	CPIStack.total		cycles/inst
+GPU[2].SA[8].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[8].CU[2]	CPIStack.total		cycles/inst
+GPU[2].SA[8].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[8].CU[3]	CPIStack.total		cycles/inst
+GPU[2].SA[8].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[9].CU[0]	CPIStack.total		cycles/inst
+GPU[2].SA[9].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[9].CU[1]	CPIStack.total		cycles/inst
+GPU[2].SA[9].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[9].CU[2]	CPIStack.total		cycles/inst
+GPU[2].SA[9].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[9].CU[3]	CPIStack.total		cycles/inst
+GPU[2].SA[9].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[10].CU[0]	CPIStack.total		cycles/inst
+GPU[2].SA[10].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[10].CU[1]	CPIStack.total		cycles/inst
+GPU[2].SA[10].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[10].CU[2]	CPIStack.total		cycles/inst
+GPU[2].SA[10].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[10].CU[3]	CPIStack.total		cycles/inst
+GPU[2].SA[10].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[11].CU[0]	CPIStack.total		cycles/inst
+GPU[2].SA[11].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[11].CU[1]	CPIStack.total		cycles/inst
+GPU[2].SA[11].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[11].CU[2]	CPIStack.total		cycles/inst
+GPU[2].SA[11].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[11].CU[3]	CPIStack.total		cycles/inst
+GPU[2].SA[11].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[12].CU[0]	CPIStack.total		cycles/inst
+GPU[2].SA[12].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[12].CU[1]	CPIStack.total		cycles/inst
+GPU[2].SA[12].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[12].CU[2]	CPIStack.total		cycles/inst
+GPU[2].SA[12].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[12].CU[3]	CPIStack.total		cycles/inst
+GPU[2].SA[12].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[13].CU[0]	CPIStack.total		cycles/inst
+GPU[2].SA[13].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[13].CU[1]	CPIStack.total		cycles/inst
+GPU[2].SA[13].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[13].CU[2]	CPIStack.total		cycles/inst
+GPU[2].SA[13].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[13].CU[3]	CPIStack.total		cycles/inst
+GPU[2].SA[13].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[14].CU[0]	CPIStack.total		cycles/inst
+GPU[2].SA[14].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[14].CU[1]	CPIStack.total		cycles/inst
+GPU[2].SA[14].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[14].CU[2]	CPIStack.total		cycles/inst
+GPU[2].SA[14].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[14].CU[3]	CPIStack.total		cycles/inst
+GPU[2].SA[14].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[15].CU[0]	CPIStack.total		cycles/inst
+GPU[2].SA[15].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[15].CU[1]	CPIStack.total		cycles/inst
+GPU[2].SA[15].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[15].CU[2]	CPIStack.total		cycles/inst
+GPU[2].SA[15].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[2].SA[15].CU[3]	CPIStack.total		cycles/inst
+GPU[2].SA[15].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[0].CU[0]	CPIStack.Fetch	118.08047945205469	cycles/inst
+GPU[3].SA[0].CU[0]	CPIStack.Idle	0.0017123287671241417	cycles/inst
+GPU[3].SA[0].CU[0]	CPIStack.LDS	0.7243150684930912	cycles/inst
+GPU[3].SA[0].CU[0]	CPIStack.ScalarInst	0.02226027397260224	cycles/inst
+GPU[3].SA[0].CU[0]	CPIStack.ScalarMem	0.8287671232876697	cycles/inst
+GPU[3].SA[0].CU[0]	CPIStack.ScalarMemInst	0.005136986301369524	cycles/inst
+GPU[3].SA[0].CU[0]	CPIStack.Special	0.006849315068461756	cycles/inst
+GPU[3].SA[0].CU[0]	CPIStack.VALU	1.1643835616439695	cycles/inst
+GPU[3].SA[0].CU[0]	CPIStack.VMem	957.417808219178	cycles/inst
+GPU[3].SA[0].CU[0]	CPIStack.VMemInst	0.04794520547943535	cycles/inst
+GPU[3].SA[0].CU[0]	CPIStack.total	1106.8681506849316	cycles/inst
+GPU[3].SA[0].CU[0]	SIMDCPIStack.Fetch	164.1880952380951	cycles/inst
+GPU[3].SA[0].CU[0]	SIMDCPIStack.Idle	0.002380952380953568	cycles/inst
+GPU[3].SA[0].CU[0]	SIMDCPIStack.LDS	1.0071428571427745	cycles/inst
+GPU[3].SA[0].CU[0]	SIMDCPIStack.ScalarInst	0.030952380952380256	cycles/inst
+GPU[3].SA[0].CU[0]	SIMDCPIStack.ScalarMem	1.1523809523809503	cycles/inst
+GPU[3].SA[0].CU[0]	SIMDCPIStack.ScalarMemInst	0.007142857142856672	cycles/inst
+GPU[3].SA[0].CU[0]	SIMDCPIStack.Special	0.00952380952376587	cycles/inst
+GPU[3].SA[0].CU[0]	SIMDCPIStack.VALU	1.6190476190478054	cycles/inst
+GPU[3].SA[0].CU[0]	SIMDCPIStack.VMem	1331.2666666666667	cycles/inst
+GPU[3].SA[0].CU[0]	SIMDCPIStack.VMemInst	0.06666666666664343	cycles/inst
+GPU[3].SA[0].CU[0]	SIMDCPIStack.total	1539.0738095238096	cycles/inst
+GPU[3].SA[0].CU[1]	CPIStack.Fetch	65.69006849315055	cycles/inst
+GPU[3].SA[0].CU[1]	CPIStack.Idle	0.0017123287671241417	cycles/inst
+GPU[3].SA[0].CU[1]	CPIStack.LDS	0.7243150684933697	cycles/inst
+GPU[3].SA[0].CU[1]	CPIStack.ScalarInst	0.02739726027397466	cycles/inst
+GPU[3].SA[0].CU[1]	CPIStack.ScalarMem	0.832191780821918	cycles/inst
+GPU[3].SA[0].CU[1]	CPIStack.ScalarMemInst	0.005136986301369524	cycles/inst
+GPU[3].SA[0].CU[1]	CPIStack.Special	0.006849315068461756	cycles/inst
+GPU[3].SA[0].CU[1]	CPIStack.VALU	1.150684931506605	cycles/inst
+GPU[3].SA[0].CU[1]	CPIStack.VMem	1009.8133561643835	cycles/inst
+GPU[3].SA[0].CU[1]	CPIStack.VMemInst	0.04794520547943535	cycles/inst
+GPU[3].SA[0].CU[1]	CPIStack.total	1106.8681506849316	cycles/inst
+GPU[3].SA[0].CU[1]	SIMDCPIStack.Fetch	91.340476190476	cycles/inst
+GPU[3].SA[0].CU[1]	SIMDCPIStack.Idle	0.002380952380953568	cycles/inst
+GPU[3].SA[0].CU[1]	SIMDCPIStack.LDS	1.0071428571431618	cycles/inst
+GPU[3].SA[0].CU[1]	SIMDCPIStack.ScalarInst	0.03809523809524096	cycles/inst
+GPU[3].SA[0].CU[1]	SIMDCPIStack.ScalarMem	1.1571428571428575	cycles/inst
+GPU[3].SA[0].CU[1]	SIMDCPIStack.ScalarMemInst	0.007142857142856672	cycles/inst
+GPU[3].SA[0].CU[1]	SIMDCPIStack.Special	0.00952380952376587	cycles/inst
+GPU[3].SA[0].CU[1]	SIMDCPIStack.VALU	1.5999999999996604	cycles/inst
+GPU[3].SA[0].CU[1]	SIMDCPIStack.VMem	1404.1214285714286	cycles/inst
+GPU[3].SA[0].CU[1]	SIMDCPIStack.VMemInst	0.06666666666664343	cycles/inst
+GPU[3].SA[0].CU[1]	SIMDCPIStack.total	1539.0738095238096	cycles/inst
+GPU[3].SA[0].CU[2]	CPIStack.Fetch	13.727739726027405	cycles/inst
+GPU[3].SA[0].CU[2]	CPIStack.Idle	0.0017123287671241417	cycles/inst
+GPU[3].SA[0].CU[2]	CPIStack.LDS	0.7123287671232252	cycles/inst
+GPU[3].SA[0].CU[2]	CPIStack.ScalarInst	0.02226027397260224	cycles/inst
+GPU[3].SA[0].CU[2]	CPIStack.ScalarMem	0.8287671232876697	cycles/inst
+GPU[3].SA[0].CU[2]	CPIStack.ScalarMemInst	0.005136986301369524	cycles/inst
+GPU[3].SA[0].CU[2]	CPIStack.Special	0.0034246575343004973	cycles/inst
+GPU[3].SA[0].CU[2]	CPIStack.VALU	1.1952054794520763	cycles/inst
+GPU[3].SA[0].CU[2]	CPIStack.VMem	1061.791095890411	cycles/inst
+GPU[3].SA[0].CU[2]	CPIStack.VMemInst	0.01369863013698733	cycles/inst
+GPU[3].SA[0].CU[2]	CPIStack.total	1106.8681506849316	cycles/inst
+GPU[3].SA[0].CU[2]	SIMDCPIStack.Fetch	19.08809523809525	cycles/inst
+GPU[3].SA[0].CU[2]	SIMDCPIStack.Idle	0.002380952380953568	cycles/inst
+GPU[3].SA[0].CU[2]	SIMDCPIStack.LDS	0.9904761904761036	cycles/inst
+GPU[3].SA[0].CU[2]	SIMDCPIStack.ScalarInst	0.030952380952380256	cycles/inst
+GPU[3].SA[0].CU[2]	SIMDCPIStack.ScalarMem	1.1523809523809503	cycles/inst
+GPU[3].SA[0].CU[2]	SIMDCPIStack.ScalarMemInst	0.007142857142856672	cycles/inst
+GPU[3].SA[0].CU[2]	SIMDCPIStack.Special	0.004761904761979739	cycles/inst
+GPU[3].SA[0].CU[2]	SIMDCPIStack.VALU	1.661904761904792	cycles/inst
+GPU[3].SA[0].CU[2]	SIMDCPIStack.VMem	1476.395238095238	cycles/inst
+GPU[3].SA[0].CU[2]	SIMDCPIStack.VMemInst	0.01904761904762048	cycles/inst
+GPU[3].SA[0].CU[2]	SIMDCPIStack.total	1539.0738095238096	cycles/inst
+GPU[3].SA[0].CU[3]	CPIStack.Fetch	0.4674657534246557	cycles/inst
+GPU[3].SA[0].CU[3]	CPIStack.Idle	0.0017123287671241417	cycles/inst
+GPU[3].SA[0].CU[3]	CPIStack.LDS	0.7482876712327307	cycles/inst
+GPU[3].SA[0].CU[3]	CPIStack.ScalarInst	0.034246575342462525	cycles/inst
+GPU[3].SA[0].CU[3]	CPIStack.ScalarMem	0.833904109589042	cycles/inst
+GPU[3].SA[0].CU[3]	CPIStack.ScalarMemInst	0.006849315068493665	cycles/inst
+GPU[3].SA[0].CU[3]	CPIStack.Special	0.003424657534207672	cycles/inst
+GPU[3].SA[0].CU[3]	CPIStack.VALU	1.1369863013699948	cycles/inst
+GPU[3].SA[0].CU[3]	CPIStack.VMem	1075.6010273972604	cycles/inst
+GPU[3].SA[0].CU[3]	CPIStack.VMemInst	0.01369863013698733	cycles/inst
+GPU[3].SA[0].CU[3]	CPIStack.total	1106.8681506849316	cycles/inst
+GPU[3].SA[0].CU[3]	SIMDCPIStack.Fetch	0.6499999999999975	cycles/inst
+GPU[3].SA[0].CU[3]	SIMDCPIStack.Idle	0.002380952380953568	cycles/inst
+GPU[3].SA[0].CU[3]	SIMDCPIStack.LDS	1.0404761904759874	cycles/inst
+GPU[3].SA[0].CU[3]	SIMDCPIStack.ScalarInst	0.04761904761904313	cycles/inst
+GPU[3].SA[0].CU[3]	SIMDCPIStack.ScalarMem	1.159523809523811	cycles/inst
+GPU[3].SA[0].CU[3]	SIMDCPIStack.ScalarMemInst	0.00952380952381024	cycles/inst
+GPU[3].SA[0].CU[3]	SIMDCPIStack.Special	0.004761904761850668	cycles/inst
+GPU[3].SA[0].CU[3]	SIMDCPIStack.VALU	1.5809523809525643	cycles/inst
+GPU[3].SA[0].CU[3]	SIMDCPIStack.VMem	1495.5976190476192	cycles/inst
+GPU[3].SA[0].CU[3]	SIMDCPIStack.VMemInst	0.01904761904762048	cycles/inst
+GPU[3].SA[0].CU[3]	SIMDCPIStack.total	1539.0738095238096	cycles/inst
+GPU[3].SA[1].CU[0]	CPIStack.total		cycles/inst
+GPU[3].SA[1].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[1].CU[1]	CPIStack.total		cycles/inst
+GPU[3].SA[1].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[1].CU[2]	CPIStack.total		cycles/inst
+GPU[3].SA[1].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[1].CU[3]	CPIStack.total		cycles/inst
+GPU[3].SA[1].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[2].CU[0]	CPIStack.total		cycles/inst
+GPU[3].SA[2].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[2].CU[1]	CPIStack.total		cycles/inst
+GPU[3].SA[2].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[2].CU[2]	CPIStack.total		cycles/inst
+GPU[3].SA[2].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[2].CU[3]	CPIStack.total		cycles/inst
+GPU[3].SA[2].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[3].CU[0]	CPIStack.total		cycles/inst
+GPU[3].SA[3].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[3].CU[1]	CPIStack.total		cycles/inst
+GPU[3].SA[3].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[3].CU[2]	CPIStack.total		cycles/inst
+GPU[3].SA[3].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[3].CU[3]	CPIStack.total		cycles/inst
+GPU[3].SA[3].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[4].CU[0]	CPIStack.total		cycles/inst
+GPU[3].SA[4].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[4].CU[1]	CPIStack.total		cycles/inst
+GPU[3].SA[4].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[4].CU[2]	CPIStack.total		cycles/inst
+GPU[3].SA[4].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[4].CU[3]	CPIStack.total		cycles/inst
+GPU[3].SA[4].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[5].CU[0]	CPIStack.total		cycles/inst
+GPU[3].SA[5].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[5].CU[1]	CPIStack.total		cycles/inst
+GPU[3].SA[5].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[5].CU[2]	CPIStack.total		cycles/inst
+GPU[3].SA[5].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[5].CU[3]	CPIStack.total		cycles/inst
+GPU[3].SA[5].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[6].CU[0]	CPIStack.total		cycles/inst
+GPU[3].SA[6].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[6].CU[1]	CPIStack.total		cycles/inst
+GPU[3].SA[6].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[6].CU[2]	CPIStack.total		cycles/inst
+GPU[3].SA[6].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[6].CU[3]	CPIStack.total		cycles/inst
+GPU[3].SA[6].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[7].CU[0]	CPIStack.total		cycles/inst
+GPU[3].SA[7].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[7].CU[1]	CPIStack.total		cycles/inst
+GPU[3].SA[7].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[7].CU[2]	CPIStack.total		cycles/inst
+GPU[3].SA[7].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[7].CU[3]	CPIStack.total		cycles/inst
+GPU[3].SA[7].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[8].CU[0]	CPIStack.total		cycles/inst
+GPU[3].SA[8].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[8].CU[1]	CPIStack.total		cycles/inst
+GPU[3].SA[8].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[8].CU[2]	CPIStack.total		cycles/inst
+GPU[3].SA[8].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[8].CU[3]	CPIStack.total		cycles/inst
+GPU[3].SA[8].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[9].CU[0]	CPIStack.total		cycles/inst
+GPU[3].SA[9].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[9].CU[1]	CPIStack.total		cycles/inst
+GPU[3].SA[9].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[9].CU[2]	CPIStack.total		cycles/inst
+GPU[3].SA[9].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[9].CU[3]	CPIStack.total		cycles/inst
+GPU[3].SA[9].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[10].CU[0]	CPIStack.total		cycles/inst
+GPU[3].SA[10].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[10].CU[1]	CPIStack.total		cycles/inst
+GPU[3].SA[10].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[10].CU[2]	CPIStack.total		cycles/inst
+GPU[3].SA[10].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[10].CU[3]	CPIStack.total		cycles/inst
+GPU[3].SA[10].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[11].CU[0]	CPIStack.total		cycles/inst
+GPU[3].SA[11].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[11].CU[1]	CPIStack.total		cycles/inst
+GPU[3].SA[11].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[11].CU[2]	CPIStack.total		cycles/inst
+GPU[3].SA[11].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[11].CU[3]	CPIStack.total		cycles/inst
+GPU[3].SA[11].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[12].CU[0]	CPIStack.total		cycles/inst
+GPU[3].SA[12].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[12].CU[1]	CPIStack.total		cycles/inst
+GPU[3].SA[12].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[12].CU[2]	CPIStack.total		cycles/inst
+GPU[3].SA[12].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[12].CU[3]	CPIStack.total		cycles/inst
+GPU[3].SA[12].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[13].CU[0]	CPIStack.total		cycles/inst
+GPU[3].SA[13].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[13].CU[1]	CPIStack.total		cycles/inst
+GPU[3].SA[13].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[13].CU[2]	CPIStack.total		cycles/inst
+GPU[3].SA[13].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[13].CU[3]	CPIStack.total		cycles/inst
+GPU[3].SA[13].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[14].CU[0]	CPIStack.total		cycles/inst
+GPU[3].SA[14].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[14].CU[1]	CPIStack.total		cycles/inst
+GPU[3].SA[14].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[14].CU[2]	CPIStack.total		cycles/inst
+GPU[3].SA[14].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[14].CU[3]	CPIStack.total		cycles/inst
+GPU[3].SA[14].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[15].CU[0]	CPIStack.total		cycles/inst
+GPU[3].SA[15].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[15].CU[1]	CPIStack.total		cycles/inst
+GPU[3].SA[15].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[15].CU[2]	CPIStack.total		cycles/inst
+GPU[3].SA[15].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[3].SA[15].CU[3]	CPIStack.total		cycles/inst
+GPU[3].SA[15].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[0].CU[0]	CPIStack.Fetch	77.02226027397262	cycles/inst
+GPU[4].SA[0].CU[0]	CPIStack.Idle	0.0017123287671212408	cycles/inst
+GPU[4].SA[0].CU[0]	CPIStack.LDS	0.72089041095893	cycles/inst
+GPU[4].SA[0].CU[0]	CPIStack.ScalarInst	0.022260273972605136	cycles/inst
+GPU[4].SA[0].CU[0]	CPIStack.ScalarMem	0.8287671232876697	cycles/inst
+GPU[4].SA[0].CU[0]	CPIStack.ScalarMemInst	0.005136986301372425	cycles/inst
+GPU[4].SA[0].CU[0]	CPIStack.Special	0.005136986301450746	cycles/inst
+GPU[4].SA[0].CU[0]	CPIStack.VALU	1.1643835616436824	cycles/inst
+GPU[4].SA[0].CU[0]	CPIStack.VMem	1003.0102739726026	cycles/inst
+GPU[4].SA[0].CU[0]	CPIStack.VMemInst	0.04794520547943535	cycles/inst
+GPU[4].SA[0].CU[0]	CPIStack.total	1106.8664383561643	cycles/inst
+GPU[4].SA[0].CU[0]	SIMDCPIStack.Fetch	107.09761904761906	cycles/inst
+GPU[4].SA[0].CU[0]	SIMDCPIStack.Idle	0.002380952380949535	cycles/inst
+GPU[4].SA[0].CU[0]	SIMDCPIStack.LDS	1.0023809523809883	cycles/inst
+GPU[4].SA[0].CU[0]	SIMDCPIStack.ScalarInst	0.030952380952384284	cycles/inst
+GPU[4].SA[0].CU[0]	SIMDCPIStack.ScalarMem	1.1523809523809503	cycles/inst
+GPU[4].SA[0].CU[0]	SIMDCPIStack.ScalarMemInst	0.007142857142860705	cycles/inst
+GPU[4].SA[0].CU[0]	SIMDCPIStack.Special	0.007142857142969608	cycles/inst
+GPU[4].SA[0].CU[0]	SIMDCPIStack.VALU	1.6190476190474061	cycles/inst
+GPU[4].SA[0].CU[0]	SIMDCPIStack.VMem	1394.6619047619045	cycles/inst
+GPU[4].SA[0].CU[0]	SIMDCPIStack.VMemInst	0.06666666666664343	cycles/inst
+GPU[4].SA[0].CU[0]	SIMDCPIStack.total	1539.0714285714287	cycles/inst
+GPU[4].SA[0].CU[1]	CPIStack.Fetch	38.61472602739721	cycles/inst
+GPU[4].SA[0].CU[1]	CPIStack.Idle	0.0017123287671212408	cycles/inst
+GPU[4].SA[0].CU[1]	CPIStack.LDS	0.7534246575341813	cycles/inst
+GPU[4].SA[0].CU[1]	CPIStack.ScalarInst	0.02739726027397176	cycles/inst
+GPU[4].SA[0].CU[1]	CPIStack.ScalarMem	0.832191780821915	cycles/inst
+GPU[4].SA[0].CU[1]	CPIStack.ScalarMemInst	0.005136986301372425	cycles/inst
+GPU[4].SA[0].CU[1]	CPIStack.Special	0.005136986301404333	cycles/inst
+GPU[4].SA[0].CU[1]	CPIStack.VALU	1.1506849315067937	cycles/inst
+GPU[4].SA[0].CU[1]	CPIStack.VMem	1055.2020547945206	cycles/inst
+GPU[4].SA[0].CU[1]	CPIStack.VMemInst	0.04794520547952818	cycles/inst
+GPU[4].SA[0].CU[1]	CPIStack.total	1106.8664383561643	cycles/inst
+GPU[4].SA[0].CU[1]	SIMDCPIStack.Fetch	53.69285714285707	cycles/inst
+GPU[4].SA[0].CU[1]	SIMDCPIStack.Idle	0.002380952380949535	cycles/inst
+GPU[4].SA[0].CU[1]	SIMDCPIStack.LDS	1.0476190476189569	cycles/inst
+GPU[4].SA[0].CU[1]	SIMDCPIStack.ScalarInst	0.038095238095236926	cycles/inst
+GPU[4].SA[0].CU[1]	SIMDCPIStack.ScalarMem	1.1571428571428533	cycles/inst
+GPU[4].SA[0].CU[1]	SIMDCPIStack.ScalarMemInst	0.007142857142860705	cycles/inst
+GPU[4].SA[0].CU[1]	SIMDCPIStack.Special	0.007142857142905073	cycles/inst
+GPU[4].SA[0].CU[1]	SIMDCPIStack.VALU	1.5999999999999226	cycles/inst
+GPU[4].SA[0].CU[1]	SIMDCPIStack.VMem	1467.2333333333333	cycles/inst
+GPU[4].SA[0].CU[1]	SIMDCPIStack.VMemInst	0.06666666666677251	cycles/inst
+GPU[4].SA[0].CU[1]	SIMDCPIStack.total	1539.0714285714287	cycles/inst
+GPU[4].SA[0].CU[2]	CPIStack.Fetch	0.46232876712328613	cycles/inst
+GPU[4].SA[0].CU[2]	CPIStack.Idle	0.0017123287671212408	cycles/inst
+GPU[4].SA[0].CU[2]	CPIStack.LDS	0.7208904109588371	cycles/inst
+GPU[4].SA[0].CU[2]	CPIStack.ScalarInst	0.022260273972605136	cycles/inst
+GPU[4].SA[0].CU[2]	CPIStack.ScalarMem	0.8287671232876697	cycles/inst
+GPU[4].SA[0].CU[2]	CPIStack.ScalarMemInst	0.005136986301372425	cycles/inst
+GPU[4].SA[0].CU[2]	CPIStack.Special	0.0034246575343004973	cycles/inst
+GPU[4].SA[0].CU[2]	CPIStack.VALU	1.16095890410944	cycles/inst
+GPU[4].SA[0].CU[2]	CPIStack.VMem	926.1284246575344	cycles/inst
+GPU[4].SA[0].CU[2]	CPIStack.VMemInst	0.01369863013698733	cycles/inst
+GPU[4].SA[0].CU[2]	CPIStack.total	1106.8664383561643	cycles/inst
+GPU[4].SA[0].CU[2]	SIMDCPIStack.Fetch	0.6428571428571407	cycles/inst
+GPU[4].SA[0].CU[2]	SIMDCPIStack.Idle	0.002380952380949535	cycles/inst
+GPU[4].SA[0].CU[2]	SIMDCPIStack.LDS	1.0023809523808593	cycles/inst
+GPU[4].SA[0].CU[2]	SIMDCPIStack.ScalarInst	0.030952380952384284	cycles/inst
+GPU[4].SA[0].CU[2]	SIMDCPIStack.ScalarMem	1.1523809523809503	cycles/inst
+GPU[4].SA[0].CU[2]	SIMDCPIStack.ScalarMemInst	0.007142857142860705	cycles/inst
+GPU[4].SA[0].CU[2]	SIMDCPIStack.Special	0.004761904761979739	cycles/inst
+GPU[4].SA[0].CU[2]	SIMDCPIStack.VALU	1.614285714285507	cycles/inst
+GPU[4].SA[0].CU[2]	SIMDCPIStack.VMem	1287.7595238095241	cycles/inst
+GPU[4].SA[0].CU[2]	SIMDCPIStack.VMemInst	0.01904761904762048	cycles/inst
+GPU[4].SA[0].CU[2]	SIMDCPIStack.total	1539.0714285714287	cycles/inst
+GPU[4].SA[0].CU[3]	CPIStack.Fetch	0.4674657534246586	cycles/inst
+GPU[4].SA[0].CU[3]	CPIStack.Idle	0.0017123287671212408	cycles/inst
+GPU[4].SA[0].CU[3]	CPIStack.LDS	0.7123287671233643	cycles/inst
+GPU[4].SA[0].CU[3]	CPIStack.ScalarInst	0.034246575342465425	cycles/inst
+GPU[4].SA[0].CU[3]	CPIStack.ScalarMem	0.8339041095890393	cycles/inst
+GPU[4].SA[0].CU[3]	CPIStack.ScalarMemInst	0.006849315068493665	cycles/inst
+GPU[4].SA[0].CU[3]	CPIStack.Special	0.003424657534207672	cycles/inst
+GPU[4].SA[0].CU[3]	CPIStack.VALU	1.1369863013697163	cycles/inst
+GPU[4].SA[0].CU[3]	CPIStack.VMem	939.9486301369865	cycles/inst
+GPU[4].SA[0].CU[3]	CPIStack.VMemInst	0.01369863013698733	cycles/inst
+GPU[4].SA[0].CU[3]	CPIStack.total	1106.8664383561643	cycles/inst
+GPU[4].SA[0].CU[3]	SIMDCPIStack.Fetch	0.6500000000000015	cycles/inst
+GPU[4].SA[0].CU[3]	SIMDCPIStack.Idle	0.002380952380949535	cycles/inst
+GPU[4].SA[0].CU[3]	SIMDCPIStack.LDS	0.9904761904762971	cycles/inst
+GPU[4].SA[0].CU[3]	SIMDCPIStack.ScalarInst	0.047619047619047165	cycles/inst
+GPU[4].SA[0].CU[3]	SIMDCPIStack.ScalarMem	1.159523809523807	cycles/inst
+GPU[4].SA[0].CU[3]	SIMDCPIStack.ScalarMemInst	0.00952380952381024	cycles/inst
+GPU[4].SA[0].CU[3]	SIMDCPIStack.Special	0.004761904761850668	cycles/inst
+GPU[4].SA[0].CU[3]	SIMDCPIStack.VALU	1.580952380952177	cycles/inst
+GPU[4].SA[0].CU[3]	SIMDCPIStack.VMem	1306.9761904761908	cycles/inst
+GPU[4].SA[0].CU[3]	SIMDCPIStack.VMemInst	0.01904761904762048	cycles/inst
+GPU[4].SA[0].CU[3]	SIMDCPIStack.total	1539.0714285714287	cycles/inst
+GPU[4].SA[1].CU[0]	CPIStack.total		cycles/inst
+GPU[4].SA[1].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[1].CU[1]	CPIStack.total		cycles/inst
+GPU[4].SA[1].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[1].CU[2]	CPIStack.total		cycles/inst
+GPU[4].SA[1].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[1].CU[3]	CPIStack.total		cycles/inst
+GPU[4].SA[1].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[2].CU[0]	CPIStack.total		cycles/inst
+GPU[4].SA[2].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[2].CU[1]	CPIStack.total		cycles/inst
+GPU[4].SA[2].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[2].CU[2]	CPIStack.total		cycles/inst
+GPU[4].SA[2].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[2].CU[3]	CPIStack.total		cycles/inst
+GPU[4].SA[2].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[3].CU[0]	CPIStack.total		cycles/inst
+GPU[4].SA[3].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[3].CU[1]	CPIStack.total		cycles/inst
+GPU[4].SA[3].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[3].CU[2]	CPIStack.total		cycles/inst
+GPU[4].SA[3].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[3].CU[3]	CPIStack.total		cycles/inst
+GPU[4].SA[3].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[4].CU[0]	CPIStack.total		cycles/inst
+GPU[4].SA[4].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[4].CU[1]	CPIStack.total		cycles/inst
+GPU[4].SA[4].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[4].CU[2]	CPIStack.total		cycles/inst
+GPU[4].SA[4].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[4].CU[3]	CPIStack.total		cycles/inst
+GPU[4].SA[4].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[5].CU[0]	CPIStack.total		cycles/inst
+GPU[4].SA[5].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[5].CU[1]	CPIStack.total		cycles/inst
+GPU[4].SA[5].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[5].CU[2]	CPIStack.total		cycles/inst
+GPU[4].SA[5].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[5].CU[3]	CPIStack.total		cycles/inst
+GPU[4].SA[5].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[6].CU[0]	CPIStack.total		cycles/inst
+GPU[4].SA[6].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[6].CU[1]	CPIStack.total		cycles/inst
+GPU[4].SA[6].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[6].CU[2]	CPIStack.total		cycles/inst
+GPU[4].SA[6].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[6].CU[3]	CPIStack.total		cycles/inst
+GPU[4].SA[6].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[7].CU[0]	CPIStack.total		cycles/inst
+GPU[4].SA[7].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[7].CU[1]	CPIStack.total		cycles/inst
+GPU[4].SA[7].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[7].CU[2]	CPIStack.total		cycles/inst
+GPU[4].SA[7].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[7].CU[3]	CPIStack.total		cycles/inst
+GPU[4].SA[7].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[8].CU[0]	CPIStack.total		cycles/inst
+GPU[4].SA[8].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[8].CU[1]	CPIStack.total		cycles/inst
+GPU[4].SA[8].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[8].CU[2]	CPIStack.total		cycles/inst
+GPU[4].SA[8].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[8].CU[3]	CPIStack.total		cycles/inst
+GPU[4].SA[8].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[9].CU[0]	CPIStack.total		cycles/inst
+GPU[4].SA[9].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[9].CU[1]	CPIStack.total		cycles/inst
+GPU[4].SA[9].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[9].CU[2]	CPIStack.total		cycles/inst
+GPU[4].SA[9].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[9].CU[3]	CPIStack.total		cycles/inst
+GPU[4].SA[9].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[10].CU[0]	CPIStack.total		cycles/inst
+GPU[4].SA[10].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[10].CU[1]	CPIStack.total		cycles/inst
+GPU[4].SA[10].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[10].CU[2]	CPIStack.total		cycles/inst
+GPU[4].SA[10].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[10].CU[3]	CPIStack.total		cycles/inst
+GPU[4].SA[10].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[11].CU[0]	CPIStack.total		cycles/inst
+GPU[4].SA[11].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[11].CU[1]	CPIStack.total		cycles/inst
+GPU[4].SA[11].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[11].CU[2]	CPIStack.total		cycles/inst
+GPU[4].SA[11].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[11].CU[3]	CPIStack.total		cycles/inst
+GPU[4].SA[11].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[12].CU[0]	CPIStack.total		cycles/inst
+GPU[4].SA[12].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[12].CU[1]	CPIStack.total		cycles/inst
+GPU[4].SA[12].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[12].CU[2]	CPIStack.total		cycles/inst
+GPU[4].SA[12].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[12].CU[3]	CPIStack.total		cycles/inst
+GPU[4].SA[12].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[13].CU[0]	CPIStack.total		cycles/inst
+GPU[4].SA[13].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[13].CU[1]	CPIStack.total		cycles/inst
+GPU[4].SA[13].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[13].CU[2]	CPIStack.total		cycles/inst
+GPU[4].SA[13].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[13].CU[3]	CPIStack.total		cycles/inst
+GPU[4].SA[13].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[14].CU[0]	CPIStack.total		cycles/inst
+GPU[4].SA[14].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[14].CU[1]	CPIStack.total		cycles/inst
+GPU[4].SA[14].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[14].CU[2]	CPIStack.total		cycles/inst
+GPU[4].SA[14].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[14].CU[3]	CPIStack.total		cycles/inst
+GPU[4].SA[14].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[15].CU[0]	CPIStack.total		cycles/inst
+GPU[4].SA[15].CU[0]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[15].CU[1]	CPIStack.total		cycles/inst
+GPU[4].SA[15].CU[1]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[15].CU[2]	CPIStack.total		cycles/inst
+GPU[4].SA[15].CU[2]	SIMDCPIStack.total		cycles/inst
+GPU[4].SA[15].CU[3]	CPIStack.total		cycles/inst
+GPU[4].SA[15].CU[3]	SIMDCPIStack.total		cycles/inst
+GPU[1].SA[0].CU[0].SIMD0	busy_time	4.2e-07	second
+GPU[1].SA[0].CU[0].SIMD1	busy_time	4.2e-07	second
+GPU[1].SA[0].CU[0].SIMD2	busy_time	4.2e-07	second
+GPU[1].SA[0].CU[0].SIMD3	busy_time	4.2e-07	second
+GPU[1].SA[0].CU[1].SIMD0	busy_time	4.2e-07	second
+GPU[1].SA[0].CU[1].SIMD1	busy_time	4.2e-07	second
+GPU[1].SA[0].CU[1].SIMD2	busy_time	4.2e-07	second
+GPU[1].SA[0].CU[1].SIMD3	busy_time	4.2e-07	second
+GPU[1].SA[0].CU[2].SIMD0	busy_time	4.2e-07	second
+GPU[1].SA[0].CU[2].SIMD1	busy_time	4.2e-07	second
+GPU[1].SA[0].CU[2].SIMD2	busy_time	4.2e-07	second
+GPU[1].SA[0].CU[2].SIMD3	busy_time	4.2e-07	second
+GPU[1].SA[0].CU[3].SIMD0	busy_time	4.2e-07	second
+GPU[1].SA[0].CU[3].SIMD1	busy_time	4.2e-07	second
+GPU[1].SA[0].CU[3].SIMD2	busy_time	4.2e-07	second
+GPU[1].SA[0].CU[3].SIMD3	busy_time	4.2e-07	second
+GPU[1].SA[1].CU[0].SIMD0	busy_time	0.0	second
+GPU[1].SA[1].CU[0].SIMD1	busy_time	0.0	second
+GPU[1].SA[1].CU[0].SIMD2	busy_time	0.0	second
+GPU[1].SA[1].CU[0].SIMD3	busy_time	0.0	second
+GPU[1].SA[1].CU[1].SIMD0	busy_time	0.0	second
+GPU[1].SA[1].CU[1].SIMD1	busy_time	0.0	second
+GPU[1].SA[1].CU[1].SIMD2	busy_time	0.0	second
+GPU[1].SA[1].CU[1].SIMD3	busy_time	0.0	second
+GPU[1].SA[1].CU[2].SIMD0	busy_time	0.0	second
+GPU[1].SA[1].CU[2].SIMD1	busy_time	0.0	second
+GPU[1].SA[1].CU[2].SIMD2	busy_time	0.0	second
+GPU[1].SA[1].CU[2].SIMD3	busy_time	0.0	second
+GPU[1].SA[1].CU[3].SIMD0	busy_time	0.0	second
+GPU[1].SA[1].CU[3].SIMD1	busy_time	0.0	second
+GPU[1].SA[1].CU[3].SIMD2	busy_time	0.0	second
+GPU[1].SA[1].CU[3].SIMD3	busy_time	0.0	second
+GPU[1].SA[2].CU[0].SIMD0	busy_time	0.0	second
+GPU[1].SA[2].CU[0].SIMD1	busy_time	0.0	second
+GPU[1].SA[2].CU[0].SIMD2	busy_time	0.0	second
+GPU[1].SA[2].CU[0].SIMD3	busy_time	0.0	second
+GPU[1].SA[2].CU[1].SIMD0	busy_time	0.0	second
+GPU[1].SA[2].CU[1].SIMD1	busy_time	0.0	second
+GPU[1].SA[2].CU[1].SIMD2	busy_time	0.0	second
+GPU[1].SA[2].CU[1].SIMD3	busy_time	0.0	second
+GPU[1].SA[2].CU[2].SIMD0	busy_time	0.0	second
+GPU[1].SA[2].CU[2].SIMD1	busy_time	0.0	second
+GPU[1].SA[2].CU[2].SIMD2	busy_time	0.0	second
+GPU[1].SA[2].CU[2].SIMD3	busy_time	0.0	second
+GPU[1].SA[2].CU[3].SIMD0	busy_time	0.0	second
+GPU[1].SA[2].CU[3].SIMD1	busy_time	0.0	second
+GPU[1].SA[2].CU[3].SIMD2	busy_time	0.0	second
+GPU[1].SA[2].CU[3].SIMD3	busy_time	0.0	second
+GPU[1].SA[3].CU[0].SIMD0	busy_time	0.0	second
+GPU[1].SA[3].CU[0].SIMD1	busy_time	0.0	second
+GPU[1].SA[3].CU[0].SIMD2	busy_time	0.0	second
+GPU[1].SA[3].CU[0].SIMD3	busy_time	0.0	second
+GPU[1].SA[3].CU[1].SIMD0	busy_time	0.0	second
+GPU[1].SA[3].CU[1].SIMD1	busy_time	0.0	second
+GPU[1].SA[3].CU[1].SIMD2	busy_time	0.0	second
+GPU[1].SA[3].CU[1].SIMD3	busy_time	0.0	second
+GPU[1].SA[3].CU[2].SIMD0	busy_time	0.0	second
+GPU[1].SA[3].CU[2].SIMD1	busy_time	0.0	second
+GPU[1].SA[3].CU[2].SIMD2	busy_time	0.0	second
+GPU[1].SA[3].CU[2].SIMD3	busy_time	0.0	second
+GPU[1].SA[3].CU[3].SIMD0	busy_time	0.0	second
+GPU[1].SA[3].CU[3].SIMD1	busy_time	0.0	second
+GPU[1].SA[3].CU[3].SIMD2	busy_time	0.0	second
+GPU[1].SA[3].CU[3].SIMD3	busy_time	0.0	second
+GPU[1].SA[4].CU[0].SIMD0	busy_time	0.0	second
+GPU[1].SA[4].CU[0].SIMD1	busy_time	0.0	second
+GPU[1].SA[4].CU[0].SIMD2	busy_time	0.0	second
+GPU[1].SA[4].CU[0].SIMD3	busy_time	0.0	second
+GPU[1].SA[4].CU[1].SIMD0	busy_time	0.0	second
+GPU[1].SA[4].CU[1].SIMD1	busy_time	0.0	second
+GPU[1].SA[4].CU[1].SIMD2	busy_time	0.0	second
+GPU[1].SA[4].CU[1].SIMD3	busy_time	0.0	second
+GPU[1].SA[4].CU[2].SIMD0	busy_time	0.0	second
+GPU[1].SA[4].CU[2].SIMD1	busy_time	0.0	second
+GPU[1].SA[4].CU[2].SIMD2	busy_time	0.0	second
+GPU[1].SA[4].CU[2].SIMD3	busy_time	0.0	second
+GPU[1].SA[4].CU[3].SIMD0	busy_time	0.0	second
+GPU[1].SA[4].CU[3].SIMD1	busy_time	0.0	second
+GPU[1].SA[4].CU[3].SIMD2	busy_time	0.0	second
+GPU[1].SA[4].CU[3].SIMD3	busy_time	0.0	second
+GPU[1].SA[5].CU[0].SIMD0	busy_time	0.0	second
+GPU[1].SA[5].CU[0].SIMD1	busy_time	0.0	second
+GPU[1].SA[5].CU[0].SIMD2	busy_time	0.0	second
+GPU[1].SA[5].CU[0].SIMD3	busy_time	0.0	second
+GPU[1].SA[5].CU[1].SIMD0	busy_time	0.0	second
+GPU[1].SA[5].CU[1].SIMD1	busy_time	0.0	second
+GPU[1].SA[5].CU[1].SIMD2	busy_time	0.0	second
+GPU[1].SA[5].CU[1].SIMD3	busy_time	0.0	second
+GPU[1].SA[5].CU[2].SIMD0	busy_time	0.0	second
+GPU[1].SA[5].CU[2].SIMD1	busy_time	0.0	second
+GPU[1].SA[5].CU[2].SIMD2	busy_time	0.0	second
+GPU[1].SA[5].CU[2].SIMD3	busy_time	0.0	second
+GPU[1].SA[5].CU[3].SIMD0	busy_time	0.0	second
+GPU[1].SA[5].CU[3].SIMD1	busy_time	0.0	second
+GPU[1].SA[5].CU[3].SIMD2	busy_time	0.0	second
+GPU[1].SA[5].CU[3].SIMD3	busy_time	0.0	second
+GPU[1].SA[6].CU[0].SIMD0	busy_time	0.0	second
+GPU[1].SA[6].CU[0].SIMD1	busy_time	0.0	second
+GPU[1].SA[6].CU[0].SIMD2	busy_time	0.0	second
+GPU[1].SA[6].CU[0].SIMD3	busy_time	0.0	second
+GPU[1].SA[6].CU[1].SIMD0	busy_time	0.0	second
+GPU[1].SA[6].CU[1].SIMD1	busy_time	0.0	second
+GPU[1].SA[6].CU[1].SIMD2	busy_time	0.0	second
+GPU[1].SA[6].CU[1].SIMD3	busy_time	0.0	second
+GPU[1].SA[6].CU[2].SIMD0	busy_time	0.0	second
+GPU[1].SA[6].CU[2].SIMD1	busy_time	0.0	second
+GPU[1].SA[6].CU[2].SIMD2	busy_time	0.0	second
+GPU[1].SA[6].CU[2].SIMD3	busy_time	0.0	second
+GPU[1].SA[6].CU[3].SIMD0	busy_time	0.0	second
+GPU[1].SA[6].CU[3].SIMD1	busy_time	0.0	second
+GPU[1].SA[6].CU[3].SIMD2	busy_time	0.0	second
+GPU[1].SA[6].CU[3].SIMD3	busy_time	0.0	second
+GPU[1].SA[7].CU[0].SIMD0	busy_time	0.0	second
+GPU[1].SA[7].CU[0].SIMD1	busy_time	0.0	second
+GPU[1].SA[7].CU[0].SIMD2	busy_time	0.0	second
+GPU[1].SA[7].CU[0].SIMD3	busy_time	0.0	second
+GPU[1].SA[7].CU[1].SIMD0	busy_time	0.0	second
+GPU[1].SA[7].CU[1].SIMD1	busy_time	0.0	second
+GPU[1].SA[7].CU[1].SIMD2	busy_time	0.0	second
+GPU[1].SA[7].CU[1].SIMD3	busy_time	0.0	second
+GPU[1].SA[7].CU[2].SIMD0	busy_time	0.0	second
+GPU[1].SA[7].CU[2].SIMD1	busy_time	0.0	second
+GPU[1].SA[7].CU[2].SIMD2	busy_time	0.0	second
+GPU[1].SA[7].CU[2].SIMD3	busy_time	0.0	second
+GPU[1].SA[7].CU[3].SIMD0	busy_time	0.0	second
+GPU[1].SA[7].CU[3].SIMD1	busy_time	0.0	second
+GPU[1].SA[7].CU[3].SIMD2	busy_time	0.0	second
+GPU[1].SA[7].CU[3].SIMD3	busy_time	0.0	second
+GPU[1].SA[8].CU[0].SIMD0	busy_time	0.0	second
+GPU[1].SA[8].CU[0].SIMD1	busy_time	0.0	second
+GPU[1].SA[8].CU[0].SIMD2	busy_time	0.0	second
+GPU[1].SA[8].CU[0].SIMD3	busy_time	0.0	second
+GPU[1].SA[8].CU[1].SIMD0	busy_time	0.0	second
+GPU[1].SA[8].CU[1].SIMD1	busy_time	0.0	second
+GPU[1].SA[8].CU[1].SIMD2	busy_time	0.0	second
+GPU[1].SA[8].CU[1].SIMD3	busy_time	0.0	second
+GPU[1].SA[8].CU[2].SIMD0	busy_time	0.0	second
+GPU[1].SA[8].CU[2].SIMD1	busy_time	0.0	second
+GPU[1].SA[8].CU[2].SIMD2	busy_time	0.0	second
+GPU[1].SA[8].CU[2].SIMD3	busy_time	0.0	second
+GPU[1].SA[8].CU[3].SIMD0	busy_time	0.0	second
+GPU[1].SA[8].CU[3].SIMD1	busy_time	0.0	second
+GPU[1].SA[8].CU[3].SIMD2	busy_time	0.0	second
+GPU[1].SA[8].CU[3].SIMD3	busy_time	0.0	second
+GPU[1].SA[9].CU[0].SIMD0	busy_time	0.0	second
+GPU[1].SA[9].CU[0].SIMD1	busy_time	0.0	second
+GPU[1].SA[9].CU[0].SIMD2	busy_time	0.0	second
+GPU[1].SA[9].CU[0].SIMD3	busy_time	0.0	second
+GPU[1].SA[9].CU[1].SIMD0	busy_time	0.0	second
+GPU[1].SA[9].CU[1].SIMD1	busy_time	0.0	second
+GPU[1].SA[9].CU[1].SIMD2	busy_time	0.0	second
+GPU[1].SA[9].CU[1].SIMD3	busy_time	0.0	second
+GPU[1].SA[9].CU[2].SIMD0	busy_time	0.0	second
+GPU[1].SA[9].CU[2].SIMD1	busy_time	0.0	second
+GPU[1].SA[9].CU[2].SIMD2	busy_time	0.0	second
+GPU[1].SA[9].CU[2].SIMD3	busy_time	0.0	second
+GPU[1].SA[9].CU[3].SIMD0	busy_time	0.0	second
+GPU[1].SA[9].CU[3].SIMD1	busy_time	0.0	second
+GPU[1].SA[9].CU[3].SIMD2	busy_time	0.0	second
+GPU[1].SA[9].CU[3].SIMD3	busy_time	0.0	second
+GPU[1].SA[10].CU[0].SIMD0	busy_time	0.0	second
+GPU[1].SA[10].CU[0].SIMD1	busy_time	0.0	second
+GPU[1].SA[10].CU[0].SIMD2	busy_time	0.0	second
+GPU[1].SA[10].CU[0].SIMD3	busy_time	0.0	second
+GPU[1].SA[10].CU[1].SIMD0	busy_time	0.0	second
+GPU[1].SA[10].CU[1].SIMD1	busy_time	0.0	second
+GPU[1].SA[10].CU[1].SIMD2	busy_time	0.0	second
+GPU[1].SA[10].CU[1].SIMD3	busy_time	0.0	second
+GPU[1].SA[10].CU[2].SIMD0	busy_time	0.0	second
+GPU[1].SA[10].CU[2].SIMD1	busy_time	0.0	second
+GPU[1].SA[10].CU[2].SIMD2	busy_time	0.0	second
+GPU[1].SA[10].CU[2].SIMD3	busy_time	0.0	second
+GPU[1].SA[10].CU[3].SIMD0	busy_time	0.0	second
+GPU[1].SA[10].CU[3].SIMD1	busy_time	0.0	second
+GPU[1].SA[10].CU[3].SIMD2	busy_time	0.0	second
+GPU[1].SA[10].CU[3].SIMD3	busy_time	0.0	second
+GPU[1].SA[11].CU[0].SIMD0	busy_time	0.0	second
+GPU[1].SA[11].CU[0].SIMD1	busy_time	0.0	second
+GPU[1].SA[11].CU[0].SIMD2	busy_time	0.0	second
+GPU[1].SA[11].CU[0].SIMD3	busy_time	0.0	second
+GPU[1].SA[11].CU[1].SIMD0	busy_time	0.0	second
+GPU[1].SA[11].CU[1].SIMD1	busy_time	0.0	second
+GPU[1].SA[11].CU[1].SIMD2	busy_time	0.0	second
+GPU[1].SA[11].CU[1].SIMD3	busy_time	0.0	second
+GPU[1].SA[11].CU[2].SIMD0	busy_time	0.0	second
+GPU[1].SA[11].CU[2].SIMD1	busy_time	0.0	second
+GPU[1].SA[11].CU[2].SIMD2	busy_time	0.0	second
+GPU[1].SA[11].CU[2].SIMD3	busy_time	0.0	second
+GPU[1].SA[11].CU[3].SIMD0	busy_time	0.0	second
+GPU[1].SA[11].CU[3].SIMD1	busy_time	0.0	second
+GPU[1].SA[11].CU[3].SIMD2	busy_time	0.0	second
+GPU[1].SA[11].CU[3].SIMD3	busy_time	0.0	second
+GPU[1].SA[12].CU[0].SIMD0	busy_time	0.0	second
+GPU[1].SA[12].CU[0].SIMD1	busy_time	0.0	second
+GPU[1].SA[12].CU[0].SIMD2	busy_time	0.0	second
+GPU[1].SA[12].CU[0].SIMD3	busy_time	0.0	second
+GPU[1].SA[12].CU[1].SIMD0	busy_time	0.0	second
+GPU[1].SA[12].CU[1].SIMD1	busy_time	0.0	second
+GPU[1].SA[12].CU[1].SIMD2	busy_time	0.0	second
+GPU[1].SA[12].CU[1].SIMD3	busy_time	0.0	second
+GPU[1].SA[12].CU[2].SIMD0	busy_time	0.0	second
+GPU[1].SA[12].CU[2].SIMD1	busy_time	0.0	second
+GPU[1].SA[12].CU[2].SIMD2	busy_time	0.0	second
+GPU[1].SA[12].CU[2].SIMD3	busy_time	0.0	second
+GPU[1].SA[12].CU[3].SIMD0	busy_time	0.0	second
+GPU[1].SA[12].CU[3].SIMD1	busy_time	0.0	second
+GPU[1].SA[12].CU[3].SIMD2	busy_time	0.0	second
+GPU[1].SA[12].CU[3].SIMD3	busy_time	0.0	second
+GPU[1].SA[13].CU[0].SIMD0	busy_time	0.0	second
+GPU[1].SA[13].CU[0].SIMD1	busy_time	0.0	second
+GPU[1].SA[13].CU[0].SIMD2	busy_time	0.0	second
+GPU[1].SA[13].CU[0].SIMD3	busy_time	0.0	second
+GPU[1].SA[13].CU[1].SIMD0	busy_time	0.0	second
+GPU[1].SA[13].CU[1].SIMD1	busy_time	0.0	second
+GPU[1].SA[13].CU[1].SIMD2	busy_time	0.0	second
+GPU[1].SA[13].CU[1].SIMD3	busy_time	0.0	second
+GPU[1].SA[13].CU[2].SIMD0	busy_time	0.0	second
+GPU[1].SA[13].CU[2].SIMD1	busy_time	0.0	second
+GPU[1].SA[13].CU[2].SIMD2	busy_time	0.0	second
+GPU[1].SA[13].CU[2].SIMD3	busy_time	0.0	second
+GPU[1].SA[13].CU[3].SIMD0	busy_time	0.0	second
+GPU[1].SA[13].CU[3].SIMD1	busy_time	0.0	second
+GPU[1].SA[13].CU[3].SIMD2	busy_time	0.0	second
+GPU[1].SA[13].CU[3].SIMD3	busy_time	0.0	second
+GPU[1].SA[14].CU[0].SIMD0	busy_time	0.0	second
+GPU[1].SA[14].CU[0].SIMD1	busy_time	0.0	second
+GPU[1].SA[14].CU[0].SIMD2	busy_time	0.0	second
+GPU[1].SA[14].CU[0].SIMD3	busy_time	0.0	second
+GPU[1].SA[14].CU[1].SIMD0	busy_time	0.0	second
+GPU[1].SA[14].CU[1].SIMD1	busy_time	0.0	second
+GPU[1].SA[14].CU[1].SIMD2	busy_time	0.0	second
+GPU[1].SA[14].CU[1].SIMD3	busy_time	0.0	second
+GPU[1].SA[14].CU[2].SIMD0	busy_time	0.0	second
+GPU[1].SA[14].CU[2].SIMD1	busy_time	0.0	second
+GPU[1].SA[14].CU[2].SIMD2	busy_time	0.0	second
+GPU[1].SA[14].CU[2].SIMD3	busy_time	0.0	second
+GPU[1].SA[14].CU[3].SIMD0	busy_time	0.0	second
+GPU[1].SA[14].CU[3].SIMD1	busy_time	0.0	second
+GPU[1].SA[14].CU[3].SIMD2	busy_time	0.0	second
+GPU[1].SA[14].CU[3].SIMD3	busy_time	0.0	second
+GPU[1].SA[15].CU[0].SIMD0	busy_time	0.0	second
+GPU[1].SA[15].CU[0].SIMD1	busy_time	0.0	second
+GPU[1].SA[15].CU[0].SIMD2	busy_time	0.0	second
+GPU[1].SA[15].CU[0].SIMD3	busy_time	0.0	second
+GPU[1].SA[15].CU[1].SIMD0	busy_time	0.0	second
+GPU[1].SA[15].CU[1].SIMD1	busy_time	0.0	second
+GPU[1].SA[15].CU[1].SIMD2	busy_time	0.0	second
+GPU[1].SA[15].CU[1].SIMD3	busy_time	0.0	second
+GPU[1].SA[15].CU[2].SIMD0	busy_time	0.0	second
+GPU[1].SA[15].CU[2].SIMD1	busy_time	0.0	second
+GPU[1].SA[15].CU[2].SIMD2	busy_time	0.0	second
+GPU[1].SA[15].CU[2].SIMD3	busy_time	0.0	second
+GPU[1].SA[15].CU[3].SIMD0	busy_time	0.0	second
+GPU[1].SA[15].CU[3].SIMD1	busy_time	0.0	second
+GPU[1].SA[15].CU[3].SIMD2	busy_time	0.0	second
+GPU[1].SA[15].CU[3].SIMD3	busy_time	0.0	second
+GPU[2].SA[0].CU[0].SIMD0	busy_time	4.2e-07	second
+GPU[2].SA[0].CU[0].SIMD1	busy_time	4.2e-07	second
+GPU[2].SA[0].CU[0].SIMD2	busy_time	4.2e-07	second
+GPU[2].SA[0].CU[0].SIMD3	busy_time	4.2e-07	second
+GPU[2].SA[0].CU[1].SIMD0	busy_time	4.2e-07	second
+GPU[2].SA[0].CU[1].SIMD1	busy_time	4.2e-07	second
+GPU[2].SA[0].CU[1].SIMD2	busy_time	4.2e-07	second
+GPU[2].SA[0].CU[1].SIMD3	busy_time	4.2e-07	second
+GPU[2].SA[0].CU[2].SIMD0	busy_time	4.2e-07	second
+GPU[2].SA[0].CU[2].SIMD1	busy_time	4.2e-07	second
+GPU[2].SA[0].CU[2].SIMD2	busy_time	4.2e-07	second
+GPU[2].SA[0].CU[2].SIMD3	busy_time	4.2e-07	second
+GPU[2].SA[0].CU[3].SIMD0	busy_time	4.2e-07	second
+GPU[2].SA[0].CU[3].SIMD1	busy_time	4.2e-07	second
+GPU[2].SA[0].CU[3].SIMD2	busy_time	4.2e-07	second
+GPU[2].SA[0].CU[3].SIMD3	busy_time	4.2e-07	second
+GPU[2].SA[1].CU[0].SIMD0	busy_time	0.0	second
+GPU[2].SA[1].CU[0].SIMD1	busy_time	0.0	second
+GPU[2].SA[1].CU[0].SIMD2	busy_time	0.0	second
+GPU[2].SA[1].CU[0].SIMD3	busy_time	0.0	second
+GPU[2].SA[1].CU[1].SIMD0	busy_time	0.0	second
+GPU[2].SA[1].CU[1].SIMD1	busy_time	0.0	second
+GPU[2].SA[1].CU[1].SIMD2	busy_time	0.0	second
+GPU[2].SA[1].CU[1].SIMD3	busy_time	0.0	second
+GPU[2].SA[1].CU[2].SIMD0	busy_time	0.0	second
+GPU[2].SA[1].CU[2].SIMD1	busy_time	0.0	second
+GPU[2].SA[1].CU[2].SIMD2	busy_time	0.0	second
+GPU[2].SA[1].CU[2].SIMD3	busy_time	0.0	second
+GPU[2].SA[1].CU[3].SIMD0	busy_time	0.0	second
+GPU[2].SA[1].CU[3].SIMD1	busy_time	0.0	second
+GPU[2].SA[1].CU[3].SIMD2	busy_time	0.0	second
+GPU[2].SA[1].CU[3].SIMD3	busy_time	0.0	second
+GPU[2].SA[2].CU[0].SIMD0	busy_time	0.0	second
+GPU[2].SA[2].CU[0].SIMD1	busy_time	0.0	second
+GPU[2].SA[2].CU[0].SIMD2	busy_time	0.0	second
+GPU[2].SA[2].CU[0].SIMD3	busy_time	0.0	second
+GPU[2].SA[2].CU[1].SIMD0	busy_time	0.0	second
+GPU[2].SA[2].CU[1].SIMD1	busy_time	0.0	second
+GPU[2].SA[2].CU[1].SIMD2	busy_time	0.0	second
+GPU[2].SA[2].CU[1].SIMD3	busy_time	0.0	second
+GPU[2].SA[2].CU[2].SIMD0	busy_time	0.0	second
+GPU[2].SA[2].CU[2].SIMD1	busy_time	0.0	second
+GPU[2].SA[2].CU[2].SIMD2	busy_time	0.0	second
+GPU[2].SA[2].CU[2].SIMD3	busy_time	0.0	second
+GPU[2].SA[2].CU[3].SIMD0	busy_time	0.0	second
+GPU[2].SA[2].CU[3].SIMD1	busy_time	0.0	second
+GPU[2].SA[2].CU[3].SIMD2	busy_time	0.0	second
+GPU[2].SA[2].CU[3].SIMD3	busy_time	0.0	second
+GPU[2].SA[3].CU[0].SIMD0	busy_time	0.0	second
+GPU[2].SA[3].CU[0].SIMD1	busy_time	0.0	second
+GPU[2].SA[3].CU[0].SIMD2	busy_time	0.0	second
+GPU[2].SA[3].CU[0].SIMD3	busy_time	0.0	second
+GPU[2].SA[3].CU[1].SIMD0	busy_time	0.0	second
+GPU[2].SA[3].CU[1].SIMD1	busy_time	0.0	second
+GPU[2].SA[3].CU[1].SIMD2	busy_time	0.0	second
+GPU[2].SA[3].CU[1].SIMD3	busy_time	0.0	second
+GPU[2].SA[3].CU[2].SIMD0	busy_time	0.0	second
+GPU[2].SA[3].CU[2].SIMD1	busy_time	0.0	second
+GPU[2].SA[3].CU[2].SIMD2	busy_time	0.0	second
+GPU[2].SA[3].CU[2].SIMD3	busy_time	0.0	second
+GPU[2].SA[3].CU[3].SIMD0	busy_time	0.0	second
+GPU[2].SA[3].CU[3].SIMD1	busy_time	0.0	second
+GPU[2].SA[3].CU[3].SIMD2	busy_time	0.0	second
+GPU[2].SA[3].CU[3].SIMD3	busy_time	0.0	second
+GPU[2].SA[4].CU[0].SIMD0	busy_time	0.0	second
+GPU[2].SA[4].CU[0].SIMD1	busy_time	0.0	second
+GPU[2].SA[4].CU[0].SIMD2	busy_time	0.0	second
+GPU[2].SA[4].CU[0].SIMD3	busy_time	0.0	second
+GPU[2].SA[4].CU[1].SIMD0	busy_time	0.0	second
+GPU[2].SA[4].CU[1].SIMD1	busy_time	0.0	second
+GPU[2].SA[4].CU[1].SIMD2	busy_time	0.0	second
+GPU[2].SA[4].CU[1].SIMD3	busy_time	0.0	second
+GPU[2].SA[4].CU[2].SIMD0	busy_time	0.0	second
+GPU[2].SA[4].CU[2].SIMD1	busy_time	0.0	second
+GPU[2].SA[4].CU[2].SIMD2	busy_time	0.0	second
+GPU[2].SA[4].CU[2].SIMD3	busy_time	0.0	second
+GPU[2].SA[4].CU[3].SIMD0	busy_time	0.0	second
+GPU[2].SA[4].CU[3].SIMD1	busy_time	0.0	second
+GPU[2].SA[4].CU[3].SIMD2	busy_time	0.0	second
+GPU[2].SA[4].CU[3].SIMD3	busy_time	0.0	second
+GPU[2].SA[5].CU[0].SIMD0	busy_time	0.0	second
+GPU[2].SA[5].CU[0].SIMD1	busy_time	0.0	second
+GPU[2].SA[5].CU[0].SIMD2	busy_time	0.0	second
+GPU[2].SA[5].CU[0].SIMD3	busy_time	0.0	second
+GPU[2].SA[5].CU[1].SIMD0	busy_time	0.0	second
+GPU[2].SA[5].CU[1].SIMD1	busy_time	0.0	second
+GPU[2].SA[5].CU[1].SIMD2	busy_time	0.0	second
+GPU[2].SA[5].CU[1].SIMD3	busy_time	0.0	second
+GPU[2].SA[5].CU[2].SIMD0	busy_time	0.0	second
+GPU[2].SA[5].CU[2].SIMD1	busy_time	0.0	second
+GPU[2].SA[5].CU[2].SIMD2	busy_time	0.0	second
+GPU[2].SA[5].CU[2].SIMD3	busy_time	0.0	second
+GPU[2].SA[5].CU[3].SIMD0	busy_time	0.0	second
+GPU[2].SA[5].CU[3].SIMD1	busy_time	0.0	second
+GPU[2].SA[5].CU[3].SIMD2	busy_time	0.0	second
+GPU[2].SA[5].CU[3].SIMD3	busy_time	0.0	second
+GPU[2].SA[6].CU[0].SIMD0	busy_time	0.0	second
+GPU[2].SA[6].CU[0].SIMD1	busy_time	0.0	second
+GPU[2].SA[6].CU[0].SIMD2	busy_time	0.0	second
+GPU[2].SA[6].CU[0].SIMD3	busy_time	0.0	second
+GPU[2].SA[6].CU[1].SIMD0	busy_time	0.0	second
+GPU[2].SA[6].CU[1].SIMD1	busy_time	0.0	second
+GPU[2].SA[6].CU[1].SIMD2	busy_time	0.0	second
+GPU[2].SA[6].CU[1].SIMD3	busy_time	0.0	second
+GPU[2].SA[6].CU[2].SIMD0	busy_time	0.0	second
+GPU[2].SA[6].CU[2].SIMD1	busy_time	0.0	second
+GPU[2].SA[6].CU[2].SIMD2	busy_time	0.0	second
+GPU[2].SA[6].CU[2].SIMD3	busy_time	0.0	second
+GPU[2].SA[6].CU[3].SIMD0	busy_time	0.0	second
+GPU[2].SA[6].CU[3].SIMD1	busy_time	0.0	second
+GPU[2].SA[6].CU[3].SIMD2	busy_time	0.0	second
+GPU[2].SA[6].CU[3].SIMD3	busy_time	0.0	second
+GPU[2].SA[7].CU[0].SIMD0	busy_time	0.0	second
+GPU[2].SA[7].CU[0].SIMD1	busy_time	0.0	second
+GPU[2].SA[7].CU[0].SIMD2	busy_time	0.0	second
+GPU[2].SA[7].CU[0].SIMD3	busy_time	0.0	second
+GPU[2].SA[7].CU[1].SIMD0	busy_time	0.0	second
+GPU[2].SA[7].CU[1].SIMD1	busy_time	0.0	second
+GPU[2].SA[7].CU[1].SIMD2	busy_time	0.0	second
+GPU[2].SA[7].CU[1].SIMD3	busy_time	0.0	second
+GPU[2].SA[7].CU[2].SIMD0	busy_time	0.0	second
+GPU[2].SA[7].CU[2].SIMD1	busy_time	0.0	second
+GPU[2].SA[7].CU[2].SIMD2	busy_time	0.0	second
+GPU[2].SA[7].CU[2].SIMD3	busy_time	0.0	second
+GPU[2].SA[7].CU[3].SIMD0	busy_time	0.0	second
+GPU[2].SA[7].CU[3].SIMD1	busy_time	0.0	second
+GPU[2].SA[7].CU[3].SIMD2	busy_time	0.0	second
+GPU[2].SA[7].CU[3].SIMD3	busy_time	0.0	second
+GPU[2].SA[8].CU[0].SIMD0	busy_time	0.0	second
+GPU[2].SA[8].CU[0].SIMD1	busy_time	0.0	second
+GPU[2].SA[8].CU[0].SIMD2	busy_time	0.0	second
+GPU[2].SA[8].CU[0].SIMD3	busy_time	0.0	second
+GPU[2].SA[8].CU[1].SIMD0	busy_time	0.0	second
+GPU[2].SA[8].CU[1].SIMD1	busy_time	0.0	second
+GPU[2].SA[8].CU[1].SIMD2	busy_time	0.0	second
+GPU[2].SA[8].CU[1].SIMD3	busy_time	0.0	second
+GPU[2].SA[8].CU[2].SIMD0	busy_time	0.0	second
+GPU[2].SA[8].CU[2].SIMD1	busy_time	0.0	second
+GPU[2].SA[8].CU[2].SIMD2	busy_time	0.0	second
+GPU[2].SA[8].CU[2].SIMD3	busy_time	0.0	second
+GPU[2].SA[8].CU[3].SIMD0	busy_time	0.0	second
+GPU[2].SA[8].CU[3].SIMD1	busy_time	0.0	second
+GPU[2].SA[8].CU[3].SIMD2	busy_time	0.0	second
+GPU[2].SA[8].CU[3].SIMD3	busy_time	0.0	second
+GPU[2].SA[9].CU[0].SIMD0	busy_time	0.0	second
+GPU[2].SA[9].CU[0].SIMD1	busy_time	0.0	second
+GPU[2].SA[9].CU[0].SIMD2	busy_time	0.0	second
+GPU[2].SA[9].CU[0].SIMD3	busy_time	0.0	second
+GPU[2].SA[9].CU[1].SIMD0	busy_time	0.0	second
+GPU[2].SA[9].CU[1].SIMD1	busy_time	0.0	second
+GPU[2].SA[9].CU[1].SIMD2	busy_time	0.0	second
+GPU[2].SA[9].CU[1].SIMD3	busy_time	0.0	second
+GPU[2].SA[9].CU[2].SIMD0	busy_time	0.0	second
+GPU[2].SA[9].CU[2].SIMD1	busy_time	0.0	second
+GPU[2].SA[9].CU[2].SIMD2	busy_time	0.0	second
+GPU[2].SA[9].CU[2].SIMD3	busy_time	0.0	second
+GPU[2].SA[9].CU[3].SIMD0	busy_time	0.0	second
+GPU[2].SA[9].CU[3].SIMD1	busy_time	0.0	second
+GPU[2].SA[9].CU[3].SIMD2	busy_time	0.0	second
+GPU[2].SA[9].CU[3].SIMD3	busy_time	0.0	second
+GPU[2].SA[10].CU[0].SIMD0	busy_time	0.0	second
+GPU[2].SA[10].CU[0].SIMD1	busy_time	0.0	second
+GPU[2].SA[10].CU[0].SIMD2	busy_time	0.0	second
+GPU[2].SA[10].CU[0].SIMD3	busy_time	0.0	second
+GPU[2].SA[10].CU[1].SIMD0	busy_time	0.0	second
+GPU[2].SA[10].CU[1].SIMD1	busy_time	0.0	second
+GPU[2].SA[10].CU[1].SIMD2	busy_time	0.0	second
+GPU[2].SA[10].CU[1].SIMD3	busy_time	0.0	second
+GPU[2].SA[10].CU[2].SIMD0	busy_time	0.0	second
+GPU[2].SA[10].CU[2].SIMD1	busy_time	0.0	second
+GPU[2].SA[10].CU[2].SIMD2	busy_time	0.0	second
+GPU[2].SA[10].CU[2].SIMD3	busy_time	0.0	second
+GPU[2].SA[10].CU[3].SIMD0	busy_time	0.0	second
+GPU[2].SA[10].CU[3].SIMD1	busy_time	0.0	second
+GPU[2].SA[10].CU[3].SIMD2	busy_time	0.0	second
+GPU[2].SA[10].CU[3].SIMD3	busy_time	0.0	second
+GPU[2].SA[11].CU[0].SIMD0	busy_time	0.0	second
+GPU[2].SA[11].CU[0].SIMD1	busy_time	0.0	second
+GPU[2].SA[11].CU[0].SIMD2	busy_time	0.0	second
+GPU[2].SA[11].CU[0].SIMD3	busy_time	0.0	second
+GPU[2].SA[11].CU[1].SIMD0	busy_time	0.0	second
+GPU[2].SA[11].CU[1].SIMD1	busy_time	0.0	second
+GPU[2].SA[11].CU[1].SIMD2	busy_time	0.0	second
+GPU[2].SA[11].CU[1].SIMD3	busy_time	0.0	second
+GPU[2].SA[11].CU[2].SIMD0	busy_time	0.0	second
+GPU[2].SA[11].CU[2].SIMD1	busy_time	0.0	second
+GPU[2].SA[11].CU[2].SIMD2	busy_time	0.0	second
+GPU[2].SA[11].CU[2].SIMD3	busy_time	0.0	second
+GPU[2].SA[11].CU[3].SIMD0	busy_time	0.0	second
+GPU[2].SA[11].CU[3].SIMD1	busy_time	0.0	second
+GPU[2].SA[11].CU[3].SIMD2	busy_time	0.0	second
+GPU[2].SA[11].CU[3].SIMD3	busy_time	0.0	second
+GPU[2].SA[12].CU[0].SIMD0	busy_time	0.0	second
+GPU[2].SA[12].CU[0].SIMD1	busy_time	0.0	second
+GPU[2].SA[12].CU[0].SIMD2	busy_time	0.0	second
+GPU[2].SA[12].CU[0].SIMD3	busy_time	0.0	second
+GPU[2].SA[12].CU[1].SIMD0	busy_time	0.0	second
+GPU[2].SA[12].CU[1].SIMD1	busy_time	0.0	second
+GPU[2].SA[12].CU[1].SIMD2	busy_time	0.0	second
+GPU[2].SA[12].CU[1].SIMD3	busy_time	0.0	second
+GPU[2].SA[12].CU[2].SIMD0	busy_time	0.0	second
+GPU[2].SA[12].CU[2].SIMD1	busy_time	0.0	second
+GPU[2].SA[12].CU[2].SIMD2	busy_time	0.0	second
+GPU[2].SA[12].CU[2].SIMD3	busy_time	0.0	second
+GPU[2].SA[12].CU[3].SIMD0	busy_time	0.0	second
+GPU[2].SA[12].CU[3].SIMD1	busy_time	0.0	second
+GPU[2].SA[12].CU[3].SIMD2	busy_time	0.0	second
+GPU[2].SA[12].CU[3].SIMD3	busy_time	0.0	second
+GPU[2].SA[13].CU[0].SIMD0	busy_time	0.0	second
+GPU[2].SA[13].CU[0].SIMD1	busy_time	0.0	second
+GPU[2].SA[13].CU[0].SIMD2	busy_time	0.0	second
+GPU[2].SA[13].CU[0].SIMD3	busy_time	0.0	second
+GPU[2].SA[13].CU[1].SIMD0	busy_time	0.0	second
+GPU[2].SA[13].CU[1].SIMD1	busy_time	0.0	second
+GPU[2].SA[13].CU[1].SIMD2	busy_time	0.0	second
+GPU[2].SA[13].CU[1].SIMD3	busy_time	0.0	second
+GPU[2].SA[13].CU[2].SIMD0	busy_time	0.0	second
+GPU[2].SA[13].CU[2].SIMD1	busy_time	0.0	second
+GPU[2].SA[13].CU[2].SIMD2	busy_time	0.0	second
+GPU[2].SA[13].CU[2].SIMD3	busy_time	0.0	second
+GPU[2].SA[13].CU[3].SIMD0	busy_time	0.0	second
+GPU[2].SA[13].CU[3].SIMD1	busy_time	0.0	second
+GPU[2].SA[13].CU[3].SIMD2	busy_time	0.0	second
+GPU[2].SA[13].CU[3].SIMD3	busy_time	0.0	second
+GPU[2].SA[14].CU[0].SIMD0	busy_time	0.0	second
+GPU[2].SA[14].CU[0].SIMD1	busy_time	0.0	second
+GPU[2].SA[14].CU[0].SIMD2	busy_time	0.0	second
+GPU[2].SA[14].CU[0].SIMD3	busy_time	0.0	second
+GPU[2].SA[14].CU[1].SIMD0	busy_time	0.0	second
+GPU[2].SA[14].CU[1].SIMD1	busy_time	0.0	second
+GPU[2].SA[14].CU[1].SIMD2	busy_time	0.0	second
+GPU[2].SA[14].CU[1].SIMD3	busy_time	0.0	second
+GPU[2].SA[14].CU[2].SIMD0	busy_time	0.0	second
+GPU[2].SA[14].CU[2].SIMD1	busy_time	0.0	second
+GPU[2].SA[14].CU[2].SIMD2	busy_time	0.0	second
+GPU[2].SA[14].CU[2].SIMD3	busy_time	0.0	second
+GPU[2].SA[14].CU[3].SIMD0	busy_time	0.0	second
+GPU[2].SA[14].CU[3].SIMD1	busy_time	0.0	second
+GPU[2].SA[14].CU[3].SIMD2	busy_time	0.0	second
+GPU[2].SA[14].CU[3].SIMD3	busy_time	0.0	second
+GPU[2].SA[15].CU[0].SIMD0	busy_time	0.0	second
+GPU[2].SA[15].CU[0].SIMD1	busy_time	0.0	second
+GPU[2].SA[15].CU[0].SIMD2	busy_time	0.0	second
+GPU[2].SA[15].CU[0].SIMD3	busy_time	0.0	second
+GPU[2].SA[15].CU[1].SIMD0	busy_time	0.0	second
+GPU[2].SA[15].CU[1].SIMD1	busy_time	0.0	second
+GPU[2].SA[15].CU[1].SIMD2	busy_time	0.0	second
+GPU[2].SA[15].CU[1].SIMD3	busy_time	0.0	second
+GPU[2].SA[15].CU[2].SIMD0	busy_time	0.0	second
+GPU[2].SA[15].CU[2].SIMD1	busy_time	0.0	second
+GPU[2].SA[15].CU[2].SIMD2	busy_time	0.0	second
+GPU[2].SA[15].CU[2].SIMD3	busy_time	0.0	second
+GPU[2].SA[15].CU[3].SIMD0	busy_time	0.0	second
+GPU[2].SA[15].CU[3].SIMD1	busy_time	0.0	second
+GPU[2].SA[15].CU[3].SIMD2	busy_time	0.0	second
+GPU[2].SA[15].CU[3].SIMD3	busy_time	0.0	second
+GPU[3].SA[0].CU[0].SIMD0	busy_time	4.2e-07	second
+GPU[3].SA[0].CU[0].SIMD1	busy_time	4.2e-07	second
+GPU[3].SA[0].CU[0].SIMD2	busy_time	4.2e-07	second
+GPU[3].SA[0].CU[0].SIMD3	busy_time	4.2e-07	second
+GPU[3].SA[0].CU[1].SIMD0	busy_time	4.2e-07	second
+GPU[3].SA[0].CU[1].SIMD1	busy_time	4.2e-07	second
+GPU[3].SA[0].CU[1].SIMD2	busy_time	4.2e-07	second
+GPU[3].SA[0].CU[1].SIMD3	busy_time	4.2e-07	second
+GPU[3].SA[0].CU[2].SIMD0	busy_time	4.2e-07	second
+GPU[3].SA[0].CU[2].SIMD1	busy_time	4.2e-07	second
+GPU[3].SA[0].CU[2].SIMD2	busy_time	4.2e-07	second
+GPU[3].SA[0].CU[2].SIMD3	busy_time	4.2e-07	second
+GPU[3].SA[0].CU[3].SIMD0	busy_time	4.2e-07	second
+GPU[3].SA[0].CU[3].SIMD1	busy_time	4.2e-07	second
+GPU[3].SA[0].CU[3].SIMD2	busy_time	4.2e-07	second
+GPU[3].SA[0].CU[3].SIMD3	busy_time	4.2e-07	second
+GPU[3].SA[1].CU[0].SIMD0	busy_time	0.0	second
+GPU[3].SA[1].CU[0].SIMD1	busy_time	0.0	second
+GPU[3].SA[1].CU[0].SIMD2	busy_time	0.0	second
+GPU[3].SA[1].CU[0].SIMD3	busy_time	0.0	second
+GPU[3].SA[1].CU[1].SIMD0	busy_time	0.0	second
+GPU[3].SA[1].CU[1].SIMD1	busy_time	0.0	second
+GPU[3].SA[1].CU[1].SIMD2	busy_time	0.0	second
+GPU[3].SA[1].CU[1].SIMD3	busy_time	0.0	second
+GPU[3].SA[1].CU[2].SIMD0	busy_time	0.0	second
+GPU[3].SA[1].CU[2].SIMD1	busy_time	0.0	second
+GPU[3].SA[1].CU[2].SIMD2	busy_time	0.0	second
+GPU[3].SA[1].CU[2].SIMD3	busy_time	0.0	second
+GPU[3].SA[1].CU[3].SIMD0	busy_time	0.0	second
+GPU[3].SA[1].CU[3].SIMD1	busy_time	0.0	second
+GPU[3].SA[1].CU[3].SIMD2	busy_time	0.0	second
+GPU[3].SA[1].CU[3].SIMD3	busy_time	0.0	second
+GPU[3].SA[2].CU[0].SIMD0	busy_time	0.0	second
+GPU[3].SA[2].CU[0].SIMD1	busy_time	0.0	second
+GPU[3].SA[2].CU[0].SIMD2	busy_time	0.0	second
+GPU[3].SA[2].CU[0].SIMD3	busy_time	0.0	second
+GPU[3].SA[2].CU[1].SIMD0	busy_time	0.0	second
+GPU[3].SA[2].CU[1].SIMD1	busy_time	0.0	second
+GPU[3].SA[2].CU[1].SIMD2	busy_time	0.0	second
+GPU[3].SA[2].CU[1].SIMD3	busy_time	0.0	second
+GPU[3].SA[2].CU[2].SIMD0	busy_time	0.0	second
+GPU[3].SA[2].CU[2].SIMD1	busy_time	0.0	second
+GPU[3].SA[2].CU[2].SIMD2	busy_time	0.0	second
+GPU[3].SA[2].CU[2].SIMD3	busy_time	0.0	second
+GPU[3].SA[2].CU[3].SIMD0	busy_time	0.0	second
+GPU[3].SA[2].CU[3].SIMD1	busy_time	0.0	second
+GPU[3].SA[2].CU[3].SIMD2	busy_time	0.0	second
+GPU[3].SA[2].CU[3].SIMD3	busy_time	0.0	second
+GPU[3].SA[3].CU[0].SIMD0	busy_time	0.0	second
+GPU[3].SA[3].CU[0].SIMD1	busy_time	0.0	second
+GPU[3].SA[3].CU[0].SIMD2	busy_time	0.0	second
+GPU[3].SA[3].CU[0].SIMD3	busy_time	0.0	second
+GPU[3].SA[3].CU[1].SIMD0	busy_time	0.0	second
+GPU[3].SA[3].CU[1].SIMD1	busy_time	0.0	second
+GPU[3].SA[3].CU[1].SIMD2	busy_time	0.0	second
+GPU[3].SA[3].CU[1].SIMD3	busy_time	0.0	second
+GPU[3].SA[3].CU[2].SIMD0	busy_time	0.0	second
+GPU[3].SA[3].CU[2].SIMD1	busy_time	0.0	second
+GPU[3].SA[3].CU[2].SIMD2	busy_time	0.0	second
+GPU[3].SA[3].CU[2].SIMD3	busy_time	0.0	second
+GPU[3].SA[3].CU[3].SIMD0	busy_time	0.0	second
+GPU[3].SA[3].CU[3].SIMD1	busy_time	0.0	second
+GPU[3].SA[3].CU[3].SIMD2	busy_time	0.0	second
+GPU[3].SA[3].CU[3].SIMD3	busy_time	0.0	second
+GPU[3].SA[4].CU[0].SIMD0	busy_time	0.0	second
+GPU[3].SA[4].CU[0].SIMD1	busy_time	0.0	second
+GPU[3].SA[4].CU[0].SIMD2	busy_time	0.0	second
+GPU[3].SA[4].CU[0].SIMD3	busy_time	0.0	second
+GPU[3].SA[4].CU[1].SIMD0	busy_time	0.0	second
+GPU[3].SA[4].CU[1].SIMD1	busy_time	0.0	second
+GPU[3].SA[4].CU[1].SIMD2	busy_time	0.0	second
+GPU[3].SA[4].CU[1].SIMD3	busy_time	0.0	second
+GPU[3].SA[4].CU[2].SIMD0	busy_time	0.0	second
+GPU[3].SA[4].CU[2].SIMD1	busy_time	0.0	second
+GPU[3].SA[4].CU[2].SIMD2	busy_time	0.0	second
+GPU[3].SA[4].CU[2].SIMD3	busy_time	0.0	second
+GPU[3].SA[4].CU[3].SIMD0	busy_time	0.0	second
+GPU[3].SA[4].CU[3].SIMD1	busy_time	0.0	second
+GPU[3].SA[4].CU[3].SIMD2	busy_time	0.0	second
+GPU[3].SA[4].CU[3].SIMD3	busy_time	0.0	second
+GPU[3].SA[5].CU[0].SIMD0	busy_time	0.0	second
+GPU[3].SA[5].CU[0].SIMD1	busy_time	0.0	second
+GPU[3].SA[5].CU[0].SIMD2	busy_time	0.0	second
+GPU[3].SA[5].CU[0].SIMD3	busy_time	0.0	second
+GPU[3].SA[5].CU[1].SIMD0	busy_time	0.0	second
+GPU[3].SA[5].CU[1].SIMD1	busy_time	0.0	second
+GPU[3].SA[5].CU[1].SIMD2	busy_time	0.0	second
+GPU[3].SA[5].CU[1].SIMD3	busy_time	0.0	second
+GPU[3].SA[5].CU[2].SIMD0	busy_time	0.0	second
+GPU[3].SA[5].CU[2].SIMD1	busy_time	0.0	second
+GPU[3].SA[5].CU[2].SIMD2	busy_time	0.0	second
+GPU[3].SA[5].CU[2].SIMD3	busy_time	0.0	second
+GPU[3].SA[5].CU[3].SIMD0	busy_time	0.0	second
+GPU[3].SA[5].CU[3].SIMD1	busy_time	0.0	second
+GPU[3].SA[5].CU[3].SIMD2	busy_time	0.0	second
+GPU[3].SA[5].CU[3].SIMD3	busy_time	0.0	second
+GPU[3].SA[6].CU[0].SIMD0	busy_time	0.0	second
+GPU[3].SA[6].CU[0].SIMD1	busy_time	0.0	second
+GPU[3].SA[6].CU[0].SIMD2	busy_time	0.0	second
+GPU[3].SA[6].CU[0].SIMD3	busy_time	0.0	second
+GPU[3].SA[6].CU[1].SIMD0	busy_time	0.0	second
+GPU[3].SA[6].CU[1].SIMD1	busy_time	0.0	second
+GPU[3].SA[6].CU[1].SIMD2	busy_time	0.0	second
+GPU[3].SA[6].CU[1].SIMD3	busy_time	0.0	second
+GPU[3].SA[6].CU[2].SIMD0	busy_time	0.0	second
+GPU[3].SA[6].CU[2].SIMD1	busy_time	0.0	second
+GPU[3].SA[6].CU[2].SIMD2	busy_time	0.0	second
+GPU[3].SA[6].CU[2].SIMD3	busy_time	0.0	second
+GPU[3].SA[6].CU[3].SIMD0	busy_time	0.0	second
+GPU[3].SA[6].CU[3].SIMD1	busy_time	0.0	second
+GPU[3].SA[6].CU[3].SIMD2	busy_time	0.0	second
+GPU[3].SA[6].CU[3].SIMD3	busy_time	0.0	second
+GPU[3].SA[7].CU[0].SIMD0	busy_time	0.0	second
+GPU[3].SA[7].CU[0].SIMD1	busy_time	0.0	second
+GPU[3].SA[7].CU[0].SIMD2	busy_time	0.0	second
+GPU[3].SA[7].CU[0].SIMD3	busy_time	0.0	second
+GPU[3].SA[7].CU[1].SIMD0	busy_time	0.0	second
+GPU[3].SA[7].CU[1].SIMD1	busy_time	0.0	second
+GPU[3].SA[7].CU[1].SIMD2	busy_time	0.0	second
+GPU[3].SA[7].CU[1].SIMD3	busy_time	0.0	second
+GPU[3].SA[7].CU[2].SIMD0	busy_time	0.0	second
+GPU[3].SA[7].CU[2].SIMD1	busy_time	0.0	second
+GPU[3].SA[7].CU[2].SIMD2	busy_time	0.0	second
+GPU[3].SA[7].CU[2].SIMD3	busy_time	0.0	second
+GPU[3].SA[7].CU[3].SIMD0	busy_time	0.0	second
+GPU[3].SA[7].CU[3].SIMD1	busy_time	0.0	second
+GPU[3].SA[7].CU[3].SIMD2	busy_time	0.0	second
+GPU[3].SA[7].CU[3].SIMD3	busy_time	0.0	second
+GPU[3].SA[8].CU[0].SIMD0	busy_time	0.0	second
+GPU[3].SA[8].CU[0].SIMD1	busy_time	0.0	second
+GPU[3].SA[8].CU[0].SIMD2	busy_time	0.0	second
+GPU[3].SA[8].CU[0].SIMD3	busy_time	0.0	second
+GPU[3].SA[8].CU[1].SIMD0	busy_time	0.0	second
+GPU[3].SA[8].CU[1].SIMD1	busy_time	0.0	second
+GPU[3].SA[8].CU[1].SIMD2	busy_time	0.0	second
+GPU[3].SA[8].CU[1].SIMD3	busy_time	0.0	second
+GPU[3].SA[8].CU[2].SIMD0	busy_time	0.0	second
+GPU[3].SA[8].CU[2].SIMD1	busy_time	0.0	second
+GPU[3].SA[8].CU[2].SIMD2	busy_time	0.0	second
+GPU[3].SA[8].CU[2].SIMD3	busy_time	0.0	second
+GPU[3].SA[8].CU[3].SIMD0	busy_time	0.0	second
+GPU[3].SA[8].CU[3].SIMD1	busy_time	0.0	second
+GPU[3].SA[8].CU[3].SIMD2	busy_time	0.0	second
+GPU[3].SA[8].CU[3].SIMD3	busy_time	0.0	second
+GPU[3].SA[9].CU[0].SIMD0	busy_time	0.0	second
+GPU[3].SA[9].CU[0].SIMD1	busy_time	0.0	second
+GPU[3].SA[9].CU[0].SIMD2	busy_time	0.0	second
+GPU[3].SA[9].CU[0].SIMD3	busy_time	0.0	second
+GPU[3].SA[9].CU[1].SIMD0	busy_time	0.0	second
+GPU[3].SA[9].CU[1].SIMD1	busy_time	0.0	second
+GPU[3].SA[9].CU[1].SIMD2	busy_time	0.0	second
+GPU[3].SA[9].CU[1].SIMD3	busy_time	0.0	second
+GPU[3].SA[9].CU[2].SIMD0	busy_time	0.0	second
+GPU[3].SA[9].CU[2].SIMD1	busy_time	0.0	second
+GPU[3].SA[9].CU[2].SIMD2	busy_time	0.0	second
+GPU[3].SA[9].CU[2].SIMD3	busy_time	0.0	second
+GPU[3].SA[9].CU[3].SIMD0	busy_time	0.0	second
+GPU[3].SA[9].CU[3].SIMD1	busy_time	0.0	second
+GPU[3].SA[9].CU[3].SIMD2	busy_time	0.0	second
+GPU[3].SA[9].CU[3].SIMD3	busy_time	0.0	second
+GPU[3].SA[10].CU[0].SIMD0	busy_time	0.0	second
+GPU[3].SA[10].CU[0].SIMD1	busy_time	0.0	second
+GPU[3].SA[10].CU[0].SIMD2	busy_time	0.0	second
+GPU[3].SA[10].CU[0].SIMD3	busy_time	0.0	second
+GPU[3].SA[10].CU[1].SIMD0	busy_time	0.0	second
+GPU[3].SA[10].CU[1].SIMD1	busy_time	0.0	second
+GPU[3].SA[10].CU[1].SIMD2	busy_time	0.0	second
+GPU[3].SA[10].CU[1].SIMD3	busy_time	0.0	second
+GPU[3].SA[10].CU[2].SIMD0	busy_time	0.0	second
+GPU[3].SA[10].CU[2].SIMD1	busy_time	0.0	second
+GPU[3].SA[10].CU[2].SIMD2	busy_time	0.0	second
+GPU[3].SA[10].CU[2].SIMD3	busy_time	0.0	second
+GPU[3].SA[10].CU[3].SIMD0	busy_time	0.0	second
+GPU[3].SA[10].CU[3].SIMD1	busy_time	0.0	second
+GPU[3].SA[10].CU[3].SIMD2	busy_time	0.0	second
+GPU[3].SA[10].CU[3].SIMD3	busy_time	0.0	second
+GPU[3].SA[11].CU[0].SIMD0	busy_time	0.0	second
+GPU[3].SA[11].CU[0].SIMD1	busy_time	0.0	second
+GPU[3].SA[11].CU[0].SIMD2	busy_time	0.0	second
+GPU[3].SA[11].CU[0].SIMD3	busy_time	0.0	second
+GPU[3].SA[11].CU[1].SIMD0	busy_time	0.0	second
+GPU[3].SA[11].CU[1].SIMD1	busy_time	0.0	second
+GPU[3].SA[11].CU[1].SIMD2	busy_time	0.0	second
+GPU[3].SA[11].CU[1].SIMD3	busy_time	0.0	second
+GPU[3].SA[11].CU[2].SIMD0	busy_time	0.0	second
+GPU[3].SA[11].CU[2].SIMD1	busy_time	0.0	second
+GPU[3].SA[11].CU[2].SIMD2	busy_time	0.0	second
+GPU[3].SA[11].CU[2].SIMD3	busy_time	0.0	second
+GPU[3].SA[11].CU[3].SIMD0	busy_time	0.0	second
+GPU[3].SA[11].CU[3].SIMD1	busy_time	0.0	second
+GPU[3].SA[11].CU[3].SIMD2	busy_time	0.0	second
+GPU[3].SA[11].CU[3].SIMD3	busy_time	0.0	second
+GPU[3].SA[12].CU[0].SIMD0	busy_time	0.0	second
+GPU[3].SA[12].CU[0].SIMD1	busy_time	0.0	second
+GPU[3].SA[12].CU[0].SIMD2	busy_time	0.0	second
+GPU[3].SA[12].CU[0].SIMD3	busy_time	0.0	second
+GPU[3].SA[12].CU[1].SIMD0	busy_time	0.0	second
+GPU[3].SA[12].CU[1].SIMD1	busy_time	0.0	second
+GPU[3].SA[12].CU[1].SIMD2	busy_time	0.0	second
+GPU[3].SA[12].CU[1].SIMD3	busy_time	0.0	second
+GPU[3].SA[12].CU[2].SIMD0	busy_time	0.0	second
+GPU[3].SA[12].CU[2].SIMD1	busy_time	0.0	second
+GPU[3].SA[12].CU[2].SIMD2	busy_time	0.0	second
+GPU[3].SA[12].CU[2].SIMD3	busy_time	0.0	second
+GPU[3].SA[12].CU[3].SIMD0	busy_time	0.0	second
+GPU[3].SA[12].CU[3].SIMD1	busy_time	0.0	second
+GPU[3].SA[12].CU[3].SIMD2	busy_time	0.0	second
+GPU[3].SA[12].CU[3].SIMD3	busy_time	0.0	second
+GPU[3].SA[13].CU[0].SIMD0	busy_time	0.0	second
+GPU[3].SA[13].CU[0].SIMD1	busy_time	0.0	second
+GPU[3].SA[13].CU[0].SIMD2	busy_time	0.0	second
+GPU[3].SA[13].CU[0].SIMD3	busy_time	0.0	second
+GPU[3].SA[13].CU[1].SIMD0	busy_time	0.0	second
+GPU[3].SA[13].CU[1].SIMD1	busy_time	0.0	second
+GPU[3].SA[13].CU[1].SIMD2	busy_time	0.0	second
+GPU[3].SA[13].CU[1].SIMD3	busy_time	0.0	second
+GPU[3].SA[13].CU[2].SIMD0	busy_time	0.0	second
+GPU[3].SA[13].CU[2].SIMD1	busy_time	0.0	second
+GPU[3].SA[13].CU[2].SIMD2	busy_time	0.0	second
+GPU[3].SA[13].CU[2].SIMD3	busy_time	0.0	second
+GPU[3].SA[13].CU[3].SIMD0	busy_time	0.0	second
+GPU[3].SA[13].CU[3].SIMD1	busy_time	0.0	second
+GPU[3].SA[13].CU[3].SIMD2	busy_time	0.0	second
+GPU[3].SA[13].CU[3].SIMD3	busy_time	0.0	second
+GPU[3].SA[14].CU[0].SIMD0	busy_time	0.0	second
+GPU[3].SA[14].CU[0].SIMD1	busy_time	0.0	second
+GPU[3].SA[14].CU[0].SIMD2	busy_time	0.0	second
+GPU[3].SA[14].CU[0].SIMD3	busy_time	0.0	second
+GPU[3].SA[14].CU[1].SIMD0	busy_time	0.0	second
+GPU[3].SA[14].CU[1].SIMD1	busy_time	0.0	second
+GPU[3].SA[14].CU[1].SIMD2	busy_time	0.0	second
+GPU[3].SA[14].CU[1].SIMD3	busy_time	0.0	second
+GPU[3].SA[14].CU[2].SIMD0	busy_time	0.0	second
+GPU[3].SA[14].CU[2].SIMD1	busy_time	0.0	second
+GPU[3].SA[14].CU[2].SIMD2	busy_time	0.0	second
+GPU[3].SA[14].CU[2].SIMD3	busy_time	0.0	second
+GPU[3].SA[14].CU[3].SIMD0	busy_time	0.0	second
+GPU[3].SA[14].CU[3].SIMD1	busy_time	0.0	second
+GPU[3].SA[14].CU[3].SIMD2	busy_time	0.0	second
+GPU[3].SA[14].CU[3].SIMD3	busy_time	0.0	second
+GPU[3].SA[15].CU[0].SIMD0	busy_time	0.0	second
+GPU[3].SA[15].CU[0].SIMD1	busy_time	0.0	second
+GPU[3].SA[15].CU[0].SIMD2	busy_time	0.0	second
+GPU[3].SA[15].CU[0].SIMD3	busy_time	0.0	second
+GPU[3].SA[15].CU[1].SIMD0	busy_time	0.0	second
+GPU[3].SA[15].CU[1].SIMD1	busy_time	0.0	second
+GPU[3].SA[15].CU[1].SIMD2	busy_time	0.0	second
+GPU[3].SA[15].CU[1].SIMD3	busy_time	0.0	second
+GPU[3].SA[15].CU[2].SIMD0	busy_time	0.0	second
+GPU[3].SA[15].CU[2].SIMD1	busy_time	0.0	second
+GPU[3].SA[15].CU[2].SIMD2	busy_time	0.0	second
+GPU[3].SA[15].CU[2].SIMD3	busy_time	0.0	second
+GPU[3].SA[15].CU[3].SIMD0	busy_time	0.0	second
+GPU[3].SA[15].CU[3].SIMD1	busy_time	0.0	second
+GPU[3].SA[15].CU[3].SIMD2	busy_time	0.0	second
+GPU[3].SA[15].CU[3].SIMD3	busy_time	0.0	second
+GPU[4].SA[0].CU[0].SIMD0	busy_time	4.2e-07	second
+GPU[4].SA[0].CU[0].SIMD1	busy_time	4.2e-07	second
+GPU[4].SA[0].CU[0].SIMD2	busy_time	4.2e-07	second
+GPU[4].SA[0].CU[0].SIMD3	busy_time	4.2e-07	second
+GPU[4].SA[0].CU[1].SIMD0	busy_time	4.2e-07	second
+GPU[4].SA[0].CU[1].SIMD1	busy_time	4.2e-07	second
+GPU[4].SA[0].CU[1].SIMD2	busy_time	4.2e-07	second
+GPU[4].SA[0].CU[1].SIMD3	busy_time	4.2e-07	second
+GPU[4].SA[0].CU[2].SIMD0	busy_time	4.2e-07	second
+GPU[4].SA[0].CU[2].SIMD1	busy_time	4.2e-07	second
+GPU[4].SA[0].CU[2].SIMD2	busy_time	4.2e-07	second
+GPU[4].SA[0].CU[2].SIMD3	busy_time	4.2e-07	second
+GPU[4].SA[0].CU[3].SIMD0	busy_time	4.2e-07	second
+GPU[4].SA[0].CU[3].SIMD1	busy_time	4.2e-07	second
+GPU[4].SA[0].CU[3].SIMD2	busy_time	4.2e-07	second
+GPU[4].SA[0].CU[3].SIMD3	busy_time	4.2e-07	second
+GPU[4].SA[1].CU[0].SIMD0	busy_time	0.0	second
+GPU[4].SA[1].CU[0].SIMD1	busy_time	0.0	second
+GPU[4].SA[1].CU[0].SIMD2	busy_time	0.0	second
+GPU[4].SA[1].CU[0].SIMD3	busy_time	0.0	second
+GPU[4].SA[1].CU[1].SIMD0	busy_time	0.0	second
+GPU[4].SA[1].CU[1].SIMD1	busy_time	0.0	second
+GPU[4].SA[1].CU[1].SIMD2	busy_time	0.0	second
+GPU[4].SA[1].CU[1].SIMD3	busy_time	0.0	second
+GPU[4].SA[1].CU[2].SIMD0	busy_time	0.0	second
+GPU[4].SA[1].CU[2].SIMD1	busy_time	0.0	second
+GPU[4].SA[1].CU[2].SIMD2	busy_time	0.0	second
+GPU[4].SA[1].CU[2].SIMD3	busy_time	0.0	second
+GPU[4].SA[1].CU[3].SIMD0	busy_time	0.0	second
+GPU[4].SA[1].CU[3].SIMD1	busy_time	0.0	second
+GPU[4].SA[1].CU[3].SIMD2	busy_time	0.0	second
+GPU[4].SA[1].CU[3].SIMD3	busy_time	0.0	second
+GPU[4].SA[2].CU[0].SIMD0	busy_time	0.0	second
+GPU[4].SA[2].CU[0].SIMD1	busy_time	0.0	second
+GPU[4].SA[2].CU[0].SIMD2	busy_time	0.0	second
+GPU[4].SA[2].CU[0].SIMD3	busy_time	0.0	second
+GPU[4].SA[2].CU[1].SIMD0	busy_time	0.0	second
+GPU[4].SA[2].CU[1].SIMD1	busy_time	0.0	second
+GPU[4].SA[2].CU[1].SIMD2	busy_time	0.0	second
+GPU[4].SA[2].CU[1].SIMD3	busy_time	0.0	second
+GPU[4].SA[2].CU[2].SIMD0	busy_time	0.0	second
+GPU[4].SA[2].CU[2].SIMD1	busy_time	0.0	second
+GPU[4].SA[2].CU[2].SIMD2	busy_time	0.0	second
+GPU[4].SA[2].CU[2].SIMD3	busy_time	0.0	second
+GPU[4].SA[2].CU[3].SIMD0	busy_time	0.0	second
+GPU[4].SA[2].CU[3].SIMD1	busy_time	0.0	second
+GPU[4].SA[2].CU[3].SIMD2	busy_time	0.0	second
+GPU[4].SA[2].CU[3].SIMD3	busy_time	0.0	second
+GPU[4].SA[3].CU[0].SIMD0	busy_time	0.0	second
+GPU[4].SA[3].CU[0].SIMD1	busy_time	0.0	second
+GPU[4].SA[3].CU[0].SIMD2	busy_time	0.0	second
+GPU[4].SA[3].CU[0].SIMD3	busy_time	0.0	second
+GPU[4].SA[3].CU[1].SIMD0	busy_time	0.0	second
+GPU[4].SA[3].CU[1].SIMD1	busy_time	0.0	second
+GPU[4].SA[3].CU[1].SIMD2	busy_time	0.0	second
+GPU[4].SA[3].CU[1].SIMD3	busy_time	0.0	second
+GPU[4].SA[3].CU[2].SIMD0	busy_time	0.0	second
+GPU[4].SA[3].CU[2].SIMD1	busy_time	0.0	second
+GPU[4].SA[3].CU[2].SIMD2	busy_time	0.0	second
+GPU[4].SA[3].CU[2].SIMD3	busy_time	0.0	second
+GPU[4].SA[3].CU[3].SIMD0	busy_time	0.0	second
+GPU[4].SA[3].CU[3].SIMD1	busy_time	0.0	second
+GPU[4].SA[3].CU[3].SIMD2	busy_time	0.0	second
+GPU[4].SA[3].CU[3].SIMD3	busy_time	0.0	second
+GPU[4].SA[4].CU[0].SIMD0	busy_time	0.0	second
+GPU[4].SA[4].CU[0].SIMD1	busy_time	0.0	second
+GPU[4].SA[4].CU[0].SIMD2	busy_time	0.0	second
+GPU[4].SA[4].CU[0].SIMD3	busy_time	0.0	second
+GPU[4].SA[4].CU[1].SIMD0	busy_time	0.0	second
+GPU[4].SA[4].CU[1].SIMD1	busy_time	0.0	second
+GPU[4].SA[4].CU[1].SIMD2	busy_time	0.0	second
+GPU[4].SA[4].CU[1].SIMD3	busy_time	0.0	second
+GPU[4].SA[4].CU[2].SIMD0	busy_time	0.0	second
+GPU[4].SA[4].CU[2].SIMD1	busy_time	0.0	second
+GPU[4].SA[4].CU[2].SIMD2	busy_time	0.0	second
+GPU[4].SA[4].CU[2].SIMD3	busy_time	0.0	second
+GPU[4].SA[4].CU[3].SIMD0	busy_time	0.0	second
+GPU[4].SA[4].CU[3].SIMD1	busy_time	0.0	second
+GPU[4].SA[4].CU[3].SIMD2	busy_time	0.0	second
+GPU[4].SA[4].CU[3].SIMD3	busy_time	0.0	second
+GPU[4].SA[5].CU[0].SIMD0	busy_time	0.0	second
+GPU[4].SA[5].CU[0].SIMD1	busy_time	0.0	second
+GPU[4].SA[5].CU[0].SIMD2	busy_time	0.0	second
+GPU[4].SA[5].CU[0].SIMD3	busy_time	0.0	second
+GPU[4].SA[5].CU[1].SIMD0	busy_time	0.0	second
+GPU[4].SA[5].CU[1].SIMD1	busy_time	0.0	second
+GPU[4].SA[5].CU[1].SIMD2	busy_time	0.0	second
+GPU[4].SA[5].CU[1].SIMD3	busy_time	0.0	second
+GPU[4].SA[5].CU[2].SIMD0	busy_time	0.0	second
+GPU[4].SA[5].CU[2].SIMD1	busy_time	0.0	second
+GPU[4].SA[5].CU[2].SIMD2	busy_time	0.0	second
+GPU[4].SA[5].CU[2].SIMD3	busy_time	0.0	second
+GPU[4].SA[5].CU[3].SIMD0	busy_time	0.0	second
+GPU[4].SA[5].CU[3].SIMD1	busy_time	0.0	second
+GPU[4].SA[5].CU[3].SIMD2	busy_time	0.0	second
+GPU[4].SA[5].CU[3].SIMD3	busy_time	0.0	second
+GPU[4].SA[6].CU[0].SIMD0	busy_time	0.0	second
+GPU[4].SA[6].CU[0].SIMD1	busy_time	0.0	second
+GPU[4].SA[6].CU[0].SIMD2	busy_time	0.0	second
+GPU[4].SA[6].CU[0].SIMD3	busy_time	0.0	second
+GPU[4].SA[6].CU[1].SIMD0	busy_time	0.0	second
+GPU[4].SA[6].CU[1].SIMD1	busy_time	0.0	second
+GPU[4].SA[6].CU[1].SIMD2	busy_time	0.0	second
+GPU[4].SA[6].CU[1].SIMD3	busy_time	0.0	second
+GPU[4].SA[6].CU[2].SIMD0	busy_time	0.0	second
+GPU[4].SA[6].CU[2].SIMD1	busy_time	0.0	second
+GPU[4].SA[6].CU[2].SIMD2	busy_time	0.0	second
+GPU[4].SA[6].CU[2].SIMD3	busy_time	0.0	second
+GPU[4].SA[6].CU[3].SIMD0	busy_time	0.0	second
+GPU[4].SA[6].CU[3].SIMD1	busy_time	0.0	second
+GPU[4].SA[6].CU[3].SIMD2	busy_time	0.0	second
+GPU[4].SA[6].CU[3].SIMD3	busy_time	0.0	second
+GPU[4].SA[7].CU[0].SIMD0	busy_time	0.0	second
+GPU[4].SA[7].CU[0].SIMD1	busy_time	0.0	second
+GPU[4].SA[7].CU[0].SIMD2	busy_time	0.0	second
+GPU[4].SA[7].CU[0].SIMD3	busy_time	0.0	second
+GPU[4].SA[7].CU[1].SIMD0	busy_time	0.0	second
+GPU[4].SA[7].CU[1].SIMD1	busy_time	0.0	second
+GPU[4].SA[7].CU[1].SIMD2	busy_time	0.0	second
+GPU[4].SA[7].CU[1].SIMD3	busy_time	0.0	second
+GPU[4].SA[7].CU[2].SIMD0	busy_time	0.0	second
+GPU[4].SA[7].CU[2].SIMD1	busy_time	0.0	second
+GPU[4].SA[7].CU[2].SIMD2	busy_time	0.0	second
+GPU[4].SA[7].CU[2].SIMD3	busy_time	0.0	second
+GPU[4].SA[7].CU[3].SIMD0	busy_time	0.0	second
+GPU[4].SA[7].CU[3].SIMD1	busy_time	0.0	second
+GPU[4].SA[7].CU[3].SIMD2	busy_time	0.0	second
+GPU[4].SA[7].CU[3].SIMD3	busy_time	0.0	second
+GPU[4].SA[8].CU[0].SIMD0	busy_time	0.0	second
+GPU[4].SA[8].CU[0].SIMD1	busy_time	0.0	second
+GPU[4].SA[8].CU[0].SIMD2	busy_time	0.0	second
+GPU[4].SA[8].CU[0].SIMD3	busy_time	0.0	second
+GPU[4].SA[8].CU[1].SIMD0	busy_time	0.0	second
+GPU[4].SA[8].CU[1].SIMD1	busy_time	0.0	second
+GPU[4].SA[8].CU[1].SIMD2	busy_time	0.0	second
+GPU[4].SA[8].CU[1].SIMD3	busy_time	0.0	second
+GPU[4].SA[8].CU[2].SIMD0	busy_time	0.0	second
+GPU[4].SA[8].CU[2].SIMD1	busy_time	0.0	second
+GPU[4].SA[8].CU[2].SIMD2	busy_time	0.0	second
+GPU[4].SA[8].CU[2].SIMD3	busy_time	0.0	second
+GPU[4].SA[8].CU[3].SIMD0	busy_time	0.0	second
+GPU[4].SA[8].CU[3].SIMD1	busy_time	0.0	second
+GPU[4].SA[8].CU[3].SIMD2	busy_time	0.0	second
+GPU[4].SA[8].CU[3].SIMD3	busy_time	0.0	second
+GPU[4].SA[9].CU[0].SIMD0	busy_time	0.0	second
+GPU[4].SA[9].CU[0].SIMD1	busy_time	0.0	second
+GPU[4].SA[9].CU[0].SIMD2	busy_time	0.0	second
+GPU[4].SA[9].CU[0].SIMD3	busy_time	0.0	second
+GPU[4].SA[9].CU[1].SIMD0	busy_time	0.0	second
+GPU[4].SA[9].CU[1].SIMD1	busy_time	0.0	second
+GPU[4].SA[9].CU[1].SIMD2	busy_time	0.0	second
+GPU[4].SA[9].CU[1].SIMD3	busy_time	0.0	second
+GPU[4].SA[9].CU[2].SIMD0	busy_time	0.0	second
+GPU[4].SA[9].CU[2].SIMD1	busy_time	0.0	second
+GPU[4].SA[9].CU[2].SIMD2	busy_time	0.0	second
+GPU[4].SA[9].CU[2].SIMD3	busy_time	0.0	second
+GPU[4].SA[9].CU[3].SIMD0	busy_time	0.0	second
+GPU[4].SA[9].CU[3].SIMD1	busy_time	0.0	second
+GPU[4].SA[9].CU[3].SIMD2	busy_time	0.0	second
+GPU[4].SA[9].CU[3].SIMD3	busy_time	0.0	second
+GPU[4].SA[10].CU[0].SIMD0	busy_time	0.0	second
+GPU[4].SA[10].CU[0].SIMD1	busy_time	0.0	second
+GPU[4].SA[10].CU[0].SIMD2	busy_time	0.0	second
+GPU[4].SA[10].CU[0].SIMD3	busy_time	0.0	second
+GPU[4].SA[10].CU[1].SIMD0	busy_time	0.0	second
+GPU[4].SA[10].CU[1].SIMD1	busy_time	0.0	second
+GPU[4].SA[10].CU[1].SIMD2	busy_time	0.0	second
+GPU[4].SA[10].CU[1].SIMD3	busy_time	0.0	second
+GPU[4].SA[10].CU[2].SIMD0	busy_time	0.0	second
+GPU[4].SA[10].CU[2].SIMD1	busy_time	0.0	second
+GPU[4].SA[10].CU[2].SIMD2	busy_time	0.0	second
+GPU[4].SA[10].CU[2].SIMD3	busy_time	0.0	second
+GPU[4].SA[10].CU[3].SIMD0	busy_time	0.0	second
+GPU[4].SA[10].CU[3].SIMD1	busy_time	0.0	second
+GPU[4].SA[10].CU[3].SIMD2	busy_time	0.0	second
+GPU[4].SA[10].CU[3].SIMD3	busy_time	0.0	second
+GPU[4].SA[11].CU[0].SIMD0	busy_time	0.0	second
+GPU[4].SA[11].CU[0].SIMD1	busy_time	0.0	second
+GPU[4].SA[11].CU[0].SIMD2	busy_time	0.0	second
+GPU[4].SA[11].CU[0].SIMD3	busy_time	0.0	second
+GPU[4].SA[11].CU[1].SIMD0	busy_time	0.0	second
+GPU[4].SA[11].CU[1].SIMD1	busy_time	0.0	second
+GPU[4].SA[11].CU[1].SIMD2	busy_time	0.0	second
+GPU[4].SA[11].CU[1].SIMD3	busy_time	0.0	second
+GPU[4].SA[11].CU[2].SIMD0	busy_time	0.0	second
+GPU[4].SA[11].CU[2].SIMD1	busy_time	0.0	second
+GPU[4].SA[11].CU[2].SIMD2	busy_time	0.0	second
+GPU[4].SA[11].CU[2].SIMD3	busy_time	0.0	second
+GPU[4].SA[11].CU[3].SIMD0	busy_time	0.0	second
+GPU[4].SA[11].CU[3].SIMD1	busy_time	0.0	second
+GPU[4].SA[11].CU[3].SIMD2	busy_time	0.0	second
+GPU[4].SA[11].CU[3].SIMD3	busy_time	0.0	second
+GPU[4].SA[12].CU[0].SIMD0	busy_time	0.0	second
+GPU[4].SA[12].CU[0].SIMD1	busy_time	0.0	second
+GPU[4].SA[12].CU[0].SIMD2	busy_time	0.0	second
+GPU[4].SA[12].CU[0].SIMD3	busy_time	0.0	second
+GPU[4].SA[12].CU[1].SIMD0	busy_time	0.0	second
+GPU[4].SA[12].CU[1].SIMD1	busy_time	0.0	second
+GPU[4].SA[12].CU[1].SIMD2	busy_time	0.0	second
+GPU[4].SA[12].CU[1].SIMD3	busy_time	0.0	second
+GPU[4].SA[12].CU[2].SIMD0	busy_time	0.0	second
+GPU[4].SA[12].CU[2].SIMD1	busy_time	0.0	second
+GPU[4].SA[12].CU[2].SIMD2	busy_time	0.0	second
+GPU[4].SA[12].CU[2].SIMD3	busy_time	0.0	second
+GPU[4].SA[12].CU[3].SIMD0	busy_time	0.0	second
+GPU[4].SA[12].CU[3].SIMD1	busy_time	0.0	second
+GPU[4].SA[12].CU[3].SIMD2	busy_time	0.0	second
+GPU[4].SA[12].CU[3].SIMD3	busy_time	0.0	second
+GPU[4].SA[13].CU[0].SIMD0	busy_time	0.0	second
+GPU[4].SA[13].CU[0].SIMD1	busy_time	0.0	second
+GPU[4].SA[13].CU[0].SIMD2	busy_time	0.0	second
+GPU[4].SA[13].CU[0].SIMD3	busy_time	0.0	second
+GPU[4].SA[13].CU[1].SIMD0	busy_time	0.0	second
+GPU[4].SA[13].CU[1].SIMD1	busy_time	0.0	second
+GPU[4].SA[13].CU[1].SIMD2	busy_time	0.0	second
+GPU[4].SA[13].CU[1].SIMD3	busy_time	0.0	second
+GPU[4].SA[13].CU[2].SIMD0	busy_time	0.0	second
+GPU[4].SA[13].CU[2].SIMD1	busy_time	0.0	second
+GPU[4].SA[13].CU[2].SIMD2	busy_time	0.0	second
+GPU[4].SA[13].CU[2].SIMD3	busy_time	0.0	second
+GPU[4].SA[13].CU[3].SIMD0	busy_time	0.0	second
+GPU[4].SA[13].CU[3].SIMD1	busy_time	0.0	second
+GPU[4].SA[13].CU[3].SIMD2	busy_time	0.0	second
+GPU[4].SA[13].CU[3].SIMD3	busy_time	0.0	second
+GPU[4].SA[14].CU[0].SIMD0	busy_time	0.0	second
+GPU[4].SA[14].CU[0].SIMD1	busy_time	0.0	second
+GPU[4].SA[14].CU[0].SIMD2	busy_time	0.0	second
+GPU[4].SA[14].CU[0].SIMD3	busy_time	0.0	second
+GPU[4].SA[14].CU[1].SIMD0	busy_time	0.0	second
+GPU[4].SA[14].CU[1].SIMD1	busy_time	0.0	second
+GPU[4].SA[14].CU[1].SIMD2	busy_time	0.0	second
+GPU[4].SA[14].CU[1].SIMD3	busy_time	0.0	second
+GPU[4].SA[14].CU[2].SIMD0	busy_time	0.0	second
+GPU[4].SA[14].CU[2].SIMD1	busy_time	0.0	second
+GPU[4].SA[14].CU[2].SIMD2	busy_time	0.0	second
+GPU[4].SA[14].CU[2].SIMD3	busy_time	0.0	second
+GPU[4].SA[14].CU[3].SIMD0	busy_time	0.0	second
+GPU[4].SA[14].CU[3].SIMD1	busy_time	0.0	second
+GPU[4].SA[14].CU[3].SIMD2	busy_time	0.0	second
+GPU[4].SA[14].CU[3].SIMD3	busy_time	0.0	second
+GPU[4].SA[15].CU[0].SIMD0	busy_time	0.0	second
+GPU[4].SA[15].CU[0].SIMD1	busy_time	0.0	second
+GPU[4].SA[15].CU[0].SIMD2	busy_time	0.0	second
+GPU[4].SA[15].CU[0].SIMD3	busy_time	0.0	second
+GPU[4].SA[15].CU[1].SIMD0	busy_time	0.0	second
+GPU[4].SA[15].CU[1].SIMD1	busy_time	0.0	second
+GPU[4].SA[15].CU[1].SIMD2	busy_time	0.0	second
+GPU[4].SA[15].CU[1].SIMD3	busy_time	0.0	second
+GPU[4].SA[15].CU[2].SIMD0	busy_time	0.0	second
+GPU[4].SA[15].CU[2].SIMD1	busy_time	0.0	second
+GPU[4].SA[15].CU[2].SIMD2	busy_time	0.0	second
+GPU[4].SA[15].CU[2].SIMD3	busy_time	0.0	second
+GPU[4].SA[15].CU[3].SIMD0	busy_time	0.0	second
+GPU[4].SA[15].CU[3].SIMD1	busy_time	0.0	second
+GPU[4].SA[15].CU[3].SIMD2	busy_time	0.0	second
+GPU[4].SA[15].CU[3].SIMD3	busy_time	0.0	second
+GPU[1].L2Cache[0]	req_average_latency	1.3291e-08	second
+GPU[1].L2Cache[1]	req_average_latency	1.3094999999999999e-08	second
+GPU[1].L2Cache[2]	req_average_latency	1.2786e-08	second
+GPU[1].L2Cache[3]	req_average_latency	1.2786e-08	second
+GPU[1].L2Cache[4]	req_average_latency	1.2993e-08	second
+GPU[1].L2Cache[5]	req_average_latency	1.2993e-08	second
+GPU[1].L2Cache[6]	req_average_latency	1.2999e-08	second
+GPU[1].L2Cache[7]	req_average_latency	1.2899e-08	second
+GPU[1].L2Cache[8]	req_average_latency	1.2894e-08	second
+GPU[1].L2Cache[9]	req_average_latency	1.2894e-08	second
+GPU[1].L2Cache[10]	req_average_latency	1.1737e-08	second
+GPU[1].L2Cache[11]	req_average_latency	1.1737e-08	second
+GPU[1].L2Cache[12]	req_average_latency	1.3156e-08	second
+GPU[1].L2Cache[13]	req_average_latency	1.3109e-08	second
+GPU[1].L2Cache[14]	req_average_latency	1.3084e-08	second
+GPU[1].L2Cache[15]	req_average_latency	1.3103e-08	second
+GPU[1].SA[0].L1VCache[0]	req_average_latency	8.0689e-08	second
+GPU[1].SA[0].L1VCache[1]	req_average_latency	2.86178e-07	second
+GPU[1].SA[0].L1VCache[2]	req_average_latency	2.87558e-07	second
+GPU[1].SA[0].L1VCache[3]	req_average_latency	2.90653e-07	second
+GPU[1].SA[0].L1SCache	req_average_latency	6.2549e-08	second
+GPU[1].SA[0].L1ICache	req_average_latency	3.5661891e-05	second
+GPU[2].L2Cache[0]	req_average_latency	1.3196999999999999e-08	second
+GPU[2].L2Cache[1]	req_average_latency	1.3004e-08	second
+GPU[2].L2Cache[2]	req_average_latency	1.3004e-08	second
+GPU[2].L2Cache[3]	req_average_latency	1.3009e-08	second
+GPU[2].L2Cache[4]	req_average_latency	1.3107e-08	second
+GPU[2].L2Cache[5]	req_average_latency	1.3107e-08	second
+GPU[2].L2Cache[6]	req_average_latency	1.2674e-08	second
+GPU[2].L2Cache[7]	req_average_latency	1.2587e-08	second
+GPU[2].L2Cache[8]	req_average_latency	1.3056e-08	second
+GPU[2].L2Cache[9]	req_average_latency	1.3062e-08	second
+GPU[2].L2Cache[10]	req_average_latency	1.3168e-08	second
+GPU[2].L2Cache[11]	req_average_latency	1.3168e-08	second
+GPU[2].L2Cache[12]	req_average_latency	1.2887e-08	second
+GPU[2].L2Cache[13]	req_average_latency	1.2887e-08	second
+GPU[2].L2Cache[14]	req_average_latency	1.1674e-08	second
+GPU[2].L2Cache[15]	req_average_latency	1.1657e-08	second
+GPU[2].SA[0].L1VCache[0]	req_average_latency	8.3322e-08	second
+GPU[2].SA[0].L1VCache[1]	req_average_latency	2.86148e-07	second
+GPU[2].SA[0].L1VCache[2]	req_average_latency	2.89715e-07	second
+GPU[2].SA[0].L1VCache[3]	req_average_latency	2.88467e-07	second
+GPU[2].SA[0].L1SCache	req_average_latency	6.2549e-08	second
+GPU[2].SA[0].L1ICache	req_average_latency	4.0160842e-05	second
+GPU[3].L2Cache[0]	req_average_latency	1.2970999999999999e-08	second
+GPU[3].L2Cache[1]	req_average_latency	1.2773999999999999e-08	second
+GPU[3].L2Cache[2]	req_average_latency	1.3027e-08	second
+GPU[3].L2Cache[3]	req_average_latency	1.3031e-08	second
+GPU[3].L2Cache[4]	req_average_latency	1.3009e-08	second
+GPU[3].L2Cache[5]	req_average_latency	1.3009e-08	second
+GPU[3].L2Cache[6]	req_average_latency	1.3005999999999999e-08	second
+GPU[3].L2Cache[7]	req_average_latency	1.2905e-08	second
+GPU[3].L2Cache[8]	req_average_latency	1.1492999999999999e-08	second
+GPU[3].L2Cache[9]	req_average_latency	1.1492999999999999e-08	second
+GPU[3].L2Cache[10]	req_average_latency	1.3164999999999999e-08	second
+GPU[3].L2Cache[11]	req_average_latency	1.3164999999999999e-08	second
+GPU[3].L2Cache[12]	req_average_latency	1.3061e-08	second
+GPU[3].L2Cache[13]	req_average_latency	1.3067e-08	second
+GPU[3].L2Cache[14]	req_average_latency	1.3157e-08	second
+GPU[3].L2Cache[15]	req_average_latency	1.3158999999999999e-08	second
+GPU[3].SA[0].L1VCache[0]	req_average_latency	8.287e-08	second
+GPU[3].SA[0].L1VCache[1]	req_average_latency	2.87136e-07	second
+GPU[3].SA[0].L1VCache[2]	req_average_latency	2.87185e-07	second
+GPU[3].SA[0].L1VCache[3]	req_average_latency	2.9055e-07	second
+GPU[3].SA[0].L1SCache	req_average_latency	6.2549e-08	second
+GPU[3].SA[0].L1ICache	req_average_latency	4.0605928e-05	second
+GPU[4].L2Cache[0]	req_average_latency	1.2894999999999999e-08	second
+GPU[4].L2Cache[1]	req_average_latency	1.2707e-08	second
+GPU[4].L2Cache[2]	req_average_latency	1.3005e-08	second
+GPU[4].L2Cache[3]	req_average_latency	1.3004e-08	second
+GPU[4].L2Cache[4]	req_average_latency	1.3112e-08	second
+GPU[4].L2Cache[5]	req_average_latency	1.3112e-08	second
+GPU[4].L2Cache[6]	req_average_latency	1.3007e-08	second
+GPU[4].L2Cache[7]	req_average_latency	1.2906e-08	second
+GPU[4].L2Cache[8]	req_average_latency	1.1644e-08	second
+GPU[4].L2Cache[9]	req_average_latency	1.1644e-08	second
+GPU[4].L2Cache[10]	req_average_latency	1.305e-08	second
+GPU[4].L2Cache[11]	req_average_latency	1.305e-08	second
+GPU[4].L2Cache[12]	req_average_latency	1.2887e-08	second
+GPU[4].L2Cache[13]	req_average_latency	1.2887e-08	second
+GPU[4].L2Cache[14]	req_average_latency	1.3158e-08	second
+GPU[4].L2Cache[15]	req_average_latency	1.3158e-08	second
+GPU[4].SA[0].L1VCache[0]	req_average_latency	8.1435e-08	second
+GPU[4].SA[0].L1VCache[1]	req_average_latency	2.9298199999999997e-07	second
+GPU[4].SA[0].L1VCache[2]	req_average_latency	2.86832e-07	second
+GPU[4].SA[0].L1VCache[3]	req_average_latency	2.86148e-07	second
+GPU[4].SA[0].L1SCache	req_average_latency	6.2549e-08	second
+GPU[4].SA[0].L1ICache	req_average_latency	2.4735444e-05	second
+GPU[1].L2Cache[0]	read-hit	0.0	count
+GPU[1].L2Cache[0]	read-miss	68.0	count
+GPU[1].L2Cache[0]	read-mshr-hit	0.0	count
+GPU[1].L2Cache[0]	write-hit	0.0	count
+GPU[1].L2Cache[0]	write-miss	64.0	count
+GPU[1].L2Cache[0]	write-mshr-hit	0.0	count
+GPU[1].L2Cache[1]	read-hit	0.0	count
+GPU[1].L2Cache[1]	read-miss	66.0	count
+GPU[1].L2Cache[1]	read-mshr-hit	0.0	count
+GPU[1].L2Cache[1]	write-hit	0.0	count
+GPU[1].L2Cache[1]	write-miss	64.0	count
+GPU[1].L2Cache[1]	write-mshr-hit	0.0	count
+GPU[1].L2Cache[2]	read-hit	0.0	count
+GPU[1].L2Cache[2]	read-miss	66.0	count
+GPU[1].L2Cache[2]	read-mshr-hit	0.0	count
+GPU[1].L2Cache[2]	write-hit	0.0	count
+GPU[1].L2Cache[2]	write-miss	64.0	count
+GPU[1].L2Cache[2]	write-mshr-hit	0.0	count
+GPU[1].L2Cache[3]	read-hit	0.0	count
+GPU[1].L2Cache[3]	read-miss	66.0	count
+GPU[1].L2Cache[3]	read-mshr-hit	0.0	count
+GPU[1].L2Cache[3]	write-hit	0.0	count
+GPU[1].L2Cache[3]	write-miss	64.0	count
+GPU[1].L2Cache[3]	write-mshr-hit	0.0	count
+GPU[1].L2Cache[4]	read-hit	0.0	count
+GPU[1].L2Cache[4]	read-miss	66.0	count
+GPU[1].L2Cache[4]	read-mshr-hit	0.0	count
+GPU[1].L2Cache[4]	write-hit	0.0	count
+GPU[1].L2Cache[4]	write-miss	64.0	count
+GPU[1].L2Cache[4]	write-mshr-hit	0.0	count
+GPU[1].L2Cache[5]	read-hit	0.0	count
+GPU[1].L2Cache[5]	read-miss	66.0	count
+GPU[1].L2Cache[5]	read-mshr-hit	0.0	count
+GPU[1].L2Cache[5]	write-hit	0.0	count
+GPU[1].L2Cache[5]	write-miss	64.0	count
+GPU[1].L2Cache[5]	write-mshr-hit	0.0	count
+GPU[1].L2Cache[6]	read-hit	0.0	count
+GPU[1].L2Cache[6]	read-miss	66.0	count
+GPU[1].L2Cache[6]	read-mshr-hit	0.0	count
+GPU[1].L2Cache[6]	write-hit	0.0	count
+GPU[1].L2Cache[6]	write-miss	64.0	count
+GPU[1].L2Cache[6]	write-mshr-hit	0.0	count
+GPU[1].L2Cache[7]	read-hit	0.0	count
+GPU[1].L2Cache[7]	read-miss	65.0	count
+GPU[1].L2Cache[7]	read-mshr-hit	0.0	count
+GPU[1].L2Cache[7]	write-hit	0.0	count
+GPU[1].L2Cache[7]	write-miss	64.0	count
+GPU[1].L2Cache[7]	write-mshr-hit	0.0	count
+GPU[1].L2Cache[8]	read-hit	0.0	count
+GPU[1].L2Cache[8]	read-miss	64.0	count
+GPU[1].L2Cache[8]	read-mshr-hit	0.0	count
+GPU[1].L2Cache[8]	write-hit	0.0	count
+GPU[1].L2Cache[8]	write-miss	64.0	count
+GPU[1].L2Cache[8]	write-mshr-hit	0.0	count
+GPU[1].L2Cache[9]	read-hit	0.0	count
+GPU[1].L2Cache[9]	read-miss	64.0	count
+GPU[1].L2Cache[9]	read-mshr-hit	0.0	count
+GPU[1].L2Cache[9]	write-hit	0.0	count
+GPU[1].L2Cache[9]	write-miss	64.0	count
+GPU[1].L2Cache[9]	write-mshr-hit	0.0	count
+GPU[1].L2Cache[10]	read-hit	0.0	count
+GPU[1].L2Cache[10]	read-miss	64.0	count
+GPU[1].L2Cache[10]	read-mshr-hit	0.0	count
+GPU[1].L2Cache[10]	write-hit	0.0	count
+GPU[1].L2Cache[10]	write-miss	64.0	count
+GPU[1].L2Cache[10]	write-mshr-hit	0.0	count
+GPU[1].L2Cache[11]	read-hit	0.0	count
+GPU[1].L2Cache[11]	read-miss	64.0	count
+GPU[1].L2Cache[11]	read-mshr-hit	0.0	count
+GPU[1].L2Cache[11]	write-hit	0.0	count
+GPU[1].L2Cache[11]	write-miss	64.0	count
+GPU[1].L2Cache[11]	write-mshr-hit	0.0	count
+GPU[1].L2Cache[12]	read-hit	0.0	count
+GPU[1].L2Cache[12]	read-miss	64.0	count
+GPU[1].L2Cache[12]	read-mshr-hit	0.0	count
+GPU[1].L2Cache[12]	write-hit	0.0	count
+GPU[1].L2Cache[12]	write-miss	64.0	count
+GPU[1].L2Cache[12]	write-mshr-hit	0.0	count
+GPU[1].L2Cache[13]	read-hit	0.0	count
+GPU[1].L2Cache[13]	read-miss	64.0	count
+GPU[1].L2Cache[13]	read-mshr-hit	0.0	count
+GPU[1].L2Cache[13]	write-hit	0.0	count
+GPU[1].L2Cache[13]	write-miss	64.0	count
+GPU[1].L2Cache[13]	write-mshr-hit	0.0	count
+GPU[1].L2Cache[14]	read-hit	0.0	count
+GPU[1].L2Cache[14]	read-miss	64.0	count
+GPU[1].L2Cache[14]	read-mshr-hit	0.0	count
+GPU[1].L2Cache[14]	write-hit	0.0	count
+GPU[1].L2Cache[14]	write-miss	64.0	count
+GPU[1].L2Cache[14]	write-mshr-hit	0.0	count
+GPU[1].L2Cache[15]	read-hit	0.0	count
+GPU[1].L2Cache[15]	read-miss	64.0	count
+GPU[1].L2Cache[15]	read-mshr-hit	0.0	count
+GPU[1].L2Cache[15]	write-hit	0.0	count
+GPU[1].L2Cache[15]	write-miss	64.0	count
+GPU[1].L2Cache[15]	write-mshr-hit	0.0	count
+GPU[1].SA[0].L1VCache[0]	read-hit	0.0	count
+GPU[1].SA[0].L1VCache[0]	read-miss	256.0	count
+GPU[1].SA[0].L1VCache[0]	read-mshr-hit	0.0	count
+GPU[1].SA[0].L1VCache[0]	write-hit	0.0	count
+GPU[1].SA[0].L1VCache[0]	write-miss	256.0	count
+GPU[1].SA[0].L1VCache[0]	write-mshr-hit	0.0	count
+GPU[1].SA[0].L1VCache[1]	read-hit	0.0	count
+GPU[1].SA[0].L1VCache[1]	read-miss	256.0	count
+GPU[1].SA[0].L1VCache[1]	read-mshr-hit	0.0	count
+GPU[1].SA[0].L1VCache[1]	write-hit	0.0	count
+GPU[1].SA[0].L1VCache[1]	write-miss	256.0	count
+GPU[1].SA[0].L1VCache[1]	write-mshr-hit	0.0	count
+GPU[1].SA[0].L1VCache[2]	read-hit	0.0	count
+GPU[1].SA[0].L1VCache[2]	read-miss	256.0	count
+GPU[1].SA[0].L1VCache[2]	read-mshr-hit	0.0	count
+GPU[1].SA[0].L1VCache[2]	write-hit	0.0	count
+GPU[1].SA[0].L1VCache[2]	write-miss	256.0	count
+GPU[1].SA[0].L1VCache[2]	write-mshr-hit	0.0	count
+GPU[1].SA[0].L1VCache[3]	read-hit	0.0	count
+GPU[1].SA[0].L1VCache[3]	read-miss	256.0	count
+GPU[1].SA[0].L1VCache[3]	read-mshr-hit	0.0	count
+GPU[1].SA[0].L1VCache[3]	write-hit	0.0	count
+GPU[1].SA[0].L1VCache[3]	write-miss	256.0	count
+GPU[1].SA[0].L1VCache[3]	write-mshr-hit	0.0	count
+GPU[1].SA[0].L1SCache	read-hit	32.0	count
+GPU[1].SA[0].L1SCache	read-miss	2.0	count
+GPU[1].SA[0].L1SCache	read-mshr-hit	30.0	count
+GPU[1].SA[0].L1SCache	write-hit	0.0	count
+GPU[1].SA[0].L1SCache	write-miss	0.0	count
+GPU[1].SA[0].L1SCache	write-mshr-hit	0.0	count
+GPU[1].SA[0].L1ICache	read-hit	16.0	count
+GPU[1].SA[0].L1ICache	read-miss	15.0	count
+GPU[1].SA[0].L1ICache	read-mshr-hit	207.0	count
+GPU[1].SA[0].L1ICache	write-hit	0.0	count
+GPU[1].SA[0].L1ICache	write-miss	0.0	count
+GPU[1].SA[0].L1ICache	write-mshr-hit	0.0	count
+GPU[2].L2Cache[0]	read-hit	0.0	count
+GPU[2].L2Cache[0]	read-miss	68.0	count
+GPU[2].L2Cache[0]	read-mshr-hit	0.0	count
+GPU[2].L2Cache[0]	write-hit	0.0	count
+GPU[2].L2Cache[0]	write-miss	64.0	count
+GPU[2].L2Cache[0]	write-mshr-hit	0.0	count
+GPU[2].L2Cache[1]	read-hit	0.0	count
+GPU[2].L2Cache[1]	read-miss	66.0	count
+GPU[2].L2Cache[1]	read-mshr-hit	0.0	count
+GPU[2].L2Cache[1]	write-hit	0.0	count
+GPU[2].L2Cache[1]	write-miss	64.0	count
+GPU[2].L2Cache[1]	write-mshr-hit	0.0	count
+GPU[2].L2Cache[2]	read-hit	0.0	count
+GPU[2].L2Cache[2]	read-miss	66.0	count
+GPU[2].L2Cache[2]	read-mshr-hit	0.0	count
+GPU[2].L2Cache[2]	write-hit	0.0	count
+GPU[2].L2Cache[2]	write-miss	64.0	count
+GPU[2].L2Cache[2]	write-mshr-hit	0.0	count
+GPU[2].L2Cache[3]	read-hit	0.0	count
+GPU[2].L2Cache[3]	read-miss	66.0	count
+GPU[2].L2Cache[3]	read-mshr-hit	0.0	count
+GPU[2].L2Cache[3]	write-hit	0.0	count
+GPU[2].L2Cache[3]	write-miss	64.0	count
+GPU[2].L2Cache[3]	write-mshr-hit	0.0	count
+GPU[2].L2Cache[4]	read-hit	0.0	count
+GPU[2].L2Cache[4]	read-miss	66.0	count
+GPU[2].L2Cache[4]	read-mshr-hit	0.0	count
+GPU[2].L2Cache[4]	write-hit	0.0	count
+GPU[2].L2Cache[4]	write-miss	64.0	count
+GPU[2].L2Cache[4]	write-mshr-hit	0.0	count
+GPU[2].L2Cache[5]	read-hit	0.0	count
+GPU[2].L2Cache[5]	read-miss	66.0	count
+GPU[2].L2Cache[5]	read-mshr-hit	0.0	count
+GPU[2].L2Cache[5]	write-hit	0.0	count
+GPU[2].L2Cache[5]	write-miss	64.0	count
+GPU[2].L2Cache[5]	write-mshr-hit	0.0	count
+GPU[2].L2Cache[6]	read-hit	0.0	count
+GPU[2].L2Cache[6]	read-miss	66.0	count
+GPU[2].L2Cache[6]	read-mshr-hit	0.0	count
+GPU[2].L2Cache[6]	write-hit	0.0	count
+GPU[2].L2Cache[6]	write-miss	64.0	count
+GPU[2].L2Cache[6]	write-mshr-hit	0.0	count
+GPU[2].L2Cache[7]	read-hit	0.0	count
+GPU[2].L2Cache[7]	read-miss	65.0	count
+GPU[2].L2Cache[7]	read-mshr-hit	0.0	count
+GPU[2].L2Cache[7]	write-hit	0.0	count
+GPU[2].L2Cache[7]	write-miss	64.0	count
+GPU[2].L2Cache[7]	write-mshr-hit	0.0	count
+GPU[2].L2Cache[8]	read-hit	0.0	count
+GPU[2].L2Cache[8]	read-miss	64.0	count
+GPU[2].L2Cache[8]	read-mshr-hit	0.0	count
+GPU[2].L2Cache[8]	write-hit	0.0	count
+GPU[2].L2Cache[8]	write-miss	64.0	count
+GPU[2].L2Cache[8]	write-mshr-hit	0.0	count
+GPU[2].L2Cache[9]	read-hit	0.0	count
+GPU[2].L2Cache[9]	read-miss	64.0	count
+GPU[2].L2Cache[9]	read-mshr-hit	0.0	count
+GPU[2].L2Cache[9]	write-hit	0.0	count
+GPU[2].L2Cache[9]	write-miss	64.0	count
+GPU[2].L2Cache[9]	write-mshr-hit	0.0	count
+GPU[2].L2Cache[10]	read-hit	0.0	count
+GPU[2].L2Cache[10]	read-miss	64.0	count
+GPU[2].L2Cache[10]	read-mshr-hit	0.0	count
+GPU[2].L2Cache[10]	write-hit	0.0	count
+GPU[2].L2Cache[10]	write-miss	64.0	count
+GPU[2].L2Cache[10]	write-mshr-hit	0.0	count
+GPU[2].L2Cache[11]	read-hit	0.0	count
+GPU[2].L2Cache[11]	read-miss	64.0	count
+GPU[2].L2Cache[11]	read-mshr-hit	0.0	count
+GPU[2].L2Cache[11]	write-hit	0.0	count
+GPU[2].L2Cache[11]	write-miss	64.0	count
+GPU[2].L2Cache[11]	write-mshr-hit	0.0	count
+GPU[2].L2Cache[12]	read-hit	0.0	count
+GPU[2].L2Cache[12]	read-miss	64.0	count
+GPU[2].L2Cache[12]	read-mshr-hit	0.0	count
+GPU[2].L2Cache[12]	write-hit	0.0	count
+GPU[2].L2Cache[12]	write-miss	64.0	count
+GPU[2].L2Cache[12]	write-mshr-hit	0.0	count
+GPU[2].L2Cache[13]	read-hit	0.0	count
+GPU[2].L2Cache[13]	read-miss	64.0	count
+GPU[2].L2Cache[13]	read-mshr-hit	0.0	count
+GPU[2].L2Cache[13]	write-hit	0.0	count
+GPU[2].L2Cache[13]	write-miss	64.0	count
+GPU[2].L2Cache[13]	write-mshr-hit	0.0	count
+GPU[2].L2Cache[14]	read-hit	0.0	count
+GPU[2].L2Cache[14]	read-miss	64.0	count
+GPU[2].L2Cache[14]	read-mshr-hit	0.0	count
+GPU[2].L2Cache[14]	write-hit	0.0	count
+GPU[2].L2Cache[14]	write-miss	64.0	count
+GPU[2].L2Cache[14]	write-mshr-hit	0.0	count
+GPU[2].L2Cache[15]	read-hit	0.0	count
+GPU[2].L2Cache[15]	read-miss	64.0	count
+GPU[2].L2Cache[15]	read-mshr-hit	0.0	count
+GPU[2].L2Cache[15]	write-hit	0.0	count
+GPU[2].L2Cache[15]	write-miss	64.0	count
+GPU[2].L2Cache[15]	write-mshr-hit	0.0	count
+GPU[2].SA[0].L1VCache[0]	read-hit	0.0	count
+GPU[2].SA[0].L1VCache[0]	read-miss	256.0	count
+GPU[2].SA[0].L1VCache[0]	read-mshr-hit	0.0	count
+GPU[2].SA[0].L1VCache[0]	write-hit	0.0	count
+GPU[2].SA[0].L1VCache[0]	write-miss	256.0	count
+GPU[2].SA[0].L1VCache[0]	write-mshr-hit	0.0	count
+GPU[2].SA[0].L1VCache[1]	read-hit	0.0	count
+GPU[2].SA[0].L1VCache[1]	read-miss	256.0	count
+GPU[2].SA[0].L1VCache[1]	read-mshr-hit	0.0	count
+GPU[2].SA[0].L1VCache[1]	write-hit	0.0	count
+GPU[2].SA[0].L1VCache[1]	write-miss	256.0	count
+GPU[2].SA[0].L1VCache[1]	write-mshr-hit	0.0	count
+GPU[2].SA[0].L1VCache[2]	read-hit	0.0	count
+GPU[2].SA[0].L1VCache[2]	read-miss	256.0	count
+GPU[2].SA[0].L1VCache[2]	read-mshr-hit	0.0	count
+GPU[2].SA[0].L1VCache[2]	write-hit	0.0	count
+GPU[2].SA[0].L1VCache[2]	write-miss	256.0	count
+GPU[2].SA[0].L1VCache[2]	write-mshr-hit	0.0	count
+GPU[2].SA[0].L1VCache[3]	read-hit	0.0	count
+GPU[2].SA[0].L1VCache[3]	read-miss	256.0	count
+GPU[2].SA[0].L1VCache[3]	read-mshr-hit	0.0	count
+GPU[2].SA[0].L1VCache[3]	write-hit	0.0	count
+GPU[2].SA[0].L1VCache[3]	write-miss	256.0	count
+GPU[2].SA[0].L1VCache[3]	write-mshr-hit	0.0	count
+GPU[2].SA[0].L1SCache	read-hit	32.0	count
+GPU[2].SA[0].L1SCache	read-miss	2.0	count
+GPU[2].SA[0].L1SCache	read-mshr-hit	30.0	count
+GPU[2].SA[0].L1SCache	write-hit	0.0	count
+GPU[2].SA[0].L1SCache	write-miss	0.0	count
+GPU[2].SA[0].L1SCache	write-mshr-hit	0.0	count
+GPU[2].SA[0].L1ICache	read-hit	8.0	count
+GPU[2].SA[0].L1ICache	read-miss	15.0	count
+GPU[2].SA[0].L1ICache	read-mshr-hit	217.0	count
+GPU[2].SA[0].L1ICache	write-hit	0.0	count
+GPU[2].SA[0].L1ICache	write-miss	0.0	count
+GPU[2].SA[0].L1ICache	write-mshr-hit	0.0	count
+GPU[3].L2Cache[0]	read-hit	0.0	count
+GPU[3].L2Cache[0]	read-miss	68.0	count
+GPU[3].L2Cache[0]	read-mshr-hit	0.0	count
+GPU[3].L2Cache[0]	write-hit	0.0	count
+GPU[3].L2Cache[0]	write-miss	64.0	count
+GPU[3].L2Cache[0]	write-mshr-hit	0.0	count
+GPU[3].L2Cache[1]	read-hit	0.0	count
+GPU[3].L2Cache[1]	read-miss	66.0	count
+GPU[3].L2Cache[1]	read-mshr-hit	0.0	count
+GPU[3].L2Cache[1]	write-hit	0.0	count
+GPU[3].L2Cache[1]	write-miss	64.0	count
+GPU[3].L2Cache[1]	write-mshr-hit	0.0	count
+GPU[3].L2Cache[2]	read-hit	0.0	count
+GPU[3].L2Cache[2]	read-miss	66.0	count
+GPU[3].L2Cache[2]	read-mshr-hit	0.0	count
+GPU[3].L2Cache[2]	write-hit	0.0	count
+GPU[3].L2Cache[2]	write-miss	64.0	count
+GPU[3].L2Cache[2]	write-mshr-hit	0.0	count
+GPU[3].L2Cache[3]	read-hit	0.0	count
+GPU[3].L2Cache[3]	read-miss	66.0	count
+GPU[3].L2Cache[3]	read-mshr-hit	0.0	count
+GPU[3].L2Cache[3]	write-hit	0.0	count
+GPU[3].L2Cache[3]	write-miss	64.0	count
+GPU[3].L2Cache[3]	write-mshr-hit	0.0	count
+GPU[3].L2Cache[4]	read-hit	0.0	count
+GPU[3].L2Cache[4]	read-miss	66.0	count
+GPU[3].L2Cache[4]	read-mshr-hit	0.0	count
+GPU[3].L2Cache[4]	write-hit	0.0	count
+GPU[3].L2Cache[4]	write-miss	64.0	count
+GPU[3].L2Cache[4]	write-mshr-hit	0.0	count
+GPU[3].L2Cache[5]	read-hit	0.0	count
+GPU[3].L2Cache[5]	read-miss	66.0	count
+GPU[3].L2Cache[5]	read-mshr-hit	0.0	count
+GPU[3].L2Cache[5]	write-hit	0.0	count
+GPU[3].L2Cache[5]	write-miss	64.0	count
+GPU[3].L2Cache[5]	write-mshr-hit	0.0	count
+GPU[3].L2Cache[6]	read-hit	0.0	count
+GPU[3].L2Cache[6]	read-miss	66.0	count
+GPU[3].L2Cache[6]	read-mshr-hit	0.0	count
+GPU[3].L2Cache[6]	write-hit	0.0	count
+GPU[3].L2Cache[6]	write-miss	64.0	count
+GPU[3].L2Cache[6]	write-mshr-hit	0.0	count
+GPU[3].L2Cache[7]	read-hit	0.0	count
+GPU[3].L2Cache[7]	read-miss	65.0	count
+GPU[3].L2Cache[7]	read-mshr-hit	0.0	count
+GPU[3].L2Cache[7]	write-hit	0.0	count
+GPU[3].L2Cache[7]	write-miss	64.0	count
+GPU[3].L2Cache[7]	write-mshr-hit	0.0	count
+GPU[3].L2Cache[8]	read-hit	0.0	count
+GPU[3].L2Cache[8]	read-miss	64.0	count
+GPU[3].L2Cache[8]	read-mshr-hit	0.0	count
+GPU[3].L2Cache[8]	write-hit	0.0	count
+GPU[3].L2Cache[8]	write-miss	64.0	count
+GPU[3].L2Cache[8]	write-mshr-hit	0.0	count
+GPU[3].L2Cache[9]	read-hit	0.0	count
+GPU[3].L2Cache[9]	read-miss	64.0	count
+GPU[3].L2Cache[9]	read-mshr-hit	0.0	count
+GPU[3].L2Cache[9]	write-hit	0.0	count
+GPU[3].L2Cache[9]	write-miss	64.0	count
+GPU[3].L2Cache[9]	write-mshr-hit	0.0	count
+GPU[3].L2Cache[10]	read-hit	0.0	count
+GPU[3].L2Cache[10]	read-miss	64.0	count
+GPU[3].L2Cache[10]	read-mshr-hit	0.0	count
+GPU[3].L2Cache[10]	write-hit	0.0	count
+GPU[3].L2Cache[10]	write-miss	64.0	count
+GPU[3].L2Cache[10]	write-mshr-hit	0.0	count
+GPU[3].L2Cache[11]	read-hit	0.0	count
+GPU[3].L2Cache[11]	read-miss	64.0	count
+GPU[3].L2Cache[11]	read-mshr-hit	0.0	count
+GPU[3].L2Cache[11]	write-hit	0.0	count
+GPU[3].L2Cache[11]	write-miss	64.0	count
+GPU[3].L2Cache[11]	write-mshr-hit	0.0	count
+GPU[3].L2Cache[12]	read-hit	0.0	count
+GPU[3].L2Cache[12]	read-miss	64.0	count
+GPU[3].L2Cache[12]	read-mshr-hit	0.0	count
+GPU[3].L2Cache[12]	write-hit	0.0	count
+GPU[3].L2Cache[12]	write-miss	64.0	count
+GPU[3].L2Cache[12]	write-mshr-hit	0.0	count
+GPU[3].L2Cache[13]	read-hit	0.0	count
+GPU[3].L2Cache[13]	read-miss	64.0	count
+GPU[3].L2Cache[13]	read-mshr-hit	0.0	count
+GPU[3].L2Cache[13]	write-hit	0.0	count
+GPU[3].L2Cache[13]	write-miss	64.0	count
+GPU[3].L2Cache[13]	write-mshr-hit	0.0	count
+GPU[3].L2Cache[14]	read-hit	0.0	count
+GPU[3].L2Cache[14]	read-miss	64.0	count
+GPU[3].L2Cache[14]	read-mshr-hit	0.0	count
+GPU[3].L2Cache[14]	write-hit	0.0	count
+GPU[3].L2Cache[14]	write-miss	64.0	count
+GPU[3].L2Cache[14]	write-mshr-hit	0.0	count
+GPU[3].L2Cache[15]	read-hit	0.0	count
+GPU[3].L2Cache[15]	read-miss	64.0	count
+GPU[3].L2Cache[15]	read-mshr-hit	0.0	count
+GPU[3].L2Cache[15]	write-hit	0.0	count
+GPU[3].L2Cache[15]	write-miss	64.0	count
+GPU[3].L2Cache[15]	write-mshr-hit	0.0	count
+GPU[3].SA[0].L1VCache[0]	read-hit	0.0	count
+GPU[3].SA[0].L1VCache[0]	read-miss	256.0	count
+GPU[3].SA[0].L1VCache[0]	read-mshr-hit	0.0	count
+GPU[3].SA[0].L1VCache[0]	write-hit	0.0	count
+GPU[3].SA[0].L1VCache[0]	write-miss	256.0	count
+GPU[3].SA[0].L1VCache[0]	write-mshr-hit	0.0	count
+GPU[3].SA[0].L1VCache[1]	read-hit	0.0	count
+GPU[3].SA[0].L1VCache[1]	read-miss	256.0	count
+GPU[3].SA[0].L1VCache[1]	read-mshr-hit	0.0	count
+GPU[3].SA[0].L1VCache[1]	write-hit	0.0	count
+GPU[3].SA[0].L1VCache[1]	write-miss	256.0	count
+GPU[3].SA[0].L1VCache[1]	write-mshr-hit	0.0	count
+GPU[3].SA[0].L1VCache[2]	read-hit	0.0	count
+GPU[3].SA[0].L1VCache[2]	read-miss	256.0	count
+GPU[3].SA[0].L1VCache[2]	read-mshr-hit	0.0	count
+GPU[3].SA[0].L1VCache[2]	write-hit	0.0	count
+GPU[3].SA[0].L1VCache[2]	write-miss	256.0	count
+GPU[3].SA[0].L1VCache[2]	write-mshr-hit	0.0	count
+GPU[3].SA[0].L1VCache[3]	read-hit	0.0	count
+GPU[3].SA[0].L1VCache[3]	read-miss	256.0	count
+GPU[3].SA[0].L1VCache[3]	read-mshr-hit	0.0	count
+GPU[3].SA[0].L1VCache[3]	write-hit	0.0	count
+GPU[3].SA[0].L1VCache[3]	write-miss	256.0	count
+GPU[3].SA[0].L1VCache[3]	write-mshr-hit	0.0	count
+GPU[3].SA[0].L1SCache	read-hit	32.0	count
+GPU[3].SA[0].L1SCache	read-miss	2.0	count
+GPU[3].SA[0].L1SCache	read-mshr-hit	30.0	count
+GPU[3].SA[0].L1SCache	write-hit	0.0	count
+GPU[3].SA[0].L1SCache	write-miss	0.0	count
+GPU[3].SA[0].L1SCache	write-mshr-hit	0.0	count
+GPU[3].SA[0].L1ICache	read-hit	9.0	count
+GPU[3].SA[0].L1ICache	read-miss	15.0	count
+GPU[3].SA[0].L1ICache	read-mshr-hit	215.0	count
+GPU[3].SA[0].L1ICache	write-hit	0.0	count
+GPU[3].SA[0].L1ICache	write-miss	0.0	count
+GPU[3].SA[0].L1ICache	write-mshr-hit	0.0	count
+GPU[4].L2Cache[0]	read-hit	0.0	count
+GPU[4].L2Cache[0]	read-miss	68.0	count
+GPU[4].L2Cache[0]	read-mshr-hit	0.0	count
+GPU[4].L2Cache[0]	write-hit	0.0	count
+GPU[4].L2Cache[0]	write-miss	64.0	count
+GPU[4].L2Cache[0]	write-mshr-hit	0.0	count
+GPU[4].L2Cache[1]	read-hit	0.0	count
+GPU[4].L2Cache[1]	read-miss	66.0	count
+GPU[4].L2Cache[1]	read-mshr-hit	0.0	count
+GPU[4].L2Cache[1]	write-hit	0.0	count
+GPU[4].L2Cache[1]	write-miss	64.0	count
+GPU[4].L2Cache[1]	write-mshr-hit	0.0	count
+GPU[4].L2Cache[2]	read-hit	0.0	count
+GPU[4].L2Cache[2]	read-miss	66.0	count
+GPU[4].L2Cache[2]	read-mshr-hit	0.0	count
+GPU[4].L2Cache[2]	write-hit	0.0	count
+GPU[4].L2Cache[2]	write-miss	64.0	count
+GPU[4].L2Cache[2]	write-mshr-hit	0.0	count
+GPU[4].L2Cache[3]	read-hit	0.0	count
+GPU[4].L2Cache[3]	read-miss	66.0	count
+GPU[4].L2Cache[3]	read-mshr-hit	0.0	count
+GPU[4].L2Cache[3]	write-hit	0.0	count
+GPU[4].L2Cache[3]	write-miss	64.0	count
+GPU[4].L2Cache[3]	write-mshr-hit	0.0	count
+GPU[4].L2Cache[4]	read-hit	0.0	count
+GPU[4].L2Cache[4]	read-miss	66.0	count
+GPU[4].L2Cache[4]	read-mshr-hit	0.0	count
+GPU[4].L2Cache[4]	write-hit	0.0	count
+GPU[4].L2Cache[4]	write-miss	64.0	count
+GPU[4].L2Cache[4]	write-mshr-hit	0.0	count
+GPU[4].L2Cache[5]	read-hit	0.0	count
+GPU[4].L2Cache[5]	read-miss	66.0	count
+GPU[4].L2Cache[5]	read-mshr-hit	0.0	count
+GPU[4].L2Cache[5]	write-hit	0.0	count
+GPU[4].L2Cache[5]	write-miss	64.0	count
+GPU[4].L2Cache[5]	write-mshr-hit	0.0	count
+GPU[4].L2Cache[6]	read-hit	0.0	count
+GPU[4].L2Cache[6]	read-miss	66.0	count
+GPU[4].L2Cache[6]	read-mshr-hit	0.0	count
+GPU[4].L2Cache[6]	write-hit	0.0	count
+GPU[4].L2Cache[6]	write-miss	64.0	count
+GPU[4].L2Cache[6]	write-mshr-hit	0.0	count
+GPU[4].L2Cache[7]	read-hit	0.0	count
+GPU[4].L2Cache[7]	read-miss	65.0	count
+GPU[4].L2Cache[7]	read-mshr-hit	0.0	count
+GPU[4].L2Cache[7]	write-hit	0.0	count
+GPU[4].L2Cache[7]	write-miss	64.0	count
+GPU[4].L2Cache[7]	write-mshr-hit	0.0	count
+GPU[4].L2Cache[8]	read-hit	0.0	count
+GPU[4].L2Cache[8]	read-miss	64.0	count
+GPU[4].L2Cache[8]	read-mshr-hit	0.0	count
+GPU[4].L2Cache[8]	write-hit	0.0	count
+GPU[4].L2Cache[8]	write-miss	64.0	count
+GPU[4].L2Cache[8]	write-mshr-hit	0.0	count
+GPU[4].L2Cache[9]	read-hit	0.0	count
+GPU[4].L2Cache[9]	read-miss	64.0	count
+GPU[4].L2Cache[9]	read-mshr-hit	0.0	count
+GPU[4].L2Cache[9]	write-hit	0.0	count
+GPU[4].L2Cache[9]	write-miss	64.0	count
+GPU[4].L2Cache[9]	write-mshr-hit	0.0	count
+GPU[4].L2Cache[10]	read-hit	0.0	count
+GPU[4].L2Cache[10]	read-miss	64.0	count
+GPU[4].L2Cache[10]	read-mshr-hit	0.0	count
+GPU[4].L2Cache[10]	write-hit	0.0	count
+GPU[4].L2Cache[10]	write-miss	64.0	count
+GPU[4].L2Cache[10]	write-mshr-hit	0.0	count
+GPU[4].L2Cache[11]	read-hit	0.0	count
+GPU[4].L2Cache[11]	read-miss	64.0	count
+GPU[4].L2Cache[11]	read-mshr-hit	0.0	count
+GPU[4].L2Cache[11]	write-hit	0.0	count
+GPU[4].L2Cache[11]	write-miss	64.0	count
+GPU[4].L2Cache[11]	write-mshr-hit	0.0	count
+GPU[4].L2Cache[12]	read-hit	0.0	count
+GPU[4].L2Cache[12]	read-miss	64.0	count
+GPU[4].L2Cache[12]	read-mshr-hit	0.0	count
+GPU[4].L2Cache[12]	write-hit	0.0	count
+GPU[4].L2Cache[12]	write-miss	64.0	count
+GPU[4].L2Cache[12]	write-mshr-hit	0.0	count
+GPU[4].L2Cache[13]	read-hit	0.0	count
+GPU[4].L2Cache[13]	read-miss	64.0	count
+GPU[4].L2Cache[13]	read-mshr-hit	0.0	count
+GPU[4].L2Cache[13]	write-hit	0.0	count
+GPU[4].L2Cache[13]	write-miss	64.0	count
+GPU[4].L2Cache[13]	write-mshr-hit	0.0	count
+GPU[4].L2Cache[14]	read-hit	0.0	count
+GPU[4].L2Cache[14]	read-miss	64.0	count
+GPU[4].L2Cache[14]	read-mshr-hit	0.0	count
+GPU[4].L2Cache[14]	write-hit	0.0	count
+GPU[4].L2Cache[14]	write-miss	64.0	count
+GPU[4].L2Cache[14]	write-mshr-hit	0.0	count
+GPU[4].L2Cache[15]	read-hit	0.0	count
+GPU[4].L2Cache[15]	read-miss	64.0	count
+GPU[4].L2Cache[15]	read-mshr-hit	0.0	count
+GPU[4].L2Cache[15]	write-hit	0.0	count
+GPU[4].L2Cache[15]	write-miss	64.0	count
+GPU[4].L2Cache[15]	write-mshr-hit	0.0	count
+GPU[4].SA[0].L1VCache[0]	read-hit	0.0	count
+GPU[4].SA[0].L1VCache[0]	read-miss	256.0	count
+GPU[4].SA[0].L1VCache[0]	read-mshr-hit	0.0	count
+GPU[4].SA[0].L1VCache[0]	write-hit	0.0	count
+GPU[4].SA[0].L1VCache[0]	write-miss	256.0	count
+GPU[4].SA[0].L1VCache[0]	write-mshr-hit	0.0	count
+GPU[4].SA[0].L1VCache[1]	read-hit	0.0	count
+GPU[4].SA[0].L1VCache[1]	read-miss	256.0	count
+GPU[4].SA[0].L1VCache[1]	read-mshr-hit	0.0	count
+GPU[4].SA[0].L1VCache[1]	write-hit	0.0	count
+GPU[4].SA[0].L1VCache[1]	write-miss	256.0	count
+GPU[4].SA[0].L1VCache[1]	write-mshr-hit	0.0	count
+GPU[4].SA[0].L1VCache[2]	read-hit	0.0	count
+GPU[4].SA[0].L1VCache[2]	read-miss	256.0	count
+GPU[4].SA[0].L1VCache[2]	read-mshr-hit	0.0	count
+GPU[4].SA[0].L1VCache[2]	write-hit	0.0	count
+GPU[4].SA[0].L1VCache[2]	write-miss	256.0	count
+GPU[4].SA[0].L1VCache[2]	write-mshr-hit	0.0	count
+GPU[4].SA[0].L1VCache[3]	read-hit	0.0	count
+GPU[4].SA[0].L1VCache[3]	read-miss	256.0	count
+GPU[4].SA[0].L1VCache[3]	read-mshr-hit	0.0	count
+GPU[4].SA[0].L1VCache[3]	write-hit	0.0	count
+GPU[4].SA[0].L1VCache[3]	write-miss	256.0	count
+GPU[4].SA[0].L1VCache[3]	write-mshr-hit	0.0	count
+GPU[4].SA[0].L1SCache	read-hit	32.0	count
+GPU[4].SA[0].L1SCache	read-miss	2.0	count
+GPU[4].SA[0].L1SCache	read-mshr-hit	30.0	count
+GPU[4].SA[0].L1SCache	write-hit	0.0	count
+GPU[4].SA[0].L1SCache	write-miss	0.0	count
+GPU[4].SA[0].L1SCache	write-mshr-hit	0.0	count
+GPU[4].SA[0].L1ICache	read-hit	24.0	count
+GPU[4].SA[0].L1ICache	read-miss	15.0	count
+GPU[4].SA[0].L1ICache	read-mshr-hit	201.0	count
+GPU[4].SA[0].L1ICache	write-hit	0.0	count
+GPU[4].SA[0].L1ICache	write-miss	0.0	count
+GPU[4].SA[0].L1ICache	write-mshr-hit	0.0	count
+GPU[1].L2TLB	hit	0.0	count
+GPU[1].L2TLB	miss	131.0	count
+GPU[1].L2TLB	mshr-hit	0.0	count
+GPU[1].SA[0].L1VTLB[0]	hit	384.0	count
+GPU[1].SA[0].L1VTLB[0]	miss	32.0	count
+GPU[1].SA[0].L1VTLB[0]	mshr-hit	96.0	count
+GPU[1].SA[0].L1VTLB[1]	hit	384.0	count
+GPU[1].SA[0].L1VTLB[1]	miss	32.0	count
+GPU[1].SA[0].L1VTLB[1]	mshr-hit	96.0	count
+GPU[1].SA[0].L1VTLB[2]	hit	384.0	count
+GPU[1].SA[0].L1VTLB[2]	miss	32.0	count
+GPU[1].SA[0].L1VTLB[2]	mshr-hit	96.0	count
+GPU[1].SA[0].L1VTLB[3]	hit	384.0	count
+GPU[1].SA[0].L1VTLB[3]	miss	32.0	count
+GPU[1].SA[0].L1VTLB[3]	mshr-hit	96.0	count
+GPU[1].SA[0].L1STLB	hit	16.0	count
+GPU[1].SA[0].L1STLB	miss	2.0	count
+GPU[1].SA[0].L1STLB	mshr-hit	46.0	count
+GPU[1].SA[0].L1ITLB	hit	14.0	count
+GPU[1].SA[0].L1ITLB	miss	1.0	count
+GPU[1].SA[0].L1ITLB	mshr-hit	0.0	count
+GPU[2].L2TLB	hit	0.0	count
+GPU[2].L2TLB	miss	131.0	count
+GPU[2].L2TLB	mshr-hit	0.0	count
+GPU[2].SA[0].L1VTLB[0]	hit	384.0	count
+GPU[2].SA[0].L1VTLB[0]	miss	32.0	count
+GPU[2].SA[0].L1VTLB[0]	mshr-hit	96.0	count
+GPU[2].SA[0].L1VTLB[1]	hit	384.0	count
+GPU[2].SA[0].L1VTLB[1]	miss	32.0	count
+GPU[2].SA[0].L1VTLB[1]	mshr-hit	96.0	count
+GPU[2].SA[0].L1VTLB[2]	hit	384.0	count
+GPU[2].SA[0].L1VTLB[2]	miss	32.0	count
+GPU[2].SA[0].L1VTLB[2]	mshr-hit	96.0	count
+GPU[2].SA[0].L1VTLB[3]	hit	384.0	count
+GPU[2].SA[0].L1VTLB[3]	miss	32.0	count
+GPU[2].SA[0].L1VTLB[3]	mshr-hit	96.0	count
+GPU[2].SA[0].L1STLB	hit	16.0	count
+GPU[2].SA[0].L1STLB	miss	2.0	count
+GPU[2].SA[0].L1STLB	mshr-hit	46.0	count
+GPU[2].SA[0].L1ITLB	hit	14.0	count
+GPU[2].SA[0].L1ITLB	miss	1.0	count
+GPU[2].SA[0].L1ITLB	mshr-hit	0.0	count
+GPU[3].L2TLB	hit	0.0	count
+GPU[3].L2TLB	miss	131.0	count
+GPU[3].L2TLB	mshr-hit	0.0	count
+GPU[3].SA[0].L1VTLB[0]	hit	384.0	count
+GPU[3].SA[0].L1VTLB[0]	miss	32.0	count
+GPU[3].SA[0].L1VTLB[0]	mshr-hit	96.0	count
+GPU[3].SA[0].L1VTLB[1]	hit	384.0	count
+GPU[3].SA[0].L1VTLB[1]	miss	32.0	count
+GPU[3].SA[0].L1VTLB[1]	mshr-hit	96.0	count
+GPU[3].SA[0].L1VTLB[2]	hit	384.0	count
+GPU[3].SA[0].L1VTLB[2]	miss	32.0	count
+GPU[3].SA[0].L1VTLB[2]	mshr-hit	96.0	count
+GPU[3].SA[0].L1VTLB[3]	hit	384.0	count
+GPU[3].SA[0].L1VTLB[3]	miss	32.0	count
+GPU[3].SA[0].L1VTLB[3]	mshr-hit	96.0	count
+GPU[3].SA[0].L1STLB	hit	16.0	count
+GPU[3].SA[0].L1STLB	miss	2.0	count
+GPU[3].SA[0].L1STLB	mshr-hit	46.0	count
+GPU[3].SA[0].L1ITLB	hit	14.0	count
+GPU[3].SA[0].L1ITLB	miss	1.0	count
+GPU[3].SA[0].L1ITLB	mshr-hit	0.0	count
+GPU[4].L2TLB	hit	0.0	count
+GPU[4].L2TLB	miss	131.0	count
+GPU[4].L2TLB	mshr-hit	0.0	count
+GPU[4].SA[0].L1VTLB[0]	hit	384.0	count
+GPU[4].SA[0].L1VTLB[0]	miss	32.0	count
+GPU[4].SA[0].L1VTLB[0]	mshr-hit	96.0	count
+GPU[4].SA[0].L1VTLB[1]	hit	384.0	count
+GPU[4].SA[0].L1VTLB[1]	miss	32.0	count
+GPU[4].SA[0].L1VTLB[1]	mshr-hit	96.0	count
+GPU[4].SA[0].L1VTLB[2]	hit	384.0	count
+GPU[4].SA[0].L1VTLB[2]	miss	32.0	count
+GPU[4].SA[0].L1VTLB[2]	mshr-hit	96.0	count
+GPU[4].SA[0].L1VTLB[3]	hit	384.0	count
+GPU[4].SA[0].L1VTLB[3]	miss	32.0	count
+GPU[4].SA[0].L1VTLB[3]	mshr-hit	96.0	count
+GPU[4].SA[0].L1STLB	hit	16.0	count
+GPU[4].SA[0].L1STLB	miss	2.0	count
+GPU[4].SA[0].L1STLB	mshr-hit	46.0	count
+GPU[4].SA[0].L1ITLB	hit	14.0	count
+GPU[4].SA[0].L1ITLB	miss	1.0	count
+GPU[4].SA[0].L1ITLB	mshr-hit	0.0	count
+GPU[1].RDMA	outgoing_trans_count	768.0	count
+GPU[1].RDMA	incoming_trans_count	768.0	count
+GPU[2].RDMA	outgoing_trans_count	768.0	count
+GPU[2].RDMA	incoming_trans_count	768.0	count
+GPU[3].RDMA	outgoing_trans_count	768.0	count
+GPU[3].RDMA	incoming_trans_count	768.0	count
+GPU[4].RDMA	outgoing_trans_count	768.0	count
+GPU[4].RDMA	incoming_trans_count	768.0	count
+GPU[1].DRAM[0]	read_trans_count	132.0	count
+GPU[1].DRAM[0]	write_trans_count	132.0	count
+GPU[1].DRAM[0]	read_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[0]	write_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[0]	read_size	8448.0	bytes
+GPU[1].DRAM[0]	write_size	8448.0	bytes
+GPU[1].DRAM[1]	read_trans_count	130.0	count
+GPU[1].DRAM[1]	write_trans_count	130.0	count
+GPU[1].DRAM[1]	read_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[1]	write_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[1]	read_size	8320.0	bytes
+GPU[1].DRAM[1]	write_size	8320.0	bytes
+GPU[1].DRAM[2]	read_trans_count	130.0	count
+GPU[1].DRAM[2]	write_trans_count	130.0	count
+GPU[1].DRAM[2]	read_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[2]	write_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[2]	read_size	8320.0	bytes
+GPU[1].DRAM[2]	write_size	8320.0	bytes
+GPU[1].DRAM[3]	read_trans_count	130.0	count
+GPU[1].DRAM[3]	write_trans_count	130.0	count
+GPU[1].DRAM[3]	read_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[3]	write_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[3]	read_size	8320.0	bytes
+GPU[1].DRAM[3]	write_size	8320.0	bytes
+GPU[1].DRAM[4]	read_trans_count	130.0	count
+GPU[1].DRAM[4]	write_trans_count	130.0	count
+GPU[1].DRAM[4]	read_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[4]	write_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[4]	read_size	8320.0	bytes
+GPU[1].DRAM[4]	write_size	8320.0	bytes
+GPU[1].DRAM[5]	read_trans_count	130.0	count
+GPU[1].DRAM[5]	write_trans_count	130.0	count
+GPU[1].DRAM[5]	read_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[5]	write_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[5]	read_size	8320.0	bytes
+GPU[1].DRAM[5]	write_size	8308.0	bytes
+GPU[1].DRAM[6]	read_trans_count	130.0	count
+GPU[1].DRAM[6]	write_trans_count	128.0	count
+GPU[1].DRAM[6]	read_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[6]	write_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[6]	read_size	8320.0	bytes
+GPU[1].DRAM[6]	write_size	8192.0	bytes
+GPU[1].DRAM[7]	read_trans_count	129.0	count
+GPU[1].DRAM[7]	write_trans_count	128.0	count
+GPU[1].DRAM[7]	read_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[7]	write_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[7]	read_size	8256.0	bytes
+GPU[1].DRAM[7]	write_size	8192.0	bytes
+GPU[1].DRAM[8]	read_trans_count	128.0	count
+GPU[1].DRAM[8]	write_trans_count	128.0	count
+GPU[1].DRAM[8]	read_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[8]	write_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[8]	read_size	8192.0	bytes
+GPU[1].DRAM[8]	write_size	8192.0	bytes
+GPU[1].DRAM[9]	read_trans_count	128.0	count
+GPU[1].DRAM[9]	write_trans_count	128.0	count
+GPU[1].DRAM[9]	read_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[9]	write_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[9]	read_size	8192.0	bytes
+GPU[1].DRAM[9]	write_size	8192.0	bytes
+GPU[1].DRAM[10]	read_trans_count	128.0	count
+GPU[1].DRAM[10]	write_trans_count	128.0	count
+GPU[1].DRAM[10]	read_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[10]	write_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[10]	read_size	8192.0	bytes
+GPU[1].DRAM[10]	write_size	8192.0	bytes
+GPU[1].DRAM[11]	read_trans_count	128.0	count
+GPU[1].DRAM[11]	write_trans_count	128.0	count
+GPU[1].DRAM[11]	read_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[11]	write_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[11]	read_size	8192.0	bytes
+GPU[1].DRAM[11]	write_size	8192.0	bytes
+GPU[1].DRAM[12]	read_trans_count	128.0	count
+GPU[1].DRAM[12]	write_trans_count	128.0	count
+GPU[1].DRAM[12]	read_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[12]	write_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[12]	read_size	8192.0	bytes
+GPU[1].DRAM[12]	write_size	8192.0	bytes
+GPU[1].DRAM[13]	read_trans_count	128.0	count
+GPU[1].DRAM[13]	write_trans_count	128.0	count
+GPU[1].DRAM[13]	read_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[13]	write_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[13]	read_size	8192.0	bytes
+GPU[1].DRAM[13]	write_size	8192.0	bytes
+GPU[1].DRAM[14]	read_trans_count	128.0	count
+GPU[1].DRAM[14]	write_trans_count	128.0	count
+GPU[1].DRAM[14]	read_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[14]	write_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[14]	read_size	8192.0	bytes
+GPU[1].DRAM[14]	write_size	8192.0	bytes
+GPU[1].DRAM[15]	read_trans_count	128.0	count
+GPU[1].DRAM[15]	write_trans_count	128.0	count
+GPU[1].DRAM[15]	read_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[15]	write_avg_latency	9.900000000000015e-08	second
+GPU[1].DRAM[15]	read_size	8192.0	bytes
+GPU[1].DRAM[15]	write_size	8192.0	bytes
+GPU[2].DRAM[0]	read_trans_count	132.0	count
+GPU[2].DRAM[0]	write_trans_count	132.0	count
+GPU[2].DRAM[0]	read_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[0]	write_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[0]	read_size	8448.0	bytes
+GPU[2].DRAM[0]	write_size	8448.0	bytes
+GPU[2].DRAM[1]	read_trans_count	130.0	count
+GPU[2].DRAM[1]	write_trans_count	130.0	count
+GPU[2].DRAM[1]	read_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[1]	write_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[1]	read_size	8320.0	bytes
+GPU[2].DRAM[1]	write_size	8320.0	bytes
+GPU[2].DRAM[2]	read_trans_count	130.0	count
+GPU[2].DRAM[2]	write_trans_count	130.0	count
+GPU[2].DRAM[2]	read_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[2]	write_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[2]	read_size	8320.0	bytes
+GPU[2].DRAM[2]	write_size	8320.0	bytes
+GPU[2].DRAM[3]	read_trans_count	130.0	count
+GPU[2].DRAM[3]	write_trans_count	130.0	count
+GPU[2].DRAM[3]	read_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[3]	write_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[3]	read_size	8320.0	bytes
+GPU[2].DRAM[3]	write_size	8320.0	bytes
+GPU[2].DRAM[4]	read_trans_count	130.0	count
+GPU[2].DRAM[4]	write_trans_count	130.0	count
+GPU[2].DRAM[4]	read_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[4]	write_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[4]	read_size	8320.0	bytes
+GPU[2].DRAM[4]	write_size	8320.0	bytes
+GPU[2].DRAM[5]	read_trans_count	130.0	count
+GPU[2].DRAM[5]	write_trans_count	130.0	count
+GPU[2].DRAM[5]	read_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[5]	write_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[5]	read_size	8320.0	bytes
+GPU[2].DRAM[5]	write_size	8308.0	bytes
+GPU[2].DRAM[6]	read_trans_count	130.0	count
+GPU[2].DRAM[6]	write_trans_count	128.0	count
+GPU[2].DRAM[6]	read_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[6]	write_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[6]	read_size	8320.0	bytes
+GPU[2].DRAM[6]	write_size	8192.0	bytes
+GPU[2].DRAM[7]	read_trans_count	129.0	count
+GPU[2].DRAM[7]	write_trans_count	128.0	count
+GPU[2].DRAM[7]	read_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[7]	write_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[7]	read_size	8256.0	bytes
+GPU[2].DRAM[7]	write_size	8192.0	bytes
+GPU[2].DRAM[8]	read_trans_count	128.0	count
+GPU[2].DRAM[8]	write_trans_count	128.0	count
+GPU[2].DRAM[8]	read_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[8]	write_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[8]	read_size	8192.0	bytes
+GPU[2].DRAM[8]	write_size	8192.0	bytes
+GPU[2].DRAM[9]	read_trans_count	128.0	count
+GPU[2].DRAM[9]	write_trans_count	128.0	count
+GPU[2].DRAM[9]	read_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[9]	write_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[9]	read_size	8192.0	bytes
+GPU[2].DRAM[9]	write_size	8192.0	bytes
+GPU[2].DRAM[10]	read_trans_count	128.0	count
+GPU[2].DRAM[10]	write_trans_count	128.0	count
+GPU[2].DRAM[10]	read_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[10]	write_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[10]	read_size	8192.0	bytes
+GPU[2].DRAM[10]	write_size	8192.0	bytes
+GPU[2].DRAM[11]	read_trans_count	128.0	count
+GPU[2].DRAM[11]	write_trans_count	128.0	count
+GPU[2].DRAM[11]	read_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[11]	write_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[11]	read_size	8192.0	bytes
+GPU[2].DRAM[11]	write_size	8192.0	bytes
+GPU[2].DRAM[12]	read_trans_count	128.0	count
+GPU[2].DRAM[12]	write_trans_count	128.0	count
+GPU[2].DRAM[12]	read_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[12]	write_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[12]	read_size	8192.0	bytes
+GPU[2].DRAM[12]	write_size	8192.0	bytes
+GPU[2].DRAM[13]	read_trans_count	128.0	count
+GPU[2].DRAM[13]	write_trans_count	128.0	count
+GPU[2].DRAM[13]	read_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[13]	write_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[13]	read_size	8192.0	bytes
+GPU[2].DRAM[13]	write_size	8192.0	bytes
+GPU[2].DRAM[14]	read_trans_count	128.0	count
+GPU[2].DRAM[14]	write_trans_count	128.0	count
+GPU[2].DRAM[14]	read_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[14]	write_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[14]	read_size	8192.0	bytes
+GPU[2].DRAM[14]	write_size	8192.0	bytes
+GPU[2].DRAM[15]	read_trans_count	128.0	count
+GPU[2].DRAM[15]	write_trans_count	128.0	count
+GPU[2].DRAM[15]	read_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[15]	write_avg_latency	9.900000000000015e-08	second
+GPU[2].DRAM[15]	read_size	8192.0	bytes
+GPU[2].DRAM[15]	write_size	8192.0	bytes
+GPU[3].DRAM[0]	read_trans_count	132.0	count
+GPU[3].DRAM[0]	write_trans_count	132.0	count
+GPU[3].DRAM[0]	read_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[0]	write_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[0]	read_size	8448.0	bytes
+GPU[3].DRAM[0]	write_size	8448.0	bytes
+GPU[3].DRAM[1]	read_trans_count	130.0	count
+GPU[3].DRAM[1]	write_trans_count	130.0	count
+GPU[3].DRAM[1]	read_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[1]	write_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[1]	read_size	8320.0	bytes
+GPU[3].DRAM[1]	write_size	8320.0	bytes
+GPU[3].DRAM[2]	read_trans_count	130.0	count
+GPU[3].DRAM[2]	write_trans_count	130.0	count
+GPU[3].DRAM[2]	read_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[2]	write_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[2]	read_size	8320.0	bytes
+GPU[3].DRAM[2]	write_size	8320.0	bytes
+GPU[3].DRAM[3]	read_trans_count	130.0	count
+GPU[3].DRAM[3]	write_trans_count	130.0	count
+GPU[3].DRAM[3]	read_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[3]	write_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[3]	read_size	8320.0	bytes
+GPU[3].DRAM[3]	write_size	8320.0	bytes
+GPU[3].DRAM[4]	read_trans_count	130.0	count
+GPU[3].DRAM[4]	write_trans_count	130.0	count
+GPU[3].DRAM[4]	read_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[4]	write_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[4]	read_size	8320.0	bytes
+GPU[3].DRAM[4]	write_size	8320.0	bytes
+GPU[3].DRAM[5]	read_trans_count	130.0	count
+GPU[3].DRAM[5]	write_trans_count	130.0	count
+GPU[3].DRAM[5]	read_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[5]	write_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[5]	read_size	8320.0	bytes
+GPU[3].DRAM[5]	write_size	8308.0	bytes
+GPU[3].DRAM[6]	read_trans_count	130.0	count
+GPU[3].DRAM[6]	write_trans_count	128.0	count
+GPU[3].DRAM[6]	read_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[6]	write_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[6]	read_size	8320.0	bytes
+GPU[3].DRAM[6]	write_size	8192.0	bytes
+GPU[3].DRAM[7]	read_trans_count	129.0	count
+GPU[3].DRAM[7]	write_trans_count	128.0	count
+GPU[3].DRAM[7]	read_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[7]	write_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[7]	read_size	8256.0	bytes
+GPU[3].DRAM[7]	write_size	8192.0	bytes
+GPU[3].DRAM[8]	read_trans_count	128.0	count
+GPU[3].DRAM[8]	write_trans_count	128.0	count
+GPU[3].DRAM[8]	read_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[8]	write_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[8]	read_size	8192.0	bytes
+GPU[3].DRAM[8]	write_size	8192.0	bytes
+GPU[3].DRAM[9]	read_trans_count	128.0	count
+GPU[3].DRAM[9]	write_trans_count	128.0	count
+GPU[3].DRAM[9]	read_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[9]	write_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[9]	read_size	8192.0	bytes
+GPU[3].DRAM[9]	write_size	8192.0	bytes
+GPU[3].DRAM[10]	read_trans_count	128.0	count
+GPU[3].DRAM[10]	write_trans_count	128.0	count
+GPU[3].DRAM[10]	read_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[10]	write_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[10]	read_size	8192.0	bytes
+GPU[3].DRAM[10]	write_size	8192.0	bytes
+GPU[3].DRAM[11]	read_trans_count	128.0	count
+GPU[3].DRAM[11]	write_trans_count	128.0	count
+GPU[3].DRAM[11]	read_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[11]	write_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[11]	read_size	8192.0	bytes
+GPU[3].DRAM[11]	write_size	8192.0	bytes
+GPU[3].DRAM[12]	read_trans_count	128.0	count
+GPU[3].DRAM[12]	write_trans_count	128.0	count
+GPU[3].DRAM[12]	read_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[12]	write_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[12]	read_size	8192.0	bytes
+GPU[3].DRAM[12]	write_size	8192.0	bytes
+GPU[3].DRAM[13]	read_trans_count	128.0	count
+GPU[3].DRAM[13]	write_trans_count	128.0	count
+GPU[3].DRAM[13]	read_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[13]	write_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[13]	read_size	8192.0	bytes
+GPU[3].DRAM[13]	write_size	8192.0	bytes
+GPU[3].DRAM[14]	read_trans_count	128.0	count
+GPU[3].DRAM[14]	write_trans_count	128.0	count
+GPU[3].DRAM[14]	read_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[14]	write_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[14]	read_size	8192.0	bytes
+GPU[3].DRAM[14]	write_size	8192.0	bytes
+GPU[3].DRAM[15]	read_trans_count	128.0	count
+GPU[3].DRAM[15]	write_trans_count	128.0	count
+GPU[3].DRAM[15]	read_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[15]	write_avg_latency	9.900000000000015e-08	second
+GPU[3].DRAM[15]	read_size	8192.0	bytes
+GPU[3].DRAM[15]	write_size	8192.0	bytes
+GPU[4].DRAM[0]	read_trans_count	132.0	count
+GPU[4].DRAM[0]	write_trans_count	132.0	count
+GPU[4].DRAM[0]	read_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[0]	write_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[0]	read_size	8448.0	bytes
+GPU[4].DRAM[0]	write_size	8448.0	bytes
+GPU[4].DRAM[1]	read_trans_count	130.0	count
+GPU[4].DRAM[1]	write_trans_count	130.0	count
+GPU[4].DRAM[1]	read_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[1]	write_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[1]	read_size	8320.0	bytes
+GPU[4].DRAM[1]	write_size	8320.0	bytes
+GPU[4].DRAM[2]	read_trans_count	130.0	count
+GPU[4].DRAM[2]	write_trans_count	130.0	count
+GPU[4].DRAM[2]	read_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[2]	write_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[2]	read_size	8320.0	bytes
+GPU[4].DRAM[2]	write_size	8320.0	bytes
+GPU[4].DRAM[3]	read_trans_count	130.0	count
+GPU[4].DRAM[3]	write_trans_count	130.0	count
+GPU[4].DRAM[3]	read_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[3]	write_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[3]	read_size	8320.0	bytes
+GPU[4].DRAM[3]	write_size	8320.0	bytes
+GPU[4].DRAM[4]	read_trans_count	130.0	count
+GPU[4].DRAM[4]	write_trans_count	130.0	count
+GPU[4].DRAM[4]	read_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[4]	write_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[4]	read_size	8320.0	bytes
+GPU[4].DRAM[4]	write_size	8320.0	bytes
+GPU[4].DRAM[5]	read_trans_count	130.0	count
+GPU[4].DRAM[5]	write_trans_count	130.0	count
+GPU[4].DRAM[5]	read_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[5]	write_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[5]	read_size	8320.0	bytes
+GPU[4].DRAM[5]	write_size	8308.0	bytes
+GPU[4].DRAM[6]	read_trans_count	130.0	count
+GPU[4].DRAM[6]	write_trans_count	128.0	count
+GPU[4].DRAM[6]	read_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[6]	write_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[6]	read_size	8320.0	bytes
+GPU[4].DRAM[6]	write_size	8192.0	bytes
+GPU[4].DRAM[7]	read_trans_count	129.0	count
+GPU[4].DRAM[7]	write_trans_count	128.0	count
+GPU[4].DRAM[7]	read_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[7]	write_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[7]	read_size	8256.0	bytes
+GPU[4].DRAM[7]	write_size	8192.0	bytes
+GPU[4].DRAM[8]	read_trans_count	128.0	count
+GPU[4].DRAM[8]	write_trans_count	128.0	count
+GPU[4].DRAM[8]	read_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[8]	write_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[8]	read_size	8192.0	bytes
+GPU[4].DRAM[8]	write_size	8192.0	bytes
+GPU[4].DRAM[9]	read_trans_count	128.0	count
+GPU[4].DRAM[9]	write_trans_count	128.0	count
+GPU[4].DRAM[9]	read_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[9]	write_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[9]	read_size	8192.0	bytes
+GPU[4].DRAM[9]	write_size	8192.0	bytes
+GPU[4].DRAM[10]	read_trans_count	128.0	count
+GPU[4].DRAM[10]	write_trans_count	128.0	count
+GPU[4].DRAM[10]	read_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[10]	write_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[10]	read_size	8192.0	bytes
+GPU[4].DRAM[10]	write_size	8192.0	bytes
+GPU[4].DRAM[11]	read_trans_count	128.0	count
+GPU[4].DRAM[11]	write_trans_count	128.0	count
+GPU[4].DRAM[11]	read_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[11]	write_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[11]	read_size	8192.0	bytes
+GPU[4].DRAM[11]	write_size	8192.0	bytes
+GPU[4].DRAM[12]	read_trans_count	128.0	count
+GPU[4].DRAM[12]	write_trans_count	128.0	count
+GPU[4].DRAM[12]	read_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[12]	write_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[12]	read_size	8192.0	bytes
+GPU[4].DRAM[12]	write_size	8192.0	bytes
+GPU[4].DRAM[13]	read_trans_count	128.0	count
+GPU[4].DRAM[13]	write_trans_count	128.0	count
+GPU[4].DRAM[13]	read_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[13]	write_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[13]	read_size	8192.0	bytes
+GPU[4].DRAM[13]	write_size	8192.0	bytes
+GPU[4].DRAM[14]	read_trans_count	128.0	count
+GPU[4].DRAM[14]	write_trans_count	128.0	count
+GPU[4].DRAM[14]	read_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[14]	write_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[14]	read_size	8192.0	bytes
+GPU[4].DRAM[14]	write_size	8192.0	bytes
+GPU[4].DRAM[15]	read_trans_count	128.0	count
+GPU[4].DRAM[15]	write_trans_count	128.0	count
+GPU[4].DRAM[15]	read_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[15]	write_avg_latency	9.900000000000015e-08	second
+GPU[4].DRAM[15]	read_size	8192.0	bytes
+GPU[4].DRAM[15]	write_size	8192.0	bytes
+GPU[1].MMU	vm_coalesced	0.0	count
+GPU[1].MMU	vm_local_walks	131.0	count
+GPU[1].MMU	vm_local_hits	131.0	count
+GPU[1].MMU	vm_outstanding_peak	9.0	count
+GPU[1].MMU	vm_requests	131.0	count
+GPU[1].MMU	vm_local_faults	0.0	count
+GPU[1].MMU	vm_fault_requests	0.0	count
+GPU[1].MMU	vm_fault_resolved	0.0	count
+GPU[1].MMU	vm_outstanding_end	0.0	count
+GPU[1].MMU	vm_local_walkers	8.0	count
+GPU[1].MMU	vm_transaction_slots	64.0	count
+GPU[1].MMU	vm_max_waiters	64.0	count
+GPU[1].MMU	vm_completed	131.0	count
+GPU[1].MMU	vm_page_size	4096.0	byte
+GPU[1].MMU	vm_frequency_hz	1000000000.0	Hz
+GPU[1].MMU	vm_local_walk_cycles	100.0	cycles
+GPU[1].MMU	vm_link_cycles	200.0	cycles
+GPU[1].MMU	vm_install_cycles	100.0	cycles
+GPU[1].MMU	vm_admission_blocked_cycles	0.0	cycles
+GPU[1].MMU	vm_host_send_blocked_cycles	0.0	cycles
+GPU[1].MMU	vm_translation_average	1.0070229007633588e-07	second
+GPU[1].MMU	vm_translation_max	1.92e-07	second
+GPU[1].MMU	vm_fault_average	0.0	second
+GPU[1].MMU	vm_fault_max	0.0	second
+GPU[1].MMU	vm_local_queue_average	7.022900763358779e-10	second
+GPU[2].MMU	vm_fault_requests	0.0	count
+GPU[2].MMU	vm_fault_resolved	0.0	count
+GPU[2].MMU	vm_outstanding_peak	9.0	count
+GPU[2].MMU	vm_transaction_slots	64.0	count
+GPU[2].MMU	vm_max_waiters	64.0	count
+GPU[2].MMU	vm_completed	131.0	count
+GPU[2].MMU	vm_coalesced	0.0	count
+GPU[2].MMU	vm_local_hits	131.0	count
+GPU[2].MMU	vm_outstanding_end	0.0	count
+GPU[2].MMU	vm_local_walkers	8.0	count
+GPU[2].MMU	vm_requests	131.0	count
+GPU[2].MMU	vm_local_walks	131.0	count
+GPU[2].MMU	vm_local_faults	0.0	count
+GPU[2].MMU	vm_page_size	4096.0	byte
+GPU[2].MMU	vm_frequency_hz	1000000000.0	Hz
+GPU[2].MMU	vm_link_cycles	200.0	cycles
+GPU[2].MMU	vm_install_cycles	100.0	cycles
+GPU[2].MMU	vm_local_walk_cycles	100.0	cycles
+GPU[2].MMU	vm_admission_blocked_cycles	0.0	cycles
+GPU[2].MMU	vm_host_send_blocked_cycles	0.0	cycles
+GPU[2].MMU	vm_translation_average	1.0070229007633588e-07	second
+GPU[2].MMU	vm_translation_max	1.92e-07	second
+GPU[2].MMU	vm_fault_average	0.0	second
+GPU[2].MMU	vm_fault_max	0.0	second
+GPU[2].MMU	vm_local_queue_average	7.022900763358779e-10	second
+GPU[3].MMU	vm_outstanding_peak	9.0	count
+GPU[3].MMU	vm_outstanding_end	0.0	count
+GPU[3].MMU	vm_transaction_slots	64.0	count
+GPU[3].MMU	vm_requests	131.0	count
+GPU[3].MMU	vm_completed	131.0	count
+GPU[3].MMU	vm_coalesced	0.0	count
+GPU[3].MMU	vm_local_walks	131.0	count
+GPU[3].MMU	vm_fault_requests	0.0	count
+GPU[3].MMU	vm_local_walkers	8.0	count
+GPU[3].MMU	vm_max_waiters	64.0	count
+GPU[3].MMU	vm_local_hits	131.0	count
+GPU[3].MMU	vm_local_faults	0.0	count
+GPU[3].MMU	vm_fault_resolved	0.0	count
+GPU[3].MMU	vm_page_size	4096.0	byte
+GPU[3].MMU	vm_frequency_hz	1000000000.0	Hz
+GPU[3].MMU	vm_local_walk_cycles	100.0	cycles
+GPU[3].MMU	vm_link_cycles	200.0	cycles
+GPU[3].MMU	vm_install_cycles	100.0	cycles
+GPU[3].MMU	vm_admission_blocked_cycles	0.0	cycles
+GPU[3].MMU	vm_host_send_blocked_cycles	0.0	cycles
+GPU[3].MMU	vm_translation_average	1.0070229007633588e-07	second
+GPU[3].MMU	vm_translation_max	1.92e-07	second
+GPU[3].MMU	vm_fault_average	0.0	second
+GPU[3].MMU	vm_fault_max	0.0	second
+GPU[3].MMU	vm_local_queue_average	7.022900763358779e-10	second
+GPU[4].MMU	vm_local_faults	0.0	count
+GPU[4].MMU	vm_fault_resolved	0.0	count
+GPU[4].MMU	vm_outstanding_end	0.0	count
+GPU[4].MMU	vm_requests	131.0	count
+GPU[4].MMU	vm_coalesced	0.0	count
+GPU[4].MMU	vm_local_hits	131.0	count
+GPU[4].MMU	vm_fault_requests	0.0	count
+GPU[4].MMU	vm_outstanding_peak	9.0	count
+GPU[4].MMU	vm_local_walkers	8.0	count
+GPU[4].MMU	vm_transaction_slots	64.0	count
+GPU[4].MMU	vm_max_waiters	64.0	count
+GPU[4].MMU	vm_completed	131.0	count
+GPU[4].MMU	vm_local_walks	131.0	count
+GPU[4].MMU	vm_page_size	4096.0	byte
+GPU[4].MMU	vm_frequency_hz	1000000000.0	Hz
+GPU[4].MMU	vm_local_walk_cycles	100.0	cycles
+GPU[4].MMU	vm_link_cycles	200.0	cycles
+GPU[4].MMU	vm_install_cycles	100.0	cycles
+GPU[4].MMU	vm_admission_blocked_cycles	0.0	cycles
+GPU[4].MMU	vm_host_send_blocked_cycles	0.0	cycles
+GPU[4].MMU	vm_translation_average	1.0070229007633588e-07	second
+GPU[4].MMU	vm_translation_max	1.92e-07	second
+GPU[4].MMU	vm_fault_average	0.0	second
+GPU[4].MMU	vm_fault_max	0.0	second
+GPU[4].MMU	vm_local_queue_average	7.022900763358779e-10	second
+HostMMU	vm_received	0.0	count
+HostMMU	vm_completed	0.0	count
+HostMMU	vm_queue_peak	0.0	count
+HostMMU	vm_active_peak	0.0	count
+HostMMU	vm_queue_end	0.0	count
+HostMMU	vm_active_end	0.0	count
+HostMMU	vm_walkers	16.0	count
+HostMMU	vm_queue_capacity	64.0	count
+HostMMU	vm_frequency_hz	1000000000.0	Hz
+HostMMU	vm_service_cycles	400.0	cycles
+HostMMU	vm_queue_full_cycles	0.0	cycles
+HostMMU	vm_response_blocked_cycles	0.0	cycles
+HostMMU	vm_queue_wait_average	0.0	second
+HostMMU	vm_queue_wait_max	0.0	second
+HostMMU	vm_ingress_wait_average	0.0	second
+HostMMU	vm_service_average	0.0	second

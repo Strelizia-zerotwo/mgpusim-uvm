@@ -1,33 +1,77 @@
-# 当前三策略接入验证（2026-10-16）
+# ideal-v3 构建与测试记录
 
-最终主线：12 个应用，INV / retain / i1-adaptive。LeNet 和 VGG16 按用户要求默认跳过，跳过不计为通过。
-验证批次：`results/benchmark/_suites/20261016-202430-d95c7e/`。12 次 record + 36 次真实策略回放全部完成，两个训练应用状态为 SKIPPED_BY_REQUEST。
-该批次模拟器运行代码与最终安装的所有非测试 Go 源码逐一哈希匹配。Windows 可读结果在 `outputs/core-three-policy-validation/`。
+2026-10-17。当前协议 `kernel-internal-ideal-v3`，默认 `inv / delta / delta-sub`。
 
-|应用|INV application µs|retain application µs|i1-adaptive application µs|结果|
-|---|---:|---:|---:|---|
-|MM|30.591000|30.591000|30.591000|三项通过|
-|C2D|388.452000|388.452000|388.452000|三项通过|
-|ST|67.339000|67.339000|67.339000|三项通过|
-|FIR|17.456000|17.456000|17.456000|三项通过|
-|IM2COL|17.822000|17.822000|17.822000|三项通过|
-|BFS|143.187000|143.187000|143.187000|三项通过|
-|SC|17.246000|17.246000|17.246000|三项通过|
-|MT|29.465000|29.465000|29.465000|三项通过|
-|FFT|48.252000|48.252000|48.252000|三项通过|
-|PR|35.010000|35.010000|35.010000|三项通过|
-|BS|753.750000|753.750000|753.750000|三项通过|
-|KM|63.560000|63.520000|63.520000|三项通过|
+按用户要求，本轮没有执行 smoke、单 kernel 微基准、核心应用或完整扫描。下列证据只表明构建与测试通过；应用数值校验和收益需用户运行后确认。此前 v2 的 36 次应用结果成本口径不同，不作为本轮结论。
 
-这些是 smoke 检查输入。11 个应用三策略应用时间相同；KM 的 retain/adaptive 比 INV 少 0.04 µs，约 0.063%。这不是正式规模收益证明。
-核对项目：CPU 数值结果、四张物理 GPU 的 CU 指令、免费映射准备且 replay mapping_faults=0、相同物理 home、完整时间分解、写出数据摘要。
-BFS 因竞争写者变化，使用明确记录的保守访问计划，并核对 CPU 最终 levels 和终态缓冲区摘要；不把保守声明写集当实测 dirty。其余 11 项要求实际掩码、事务计数与生命周期完全一致。
+## 通过的检查
 
-本轮还通过 7 项 Python 分析/汇总回归；replica、localmapping、driver、DNN layers/training 和 runner 相关包的 race 检查通过。
-全仓库编译 `go build -p 2 ./...` 通过。
-普通 demand FIR smoke 的数值/四卡/映射缺页检查通过：`results/benchmark/_suites/20261016-203057-fbbfc8/`。
+```bash
+cd /home/only/projects/mgpusim-uvm/mgpusim
+/usr/local/go/bin/go build -p 2 ./...
+/usr/local/go/bin/go test -race \
+  ./amd/timing/replica ./amd/timing/cp ./amd/driver/... \
+  ./amd/timing/localmapping ./amd/samples/runner
 
-可选 LeNet 已完成一批合成输入的独立 CPU 训练、参数对照和三策略回放，三者 application 均为 3108.068 µs；批次 `results/benchmark/LeNet/20261016-200806-a46f10/policy/`。它不计入默认主线。
-VGG16 已编译接入；GPU 训练检查按用户允许停止，未记为完整验证通过。
+cd /home/only/projects/mgpusim-uvm/akita-patched
+/usr/local/go/bin/go build -p 2 ./...
+/usr/local/go/bin/go test -race \
+  ./mem/cache/writeback ./mem/cache/writethroughcache \
+  ./mem/vm/addresstranslator
 
-更早 parallel-stencil / parallel-fw 的专用布局结果保留在原目录。当前通用 ST 使用均衡连续工作组调度和普通 sample 布局，不能把两个配置的收益混在一起。
+cd /home/only/projects/mgpusim-uvm
+python3 -m unittest discover -s runs -p test_benchmark_tools.py -v
+```
+
+Python 脚本测试当前 16 项通过（包含五候选脚本、CDNA3 路由与架构分组新增测试）。Go 相关包通过；runner 无独立测试文件，通过其编译及全仓构建检查。Go race 测试包含仓库原有测试与新增回归测试。
+
+## 新增机制回归覆盖
+
+- INV 写时立即释放逻辑帧，delta 保留；多次写只对有效到失效计一次，所有一致性计时为零。
+- 一次修复补齐多次写积累的全部过期子块；delta-sub 读干净子块不付固定服务，读脏子块时仍全部补齐。
+- 等待期间又写入：原读保留首次检查时快照，后续读看新值；旧修复晚完成不能覆盖新修复。
+- 同页/读者/版本读请求合并；不同页与不相交 GPU 对并发；同一 AT 中其他页可绕过等待项。
+- 固定服务结束前不占用未来链路，普通流量可以继续使用链路；真实 SerialEngine 单元集成测试核对两个阶段事件及精确完成时刻。
+- 失效帧的后端在途引用可免费完成；新分配的帧不因历史版本存在而提前可读。
+- 帧回收后整页回退、分配失败回 home、H2D 权威内容重置、写入 byte mask。
+- 4KB/64KB/2MB 均验证真实整页功能复制及页尾子块差量修复；3×2×2 扫描参数验证隔离服务费用顺序和一次固定费、一次 bulk 传输，无包头/区间费用。
+- 免费缓存发布只写 dirty mask 指定的字节；地址范围外热行和在途锁/计数保留；不发送控制消息。
+- 可选功能读响应钩子与完成回调；可选 CP 启动维护不排控制消息；无控制器的原有行为由既有测试回归。
+- Python 验证默认仅三策略、36 次参数组合（模拟器调用使用替身）、页大小与协议独立匹配基线、失败排除、重汇总清理旧加速比、排序反转原样报告。
+
+## 用户运行后需要确认
+
+每次成功结果同时检查 benchmark 数值验证、四 GPU 实际 CU 指令、输入/home 一致、零映射缺页、零 stale_read_sectors、零收费一致性处理，以及字节/事件收费对应。
+
+`functional_read_corrections` 是免费在途转发导致的后端值修正计数，可非零；它不能冒充硬件一致性验证。精确语义见 [KERNEL_INTERNAL.md](KERNEL_INTERNAL.md)。
+
+当前没有 ideal-v3 应用耗时、速度提升或论文规模复现结论。
+
+
+## 五个补充候选的追加验证
+
+五个应用的 host 队列改为在选择目标设备后创建；MI300X 显式实验页大小不再被默认2MB覆盖；主机功能物化免费作废相关旧 MALL 行。kernel 算法和 gfx942 二进制沿用现有版本。
+
+本次完成：
+
+```bash
+cd /home/only/projects/mgpusim-uvm/mgpusim
+/usr/local/go/bin/go build -p 2 \
+  ./amd/samples/rodinia_lud ./amd/samples/rodinia_gaussian \
+  ./amd/samples/rodinia_pathfinder ./amd/samples/rodinia_backprop \
+  ./amd/samples/polybench_gramschmidt
+/usr/local/go/bin/go test -race \
+  ./amd/benchmarks/rodinia/lud ./amd/benchmarks/rodinia/gaussian \
+  ./amd/benchmarks/rodinia/pathfinder ./amd/benchmarks/rodinia/backprop \
+  ./amd/benchmarks/polybench/gramschmidt
+/usr/local/go/bin/go test -race \
+  ./amd/samples/runner/timingconfig ./amd/timing/replica ./amd/samples/runner
+
+cd /home/only/projects/mgpusim-uvm
+python3 -m unittest discover -s runs -p test_benchmark_tools.py -v
+python3 runs/run_idea_candidates.py --scan --dry-run
+```
+
+以上通过。五个 benchmark 的新增 Go 测试只构建轻量 driver、选择物理/统一设备、创建队列并加载已嵌入的内核符号，模拟时钟保持0；不执行 GPU 计算。平台测试含已有 MI300X 装配以及显式页大小覆盖测试。
+
+本次没有运行五个应用、smoke 或扫描。实际四卡活动、应用数值正确性、耗时和收益仍由用户运行后验证。输入选择和算法边界见 [IDEA_CANDIDATES.md](IDEA_CANDIDATES.md)。

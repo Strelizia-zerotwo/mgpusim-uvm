@@ -1,0 +1,16 @@
+[
+  "/home/only/projects/mgpusim-uvm/results/benchmark/_passive-micro",
+  "-timing",
+  "-verify",
+  "-disable-rtm",
+  "-replica-core",
+  "-unified-gpus=1,2,3,4",
+  "-use-unified-memory",
+  "-vm-mode=demand",
+  "-report-all",
+  "-metric-file-name=metrics",
+  "-copy-kernel=/home/only/projects/mgpusim-uvm/mgpusim/amd/driver/memcopy.hsaco",
+  "-rounds=4",
+  "-core-replica-config=/home/only/projects/mgpusim-uvm/results/benchmark/_kernel-internal-validation/micro-clean-i1-adaptive/config.json",
+  "-clean-reads"
+]

@@ -1,0 +1,32 @@
+# 本轮实验结果
+
+application_us 是模拟应用总时间，kernel_us 已包含请求在 kernel 内等待复制/修复的时间；wall_s 是宿主运行耗时。
+ideal-v3 的失效、版本元数据、缓存维护、在途正确性处理均免费。只给复制/修复收固定 fault 和总字节传输费用。
+失败与超时不计收益；按页大小、协议、链路和固定服务参数分别与 INV 比较。
+
+|应用|页字节|fault ns|link ns|策略|状态|应用 µs|kernel µs|宿主秒|INV 加速比|节省 %|
+|---|---:|---:|---:|---|---|---:|---:|---:|---:|---:|
+|PR|4096|900|200|inv|OK|71.2010|70.5620|20.9734|1.0000|0.0000|
+|PR|4096|900|200|delta|OK|71.2740|70.6350|21.7126|0.9990|-0.1025|
+|PR|4096|900|200|delta-sub|OK|71.2740|70.6350|21.3100|0.9990|-0.1025|
+
+|应用|页字节|fault ns|link ns|策略|冷复制|整页 refill|差量 repair|传输字节|失效|保留帧峰值|过期保留帧峰值|
+|---|---:|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|
+|PR|4096|900|200|inv|18|6|0|98304|9|0|0|
+|PR|4096|900|200|delta|18|0|6|98304|9|18|6|
+|PR|4096|900|200|delta-sub|18|0|6|98304|9|18|6|
+
+|应用|页字节|fault ns|link ns|策略|kernel 内 refill|kernel 内 repair|干净子块免修复读|复制服务累计 µs|功能读修正|过期子块放行|
+|---|---:|---:|---:|---|---:|---:|---:|---:|---:|---:|
+|PR|4096|900|200|inv|0|0|0|26.818198|0|0|
+|PR|4096|900|200|delta|0|0|0|26.818198|0|0|
+|PR|4096|900|200|delta-sub|0|0|0|26.818198|0|0|
+
+复制服务累计时间是并发任务耗时之和，已包含在 kernel_us 中，不能重复相加。
+functional_read_corrections 统计理想功能层替换后端读值的次数；它与过期副本被错误放行不同，详见 KERNEL_INTERNAL.md。
+INV 逻辑上立即释放失效帧；后端在途读为防物理地址重用而暂留的帧，另记 peak_backend_pinned_frames。
+隔离的同一复制事件上 delta 费用不大于 INV，infinity 为零；应用异步调度可能改变事件数与缓存行为，反向次序原样保留并标警告。
+检查提醒：PR / 4096 / delta：application ordering reversed; inspect event counts, overlap, cache state and execution order; timing is not clamped
+
+原始日志、命令、stats.json、metrics.sqlite3、metrics.tsv、observed-accesses.json 与资源统计见各应用目录。
+observed-accesses 仅记录执行事实，不参与后续请求的策略决策。旧版 kernel-barrier/v2 结果具有不同成本口径。

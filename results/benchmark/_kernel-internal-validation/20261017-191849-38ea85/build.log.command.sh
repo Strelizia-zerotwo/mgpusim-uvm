@@ -1,0 +1,1 @@
+env LC_ALL=C GODEBUG=randautoseed=0,randseednop=0 go build -p 2 -o /home/only/projects/mgpusim-uvm/results/benchmark/_kernel-internal-validation/20261017-191849-38ea85/replica-internal ./amd/samples/replica-internal

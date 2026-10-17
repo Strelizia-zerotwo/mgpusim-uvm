@@ -1,0 +1,11 @@
+{
+  "benchmark": "VGG16",
+  "profile": "small",
+  "mode": "policy",
+  "policy": null,
+  "repeat": 0,
+  "directory": "/home/only/projects/mgpusim-uvm/results/benchmark/VGG16/20261017-063219-f19037/policy",
+  "verification": "NOT_RUN",
+  "status": "SKIPPED_BY_REQUEST",
+  "reason": "LeNet/VGG16 are expensive; excluded from the default core experiment at user request"
+}

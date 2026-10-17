@@ -1,0 +1,671 @@
+{
+  "initial_input_sha256": "c6644413995ea5fdfdd169c1365a564657270ff88d2cf1fbf8ac50352e34648d",
+  "passive": {
+    "protocol": "kernel-internal-lazy-v2",
+    "adaptive_rule": "previous observed read-interval footprint; per-sector version validation on every actual request; no future trace",
+    "managed_requests": 128,
+    "read_requests": 80,
+    "write_requests": 48,
+    "transitions": 39,
+    "write_transitions": 0,
+    "cache_control_ps_in_kernel": 117000,
+    "copy_service_ps_in_kernel": 3341121,
+    "home_fetch_ps_in_kernel": 154000,
+    "home_fetch_requests": 384,
+    "home_fetch_bytes": 12288,
+    "home_flush_events": 0,
+    "replica_invalidate_events": 3,
+    "replica_invalidate_bytes": 12288,
+    "home_l1_invalidate_events": 36,
+    "stale_read_sectors": 0,
+    "version_checks": 80,
+    "fallback_home_reads": 0,
+    "inflight_high_water": 16,
+    "pending_high_water": 2,
+    "concurrent_repairs_high_water": 1,
+    "repairs_by_trigger": {
+      "cold": 3
+    },
+    "repair_bytes": 0,
+    "repair_events": 0,
+    "repair_granularities": {},
+    "intrakernel_refills": 0,
+    "intrakernel_repairs": 0,
+    "write_after_repair_invalidations": 0,
+    "clean_replica_reads_during_write": 16,
+    "adaptive_demand_repairs": 0,
+    "adaptive_full_stale_repairs": 0,
+    "adaptive_extra_repair_bytes": 0,
+    "events": [
+      {
+        "kernel": 1,
+        "kind": "cold-copy",
+        "page": 4096,
+        "gpu": 2,
+        "request": 37225,
+        "start_ps": 9112000,
+        "end_ps": 10613000,
+        "bytes": 4096,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "cold-copy",
+        "page": 4096,
+        "gpu": 3,
+        "request": 37303,
+        "start_ps": 10614000,
+        "end_ps": 12010000,
+        "bytes": 4096,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "cold-copy",
+        "page": 4096,
+        "gpu": 4,
+        "request": 37424,
+        "start_ps": 10614000,
+        "end_ps": 13407000,
+        "bytes": 4096,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 1,
+        "request": 71778,
+        "start_ps": 13771000,
+        "end_ps": 13851000,
+        "version": 12
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 1,
+        "request": 71799,
+        "start_ps": 13852000,
+        "end_ps": 14006000,
+        "version": 12
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 1,
+        "request": 71850,
+        "start_ps": 14007000,
+        "end_ps": 14464000,
+        "version": 12
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 1,
+        "request": 71866,
+        "start_ps": 14465000,
+        "end_ps": 14516000,
+        "version": 12
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 2,
+        "request": 86753,
+        "start_ps": 14517000,
+        "end_ps": 14568000,
+        "version": 12
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 2,
+        "request": 86822,
+        "start_ps": 14569000,
+        "end_ps": 15026000,
+        "version": 12
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 2,
+        "request": 86890,
+        "start_ps": 15027000,
+        "end_ps": 15484000,
+        "version": 12
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 2,
+        "request": 86910,
+        "start_ps": 15485000,
+        "end_ps": 15942000,
+        "version": 12
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 3,
+        "request": 86717,
+        "start_ps": 14517000,
+        "end_ps": 16400000,
+        "version": 12
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 3,
+        "request": 86745,
+        "start_ps": 16401000,
+        "end_ps": 16858000,
+        "version": 12
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 3,
+        "request": 86814,
+        "start_ps": 16859000,
+        "end_ps": 17316000,
+        "version": 12
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 3,
+        "request": 86882,
+        "start_ps": 17317000,
+        "end_ps": 17774000,
+        "version": 12
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 1,
+        "request": 121207,
+        "start_ps": 17894000,
+        "end_ps": 18232000,
+        "version": 20
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 1,
+        "request": 121229,
+        "start_ps": 18233000,
+        "end_ps": 18284000,
+        "version": 20
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 1,
+        "request": 121281,
+        "start_ps": 18285000,
+        "end_ps": 18723000,
+        "version": 24
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 1,
+        "request": 121298,
+        "start_ps": 18724000,
+        "end_ps": 18775000,
+        "version": 24
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 2,
+        "request": 130917,
+        "start_ps": 18724000,
+        "end_ps": 18827000,
+        "version": 24
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 2,
+        "request": 130938,
+        "start_ps": 18828000,
+        "end_ps": 19285000,
+        "version": 24
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 2,
+        "request": 130988,
+        "start_ps": 19286000,
+        "end_ps": 19743000,
+        "version": 24
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 2,
+        "request": 131003,
+        "start_ps": 19744000,
+        "end_ps": 20201000,
+        "version": 24
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 3,
+        "request": 141434,
+        "start_ps": 19286000,
+        "end_ps": 20659000,
+        "version": 24
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 3,
+        "request": 141505,
+        "start_ps": 20660000,
+        "end_ps": 21117000,
+        "version": 24
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 3,
+        "request": 141596,
+        "start_ps": 21118000,
+        "end_ps": 21575000,
+        "version": 24
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 3,
+        "request": 141626,
+        "start_ps": 21576000,
+        "end_ps": 22033000,
+        "version": 24
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 1,
+        "request": 165615,
+        "start_ps": 22153000,
+        "end_ps": 22491000,
+        "version": 32
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 1,
+        "request": 165636,
+        "start_ps": 22492000,
+        "end_ps": 22543000,
+        "version": 32
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 1,
+        "request": 165687,
+        "start_ps": 22544000,
+        "end_ps": 22982000,
+        "version": 36
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 1,
+        "request": 165703,
+        "start_ps": 22983000,
+        "end_ps": 23034000,
+        "version": 36
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 2,
+        "request": 174818,
+        "start_ps": 22983000,
+        "end_ps": 23086000,
+        "version": 36
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 2,
+        "request": 174838,
+        "start_ps": 23087000,
+        "end_ps": 23544000,
+        "version": 36
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 2,
+        "request": 174887,
+        "start_ps": 23545000,
+        "end_ps": 24002000,
+        "version": 36
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 2,
+        "request": 174901,
+        "start_ps": 24003000,
+        "end_ps": 24460000,
+        "version": 36
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 3,
+        "request": 184844,
+        "start_ps": 23545000,
+        "end_ps": 24918000,
+        "version": 36
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 3,
+        "request": 184914,
+        "start_ps": 24919000,
+        "end_ps": 25376000,
+        "version": 36
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 3,
+        "request": 185004,
+        "start_ps": 25377000,
+        "end_ps": 25834000,
+        "version": 36
+      },
+      {
+        "kernel": 1,
+        "kind": "home-validate",
+        "page": 4096,
+        "gpu": 3,
+        "request": 185033,
+        "start_ps": 25835000,
+        "end_ps": 26292000,
+        "version": 36
+      }
+    ]
+  },
+  "adapter": "core-kernel-internal-lazy-v2",
+  "core_allocations": [
+    {
+      "base": 4096,
+      "bytes": 4096
+    }
+  ],
+  "page_ownership": [
+    {
+      "page": 4096,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "writers": [
+        1,
+        2,
+        3
+      ],
+      "role": "non-owner-writer"
+    }
+  ],
+  "home_pages_by_gpu": {
+    "1": 1
+  },
+  "owner_read_transactions": 20,
+  "non_owner_read_transactions": 60,
+  "owner_write_transactions": 16,
+  "non_owner_write_transactions": 32,
+  "replica_read_transactions": 28,
+  "remote_home_read_transactions": 0,
+  "copy_bytes_by_role": {
+    "runtime": 12288
+  },
+  "copy_faults_by_role": {
+    "runtime": 3
+  },
+  "recovery_wait_ps_by_role": null,
+  "fabric_model": "destination-ready-v2",
+  "managed_pages": 1,
+  "epoch_activity": [
+    {
+      "name": "kernel/000001",
+      "start_ps": 674000,
+      "end_ps": 30905000,
+      "instructions_by_gpu": {
+        "1": 63,
+        "2": 63,
+        "3": 63,
+        "4": 51
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 11443000,
+        "1": 528000,
+        "2": 466000,
+        "3": 10436000,
+        "4": 7358000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    }
+  ],
+  "model_revision": "replica-kernel-internal-lazy-v2",
+  "oracle_mapping_preinstall": true,
+  "mapping_installs": 4,
+  "tlb_flush_epochs": 0,
+  "mapping_faults": 0,
+  "fallback_page_epochs": 0,
+  "multiple_writer_page_epochs": 0,
+  "read_write_overlap_page_epochs": 0,
+  "fallback_gpu_page_accesses": 0,
+  "fallback_read_transactions": 0,
+  "fallback_write_transactions": 0,
+  "fallback_events": null,
+  "write_epoch_new_copies": 0,
+  "write_epoch_new_copy_bytes": 0,
+  "write_epoch_new_copy_faults": 0,
+  "write_epoch_existing_replica_reads": 16,
+  "write_epoch_new_replica_reads": 0,
+  "recovery_events": [
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "i1-adaptive",
+      "epoch": 1,
+      "page": 4096,
+      "gpu": 2,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 9499000,
+      "due_ps": 10612707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "i1-adaptive",
+      "epoch": 1,
+      "page": 4096,
+      "gpu": 3,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 10896000,
+      "due_ps": 12009707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "i1-adaptive",
+      "epoch": 1,
+      "page": 4096,
+      "gpu": 4,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 12293000,
+      "due_ps": 13406707,
+      "layouts": {
+        "128": {
+          "bytes": 4096,
+          "blocks": 32,
+          "extents": 1
+        },
+        "32": {
+          "bytes": 4096,
+          "blocks": 128,
+          "extents": 1
+        },
+        "4096": {
+          "bytes": 4096,
+          "blocks": 1,
+          "extents": 1
+        },
+        "512": {
+          "bytes": 4096,
+          "blocks": 8,
+          "extents": 1
+        }
+      }
+    }
+  ],
+  "s4_inv_replica_targets": 0,
+  "write_page_epochs": 48,
+  "versioned_pages": 1,
+  "config": {
+    "has_system_scope_sync": false,
+    "transfer_gran_bytes": 32,
+    "policy": "i1-adaptive",
+    "page_bytes": 4096,
+    "sector_bytes": 32,
+    "fault_ns": 900,
+    "fault_slots": 16,
+    "bandwidth_gbs": 300,
+    "link_ns": 200,
+    "replica_pages_per_gpu": 0,
+    "metadata_ns": 0,
+    "shootdown_ns": 0
+  },
+  "epochs": 1,
+  "kernel_ps": 30231000,
+  "host_transfer_ps": 639000,
+  "validation_sha256": "fac51ecadaf088e557eafa1d3b21763c4c15f6161c41e1898d08571c8ff2956c",
+  "kernel_count": 1,
+  "host_write_epochs": 0,
+  "peak_live_managed_pages": 1,
+  "retired_managed_pages": 0,
+  "application_ps": 31445000,
+  "barrier_flush_ps": 575000,
+  "recovery_wait_ps": 0,
+  "copy_faults": 3,
+  "cold_copies": 3,
+  "refills": 0,
+  "repairs": 0,
+  "copy_bytes": 12288,
+  "invalidations": 0,
+  "evictions": 0,
+  "peak_replica_pages": 3,
+  "peak_stale_pages": 3,
+  "retained_pages": 3,
+  "s2_clean_transactions": 0,
+  "s3_preexisting_replica_read_transactions": 0,
+  "s3_preexisting_replica_read_sectors": 0,
+  "s3_conflicting_read_sectors": 0,
+  "repair_granularities": {},
+  "fabric_bytes": 17904,
+  "fabric_messages": 119
+}

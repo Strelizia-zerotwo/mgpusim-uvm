@@ -57,6 +57,11 @@ const (
 	// by Addresses and PID. Conditional verb (caches only). Ack is
 	// asynchronous (on writeback completion).
 	CmdFlush
+
+	// CmdInvalidateCleanRange invalidates a nonempty clean address range while
+	// running. Caller must exclude new matching traffic until acknowledgement.
+	// The cache waits for matching transactions; unrelated traffic continues.
+	CmdInvalidateCleanRange
 )
 
 // Req is the unified control request for all memory agents.

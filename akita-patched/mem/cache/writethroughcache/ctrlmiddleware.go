@@ -84,6 +84,8 @@ func (m *ctrlMiddleware) handleIncoming() bool {
 		return m.handleEnable(req)
 	case memcontrolprotocol.CmdReset:
 		return m.handleReset(req)
+	case memcontrolprotocol.CmdInvalidateCleanRange:
+		return m.handleInvalidateCleanRange(req)
 	case memcontrolprotocol.CmdInvalidate:
 		return m.handleInvalidate(req)
 	case memcontrolprotocol.CmdFlush:

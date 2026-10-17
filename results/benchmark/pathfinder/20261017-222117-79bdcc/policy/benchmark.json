@@ -1,0 +1,20 @@
+{
+  "id": "pathfinder",
+  "sample": "rodinia_pathfinder",
+  "group": "C",
+  "role": "candidate",
+  "profiles": {
+    "smoke": [
+      "-rows=4",
+      "-cols=1024"
+    ],
+    "small": [
+      "-rows=16",
+      "-cols=1024"
+    ]
+  },
+  "arch": "cdna3",
+  "gpu": "mi300x",
+  "verify_kind": "passed",
+  "core_replica": true
+}

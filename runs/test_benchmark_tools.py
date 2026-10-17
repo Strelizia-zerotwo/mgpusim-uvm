@@ -4,6 +4,8 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
+from types import SimpleNamespace
 
 
 def load(name):
@@ -16,6 +18,8 @@ def load(name):
 
 screen=load('screen_opportunities')
 runner=load('run_benchmarks')
+online=load('online_policy_runner')
+candidates=load('run_idea_candidates')
 
 
 def access(gpu,reads=(),writes=()):
@@ -27,6 +31,99 @@ def plan(*epochs):
 
 
 class ScientificAccounting(unittest.TestCase):
+    def test_candidate_wrapper_preserves_shared_suite_and_scan(self):
+        args=candidates.suite_arguments(['--scan','--timeout','900'])
+        self.assertEqual(args[0],'run')
+        self.assertEqual(args[args.index('--bench')+1],'lud,gaussian,pathfinder,backprop,gramschmidt')
+        self.assertEqual(args[args.index('--policies')+1],'inv,delta,delta-sub')
+        self.assertEqual(args[args.index('--page-bytes')+1],'4096,65536,2097152')
+        self.assertEqual(args[-2:],['--timeout','900'])
+
+    def test_five_candidate_commands_use_their_cdna3_binaries(self):
+        catalog=runner.read(Path(__file__).resolve().parents[1]/'benchmark/mybenchmark/catalog.json')['benchmarks']
+        selected=[b for b in catalog if b['id'] in candidates.BENCHMARKS]
+        self.assertEqual(len(selected),5)
+        a=SimpleNamespace(policies=['inv','delta','delta-sub'],pages=[4096],links=[200],faults=[900],
+            repeats=1,bandwidth_gbs=300,replica_pages_per_gpu=0,gpus='1,2,3,4',gpu_ids=[1,2,3,4],
+            profile='small',mode='policy',timeout=10,root=Path('/unused'))
+        commands=[];samples=[]
+        def execute(cmd,*args):commands.append(cmd);return dict(status='TIMEOUT')
+        def build(_,sample,__):samples.append(sample);return Path('/fake')/sample
+        with tempfile.TemporaryDirectory() as d:
+            root=Path(d)
+            def dump(path,obj):path.parent.mkdir(parents=True,exist_ok=True);runner.dump(path,obj)
+            api=dict(build=build,dump=dump,execute=execute,base_row=runner.base_row,load_legacy=lambda root:None)
+            with patch('builtins.print'):
+                for b in selected:
+                    self.assertTrue(b['core_replica'])
+                    online.run_online(b,a,root,root/b['id'],api)
+        self.assertEqual(len(samples),5)
+        self.assertEqual(len(commands),15)
+        for cmd in commands:
+            self.assertIn('-arch=cdna3',cmd);self.assertIn('-gpu=mi300x',cmd)
+            self.assertIn('-page-bytes=4096',cmd);self.assertIn('-core-protocol=ideal',cmd)
+            self.assertNotIn('-arch=gcn3',cmd)
+            self.assertFalse(any(x.startswith('-core-replica-plan=') for x in cmd))
+
+    def test_different_architectures_never_share_speedup_baseline(self):
+        base=dict(benchmark='lud',profile='small',mode='policy',repeat=0,status='OK',page_bytes=4096)
+        rows=[dict(base,policy='inv',arch='gcn3',gpu='r9nano',application_us=100),
+              dict(base,policy='delta',arch='cdna3',gpu='mi300x',application_us=50)]
+        with tempfile.TemporaryDirectory() as d:runner.summarize(rows,Path(d))
+        self.assertNotIn('speedup_vs_inv',rows[1])
+
+    def test_default_is_exactly_three_ideal_policies(self):
+        self.assertEqual(runner.DEFAULT_POLICIES,['inv','delta','delta-sub'])
+
+    def test_page_sizes_never_share_inv_baseline(self):
+        base=dict(benchmark='BFS',profile='small',mode='policy',repeat=0,status='OK',protocol=online.PROTOCOL)
+        rows=[dict(base,policy='inv',page_bytes=4096,application_us=100),
+              dict(base,policy='inv',page_bytes=65536,application_us=200),
+              dict(base,policy='delta',page_bytes=65536,application_us=150)]
+        with tempfile.TemporaryDirectory() as d:runner.summarize(rows,Path(d))
+        self.assertAlmostEqual(rows[2]['speedup_vs_inv'],200/150)
+
+    def test_ordering_warning_preserves_measured_time(self):
+        base=dict(benchmark='BFS',profile='small',mode='policy',repeat=0,status='OK',protocol=online.PROTOCOL)
+        rows=[dict(base,policy='inv',application_us=100),dict(base,policy='delta',application_us=101)]
+        with tempfile.TemporaryDirectory() as d:runner.summarize(rows,Path(d))
+        self.assertEqual(rows[1]['application_us'],101)
+        self.assertLess(rows[1]['speedup_vs_inv'],1)
+        self.assertIn('sanity_warnings',rows[1])
+
+    def test_resummarize_removes_stale_failed_speedup(self):
+        row=dict(benchmark='ST',profile='small',mode='policy',repeat=0,status='VALIDATION_FAILED',speedup_vs_inv=10)
+        with tempfile.TemporaryDirectory() as d:runner.summarize([row],Path(d))
+        self.assertNotIn('speedup_vs_inv',row)
+
+    def test_three_page_twelve_parameter_scan_without_running_simulator(self):
+        a=SimpleNamespace(policies=['inv','delta','delta-sub'],pages=[4096,65536,2097152],links=[0,200],faults=[900,20000],
+            repeats=1,bandwidth_gbs=300,replica_pages_per_gpu=0,gpus='1,2,3,4',gpu_ids=[1,2,3,4],
+            profile='small',mode='policy',timeout=10,root=Path('/unused'))
+        calls=[]
+        def execute(cmd,directory,timeout):
+            calls.append(cmd);return dict(status='TIMEOUT')
+        with tempfile.TemporaryDirectory() as d:
+            directory=Path(d)
+            def dump(path,obj):
+                path.parent.mkdir(parents=True,exist_ok=True);runner.dump(path,obj)
+            api=dict(build=lambda *args:Path('/fake/binary'),dump=dump,execute=execute,base_row=runner.base_row,load_legacy=lambda root:None)
+            with patch('builtins.print'):
+                rows=online.run_online(dict(id='FIR',sample='fir',profiles=dict(small=['-length=1024'])),a,directory,directory,api)
+        self.assertEqual(len(calls),36)
+        self.assertEqual(len({Path(r['directory']).name for r in rows}),36)
+        self.assertEqual({r['page_bytes'] for r in rows},set(a.pages))
+        for cmd in calls:
+            self.assertIn('-core-protocol=ideal',cmd)
+            self.assertTrue(any(x.startswith('-page-bytes=') for x in cmd))
+            self.assertFalse(any(x.startswith('-core-replica-plan=') for x in cmd))
+    def test_different_protocols_never_share_speedup_baseline(self):
+        base=dict(benchmark='ST',profile='smoke',mode='policy',repeat=0,status='OK')
+        rows=[dict(base,policy='inv',protocol='kernel-barrier',application_us=100),
+              dict(base,policy='i1-adaptive',protocol='kernel-internal-online-v1',application_us=50)]
+        with tempfile.TemporaryDirectory() as d:
+            runner.summarize(rows,Path(d))
+        self.assertNotIn('speedup_vs_inv',rows[1])
     def test_multiple_writes_one_invalidation_and_later_refill(self):
         p=plan([access(2,[0,1])],[access(1,writes=[0])],
                [access(1,writes=[1])],[access(2,[0])])

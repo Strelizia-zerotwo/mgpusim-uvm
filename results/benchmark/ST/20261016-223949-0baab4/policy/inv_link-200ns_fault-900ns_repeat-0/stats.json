@@ -1,0 +1,814 @@
+{
+  "initial_input_sha256": "57cd5fe4f92a4ac260504d40a5194565654cc81f86cfd337a942d00707701bf4",
+  "passive": {
+    "protocol": "kernel-internal-online-v1",
+    "adaptive_rule": "previous read-interval footprint; no future trace or kernel write set",
+    "managed_requests": 1648,
+    "read_requests": 1008,
+    "write_requests": 640,
+    "transitions": 38,
+    "cache_control_ps_in_kernel": 14885000,
+    "copy_service_ps_in_kernel": 8909656,
+    "inflight_high_water": 24,
+    "pending_high_water": 1,
+    "intrakernel_refills": 0,
+    "intrakernel_repairs": 0,
+    "write_after_repair_invalidations": 0,
+    "clean_replica_reads_during_write": 0,
+    "adaptive_demand_repairs": 0,
+    "adaptive_full_stale_repairs": 0,
+    "adaptive_extra_repair_bytes": 0,
+    "events": [
+      {
+        "kernel": 1,
+        "kind": "cold-copy",
+        "page": 8192,
+        "gpu": 2,
+        "request": 82161,
+        "start_ps": 10640000,
+        "end_ps": 12040000,
+        "bytes": 4096,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "cold-copy",
+        "page": 12288,
+        "gpu": 3,
+        "request": 82238,
+        "start_ps": 12041000,
+        "end_ps": 13442000,
+        "bytes": 4096,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "cold-copy",
+        "page": 16384,
+        "gpu": 4,
+        "request": 82385,
+        "start_ps": 13443000,
+        "end_ps": 14844000,
+        "bytes": 4096,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "cold-copy",
+        "page": 20480,
+        "gpu": 4,
+        "request": 160796,
+        "start_ps": 15594000,
+        "end_ps": 16881000,
+        "bytes": 4096,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 36864,
+        "gpu": 3,
+        "request": 337930,
+        "start_ps": 24945000,
+        "end_ps": 25079000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 32768,
+        "gpu": 2,
+        "request": 337972,
+        "start_ps": 25081000,
+        "end_ps": 25756000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 28672,
+        "gpu": 1,
+        "request": 357022,
+        "start_ps": 25758000,
+        "end_ps": 26433000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 40960,
+        "gpu": 4,
+        "request": 396416,
+        "start_ps": 26590000,
+        "end_ps": 27033000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 45056,
+        "gpu": 4,
+        "request": 438646,
+        "start_ps": 28347000,
+        "end_ps": 28906000,
+        "version": 0
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 40960,
+        "gpu": 3,
+        "request": 442660,
+        "start_ps": 28908000,
+        "end_ps": 29696000,
+        "version": 11
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 32768,
+        "gpu": 1,
+        "request": 489274,
+        "start_ps": 30096000,
+        "end_ps": 30378000,
+        "version": 35
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 32768,
+        "gpu": 2,
+        "request": 499344,
+        "start_ps": 30379000,
+        "end_ps": 30758000,
+        "version": 36
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 32768,
+        "gpu": 1,
+        "request": 517678,
+        "start_ps": 30760000,
+        "end_ps": 31437000,
+        "version": 41
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 32768,
+        "gpu": 2,
+        "request": 539190,
+        "start_ps": 31438000,
+        "end_ps": 31706000,
+        "version": 46
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 36864,
+        "gpu": 2,
+        "request": 539285,
+        "start_ps": 31707000,
+        "end_ps": 32381000,
+        "version": 27
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 32768,
+        "gpu": 1,
+        "request": 557104,
+        "start_ps": 32383000,
+        "end_ps": 33060000,
+        "version": 49
+      },
+      {
+        "kernel": 1,
+        "kind": "write-revoke",
+        "page": 49152,
+        "gpu": 4,
+        "request": 654122,
+        "start_ps": 38471000,
+        "end_ps": 38496000,
+        "version": 0
+      },
+      {
+        "kernel": 2,
+        "kind": "home-read-after-write",
+        "page": 28672,
+        "gpu": 1,
+        "request": 761612,
+        "start_ps": 52094000,
+        "end_ps": 52180000,
+        "version": 59
+      },
+      {
+        "kernel": 2,
+        "kind": "cold-copy",
+        "page": 32768,
+        "gpu": 2,
+        "request": 761656,
+        "start_ps": 52181000,
+        "end_ps": 53479000,
+        "bytes": 4096,
+        "version": 64
+      },
+      {
+        "kernel": 2,
+        "kind": "cold-copy",
+        "page": 36864,
+        "gpu": 3,
+        "request": 761748,
+        "start_ps": 53480000,
+        "end_ps": 54778000,
+        "bytes": 4096,
+        "version": 64
+      },
+      {
+        "kernel": 2,
+        "kind": "cold-copy",
+        "page": 40960,
+        "gpu": 4,
+        "request": 761850,
+        "start_ps": 54779000,
+        "end_ps": 56077000,
+        "bytes": 4096,
+        "version": 64
+      },
+      {
+        "kernel": 2,
+        "kind": "cold-copy",
+        "page": 45056,
+        "gpu": 4,
+        "request": 854973,
+        "start_ps": 56724000,
+        "end_ps": 58011000,
+        "bytes": 4096,
+        "version": 64
+      },
+      {
+        "kernel": 2,
+        "kind": "home-read-after-write",
+        "page": 49152,
+        "gpu": 4,
+        "request": 950983,
+        "start_ps": 60782000,
+        "end_ps": 60915000,
+        "version": 5
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1049717,
+        "start_ps": 66092000,
+        "end_ps": 66225000,
+        "version": 0
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 3,
+        "request": 1049726,
+        "start_ps": 66226000,
+        "end_ps": 66799000,
+        "version": 0
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 4096,
+        "gpu": 1,
+        "request": 1049735,
+        "start_ps": 66801000,
+        "end_ps": 67373000,
+        "version": 0
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 4,
+        "request": 1109696,
+        "start_ps": 67668000,
+        "end_ps": 67973000,
+        "version": 0
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 20480,
+        "gpu": 4,
+        "request": 1149142,
+        "start_ps": 69184000,
+        "end_ps": 69743000,
+        "version": 0
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 1,
+        "request": 1175077,
+        "start_ps": 70143000,
+        "end_ps": 70463000,
+        "version": 30
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1185123,
+        "start_ps": 70464000,
+        "end_ps": 70740000,
+        "version": 31
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 16384,
+        "gpu": 3,
+        "request": 1184487,
+        "start_ps": 70741000,
+        "end_ps": 71419000,
+        "version": 11
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 1,
+        "request": 1203425,
+        "start_ps": 71421000,
+        "end_ps": 72098000,
+        "version": 36
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1223401,
+        "start_ps": 72099000,
+        "end_ps": 72367000,
+        "version": 41
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 1,
+        "request": 1260936,
+        "start_ps": 72369000,
+        "end_ps": 73046000,
+        "version": 46
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 2,
+        "request": 1282659,
+        "start_ps": 73047000,
+        "end_ps": 73315000,
+        "version": 51
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 12288,
+        "gpu": 2,
+        "request": 1282754,
+        "start_ps": 73316000,
+        "end_ps": 73990000,
+        "version": 27
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 8192,
+        "gpu": 1,
+        "request": 1300573,
+        "start_ps": 73992000,
+        "end_ps": 74669000,
+        "version": 54
+      },
+      {
+        "kernel": 2,
+        "kind": "write-revoke",
+        "page": 24576,
+        "gpu": 4,
+        "request": 1397588,
+        "start_ps": 80080000,
+        "end_ps": 80105000,
+        "version": 0
+      }
+    ]
+  },
+  "adapter": "core-kernel-internal-online-v1",
+  "core_allocations": [
+    {
+      "base": 4096,
+      "bytes": 21120
+    },
+    {
+      "base": 28672,
+      "bytes": 21120
+    }
+  ],
+  "terminal_sha256": "2565d2f9ef4790576065f6dcc990fd03b33409d355cb1697e515be5713a7a92e",
+  "page_ownership": [
+    {
+      "page": 4096,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 8192,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2
+      ],
+      "writers": [
+        1,
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 12288,
+      "home_gpu": 2,
+      "readers": [
+        2,
+        3
+      ],
+      "writers": [
+        2,
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 16384,
+      "home_gpu": 3,
+      "readers": [
+        3,
+        4
+      ],
+      "writers": [
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 20480,
+      "home_gpu": 3,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 24576,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 28672,
+      "home_gpu": 1,
+      "readers": [
+        1
+      ],
+      "writers": [
+        1
+      ],
+      "role": "owner-private"
+    },
+    {
+      "page": 32768,
+      "home_gpu": 1,
+      "readers": [
+        1,
+        2
+      ],
+      "writers": [
+        1,
+        2
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 36864,
+      "home_gpu": 2,
+      "readers": [
+        2,
+        3
+      ],
+      "writers": [
+        2,
+        3
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 40960,
+      "home_gpu": 3,
+      "readers": [
+        3,
+        4
+      ],
+      "writers": [
+        3,
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 45056,
+      "home_gpu": 3,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "non-owner-writer"
+    },
+    {
+      "page": 49152,
+      "home_gpu": 4,
+      "readers": [
+        4
+      ],
+      "writers": [
+        4
+      ],
+      "role": "owner-private"
+    }
+  ],
+  "home_pages_by_gpu": {
+    "1": 4,
+    "2": 2,
+    "3": 4,
+    "4": 2
+  },
+  "owner_read_transactions": 560,
+  "non_owner_read_transactions": 448,
+  "owner_write_transactions": 350,
+  "non_owner_write_transactions": 290,
+  "replica_read_transactions": 448,
+  "remote_home_read_transactions": 0,
+  "copy_bytes_by_role": {
+    "runtime": 32768
+  },
+  "copy_faults_by_role": {
+    "runtime": 8
+  },
+  "recovery_wait_ps_by_role": null,
+  "fabric_model": "destination-ready-v2",
+  "managed_pages": 12,
+  "epoch_activity": [
+    {
+      "name": "kernel/000001",
+      "start_ps": 1482000,
+      "end_ps": 42346000,
+      "instructions_by_gpu": {
+        "1": 965,
+        "2": 965,
+        "3": 965,
+        "4": 965
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 12063000,
+        "1": 5034000,
+        "2": 1143000,
+        "3": 3759000,
+        "4": 18865000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    },
+    {
+      "name": "kernel/000002",
+      "start_ps": 42937000,
+      "end_ps": 83852000,
+      "instructions_by_gpu": {
+        "1": 965,
+        "2": 965,
+        "3": 965,
+        "4": 965
+      },
+      "inflight_gpu_duration_ps": {
+        "0": 12288000,
+        "1": 5467000,
+        "2": 220000,
+        "3": 3350000,
+        "4": 19590000
+      },
+      "max_gpus_with_inflight_instructions": 4
+    }
+  ],
+  "model_revision": "replica-kernel-internal-v1",
+  "oracle_mapping_preinstall": true,
+  "mapping_installs": 48,
+  "tlb_flush_epochs": 0,
+  "mapping_faults": 0,
+  "fallback_page_epochs": 0,
+  "multiple_writer_page_epochs": 0,
+  "read_write_overlap_page_epochs": 0,
+  "fallback_gpu_page_accesses": 0,
+  "fallback_read_transactions": 0,
+  "fallback_write_transactions": 0,
+  "fallback_events": null,
+  "write_epoch_new_copies": 0,
+  "write_epoch_new_copy_bytes": 0,
+  "write_epoch_new_copy_faults": 0,
+  "write_epoch_existing_replica_reads": 0,
+  "write_epoch_new_replica_reads": 0,
+  "recovery_events": [
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 1,
+      "page": 8192,
+      "gpu": 2,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 10926000,
+      "due_ps": 12039707,
+      "layouts": null
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 1,
+      "page": 12288,
+      "gpu": 3,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 12328000,
+      "due_ps": 13441707,
+      "layouts": null
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 1,
+      "page": 16384,
+      "gpu": 4,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 13730000,
+      "due_ps": 14843707,
+      "layouts": null
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 1,
+      "page": 20480,
+      "gpu": 4,
+      "source_version": 0,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 15767000,
+      "due_ps": 16880707,
+      "layouts": null
+    },
+    {
+      "home_gpu": 1,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 32768,
+      "gpu": 2,
+      "source_version": 64,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 52365000,
+      "due_ps": 53478707,
+      "layouts": null
+    },
+    {
+      "home_gpu": 2,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 36864,
+      "gpu": 3,
+      "source_version": 64,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 53664000,
+      "due_ps": 54777707,
+      "layouts": null
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 40960,
+      "gpu": 4,
+      "source_version": 64,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 54963000,
+      "due_ps": 56076707,
+      "layouts": null
+    },
+    {
+      "home_gpu": 3,
+      "page_role": "runtime",
+      "repair_kind": "inv",
+      "epoch": 2,
+      "page": 45056,
+      "gpu": 4,
+      "source_version": 64,
+      "cold": true,
+      "functional_bytes": 4096,
+      "charged_bytes": 4096,
+      "start_ps": 56897000,
+      "due_ps": 58010707,
+      "layouts": null
+    }
+  ],
+  "s4_inv_replica_targets": 0,
+  "write_page_epochs": 640,
+  "versioned_pages": 12,
+  "config": {
+    "transfer_gran_bytes": 32,
+    "policy": "inv",
+    "page_bytes": 4096,
+    "sector_bytes": 32,
+    "fault_ns": 900,
+    "fault_slots": 16,
+    "bandwidth_gbs": 300,
+    "link_ns": 200,
+    "replica_pages_per_gpu": 0,
+    "metadata_ns": 0,
+    "shootdown_ns": 0
+  },
+  "epochs": 2,
+  "kernel_ps": 81779000,
+  "host_transfer_ps": 705000,
+  "validation_sha256": "4c68088ba8f7bedb971a30791dc33769ee75c4999cd5feeb42d7f8451d67fa65",
+  "kernel_count": 2,
+  "host_write_epochs": 0,
+  "peak_live_managed_pages": 12,
+  "retired_managed_pages": 0,
+  "application_ps": 83666000,
+  "barrier_flush_ps": 1182000,
+  "recovery_wait_ps": 0,
+  "copy_faults": 8,
+  "cold_copies": 8,
+  "refills": 0,
+  "repairs": 0,
+  "copy_bytes": 32768,
+  "invalidations": 4,
+  "evictions": 0,
+  "peak_replica_pages": 8,
+  "peak_stale_pages": 0,
+  "retained_pages": 4,
+  "s2_clean_transactions": 0,
+  "s3_preexisting_replica_read_transactions": 0,
+  "s3_preexisting_replica_read_sectors": 0,
+  "s3_conflicting_read_sectors": 0,
+  "repair_granularities": {},
+  "fabric_bytes": 60736,
+  "fabric_messages": 588
+}

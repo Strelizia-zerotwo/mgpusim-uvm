@@ -73,7 +73,6 @@ func NewBenchmark(driver *driver.Driver) *Benchmark {
 
 	b.driver = driver
 	b.context = b.driver.Init()
-	b.queue = driver.CreateCommandQueue(b.context)
 
 	return b
 }
@@ -86,7 +85,7 @@ func (b *Benchmark) loadProgram() {
 	}
 }
 
-// SelectGPU selects the GPUs to run on. PathFinder uses a single GPU.
+// SelectGPU selects the device to run on, including a unified multi-GPU device.
 func (b *Benchmark) SelectGPU(gpus []int) {
 	b.gpus = gpus
 }
@@ -94,6 +93,13 @@ func (b *Benchmark) SelectGPU(gpus []int) {
 // SetUnifiedMemory requests the use of unified memory.
 func (b *Benchmark) SetUnifiedMemory() {
 	b.useUnifiedMemory = true
+}
+
+// initCommandQueue binds the queue after selecting the actual target.
+// A queue captures its device at creation; later context changes do not rebind it.
+func (b *Benchmark) initCommandQueue() {
+	b.driver.SelectGPU(b.context, b.gpus[0])
+	b.queue = b.driver.CreateCommandQueue(b.context)
 }
 
 // Run runs the benchmark.
@@ -105,7 +111,7 @@ func (b *Benchmark) Run() {
 
 	b.loadProgram()
 
-	b.driver.SelectGPU(b.context, b.gpus[0])
+	b.initCommandQueue()
 	b.initMem()
 	b.exec()
 }

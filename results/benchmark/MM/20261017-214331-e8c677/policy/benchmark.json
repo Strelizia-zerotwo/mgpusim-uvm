@@ -1,0 +1,22 @@
+{
+  "id": "MM",
+  "sample": "matrixmultiplication",
+  "group": "A",
+  "role": "control",
+  "profiles": {
+    "smoke": [
+      "-x=64",
+      "-y=64",
+      "-z=64"
+    ],
+    "small": [
+      "-x=256",
+      "-y=256",
+      "-z=256"
+    ]
+  },
+  "arch": "gcn3",
+  "gpu": "r9nano",
+  "verify_kind": "passed",
+  "core_replica": true
+}

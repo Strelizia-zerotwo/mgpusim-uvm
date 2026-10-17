@@ -39,6 +39,7 @@ type Builder struct {
 	cpuMemSize         uint64
 	gpuMemSize         uint64
 	log2PageSize       uint64
+	pageSizeExplicit   bool
 	useMagicMemoryCopy bool
 	gpuType            string
 	faultMode          string
@@ -143,7 +144,9 @@ func (b *Builder) adjustConfigForGPUType() {
 		// would make the L1/L2 TLBs thrash at ~1 MB working sets and inject
 		// page-walk latency the hardware never pays. This sets the page size
 		// for the MMU/page table and every TLB consistently.
-		b.log2PageSize = 21 // 2 MB huge pages
+		if !b.pageSizeExplicit {
+			b.log2PageSize = 21 // 2 MB huge pages, unless explicitly overridden
+		}
 	default:
 		// Keep defaults for r9nano
 	}
@@ -323,5 +326,10 @@ func (b *Builder) configRDMAEngine(
 		gpu.RDMADataPort.AsRemote())
 }
 
-// WithLog2PageSize selects one consistent page size throughout r9nano.
-func (b Builder) WithLog2PageSize(n uint64) Builder { b.log2PageSize = n; return b }
+// WithLog2PageSize selects one consistent page size throughout the platform.
+// Explicit experiment geometry takes precedence over GPU-specific defaults.
+func (b Builder) WithLog2PageSize(n uint64) Builder {
+	b.log2PageSize = n
+	b.pageSizeExplicit = true
+	return b
+}

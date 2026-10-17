@@ -1,0 +1,67 @@
+Stage 0, pass 0
+Stage 1, pass 0
+Stage 1, pass 1
+Stage 2, pass 0
+Stage 2, pass 1
+Stage 2, pass 2
+Stage 3, pass 0
+Stage 3, pass 1
+Stage 3, pass 2
+Stage 3, pass 3
+Stage 4, pass 0
+Stage 4, pass 1
+Stage 4, pass 2
+Stage 4, pass 3
+Stage 4, pass 4
+Stage 5, pass 0
+Stage 5, pass 1
+Stage 5, pass 2
+Stage 5, pass 3
+Stage 5, pass 4
+Stage 5, pass 5
+Stage 6, pass 0
+Stage 6, pass 1
+Stage 6, pass 2
+Stage 6, pass 3
+Stage 6, pass 4
+Stage 6, pass 5
+Stage 6, pass 6
+Stage 7, pass 0
+Stage 7, pass 1
+Stage 7, pass 2
+Stage 7, pass 3
+Stage 7, pass 4
+DBG fetch gpu=2 jobver=3456 lastwrite=3404 time=660801000 data=98e90714ea1ae110b980140d4be4c40d934cef10de22e61821aba6197685fb1b
+DBG publish gpu=2 lastwrite=3404 time=661918000 data=98e90714ea1ae110b980140d4be4c40d934cef10de22e61821aba6197685fb1b
+DBG req gpu=2 addr=1780 home=100001000 pid=1 mask=[false false false false false false false false false false false false false false false false false false false false false false false false false false false false false false false false true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true true] data=000000000000000000000000000000000000000000000000000000000000000098e90714ea1ae110b980140d4be4c40d934cef108f458d1573f3fb14b986db14
+DBG write gpu=2 version=3471 time=662973000
+DBG done gpu=2 id=5274021 time=663520000
+DBG resident GPU[1].L2Cache[15] pid=1 dirty=false data=98e90714ea1ae110b980140d4be4c40d934cef10de22e61821aba6197685fb1b
+DBG resident GPU[1].L2Cache[15] pid=0 dirty=true data=98e90714ea1ae110b980140d4be4c40d934cef108f458d1573f3fb14b986db14
+DBG fetch gpu=3 jobver=3472 lastwrite=3471 time=663542000 data=98e90714ea1ae110b980140d4be4c40d934cef10de22e61821aba6197685fb1b
+DBG publish gpu=3 lastwrite=3471 time=664656000 data=98e90714ea1ae110b980140d4be4c40d934cef10de22e61821aba6197685fb1b
+DBG fetch gpu=4 jobver=3472 lastwrite=3471 time=665881000 data=98e90714ea1ae110b980140d4be4c40d934cef10de22e61821aba6197685fb1b
+DBG publish gpu=4 lastwrite=3471 time=666995000 data=98e90714ea1ae110b980140d4be4c40d934cef10de22e61821aba6197685fb1b
+panic: replica bytes mismatch kernel=33 page=1000 gpu=3 sector=61 replicaVersion=3471 lastWrite=3471 want=98e90714ea1ae110b980140d4be4c40d934cef108f458d1573f3fb14b986db14 got=98e90714ea1ae110b980140d4be4c40d934cef10de22e61821aba6197685fb1b
+
+goroutine 67 [running]:
+github.com/sarchlab/mgpusim/v5/amd/timing/replica.(*Passive).CheckAtBarrier(0x3b917407f440)
+	/home/only/projects/mgpusim-uvm/mgpusim/amd/timing/replica/passive.go:1000 +0x4c5
+github.com/sarchlab/mgpusim/v5/amd/timing/replica.(*Session).Epoch(0x3b917bac3688, {0x3b919b333eb0, 0xd}, 0x3b919b2cf630)
+	/home/only/projects/mgpusim-uvm/mgpusim/amd/timing/replica/session.go:320 +0xc6a
+github.com/sarchlab/mgpusim/v5/amd/timing/replica.AttachCore.func3(0x50?, 0x3b919b2cf630)
+	/home/only/projects/mgpusim-uvm/mgpusim/amd/timing/replica/dynamic.go:129 +0x19e
+github.com/sarchlab/mgpusim/v5/amd/driver.(*Driver).EnqueueLaunchKernelFiltered(0x3b915a4e27e0, 0x3b917d6463c0, 0x3b917bbc6300, {0x200, 0x1, 0x1}, {0x40, 0x1, 0x1}, {0x1692898, ...}, ...)
+	/home/only/projects/mgpusim-uvm/mgpusim/amd/driver/kernel.go:31 +0x173
+github.com/sarchlab/mgpusim/v5/amd/driver.(*Driver).EnqueueLaunchKernel(...)
+	/home/only/projects/mgpusim-uvm/mgpusim/amd/driver/kernel.go:21
+github.com/sarchlab/mgpusim/v5/amd/benchmarks/amdappsdk/bitonicsort.(*Benchmark).runPass(0x3b9174112a80, 0x7, 0x4, 0x1, {0x3b917d5efef0, 0x1, 0x30?})
+	/home/only/projects/mgpusim-uvm/mgpusim/amd/benchmarks/amdappsdk/bitonicsort/bitonicsort.go:245 +0x493
+github.com/sarchlab/mgpusim/v5/amd/benchmarks/amdappsdk/bitonicsort.(*Benchmark).exec(0x3b9174112a80)
+	/home/only/projects/mgpusim-uvm/mgpusim/amd/benchmarks/amdappsdk/bitonicsort/bitonicsort.go:173 +0x265
+github.com/sarchlab/mgpusim/v5/amd/benchmarks/amdappsdk/bitonicsort.(*Benchmark).Run(0x3b9174112a80)
+	/home/only/projects/mgpusim-uvm/mgpusim/amd/benchmarks/amdappsdk/bitonicsort/bitonicsort.go:125 +0xaf
+github.com/sarchlab/mgpusim/v5/amd/samples/runner.(*Runner).Run.func1({0x17eeb98, 0x3b9174112a80}, 0x3b9172872b70)
+	/home/only/projects/mgpusim-uvm/mgpusim/amd/samples/runner/runner.go:182 +0x57
+created by github.com/sarchlab/mgpusim/v5/amd/samples/runner.(*Runner).Run in goroutine 1
+	/home/only/projects/mgpusim-uvm/mgpusim/amd/samples/runner/runner.go:175 +0x69

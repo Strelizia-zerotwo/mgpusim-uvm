@@ -1,0 +1,18 @@
+{
+  "benchmark": "PR",
+  "profile": "smoke",
+  "mode": "policy",
+  "policy": "retain",
+  "repeat": 0,
+  "directory": "/home/only/projects/mgpusim-uvm/results/benchmark/PR/20261017-191926-845c0f/policy/retain_link-200ns_fault-900ns_repeat-0",
+  "verification": "FAILED_OR_INCOMPLETE",
+  "protocol": "kernel-internal-lazy-v2",
+  "link_ns": 200,
+  "fault_ns": 900,
+  "bandwidth_gbs": 300,
+  "status": "VALIDATION_FAILED",
+  "returncode": 0,
+  "wall_s": 7.579421,
+  "peak_rss_kib": 1084984,
+  "reason": "unsupported replica model revision or no epochs"
+}

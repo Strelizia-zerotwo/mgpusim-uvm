@@ -1,0 +1,62 @@
+WATCH next=<nil> granted=0 leases=map[]
+PASSIVE DEBUG time=58964000 step=-1 leases=6 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59012000 step=-1 leases=5 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59013000 step=-1 leases=4 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59014000 step=-1 leases=3 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59015000 step=-1 leases=2 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59205000 step=-1 leases=1 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59207000 step=-1 leases=0 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59208000 step=0 leases=0 pending=320 queue=320 transitions=0
+PASSIVE DEBUG time=59209000 step=0 leases=0 pending=320 queue=0 transitions=0
+PASSIVE DEBUG time=59211000 step=0 leases=0 pending=320 queue=0 transitions=0
+PASSIVE DEBUG time=59212000 step=1 leases=0 pending=64 queue=64 transitions=0
+PASSIVE DEBUG time=59213000 step=1 leases=0 pending=64 queue=0 transitions=0
+PASSIVE DEBUG time=59215000 step=1 leases=0 pending=64 queue=0 transitions=0
+PASSIVE DEBUG time=59216000 step=2 leases=0 pending=64 queue=64 transitions=0
+PASSIVE DEBUG time=59217000 step=2 leases=0 pending=64 queue=0 transitions=0
+PASSIVE DEBUG time=59220000 step=2 leases=0 pending=64 queue=0 transitions=0
+PASSIVE DEBUG time=59221000 step=3 leases=0 pending=320 queue=320 transitions=0
+PASSIVE DEBUG time=59222000 step=3 leases=0 pending=320 queue=0 transitions=0
+PASSIVE DEBUG time=59223000 step=3 leases=0 pending=320 queue=0 transitions=0
+PASSIVE DEBUG time=59224000 step=4 leases=0 pending=64 queue=64 transitions=0
+PASSIVE DEBUG time=59225000 step=4 leases=0 pending=64 queue=0 transitions=0
+PASSIVE DEBUG time=59226000 step=4 leases=0 pending=64 queue=0 transitions=0
+PASSIVE DEBUG time=59227000 step=5 leases=0 pending=384 queue=384 transitions=0
+PASSIVE DEBUG time=59228000 step=5 leases=0 pending=384 queue=0 transitions=0
+PASSIVE DEBUG time=59229000 step=5 leases=0 pending=384 queue=0 transitions=0
+PASSIVE DEBUG time=59230000 step=6 leases=0 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59231000 step=7 leases=0 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59232000 step=7 leases=0 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59233000 step=7 leases=0 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59234000 step=7 leases=0 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59235000 step=7 leases=0 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59236000 step=7 leases=0 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59237000 step=7 leases=0 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59238000 step=7 leases=0 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59239000 step=7 leases=0 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59240000 step=7 leases=0 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59241000 step=7 leases=0 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59242000 step=7 leases=0 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59243000 step=7 leases=0 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59244000 step=7 leases=0 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59245000 step=7 leases=0 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59246000 step=7 leases=0 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59247000 step=7 leases=0 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59248000 step=7 leases=0 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59249000 step=7 leases=0 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59250000 step=7 leases=0 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59251000 step=7 leases=0 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59252000 step=7 leases=0 pending=0 queue=0 transitions=0
+PASSIVE DEBUG time=59253000 step=7 leases=0 pending=0 queue=0 transitions=0
+PASSIVE GRANT ready id=47059 kind=cold-copy page=4000 gpu=2
+PASSIVE GRANT admit GPU[2].SA[0].L1SAddrTrans id=47059
+PASSIVE GRANT ready id=47801 kind=cold-copy page=2000 gpu=3
+PASSIVE GRANT admit GPU[3].SA[0].L1VAddrTrans[0] id=47801
+PASSIVE GRANT ready id=47155 kind=cold-copy page=4000 gpu=3
+PASSIVE GRANT admit GPU[3].SA[0].L1SAddrTrans id=47155
+PASSIVE GRANT ready id=47917 kind=cold-copy page=2000 gpu=4
+PASSIVE GRANT admit GPU[4].SA[0].L1VAddrTrans[0] id=47917
+PASSIVE GRANT ready id=47308 kind=cold-copy page=4000 gpu=4
+PASSIVE GRANT admit GPU[4].SA[0].L1SAddrTrans id=47308
+PASSIVE GRANT ready id=158049 kind=write-revoke page=3000 gpu=4
+PASSIVE GRANT admit GPU[4].SA[0].L1VAddrTrans[0] id=158049

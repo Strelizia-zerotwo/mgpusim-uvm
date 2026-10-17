@@ -1,0 +1,18 @@
+{
+  "id": "gaussian",
+  "sample": "rodinia_gaussian",
+  "group": "C",
+  "role": "candidate",
+  "profiles": {
+    "smoke": [
+      "-size=32"
+    ],
+    "small": [
+      "-size=64"
+    ]
+  },
+  "arch": "cdna3",
+  "gpu": "mi300x",
+  "verify_kind": "passed",
+  "core_replica": true
+}

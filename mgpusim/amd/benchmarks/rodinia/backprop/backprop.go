@@ -24,7 +24,7 @@ import (
 
 const (
 	blockSz = 256 // 1D block width (matches BLOCK_SZ in the kernel; HW uses 256)
-	tile2D  = 16 // 2D block dim for update_w1 (matches TILE2D in the kernel)
+	tile2D  = 16  // 2D block dim for update_w1 (matches TILE2D in the kernel)
 	lr      = float32(0.1)
 )
 
@@ -136,7 +136,6 @@ func NewBenchmark(driver *driver.Driver) *Benchmark {
 
 	b.driver = driver
 	b.context = b.driver.Init()
-	b.queue = driver.CreateCommandQueue(b.context)
 
 	return b
 }
@@ -168,6 +167,13 @@ func (b *Benchmark) SetUnifiedMemory() {
 	b.useUnifiedMemory = true
 }
 
+// initCommandQueue binds the queue after selecting the actual target.
+// A queue captures its device at creation; later context changes do not rebind it.
+func (b *Benchmark) initCommandQueue() {
+	b.driver.SelectGPU(b.context, b.gpus[0])
+	b.queue = b.driver.CreateCommandQueue(b.context)
+}
+
 // Run runs the benchmark.
 func (b *Benchmark) Run() {
 	if b.Arch != arch.CDNA3 {
@@ -177,7 +183,7 @@ func (b *Benchmark) Run() {
 
 	b.loadProgram()
 
-	b.driver.SelectGPU(b.context, b.gpus[0])
+	b.initCommandQueue()
 	b.initMem()
 	b.exec()
 }

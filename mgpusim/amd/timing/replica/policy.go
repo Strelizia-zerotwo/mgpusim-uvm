@@ -327,6 +327,10 @@ func (s *Session) canReplicate(st *pageState, a Access, writing bool) bool {
 }
 
 func (s *Session) snapshot() {
+	if s.Passive != nil {
+		s.Passive.snapshot()
+		return
+	}
 	var pages, stale uint64
 	s.Stats.VersionedPages = 0
 	for _, p := range s.pages {
