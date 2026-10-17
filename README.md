@@ -83,4 +83,4 @@ python3 benchmark/replica-recovery/run.py
 
 ## 所有者放置与修复选择 v3
 
-页面复制实验现默认按分区所有者做初始物理放置，并检查页对齐配置的远端写为0。新增i1-full-stale、i1-adaptive及包含INV的整次应用oracle选择。操作、配置和实际halo占比见docs/replica-implementation.md、docs/INV-配置单.md、docs/I1-配置单.md、docs/replica-validation.md。v2文档归档在docs/archive/replica-review-v2；旧布局结果保留用于回归，不能混作当前所有者基线。
+页面复制实验现默认按分区所有者做初始物理放置，并检查页对齐配置的远端写为0。新增i1-full-stale、i1-adaptive及包含INV的整次应用oracle选择。操作、配置和实际halo占比见docs/replica-implementation.md、docs/INV-配置单.md、docs/I1-配置单.md、docs/replica-validation.md。v2文档归档在docs/archive/replica-review-v2；旧布局结果保留用于回归，不能混作当前所有者基线
