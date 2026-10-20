@@ -1,5 +1,0 @@
-{
-  "summarized_at": "2026-10-16T22:39:56.648875+08:00",
-  "runner_sha256": "9ce553366c449348adf6f1b02fc2018168148a1a95d1bd4271ac87f106d6f871",
-  "activity_basis": "sum of retired cu_inst_count by physical GPU; empty launches do not establish activity"
-}

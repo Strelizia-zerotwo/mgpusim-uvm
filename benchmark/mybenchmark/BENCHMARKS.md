@@ -117,3 +117,6 @@ rodinia、polybench 都需要加 `-arch cdna3 -gpu mi300x`。
    - 一次修复合并的写阶段数
    - 重读距离（隔了几个阶段）
    - 旧副本占用的显存（stale retained 的峰值相对 footprint）
+
+
+2026-10-19 推荐规模入口已增加：`python3 runs/run_recommended.py`，默认第一档BFS/FW/gaussian/lud，可选择第二档gramschmidt/C2D/NW和目标规模。完整参数与NW验证边界见 [RECOMMENDED.md](RECOMMENDED.md)。

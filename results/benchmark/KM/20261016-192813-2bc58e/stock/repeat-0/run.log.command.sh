@@ -1,1 +1,0 @@
-/home/only/projects/mgpusim-uvm/results/benchmark/_suites/20261016-192813-2bc58e/bin/kmeans -timing -disable-rtm -use-unified-memory -report-all -verify -arch=gcn3 -gpu=r9nano -metric-file-name=metrics -vm-mode=shared -unified-gpus=1,2,3,4 -points=1024 -features=8 -clusters=4 -max-iter=2

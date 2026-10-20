@@ -1,1 +1,0 @@
-env LC_ALL=C GODEBUG=randautoseed=0,randseednop=0 /usr/local/go/bin/go build -p 2 -o /home/only/projects/mgpusim-uvm/results/benchmark/_suites/20261017-222048-f3f5e8/bin/rodinia_lud ./amd/samples/rodinia_lud

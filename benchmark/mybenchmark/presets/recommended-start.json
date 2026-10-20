@@ -1,0 +1,36 @@
+{
+  "name": "recommended-start",
+  "provenance": "user recommendations on 2026-10-19; target sizes are not a verified paper reproduction",
+  "benchmarks": {
+    "BFS": [
+      "-node=262144",
+      "-degree=8",
+      "-depth=0"
+    ],
+    "FW": [
+      "-node=256",
+      "-iter=256"
+    ],
+    "gaussian": [
+      "-size=512"
+    ],
+    "lud": [
+      "-size=512"
+    ],
+    "gramschmidt": [
+      "-m=2048",
+      "-n=128"
+    ],
+    "C2D": [
+      "-N=16",
+      "-C=8",
+      "-H=64",
+      "-W=64",
+      "-output-channel=16",
+      "-enable-backward"
+    ],
+    "NW": [
+      "-length=2048"
+    ]
+  }
+}

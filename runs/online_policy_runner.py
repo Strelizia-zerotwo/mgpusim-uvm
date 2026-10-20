@@ -91,7 +91,9 @@ def run_online(b,a,suite,run,api):
             r.update(api['execute'](common+['-page-bytes='+str(page),'-core-replica-config='+str(config)],directory,a.timeout))
             if r['status']=='OK':
               try:
-                s,fields=collect_online(directory,old,a.gpu_ids,api);r.update(fields)
+                s,fields=collect_online(directory,old,a.gpu_ids,api)
+                if b['id']=='FW' and s['kernel_count']!=r['fw_requested_passes']:raise RuntimeError('FW actual pass count differs from requested scope')
+                r.update(fields)
                 s.update(case=name,repeat=repeat);completed.append(s)
               except Exception as exc:r.update(status='VALIDATION_FAILED',verification='FAILED_OR_INCOMPLETE',reason=str(exc))
             else:r['reason']='see run.log; failed timing excluded'

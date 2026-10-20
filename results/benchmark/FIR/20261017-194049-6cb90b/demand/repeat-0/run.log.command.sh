@@ -1,1 +1,0 @@
-env LC_ALL=C GODEBUG=randautoseed=0,randseednop=0 /home/only/projects/mgpusim-uvm/results/benchmark/_suites/20261017-194049-6cb90b/bin/fir -timing -disable-rtm -use-unified-memory -report-all -verify -arch=gcn3 -gpu=r9nano -metric-file-name=metrics -vm-mode=demand -gpus=1,2,3,4 -length=4096 -taps=16

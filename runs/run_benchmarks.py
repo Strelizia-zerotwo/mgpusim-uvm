@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parents[1]
 POLICIES = 'norep,inv,delta,delta-sub,retain,i1-no-s3,i1,i1-full-stale,i1-adaptive'.split(',')
 DEFAULT_POLICIES = ['inv','delta','delta-sub']
 EXTRA = ['i1-write-prefetch', 'i2', 'infinity']
-COLUMNS = ['benchmark', 'profile', 'mode', 'policy', 'page_bytes', 'protocol', 'arch', 'gpu', 'repeat', 'link_ns', 'fault_ns', 'bandwidth_gbs', 'replica_pages_per_gpu', 'status', 'verification', 'application_us', 'kernel_us', 'host_transfer_us', 'barrier_us', 'recovery_us', 'speedup_vs_inv', 'saving_percent_vs_inv', 'cold_copies', 'refills', 'repairs', 'copy_faults', 'copy_bytes', 'charged_bytes', 'charged_fixed_us', 'invalidations', 'peak_replica_bytes', 'peak_stale_bytes', 'peak_retained_frames', 'peak_stale_retained_frames', 'peak_retained_bytes', 'peak_stale_retained_bytes', 'peak_backend_pinned_frames', 'intrakernel_refills', 'intrakernel_repairs', 'clean_replica_reads_during_write', 'write_after_repair', 'in_kernel_copy_service_us', 'in_kernel_cache_control_us', 'functional_read_corrections', 'write_transitions', 'stale_read_sectors', 'fallback_home_reads', 'mapping_faults', 'concurrent_repairs_high_water', 'repair_bytes', 'repair_events', 'active_gpus', 'instructions_by_gpu', 'gpu_activity_ok', 'kernel_count', 'epochs', 'non_owner_write_transactions', 'wall_s', 'peak_rss_kib', 'sanity_warnings', 'reason', 'directory']
+COLUMNS = ['benchmark', 'profile', 'input_sha256', 'input_flags', 'external_input_sha256', 'fw_requested_nodes', 'fw_requested_passes', 'fw_complete_apsp', 'mode', 'policy', 'page_bytes', 'protocol', 'arch', 'gpu', 'repeat', 'link_ns', 'fault_ns', 'bandwidth_gbs', 'replica_pages_per_gpu', 'status', 'verification', 'application_us', 'kernel_us', 'host_transfer_us', 'barrier_us', 'recovery_us', 'speedup_vs_inv', 'saving_percent_vs_inv', 'cold_copies', 'refills', 'repairs', 'copy_faults', 'copy_bytes', 'charged_bytes', 'charged_fixed_us', 'invalidations', 'peak_replica_bytes', 'peak_stale_bytes', 'peak_retained_frames', 'peak_stale_retained_frames', 'peak_retained_bytes', 'peak_stale_retained_bytes', 'peak_backend_pinned_frames', 'intrakernel_refills', 'intrakernel_repairs', 'clean_replica_reads_during_write', 'write_after_repair', 'in_kernel_copy_service_us', 'in_kernel_cache_control_us', 'functional_read_corrections', 'write_transitions', 'stale_read_sectors', 'fallback_home_reads', 'mapping_faults', 'concurrent_repairs_high_water', 'repair_bytes', 'repair_events', 'active_gpus', 'instructions_by_gpu', 'gpu_activity_ok', 'kernel_count', 'epochs', 'non_owner_write_transactions', 'wall_s', 'peak_rss_kib', 'sanity_warnings', 'reason', 'directory']
 
 
 def dump(p, x):
@@ -159,8 +159,9 @@ def fingerprint(root, out):
             if p.is_file() and p.suffix in ('.go','.mod','.sum','.hsaco','.cl'):
                 names.append(p)
     names += [Path(__file__), root/'benchmark/mybenchmark/catalog.json', root/'runs/screen_opportunities.py',root/'runs/core_policy_runner.py']
-    names += [root/'runs/online_policy_runner.py',root/'runs/validate_kernel_internal.py',root/'runs/run_idea_candidates.py']
+    names += [root/'runs/online_policy_runner.py',root/'runs/validate_kernel_internal.py',root/'runs/run_idea_candidates.py',root/'runs/run_recommended.py']
     names += list((root/'benchmark/replica-recovery/configs').glob('*.json'))
+    names += list((root/'benchmark/mybenchmark/presets').glob('*.json'))
     old_runner = root/'benchmark/replica-recovery/run.py'
     if old_runner.exists(): names.append(old_runner)
     dump(out/'source-sha256.json', {str(p.relative_to(root)):digest(p) for p in sorted(set(names)) if p.exists()})
@@ -196,7 +197,16 @@ def build(args, sample, suite):
 
 
 def base_row(b,args,directory,policy=None,repeat=0):
-    return dict(benchmark=b['id'],profile=args.profile,mode=args.mode,policy=policy,
+    flags=b['profiles'][args.profile]
+    signature=hashlib.sha256(json.dumps([flags,b.get('external_input_sha256')],sort_keys=True).encode()).hexdigest()
+    scope={}
+    if b['id']=='FW':
+        values=dict(f[1:].split('=',1) for f in flags if '=' in f)
+        nodes=int(values.get('node','16'));passes=int(values.get('iter','0'))
+        if passes==0 or passes>nodes:passes=nodes
+        scope=dict(fw_requested_nodes=nodes,fw_requested_passes=passes,fw_complete_apsp=passes==nodes)
+    return dict(**scope,benchmark=b['id'],profile=b.get('input_config_name',args.profile),input_sha256=signature,
+                input_flags=flags,external_input_sha256=b.get('external_input_sha256'),mode=args.mode,policy=policy,
                 repeat=repeat,directory=str(directory),verification='NOT_RUN')
 
 
@@ -363,9 +373,9 @@ def summarize(rows,out):
     bases={}
     for r in rows:
         if r.get('status')=='OK' and r.get('policy')=='inv':
-            bases[(r['benchmark'],r['profile'],r['mode'],r['repeat'],r.get('link_ns'),r.get('fault_ns'),r.get('bandwidth_gbs'),r.get('protocol'),r.get('page_bytes'),r.get('replica_pages_per_gpu'),r.get('arch'),r.get('gpu'))]=r.get('application_us')
+            bases[(r['benchmark'],r['profile'],r['mode'],r['repeat'],r.get('link_ns'),r.get('fault_ns'),r.get('bandwidth_gbs'),r.get('protocol'),r.get('page_bytes'),r.get('replica_pages_per_gpu'),r.get('arch'),r.get('gpu'),r.get('input_sha256'))]=r.get('application_us')
     for r in rows:
-        key=(r['benchmark'],r['profile'],r['mode'],r['repeat'],r.get('link_ns'),r.get('fault_ns'),r.get('bandwidth_gbs'),r.get('protocol'),r.get('page_bytes'),r.get('replica_pages_per_gpu'),r.get('arch'),r.get('gpu'))
+        key=(r['benchmark'],r['profile'],r['mode'],r['repeat'],r.get('link_ns'),r.get('fault_ns'),r.get('bandwidth_gbs'),r.get('protocol'),r.get('page_bytes'),r.get('replica_pages_per_gpu'),r.get('arch'),r.get('gpu'),r.get('input_sha256'))
         base=bases.get(key)
         t=r.get('application_us')
         if r.get('status')=='OK' and base and t:
@@ -391,6 +401,17 @@ def summarize(rows,out):
     for r in rows:
         f=lambda k: f'{r[k]:.4f}' if isinstance(r.get(k),(int,float)) else ''
         lines.append('|'+ '|'.join([r['benchmark'],str(r.get('page_bytes','')),str(r.get('fault_ns','')),str(r.get('link_ns','')),r.get('policy') or '',r['status'],f('application_us'),f('kernel_us'),f('wall_s'),f('speedup_vs_inv'),f('saving_percent_vs_inv')])+'|')
+    inputs={}
+    for r in rows:
+        if r.get('input_flags'):inputs.setdefault((r['benchmark'],r.get('input_sha256')),(r.get('profile',''),r['input_flags'],r))
+    if inputs:
+        lines+=['','|应用|输入配置|实际参数|','|---|---|---|']
+        fw_scopes=[]
+        for (name,_),(profile,flags,row) in inputs.items():
+            lines.append('|'+name+'|'+profile+'|`'+' '.join(flags).replace('|','\\|')+'`|')
+            if name=='FW':
+                fw_scopes+=['','FW：请求 '+str(row.get('fw_requested_passes'))+' / '+str(row.get('fw_requested_nodes'))+' 个 pass；'+('完整 APSP' if row.get('fw_complete_apsp') else '部分 pass，不能标为完整 APSP')+'。']
+        lines+=fw_scopes
     live=[r for r in rows if r.get('protocol')=='kernel-internal-ideal-v3']
     if live:
         lines+=['','|应用|页字节|fault ns|link ns|策略|冷复制|整页 refill|差量 repair|传输字节|失效|保留帧峰值|过期保留帧峰值|',
@@ -413,6 +434,27 @@ def summarize(rows,out):
     (out/'REPORT.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
 
 
+def apply_input_config(catalog,profile,config):
+    if not isinstance(config,dict) or not isinstance(config.get('name'),str) or not config['name']:
+        raise ValueError('expected a nonempty name')
+    inputs=config.get('benchmarks')
+    if not isinstance(inputs,dict):raise ValueError('expected benchmarks mapping')
+    ids={b['id'] for b in catalog}
+    if set(inputs)-ids:raise ValueError('unknown benchmark IDs: '+','.join(sorted(set(inputs)-ids)))
+    for name,flags in inputs.items():
+        if not isinstance(flags,list) or not flags or any(not isinstance(f,str) or not f.startswith('-') for f in flags):
+            raise ValueError('benchmark arguments must be a nonempty list of flag strings: '+name)
+    for b in catalog:
+        if b['id'] in inputs:
+            b['profiles'][profile]=list(inputs[b['id']]);b['input_config_name']=config['name']
+
+
+def apply_bfs_graph(b,profile,path,sha256):
+    flags=[f for f in b['profiles'][profile] if not f.startswith(('-node=','-degree=','-depth=','-load-graph='))]
+    b['profiles'][profile]=flags+['-load-graph='+str(path),'-depth=0']
+    b['external_input_sha256']=sha256
+
+
 def main(argv=None):
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('action',choices=['list','audit','run','summarize'])
@@ -421,6 +463,9 @@ def main(argv=None):
     p.add_argument('--mode',choices=['stock','demand','policy','record'],default='stock')
     p.add_argument('--protocol',choices=['kernel-internal','kernel-barrier'],default='kernel-internal',help='core policy execution; default uses actual in-kernel requests with no future plan')
     p.add_argument('--profile',choices=['smoke','small'],default='smoke')
+    p.add_argument('--input-config',type=Path,help='JSON file with name and benchmark argument lists; overrides selected profile inputs')
+    p.add_argument('--bfs-graph',type=Path,help='real BFS edge-list graph; replaces -node/-degree with -load-graph and unlimited depth')
+    p.add_argument('--lud-size',type=int,help='override LUD matrix size; positive multiple of 16')
     p.add_argument('--include-slow-dnn',action='store_true',help='explicitly enable LeNet/VGG16; skipped by default at user request')
     p.add_argument('--dnn-input',choices=['synthetic','dataset'],default='synthetic',help='explicit deterministic smoke data or real training datasets')
     p.add_argument('--mnist-data-folder',type=Path)
@@ -460,6 +505,12 @@ def main(argv=None):
         any(x not in POLICIES+EXTRA for x in args.policies) or len(set(args.policies))!=len(args.policies)):
         p.error('catalog requires GPUs 1,2,3,4, positive repeats/timeouts, nonnegative budgets and known unique policies')
     catalog=read(args.root/'benchmark/mybenchmark/catalog.json')['benchmarks']
+    if args.input_config:
+        try:
+            config=read(args.input_config.resolve())
+            apply_input_config(catalog,args.profile,config)
+        except (ValueError,KeyError,TypeError,OSError) as exc:
+            p.error('invalid --input-config: '+str(exc))
     if args.action=='summarize':
         if not args.suite:
             p.error('summarize requires --suite')
@@ -499,10 +550,24 @@ def main(argv=None):
         unknown=set(ids)-{b['id'] for b in catalog}
         if unknown:
             p.error('unknown benchmark IDs: '+','.join(sorted(unknown)))
-        selected=[b for b in catalog if b['id'] in ids]
+        if len(ids)!=len(set(ids)):p.error('--bench IDs must be unique')
+        lookup={b['id']:b for b in catalog}
+        selected=[lookup[name] for name in ids]
+    if args.bfs_graph:
+        if not any(b['id']=='BFS' for b in selected):p.error('--bfs-graph requires selecting BFS')
+        graph=args.bfs_graph.resolve()
+        if not graph.is_file():p.error('--bfs-graph file does not exist: '+str(graph))
+        for b in selected:
+            if b['id']=='BFS':
+                apply_bfs_graph(b,args.profile,graph,digest(graph))
+    if args.lud_size is not None:
+        if args.lud_size<=0 or args.lud_size%16:p.error('--lud-size must be a positive multiple of 16')
+        if not any(b['id']=='lud' for b in selected):p.error('--lud-size requires selecting lud')
+        for b in selected:
+            if b['id']=='lud':b['profiles'][args.profile]=['-size='+str(args.lud_size)]
     if args.action=='list' or args.dry_run:
         for b in selected:
-            print(json.dumps(dict(benchmark=b['id'],sample=b['sample'],arch=b['arch'],gpu=b['gpu'],flags=b['profiles'][args.profile],
+            print(json.dumps(dict(benchmark=b['id'],sample=b['sample'],arch=b['arch'],gpu=b['gpu'],profile=b.get('input_config_name',args.profile),flags=b['profiles'][args.profile],
                                   adapter=('core-kernel-internal-ideal-v3' if args.protocol=='kernel-internal' else 'core-kernel-barrier-v1') if b.get('core_replica') and args.mode in ['policy','record'] else b.get('replica'),
                                   blocked=None if b.get('core_replica') and args.mode in ['policy','record'] else b.get('blocked'),
                                   skipped_by_request=b['id'] in ['LeNet','VGG16'] and not args.include_slow_dnn,
@@ -527,6 +592,7 @@ def main(argv=None):
         p.error('Go not found; export PATH=/usr/local/go/bin:/home/only/go/bin:$PATH')
     (suite/'go-version.txt').write_text(subprocess.check_output([go,'version'],text=True))
     fingerprint(args.root,suite)
+    if args.input_config:dump(suite/'input-config.json',config)
     print('SUITE:',suite,flush=True)
     rows=[]
     for b,directory in zip(selected,dirs):

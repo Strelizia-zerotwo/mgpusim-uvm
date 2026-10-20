@@ -1,2 +1,0 @@
-link_ns	fault_ns	bandwidth_gbs	repeat	selected_policy	application_us	inv_application_us	saving_percent
-200	900	300	0	i1-adaptive	143.187	143.187	0.0

@@ -11,3 +11,5 @@
 机制、功能假设与计时范围见 [KERNEL_INTERNAL.md](KERNEL_INTERNAL.md)；运行命令见 [RUNNING.md](RUNNING.md)。本轮验证记录见 [VALIDATION.md](VALIDATION.md)。
 
 新增五个 C 类候选已接入同一理想实验：lud、gaussian、pathfinder、backprop、gramschmidt。它们使用当前仓库已有 CDNA3 内核，并由脚本选择 MI300X。详见 [IDEA_CANDIDATES.md](IDEA_CANDIDATES.md)。本轮未运行应用。
+
+2026-10-19：新增推荐起步/目标预设和分档脚本。FW、NW标记接入kernel内入口；NW有编译内核功能对照和host侧修正，整应用timing未运行。见 [RECOMMENDED.md](RECOMMENDED.md)。

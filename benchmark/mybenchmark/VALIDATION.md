@@ -75,3 +75,31 @@ python3 runs/run_idea_candidates.py --scan --dry-run
 以上通过。五个 benchmark 的新增 Go 测试只构建轻量 driver、选择物理/统一设备、创建队列并加载已嵌入的内核符号，模拟时钟保持0；不执行 GPU 计算。平台测试含已有 MI300X 装配以及显式页大小覆盖测试。
 
 本次没有运行五个应用、smoke 或扫描。实际四卡活动、应用数值正确性、耗时和收益仍由用户运行后验证。输入选择和算法边界见 [IDEA_CANDIDATES.md](IDEA_CANDIDATES.md)。
+
+
+## 2026-10-19 推荐列表脚本追加验证
+
+新增 runs/run_recommended.py、两个输入JSON预设和 runs/test_recommended.py。默认第一档四应用，支持第二档/全部、start/target、真实BFS图、LUD2048与服务参数扫描。FW和NW均通过当前core入口提交实际访存，预设不读取未来访存。
+
+本轮通过：
+
+```bash
+cd /home/only/projects/mgpusim-uvm
+python3 -m unittest discover -s runs -p 'test_*.py' -v
+python3 runs/run_recommended.py --tier all --scale target --scan --dry-run
+
+cd /home/only/projects/mgpusim-uvm/mgpusim
+/usr/local/go/bin/go build -p 2 \
+  ./amd/samples/bfs ./amd/samples/floydwarshall \
+  ./amd/samples/rodinia_gaussian ./amd/samples/rodinia_lud \
+  ./amd/samples/polybench_gramschmidt ./amd/samples/conv2d ./amd/samples/nw
+/usr/local/go/bin/go test -race \
+  ./amd/benchmarks/rodinia/nw ./amd/benchmarks/amdappsdk/floydwarshall \
+  ./amd/timing/replica ./amd/driver/...
+```
+
+Python当前共23项通过，含预设配置、完整/部分FW pass标记、真实图参数互斥与哈希、不同输入基线隔离、七应用21条命令路由。FW包没有独立测试文件，由编译、既有驱动/协议回归和命令检查覆盖。
+
+NW功能测试直接运行已嵌入的GCN3/CDNA3两个内核，与CPU逐格比较64与128长度，涵盖上下两半波前；不是timing应用。另有120B GCN ABI、非法长度和核心分配不再重映射的测试。修正host问题后，这些测试和构建通过；没有运行普通单卡、四卡或2048长度的NW timing实验，不能把旧的整应用失败宣称为已经复现并消除。
+
+本轮无smoke、无推荐规模应用或性能扫描。运行指南与当前验证边界见 [RECOMMENDED.md](RECOMMENDED.md)。

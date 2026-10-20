@@ -15,19 +15,23 @@ import (
 
 // KernelArgs defines kernel arguments for GCN3 architecture
 type KernelArgs struct {
-	Reference          driver.Ptr
-	InputItemSets      driver.Ptr
-	OutputItemSets     driver.Ptr
-	LocalInputItemSets driver.LocalPtr
-	LocalReference     driver.LocalPtr
-	Cols               int32
-	Penalty            int32
-	Blk                int32
-	BlockSize          int32
-	BlockWidth         int32
-	WorkSize           int32
-	OffsetR            int32
-	OffsetC            int32
+	Reference           driver.Ptr
+	InputItemSets       driver.Ptr
+	OutputItemSets      driver.Ptr
+	LocalInputItemSets  driver.LocalPtr
+	LocalReference      driver.LocalPtr
+	Cols                int32
+	Penalty             int32
+	Blk                 int32
+	BlockSize           int32
+	BlockWidth          int32
+	WorkSize            int32
+	OffsetR             int32
+	OffsetC             int32
+	HiddenGlobalOffsetX uint64
+	HiddenGlobalOffsetY uint64
+	HiddenGlobalOffsetZ uint64
+	HiddenReserved      [4]uint64 // Three HiddenNone pointers and the multigrid-sync pointer.
 }
 
 // CDNA3KernelArgs defines kernel arguments for CDNA3 architecture (gfx942)
@@ -103,7 +107,6 @@ func NewBenchmark(driver *driver.Driver) *Benchmark {
 	b := new(Benchmark)
 	b.driver = driver
 	b.context = driver.Init()
-	b.queue = driver.CreateCommandQueue(b.context)
 
 	b.blockSize = 64
 	b.SetLength(256)
@@ -139,6 +142,9 @@ func (b *Benchmark) loadProgram() {
 
 // SetLength sets length
 func (b *Benchmark) SetLength(length int) {
+	if length <= 0 || length%64 != 0 {
+		panic("nw length must be a positive multiple of 64")
+	}
 	b.length = length
 	b.row = length + 1
 	b.col = length + 1
@@ -162,6 +168,7 @@ func (b *Benchmark) SelectGPU(gpuIDs []int) {
 func (b *Benchmark) Run() {
 	b.loadProgram()
 	b.driver.SelectGPU(b.context, b.gpuIDs[0])
+	b.queue = b.driver.CreateCommandQueue(b.context)
 	b.initMem()
 	b.exec()
 }
@@ -177,16 +184,17 @@ func (b *Benchmark) initMem() {
 }
 
 func (b *Benchmark) initData() {
+	rng := rand.New(rand.NewSource(1))
 	b.reference = make([]int32, b.row*b.col)
 	b.inputItemSets = make([]int32, b.row*b.col)
 	b.outputItemSets = make([]int32, b.row*b.col)
 
 	for i := 0; i < b.row; i++ {
-		b.inputItemSets[i*b.col] = int32(rand.Int()%10 + 1)
+		b.inputItemSets[i*b.col] = int32(rng.Intn(10) + 1)
 	}
 
 	for i := 0; i < b.col; i++ {
-		b.inputItemSets[i] = int32(rand.Int()%10 + 1)
+		b.inputItemSets[i] = int32(rng.Intn(10) + 1)
 	}
 
 	for i := 0; i < b.col; i++ {
@@ -210,9 +218,11 @@ func (b *Benchmark) allocateGPUMem() {
 	b.dInputItemSets = b.allocate(uint64(b.col * b.row * 4))
 	b.dOutputItemSets = b.allocate(uint64(b.col * b.row * 4))
 	b.dReference = b.allocate(uint64(b.col * b.row * 4))
-	b.driver.Distribute(b.context, b.dInputItemSets, uint64(b.col*b.row*4), b.gpuIDs)
-	b.driver.Distribute(b.context, b.dOutputItemSets, uint64(b.col*b.row*4), b.gpuIDs)
-	b.driver.Distribute(b.context, b.dReference, uint64(b.col*b.row*4), b.gpuIDs)
+	if b.driver.ReplicaHooks == nil {
+		b.driver.Distribute(b.context, b.dInputItemSets, uint64(b.col*b.row*4), b.gpuIDs)
+		b.driver.Distribute(b.context, b.dOutputItemSets, uint64(b.col*b.row*4), b.gpuIDs)
+		b.driver.Distribute(b.context, b.dReference, uint64(b.col*b.row*4), b.gpuIDs)
+	}
 }
 
 func (b *Benchmark) allocate(byteSize uint64) driver.Ptr {
@@ -345,6 +355,7 @@ func (b *Benchmark) Verify() {
 			}
 		}
 	}
+	log.Printf("Passed!")
 }
 
 func (b *Benchmark) cpuNW() {

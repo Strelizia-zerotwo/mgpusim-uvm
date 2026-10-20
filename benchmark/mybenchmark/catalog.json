@@ -388,7 +388,8 @@
           "iterations": 16
         }
       },
-      "verify_kind": "passed"
+      "verify_kind": "passed",
+      "core_replica": true
     },
     {
       "id": "AES",
@@ -631,6 +632,24 @@
       "arch": "gcn3",
       "gpu": "r9nano",
       "verify_kind": "passed"
+    },
+    {
+      "id": "NW",
+      "sample": "nw",
+      "group": "C",
+      "role": "candidate",
+      "arch": "gcn3",
+      "gpu": "r9nano",
+      "verify_kind": "passed",
+      "core_replica": true,
+      "profiles": {
+        "smoke": [
+          "-length=256"
+        ],
+        "small": [
+          "-length=256"
+        ]
+      }
     }
   ]
 }

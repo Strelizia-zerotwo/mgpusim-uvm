@@ -84,3 +84,6 @@ python3 runs/run_idea_candidates.py --scan --timeout 1800
 ```
 
 架构、源码位置、输入大小、四卡划分与算法边界见 [IDEA_CANDIDATES.md](IDEA_CANDIDATES.md)。专用脚本默认 small，不改变核心名录；本轮没有执行它们。
+
+
+2026-10-19 推荐规模入口已增加：`python3 runs/run_recommended.py`，默认第一档BFS/FW/gaussian/lud，可选择第二档gramschmidt/C2D/NW和目标规模。完整参数与NW验证边界见 [RECOMMENDED.md](RECOMMENDED.md)。

@@ -1,8 +1,0 @@
-{
-  "status": "PASS",
-  "scope": "explicit annotation selects home reads for written pages; no new atomic instruction semantics",
-  "copy_bytes": 12288,
-  "write_transitions": 0,
-  "stale_read_sectors": 0,
-  "clean_replica_reads_during_write": 0
-}
