@@ -97,3 +97,8 @@ python3 runs/build_cuda_ports.py
 ## 2026-10-23修正
 
 首次timing运行暴露LLVM寄存器资源符号缺失：已修复SGPR分配，内核指令字节完全相同。新增资源契约回归测试。所有新构建的ideal实验还会保存 `progress.jsonl`、kernel开始/结束日志及停止引擎时的原生栈诊断。命令和证据边界见 [../DIAGNOSING.md](../DIAGNOSING.md)。此前PROCESS_FAILED记录没有有效应用时间，不能纳入收益。
+
+
+## 2026-10-23：独立的 -2 版本
+
+新增 SSSP-2、CC-2、COLOR-2、MIS-2、EMBEDDING-2，旧五项及其默认入口保留。新入口为 `python3 runs/run_cuda_ports2.py`；实现边界、默认规模及新旧对照命令见 [V2.md](V2.md)。

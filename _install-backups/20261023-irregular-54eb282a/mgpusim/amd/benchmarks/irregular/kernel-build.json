@@ -1,0 +1,140 @@
+{
+  "target": "gfx942",
+  "source_sha256": "fd748db29c64baefc692261990d6a27086751571b14b4c7dcc9dac7d0ba96ee9",
+  "binary_sha256": "1c997c9dc4c229a1310adfdcccb82245e3d19f254b4c264ede25acfdb0695fb9",
+  "tools": {
+    "clang": "Ubuntu clang version 18.1.3 (1ubuntu1)",
+    "lld": "Ubuntu LLD 18.1.3 (compatible with GNU linkers)"
+  },
+  "flags": [
+    "-target",
+    "amdgcn-amd-amdhsa",
+    "-mcpu=gfx942",
+    "-x",
+    "cl",
+    "-cl-std=CL2.0",
+    "-nogpulib",
+    "-O2",
+    "-mcode-object-version=4",
+    "-ffp-contract=off"
+  ],
+  "register_resources": {
+    "scc_trim": {
+      "numbered_sgpr": 28,
+      "num_vgpr": 16
+    },
+    "scc_seed": {
+      "numbered_sgpr": 6,
+      "num_vgpr": 6
+    },
+    "scc_reach": {
+      "numbered_sgpr": 26,
+      "num_vgpr": 14
+    },
+    "scc_assign": {
+      "numbered_sgpr": 10,
+      "num_vgpr": 6
+    },
+    "scc_pivot": {
+      "numbered_sgpr": 8,
+      "num_vgpr": 6
+    },
+    "ppr_filter": {
+      "numbered_sgpr": 12,
+      "num_vgpr": 7
+    },
+    "ppr_advance": {
+      "numbered_sgpr": 16,
+      "num_vgpr": 18
+    },
+    "ppr_copy": {
+      "numbered_sgpr": 14,
+      "num_vgpr": 6
+    },
+    "symgs": {
+      "numbered_sgpr": 14,
+      "num_vgpr": 14
+    },
+    "label_propagation": {
+      "numbered_sgpr": 22,
+      "num_vgpr": 19
+    },
+    "points_to": {
+      "numbered_sgpr": 36,
+      "num_vgpr": 20
+    },
+    "louvain_degree": {
+      "numbered_sgpr": 8,
+      "num_vgpr": 10
+    },
+    "louvain_totals": {
+      "numbered_sgpr": 9,
+      "num_vgpr": 6
+    },
+    "louvain_propose": {
+      "numbered_sgpr": 24,
+      "num_vgpr": 28
+    },
+    "louvain_select": {
+      "numbered_sgpr": 24,
+      "num_vgpr": 10
+    },
+    "louvain_apply": {
+      "numbered_sgpr": 4,
+      "num_vgpr": 4
+    },
+    "louvain_compact": {
+      "numbered_sgpr": 22,
+      "num_vgpr": 5
+    },
+    "louvain_membership": {
+      "numbered_sgpr": 8,
+      "num_vgpr": 6
+    },
+    "louvain_edges": {
+      "numbered_sgpr": 16,
+      "num_vgpr": 10
+    },
+    "louvain_sort": {
+      "numbered_sgpr": 8,
+      "num_vgpr": 9
+    },
+    "louvain_csr": {
+      "numbered_sgpr": 14,
+      "num_vgpr": 8
+    },
+    "mesh_cavity": {
+      "numbered_sgpr": 14,
+      "num_vgpr": 22
+    },
+    "mesh_boundary": {
+      "numbered_sgpr": 35,
+      "num_vgpr": 10
+    },
+    "mesh_count": {
+      "numbered_sgpr": 8,
+      "num_vgpr": 4
+    },
+    "mesh_rank": {
+      "numbered_sgpr": 12,
+      "num_vgpr": 6
+    },
+    "mesh_clear": {
+      "numbered_sgpr": 4,
+      "num_vgpr": 4
+    },
+    "mesh_rebuild": {
+      "numbered_sgpr": 12,
+      "num_vgpr": 6
+    },
+    "mesh_select": {
+      "numbered_sgpr": 14,
+      "num_vgpr": 14
+    },
+    "mesh_centroid": {
+      "numbered_sgpr": 10,
+      "num_vgpr": 10
+    }
+  },
+  "resource_contract": "ELF numbered_sgpr/num_vgpr symbols for timing allocation"
+}

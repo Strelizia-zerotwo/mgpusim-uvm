@@ -99,3 +99,14 @@ python3 runs/run_idea_candidates.py --scan --timeout 1800
 ## 2026-10-23：运行失败与卡住诊断
 
 CUDA来源新候选的寄存器资源描述已修正。新构建的ideal应用自动输出kernel边界及每30秒进度，不改变kernel内复制决策。Gaussian、Gramschmidt、C2D可先用独立的小输入诊断，具体命令及 `progress.jsonl` 判读见 [DIAGNOSING.md](DIAGNOSING.md)。Gramschmidt已发现等待停滞，但本轮尚不能宣称该停滞已修复。
+
+
+2026-10-23：新增独立 -2 对照，默认 inv/infinity：`python3 runs/run_cuda_ports2.py --bench COLOR-2,MIS-2`。旧入口仍默认原五项，也接受新旧混合选择。完整说明见 [cuda-ports/V2.md](cuda-ports/V2.md)。
+
+
+2026-10-23：六应用四策略统一入口 `python3 runs/run_delta.py`，默认 `SSSP-2,CC-2,COLOR-2,MIS-2,EMBEDDING-2,NW` × `inv,delta,delta-sub,infinity`。输入与已完成实验对齐，NW使用length=2048。教程见 [DELTA.md](DELTA.md)。
+
+
+## 2026-10-23：七项新增算法级适配
+
+独立入口 `python3 runs/run_irregular.py`，默认 `SCC,PPR,SYMGS,PTA,LP,LOUVAIN,DMR` × `inv,infinity,delta,delta-sub`。建议先运行 `--bench SCC,PPR,SYMGS`。完整命令与起步规模见 [irregular/README.md](irregular/README.md)，各项读写结构及替代实现见 [irregular/FIDELITY.md](irregular/FIDELITY.md)。LP 是按颜色调度的原地版本；DMR 是面积细化，不等同于 Lonestar Chew 版本。当前已通过功能测试和构建，未运行时序实验。

@@ -1,0 +1,234 @@
+{
+  "backup": "/home/only/projects/mgpusim-uvm/_install-backups/20261023-irregular-final-04833392",
+  "files": [
+    {
+      "path": "mgpusim/amd/benchmarks/irregular/algorithm_test.go",
+      "old_sha256": "1235526a9ccced20ad58ad18484b3dcda24291ce31c22e9943b719a203539280",
+      "new_sha256": "44d67e67237f523f1abc9b11497c48ad2c16f1f6eb51e187a1bb7027b4f143e2"
+    },
+    {
+      "path": "mgpusim/amd/benchmarks/irregular/benchmark.go",
+      "old_sha256": "5e68599cd6d6013b663e34b69219d4e705ce4fbfaa88714383f85164e6b0c3c0",
+      "new_sha256": "fbb8a53ae121e5f1b104689dddc5eb69ef39ccdc3c555452d348716d2b688c13"
+    },
+    {
+      "path": "mgpusim/amd/benchmarks/irregular/colored.go",
+      "old_sha256": "44f4407e939e77eb60cfd3d9283fc7197b222b9a98d1628c87cf27116f0a1dc7",
+      "new_sha256": "ad8a25ba14662e554ac2543f6d610bfd27f6fac68fed095ebc719dcc9f0824bf"
+    },
+    {
+      "path": "mgpusim/amd/benchmarks/irregular/graph.go",
+      "old_sha256": "dc34c91be0fcd25426b340ea73f7a3712d9ec9e9b67510b64a2068675c1b6681",
+      "new_sha256": "dc34c91be0fcd25426b340ea73f7a3712d9ec9e9b67510b64a2068675c1b6681"
+    },
+    {
+      "path": "mgpusim/amd/benchmarks/irregular/harness_test.go",
+      "old_sha256": "5eea2ed4365fea08a73326c8d9de9a7095ea7613e36465f267bfe83b9ac795be",
+      "new_sha256": "5eea2ed4365fea08a73326c8d9de9a7095ea7613e36465f267bfe83b9ac795be"
+    },
+    {
+      "path": "mgpusim/amd/benchmarks/irregular/kernel-build.json",
+      "old_sha256": "d6e9bc55710a202754dbc8ec1e0aa364a50a18f2e0c250d47ad1eff51f90384d",
+      "new_sha256": "b5dbef4b2b4cc2d9cca3fa3595da3382d0611a98bebeb11050278febaaac9494"
+    },
+    {
+      "path": "mgpusim/amd/benchmarks/irregular/kernels_gfx942.hsaco",
+      "old_sha256": "38c891be3a0f7ecd414df1f6b5b08e70497a284c62ef4f88430068ea362383a3",
+      "new_sha256": "f3b94c59078fbbd0eb7e8d2cdcc0504d521302ebb7da15d5313836745fac06aa"
+    },
+    {
+      "path": "mgpusim/amd/benchmarks/irregular/louvain.go",
+      "old_sha256": "9c754c5320e20efe02159449149a165c6fae3c1af3db5d02c9e7372cf613510f",
+      "new_sha256": "9c754c5320e20efe02159449149a165c6fae3c1af3db5d02c9e7372cf613510f"
+    },
+    {
+      "path": "mgpusim/amd/benchmarks/irregular/mesh.go",
+      "old_sha256": "d829342933a365f08eb2b681a0afe06af1b84996e692e9a5327d8f5338e8a86b",
+      "new_sha256": "d829342933a365f08eb2b681a0afe06af1b84996e692e9a5327d8f5338e8a86b"
+    },
+    {
+      "path": "mgpusim/amd/benchmarks/irregular/ppr.go",
+      "old_sha256": "5c4bb8e46aa1bd82c7c776a19e7b8daa198868efdfc1ff99ba60e2ba31c44bc1",
+      "new_sha256": "9021f24afc47b4cb6a06b5f62b094cda74978334fdaaaf74bc453c32ed725939"
+    },
+    {
+      "path": "mgpusim/amd/benchmarks/irregular/pta.go",
+      "old_sha256": "d2672d4ba943dedf7f32f2730654e3cacec92c7326d50a172550d826f35add34",
+      "new_sha256": "d2672d4ba943dedf7f32f2730654e3cacec92c7326d50a172550d826f35add34"
+    },
+    {
+      "path": "mgpusim/amd/benchmarks/irregular/scc.go",
+      "old_sha256": "bfd3b986a649f014c19eac783f0d813fc5f7c5482617f75435d4f5ba11f9daed",
+      "new_sha256": "d8271fd0f76780c8019c878a25a8a87716c41a7bfb4baa8e4a5fb3e918ffc548"
+    },
+    {
+      "path": "mgpusim/amd/benchmarks/irregular/native/kernels.cl",
+      "old_sha256": "f38628f9b28b3d10a2bc7f41ec9b987eece0eb12dad4ea1295cc77d1f52c108d",
+      "new_sha256": "68f36102d0a472dac0c931a0f3a370b21ce350a949a51bf9d5f9bedc82111719"
+    },
+    {
+      "path": "mgpusim/amd/samples/irregularcommon/main.go",
+      "old_sha256": "9e568a5850c14b08ab96f15c38af74ad096a7b0ba7358ec457ae11f875b6e20f",
+      "new_sha256": "9e568a5850c14b08ab96f15c38af74ad096a7b0ba7358ec457ae11f875b6e20f"
+    },
+    {
+      "path": "mgpusim/amd/samples/irregular_scc/main.go",
+      "old_sha256": "a76bcba1bb91dd85aeea811519009072a495ee1d95b85026fdb7f7d8390fdede",
+      "new_sha256": "a76bcba1bb91dd85aeea811519009072a495ee1d95b85026fdb7f7d8390fdede"
+    },
+    {
+      "path": "mgpusim/amd/samples/irregular_ppr/main.go",
+      "old_sha256": "bda1c61a80f978c2f19123d45c5e8ff209c372bf4cc8594c12c5f04904fdeb53",
+      "new_sha256": "bda1c61a80f978c2f19123d45c5e8ff209c372bf4cc8594c12c5f04904fdeb53"
+    },
+    {
+      "path": "mgpusim/amd/samples/irregular_symgs/main.go",
+      "old_sha256": "580b0e47cfa060ca56f7401398f862b42a6909b7254d85d3c2cb1470f28546bc",
+      "new_sha256": "580b0e47cfa060ca56f7401398f862b42a6909b7254d85d3c2cb1470f28546bc"
+    },
+    {
+      "path": "mgpusim/amd/samples/irregular_pta/main.go",
+      "old_sha256": "ae0fe6e08d2418d7528921ae211c847faf2dd884c43ec888ebf9464fa74b413d",
+      "new_sha256": "ae0fe6e08d2418d7528921ae211c847faf2dd884c43ec888ebf9464fa74b413d"
+    },
+    {
+      "path": "mgpusim/amd/samples/irregular_lp/main.go",
+      "old_sha256": "de86491f76e6bf10511c9dba658a0a768c88c1a1fae595fa6fcae82f79e0d0e9",
+      "new_sha256": "de86491f76e6bf10511c9dba658a0a768c88c1a1fae595fa6fcae82f79e0d0e9"
+    },
+    {
+      "path": "mgpusim/amd/samples/irregular_louvain/main.go",
+      "old_sha256": "c47f9a0dc7e735dfda9a07f0cce8d0899f82d3801431ba802d3944f7d68035bb",
+      "new_sha256": "c47f9a0dc7e735dfda9a07f0cce8d0899f82d3801431ba802d3944f7d68035bb"
+    },
+    {
+      "path": "mgpusim/amd/samples/irregular_dmr/main.go",
+      "old_sha256": "1c8e5ba2b74cb2c7e11b431c4e8c91951aff08cb104d9a9dd09ef1204ce17438",
+      "new_sha256": "1c8e5ba2b74cb2c7e11b431c4e8c91951aff08cb104d9a9dd09ef1204ce17438"
+    },
+    {
+      "path": "runs/build_irregular.py",
+      "old_sha256": "b09d6bbf3435a4cd26989eeed50e632e9bbde33aed411e2c8e8c2107259573d0",
+      "new_sha256": "b09d6bbf3435a4cd26989eeed50e632e9bbde33aed411e2c8e8c2107259573d0"
+    },
+    {
+      "path": "runs/run_irregular.py",
+      "old_sha256": null,
+      "new_sha256": "7618e0127da46f85fd76e6ab34369f1f53d0dbbca9c7c381efbaf28856c2b880"
+    },
+    {
+      "path": "runs/test_irregular.py",
+      "old_sha256": null,
+      "new_sha256": "501e597edc6d4a81a8f67e77c5e462d1d25c50588395df5ccb89e9e58cfeabd3"
+    },
+    {
+      "path": "runs/online_policy_runner.py",
+      "old_sha256": "9cac46a419225ef56ac796f58a26e220a9cf28869cbbd1580c8e37b6c67158b6",
+      "new_sha256": "f485e6deb3d868661ea5de7626ead9c4976a22398db77cb3538bd118c0b5eb94"
+    },
+    {
+      "path": "runs/run_benchmarks.py",
+      "old_sha256": "9d10c0549f57422b33ac10d8acb4eb86627df9ea5be38ce42f00efd997c56949",
+      "new_sha256": "d07d0d15a3904ea97abb21c459b7610b33c3130710fd44409865fe473126abe8"
+    },
+    {
+      "path": "benchmark/mybenchmark/irregular/FIDELITY.md",
+      "old_sha256": null,
+      "new_sha256": "734e1ddd4e75e4774d753224ba8f342e29c0730c880aab168309415022e05cc1"
+    },
+    {
+      "path": "benchmark/mybenchmark/irregular/README.md",
+      "old_sha256": null,
+      "new_sha256": "9ebe059f9a7c96cb5825492e2719f1ab995360c713aee89d384d89a87c9cc97a"
+    },
+    {
+      "path": "benchmark/mybenchmark/irregular/SOURCES.json",
+      "old_sha256": null,
+      "new_sha256": "974358f731406095d307fa4cd540ad46de7e364eb3f6d45a9388285fdd5a1b0d"
+    },
+    {
+      "path": "benchmark/mybenchmark/irregular/upstream/DMR.cu",
+      "old_sha256": null,
+      "new_sha256": "987c23be57cce9cf955fd7329b27576a1273a4df0cc0a804a851542884ea416d"
+    },
+    {
+      "path": "benchmark/mybenchmark/irregular/upstream/galois-LICENSE.txt",
+      "old_sha256": null,
+      "new_sha256": "812ef33f2d6f05048513c4550568b0702e70d599391289620b246065203a96ad"
+    },
+    {
+      "path": "benchmark/mybenchmark/irregular/upstream/gardenia-LICENSE",
+      "old_sha256": null,
+      "new_sha256": "c9d44b4f14367198217d51ff30245d9ad4a6a9b386671beb5e23fc760cf81a76"
+    },
+    {
+      "path": "benchmark/mybenchmark/irregular/upstream/gunrock-main-LICENSE",
+      "old_sha256": null,
+      "new_sha256": "e9b9ac7e692b0501b6639c77c8aae4772084bddda06cfe93895c659a5456645c"
+    },
+    {
+      "path": "benchmark/mybenchmark/irregular/upstream/gunrock-master-LICENSE.TXT",
+      "old_sha256": null,
+      "new_sha256": "3e56877a9e0393fd8c2e72cbc7084388820d06133acfd3984d9ac7647b6c71c4"
+    },
+    {
+      "path": "benchmark/mybenchmark/irregular/upstream/LOUVAIN.cuh",
+      "old_sha256": null,
+      "new_sha256": "726eb5eee622c42a491b27c6b067ffa6b407a44cb8ed30470432863c4cbb3f5f"
+    },
+    {
+      "path": "benchmark/mybenchmark/irregular/upstream/LP.cuh",
+      "old_sha256": null,
+      "new_sha256": "314b46f29fb977bc7ba77067d2caed5786e1348f88502079935855809a372759"
+    },
+    {
+      "path": "benchmark/mybenchmark/irregular/upstream/PPR.hxx",
+      "old_sha256": null,
+      "new_sha256": "71d18d82a12f634c864b267f745fede20b00f0962de0b0d853b63de5509db292"
+    },
+    {
+      "path": "benchmark/mybenchmark/irregular/upstream/PTA.cu",
+      "old_sha256": null,
+      "new_sha256": "e0e2256a2db52558928feecf4bbed5d25283fd5fac54c7bb9fa7495b6718d1b6"
+    },
+    {
+      "path": "benchmark/mybenchmark/irregular/upstream/PTA_DEVICE.cu",
+      "old_sha256": null,
+      "new_sha256": "5c6206248030b1c67dac00326dcd6bc9ee08135d7dc3ebbb02e22a504499f12c"
+    },
+    {
+      "path": "benchmark/mybenchmark/irregular/upstream/SCC.cu",
+      "old_sha256": null,
+      "new_sha256": "2d940be3c1d23c8d2a411d3edd3a9d2e5e228f7a2fa1b3c0edcb4ee92ce0f161"
+    },
+    {
+      "path": "benchmark/mybenchmark/irregular/upstream/SYMGS.cu",
+      "old_sha256": null,
+      "new_sha256": "a837e969608160cddbdb8ca9dc00c6b260afb0271f719ca4dfac90031a754270"
+    },
+    {
+      "path": "benchmark/mybenchmark/catalog.json",
+      "old_sha256": "36833454c19c09b6e44488bf8be45f745802c5473f330d29ed61c0df659518e4",
+      "new_sha256": "9c1fc559dda551eb10acf28ec83a6efb0247537daa6db6fd0ddf67f5ff0181b4"
+    },
+    {
+      "path": "benchmark/mybenchmark/RUNNING.md",
+      "old_sha256": "bf2c69c96354e45bc150b7686efb1848704aee583c25ef238dc45b2e9f91dca2",
+      "new_sha256": "2479c67b2c3ed17365aa2b0446107ee3f0989532cf6b89b328f075ece92c68ca"
+    },
+    {
+      "path": "benchmark/mybenchmark/BENCHMARKS.md",
+      "old_sha256": "e747fa23b7912c3adc95e8917a23c51ea5f48b4030f93472bfd258e6a48f84c8",
+      "new_sha256": "86e03222ed51cab4a5310fd3a20fdebe2a73d8166b8a425b92e7bd52078d5279"
+    },
+    {
+      "path": "benchmark/mybenchmark/IMPLEMENTATION_STATUS.md",
+      "old_sha256": "1677350e2bb8bbae1357b78d7169ab92e832d25c320cbae57e1f34e661884d2d",
+      "new_sha256": "67883b421e0a63eae3fe6c11d14b228371058a0d1a3d2800fedb83cec64c324f"
+    },
+    {
+      "path": "benchmark/mybenchmark/NEW_CANDIDATES.md",
+      "new_sha256": "02661a3b0114ac1ea25212dfd56e99061b2c9cf685aa34db0287530ef9d3fbc6"
+    }
+  ]
+}

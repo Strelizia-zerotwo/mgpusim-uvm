@@ -805,6 +805,369 @@
       "cuda_port": true,
       "source_reference": "benchmark/mybenchmark/cuda-ports/SOURCES.json",
       "implementation": "cuda-derived-research-adaptation-v1"
+    },
+    {
+      "id": "SSSP-2",
+      "sample": "cuda_sssp2",
+      "group": "E",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-node=1024",
+          "-degree=4",
+          "-components=1",
+          "-graph=random",
+          "-seed=42",
+          "-max-rounds=4096"
+        ],
+        "small": [
+          "-node=16384",
+          "-degree=8",
+          "-components=1",
+          "-graph=random",
+          "-seed=42",
+          "-max-rounds=4096"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed",
+      "core_replica": true,
+      "cuda_port": true,
+      "source_reference": "benchmark/mybenchmark/cuda-ports/SOURCES.json",
+      "implementation": "cuda-derived-inplace-grouped-v2",
+      "algorithm_family": "SSSP"
+    },
+    {
+      "id": "CC-2",
+      "sample": "cuda_cc2",
+      "group": "E",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-node=1024",
+          "-degree=4",
+          "-components=4",
+          "-graph=random",
+          "-seed=42",
+          "-max-rounds=4096"
+        ],
+        "small": [
+          "-node=16384",
+          "-degree=8",
+          "-components=4",
+          "-graph=random",
+          "-seed=42",
+          "-max-rounds=4096"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed",
+      "core_replica": true,
+      "cuda_port": true,
+      "source_reference": "benchmark/mybenchmark/cuda-ports/SOURCES.json",
+      "implementation": "cuda-derived-inplace-grouped-v2",
+      "algorithm_family": "CC"
+    },
+    {
+      "id": "COLOR-2",
+      "sample": "cuda_color2",
+      "group": "E",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-node=1024",
+          "-degree=4",
+          "-components=1",
+          "-graph=random",
+          "-seed=42",
+          "-max-rounds=4096"
+        ],
+        "small": [
+          "-node=16384",
+          "-degree=8",
+          "-components=1",
+          "-graph=random",
+          "-seed=42",
+          "-max-rounds=4096"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed",
+      "core_replica": true,
+      "cuda_port": true,
+      "source_reference": "benchmark/mybenchmark/cuda-ports/SOURCES.json",
+      "implementation": "cuda-derived-inplace-grouped-v2",
+      "algorithm_family": "COLOR"
+    },
+    {
+      "id": "MIS-2",
+      "sample": "cuda_mis2",
+      "group": "E",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-node=1024",
+          "-degree=4",
+          "-components=1",
+          "-graph=random",
+          "-seed=42",
+          "-max-rounds=4096"
+        ],
+        "small": [
+          "-node=16384",
+          "-degree=8",
+          "-components=1",
+          "-graph=random",
+          "-seed=42",
+          "-max-rounds=4096"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed",
+      "core_replica": true,
+      "cuda_port": true,
+      "source_reference": "benchmark/mybenchmark/cuda-ports/SOURCES.json",
+      "implementation": "cuda-derived-inplace-grouped-v2",
+      "algorithm_family": "MIS"
+    },
+    {
+      "id": "EMBEDDING-2",
+      "sample": "cuda_embedding2",
+      "group": "E",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-rows=1024",
+          "-dim=16",
+          "-batch=64",
+          "-batches=2",
+          "-distribution=hotset",
+          "-seed=42"
+        ],
+        "small": [
+          "-rows=8192",
+          "-dim=32",
+          "-batch=128",
+          "-batches=8",
+          "-distribution=hotset",
+          "-seed=42"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed",
+      "core_replica": true,
+      "cuda_port": true,
+      "source_reference": "benchmark/mybenchmark/cuda-ports/SOURCES.json",
+      "implementation": "cuda-derived-inplace-grouped-v2",
+      "algorithm_family": "EMBEDDING"
+    },
+    {
+      "id": "SCC",
+      "sample": "irregular_scc",
+      "group": "F",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-node=1024",
+          "-degree=4",
+          "-components=4",
+          "-seed=42"
+        ],
+        "small": [
+          "-node=4096",
+          "-degree=6",
+          "-components=8",
+          "-seed=42"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed",
+      "core_replica": true,
+      "research_port": true,
+      "source_reference": "benchmark/mybenchmark/irregular/SOURCES.json",
+      "implementation": "irregular-algorithmic-amd-v1",
+      "algorithm_family": "SCC",
+      "fidelity_document": "benchmark/mybenchmark/irregular/FIDELITY.md"
+    },
+    {
+      "id": "PPR",
+      "sample": "irregular_ppr",
+      "group": "F",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-node=1024",
+          "-degree=4",
+          "-epsilon=0.001",
+          "-seed=42"
+        ],
+        "small": [
+          "-node=4096",
+          "-degree=6",
+          "-epsilon=0.0001",
+          "-seed=42"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed",
+      "core_replica": true,
+      "research_port": true,
+      "source_reference": "benchmark/mybenchmark/irregular/SOURCES.json",
+      "implementation": "irregular-algorithmic-amd-v1",
+      "algorithm_family": "PPR",
+      "fidelity_document": "benchmark/mybenchmark/irregular/FIDELITY.md"
+    },
+    {
+      "id": "SYMGS",
+      "sample": "irregular_symgs",
+      "group": "F",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-node=1024",
+          "-degree=4",
+          "-sweeps=2",
+          "-seed=42"
+        ],
+        "small": [
+          "-node=4096",
+          "-degree=6",
+          "-sweeps=4",
+          "-seed=42"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed",
+      "core_replica": true,
+      "research_port": true,
+      "source_reference": "benchmark/mybenchmark/irregular/SOURCES.json",
+      "implementation": "irregular-algorithmic-amd-v1",
+      "algorithm_family": "SYMGS",
+      "fidelity_document": "benchmark/mybenchmark/irregular/FIDELITY.md"
+    },
+    {
+      "id": "PTA",
+      "sample": "irregular_pta",
+      "group": "F",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-node=1024",
+          "-degree=2",
+          "-objects=32",
+          "-stores=8",
+          "-seed=42"
+        ],
+        "small": [
+          "-node=2048",
+          "-degree=2",
+          "-objects=64",
+          "-stores=16",
+          "-seed=42"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed",
+      "core_replica": true,
+      "research_port": true,
+      "source_reference": "benchmark/mybenchmark/irregular/SOURCES.json",
+      "implementation": "irregular-algorithmic-amd-v1",
+      "algorithm_family": "PTA",
+      "fidelity_document": "benchmark/mybenchmark/irregular/FIDELITY.md"
+    },
+    {
+      "id": "LP",
+      "sample": "irregular_lp",
+      "group": "F",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-node=1024",
+          "-degree=4",
+          "-seed=42"
+        ],
+        "small": [
+          "-node=4096",
+          "-degree=6",
+          "-seed=42"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed",
+      "core_replica": true,
+      "research_port": true,
+      "source_reference": "benchmark/mybenchmark/irregular/SOURCES.json",
+      "implementation": "irregular-algorithmic-amd-v1",
+      "algorithm_family": "LP",
+      "fidelity_document": "benchmark/mybenchmark/irregular/FIDELITY.md"
+    },
+    {
+      "id": "LOUVAIN",
+      "sample": "irregular_louvain",
+      "group": "F",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-node=256",
+          "-degree=6",
+          "-components=4",
+          "-seed=42"
+        ],
+        "small": [
+          "-node=512",
+          "-degree=6",
+          "-components=4",
+          "-seed=42"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed",
+      "core_replica": true,
+      "research_port": true,
+      "source_reference": "benchmark/mybenchmark/irregular/SOURCES.json",
+      "implementation": "irregular-algorithmic-amd-v1",
+      "algorithm_family": "LOUVAIN",
+      "fidelity_document": "benchmark/mybenchmark/irregular/FIDELITY.md"
+    },
+    {
+      "id": "DMR",
+      "sample": "irregular_dmr",
+      "group": "F",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-points=8",
+          "-max-area=0.15",
+          "-max-insertions=32",
+          "-seed=42"
+        ],
+        "small": [
+          "-points=16",
+          "-max-area=0.04",
+          "-max-insertions=128",
+          "-seed=42"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed",
+      "core_replica": true,
+      "research_port": true,
+      "source_reference": "benchmark/mybenchmark/irregular/SOURCES.json",
+      "implementation": "irregular-algorithmic-amd-v1",
+      "algorithm_family": "DMR",
+      "fidelity_document": "benchmark/mybenchmark/irregular/FIDELITY.md"
     }
   ]
 }

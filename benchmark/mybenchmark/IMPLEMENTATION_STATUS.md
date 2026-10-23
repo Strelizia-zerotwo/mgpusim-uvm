@@ -17,3 +17,6 @@
 2026-10-22：新增5个CUDA来源研究移植版（SSSP、CC、COLOR、MIS、EMBEDDING），AMD gfx942内核及统一kernel内策略入口。详见 [cuda-ports/README.md](cuda-ports/README.md)。编译内核的功能测试通过；本次未执行应用timing或性能实验。
 
 2026-10-23：修正CUDA来源内核缺少寄存器资源符号导致的timing寄存器重叠，补充回归测试。新增安全进度记录与原生栈诊断；Gramschmidt首kernel等待停滞仍待具体组件定位，未宣称已修复。见 [DIAGNOSING.md](DIAGNOSING.md)。
+
+
+2026-10-23：七个算法级研究适配已接入 kernel 内入口与四策略脚本，独立分组 F。完成编译内核功能测试、42个Python测试、原有策略单元测试、七sample构建/help及4KB/64KB dry-run；未运行正式timing或smoke。LP、DMR及其他结构替代的边界见 [irregular/FIDELITY.md](irregular/FIDELITY.md)。

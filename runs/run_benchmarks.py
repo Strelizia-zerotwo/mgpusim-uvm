@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parents[1]
 POLICIES = 'norep,inv,delta,delta-sub,retain,i1-no-s3,i1,i1-full-stale,i1-adaptive'.split(',')
 DEFAULT_POLICIES = ['inv','infinity']
 EXTRA = ['i1-write-prefetch', 'i2', 'infinity']
-COLUMNS = ['benchmark', 'profile', 'input_sha256', 'input_flags', 'external_input_sha256', 'fw_requested_nodes', 'fw_requested_passes', 'fw_complete_apsp', 'mode', 'policy', 'page_bytes', 'protocol', 'arch', 'gpu', 'repeat', 'link_ns', 'fault_ns', 'bandwidth_gbs', 'replica_pages_per_gpu', 'status', 'verification', 'application_us', 'kernel_us', 'host_transfer_us', 'barrier_us', 'recovery_us', 'speedup_vs_inv', 'saving_percent_vs_inv', 'saving_us_vs_inv', 'cold_copies', 'refills', 'repairs', 'copy_faults', 'copy_bytes', 'charged_bytes', 'charged_fixed_us', 'invalidations', 'peak_replica_bytes', 'peak_stale_bytes', 'peak_retained_frames', 'peak_stale_retained_frames', 'peak_retained_bytes', 'peak_stale_retained_bytes', 'peak_backend_pinned_frames', 'intrakernel_refills', 'intrakernel_repairs', 'clean_replica_reads_during_write', 'write_after_repair', 'in_kernel_copy_service_us', 'in_kernel_cache_control_us', 'functional_read_corrections', 'write_transitions', 'stale_read_sectors', 'fallback_home_reads', 'mapping_faults', 'concurrent_repairs_high_water', 'repair_bytes', 'repair_events', 'active_gpus', 'instructions_by_gpu', 'gpu_activity_ok', 'kernel_count', 'workload_rounds', 'workload_vertices', 'workload_edges', 'workload_rows', 'workload_dim', 'workload_batches', 'input_distribution', 'workload_seed', 'epochs', 'non_owner_write_transactions', 'wall_s', 'peak_rss_kib', 'sanity_warnings', 'reason', 'directory']
+COLUMNS = ['benchmark', 'profile', 'input_sha256', 'input_flags', 'external_input_sha256', 'fw_requested_nodes', 'fw_requested_passes', 'fw_complete_apsp', 'mode', 'policy', 'page_bytes', 'protocol', 'arch', 'gpu', 'repeat', 'link_ns', 'fault_ns', 'bandwidth_gbs', 'replica_pages_per_gpu', 'status', 'verification', 'application_us', 'kernel_us', 'host_transfer_us', 'barrier_us', 'recovery_us', 'speedup_vs_inv', 'saving_percent_vs_inv', 'saving_us_vs_inv', 'cold_copies', 'refills', 'repairs', 'copy_faults', 'copy_bytes', 'charged_bytes', 'charged_fixed_us', 'invalidations', 'peak_replica_bytes', 'peak_stale_bytes', 'peak_retained_frames', 'peak_stale_retained_frames', 'peak_retained_bytes', 'peak_stale_retained_bytes', 'peak_backend_pinned_frames', 'intrakernel_refills', 'intrakernel_repairs', 'clean_replica_reads_during_write', 'write_after_repair', 'in_kernel_copy_service_us', 'in_kernel_cache_control_us', 'functional_read_corrections', 'write_transitions', 'stale_read_sectors', 'fallback_home_reads', 'mapping_faults', 'concurrent_repairs_high_water', 'repair_bytes', 'repair_events', 'active_gpus', 'instructions_by_gpu', 'gpu_activity_ok', 'kernel_count', 'workload_rounds', 'workload_vertices', 'workload_edges', 'workload_rows', 'workload_dim', 'workload_batches', 'input_distribution', 'workload_seed', 'workload_implementation', 'workload_scope', 'workload_update_semantics', 'workload_completion', 'workload_colors', 'workload_levels', 'workload_final_modularity', 'workload_triangles', 'workload_insertions', 'workload_constraints', 'epochs', 'non_owner_write_transactions', 'wall_s', 'peak_rss_kib', 'sanity_warnings', 'reason', 'directory']
 
 
 def dump(p, x):
@@ -159,12 +159,14 @@ def fingerprint(root, out):
             if p.is_file() and p.suffix in ('.go','.mod','.sum','.hsaco','.cl'):
                 names.append(p)
     names += [Path(__file__), root/'benchmark/mybenchmark/catalog.json', root/'runs/screen_opportunities.py',root/'runs/core_policy_runner.py']
-    names += [root/'runs/online_policy_runner.py',root/'runs/validate_kernel_internal.py',root/'runs/run_idea_candidates.py',root/'runs/run_recommended.py',root/'runs/run_infinity.py',root/'runs/run_cuda_ports.py',root/'runs/build_cuda_ports.py',root/'benchmark/mybenchmark/cuda-ports/SOURCES.json',root/'mgpusim/amd/benchmarks/cudaports/kernel-build.json']
+    names += [root/'runs/online_policy_runner.py',root/'runs/validate_kernel_internal.py',root/'runs/run_idea_candidates.py',root/'runs/run_recommended.py',root/'runs/run_infinity.py',root/'runs/run_cuda_ports.py',root/'runs/build_cuda_ports.py',root/'runs/run_cuda_ports2.py',root/'runs/run_delta.py',root/'runs/build_cuda_ports2.py',root/'mgpusim/amd/benchmarks/cudaports2/kernel-build.json',root/'benchmark/mybenchmark/cuda-ports/SOURCES.json',root/'mgpusim/amd/benchmarks/cudaports/kernel-build.json']
+    names += [root/'runs/run_irregular.py',root/'runs/build_irregular.py',root/'mgpusim/amd/benchmarks/irregular/kernel-build.json']
+    names += list((root/'benchmark/mybenchmark/irregular').rglob('*'))
     names += list((root/'benchmark/replica-recovery/configs').glob('*.json'))
     names += list((root/'benchmark/mybenchmark/presets').glob('*.json'))
     old_runner = root/'benchmark/replica-recovery/run.py'
     if old_runner.exists(): names.append(old_runner)
-    dump(out/'source-sha256.json', {str(p.relative_to(root)):digest(p) for p in sorted(set(names)) if p.exists()})
+    dump(out/'source-sha256.json', {str(p.relative_to(root)):digest(p) for p in sorted(set(names)) if p.is_file()})
 
 
 def load_legacy(root):
@@ -438,6 +440,13 @@ def summarize(rows,out):
                 'functional_read_corrections 统计理想功能层替换后端读值的次数；它与过期副本被错误放行不同，详见 KERNEL_INTERNAL.md。',
                 'INV 逻辑上立即释放失效帧；后端在途读为防物理地址重用而暂留的帧，另记 peak_backend_pinned_frames。',
                 '隔离的同一复制事件上 delta 费用不大于 INV，infinity 为零；应用异步调度可能改变事件数与缓存行为，反向次序原样保留并标警告。']
+    scopes={r['benchmark']:r for r in rows if r.get('workload_implementation')=='irregular-algorithmic-amd-v1'}
+    if scopes:
+        lines+=['','新增研究实现的算法范围（非上游访存等价复现，详见 irregular/FIDELITY.md）：','',
+                '|应用|实现|完成标准|算法范围|','|---|---|---|---|']
+        for name,r in scopes.items():
+            values=[name,r.get('workload_implementation',''),r.get('workload_completion',''),r.get('workload_scope','')]
+            lines.append('|'+ '|'.join(str(v or '').replace('|','\\|') for v in values)+'|')
     warnings=[r for r in rows if r.get('sanity_warnings')]
     for r in warnings:
         lines.append('检查提醒：'+r['benchmark']+' / '+str(r.get('page_bytes'))+' / '+str(r.get('policy'))+'：'+r['sanity_warnings'])
@@ -555,7 +564,7 @@ def main(argv=None):
         print(json.dumps(audit(args.root,catalog),indent=2,ensure_ascii=False))
         return 0
     selector=args.bench or 'core'
-    if selector in ['core','A','B','C','E','all']:
+    if selector in ['core','A','B','C','E','F','all']:
         selected=[b for b in catalog if selector=='all' or b['group']==('A' if selector=='core' else selector)]
     else:
         ids=selector.split(',')

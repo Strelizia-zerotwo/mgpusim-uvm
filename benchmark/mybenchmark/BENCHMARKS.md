@@ -124,3 +124,14 @@ rodinia、polybench 都需要加 `-arch cdna3 -gpu mi300x`。
 2026-10-19 推荐规模入口已增加：`python3 runs/run_recommended.py`，默认第一档BFS/FW/gaussian/lud，可选择第二档gramschmidt/C2D/NW和目标规模。完整参数与NW验证边界见 [RECOMMENDED.md](RECOMMENDED.md)。
 
 2026-10-21：复制免费参考入口 `python3 runs/run_infinity.py`，默认 BFS/NW/lud/FW × inv/infinity；教程见 [INFINITY.md](INFINITY.md)。
+
+
+2026-10-23：新增独立 E 类 `SSSP-2、CC-2、COLOR-2、MIS-2、EMBEDDING-2`，保留旧五项。新版本恢复原地状态读写或改用计时 GPU 分组；它们仍是明确标注的研究移植版，不是完整 CUDA 框架。入口 `python3 runs/run_cuda_ports2.py`，详见 [cuda-ports/V2.md](cuda-ports/V2.md)。
+
+
+2026-10-23：`runs/run_delta.py` 将五个 -2 应用与NW统一组织为四策略差量实验，输入配置见 `presets/delta-start.json`，教程见 [DELTA.md](DELTA.md)。
+
+
+## F：七项新增算法级研究适配（2026-10-23）
+
+`SCC,PPR,SYMGS,PTA,LP,LOUVAIN,DMR`，使用 gfx942/CDNA3/MI300X，支持 kernel 内 `inv,infinity,delta,delta-sub`，不计入原来的14个核心集。运行 `python3 runs/run_irregular.py`。它们是有明确差异的算法级适配：LP colored in-place，DMR Delaunay 面积细化而非 Chew 最小角度；PTA/Louvain 数据结构与调度差异也须纳入解释。详见 [运行说明](irregular/README.md) 与 [访存边界](irregular/FIDELITY.md)。

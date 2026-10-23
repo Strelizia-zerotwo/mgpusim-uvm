@@ -1,0 +1,49 @@
+{
+  "name": "delta-start",
+  "provenance": "Same inputs as completed -2 experiments on 2026-10-23; NW length=2048 matches prior recommended-start experiments.",
+  "benchmarks": {
+    "SSSP-2": [
+      "-node=16384",
+      "-degree=8",
+      "-components=1",
+      "-graph=random",
+      "-seed=42",
+      "-max-rounds=4096"
+    ],
+    "CC-2": [
+      "-node=16384",
+      "-degree=8",
+      "-components=4",
+      "-graph=random",
+      "-seed=42",
+      "-max-rounds=4096"
+    ],
+    "COLOR-2": [
+      "-node=16384",
+      "-degree=8",
+      "-components=1",
+      "-graph=random",
+      "-seed=42",
+      "-max-rounds=4096"
+    ],
+    "MIS-2": [
+      "-node=16384",
+      "-degree=8",
+      "-components=1",
+      "-graph=random",
+      "-seed=42",
+      "-max-rounds=4096"
+    ],
+    "EMBEDDING-2": [
+      "-rows=8192",
+      "-dim=32",
+      "-batch=128",
+      "-batches=8",
+      "-distribution=hotset",
+      "-seed=42"
+    ],
+    "NW": [
+      "-length=2048"
+    ]
+  }
+}

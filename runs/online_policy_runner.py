@@ -6,6 +6,15 @@ PROTOCOL='kernel-internal-ideal-v3'
 POLICIES=['inv','delta','delta-sub','infinity']
 
 
+def cuda_workload_metadata(directory, benchmark):
+    metadata=json.loads((directory/'workload.json').read_text(encoding='utf-8'))
+    complete=(metadata.get('completed') is True and (not metadata.get('convergence_required') or metadata.get('converged') is True)) if benchmark.get('research_port') else bool(metadata.get('converged'))
+    if (metadata.get('algorithm')!=benchmark['id'] or not complete or
+        metadata.get('implementation')!=benchmark.get('implementation','cuda-derived-research-adaptation-v1')):
+        raise RuntimeError('CUDA adaptation workload metadata missing or incomplete')
+    return metadata
+
+
 def failure_summary(directory, status, timeout):
     if status=='TIMEOUT':
         return f'host timeout after {timeout}s; inspect progress.jsonl and run.log'
@@ -110,16 +119,18 @@ def run_online(b,a,suite,run,api):
               try:
                 s,fields=collect_online(directory,old,a.gpu_ids,api)
                 if b['id']=='FW' and s['kernel_count']!=r['fw_requested_passes']:raise RuntimeError('FW actual pass count differs from requested scope')
-                if b.get('cuda_port'):
-                    metadata=json.loads((directory/'workload.json').read_text(encoding='utf-8'))
-                    if (metadata.get('algorithm')!=b['id'] or not metadata.get('converged') or
-                        metadata.get('implementation')!='cuda-derived-research-adaptation-v1'):
-                        raise RuntimeError('CUDA adaptation workload metadata missing or incomplete')
+                if b.get('cuda_port') or b.get('research_port'):
+                    metadata=cuda_workload_metadata(directory,b)
                     fields.update(workload_metadata=metadata,workload_rounds=metadata.get('rounds'),
                         workload_vertices=metadata.get('vertices'),workload_edges=metadata.get('directed_edges'),
                         workload_rows=metadata.get('rows'),workload_dim=metadata.get('dimension'),
                         workload_batches=metadata.get('batches'),input_distribution=metadata.get('distribution',metadata.get('graph_kind')),
-                        workload_seed=metadata.get('seed'))
+                        workload_seed=metadata.get('seed'),workload_scope=metadata.get('scope'),
+                        workload_update_semantics=metadata.get('update_semantics'),workload_implementation=metadata.get('implementation'),
+                        workload_completion=metadata.get('completion_criterion','algorithm convergence'),
+                        workload_colors=metadata.get('colors'),workload_levels=metadata.get('levels'),
+                        workload_final_modularity=metadata.get('final_modularity'),workload_triangles=metadata.get('triangles'),
+                        workload_insertions=metadata.get('refinement_insertions'),workload_constraints=metadata.get('constraints_by_kind'))
                 r.update(fields)
                 s.update(case=name,repeat=repeat);completed.append(s)
               except Exception as exc:r.update(status='VALIDATION_FAILED',verification='FAILED_OR_INCOMPLETE',reason=str(exc))

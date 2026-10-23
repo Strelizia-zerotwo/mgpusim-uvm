@@ -1,0 +1,113 @@
+{
+  "format": 1,
+  "implementation": "irregular-algorithmic-amd-v1",
+  "records": [
+    {
+      "algorithm": "SCC",
+      "repository": "https://github.com/chenxuhao/gardenia",
+      "commit": "5894df11cf47f8839945edadff43dc79e260216d",
+      "source_url": "https://github.com/chenxuhao/gardenia/blob/5894df11cf47f8839945edadff43dc79e260216d/src/scc/base.cu",
+      "snapshot": "upstream/SCC.cu",
+      "source_sha256": "2d940be3c1d23c8d2a411d3edd3a9d2e5e228f7a2fa1b3c0edcb4ee92ce0f161",
+      "relationship": "algorithm reference; new AMD implementation, not unchanged framework port"
+    },
+    {
+      "algorithm": "PPR",
+      "repository": "https://github.com/gunrock/gunrock",
+      "commit": "3e43b10a9723e1e73f06ccdcec6488c7c19c3687",
+      "source_url": "https://github.com/gunrock/gunrock/blob/3e43b10a9723e1e73f06ccdcec6488c7c19c3687/include/gunrock/algorithms/ppr.hxx",
+      "snapshot": "upstream/PPR.hxx",
+      "source_sha256": "71d18d82a12f634c864b267f745fede20b00f0962de0b0d853b63de5509db292",
+      "relationship": "algorithm reference; new AMD implementation, not unchanged framework port"
+    },
+    {
+      "algorithm": "SYMGS",
+      "repository": "https://github.com/chenxuhao/gardenia",
+      "commit": "5894df11cf47f8839945edadff43dc79e260216d",
+      "source_url": "https://github.com/chenxuhao/gardenia/blob/5894df11cf47f8839945edadff43dc79e260216d/src/symgs/base.cu",
+      "snapshot": "upstream/SYMGS.cu",
+      "source_sha256": "a837e969608160cddbdb8ca9dc00c6b260afb0271f719ca4dfac90031a754270",
+      "relationship": "algorithm reference; new AMD implementation, not unchanged framework port"
+    },
+    {
+      "algorithm": "PTA",
+      "repository": "https://github.com/IntelligentSoftwareSystems/Galois",
+      "commit": "b67f94206a8c47fd414446621f6633a31c49fd98",
+      "source_url": "https://github.com/IntelligentSoftwareSystems/Galois/blob/b67f94206a8c47fd414446621f6633a31c49fd98/lonestar/analytics/gpu/pointstoanalysis/pta.cu",
+      "snapshot": "upstream/PTA.cu",
+      "source_sha256": "e0e2256a2db52558928feecf4bbed5d25283fd5fac54c7bb9fa7495b6718d1b6",
+      "relationship": "algorithm reference; new AMD implementation, not unchanged framework port"
+    },
+    {
+      "algorithm": "PTA",
+      "repository": "https://github.com/IntelligentSoftwareSystems/Galois",
+      "commit": "b67f94206a8c47fd414446621f6633a31c49fd98",
+      "source_url": "https://github.com/IntelligentSoftwareSystems/Galois/blob/b67f94206a8c47fd414446621f6633a31c49fd98/lonestar/analytics/gpu/pointstoanalysis/andersen.cu",
+      "snapshot": "upstream/PTA_DEVICE.cu",
+      "source_sha256": "5c6206248030b1c67dac00326dcd6bc9ee08135d7dc3ebbb02e22a504499f12c",
+      "relationship": "algorithm reference; new AMD implementation, not unchanged framework port",
+      "reference_part": "device-side implementation"
+    },
+    {
+      "algorithm": "LP",
+      "repository": "https://github.com/gunrock/gunrock",
+      "commit": "386d04450b9ae11097e9789a648042d4d310f199",
+      "source_url": "https://github.com/gunrock/gunrock/blob/386d04450b9ae11097e9789a648042d4d310f199/gunrock/app/lp/lp_enactor.cuh",
+      "snapshot": "upstream/LP.cuh",
+      "source_sha256": "314b46f29fb977bc7ba77067d2caed5786e1348f88502079935855809a372759",
+      "relationship": "algorithm reference; new AMD implementation, not unchanged framework port"
+    },
+    {
+      "algorithm": "LOUVAIN",
+      "repository": "https://github.com/gunrock/gunrock",
+      "commit": "386d04450b9ae11097e9789a648042d4d310f199",
+      "source_url": "https://github.com/gunrock/gunrock/blob/386d04450b9ae11097e9789a648042d4d310f199/gunrock/app/louvain/louvain_enactor.cuh",
+      "snapshot": "upstream/LOUVAIN.cuh",
+      "source_sha256": "726eb5eee622c42a491b27c6b067ffa6b407a44cb8ed30470432863c4cbb3f5f",
+      "relationship": "algorithm reference; new AMD implementation, not unchanged framework port"
+    },
+    {
+      "algorithm": "DMR",
+      "repository": "https://github.com/IntelligentSoftwareSystems/Galois",
+      "commit": "b67f94206a8c47fd414446621f6633a31c49fd98",
+      "source_url": "https://github.com/IntelligentSoftwareSystems/Galois/blob/b67f94206a8c47fd414446621f6633a31c49fd98/lonestar/scientific/gpu/delaunayrefinement/dmr.cu",
+      "snapshot": "upstream/DMR.cu",
+      "source_sha256": "987c23be57cce9cf955fd7329b27576a1273a4df0cc0a804a851542884ea416d",
+      "relationship": "algorithm reference; new AMD implementation, not unchanged framework port"
+    }
+  ],
+  "licenses": [
+    {
+      "repository": "https://github.com/chenxuhao/gardenia",
+      "commit": "5894df11cf47f8839945edadff43dc79e260216d",
+      "url": "https://raw.githubusercontent.com/chenxuhao/gardenia/5894df11cf47f8839945edadff43dc79e260216d/LICENSE",
+      "path": "upstream/gardenia-LICENSE",
+      "sha256": "c9d44b4f14367198217d51ff30245d9ad4a6a9b386671beb5e23fc760cf81a76",
+      "kind": "license/copyright"
+    },
+    {
+      "repository": "https://github.com/gunrock/gunrock",
+      "commit": "3e43b10a9723e1e73f06ccdcec6488c7c19c3687",
+      "url": "https://raw.githubusercontent.com/gunrock/gunrock/3e43b10a9723e1e73f06ccdcec6488c7c19c3687/LICENSE",
+      "path": "upstream/gunrock-main-LICENSE",
+      "sha256": "e9b9ac7e692b0501b6639c77c8aae4772084bddda06cfe93895c659a5456645c",
+      "kind": "license/copyright"
+    },
+    {
+      "repository": "https://github.com/gunrock/gunrock",
+      "commit": "386d04450b9ae11097e9789a648042d4d310f199",
+      "url": "https://raw.githubusercontent.com/gunrock/gunrock/386d04450b9ae11097e9789a648042d4d310f199/LICENSE.TXT",
+      "path": "upstream/gunrock-master-LICENSE.TXT",
+      "sha256": "3e56877a9e0393fd8c2e72cbc7084388820d06133acfd3984d9ac7647b6c71c4",
+      "kind": "license/copyright"
+    },
+    {
+      "repository": "https://github.com/IntelligentSoftwareSystems/Galois",
+      "commit": "b67f94206a8c47fd414446621f6633a31c49fd98",
+      "url": "https://raw.githubusercontent.com/IntelligentSoftwareSystems/Galois/b67f94206a8c47fd414446621f6633a31c49fd98/LICENSE.txt",
+      "path": "upstream/galois-LICENSE.txt",
+      "sha256": "812ef33f2d6f05048513c4550568b0702e70d599391289620b246065203a96ad",
+      "kind": "license/copyright"
+    }
+  ]
+}
