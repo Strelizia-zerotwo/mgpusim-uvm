@@ -21,9 +21,9 @@ import uuid
 
 ROOT = Path(__file__).resolve().parents[1]
 POLICIES = 'norep,inv,delta,delta-sub,retain,i1-no-s3,i1,i1-full-stale,i1-adaptive'.split(',')
-DEFAULT_POLICIES = ['inv','delta','delta-sub']
+DEFAULT_POLICIES = ['inv','infinity']
 EXTRA = ['i1-write-prefetch', 'i2', 'infinity']
-COLUMNS = ['benchmark', 'profile', 'input_sha256', 'input_flags', 'external_input_sha256', 'fw_requested_nodes', 'fw_requested_passes', 'fw_complete_apsp', 'mode', 'policy', 'page_bytes', 'protocol', 'arch', 'gpu', 'repeat', 'link_ns', 'fault_ns', 'bandwidth_gbs', 'replica_pages_per_gpu', 'status', 'verification', 'application_us', 'kernel_us', 'host_transfer_us', 'barrier_us', 'recovery_us', 'speedup_vs_inv', 'saving_percent_vs_inv', 'cold_copies', 'refills', 'repairs', 'copy_faults', 'copy_bytes', 'charged_bytes', 'charged_fixed_us', 'invalidations', 'peak_replica_bytes', 'peak_stale_bytes', 'peak_retained_frames', 'peak_stale_retained_frames', 'peak_retained_bytes', 'peak_stale_retained_bytes', 'peak_backend_pinned_frames', 'intrakernel_refills', 'intrakernel_repairs', 'clean_replica_reads_during_write', 'write_after_repair', 'in_kernel_copy_service_us', 'in_kernel_cache_control_us', 'functional_read_corrections', 'write_transitions', 'stale_read_sectors', 'fallback_home_reads', 'mapping_faults', 'concurrent_repairs_high_water', 'repair_bytes', 'repair_events', 'active_gpus', 'instructions_by_gpu', 'gpu_activity_ok', 'kernel_count', 'epochs', 'non_owner_write_transactions', 'wall_s', 'peak_rss_kib', 'sanity_warnings', 'reason', 'directory']
+COLUMNS = ['benchmark', 'profile', 'input_sha256', 'input_flags', 'external_input_sha256', 'fw_requested_nodes', 'fw_requested_passes', 'fw_complete_apsp', 'mode', 'policy', 'page_bytes', 'protocol', 'arch', 'gpu', 'repeat', 'link_ns', 'fault_ns', 'bandwidth_gbs', 'replica_pages_per_gpu', 'status', 'verification', 'application_us', 'kernel_us', 'host_transfer_us', 'barrier_us', 'recovery_us', 'speedup_vs_inv', 'saving_percent_vs_inv', 'saving_us_vs_inv', 'cold_copies', 'refills', 'repairs', 'copy_faults', 'copy_bytes', 'charged_bytes', 'charged_fixed_us', 'invalidations', 'peak_replica_bytes', 'peak_stale_bytes', 'peak_retained_frames', 'peak_stale_retained_frames', 'peak_retained_bytes', 'peak_stale_retained_bytes', 'peak_backend_pinned_frames', 'intrakernel_refills', 'intrakernel_repairs', 'clean_replica_reads_during_write', 'write_after_repair', 'in_kernel_copy_service_us', 'in_kernel_cache_control_us', 'functional_read_corrections', 'write_transitions', 'stale_read_sectors', 'fallback_home_reads', 'mapping_faults', 'concurrent_repairs_high_water', 'repair_bytes', 'repair_events', 'active_gpus', 'instructions_by_gpu', 'gpu_activity_ok', 'kernel_count', 'workload_rounds', 'workload_vertices', 'workload_edges', 'workload_rows', 'workload_dim', 'workload_batches', 'input_distribution', 'workload_seed', 'epochs', 'non_owner_write_transactions', 'wall_s', 'peak_rss_kib', 'sanity_warnings', 'reason', 'directory']
 
 
 def dump(p, x):
@@ -159,7 +159,7 @@ def fingerprint(root, out):
             if p.is_file() and p.suffix in ('.go','.mod','.sum','.hsaco','.cl'):
                 names.append(p)
     names += [Path(__file__), root/'benchmark/mybenchmark/catalog.json', root/'runs/screen_opportunities.py',root/'runs/core_policy_runner.py']
-    names += [root/'runs/online_policy_runner.py',root/'runs/validate_kernel_internal.py',root/'runs/run_idea_candidates.py',root/'runs/run_recommended.py']
+    names += [root/'runs/online_policy_runner.py',root/'runs/validate_kernel_internal.py',root/'runs/run_idea_candidates.py',root/'runs/run_recommended.py',root/'runs/run_infinity.py',root/'runs/run_cuda_ports.py',root/'runs/build_cuda_ports.py',root/'benchmark/mybenchmark/cuda-ports/SOURCES.json',root/'mgpusim/amd/benchmarks/cudaports/kernel-build.json']
     names += list((root/'benchmark/replica-recovery/configs').glob('*.json'))
     names += list((root/'benchmark/mybenchmark/presets').glob('*.json'))
     old_runner = root/'benchmark/replica-recovery/run.py'
@@ -369,7 +369,7 @@ def policies(b,args,suite,run):
 def summarize(rows,out):
     # Re-summarization must never retain stale speedups for a failed row.
     for r in rows:
-        r.pop('speedup_vs_inv',None);r.pop('saving_percent_vs_inv',None);r.pop('sanity_warnings',None)
+        r.pop('speedup_vs_inv',None);r.pop('saving_percent_vs_inv',None);r.pop('saving_us_vs_inv',None);r.pop('sanity_warnings',None)
     bases={}
     for r in rows:
         if r.get('status')=='OK' and r.get('policy')=='inv':
@@ -379,9 +379,12 @@ def summarize(rows,out):
         base=bases.get(key)
         t=r.get('application_us')
         if r.get('status')=='OK' and base and t:
-            r.update(speedup_vs_inv=base/t,saving_percent_vs_inv=100*(1-t/base))
+            r.update(speedup_vs_inv=base/t,saving_percent_vs_inv=100*(1-t/base),saving_us_vs_inv=base-t)
             if r.get('protocol')=='kernel-internal-ideal-v3' and r.get('policy') in ['delta','infinity'] and t>base:
                 r['sanity_warnings']='application ordering reversed; inspect event counts, overlap, cache state and execution order; timing is not clamped'
+    references=[dict(r) for r in rows if r.get('policy')=='infinity' and r.get('status')=='OK' and 'saving_us_vs_inv' in r]
+    dump(out/'copy-free-reference.json',references)
+    csvwrite(out/'copy-free-reference.tsv',references,COLUMNS)
     dump(out/'summary.json',rows)
     csvwrite(out/'summary.tsv',rows,COLUMNS)
     csvwrite(out/'summary.csv',rows,COLUMNS,',')
@@ -394,13 +397,22 @@ def summarize(rows,out):
         activity_basis='sum of retired cu_inst_count by physical GPU; empty launches do not establish activity'))
     lines=['# 本轮实验结果','',
            'application_us 是模拟应用总时间，kernel_us 已包含请求在 kernel 内等待复制/修复的时间；wall_s 是宿主运行耗时。',
-           'ideal-v3 的失效、版本元数据、缓存维护、在途正确性处理均免费。只给复制/修复收固定 fault 和总字节传输费用。',
+           'ideal-v3 的失效、版本元数据、缓存维护、在途正确性处理均免费。INV/delta/delta-sub 的复制/修复收固定 fault 和总字节传输费用，infinity 的复制/修复全部免费。',
            '失败与超时不计收益；按页大小、协议、链路和固定服务参数分别与 INV 比较。','',
            '|应用|页字节|fault ns|link ns|策略|状态|应用 µs|kernel µs|宿主秒|INV 加速比|节省 %|',
            '|---|---:|---:|---:|---|---|---:|---:|---:|---:|---:|']
     for r in rows:
         f=lambda k: f'{r[k]:.4f}' if isinstance(r.get(k),(int,float)) else ''
         lines.append('|'+ '|'.join([r['benchmark'],str(r.get('page_bytes','')),str(r.get('fault_ns','')),str(r.get('link_ns','')),r.get('policy') or '',r['status'],f('application_us'),f('kernel_us'),f('wall_s'),f('speedup_vs_inv'),f('saving_percent_vs_inv')])+'|')
+    if references:
+        lines+=['','## INV 与复制免费参考','',
+                '|应用|页字节|fault ns|link ns|infinity µs|INV − infinity µs|节省 %|',
+                '|---|---:|---:|---:|---:|---:|---:|']
+        for r in references:
+            lines.append('|'+ '|'.join([r['benchmark'],str(r.get('page_bytes','')),str(r.get('fault_ns','')),str(r.get('link_ns','')),f"{r['application_us']:.4f}",f"{r['saving_us_vs_inv']:.4f}",f"{r['saving_percent_vs_inv']:.4f}"])+'|')
+        lines+=['','infinity 在实际 kernel 内请求处同步完成功能复制/修复，不收 fault、链路延迟或复制带宽；普通计算、缓存访问、home 写及其 RDMA 仍计时。',
+                '差值表示这两次实际运行之间的端到端差异；异步交错、合并和缓存行为可能改变，因此作为机会参考，不宣称严格数学上界。负值原样保留并提醒检查。',
+                '本轮若只运行 INV/infinity，不计算 delta 捕获率；不能把不同输入、参数或源码批次的旧 delta 拼入捕获率。']
     inputs={}
     for r in rows:
         if r.get('input_flags'):inputs.setdefault((r['benchmark'],r.get('input_sha256')),(r.get('profile',''),r['input_flags'],r))
@@ -498,7 +510,7 @@ def main(argv=None):
     if args.protocol=='kernel-barrier' and args.pages!=[4096]:
         p.error('historical kernel-barrier adapter requires 4096-byte pages')
     if args.action=='run' and args.mode in ['policy','record'] and args.protocol=='kernel-internal' and any(x not in ['inv','delta','delta-sub','infinity'] for x in args.policies):
-        p.error('ideal kernel-internal policies: inv,delta,delta-sub; infinity optional')
+        p.error('ideal kernel-internal policies: inv,infinity (defaults); delta,delta-sub also available')
     if (args.gpu_ids!=[1,2,3,4] or args.repeats<1 or args.timeout<1 or args.build_timeout<1 or
         args.replica_pages_per_gpu<0 or not math.isfinite(args.bandwidth_gbs) or args.bandwidth_gbs<0 or
         any(x<0 for x in args.links+args.faults) or len(set(args.links))!=len(args.links) or len(set(args.faults))!=len(args.faults) or
@@ -543,7 +555,7 @@ def main(argv=None):
         print(json.dumps(audit(args.root,catalog),indent=2,ensure_ascii=False))
         return 0
     selector=args.bench or 'core'
-    if selector in ['core','A','B','C','all']:
+    if selector in ['core','A','B','C','E','all']:
         selected=[b for b in catalog if selector=='all' or b['group']==('A' if selector=='core' else selector)]
     else:
         ids=selector.split(',')

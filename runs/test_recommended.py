@@ -12,6 +12,7 @@ from unittest.mock import patch
 import run_benchmarks as runner
 import run_recommended as recommended
 import online_policy_runner as online
+import run_infinity as infinity
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -20,12 +21,24 @@ class RecommendedInputs(unittest.TestCase):
     def preset(self,scale):return runner.read(ROOT/'benchmark/mybenchmark/presets'/('recommended-'+scale+'.json'))
     def test_first_tier_default_and_target_scan(self):
         args=recommended.suite_arguments([])
+        self.assertEqual(args[args.index('--policies')+1],'inv,infinity')
         self.assertEqual(args[args.index('--bench')+1],'BFS,FW,gaussian,lud')
         self.assertTrue(args[args.index('--input-config')+1].endswith('recommended-start.json'))
         args=recommended.suite_arguments(['--tier','all','--scale','target','--scan'])
         self.assertEqual(len(args[args.index('--bench')+1].split(',')),7)
         self.assertIn('4096,65536,2097152',args)
         self.assertTrue(args[args.index('--input-config')+1].endswith('recommended-target.json'))
+    def test_infinity_entrypoint_uses_recommended_inputs_and_both_policies(self):
+        args=infinity.suite_arguments([])
+        self.assertEqual(args[args.index('--bench')+1],'BFS,NW,lud,FW')
+        self.assertEqual(args[args.index('--policies')+1],'inv,infinity')
+        self.assertIn('--protocol',args)
+        self.assertIn('kernel-internal',args)
+        self.assertTrue(args[args.index('--input-config')+1].endswith('recommended-start.json'))
+        args=infinity.suite_arguments(['--bench','NW,lud','--page-bytes','65536','--dry-run'])
+        self.assertEqual(args[args.index('--bench')+1],'NW,lud')
+        self.assertEqual(args[args.index('--page-bytes')+1],'65536')
+        self.assertIn('--dry-run',args)
     def test_fw_pass_counts_and_full_bfs_search(self):
         start,target=self.preset('start')['benchmarks'],self.preset('target')['benchmarks']
         self.assertEqual(start['FW'],['-node=256','-iter=256'])

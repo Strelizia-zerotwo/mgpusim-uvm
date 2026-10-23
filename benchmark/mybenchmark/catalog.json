@@ -650,6 +650,161 @@
           "-length=256"
         ]
       }
+    },
+    {
+      "id": "SSSP",
+      "sample": "cuda_sssp",
+      "group": "E",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-node=1024",
+          "-degree=4",
+          "-components=1",
+          "-graph=random",
+          "-seed=42",
+          "-max-rounds=4096"
+        ],
+        "small": [
+          "-node=16384",
+          "-degree=8",
+          "-components=1",
+          "-graph=random",
+          "-seed=42",
+          "-max-rounds=4096"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed",
+      "core_replica": true,
+      "cuda_port": true,
+      "source_reference": "benchmark/mybenchmark/cuda-ports/SOURCES.json",
+      "implementation": "cuda-derived-research-adaptation-v1"
+    },
+    {
+      "id": "CC",
+      "sample": "cuda_cc",
+      "group": "E",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-node=1024",
+          "-degree=4",
+          "-components=4",
+          "-graph=random",
+          "-seed=42",
+          "-max-rounds=4096"
+        ],
+        "small": [
+          "-node=16384",
+          "-degree=8",
+          "-components=4",
+          "-graph=random",
+          "-seed=42",
+          "-max-rounds=4096"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed",
+      "core_replica": true,
+      "cuda_port": true,
+      "source_reference": "benchmark/mybenchmark/cuda-ports/SOURCES.json",
+      "implementation": "cuda-derived-research-adaptation-v1"
+    },
+    {
+      "id": "COLOR",
+      "sample": "cuda_color",
+      "group": "E",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-node=1024",
+          "-degree=4",
+          "-components=1",
+          "-graph=random",
+          "-seed=42",
+          "-max-rounds=4096"
+        ],
+        "small": [
+          "-node=16384",
+          "-degree=8",
+          "-components=1",
+          "-graph=random",
+          "-seed=42",
+          "-max-rounds=4096"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed",
+      "core_replica": true,
+      "cuda_port": true,
+      "source_reference": "benchmark/mybenchmark/cuda-ports/SOURCES.json",
+      "implementation": "cuda-derived-research-adaptation-v1"
+    },
+    {
+      "id": "MIS",
+      "sample": "cuda_mis",
+      "group": "E",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-node=1024",
+          "-degree=4",
+          "-components=1",
+          "-graph=random",
+          "-seed=42",
+          "-max-rounds=4096"
+        ],
+        "small": [
+          "-node=16384",
+          "-degree=8",
+          "-components=1",
+          "-graph=random",
+          "-seed=42",
+          "-max-rounds=4096"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed",
+      "core_replica": true,
+      "cuda_port": true,
+      "source_reference": "benchmark/mybenchmark/cuda-ports/SOURCES.json",
+      "implementation": "cuda-derived-research-adaptation-v1"
+    },
+    {
+      "id": "EMBEDDING",
+      "sample": "cuda_embedding",
+      "group": "E",
+      "role": "candidate",
+      "profiles": {
+        "smoke": [
+          "-rows=1024",
+          "-dim=16",
+          "-batch=64",
+          "-batches=2",
+          "-distribution=hotset",
+          "-seed=42"
+        ],
+        "small": [
+          "-rows=8192",
+          "-dim=32",
+          "-batch=128",
+          "-batches=8",
+          "-distribution=hotset",
+          "-seed=42"
+        ]
+      },
+      "arch": "cdna3",
+      "gpu": "mi300x",
+      "verify_kind": "passed",
+      "core_replica": true,
+      "cuda_port": true,
+      "source_reference": "benchmark/mybenchmark/cuda-ports/SOURCES.json",
+      "implementation": "cuda-derived-research-adaptation-v1"
     }
   ]
 }

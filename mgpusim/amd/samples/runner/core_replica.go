@@ -7,6 +7,7 @@ import (
 	"github.com/sarchlab/mgpusim/v5/amd/driver"
 	"github.com/sarchlab/mgpusim/v5/amd/timing/replica"
 	"os"
+	"time"
 )
 
 var replicaCoreFlag = flag.Bool("replica-core", false, "Core benchmark replication experiment")
@@ -17,6 +18,8 @@ var corePlan = flag.String("core-replica-plan", "", "Core replica oracle plan (o
 var corePlanOut = flag.String("core-replica-plan-out", "observed-plan.json", "Actual core accesses")
 var coreStats = flag.String("core-replica-stats", "stats.json", "Core replica statistics")
 var coreTerminalDigest = flag.Bool("core-digest-terminal", false, "Hash live logical buffers at kernel boundaries (BFS scheduling validation)")
+var coreProgressSeconds = flag.Int("core-progress-seconds", 30, "Host seconds between progress samples; 0 disables diagnostics")
+var coreProgressFile = flag.String("core-progress-file", "progress.jsonl", "Live progress and native idle-engine stack diagnostics")
 var coreSessions = map[*Runner]*replica.Session{}
 
 func (r *Runner) initCoreReplica() {
@@ -61,6 +64,12 @@ func (r *Runner) initCoreReplica() {
 		s := replica.New(r.Simulation(), r.Driver(), ctx, c, p)
 		if *coreProtocol == "ideal" {
 			replica.EnablePassive(s)
+			if *coreProgressSeconds < 0 {
+				panic("core-progress-seconds must be nonnegative")
+			}
+			if err := s.Passive.EnableProgress(*coreProgressFile, time.Duration(*coreProgressSeconds)*time.Second); err != nil {
+				panic(err)
+			}
 		}
 		s.TerminalDigest = *coreTerminalDigest
 		coreSessions[r] = s

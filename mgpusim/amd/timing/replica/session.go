@@ -275,8 +275,14 @@ func (s *Session) Epoch(name string, work func()) {
 	}
 	start := s.sim.GetEngine().CurrentTime()
 	s.beginActivity(name, uint64(start))
+	if s.Passive != nil && s.phaseKind == "" {
+		s.Passive.publishProgress("kernel-start", true)
+	}
 	work()
 	s.d.WaitForEngineIdle()
+	if s.Passive != nil && s.phaseKind == "" {
+		s.Passive.publishProgress("kernel-end", false)
+	}
 	kernel := s.sim.GetEngine().CurrentTime() - start
 	if s.phaseKind != "" {
 		s.Stats.HostTransferPS += uint64(kernel)

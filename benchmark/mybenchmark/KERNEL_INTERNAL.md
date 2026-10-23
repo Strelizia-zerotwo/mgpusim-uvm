@@ -1,4 +1,4 @@
-# Kernel 内理想收益实验：INV / delta / delta-sub
+# Kernel 内理想收益实验：当前 INV / infinity 对照
 
 当前版本：`kernel-internal-ideal-v3`，2026-10-17。以本文为当前实验口径。此前 v1/v2 的控制序列、缓存排队与实测数字属于历史实验。
 
@@ -12,7 +12,7 @@
 |delta|立即使副本失效，保留帧和旧版本|收一次固定服务费，修复全部过期子块|
 |delta-sub|保留帧和旧版本，记录各子块最后写版本|所需子块都干净则直接读；否则收一次固定服务费，仍修复全部过期子块|
 
-默认只跑以上三种。`infinity` 作为可选理想参考保留：复制/修复服务时间和复制流量收费均为零，普通 GPU 执行仍计时。没有 adaptive、预取或未来访存分析。
+2026-10-21起默认只跑 `inv,infinity`；delta/delta-sub 保留为显式选项。`infinity` 在实际 kernel 内读请求缺少副本或页版本过期时，同步功能复制/修复全部过期子块，恢复后直接放行；不增加 admission tick，不调度复制等待事件，不收 fault/链路延迟，不预留复制带宽，普通 GPU 执行仍计时。没有 adaptive、预取或未来访存分析。
 
 “全部过期”指 `LastWrite[sector] > replica.Version`。子块为 32B。多次写积累到下次读时合并为一次修复；同一子块重复写只传最新快照。帧已回收时退回整页复制。全部子块都过期时，差量字节数自然等于整页，不额外收合并、分段或包头费用。
 
@@ -59,7 +59,7 @@ INV 写时立即释放策略可见的帧。有后端读尚未结束时，物理�
 - `kernel_us`：实际 kernel 时间，已包含其中等待复制/修复的影响。
 - `wall_s`：宿主机实际运行秒数，与模拟应用时间不同。
 - `cold_copies / refills / repairs / copy_faults`：首次整页复制、INV 整页重复制、delta 修复、全部服务次数。
-- `copy_bytes / charged_bytes`：实际复制/修复的功能字节数、收费字节数。三策略相等；可选 infinity 只有后者为零。
+- `copy_bytes / charged_bytes`：实际复制/修复的功能字节数、收费字节数。INV/delta/delta-sub 两者相等；infinity 的 copy_bytes 仍记录功能操作字节，charged_bytes 为零。
 - `invalidations`：已完整有效副本变为过期的次数；已过期后的多次写不重复计同一次失效。
 - `intrakernel_refills / intrakernel_repairs`：同一 kernel 标签内发生再次复制/修复的次数。
 - `clean_replica_reads_during_write`：页已过期但所需子块干净而免修复的读次数，对应 delta-sub 扩展。
@@ -73,8 +73,12 @@ INV 写时立即释放策略可见的帧。有后端读尚未结束时，物理�
 
 同一事件序列、同一孤立修复上，delta 传输字节不超过 INV，infinity 的复制服务为零。单元测试覆盖 3 页大小 × 2 固定开销 × 2 附加延迟。
 
-应用时间也应重点检查上述排序，但异步调度可能改变到达顺序、合并次数、失效次数和缓存状态，因此单次服务的排序不构成整个应用绝对单调的证明。脚本保留原始应用时间；delta 比 INV 慢或可选 infinity 比 INV 慢时标记 sanity_warnings，检查事件而不修饰结果。
+应用时间也应重点检查上述排序，但异步调度可能改变到达顺序、合并次数、失效次数和缓存状态，因此单次服务的排序不构成整个应用绝对单调的证明。脚本保留原始应用时间；delta 比 INV 慢或infinity 比 INV 慢时标记 sanity_warnings，检查事件而不修饰结果。
 
 本轮只执行构建和测试，未执行 smoke、microbenchmark 或核心应用；尚无 ideal-v3 的实测收益和应用数值验证结论。用户自行运行后再判断。
 
 补充应用也支持 CDNA3/MI300X；主机物化功能结果时会免费清除相关内存侧 MALL 旧行，防止 DMA 校验读取旧内容。显式实验页大小覆盖 MI300X 默认2MB。见 [IDEA_CANDIDATES.md](IDEA_CANDIDATES.md)。
+
+## 复制免费机会测量
+
+当前入口与教程见 [INFINITY.md](INFINITY.md)。`copy-free-reference.json/tsv` 只收录与成功 INV 完整配对的 infinity 结果，`saving_us_vs_inv` 为真实应用时间差。只跑两策略时不计算 delta 捕获率；不把异步运行的时间差当成严格数学上界。

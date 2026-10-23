@@ -1,10 +1,12 @@
-> 当前实验以 **kernel 内理想收益** 为准：默认只跑 `inv,delta,delta-sub`。失效、元数据、缓存与在途正确性处理免费；只给复制/修复收 fault 与总字节传输。规则和命令见 [KERNEL_INTERNAL.md](KERNEL_INTERNAL.md)、[RUNNING.md](RUNNING.md)。
+> 当前实验以 **kernel 内理想收益** 为准：2026-10-21起默认只跑 `inv,infinity`。失效、元数据、缓存与在途正确性处理免费；INV 的复制收 fault 与总字节传输，infinity 的复制/修复免费。规则和命令见 [KERNEL_INTERNAL.md](KERNEL_INTERNAL.md)、[RUNNING.md](RUNNING.md)。
 >
 > 核心名录仍为 14 项，默认运行 12 项；LeNet/VGG16 跳过。本轮只构建与测试，未执行应用。下面的论文列表、输入参考继续保留；有关 kernel 边界机会、旧策略和旧验证的表述属于历史口径。
 
 # 失效副本恢复：benchmark 列表
 
-补充更新：lud、gaussian、pathfinder、backprop、gramschmidt 已接入当前三策略脚本。源码、规模与当前实现的算法边界见 [IDEA_CANDIDATES.md](IDEA_CANDIDATES.md)。下面 C 类的收益角色属于候选假设。
+2026-10-22：新增 E 类 CUDA 来源研究移植版 SSSP、CC、COLOR、MIS、EMBEDDING，单独入口 `runs/run_cuda_ports.py`，默认只跑 inv/infinity。它们不加入14项核心集。来源、算法改动和验证边界见 [cuda-ports/README.md](cuda-ports/README.md)。
+
+补充更新：lud、gaussian、pathfinder、backprop、gramschmidt 已接入当前理想策略脚本。源码、规模与当前实现的算法边界见 [IDEA_CANDIDATES.md](IDEA_CANDIDATES.md)。下面 C 类的收益角色属于候选假设。
 
 依据：CDFD（ISCA'26，13 个）、LIBRA（ISCA'26，23 个）、OASIS（HPCA'25，11 个）、GRIT（HPCA'24，8 个）、
 ShadowUpdate（ISCA'26，14 个）的 benchmark 表，以及本仓库 MGPUSim 自带的 `amd/samples`。
@@ -34,7 +36,7 @@ ShadowUpdate（ISCA'26，14 个）的 benchmark 表，以及本仓库 MGPUSim �
 | MVT | Matrix-Vector Transpose | | | | | ✓ | — | polybench_mvt（仅 gfx942） |
 | MM3 | 3MM | | | | | ✓ | — | polybench_3mm（仅 gfx942） |
 | GEMM | GEMM | | | | ✓ | | Scatter-Gather | polybench_gemm（仅 gfx942） |
-| MIS / SSSP | 图算法 | | ✓ | | | ✓(MIS) | Random | **无** |
+| MIS / SSSP | 图算法 | | ✓ | | | ✓(MIS) | Random | 原仓库无；新增研究版 `cuda_mis` / `cuda_sssp`，不等同论文作者实现 |
 | BERT / GPT-2 / ResNet18 | Transformer / CNN 训练 | ✓ | ✓ | ✓(ResNet) | | | Mixed | **无**（作者自己移植，未公开） |
 
 GRIT 第 IV-A 节给出的直接动机数据：在页面复制方案下，**BS、C2D、ST 分别有 46%、49%、45% 的页面经历"写坍缩后又被读取重新复制"**。
@@ -120,3 +122,5 @@ rodinia、polybench 都需要加 `-arch cdna3 -gpu mi300x`。
 
 
 2026-10-19 推荐规模入口已增加：`python3 runs/run_recommended.py`，默认第一档BFS/FW/gaussian/lud，可选择第二档gramschmidt/C2D/NW和目标规模。完整参数与NW验证边界见 [RECOMMENDED.md](RECOMMENDED.md)。
+
+2026-10-21：复制免费参考入口 `python3 runs/run_infinity.py`，默认 BFS/NW/lud/FW × inv/infinity；教程见 [INFINITY.md](INFINITY.md)。

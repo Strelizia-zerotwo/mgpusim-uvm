@@ -1,6 +1,8 @@
 # 推荐工作负载：起步与目标规模
 
-2026-10-19。按用户给定推荐表配置；默认 inv、delta、delta-sub，四块独立 GPU，kernel 内实际 AT 请求触发。协议开销按现有 ideal-v3 口径：免费一致性，复制/修复收一次 fault 和总字节传输。没有离线未来访问回放。
+2026-10-21。按用户给定推荐表配置；当前默认 inv、infinity，四块独立 GPU，kernel 内实际 AT 请求触发。协议开销按现有 ideal-v3 口径：免费一致性；INV 的复制收一次 fault 和总字节传输，infinity 的复制/修复全部免费。没有离线未来访问回放。
+
+2026-10-22 更新：本入口及 `run_infinity.py` 的默认宿主超时为每个策略86400秒（24小时），可用 `--timeout` 覆盖。
 
 ## 输入预设
 
@@ -27,7 +29,7 @@ export PATH=/usr/local/go/bin:/home/only/go/bin:$PATH
 # 只看参数，不构建/运行。
 python3 runs/run_recommended.py --dry-run
 
-# 默认：第一档四个应用 × 三策略，起步规模。
+# 默认：第一档四个应用 × 两策略，起步规模。
 python3 runs/run_recommended.py
 
 # 单个应用，或任意子集。
@@ -44,11 +46,14 @@ python3 runs/run_recommended.py --scale target
 # LUD单独使用2048。
 python3 runs/run_recommended.py --scale target --bench lud --lud-size 2048
 
-# 每次模拟的宿主超时；默认7200秒，构建超时单独控制。
-python3 runs/run_recommended.py --bench gaussian --timeout 14400
+# 每次模拟的宿主超时；默认86400秒（24小时），构建超时单独控制。
+python3 runs/run_recommended.py --bench gaussian --timeout 172800
+
+# 依次重跑此前超时的三个应用，每个只跑 inv/infinity。
+python3 runs/run_infinity.py --bench C2D,gramschmidt,gaussian
 ```
 
-这些规模远大于以前 small。上述命令会运行实验，本轮实现过程中没有执行它们。超时是每次策略模拟的宿主上限，实际时长尚未测量。
+这些规模远大于以前 small。2026-10-21 已有结果中 Gaussian512、Gramschmidt2048×128、较大 C2D 三策略均达到7200秒预算；当前可用 `run_infinity.py --bench C2D,gramschmidt,gaussian` 依次运行两策略对照，默认每策略24小时；延长预算不代表已确认能在新预算内完成。专用入口见 [INFINITY.md](INFINITY.md)。超时是每次策略模拟的宿主上限，不等于已判定死锁。
 
 ## 页大小与服务参数扫描
 
@@ -56,7 +61,7 @@ python3 runs/run_recommended.py --bench gaussian --timeout 14400
 # 单独64KB页。
 python3 runs/run_recommended.py --page-bytes 65536
 
-# 3页大小 × 2 fault × 2 link，每应用36次模拟。
+# 3页大小 × 2 fault × 2 link，每应用24次模拟。
 python3 runs/run_recommended.py --scan
 
 # 只扫描FW，或全部应用的目标规模。
@@ -64,7 +69,7 @@ python3 runs/run_recommended.py --bench FW --scan
 python3 runs/run_recommended.py --tier all --scale target --scan
 ```
 
-完整扫描参数为4096/65536/2097152字节页、900/20000ns fault、0/200ns附加链路延迟。四应用扫描共144次策略模拟，七应用共252次。脚本每个 sample 构建一次。
+完整扫描参数为4096/65536/2097152字节页、900/20000ns fault、0/200ns附加链路延迟。四应用扫描共96次策略模拟，七应用共168次。脚本每个 sample 构建一次。
 
 ## 真实BFS图
 
@@ -73,7 +78,7 @@ python3 runs/run_recommended.py --bench BFS \
   --bfs-graph /absolute/path/road-network.txt
 ```
 
-输入格式沿用原 sample：文本有向边列表，每行 `源节点 目标节点`，`#` 注释。脚本会去掉 node、degree 和已有 load-graph 参数，加入实际文件路径与 depth=0，避免原 sample 对参数冲突的报错。保留文件SHA256，并参与输入分组；同一条指令仍运行三策略。图加载器格式、顶点编号和可达性以现有BFS实现为准，未提供或下载道路网数据。
+输入格式沿用原 sample：文本有向边列表，每行 `源节点 目标节点`，`#` 注释。脚本会去掉 node、degree 和已有 load-graph 参数，加入实际文件路径与 depth=0，避免原 sample 对参数冲突的报错。保留文件SHA256，并参与输入分组；同一条指令仍运行两策略。图加载器格式、顶点编号和可达性以现有BFS实现为准，未提供或下载道路网数据。
 
 ## 统一脚本入口
 
@@ -84,7 +89,7 @@ python3 runs/run_benchmarks.py run \
   --mode policy --protocol kernel-internal --profile small \
   --bench BFS,FW,gaussian,lud \
   --input-config benchmark/mybenchmark/presets/recommended-start.json \
-  --policies inv,delta,delta-sub --timeout 7200
+  --policies inv,infinity --timeout 86400
 ```
 
 预设只替换相关应用输入，不改变GPU调度、协议、校验或核心名录。FW现已标记core_replica，走真实请求触发的ideal入口。其8×8工作组按线性连续区间分给四卡，对上述尺寸恰好等价于之前 ParallelBenchmark 的连续输出行分区，保留原条件写内核；不轮流用单卡执行各pass，也不使用历史阶段回放。
@@ -103,3 +108,7 @@ GCN3和CDNA3的已编译两个波前内核已加入直接功能单元测试，�
 保留日志、命令、资源统计、SQLite、metrics.tsv、stats.json、实际访问摘要和每应用/整批JSON/TSV/CSV/REPORT.md。预设另复制为套件中的input-config.json；benchmark.json保存有效参数，source-sha256包含新脚本和预设。汇总有应用/kernel/host时间、相对INV节省、复制/修复次数和字节、失效、保留帧峰值，以及实际kernel_count。
 
 同组INV需匹配架构、页大小、链路、固定服务、容量预算及输入哈希，失败/超时剔除。应用收益仍需实测；本表中的模式解释和先前C2D 3.3%数字来自用户背景，未用作本轮测量结论。
+
+## 当前复制免费参考入口
+
+`python3 runs/run_infinity.py` 默认 BFS、NW、lud、FW，recommended-start，且只跑 inv/infinity。加 `--page-bytes 65536` 可单独比较64KiB。详细结果字段、命令和参考差值含义见 [INFINITY.md](INFINITY.md)。

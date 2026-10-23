@@ -1,0 +1,21 @@
+{
+  "target": "gfx942",
+  "source_sha256": "05f02d80158f551d979d72e5f15d086e3bc2780f558f646014b034f3bc572b3d",
+  "binary_sha256": "7edd44a1f29bf7e6da7d9f12cda09320acdd14144e4090a6091adfa3d0ccef51",
+  "tools": {
+    "clang": "Ubuntu clang version 18.1.3 (1ubuntu1)",
+    "lld": "Ubuntu LLD 18.1.3 (compatible with GNU linkers)"
+  },
+  "flags": [
+    "-target",
+    "amdgcn-amd-amdhsa",
+    "-mcpu=gfx942",
+    "-x",
+    "cl",
+    "-cl-std=CL2.0",
+    "-nogpulib",
+    "-O2",
+    "-mcode-object-version=4",
+    "-ffp-contract=off"
+  ]
+}

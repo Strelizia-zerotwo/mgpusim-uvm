@@ -294,6 +294,51 @@ func TestIdealInfinityDoesNotIntroduceAnAdmissionTick(t *testing.T) {
 	}
 	f.p.Complete(nil, r.ID)
 }
+
+func TestIdealInfinityRepairsAfterWritesWithoutTimeOrFabric(t *testing.T) {
+	for _, page := range []uint64{4096, 65536, 2097152} {
+		t.Run(fmt.Sprint(page), func(t *testing.T) {
+			f := idealTest("infinity")
+			f.p.s.Config.PageBytes = page
+			f.p.s.pages = map[uint64]*pageState{}
+			f.page(0, 1)
+			next := uint64(8 << 20)
+			f.p.allocate = func(int) (uint64, bool) { frame := next; next += page; return frame, true }
+			for _, gpu := range []int{2, 3, 4} {
+				f.read(gpu, 0)
+			}
+			f.write(64, 7)
+			f.write(page-4, 9)
+			for _, gpu := range []int{2, 3, 4} {
+				// Even a clean-sector read restores the entire stale page for free.
+				f.read(gpu, 0)
+				st := f.p.s.pages[0]
+				if st.Copies[gpu].Version != st.Version {
+					t.Fatal("free reference left a stale page version")
+				}
+				if !bytes.Equal(f.read(gpu, 64), bytes.Repeat([]byte{7}, 4)) ||
+					!bytes.Equal(f.read(gpu, page-4), bytes.Repeat([]byte{9}, 4)) {
+					t.Fatal("free repair did not publish all accumulated writes")
+				}
+			}
+			f.write(64, 11)
+			if !bytes.Equal(f.read(2, 64), bytes.Repeat([]byte{11}, 4)) {
+				t.Fatal("write after free repair returned stale data")
+			}
+			s := f.p.s.Stats.Passive
+			if f.now != 0 || len(f.jobs) != 0 || len(f.p.waiting) != 0 || len(f.p.transfers) != 0 ||
+				s.ChargedFixedPS != 0 || s.ChargedBytes != 0 || s.CopyServicePS != 0 ||
+				f.p.s.Fabric.Messages != 0 || f.p.s.Fabric.Bytes != 0 || s.StaleReadSectors != 0 {
+				t.Fatal("infinity charged time/bandwidth, stalled, or admitted stale data")
+			}
+			if f.p.s.Stats.ColdCopies != 3 || f.p.s.Stats.Repairs != 4 || f.p.s.Stats.CopyBytes == 0 {
+				t.Fatal("functional copies/repairs were not recorded")
+			}
+			f.p.CheckAtBarrier()
+			f.p.Finish()
+		})
+	}
+}
 func TestIdealKernelLabelDoesNotRepairOrInvalidate(t *testing.T) {
 	f := idealTest("delta")
 	f.read(2, 4096)

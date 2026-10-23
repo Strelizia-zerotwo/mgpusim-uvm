@@ -1,0 +1,9 @@
+{
+  "name": "diagnostic-small",
+  "provenance": "Liveness diagnosis only; smaller inputs kept separate from formal recommended-start, 2026-10-23",
+  "benchmarks": {
+    "gaussian": ["-size=32"],
+    "gramschmidt": ["-m=1024", "-n=4"],
+    "C2D": ["-N=4", "-C=3", "-H=32", "-W=32", "-output-channel=8", "-enable-backward"]
+  }
+}

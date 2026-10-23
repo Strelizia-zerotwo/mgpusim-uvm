@@ -137,6 +137,7 @@ type Passive struct {
 	schedule       func(*idealTransfer)
 	allocate       func(int) (uint64, bool)
 	release        func(int, uint64)
+	progress       *progressMonitor
 }
 
 func validatePassivePolicy(policy string) {
@@ -246,7 +247,7 @@ func (p *Passive) valid(page uint64, c *copyState, bits map[uint32]bool) bool {
 		return false
 	}
 	st := p.s.pages[page]
-	if p.s.Config.Policy == "inv" || p.s.Config.Policy == "delta" {
+	if p.s.Config.Policy == "inv" || p.s.Config.Policy == "delta" || p.s.Config.Policy == "infinity" {
 		return c.Version == st.Version
 	}
 	for x := range bits {
@@ -394,6 +395,9 @@ func (p *Passive) admit(gpu int, req memprotocol.AccessReq) bool {
 			return p.admit(gpu, req)
 		}
 	}
+	if p.progress != nil && (p.s.Stats.Passive.VersionChecks == 1 || p.s.Stats.Passive.VersionChecks%1024 == 0) {
+		p.publishProgress("", true)
+	}
 	return false
 }
 func (p *Passive) count(req memprotocol.AccessReq, gpu int) {
@@ -416,6 +420,9 @@ func (p *Passive) count(req memprotocol.AccessReq, gpu int) {
 		}
 	}
 	s.InflightHighWater = max(s.InflightHighWater, uint64(len(p.leases)))
+	if s.ManagedRequests == 1 || s.ManagedRequests%1024 == 0 {
+		p.publishProgress("", true)
+	}
 }
 func (p *Passive) markWrite(page uint64, bits map[uint32]bool) {
 	if len(bits) == 0 {
@@ -708,6 +715,7 @@ func (p *Passive) InitialWrite(ptr uint64, src interface{}) {
 	must(binary.Write(p.initialInput, binary.LittleEndian, src))
 }
 func (p *Passive) Finish() {
+	p.closeProgress()
 	p.s.Stats.InitialInputSHA256 = fmt.Sprintf("%x", p.initialInput.Sum(nil))
 	if len(p.waiting) > 0 || len(p.leases) > 0 || len(p.transfers) > 0 || len(p.grants) > 0 || len(p.refs) > 0 || len(p.retired) > 0 {
 		panic("ideal protocol did not finish")

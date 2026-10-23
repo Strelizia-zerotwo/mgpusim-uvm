@@ -1,6 +1,6 @@
-# 五个补充候选：位置、输入与三策略脚本
+# 五个补充候选：位置、输入与理想策略脚本
 
-2026-10-17。以下源码和 sample 在当前 `/home/only/projects/mgpusim-uvm/mgpusim` 中均已存在，使用各自随仓库提供的 `kernels_gfx942.hsaco`。本轮复用已有 kernel，接到当前 `kernel-internal-ideal-v3` 请求级理想实验；默认只比较 inv、delta、delta-sub。
+2026-10-17。以下源码和 sample 在当前 `/home/only/projects/mgpusim-uvm/mgpusim` 中均已存在，使用各自随仓库提供的 `kernels_gfx942.hsaco`。本轮复用已有 kernel，接到当前 `kernel-internal-ideal-v3` 请求级理想实验；2026-10-21起默认只比较 inv、infinity；delta、delta-sub可显式选择。
 
 ## 源码位置与建议起点
 
@@ -35,7 +35,7 @@ python3 runs/run_idea_candidates.py --bench lud,gaussian --timeout 1800
 # 仅列出配置；不构建、不启动模拟器。
 python3 runs/run_idea_candidates.py --dry-run
 
-# 完整扫描：每应用 12 组参数 × 3 策略 = 36 次模拟。
+# 完整扫描：每应用 12 组参数 × 2 策略 = 24 次模拟。
 python3 runs/run_idea_candidates.py --scan --timeout 1800
 ```
 
@@ -47,7 +47,7 @@ python3 runs/run_idea_candidates.py --scan --timeout 1800
 python3 runs/run_benchmarks.py run \
   --mode policy --protocol kernel-internal \
   --bench lud,gaussian,pathfinder,backprop,gramschmidt \
-  --profile small --policies inv,delta,delta-sub \
+  --profile small --policies inv,infinity \
   --page-bytes 4096 --fault-ns 900 --link-ns 200 --timeout 1800
 ```
 

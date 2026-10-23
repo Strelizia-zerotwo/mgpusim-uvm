@@ -35,7 +35,7 @@ class ScientificAccounting(unittest.TestCase):
         args=candidates.suite_arguments(['--scan','--timeout','900'])
         self.assertEqual(args[0],'run')
         self.assertEqual(args[args.index('--bench')+1],'lud,gaussian,pathfinder,backprop,gramschmidt')
-        self.assertEqual(args[args.index('--policies')+1],'inv,delta,delta-sub')
+        self.assertEqual(args[args.index('--policies')+1],'inv,infinity')
         self.assertEqual(args[args.index('--page-bytes')+1],'4096,65536,2097152')
         self.assertEqual(args[-2:],['--timeout','900'])
 
@@ -72,8 +72,35 @@ class ScientificAccounting(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:runner.summarize(rows,Path(d))
         self.assertNotIn('speedup_vs_inv',rows[1])
 
-    def test_default_is_exactly_three_ideal_policies(self):
-        self.assertEqual(runner.DEFAULT_POLICIES,['inv','delta','delta-sub'])
+    def test_default_is_inv_and_copy_free_reference(self):
+        self.assertEqual(runner.DEFAULT_POLICIES,['inv','infinity'])
+
+    def test_copy_free_gap_requires_a_successful_matching_inv(self):
+        base=dict(benchmark='NW',profile='recommended-start',mode='policy',repeat=0,
+                  status='OK',protocol=online.PROTOCOL,page_bytes=4096,input_sha256='same')
+        rows=[dict(base,policy='inv',application_us=100),
+              dict(base,policy='infinity',application_us=95),
+              dict(base,policy='infinity',page_bytes=65536,application_us=40),
+              dict(base,policy='infinity',status='TIMEOUT',saving_us_vs_inv=99)]
+        with tempfile.TemporaryDirectory() as d:
+            runner.summarize(rows,Path(d))
+            refs=runner.read(Path(d)/'copy-free-reference.json')
+            self.assertEqual(len(refs),1)
+            self.assertEqual(refs[0]['saving_us_vs_inv'],5)
+            self.assertAlmostEqual(refs[0]['saving_percent_vs_inv'],5)
+            self.assertIn('INV − infinity', (Path(d)/'REPORT.md').read_text(encoding='utf-8'))
+        self.assertNotIn('saving_us_vs_inv',rows[2])
+        self.assertNotIn('saving_us_vs_inv',rows[3])
+
+    def test_negative_copy_free_gap_is_preserved(self):
+        base=dict(benchmark='NW',profile='small',mode='policy',repeat=0,
+                  status='OK',protocol=online.PROTOCOL)
+        rows=[dict(base,policy='inv',application_us=100),dict(base,policy='infinity',application_us=101)]
+        with tempfile.TemporaryDirectory() as d:
+            runner.summarize(rows,Path(d))
+            refs=runner.read(Path(d)/'copy-free-reference.json')
+        self.assertEqual(refs[0]['saving_us_vs_inv'],-1)
+        self.assertIn('sanity_warnings',refs[0])
 
     def test_page_sizes_never_share_inv_baseline(self):
         base=dict(benchmark='BFS',profile='small',mode='policy',repeat=0,status='OK',protocol=online.PROTOCOL)

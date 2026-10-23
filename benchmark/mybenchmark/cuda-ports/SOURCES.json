@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "implementation": "cuda-derived-research-adaptation-v1",
+  "records": [
+    {
+      "algorithm": "SSSP",
+      "repository": "https://github.com/IntelligentSoftwareSystems/Galois",
+      "commit": "b67f94206a8c47fd414446621f6633a31c49fd98",
+      "source_url": "https://github.com/IntelligentSoftwareSystems/Galois/blob/b67f94206a8c47fd414446621f6633a31c49fd98/lonestar/analytics/distributed/sssp/sssp_pull_cuda.cu",
+      "snapshot": "upstream/SSSP.cu",
+      "source_sha256": "227027f048fa798786ec28b32334037b20f548ac44fd33ed96ef33fd284a36d1"
+    },
+    {
+      "algorithm": "CC",
+      "repository": "https://github.com/IntelligentSoftwareSystems/Galois",
+      "commit": "b67f94206a8c47fd414446621f6633a31c49fd98",
+      "source_url": "https://github.com/IntelligentSoftwareSystems/Galois/blob/b67f94206a8c47fd414446621f6633a31c49fd98/lonestar/analytics/distributed/connected-components/cc_pull_cuda.cu",
+      "snapshot": "upstream/CC.cu",
+      "source_sha256": "4c4d7b35e9097830a9398a53c95299acab8666378ad462874db37361815be067"
+    },
+    {
+      "algorithm": "MIS",
+      "repository": "https://github.com/IntelligentSoftwareSystems/Galois",
+      "commit": "b67f94206a8c47fd414446621f6633a31c49fd98",
+      "source_url": "https://github.com/IntelligentSoftwareSystems/Galois/blob/b67f94206a8c47fd414446621f6633a31c49fd98/lonestar/analytics/gpu/independentset/mis.cu",
+      "snapshot": "upstream/MIS.cu",
+      "source_sha256": "0fedebde5ace4a15292cfc99f7708316e73bc893888f1735ff5fccfe547bb691"
+    },
+    {
+      "algorithm": "COLOR",
+      "repository": "https://github.com/gunrock/gunrock",
+      "commit": "748f79e66cc26762cd3f99422b028e742a737bde",
+      "source_url": "https://github.com/gunrock/gunrock/blob/748f79e66cc26762cd3f99422b028e742a737bde/include/gunrock/algorithms/color.hxx",
+      "snapshot": "upstream/COLOR.hxx",
+      "source_sha256": "c69ffbc39b289c9eaf2caaaa6e8d7969b36897dabcc666bf169d2e38b86011cb"
+    },
+    {
+      "algorithm": "EMBEDDING",
+      "repository": "https://github.com/pytorch/FBGEMM",
+      "commit": "700362d243db4be4500abcdded71642de18983f8",
+      "source_url": "https://github.com/pytorch/FBGEMM/blob/700362d243db4be4500abcdded71642de18983f8/fbgemm_gpu/codegen/training/backward/embedding_backward_split_template.cu",
+      "snapshot": "upstream/EMBEDDING_BACKWARD.cu",
+      "source_sha256": "756fa8e908fd65ec28291f89ef44173424d30826bf7f701104781714137582f5"
+    }
+  ],
+  "licenses": [
+    {
+      "repository": "IntelligentSoftwareSystems/Galois",
+      "url": "https://raw.githubusercontent.com/IntelligentSoftwareSystems/Galois/b67f94206a8c47fd414446621f6633a31c49fd98/COPYRIGHT",
+      "path": "upstream/Galois-LICENSE.txt",
+      "sha256": "5381471bf18d06f30b6929933b7021823432c49a3fa16798ae3d959efd94b24d"
+    },
+    {
+      "repository": "gunrock/gunrock",
+      "url": "https://raw.githubusercontent.com/gunrock/gunrock/748f79e66cc26762cd3f99422b028e742a737bde/LICENSE",
+      "path": "upstream/gunrock-LICENSE.txt",
+      "sha256": "e9b9ac7e692b0501b6639c77c8aae4772084bddda06cfe93895c659a5456645c"
+    },
+    {
+      "repository": "pytorch/FBGEMM",
+      "url": "https://raw.githubusercontent.com/pytorch/FBGEMM/700362d243db4be4500abcdded71642de18983f8/LICENSE",
+      "path": "upstream/FBGEMM-LICENSE.txt",
+      "sha256": "12c2370ec32e78115dcd71ba22cdcb1297320fdc4ade81f798136d42357c58b8"
+    }
+  ]
+}

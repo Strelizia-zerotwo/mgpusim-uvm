@@ -1,0 +1,7 @@
+{
+  "name": "cuda-embedding-uniform",
+  "provenance": "generated input for CUDA-derived research adaptation, 2026-10-22",
+  "benchmarks": {
+    "EMBEDDING": ["-rows=8192", "-dim=32", "-batch=128", "-batches=8", "-distribution=uniform", "-seed=42"]
+  }
+}

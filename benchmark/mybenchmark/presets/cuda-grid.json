@@ -1,0 +1,10 @@
+{
+  "name": "cuda-grid",
+  "provenance": "generated four-neighbour 64x64 grid, 2026-10-22; not a real graph dataset",
+  "benchmarks": {
+    "SSSP": ["-node=4096", "-degree=4", "-components=1", "-graph=grid", "-seed=42", "-max-rounds=4096"],
+    "CC": ["-node=4096", "-degree=4", "-components=1", "-graph=grid", "-seed=42", "-max-rounds=4096"],
+    "COLOR": ["-node=4096", "-degree=4", "-components=1", "-graph=grid", "-seed=42", "-max-rounds=4096"],
+    "MIS": ["-node=4096", "-degree=4", "-components=1", "-graph=grid", "-seed=42", "-max-rounds=4096"]
+  }
+}

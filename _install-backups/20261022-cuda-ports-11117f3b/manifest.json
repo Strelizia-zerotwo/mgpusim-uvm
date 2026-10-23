@@ -1,0 +1,182 @@
+[
+  {
+    "path": "runs/online_policy_runner.py",
+    "old_sha256": "49d17cd5cf8d14ed5613f4ef86a83154c2be7977daff56f0840ed0d4c6e9d5b7",
+    "new_sha256": "1b5996dc509487f8d1685d3c9a5fd0c5e6ad93f03484672533a8876e24bfa7c1"
+  },
+  {
+    "path": "runs/run_benchmarks.py",
+    "old_sha256": "e4a58b119929a1f1070b23f0381578e84f7567b7df9d0a98f600681bd163c7dd",
+    "new_sha256": "e0a3e5e930d3499696696910e21fb6c93c5c7bcb600931b174a75694e06f9905"
+  },
+  {
+    "path": "benchmark/mybenchmark/BENCHMARKS.md",
+    "old_sha256": "599b0f5cf5113af4041d5c47214e9ef1acb6fafe57bd719adf2d216d1a4a36ba",
+    "new_sha256": "3ddfff5e1c26d74ee440f550e8cfa71643a435bada3dd482f11915f04504c31f"
+  },
+  {
+    "path": "benchmark/mybenchmark/catalog.json",
+    "old_sha256": "c844dbaae1da509a4a3af444db3fd46500412751021b5b0d065e7c90bc3dc1de",
+    "new_sha256": "5c7f7357cf0bd93e62baf14359cd902899f1b05c9b701ec9b3612515204b6d7e"
+  },
+  {
+    "path": "benchmark/mybenchmark/IMPLEMENTATION_STATUS.md",
+    "old_sha256": "c504bc5bc3bb09fc050d76d1b450b325a8d0cfa327d25a59588781852dec6902",
+    "new_sha256": "302b37f9ced22e3e331a7906a8b047a60d35800ba0d835483d26a2a0333594f6"
+  },
+  {
+    "path": "benchmark/mybenchmark/RUNNING.md",
+    "old_sha256": "ab4d1647e39677c4117ad5ae1868f44307906c78143852b8b71c2ab7b60d2e92",
+    "new_sha256": "7655d4ebd29b5c2b22f13d1e5d57deca1674ca4b6e9605730ea463572ebc01ed"
+  },
+  {
+    "path": "benchmark/mybenchmark/SIZES.md",
+    "old_sha256": "582e27ca9be6984e7140b77f25b7b300be43f21f897d03c8e2731605e1150750",
+    "new_sha256": "25800c15dd1aa767d2d5daace436ac3a429d64dee604406ed009129c1f5c2a91"
+  },
+  {
+    "path": "runs/run_cuda_ports.py",
+    "old_sha256": null,
+    "new_sha256": "558905f7c771fdb4ee37369bd21843841c7f7a4e1cb80334243b866762b24f2f"
+  },
+  {
+    "path": "runs/build_cuda_ports.py",
+    "old_sha256": "0f01e3bec4cf523dc0f66cc6ad47345508fbadf955344926a00e11a4fe0d927a",
+    "new_sha256": "0f01e3bec4cf523dc0f66cc6ad47345508fbadf955344926a00e11a4fe0d927a"
+  },
+  {
+    "path": "runs/test_cuda_ports.py",
+    "old_sha256": null,
+    "new_sha256": "5b21526512c89d55ccce918ea7b316f031222fb1127eafdb248a8e1783b15415"
+  },
+  {
+    "path": "benchmark/mybenchmark/presets/cuda-grid.json",
+    "old_sha256": null,
+    "new_sha256": "f6f5e7f60475f99b21edb5bad3a71fc5eed6fb544ef3a2bb9e0dca53d760377b"
+  },
+  {
+    "path": "benchmark/mybenchmark/presets/cuda-embedding-uniform.json",
+    "old_sha256": null,
+    "new_sha256": "bb8ecd1e420c4cc87e6360cd96d864cbf4a26e235b3671ce448d8316df9c3204"
+  },
+  {
+    "path": "benchmark/mybenchmark/cuda-ports/README.md",
+    "old_sha256": null,
+    "new_sha256": "6ed3e23599ee47c6d67f4ca2a0ce46b216dc38561dea647f26732147b2f82352"
+  },
+  {
+    "path": "benchmark/mybenchmark/cuda-ports/SOURCES.json",
+    "old_sha256": null,
+    "new_sha256": "7c3a4dbe7089fae2a0c8af6422e80b67d4216a7f378f49313108412ffcfafb87"
+  },
+  {
+    "path": "benchmark/mybenchmark/cuda-ports/upstream/CC.cu",
+    "old_sha256": null,
+    "new_sha256": "4c4d7b35e9097830a9398a53c95299acab8666378ad462874db37361815be067"
+  },
+  {
+    "path": "benchmark/mybenchmark/cuda-ports/upstream/COLOR.hxx",
+    "old_sha256": null,
+    "new_sha256": "c69ffbc39b289c9eaf2caaaa6e8d7969b36897dabcc666bf169d2e38b86011cb"
+  },
+  {
+    "path": "benchmark/mybenchmark/cuda-ports/upstream/EMBEDDING_BACKWARD.cu",
+    "old_sha256": null,
+    "new_sha256": "756fa8e908fd65ec28291f89ef44173424d30826bf7f701104781714137582f5"
+  },
+  {
+    "path": "benchmark/mybenchmark/cuda-ports/upstream/FBGEMM-LICENSE.txt",
+    "old_sha256": null,
+    "new_sha256": "12c2370ec32e78115dcd71ba22cdcb1297320fdc4ade81f798136d42357c58b8"
+  },
+  {
+    "path": "benchmark/mybenchmark/cuda-ports/upstream/Galois-LICENSE.txt",
+    "old_sha256": null,
+    "new_sha256": "5381471bf18d06f30b6929933b7021823432c49a3fa16798ae3d959efd94b24d"
+  },
+  {
+    "path": "benchmark/mybenchmark/cuda-ports/upstream/gunrock-LICENSE.txt",
+    "old_sha256": null,
+    "new_sha256": "e9b9ac7e692b0501b6639c77c8aae4772084bddda06cfe93895c659a5456645c"
+  },
+  {
+    "path": "benchmark/mybenchmark/cuda-ports/upstream/MIS.cu",
+    "old_sha256": null,
+    "new_sha256": "0fedebde5ace4a15292cfc99f7708316e73bc893888f1735ff5fccfe547bb691"
+  },
+  {
+    "path": "benchmark/mybenchmark/cuda-ports/upstream/SSSP.cu",
+    "old_sha256": null,
+    "new_sha256": "227027f048fa798786ec28b32334037b20f548ac44fd33ed96ef33fd284a36d1"
+  },
+  {
+    "path": "mgpusim/amd/benchmarks/cudaports/benchmark.go",
+    "old_sha256": "de2b6e07f3ae53fd5cd249f82093879da6ab36a6c8d496224a55f66b1acceb21",
+    "new_sha256": "62ca4df7d9d5dd5a87460723c92b31bbd2a036502d82de89d2aa72a5ec0da34f"
+  },
+  {
+    "path": "mgpusim/amd/benchmarks/cudaports/graph.go",
+    "old_sha256": "7b22ebc2b5b14bbe1f9bc14fe3b67b318b30ee04154fde585ba536ac9d99c21b",
+    "new_sha256": "4c904e1b3347e891f75065c25bf37e775fe589b1b2349d54efcddff9b4fbe6cf"
+  },
+  {
+    "path": "mgpusim/amd/benchmarks/cudaports/kernel-build.json",
+    "old_sha256": "f7e9c471d374285d31593f067962403001f7ab9f5b46a4883496c9d317cd64c6",
+    "new_sha256": "f7e9c471d374285d31593f067962403001f7ab9f5b46a4883496c9d317cd64c6"
+  },
+  {
+    "path": "mgpusim/amd/benchmarks/cudaports/kernels_gfx942.hsaco",
+    "old_sha256": "7edd44a1f29bf7e6da7d9f12cda09320acdd14144e4090a6091adfa3d0ccef51",
+    "new_sha256": "7edd44a1f29bf7e6da7d9f12cda09320acdd14144e4090a6091adfa3d0ccef51"
+  },
+  {
+    "path": "mgpusim/amd/benchmarks/cudaports/kernel_test.go",
+    "old_sha256": "e5c507708e16aad6e55fc67593a33cef011801f5b90ec71e0de35c609a29d2ef",
+    "new_sha256": "40f63812597355a039d738538ee761aa9f531261d47fd6f374efadcd4590b1b7"
+  },
+  {
+    "path": "mgpusim/amd/benchmarks/cudaports/queue_test.go",
+    "old_sha256": null,
+    "new_sha256": "d3ef5306f73693a3d1babbe03e459d9b4a9f9606ab58811117ba1c3ccf3c95ef"
+  },
+  {
+    "path": "mgpusim/amd/benchmarks/cudaports/SOURCES.md",
+    "old_sha256": null,
+    "new_sha256": "39758969770cacc8e61333734215fea9a3430c4e715ef7cbad07e89988b1df79"
+  },
+  {
+    "path": "mgpusim/amd/benchmarks/cudaports/native/kernels.cl",
+    "old_sha256": "05f02d80158f551d979d72e5f15d086e3bc2780f558f646014b034f3bc572b3d",
+    "new_sha256": "05f02d80158f551d979d72e5f15d086e3bc2780f558f646014b034f3bc572b3d"
+  },
+  {
+    "path": "mgpusim/amd/samples/cudaportscommon/main.go",
+    "old_sha256": null,
+    "new_sha256": "d57f66c9f92b17c174a471a2341eb0e87d1efbc56caa4dd0225208233ff0ff85"
+  },
+  {
+    "path": "mgpusim/amd/samples/cuda_sssp/main.go",
+    "old_sha256": null,
+    "new_sha256": "1e5341d90f4422b7e719d67de36473bd7ed64b0b51a71e673b866c18d87e4895"
+  },
+  {
+    "path": "mgpusim/amd/samples/cuda_cc/main.go",
+    "old_sha256": null,
+    "new_sha256": "6ff578fa586135aadb6edb2481af611cbdb3447d5d73371aab3ae26dabbcd0c4"
+  },
+  {
+    "path": "mgpusim/amd/samples/cuda_color/main.go",
+    "old_sha256": null,
+    "new_sha256": "cdb2e49070fc10dfe2761874ad2a7f4252dd3b8adceaeef38ff02aa2d038eb92"
+  },
+  {
+    "path": "mgpusim/amd/samples/cuda_mis/main.go",
+    "old_sha256": null,
+    "new_sha256": "b24c3b4f5409bc141e284c5ddae1d3838a8b7dffd82a96fea2fdc99ae48cd269"
+  },
+  {
+    "path": "mgpusim/amd/samples/cuda_embedding/main.go",
+    "old_sha256": null,
+    "new_sha256": "ce983287a0f85e3836c80bf1d26a3fef992f85c5c0deb244434aed689637e100"
+  }
+]

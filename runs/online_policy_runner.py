@@ -1,8 +1,22 @@
 """Kernel-internal ideal replication: free coherence; timed fault plus bulk bytes."""
 from pathlib import Path
+import json
 
 PROTOCOL='kernel-internal-ideal-v3'
 POLICIES=['inv','delta','delta-sub','infinity']
+
+
+def failure_summary(directory, status, timeout):
+    if status=='TIMEOUT':
+        return f'host timeout after {timeout}s; inspect progress.jsonl and run.log'
+    path=directory/'run.log'
+    if path.exists():
+        with path.open(encoding='utf-8',errors='replace') as log:
+            for index,line in enumerate(log):
+                if any(marker in line for marker in ['Panic:', 'panic:', 'fatal error:', 'SIGILL:', 'SIGSEGV:']):
+                    return line.strip()
+                if index>=99:break
+    return 'see run.log and progress.jsonl; failed timing excluded'
 
 
 def collect_online(directory,old,gpu_ids,api):
@@ -22,6 +36,8 @@ def collect_online(directory,old,gpu_ids,api):
             raise RuntimeError('fixed service or bulk-byte accounting mismatch')
     elif p['charged_bytes'] or p['charged_fixed_ps'] or p['copy_service_ps_in_kernel']:
         raise RuntimeError('infinity charged copy service')
+    elif p['fallback_home_reads']:
+        raise RuntimeError('infinity could not provide a local replica; inspect physical frame capacity')
     if s['copy_faults']!=s['cold_copies']+s['refills']+s['repairs']:
         raise RuntimeError('copy event classification mismatch')
     act=api['metric_summary'](api['sqlite_metrics'](directory/'metrics.sqlite3',directory/'metrics.tsv'))
@@ -67,6 +83,7 @@ def run_online(b,a,suite,run,api):
         trigger='each actual read/write at AT, before translation and data caches, including TLB hits',
         future_information=False,write='immediate free metadata update and invalidation',
         timing='one fault_ns plus one bulk data-bandwidth/latency charge per copy or repair',
+        infinity='synchronous functional copy/repair at actual read; zero fixed service, latency and link bandwidth; ordinary accesses still timed',
         functional_correctness='authoritative per-request snapshots and free cache operations; in-flight forwarding is ideal',
         placement='same static contiguous page partitions across policies at each page size',
         system_scope_note='ordinary loads/stores only; hardware atomics are not added'))
@@ -93,14 +110,25 @@ def run_online(b,a,suite,run,api):
               try:
                 s,fields=collect_online(directory,old,a.gpu_ids,api)
                 if b['id']=='FW' and s['kernel_count']!=r['fw_requested_passes']:raise RuntimeError('FW actual pass count differs from requested scope')
+                if b.get('cuda_port'):
+                    metadata=json.loads((directory/'workload.json').read_text(encoding='utf-8'))
+                    if (metadata.get('algorithm')!=b['id'] or not metadata.get('converged') or
+                        metadata.get('implementation')!='cuda-derived-research-adaptation-v1'):
+                        raise RuntimeError('CUDA adaptation workload metadata missing or incomplete')
+                    fields.update(workload_metadata=metadata,workload_rounds=metadata.get('rounds'),
+                        workload_vertices=metadata.get('vertices'),workload_edges=metadata.get('directed_edges'),
+                        workload_rows=metadata.get('rows'),workload_dim=metadata.get('dimension'),
+                        workload_batches=metadata.get('batches'),input_distribution=metadata.get('distribution',metadata.get('graph_kind')),
+                        workload_seed=metadata.get('seed'))
                 r.update(fields)
                 s.update(case=name,repeat=repeat);completed.append(s)
               except Exception as exc:r.update(status='VALIDATION_FAILED',verification='FAILED_OR_INCOMPLETE',reason=str(exc))
-            else:r['reason']='see run.log; failed timing excluded'
+            else:r['reason']=failure_summary(directory,r['status'],a.timeout)
             api['dump'](directory/'result.json',r);rows.append(r)
             print(f'{b["id"]} {name}: {r["status"]} application_us={r.get("application_us")} '
                   f'cold/refill/repair={r.get("cold_copies")}/{r.get("refills")}/{r.get("repairs")} '
                   f'bytes={r.get("copy_bytes")}',flush=True)
+            if r['status']!='OK':print('  reason='+r.get('reason','see run.log'),flush=True)
     groups={}
     for s in completed:
         c=s['config'];groups.setdefault((c['page_bytes'],c['link_ns'],c['fault_ns'],s['repeat']),[]).append(s)
