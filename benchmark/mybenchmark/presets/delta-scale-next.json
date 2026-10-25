@@ -1,0 +1,9 @@
+{
+  "name": "delta-scale-next",
+  "provenance": "Scale sensitivity after the 2026-10-25 32/64 GB/s experiments. Only graph node count and NW length change relative to delta-start; larger inputs are not an assumed performance improvement.",
+  "benchmarks": {
+    "COLOR-2": ["-node=65536", "-degree=8", "-components=1", "-graph=random", "-seed=42", "-max-rounds=4096"],
+    "MIS-2": ["-node=65536", "-degree=8", "-components=1", "-graph=random", "-seed=42", "-max-rounds=4096"],
+    "NW": ["-length=3072"]
+  }
+}
