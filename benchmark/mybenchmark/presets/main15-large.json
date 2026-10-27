@@ -1,0 +1,96 @@
+{
+  "name": "main15-large-v1",
+  "provenance": "Main set selected by user on 2026-10-27. Retains measured large COLOR/MIS=65536, NW=3072, BFS=262144 and LUD=512; other unmeasured larger inputs are explicit proposed scales, not paper reproduction or proven successful runs. C2D retains the previous large backward input with known timeouts.",
+  "benchmarks": {
+    "BFS": [
+      "-node=262144",
+      "-degree=8",
+      "-depth=0"
+    ],
+    "SSSP-2": [
+      "-node=65536",
+      "-degree=8",
+      "-components=1",
+      "-graph=random",
+      "-seed=42",
+      "-max-rounds=4096"
+    ],
+    "CC-2": [
+      "-node=65536",
+      "-degree=8",
+      "-components=4",
+      "-graph=random",
+      "-seed=42",
+      "-max-rounds=4096"
+    ],
+    "COLOR-2": [
+      "-node=65536",
+      "-degree=8",
+      "-components=1",
+      "-graph=random",
+      "-seed=42",
+      "-max-rounds=4096"
+    ],
+    "MIS-2": [
+      "-node=65536",
+      "-degree=8",
+      "-components=1",
+      "-graph=random",
+      "-seed=42",
+      "-max-rounds=4096"
+    ],
+    "PR": [
+      "-node=4096",
+      "-sparsity=0.0025",
+      "-iterations=8"
+    ],
+    "KM": [
+      "-points=65536",
+      "-features=16",
+      "-clusters=8",
+      "-max-iter=8"
+    ],
+    "NW": [
+      "-length=3072"
+    ],
+    "lud": [
+      "-size=512"
+    ],
+    "pathfinder": [
+      "-rows=64",
+      "-cols=4096"
+    ],
+    "C2D": [
+      "-N=16",
+      "-C=8",
+      "-H=64",
+      "-W=64",
+      "-output-channel=16",
+      "-enable-backward"
+    ],
+    "EMBEDDING-2": [
+      "-rows=32768",
+      "-dim=32",
+      "-batch=256",
+      "-batches=16",
+      "-distribution=hotset",
+      "-seed=42"
+    ],
+    "MM": [
+      "-x=512",
+      "-y=512",
+      "-z=512"
+    ],
+    "ST": [
+      "-row=1024",
+      "-col=1024",
+      "-iter=8"
+    ],
+    "IM2COL": [
+      "-N=16",
+      "-C=8",
+      "-H=64",
+      "-W=64"
+    ]
+  }
+}

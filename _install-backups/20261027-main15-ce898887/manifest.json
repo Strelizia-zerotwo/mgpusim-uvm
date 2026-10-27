@@ -1,0 +1,17 @@
+{
+  "backup": "/home/only/projects/mgpusim-uvm/_install-backups/20261027-main15-ce898887",
+  "files": [
+    {
+      "path": "runs/run_main15.py",
+      "sha256": "283e2bdb252a4813ffdaa8e36db65d1337f1e93af0e7c73aaca16ed82d57cb38"
+    },
+    {
+      "path": "runs/test_main15.py",
+      "sha256": "ab4b1a8127beafa55116fd71e6ec750fa65491aebf4a636fd49c9aa84ca75b5a"
+    },
+    {
+      "path": "benchmark/mybenchmark/presets/main15-large.json",
+      "sha256": "5288d65367861f85a9c8b38b4095c42a27e79e82794a393ecc1ce5ab249c906f"
+    }
+  ]
+}
